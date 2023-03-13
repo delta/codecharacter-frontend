@@ -255,7 +255,6 @@ export default function CodeEditor(props: Editors.Props): JSX.Element {
       };
     } else {
       editor = createEditor(divCodeEditor.current, null, null);
-      console.log(editor);
     }
     return () => {
       languageClient?.stop();
