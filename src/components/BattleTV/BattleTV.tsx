@@ -14,7 +14,7 @@ import {
   Match,
   MatchMode,
   Verdict,
-} from '@codecharacter-2023/client';
+} from '@codecharacter-2024/client';
 import { User, user } from '../../store/User/UserSlice';
 import {
   changePageState,
