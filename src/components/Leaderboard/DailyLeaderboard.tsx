@@ -6,7 +6,7 @@ import { getAvatarByID } from '../Avatar/Avatar';
 import {
   DailyChallengeLeaderBoardResponse,
   DailyChallengesApi,
-} from '@codecharacter-2023/client';
+} from '@codecharacter-2024/client';
 import { apiConfig, ApiError } from '../../api/ApiConfig';
 import Loader from '../Loader/Loader';
 import Toast from 'react-hot-toast';
