@@ -1,0 +1,45 @@
+.bg {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.parent {
+  display: grid;
+  height: 100%;
+}
+
+.bg,
+.footer {
+  grid-area: 1/1;
+}
+.footer {
+  z-index: 9999;
+  background: blue;
+  height: fit-content;
+}
+.lineChart {
+}
+
+.lines {
+  stroke-width: 4px !important;
+}
+
+.axis {
+  font-family: monospace;
+  text-style: bold;
+  font-size: 1.1rem;
+  text-spacing: 5px;
+  text-shadow: 0 0 4px #fff, 0 0 2px #fff;
+  stroke-width: 4px;
+}
+
+.graphContainer {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  background-color: black;
+}
