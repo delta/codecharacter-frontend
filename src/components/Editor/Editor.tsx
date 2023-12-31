@@ -74,6 +74,7 @@ export default function CodeEditor(props: Editors.Props): JSX.Element {
     extensions: ['.java', '.jar', '.class', '.jav'],
     aliases: ['Java', 'java'],
   });
+
   const divCodeEditor = useRef<HTMLDivElement>(null);
   const userCode: string =
     props.page == 'Dashboard'
