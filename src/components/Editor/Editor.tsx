@@ -1,7 +1,7 @@
-import * as Editor from './EditorTypes';
+import * as Editors from './EditorTypes';
 import styles from './style.module.css';
 import { useRef, useEffect } from 'react';
-import * as monaco from 'monaco-editor';
+import { useMonaco } from '@monaco-editor/react';
 import {
   MonacoLanguageClient,
   CloseAction,
@@ -55,7 +55,25 @@ buildWorkerDefinition(
   false,
 );
 
-export default function CodeEditor(props: Editor.Props): JSX.Element {
+export default function CodeEditor(props: Editors.Props): JSX.Element {
+  const monaco = useMonaco();
+
+  monaco?.languages.register({
+    id: 'cpp',
+    extensions: ['.cpp'],
+    aliases: ['CPlusPlus', 'cpp', 'CPP', 'C++', 'c++'],
+  });
+  monaco?.languages.register({
+    id: 'python',
+    extensions: ['.py'],
+    aliases: ['Python', 'py'],
+  });
+
+  monaco?.languages.register({
+    id: 'java',
+    extensions: ['.java', '.jar', '.class', '.jav'],
+    aliases: ['Java', 'java'],
+  });
   const divCodeEditor = useRef<HTMLDivElement>(null);
   const userCode: string =
     props.page == 'Dashboard'
@@ -69,24 +87,6 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
   const keyboardHandler = useAppSelector(KeyboardHandler);
 
   const language = props.language;
-
-  monaco.languages.register({
-    id: 'cpp',
-    extensions: ['.cpp'],
-    aliases: ['CPlusPlus', 'cpp', 'CPP', 'C++', 'c++'],
-  });
-
-  monaco.languages.register({
-    id: 'python',
-    extensions: ['.py'],
-    aliases: ['Python', 'py'],
-  });
-
-  monaco.languages.register({
-    id: 'java',
-    extensions: ['.java', '.jar', '.class', '.jav'],
-    aliases: ['Java', 'java'],
-  });
 
   const createLanguageClient = (
     transports: MessageTransports,
@@ -110,11 +110,12 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
 
   const createEditor = (
     divref: HTMLDivElement,
-    workspace: Editor.Workspace | null,
+    workspace: Editors.Workspace | null,
     websocket: WebSocket | null,
   ) => {
+    if (!monaco) return;
     const editor = monaco.editor.create(divref, {
-      model: monaco.editor.createModel(
+      model: monaco?.editor.createModel(
         userCode,
         language == 'c_cpp' ? 'cpp' : language,
         monaco.Uri.parse(workspace != null ? workspace.filepath : ''),
@@ -162,15 +163,11 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
         dispatch(changeDcCode(codeNlanguage));
       }
     });
-
     //Keybinding for save -> CTRL+S
-
     editor.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.KeyS, function () {
       props.SaveRef.current?.click();
     });
-
     //Keybinding for Simulate -> CTRL+ALT+N
-
     if (props.page == 'Dashboard') {
       editor.addCommand(
         monaco.KeyMod.CtrlCmd | monaco.KeyMod.Alt | monaco.KeyCode.KeyN,
@@ -182,9 +179,7 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
           dispatch(mapCommitIDChanged(null));
         },
       );
-
       //Keybinding for Commit -> CTRL+K
-
       editor.addCommand(
         monaco.KeyMod.CtrlCmd | monaco.KeyCode.KeyK,
         function () {
@@ -192,23 +187,21 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
         },
       );
     }
-
     //Keybinding for Submit -> CTRL+SHIFT+S
-
     editor.addCommand(
       monaco.KeyMod.CtrlCmd | monaco.KeyMod.Shift | monaco.KeyCode.KeyS,
       function () {
         props.SubmitRef.current?.click();
       },
     );
-
     return editor;
   };
 
   useEffect(() => {
     if (!divCodeEditor.current) return;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    let editor: any;
     let languageClient: MonacoLanguageClient;
-    let editor: monaco.editor.IStandaloneCodeEditor;
     let wsClient: WebSocket;
     if (autocomplete) {
       const url = `${lspUrl}/${
@@ -228,8 +221,8 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
         const socket = toSocket(wsClient);
         const filePathMessageReader = new WebSocketMessageReader(socket);
         filePathMessageReader.listen((message: Message) => {
-          const fileInfo = message as Message & Editor.Workspace;
-          const workspace: Editor.Workspace = {
+          const fileInfo = message as Message & Editors.Workspace;
+          const workspace: Editors.Workspace = {
             filepath: fileInfo.filepath,
             folderpath: fileInfo.folderpath,
           };
@@ -261,14 +254,24 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
       };
     } else {
       editor = createEditor(divCodeEditor.current, null, null);
+      console.log(editor);
     }
     return () => {
       languageClient?.stop();
-      monaco.editor.getModels().forEach(model => model.dispose());
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      monaco?.editor?.getModels().forEach((model: any) => model.dispose());
       editor?.dispose();
       wsClient?.close(1000);
     };
-  }, [fontSize, theme, language, keyboardHandler, props.page, autocomplete]);
+  }, [
+    fontSize,
+    theme,
+    language,
+    keyboardHandler,
+    props.page,
+    autocomplete,
+    monaco,
+  ]);
 
   return <div className={styles.Editor} ref={divCodeEditor}></div>;
 }
