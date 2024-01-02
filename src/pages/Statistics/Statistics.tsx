@@ -1,7 +1,6 @@
 import styles from './Statistics.module.css';
 
 import {
-  ResponsiveContainer,
   LineChart,
   Line,
   XAxis,
