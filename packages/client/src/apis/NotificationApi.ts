@@ -13,7 +13,7 @@
  */
 
 import * as runtime from '../runtime';
-import type { GenericError, Notification } from '../models';
+import type { GenericError, Notification } from '../models/index';
 
 export interface SaveNotificationReadStatusRequest {
   notificationId: string;

@@ -18,7 +18,7 @@ import type {
   GenericError,
   RatingHistory,
   RegisterUserRequest,
-} from '../models';
+} from '../models/index';
 
 export interface ActivateUserOperationRequest {
   userId: string;

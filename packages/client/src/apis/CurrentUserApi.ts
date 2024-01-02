@@ -19,7 +19,7 @@ import type {
   GenericError,
   UpdateCurrentUserProfile,
   UpdatePasswordRequest,
-} from '../models';
+} from '../models/index';
 
 export interface CompleteUserProfileRequest {
   completeProfileRequest: CompleteProfileRequest;

@@ -7,7 +7,7 @@ const GraphFooter = ({ graph, selected, setSelected }) => {
           return (
             <>
               <div
-                key={i}
+                key={g}
                 className={`${styles.button} ${
                   selected == i ? styles.buttonSelected : ''
                 }`}

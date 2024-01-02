@@ -2,8 +2,27 @@
   display: flex;
   justify-content: flex-start;
   overflow: hidden;
+  background-color: #00000072;
+  backdrop-filter:blur(17px);
+  flex-direction: column;
 }
-
+.title {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  text-style: bold;
+  transform:translateY(-40px);
+  letter-spacing: 5px;
+  font-family:monospace, sans-serif;
+  text-style:bold;
+  font-weight:900;
+}
+.graphParent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .parent {
   display: grid;
   height: 100%;
@@ -30,16 +49,33 @@
   text-style: bold;
   font-size: 1.1rem;
   text-spacing: 5px;
-  text-shadow: 0 0 4px #fff, 0 0 2px #fff;
   stroke-width: 4px;
+  font-size: 1.1rem;
+  text-style:bold;
+  font-weight:900;
 }
 
 .graphContainer {
   flex-shrink: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  padding-top: 3%;
   width: 100vw;
   height: 100%;
-  background-color: black;
+}
+.barChartToolTip{
+  background-color:#1a1a1aca;
+  backdrop-filter:blur(65px);
+  color:white;
+  font-family: monospace;
+  font-size: 1rem;
+  text-style:bold;
+  font-weight:900;
+  padding:10px;
+  padding-bottom:0px;
+  border-radius:5px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }

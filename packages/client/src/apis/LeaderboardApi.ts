@@ -13,7 +13,7 @@
  */
 
 import * as runtime from '../runtime';
-import type { LeaderboardEntry, TierType } from '../models';
+import type { LeaderboardEntry, TierType } from '../models/index';
 
 export interface GetLeaderboardRequest {
   page?: number;

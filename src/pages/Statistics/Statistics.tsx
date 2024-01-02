@@ -6,194 +6,337 @@ import {
   XAxis,
   YAxis,
   CartesianGrid,
-  Tooltip,
-  Legend,
   Area,
   AreaChart,
-  ResponsiveContainer,
-  Radar,
-  RadarChart,
-  PolarGrid,
-  PolarAngleAxis,
-  PolarRadiusAxis,
+  Legend,
+  BarChart,
+  Tooltip,
+  Bar,
 } from 'recharts';
 import GraphFooter from '../../components/GraphFooter/GraphFooter';
-import { useState } from 'react';
-const data = [
-  {
-    name: 'Page A',
-    uv: 4000,
-    pv: 2500,
-    amt: 2400,
-  },
-  {
-    name: 'Page B',
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
-  },
-  {
-    name: 'Page C',
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
-  },
-  {
-    name: 'Page D',
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
-  },
-  {
-    name: 'Page E',
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-  {
-    name: 'Page F',
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: 'Page G',
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
-];
-const data2 = [
-  {
-    subject: 'Math',
-    A: 120,
-    B: 110,
-    fullMark: 150,
-  },
-  {
-    subject: 'Chinese',
-    A: 98,
-    B: 130,
-    fullMark: 150,
-  },
-  {
-    subject: 'English',
-    A: 86,
-    B: 130,
-    fullMark: 150,
-  },
-  {
-    subject: 'Geography',
-    A: 99,
-    B: 100,
-    fullMark: 150,
-  },
-  {
-    subject: 'Physics',
-    A: 85,
-    B: 90,
-    fullMark: 150,
-  },
-  {
-    subject: 'History',
-    A: 65,
-    B: 85,
-    fullMark: 150,
-  },
-];
+import { apiConfig, ApiError } from '../../api/ApiConfig';
+import { StatsApi } from '@codecharacter-2024/client';
+import { useState, useEffect } from 'react';
+import Toast from 'react-hot-toast';
 
+const BarChartToolTip = ({ active, payload, label }) => {
+  if (active && payload && payload.length) {
+    return (
+      <div className={styles.barChartToolTip}>
+        <ul>
+          <li className="label">{`Your Wins: ${payload[0].value}`}</li>
+          <li className="label">{`Your Losses: ${payload[1].value}`}</li>
+          <li className="label">{`Completed: ${payload[2].value}`}</li>
+        </ul>
+      </div>
+    );
+  }
+
+  return null;
+};
+
+const LineChartToolTip = ({ active, payload, label }) => {
+  if (active && payload && payload.length) {
+    return (
+      <div className={styles.barChartToolTip}>
+        <ul>
+          <li className="label">{`Your Attacks ${payload[0].value}`}</li>
+          <li className="label">{`Leaderboard Top: ${payload[1].value}`}</li>
+        </ul>
+      </div>
+    );
+  }
+  return null;
+};
+
+const AreaChartToolTip = ({ active, payload, label }) => {
+  if (active && payload && payload.length) {
+    return (
+      <div className={styles.barChartToolTip}>
+        <div>
+          <p>Coins Used By:</p>
+          <ul>
+            <li className="label">{`You: ${payload[0].value}`}</li>
+            <li className="label">{`Leaderboard Top: ${payload[1].value}`}</li>
+          </ul>
+        </div>
+      </div>
+    );
+  }
+  return null;
+};
+const DCToolTip = ({ active, payload, label }) => {
+  if (active && payload && payload.length) {
+    return (
+      <div className={styles.barChartToolTip}>
+        <div>
+          <p>Daily Challenges Attempts Made:</p>
+          <ul>
+            <li className="label">{`You: ${payload[0].value}`}</li>
+            <li className="label">{`Leaderboard Top: ${payload[1].value}`}</li>
+          </ul>
+        </div>
+      </div>
+    );
+  }
+  return null;
+};
 const Statistics = () => {
   const [selected, setSelected] = useState(0);
+  const [data, setData] = useState({});
+
+  const fetchTop = () => {
+    const statisticsApi = new StatsApi(apiConfig);
+    statisticsApi
+      .getStats()
+      .then(response => {
+        const cdata = [];
+        for (
+          let i = 0;
+          i < Math.min(response[0].length, response[1].length);
+          i++
+        ) {
+          const currentDataObject = {};
+          const player1Data = response[0][i];
+          const player2Data = response[1][i];
+
+          for (const keys in player1Data) {
+            currentDataObject[`${keys}1`] = player1Data[keys];
+            currentDataObject[`${keys}2`] = player2Data[keys];
+          }
+          cdata.push(currentDataObject);
+        }
+        setData(cdata);
+        console.log(cdata);
+      })
+      .catch(error => {
+        if (error instanceof ApiError) Toast.error(error.message);
+      });
+  };
+  useEffect(() => {
+    fetchTop();
+  }, []);
+  const titles = [
+    'Average Attack Rates',
+    'Coins Usage Per Match',
+    'Daily Challenges Attempts',
+    'Daily Challenges Info',
+  ];
   return (
     <>
       <div className={styles.parent}>
         <div className={styles.footer}>
           <GraphFooter
-            graph={['1', '2', '3']}
+            graph={['1', '2', '3', '4']}
             selected={selected}
             setSelected={setSelected}
           />
         </div>
         <div className={styles.bg}>
           <div className={styles.graphContainer}>
-            {selected == 0 && (
-              <LineChart
-                width={750}
-                height={600}
-                data={data}
-                className={styles.lineChart}
-              >
-                <XAxis className={styles.axis} stroke="white" />
-                <YAxis className={styles.axis} stroke="white" />
-                <Line
-                  type="monotone"
-                  dataKey="uv"
-                  stroke="#8884d8"
-                  strokeWidth="4px"
-                  dot={<></>}
-                />
-                <Line
-                  type="monotone"
-                  dataKey="pv"
-                  stroke="#82ca9d"
-                  strokeWidth="4px"
-                  dot={<></>}
-                />
-              </LineChart>
-            )}
-            {selected == 1 && (
-              <AreaChart
-                width={730}
-                height={250}
-                data={data}
-                margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
-              >
-                <defs>
-                  <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
-                    <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
-                  </linearGradient>
-                  <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8} />
-                    <stop offset="95%" stopColor="#82ca9d" stopOpacity={0} />
-                  </linearGradient>
-                </defs>
-                <XAxis dataKey="name" />
-                <YAxis />
-                <CartesianGrid strokeDasharray="3 3" />
-                <Tooltip />
-                <Area
-                  type="monotone"
-                  dataKey="uv"
-                  stroke="#8884d8"
-                  fillOpacity={1}
-                  fill="url(#colorUv)"
-                />
-                <Area
-                  type="monotone"
-                  dataKey="pv"
-                  stroke="#82ca9d"
-                  fillOpacity={1}
-                  fill="url(#colorPv)"
-                />
-              </AreaChart>
-            )}
-            {selected == 2 && (
-              <ResponsiveContainer width="100%" height="100%">
-                <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data2}>
-                  <PolarGrid />
-                  <PolarAngleAxis dataKey="subject" />
-                  <PolarRadiusAxis />
-                  <Radar
-                    name="Mike"
-                    dataKey="A"
-                    stroke="#8884d8"
-                    fill="#8884d8"
-                    fillOpacity={0.6}
+            <h1 className={styles.title}>{titles[selected]}</h1>
+            <div className={styles.graphParent}>
+              {selected == 0 && (
+                <LineChart
+                  width={750}
+                  height={600}
+                  data={data}
+                  className={styles.lineChart}
+                >
+                  <XAxis className={styles.axis} stroke="white" />
+                  <YAxis className={styles.axis} stroke="white" />
+                  <CartesianGrid strokeDasharray="3 3" stroke="#ffffff45" />
+                  <Tooltip
+                    cursor={{
+                      fill: '#ffffff34',
+                    }}
+                    content={<LineChartToolTip external={external} />}
                   />
-                </RadarChart>
-              </ResponsiveContainer>
-            )}
+                  <Line
+                    type="monotone"
+                    dataKey="avgAtk1"
+                    stroke="#8884d8"
+                    strokeWidth="4px"
+                    dot={<></>}
+                    activeDot={{ r: 8 }}
+                    name="You"
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="avgAtk2"
+                    stroke="#82ca9d"
+                    strokeWidth="2px"
+                    dot={<></>}
+                    name="Leaderboard Top"
+                    strokeDasharray="5 5"
+                    activeDot={{ r: 3 }}
+                  />
+
+                  <Legend
+                    wrapperStyle={{
+                      fontFamily: 'monospace',
+                      textStyle: 'bold',
+                      fontWeight: '900',
+                    }}
+                  />
+                </LineChart>
+              )}
+              {selected == 1 && (
+                <AreaChart
+                  width={730}
+                  height={600}
+                  data={data}
+                  margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+                >
+                  <defs>
+                    <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
+                      <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
+                    </linearGradient>
+                    <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8} />
+                      <stop offset="95%" stopColor="#82ca9d" stopOpacity={0} />
+                    </linearGradient>
+                  </defs>
+                  <XAxis className={styles.axis} stroke="white" />
+                  <YAxis className={styles.axis} stroke="white" />
+                  <Tooltip
+                    cursor={{
+                      fill: '#ffffff34',
+                    }}
+                    content={<AreaChartToolTip external={external} />}
+                  />
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <Area
+                    type="monotone"
+                    strokeWidth="4px"
+                    dataKey="coins1"
+                    stroke="#8884d8"
+                    fillOpacity={1}
+                    fill="url(#colorUv)"
+                    activeDot={{ r: 8 }}
+                    name="You"
+                  />
+                  <Area
+                    type="monotone"
+                    dataKey="coins2"
+                    strokeWidth="2px"
+                    strokeDasharray="5 5"
+                    stroke="#82ca9d"
+                    activeDot={{ r: 3 }}
+                    fillOpacity={1}
+                    fill="url(#colorPv)"
+                    name="Leaderboard Top"
+                  />
+
+                  <Legend
+                    wrapperStyle={{
+                      fontFamily: 'monospace',
+                      textStyle: 'bold',
+                      fontWeight: '900',
+                    }}
+                  />
+                </AreaChart>
+              )}
+              {selected == 2 && (
+                <LineChart
+                  width={730}
+                  height={600}
+                  data={data}
+                  margin={{
+                    top: 5,
+                    right: 30,
+                    left: 20,
+                    bottom: 5,
+                  }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis className={styles.axis} stroke="white" />
+                  <YAxis className={styles.axis} stroke="white" />
+
+                  <Legend
+                    wrapperStyle={{
+                      fontFamily: 'monospace',
+                      textStyle: 'bold',
+                      fontWeight: '900',
+                    }}
+                  />
+                  <Tooltip
+                    cursor={{
+                      fill: '#ffffff34',
+                    }}
+                    content={<DCToolTip external={external} />}
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="dc_completions1"
+                    stroke="#8884d8"
+                    strokeWidth="4px"
+                    activeDot={{ r: 8 }}
+                    name="You"
+                  />
+                  <Line
+                    type="monotone"
+                    strokeDasharray="5 5"
+                    strokeWidth="2px"
+                    dataKey="dc_completions2"
+                    activeDot={{ r: 3 }}
+                    stroke="#82ca9d"
+                    name="Leaderboard Top"
+                  />
+                </LineChart>
+              )}
+              {selected == 3 && (
+                <BarChart
+                  width={950}
+                  height={600}
+                  data={data}
+                  margin={{
+                    top: 20,
+                    right: 30,
+                    left: 20,
+                    bottom: 5,
+                  }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <Legend
+                    wrapperStyle={{
+                      fontFamily: 'monospace',
+                      textStyle: 'bold',
+                      fontWeight: '900',
+                    }}
+                  />
+
+                  <Tooltip
+                    cursor={{
+                      fill: '#ffffff34',
+                    }}
+                    content={<BarChartToolTip external={external} />}
+                  />
+                  <Bar
+                    dataKey="dc_wins2"
+                    stackId="b"
+                    name="Your Wins"
+                    fill="green"
+                  />
+                  <Bar
+                    dataKey="dc_losses2"
+                    stackId="b"
+                    name="Your Losses"
+                    fill="red"
+                  />
+                  <Bar
+                    dataKey="dc_completions2"
+                    name="Completed"
+                    stackId="a"
+                    fill="yellow"
+                  />
+
+                  <XAxis className={styles.axis} stroke="white" />
+                  <YAxis className={styles.axis} stroke="white" />
+                </BarChart>
+              )}
+            </div>
           </div>
         </div>
       </div>
