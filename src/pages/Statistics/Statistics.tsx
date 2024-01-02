@@ -1,6 +1,7 @@
 import styles from './Statistics.module.css';
 
 import {
+  ResponsiveContainer,
   LineChart,
   Line,
   XAxis,
@@ -18,6 +19,16 @@ import { apiConfig, ApiError } from '../../api/ApiConfig';
 import { StatsApi } from '@codecharacter-2024/client';
 import { useState, useEffect } from 'react';
 import Toast from 'react-hot-toast';
+
+const CustomizedLabel = ({ x, y, value }) => {
+  return (
+    <g>
+      <foreignObject x={325} y={590} dy={10} width={200} height={100}>
+        <div className={styles.labelX}>{value}</div>
+      </foreignObject>
+    </g>
+  );
+};
 
 const BarChartToolTip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
@@ -138,12 +149,15 @@ const Statistics = () => {
             <div className={styles.graphParent}>
               {selected == 0 && (
                 <LineChart
-                  width={750}
+                  width={1150}
                   height={600}
                   data={data}
                   className={styles.lineChart}
+                  margin={{
+                    bottom: 30,
+                    right: 80,
+                  }}
                 >
-                  <XAxis className={styles.axis} stroke="white" />
                   <YAxis className={styles.axis} stroke="white" />
                   <CartesianGrid strokeDasharray="3 3" stroke="#ffffff45" />
                   <Tooltip
@@ -178,15 +192,28 @@ const Statistics = () => {
                       textStyle: 'bold',
                       fontWeight: '900',
                     }}
+                    verticalAlign="top"
+                  />
+                  <XAxis
+                    className={styles.axis}
+                    stroke="white"
+                    label={{
+                      value: 'Past Matches',
+                      position: 'insideBottomRight',
+                      offset: -15,
+                    }}
                   />
                 </LineChart>
               )}
               {selected == 1 && (
                 <AreaChart
-                  width={730}
+                  width={1130}
                   height={600}
                   data={data}
-                  margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+                  margin={{
+                    right: 80,
+                    bottom: 30,
+                  }}
                 >
                   <defs>
                     <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
@@ -198,7 +225,16 @@ const Statistics = () => {
                       <stop offset="95%" stopColor="#82ca9d" stopOpacity={0} />
                     </linearGradient>
                   </defs>
-                  <XAxis className={styles.axis} stroke="white" />
+
+                  <XAxis
+                    className={styles.axis}
+                    stroke="white"
+                    label={{
+                      value: 'Past Matches',
+                      position: 'insideBottomRight',
+                      offset: -15,
+                    }}
+                  />
                   <YAxis className={styles.axis} stroke="white" />
                   <Tooltip
                     cursor={{
@@ -235,23 +271,30 @@ const Statistics = () => {
                       textStyle: 'bold',
                       fontWeight: '900',
                     }}
+                    verticalAlign="top"
                   />
                 </AreaChart>
               )}
               {selected == 2 && (
                 <LineChart
-                  width={730}
-                  height={600}
+                  width={1230}
+                  height={630}
                   data={data}
                   margin={{
-                    top: 5,
-                    right: 30,
-                    left: 20,
-                    bottom: 5,
+                    right: 180,
+                    bottom: 30,
                   }}
                 >
                   <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis className={styles.axis} stroke="white" />
+                  <XAxis
+                    className={styles.axis}
+                    stroke="white"
+                    label={{
+                      value: 'Past Matches',
+                      position: 'insideBottomRight',
+                      offset: -15,
+                    }}
+                  />
                   <YAxis className={styles.axis} stroke="white" />
 
                   <Legend
@@ -260,6 +303,7 @@ const Statistics = () => {
                       textStyle: 'bold',
                       fontWeight: '900',
                     }}
+                    verticalAlign="top"
                   />
                   <Tooltip
                     cursor={{
@@ -288,14 +332,12 @@ const Statistics = () => {
               )}
               {selected == 3 && (
                 <BarChart
-                  width={950}
+                  width={1250}
                   height={600}
                   data={data}
                   margin={{
-                    top: 20,
-                    right: 30,
-                    left: 20,
-                    bottom: 5,
+                    right: 150,
+                    bottom: 30,
                   }}
                 >
                   <CartesianGrid strokeDasharray="3 3" />
@@ -305,6 +347,7 @@ const Statistics = () => {
                       textStyle: 'bold',
                       fontWeight: '900',
                     }}
+                    verticalAlign="top"
                   />
 
                   <Tooltip
@@ -332,7 +375,16 @@ const Statistics = () => {
                     fill="yellow"
                   />
 
-                  <XAxis className={styles.axis} stroke="white" />
+                  <XAxis
+                    className={styles.axis}
+                    stroke="white"
+                    label={{
+                      value: 'Past Matches',
+                      position: 'insideBottomRight',
+                      offset: -15,
+                    }}
+                  />
+
                   <YAxis className={styles.axis} stroke="white" />
                 </BarChart>
               )}
