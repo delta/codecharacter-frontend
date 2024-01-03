@@ -1,5 +1,5 @@
 import styles from './GraphFooter.module.css';
-const GraphFooter = ({ graph, selected, setSelected }) => {
+const GraphFooter = ({ graph, selected, setSelected }: GraphFooterProps) => {
   return (
     <>
       <div className={styles.footer}>

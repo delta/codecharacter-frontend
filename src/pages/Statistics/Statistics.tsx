@@ -18,72 +18,16 @@ import { apiConfig, ApiError } from '../../api/ApiConfig';
 import { StatsApi } from '@codecharacter-2024/client';
 import { useState, useEffect } from 'react';
 import Toast from 'react-hot-toast';
+import {
+  DCToolTip,
+  LineChartToolTip,
+  AreaChartToolTip,
+  BarChartToolTip,
+} from '../../components/GraphToolTips/ToolTips';
 
-const BarChartToolTip = ({ active, payload, label }) => {
-  if (active && payload && payload.length) {
-    return (
-      <div className={styles.barChartToolTip}>
-        <ul>
-          <li className="label">{`Your Wins: ${payload[0].value}`}</li>
-          <li className="label">{`Your Losses: ${payload[1].value}`}</li>
-        </ul>
-      </div>
-    );
-  }
-
-  return null;
-};
-
-const LineChartToolTip = ({ active, payload, label }) => {
-  if (active && payload && payload.length) {
-    return (
-      <div className={styles.barChartToolTip}>
-        <ul>
-          <li className="label">{`Your Attacks ${payload[0].value}%`}</li>
-          <li className="label">{`Leaderboard Top: ${payload[1].value}%`}</li>
-        </ul>
-      </div>
-    );
-  }
-  return null;
-};
-
-const AreaChartToolTip = ({ active, payload, label }) => {
-  if (active && payload && payload.length) {
-    return (
-      <div className={styles.barChartToolTip}>
-        <div>
-          <p>Coins Used By:</p>
-          <ul>
-            <li className="label">{`You: ${payload[0].value}`}</li>
-            <li className="label">{`Leaderboard Top: ${payload[1].value}`}</li>
-          </ul>
-        </div>
-      </div>
-    );
-  }
-  return null;
-};
-const DCToolTip = ({ active, payload, label }) => {
-  if (active && payload && payload.length) {
-    return (
-      <div className={styles.barChartToolTip}>
-        <div>
-          <p>Daily Challenges Attempts Made:</p>
-          <ul>
-            <li className="label">{`You: ${payload[0].value}`}</li>
-            <li className="label">{`Leaderboard Top: ${payload[1].value}`}</li>
-          </ul>
-        </div>
-      </div>
-    );
-  }
-  return null;
-};
 const Statistics = () => {
   const [selected, setSelected] = useState(0);
   const [data, setData] = useState({});
-
   const fetchTop = () => {
     const statisticsApi = new StatsApi(apiConfig);
     statisticsApi
