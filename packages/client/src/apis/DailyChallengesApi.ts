@@ -18,7 +18,7 @@ import type {
   DailyChallengeLeaderBoardResponse,
   DailyChallengeMatchRequest,
   GenericError,
-} from '../models';
+} from '../models/index';
 
 export interface CreateDailyChallengeMatchRequest {
   dailyChallengeMatchRequest: DailyChallengeMatchRequest;

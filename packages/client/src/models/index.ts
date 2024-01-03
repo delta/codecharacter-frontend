@@ -1081,6 +1081,61 @@ export interface UpdatePasswordRequest {
   passwordConfirmation: string;
 }
 /**
+ * User Match Stats model
+ * @export
+ * @interface UserMatchStats
+ */
+export interface UserMatchStats {
+  /**
+   *
+   * @type {number}
+   * @memberof UserMatchStats
+   */
+  maxAtk: number;
+  /**
+   *
+   * @type {number}
+   * @memberof UserMatchStats
+   */
+  minAtk: number;
+  /**
+   *
+   * @type {number}
+   * @memberof UserMatchStats
+   */
+  avgAtk: number;
+  /**
+   *
+   * @type {number}
+   * @memberof UserMatchStats
+   */
+  dcWins: number;
+  /**
+   *
+   * @type {number}
+   * @memberof UserMatchStats
+   */
+  dcLosses: number;
+  /**
+   *
+   * @type {number}
+   * @memberof UserMatchStats
+   */
+  dcCompletions: number;
+  /**
+   *
+   * @type {number}
+   * @memberof UserMatchStats
+   */
+  dcDestruction: number;
+  /**
+   *
+   * @type {number}
+   * @memberof UserMatchStats
+   */
+  coins: number;
+}
+/**
  * User stats model
  * @export
  * @interface UserStats

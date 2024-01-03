@@ -1,0 +1,76 @@
+.bg {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  background-color: #00000072;
+  backdrop-filter: blur(17px);
+  flex-direction: column;
+}
+.title {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  text-style: bold;
+  transform: translateY(-40px);
+  letter-spacing: 5px;
+  font-family: monospace, sans-serif;
+  text-style: bold;
+  font-weight: 900;
+}
+.labelX {
+  font-family: monospace, sans-serif;
+  text-style: bold;
+  font-weight: 900;
+  text-style: bold;
+  font-size: 1rem;
+  width:200px;
+  color: grey;
+}
+.graphParent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent {
+  display: grid;
+  height: 100%;
+}
+
+.bg,
+.footer {
+  grid-area: 1/1;
+}
+.footer {
+  z-index: 9999;
+  background: blue;
+  height: fit-content;
+}
+.lineChart {
+}
+
+.lines {
+  stroke-width: 4px !important;
+}
+
+.axis {
+  font-family: monospace;
+  text-style: bold;
+  font-size: 1.1rem;
+  text-spacing: 5px;
+  stroke-width: 4px;
+  font-size: 1.1rem;
+  text-style: bold;
+  font-weight: 900;
+}
+
+.graphContainer {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3%;
+  width: 100vw;
+  height: 100%;
+}
+

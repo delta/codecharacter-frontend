@@ -1,0 +1,62 @@
+import styles from './styles.module.css';
+export const BarChartToolTip = ({ active, payload }: ToolTipProps) => {
+  if (active && payload && payload.length) {
+    return (
+      <div className={styles.barChartToolTip}>
+        <ul>
+          <li className="label">{`Your Wins: ${payload[0].value}`}</li>
+          <li className="label">{`Your Losses: ${payload[1].value}`}</li>
+        </ul>
+      </div>
+    );
+  }
+
+  return null;
+};
+
+export const LineChartToolTip = ({ active, payload }: ToolTipProps) => {
+  if (active && payload && payload.length) {
+    return (
+      <div className={styles.barChartToolTip}>
+        <ul>
+          <li className="label">{`Your Attacks ${payload[0].value}%`}</li>
+          <li className="label">{`Leaderboard Top: ${payload[1].value}%`}</li>
+        </ul>
+      </div>
+    );
+  }
+  return null;
+};
+
+export const AreaChartToolTip = ({ active, payload }: ToolTipProps) => {
+  if (active && payload && payload.length) {
+    return (
+      <div className={styles.barChartToolTip}>
+        <div>
+          <p>Coins Used By:</p>
+          <ul>
+            <li className="label">{`You: ${payload[0].value}`}</li>
+            <li className="label">{`Leaderboard Top: ${payload[1].value}`}</li>
+          </ul>
+        </div>
+      </div>
+    );
+  }
+  return null;
+};
+export const DCToolTip = ({ active, payload }: ToolTipProps) => {
+  if (active && payload && payload.length) {
+    return (
+      <div className={styles.barChartToolTip}>
+        <div>
+          <p>Daily Challenges Attempts Made:</p>
+          <ul>
+            <li className="label">{`You: ${payload[0].value}`}</li>
+            <li className="label">{`Leaderboard Top: ${payload[1].value}`}</li>
+          </ul>
+        </div>
+      </div>
+    );
+  }
+  return null;
+};

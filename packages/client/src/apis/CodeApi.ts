@@ -20,7 +20,7 @@ import type {
   CreateCodeRevisionRequest,
   GenericError,
   UpdateLatestCodeRequest,
-} from '../models';
+} from '../models/index';
 
 export interface CreateCodeRevisionOperationRequest {
   createCodeRevisionRequest: CreateCodeRevisionRequest;

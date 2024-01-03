@@ -13,7 +13,7 @@
  */
 
 import * as runtime from '../runtime';
-import type { CreateMatchRequest, GenericError, Match } from '../models';
+import type { CreateMatchRequest, GenericError, Match } from '../models/index';
 
 export interface CreateMatchOperationRequest {
   createMatchRequest: CreateMatchRequest;
