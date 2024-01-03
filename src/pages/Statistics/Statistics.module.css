@@ -73,18 +73,4 @@
   width: 100vw;
   height: 100%;
 }
-.barChartToolTip {
-  background-color: #1a1a1aca;
-  backdrop-filter: blur(65px);
-  color: white;
-  font-family: monospace;
-  font-size: 1rem;
-  text-style: bold;
-  font-weight: 900;
-  padding: 10px;
-  padding-bottom: 0px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+

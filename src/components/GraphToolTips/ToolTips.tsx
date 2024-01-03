@@ -1,3 +1,4 @@
+import styles from './styles.module.css';
 export const BarChartToolTip = ({ active, payload }: ToolTipProps) => {
   if (active && payload && payload.length) {
     return (
