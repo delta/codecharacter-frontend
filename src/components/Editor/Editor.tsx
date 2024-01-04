@@ -123,13 +123,8 @@ export default function CodeEditor(props: Editors.Props): JSX.Element {
   let languageClientRef: MonacoLanguageClient | null = null;
   let wsClientRef: WebSocket | null = null;
 
-  console.info(userCode);
-  console.info(language);
-
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const createEditor = (editor: any, monaco: any) => {
-    editor.setValue(userCode);
-
     editor.updateOptions({
       fontSize: fontSize,
       cursorStyle:
@@ -156,6 +151,9 @@ export default function CodeEditor(props: Editors.Props): JSX.Element {
         enabled: true,
       },
     });
+    console.info(userCode);
+    monaco.Uri.parse(workSpace != null ? workSpace.filepath : '');
+    editor.setValue(userCode);
 
     let wsClient: WebSocket;
     let languageClient: MonacoLanguageClient;
@@ -164,7 +162,6 @@ export default function CodeEditor(props: Editors.Props): JSX.Element {
       const url = `${lspUrl}/${
         props.language == 'c_cpp' ? 'cpp' : props.language
       }`;
-      console.log(url);
       wsClient = new WebSocket(url);
       wsClient.onopen = () => {
         const updater = {
@@ -188,30 +185,6 @@ export default function CodeEditor(props: Editors.Props): JSX.Element {
           workSpace = workspace;
           webSocket = wsClient;
           filePathMessageReader.dispose();
-
-          monaco?.editor.createModel(
-            userCode,
-            language == 'c_cpp' ? 'cpp' : language,
-            monaco.Uri.parse(workSpace != null ? workSpace.filepath : ''),
-          );
-          editor?.onDidChangeModelContent(() => {
-            if (webSocket != null) {
-              const currUpdater = {
-                operation: 'fileUpdate',
-                code: editor.getValue(),
-              };
-              webSocket.send(JSON.stringify(currUpdater));
-            }
-            const codeNlanguage: CodeAndLanguage = {
-              currentUserCode: editor.getValue(),
-              currentUserLanguage: language,
-            };
-            if (props.page == 'Dashboard') {
-              dispatch(updateUserCode(codeNlanguage));
-            } else {
-              dispatch(changeDcCode(codeNlanguage));
-            }
-          });
 
           MonacoServices.install({
             workspaceFolders: [
@@ -286,7 +259,7 @@ export default function CodeEditor(props: Editors.Props): JSX.Element {
   function handleEditorDidMount(editor: any, monaco: any) {
     monacoRef.current = monaco;
     editorRef.current = editor;
-    createEditor(editor, monaco);
+    createEditor(editorRef.current, monacoRef.current);
   }
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -312,6 +285,28 @@ export default function CodeEditor(props: Editors.Props): JSX.Element {
       aliases: ['Java', 'java'],
     });
   }
+
+  useEffect(() => {
+    if (webSocket != null) {
+      const currUpdater = {
+        operation: 'fileUpdate',
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        code: (editorRef.current as any).getValue(),
+      };
+      webSocket.send(JSON.stringify(currUpdater));
+    }
+    const codeNlanguage: CodeAndLanguage = {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      currentUserCode: (editorRef.current as any).getValue(),
+      currentUserLanguage: language,
+    };
+    if (props.page == 'Dashboard') {
+      dispatch(updateUserCode(codeNlanguage));
+    } else {
+      dispatch(changeDcCode(codeNlanguage));
+    }
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  }, [(editorRef.current as any).getValue()]);
 
   return (
     <Editor
