@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Col, Modal, Row } from 'react-bootstrap';
 
 import { IsInfoOpen, isInfoOpened } from '../../store/EditorSettings/settings';
@@ -9,11 +10,14 @@ import {
   dailyChallengePageState,
   dcDescription,
 } from '../../store/DailyChallenge/dailyChallenge';
+import {
+  tutorialDescription,
+  tutorialCode,
+} from '../../store/Tutorials/tutorials';
 
 const EditorInfo = (): JSX.Element => {
   const homePageState = useAppSelector(dailyChallengePageState);
   const dailyChallengeDescription = useAppSelector(dcDescription);
-
   const isInfoOpen = useAppSelector(IsInfoOpen);
 
   const dispatch = useAppDispatch();

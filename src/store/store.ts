@@ -13,7 +13,7 @@ import settingsReducer from './EditorSettings/settings';
 import logReducer from './rendererLogs/logSlice';
 import selfMatchModalReducer from './SelfMatchMakeModal/SelfMatchModal';
 import dailyChallengeReducer from './DailyChallenge/dailyChallenge';
-
+import tutorialReducer from './Tutorials/tutorials';
 const reducers = combineReducers({
   editorState: editorReducer,
   settingsState: settingsReducer,
@@ -36,6 +36,7 @@ export const store = configureStore({
     logs: logReducer,
     selfMatchModal: selfMatchModalReducer,
     dailyChallenge: dailyChallengeReducer,
+    tutorials: tutorialReducer,
   },
   middleware: [thunk],
 });

@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: CodeCharacter API
-  version: 2023.0.1
+  version: 2024.0.1
   contact:
     name: CodeCharacter Authors
     url: 'https://delta.nitt.edu'
@@ -1293,6 +1293,33 @@ paths:
       tags:
         - Daily Challenges
 
+  '/codetutorial/get/{tutorialNumber}':
+    get:
+      summary: Get tutorial by number
+      description: Get a single tutorial
+      operationId: getTutorialByNumber
+      parameters:
+        - name: tutorialNumber
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TutorialsGetRequest'
+        401:
+          description: Unauthorized
+        403:
+          description: Forbidden
+        404:
+          description: Not found
+      tags:
+        - Tutorials
+
 components:
   schemas:
     PasswordLoginRequest:
@@ -1938,6 +1965,44 @@ components:
         - user
         - stats
       description: Leaderboard entry model
+    TutorialsGetRequest:
+      title: Get tutorials
+      description: Get the game tutorials
+      type: object
+      properties:
+        tutorialId:
+          type: integer
+          example: 1
+        tutorialName:
+          type: string
+          example: Tutorial for Spawning attacker
+        tutorialType:
+          $ref: '#/components/schemas/ChallengeType'
+        description:
+          type: string
+          example: Brief description of how the code works
+        tutorialCodes:
+          $ref: '#/components/schemas/TutorialCodeObject'
+      required:
+        - tutorialName
+        - tutorialCodes
+
+    TutorialCodeObject:
+      title: Tutorial Code Object
+      description: The object containing the code for the tutorial
+      type: object
+      properties:
+        cpp:
+          type: string
+          example: This would have the cpp code for the tutorial
+        java:
+          type: string
+          example: This would have the java code for the tutorial
+        python:
+          type: string
+          example: This would have the python code for the tutorial
+        image:
+          type: string
 
     DailyChallengeGetRequest:
       title: Get daily challenge

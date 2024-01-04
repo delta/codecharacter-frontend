@@ -1,8 +1,10 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import {
   CodeApi,
   Language,
   DailyChallengesApi,
   CurrentUserApi,
+  TutorialsApi,
 } from '@codecharacter-2024/client';
 import { RendererComponent } from '@codecharacter-2024/renderer';
 import Toast from 'react-hot-toast';
@@ -42,7 +44,7 @@ import {
   mapCommitNameChanged,
 } from '../../store/SelfMatchMakeModal/SelfMatchModal';
 import { loggedIn, user } from '../../store/User/UserSlice';
-
+import * as React from 'react';
 import {
   IsSettingsOpen,
   IsInfoOpen,
@@ -62,7 +64,14 @@ import {
   dcCode,
   dcSimulation,
 } from '../../store/DailyChallenge/dailyChallenge';
-
+import {
+  tutorialState,
+  initializeTutorialState,
+  changeTutorialLanguage,
+  tutorialCode,
+  tutorialCodeLanguage,
+  tutorialSimulation,
+} from '../../store/Tutorials/tutorials';
 import Tour from '../../components/TourProvider/TourProvider';
 import { EditorSteps } from '../../components/TourProvider/EditorSteps';
 import { useNavigate } from 'react-router-dom';
@@ -122,13 +131,20 @@ export default function Dashboard(): JSX.Element {
   const dailyChallenge = useAppSelector(dailyChallengeState);
   const pageState = useAppSelector(dailyChallengePageState);
   const dailyChallengeSimulationState = useAppSelector(dcSimulation);
+  const tutorialsCode = useAppSelector(tutorialCode);
+  const tutorial = useAppSelector(tutorialState);
+  const tutorialSimulationState = useAppSelector(tutorialSimulation);
   const userLanguage =
     pageState == 'Dashboard'
       ? useAppSelector(UserLanguage)
-      : useAppSelector(dcCodeLanguage);
+      : pageState == 'DailyChallenge'
+      ? useAppSelector(dcCodeLanguage)
+      : useAppSelector(tutorialCodeLanguage);
 
   const codeAPI = new CodeApi(apiConfig);
   const dailyChallengeAPI = new DailyChallengesApi(apiConfig);
+  const tutorialAPI = new TutorialsApi(apiConfig);
+  const [tutorialNumber, setTutorialNumber] = React.useState(0);
   useEffect(() => {
     const cookieValue = document.cookie;
     const bearerToken = cookieValue.split(';');
@@ -151,6 +167,15 @@ export default function Dashboard(): JSX.Element {
           if (err instanceof ApiError) Toast.error(err.message);
         });
     }
+    tutorialAPI
+      .getTutorialByNumber(tutorialNumber)
+      .then(response => {
+        dispatch(initializeTutorialState(response));
+        console.log(tutorial.tutorialCodes);
+      })
+      .catch(err => {
+        if (err instanceof ApiError) Toast.error(err.message);
+      });
   }, []);
 
   useEffect(() => {
@@ -179,21 +204,21 @@ export default function Dashboard(): JSX.Element {
       case 'C++':
         pageState == 'Dashboard'
           ? dispatch(changeLanguage('c_cpp'))
-          : dispatch(changeDcLanguage('c_cpp'));
+          : dispatch(changeTutorialLanguage('c_cpp'));
         setLanguageChose('C++');
         localStorage.setItem('languageChose', 'C++');
         break;
       case 'Python':
         pageState == 'Dashboard'
           ? dispatch(changeLanguage('python'))
-          : dispatch(changeDcLanguage('python'));
+          : dispatch(changeTutorialLanguage('python'));
         setLanguageChose('Python');
         localStorage.setItem('languageChose', 'Python');
         break;
       case 'Java':
         pageState == 'Dashboard'
           ? dispatch(changeLanguage('java'))
-          : dispatch(changeDcLanguage('java'));
+          : dispatch(changeTutorialLanguage('java'));
         setLanguageChose('Java');
         localStorage.setItem('languageChose', 'Java');
         break;
@@ -201,7 +226,7 @@ export default function Dashboard(): JSX.Element {
         dispatch(changeLanguage('c_cpp'));
     }
   };
-
+  console.log(userLanguage);
   const handleSave = () => {
     let languageType: Language = Language.Cpp;
     if (userLanguage === 'c_cpp') languageType = Language.Cpp;
@@ -210,8 +235,16 @@ export default function Dashboard(): JSX.Element {
 
     codeAPI
       .updateLatestCode({
-        codeType: pageState == 'Dashboard' ? 'NORMAL' : 'DAILY_CHALLENGE',
-        code: pageState == 'Dashboard' ? userCode : dailyChallengeCode,
+        codeType:
+          pageState == 'Dashboard' || pageState == 'Tutorials'
+            ? 'NORMAL'
+            : 'DAILY_CHALLENGE',
+        code:
+          pageState == 'Dashboard'
+            ? userCode
+            : pageState == 'DailyChallenge'
+            ? dailyChallengeCode
+            : tutorialsCode,
         lock: false,
         language: languageType,
       })
@@ -260,13 +293,21 @@ export default function Dashboard(): JSX.Element {
 
     codeAPI
       .updateLatestCode({
-        codeType: pageState == 'Dashboard' ? 'NORMAL' : 'DAILY_CHALLENGE',
-        code: pageState == 'Dashboard' ? userCode : dailyChallengeCode,
+        codeType:
+          pageState == 'Dashboard' || pageState == 'Tutorials'
+            ? 'NORMAL'
+            : 'DAILY_CHALLENGE',
+        code:
+          pageState == 'Dashboard'
+            ? userCode
+            : pageState == 'DailyChallenge'
+            ? dailyChallengeCode
+            : tutorialsCode,
         lock: true,
         language: languageType,
       })
       .then(() => {
-        if (pageState == 'Dashboard') {
+        if (pageState == 'Dashboard' || pageState == 'Tutorials') {
           Toast.success('Code Submitted');
         }
       })
@@ -333,7 +374,9 @@ export default function Dashboard(): JSX.Element {
             minSize={520}
           >
             <div className={styles.leftPane}>
-              {pageState == 'Dashboard' || dailyChallenge.challType == 'MAP' ? (
+              {pageState == 'Dashboard' ||
+              dailyChallenge.challType == 'MAP' ||
+              pageState == 'Tutorials' ? (
                 <ButtonToolbar
                   className={
                     styles.toolbar +
@@ -371,7 +414,10 @@ export default function Dashboard(): JSX.Element {
                         className={styles.toolbarColumn}
                         sm="1"
                         style={{
-                          marginLeft: pageState == 'Dashboard' ? 0 : '20%',
+                          marginLeft:
+                            pageState == 'Dashboard' || pageState == 'Tutorials'
+                              ? 0
+                              : '20%',
                         }}
                       >
                         <button
@@ -386,7 +432,7 @@ export default function Dashboard(): JSX.Element {
                           />
                         </button>
                       </Col>
-                      {pageState == 'Dashboard' ? (
+                      {pageState == 'Dashboard' || pageState == 'Tutorials' ? (
                         <>
                           <Col className={styles.toolbarColumn} sm="1">
                             <button
@@ -513,7 +559,8 @@ export default function Dashboard(): JSX.Element {
               )}
               <div className={styles.editorContainer} id="CodeEditor">
                 {pageState == 'Dashboard' ||
-                dailyChallenge.challType == 'MAP' ? (
+                dailyChallenge.challType == 'MAP' ||
+                pageState == 'Tutorials' ? (
                   <Editor
                     language={userLanguage}
                     page={pageState}

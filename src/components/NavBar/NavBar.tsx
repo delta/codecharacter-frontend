@@ -17,6 +17,7 @@ import { apiConfig, ApiError } from '../../api/ApiConfig';
 import Toast from 'react-hot-toast';
 import DashboardOptions from '../DashboardOptions/DashboardOptions';
 import { cookieDomain, dcEnable } from '../../config/config';
+import Button from 'react-bootstrap/Button';
 
 import signUpIcon from '../../assets/sign_up.svg';
 import signInIcon from '../../assets/sign_in.svg';
@@ -29,6 +30,7 @@ import {
   changeSimulationState,
   dailyChallengeCompletionState,
 } from '../../store/DailyChallenge/dailyChallenge';
+import ViewTutorial from '../TutorialModals/ViewTutorial';
 
 const NavBar: React.FunctionComponent = () => {
   const dispatch = useAppDispatch();
@@ -102,8 +104,17 @@ const NavBar: React.FunctionComponent = () => {
 
   const [showCompleted, setShowCompleted] = useState(false);
   const handleCloseCompleted = () => {
+    dispatch(changePageState('Dashboard'));
+    navigate('/dashboard', { replace: true });
     //Add logic for redirection to view dc leaderboard once done
     setShowCompleted(false);
+  };
+
+  const [showTutorial, setShowTutorial] = useState(false);
+  const handleTutorialTake = () => {
+    dispatch(changePageState('Tutorials'));
+    navigate('/dashboard', { replace: true });
+    setShowTutorial(false);
   };
 
   return (
@@ -117,6 +128,11 @@ const NavBar: React.FunctionComponent = () => {
         show={showAvailable}
         handleClose={handleCloseAvailable}
         handleTake={handleTake}
+      />
+      <ViewTutorial
+        show={showTutorial}
+        handleTutorialClose={handleCloseCompleted}
+        handleTutorialTake={handleTutorialTake}
       />
       <div className={styles.navBarContainer}>
         <div className={styles.branding}>
@@ -157,6 +173,14 @@ const NavBar: React.FunctionComponent = () => {
       location.pathname != '/' ? (
         <div className={styles.profileIcons}>
           <div className={styles.notifIconContainer}>
+            <Button
+              variant="primary"
+              onClick={() => {
+                setShowTutorial(true);
+              }}
+            >
+              Launch Tutorial
+            </Button>
             {dcEnable ? (
               <img
                 src={dcCompletionstatus ? challengeDone : challengeAvailable}

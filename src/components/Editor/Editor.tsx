@@ -45,7 +45,12 @@ import { lspUrl } from '../../config/config';
 import {
   dcCode,
   changeDcCode,
+  dailyChallengePageState,
 } from '../../store/DailyChallenge/dailyChallenge';
+import {
+  tutorialState,
+  changeTutorialCode,
+} from '../../store/Tutorials/tutorials';
 import { buildWorkerDefinition } from 'monaco-editor-workers';
 import { Uri } from 'vscode';
 
@@ -57,17 +62,18 @@ buildWorkerDefinition(
 
 export default function CodeEditor(props: Editor.Props): JSX.Element {
   const divCodeEditor = useRef<HTMLDivElement>(null);
-  const userCode: string =
-    props.page == 'Dashboard'
-      ? useAppSelector(UserCode)
-      : useAppSelector(dcCode);
   const fontSize: number = useAppSelector(FontSize);
   const theme: string = useAppSelector(Theme);
   const autocomplete: boolean = useAppSelector(Autocomplete);
   const dispatch: React.Dispatch<unknown> = useAppDispatch();
 
+  const tutorial = useAppSelector(tutorialState);
   const keyboardHandler = useAppSelector(KeyboardHandler);
-
+  const pageState = useAppSelector(dailyChallengePageState);
+  const userCode: string =
+    props.page == 'Dashboard'
+      ? useAppSelector(UserCode)
+      : useAppSelector(dcCode);
   const language = props.language;
 
   monaco.languages.register({
@@ -115,7 +121,13 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
   ) => {
     const editor = monaco.editor.create(divref, {
       model: monaco.editor.createModel(
-        userCode,
+        pageState == 'Tutorials' && language == 'c_cpp'
+          ? tutorial.tutorialCodes.cpp
+          : pageState == 'Tutorials' && language == 'python'
+          ? tutorial.tutorialCodes.python
+          : pageState == 'Tutorials' && language == 'python'
+          ? tutorial.tutorialCodes.java
+          : userCode,
         language == 'c_cpp' ? 'cpp' : language,
         monaco.Uri.parse(workspace != null ? workspace.filepath : ''),
       ),
@@ -158,8 +170,10 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
       };
       if (props.page == 'Dashboard') {
         dispatch(updateUserCode(codeNlanguage));
-      } else {
+      } else if (props.page == 'DailyChallenge') {
         dispatch(changeDcCode(codeNlanguage));
+      } else {
+        dispatch(changeTutorialCode(codeNlanguage));
       }
     });
 
@@ -171,7 +185,7 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
 
     //Keybinding for Simulate -> CTRL+ALT+N
 
-    if (props.page == 'Dashboard') {
+    if (props.page == 'Dashboard' || props.page == 'Tutorials') {
       editor.addCommand(
         monaco.KeyMod.CtrlCmd | monaco.KeyMod.Alt | monaco.KeyCode.KeyN,
         function () {
