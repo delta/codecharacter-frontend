@@ -1,7 +1,36 @@
+import { useEffect, useRef } from 'react';
+import { Editor, loader } from '@monaco-editor/react';
 import * as Editors from './EditorTypes';
 import styles from './style.module.css';
-import { useRef, useEffect } from 'react';
-import { useMonaco } from '@monaco-editor/react';
+import * as monaco from 'monaco-editor';
+
+import editorWorker from 'monaco-editor/esm/vs/editor/editor.worker?worker';
+import jsonWorker from 'monaco-editor/esm/vs/language/json/json.worker?worker';
+import cssWorker from 'monaco-editor/esm/vs/language/css/css.worker?worker';
+import htmlWorker from 'monaco-editor/esm/vs/language/html/html.worker?worker';
+import tsWorker from 'monaco-editor/esm/vs/language/typescript/ts.worker?worker';
+
+self.MonacoEnvironment = {
+  getWorker(_, label) {
+    if (label === 'json') {
+      return new jsonWorker();
+    }
+    if (label === 'css' || label === 'scss' || label === 'less') {
+      return new cssWorker();
+    }
+    if (label === 'html' || label === 'handlebars' || label === 'razor') {
+      return new htmlWorker();
+    }
+    if (label === 'typescript' || label === 'javascript') {
+      return new tsWorker();
+    }
+    return new editorWorker();
+  },
+};
+
+loader.config({ monaco });
+loader.init();
+
 import {
   MonacoLanguageClient,
   CloseAction,
@@ -46,8 +75,8 @@ import {
   dcCode,
   changeDcCode,
 } from '../../store/DailyChallenge/dailyChallenge';
-import { buildWorkerDefinition } from 'monaco-editor-workers';
 import { Uri } from 'vscode';
+import { buildWorkerDefinition } from 'monaco-editor-workers';
 
 buildWorkerDefinition(
   '../../node_modules/monaco-editor-workers/dist/workers',
@@ -56,38 +85,8 @@ buildWorkerDefinition(
 );
 
 export default function CodeEditor(props: Editors.Props): JSX.Element {
-  const monaco = useMonaco();
-
-  monaco?.languages.register({
-    id: 'cpp',
-    extensions: ['.cpp'],
-    aliases: ['CPlusPlus', 'cpp', 'CPP', 'C++', 'c++'],
-  });
-  monaco?.languages.register({
-    id: 'python',
-    extensions: ['.py'],
-    aliases: ['Python', 'py'],
-  });
-
-  monaco?.languages.register({
-    id: 'java',
-    extensions: ['.java', '.jar', '.class', '.jav'],
-    aliases: ['Java', 'java'],
-  });
-
-  const divCodeEditor = useRef<HTMLDivElement>(null);
-  const userCode: string =
-    props.page == 'Dashboard'
-      ? useAppSelector(UserCode)
-      : useAppSelector(dcCode);
-  const fontSize: number = useAppSelector(FontSize);
-  const theme: string = useAppSelector(Theme);
-  const autocomplete: boolean = useAppSelector(Autocomplete);
-  const dispatch: React.Dispatch<unknown> = useAppDispatch();
-
-  const keyboardHandler = useAppSelector(KeyboardHandler);
-
-  const language = props.language;
+  const monacoRef = useRef(null);
+  const editorRef = useRef(null);
 
   const createLanguageClient = (
     transports: MessageTransports,
@@ -109,18 +108,29 @@ export default function CodeEditor(props: Editors.Props): JSX.Element {
     });
   };
 
-  const createEditor = (
-    divref: HTMLDivElement,
-    workspace: Editors.Workspace | null,
-    websocket: WebSocket | null,
-  ) => {
-    if (!monaco) return;
-    const editor = monaco.editor.create(divref, {
-      model: monaco?.editor.createModel(
-        userCode,
-        language == 'c_cpp' ? 'cpp' : language,
-        monaco.Uri.parse(workspace != null ? workspace.filepath : ''),
-      ),
+  const userCode: string =
+    props.page == 'Dashboard'
+      ? useAppSelector(UserCode)
+      : useAppSelector(dcCode);
+  const fontSize: number = useAppSelector(FontSize);
+  const theme: string = useAppSelector(Theme);
+  const autocomplete: boolean = useAppSelector(Autocomplete);
+  const dispatch: React.Dispatch<unknown> = useAppDispatch();
+  const keyboardHandler = useAppSelector(KeyboardHandler);
+  const language = props.language;
+  let workSpace: Editors.Workspace | null = null;
+  let webSocket: WebSocket | null = null;
+  let languageClientRef: MonacoLanguageClient | null = null;
+  let wsClientRef: WebSocket | null = null;
+
+  console.info(userCode);
+  console.info(language);
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const createEditor = (editor: any, monaco: any) => {
+    editor.setValue(userCode);
+
+    editor.updateOptions({
       fontSize: fontSize,
       cursorStyle:
         keyboardHandler == 'emacs'
@@ -146,28 +156,91 @@ export default function CodeEditor(props: Editors.Props): JSX.Element {
         enabled: true,
       },
     });
-    editor.onDidChangeModelContent(() => {
-      if (websocket != null) {
-        const currUpdater = {
+
+    let wsClient: WebSocket;
+    let languageClient: MonacoLanguageClient;
+
+    if (autocomplete) {
+      const url = `${lspUrl}/${
+        props.language == 'c_cpp' ? 'cpp' : props.language
+      }`;
+      console.log(url);
+      wsClient = new WebSocket(url);
+      wsClient.onopen = () => {
+        const updater = {
           operation: 'fileUpdate',
-          code: editor.getValue(),
+          code: userCode,
         };
-        websocket.send(JSON.stringify(currUpdater));
-      }
-      const codeNlanguage: CodeAndLanguage = {
-        currentUserCode: editor.getValue(),
-        currentUserLanguage: language,
+        wsClient.send(JSON.stringify(updater));
+        const filePathRequest = {
+          operation: 'getAbsPath',
+        };
+        wsClient.send(JSON.stringify(filePathRequest));
+
+        const socket = toSocket(wsClient);
+        const filePathMessageReader = new WebSocketMessageReader(socket);
+        filePathMessageReader.listen((message: Message) => {
+          const fileInfo = message as Message & Editors.Workspace;
+          const workspace: Editors.Workspace = {
+            filepath: fileInfo.filepath,
+            folderpath: fileInfo.folderpath,
+          };
+          workSpace = workspace;
+          webSocket = wsClient;
+          filePathMessageReader.dispose();
+
+          monaco?.editor.createModel(
+            userCode,
+            language == 'c_cpp' ? 'cpp' : language,
+            monaco.Uri.parse(workSpace != null ? workSpace.filepath : ''),
+          );
+          editor?.onDidChangeModelContent(() => {
+            if (webSocket != null) {
+              const currUpdater = {
+                operation: 'fileUpdate',
+                code: editor.getValue(),
+              };
+              webSocket.send(JSON.stringify(currUpdater));
+            }
+            const codeNlanguage: CodeAndLanguage = {
+              currentUserCode: editor.getValue(),
+              currentUserLanguage: language,
+            };
+            if (props.page == 'Dashboard') {
+              dispatch(updateUserCode(codeNlanguage));
+            } else {
+              dispatch(changeDcCode(codeNlanguage));
+            }
+          });
+
+          MonacoServices.install({
+            workspaceFolders: [
+              {
+                uri: Uri.parse(workspace.folderpath),
+                name: 'Workspace',
+                index: 1,
+              },
+            ],
+          });
+          wsClientRef = wsClient;
+          const newSocket = toSocket(wsClient);
+          const writer = new WebSocketMessageWriter(newSocket);
+          const reader = new WebSocketMessageReader(newSocket);
+          languageClient = createLanguageClient({
+            reader,
+            writer,
+          });
+          languageClientRef = languageClient;
+          languageClient.start();
+          reader.onClose(() => languageClient.stop());
+        });
       };
-      if (props.page == 'Dashboard') {
-        dispatch(updateUserCode(codeNlanguage));
-      } else {
-        dispatch(changeDcCode(codeNlanguage));
-      }
-    });
+    }
     //Keybinding for save -> CTRL+S
     editor.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.KeyS, function () {
       props.SaveRef.current?.click();
     });
+
     //Keybinding for Simulate -> CTRL+ALT+N
     if (props.page == 'Dashboard') {
       editor.addCommand(
@@ -180,6 +253,7 @@ export default function CodeEditor(props: Editors.Props): JSX.Element {
           dispatch(mapCommitIDChanged(null));
         },
       );
+
       //Keybinding for Commit -> CTRL+K
       editor.addCommand(
         monaco.KeyMod.CtrlCmd | monaco.KeyCode.KeyK,
@@ -188,6 +262,7 @@ export default function CodeEditor(props: Editors.Props): JSX.Element {
         },
       );
     }
+
     //Keybinding for Submit -> CTRL+SHIFT+S
     editor.addCommand(
       monaco.KeyMod.CtrlCmd | monaco.KeyMod.Shift | monaco.KeyCode.KeyS,
@@ -195,83 +270,56 @@ export default function CodeEditor(props: Editors.Props): JSX.Element {
         props.SubmitRef.current?.click();
       },
     );
-    return editor;
   };
 
   useEffect(() => {
-    if (!divCodeEditor.current) return;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    let editor: any;
-    let languageClient: MonacoLanguageClient;
-    let wsClient: WebSocket;
-    if (autocomplete) {
-      const url = `${lspUrl}/${
-        props.language == 'c_cpp' ? 'cpp' : props.language
-      }`;
-      wsClient = new WebSocket(url);
-      wsClient.onopen = () => {
-        const updater = {
-          operation: 'fileUpdate',
-          code: userCode,
-        };
-        wsClient.send(JSON.stringify(updater));
-        const filePathRequest = {
-          operation: 'getAbsPath',
-        };
-        wsClient.send(JSON.stringify(filePathRequest));
-        const socket = toSocket(wsClient);
-        const filePathMessageReader = new WebSocketMessageReader(socket);
-        filePathMessageReader.listen((message: Message) => {
-          const fileInfo = message as Message & Editors.Workspace;
-          const workspace: Editors.Workspace = {
-            filepath: fileInfo.filepath,
-            folderpath: fileInfo.folderpath,
-          };
-          filePathMessageReader.dispose();
-          editor = createEditor(
-            divCodeEditor.current as HTMLDivElement,
-            workspace,
-            wsClient,
-          );
-          MonacoServices.install({
-            workspaceFolders: [
-              {
-                uri: Uri.parse(workspace.folderpath),
-                name: 'Workspace',
-                index: 1,
-              },
-            ],
-          });
-          const newSocket = toSocket(wsClient);
-          const writer = new WebSocketMessageWriter(newSocket);
-          const reader = new WebSocketMessageReader(newSocket);
-          languageClient = createLanguageClient({
-            reader,
-            writer,
-          });
-          languageClient.start();
-          reader.onClose(() => languageClient.stop());
-        });
-      };
-    } else {
-      editor = createEditor(divCodeEditor.current, null, null);
-    }
-    return () => {
-      languageClient?.stop();
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      monaco?.editor?.getModels().forEach((model: any) => model.dispose());
-      editor?.dispose();
-      wsClient?.close(1000);
-    };
-  }, [
-    fontSize,
-    theme,
-    language,
-    keyboardHandler,
-    props.page,
-    autocomplete,
-    monaco,
-  ]);
+    if (!editorRef.current && !monacoRef.current) return;
+    createEditor(editorRef.current, monacoRef.current);
 
-  return <div className={styles.Editor} ref={divCodeEditor}></div>;
+    return () => {
+      languageClientRef?.stop();
+      wsClientRef?.close();
+    };
+  }, [fontSize, theme, language, keyboardHandler, props.page, autocomplete]);
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  function handleEditorDidMount(editor: any, monaco: any) {
+    monacoRef.current = monaco;
+    editorRef.current = editor;
+    createEditor(editor, monaco);
+  }
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  function handleEditorWillMount(monaco: any) {
+    // Register C++ language
+    monaco.languages.register({
+      id: 'cpp',
+      extensions: ['.cpp'],
+      aliases: ['CPlusPlus', 'cpp', 'CPP', 'C++', 'c++'],
+    });
+
+    // Register Python language
+    monaco.languages.register({
+      id: 'python',
+      extensions: ['.py'],
+      aliases: ['Python', 'py'],
+    });
+
+    // Register Java language
+    monaco.languages.register({
+      id: 'java',
+      extensions: ['.java', '.jar', '.class', '.jav'],
+      aliases: ['Java', 'java'],
+    });
+  }
+
+  return (
+    <Editor
+      defaultLanguage={language}
+      defaultValue={userCode}
+      onMount={handleEditorDidMount}
+      beforeMount={handleEditorWillMount}
+      className={styles.editor}
+    />
+  );
 }
