@@ -151,14 +151,14 @@ export default function CodeEditor(props: Editors.Props): JSX.Element {
         enabled: true,
       },
     });
-    console.info(userCode);
     monaco.Uri.parse(workSpace != null ? workSpace.filepath : '');
-    editor.setValue(userCode);
 
     let wsClient: WebSocket;
     let languageClient: MonacoLanguageClient;
 
-    if (autocomplete) {
+    if (autocomplete && userCode) {
+      editor.setValue(userCode);
+
       const url = `${lspUrl}/${
         props.language == 'c_cpp' ? 'cpp' : props.language
       }`;
@@ -253,7 +253,17 @@ export default function CodeEditor(props: Editors.Props): JSX.Element {
       languageClientRef?.stop();
       wsClientRef?.close();
     };
-  }, [fontSize, theme, language, keyboardHandler, props.page, autocomplete]);
+  }, [
+    fontSize,
+    theme,
+    language,
+    keyboardHandler,
+    props.page,
+    autocomplete,
+    userCode,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (editorRef.current as any)?.getValue(),
+  ]);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   function handleEditorDidMount(editor: any, monaco: any) {
@@ -286,12 +296,12 @@ export default function CodeEditor(props: Editors.Props): JSX.Element {
     });
   }
 
-  useEffect(() => {
+  function handleEditorChange() {
     if (webSocket != null) {
       const currUpdater = {
         operation: 'fileUpdate',
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        code: (editorRef.current as any).getValue(),
+        code: (editorRef.current as any)?.getValue(),
       };
       webSocket.send(JSON.stringify(currUpdater));
     }
@@ -305,15 +315,14 @@ export default function CodeEditor(props: Editors.Props): JSX.Element {
     } else {
       dispatch(changeDcCode(codeNlanguage));
     }
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  }, [(editorRef.current as any).getValue()]);
+  }
 
   return (
     <Editor
       defaultLanguage={language}
-      defaultValue={userCode}
       onMount={handleEditorDidMount}
       beforeMount={handleEditorWillMount}
+      onChange={handleEditorChange}
       className={styles.editor}
     />
   );
