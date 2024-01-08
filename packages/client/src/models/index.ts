@@ -114,6 +114,31 @@ export interface CodeRevision {
   createdAt: Date;
 }
 /**
+ * Request Model for the tutorial mode
+ * @export
+ * @interface CodeTutorialMatchRequest
+ */
+export interface CodeTutorialMatchRequest {
+  /**
+   *
+   * @type {string}
+   * @memberof CodeTutorialMatchRequest
+   */
+  value: string;
+  /**
+   *
+   * @type {Language}
+   * @memberof CodeTutorialMatchRequest
+   */
+  language?: Language;
+  /**
+   *
+   * @type {number}
+   * @memberof CodeTutorialMatchRequest
+   */
+  codeTutorialNumber: number;
+}
+/**
  *
  * @export
  * @enum {string}
@@ -309,6 +334,12 @@ export interface CurrentUserProfile {
    * @memberof CurrentUserProfile
    */
   tutorialLevel: number;
+  /**
+   *
+   * @type {number}
+   * @memberof CurrentUserProfile
+   */
+  codeTutorialLevel?: number;
   /**
    *
    * @type {TierType}

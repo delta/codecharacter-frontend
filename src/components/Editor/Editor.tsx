@@ -50,6 +50,7 @@ import {
 import {
   tutorialState,
   changeTutorialCode,
+  tutorialCode,
 } from '../../store/Tutorials/tutorials';
 import { buildWorkerDefinition } from 'monaco-editor-workers';
 import { Uri } from 'vscode';
@@ -68,14 +69,18 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
   const dispatch: React.Dispatch<unknown> = useAppDispatch();
 
   const tutorial = useAppSelector(tutorialState);
+  const tutorialC = useAppSelector(tutorialCode);
   const keyboardHandler = useAppSelector(KeyboardHandler);
   const pageState = useAppSelector(dailyChallengePageState);
   const userCode: string =
     props.page == 'Dashboard'
       ? useAppSelector(UserCode)
-      : useAppSelector(dcCode);
+      : props.page == 'DailyChallenge'
+      ? useAppSelector(dcCode)
+      : useAppSelector(tutorialCode);
   const language = props.language;
-
+  // console.log(userCode);
+  // console.log(tutorialC);
   monaco.languages.register({
     id: 'cpp',
     extensions: ['.cpp'],
@@ -121,13 +126,7 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
   ) => {
     const editor = monaco.editor.create(divref, {
       model: monaco.editor.createModel(
-        pageState == 'Tutorials' && language == 'c_cpp'
-          ? tutorial.tutorialCodes.cpp
-          : pageState == 'Tutorials' && language == 'python'
-          ? tutorial.tutorialCodes.python
-          : pageState == 'Tutorials' && language == 'python'
-          ? tutorial.tutorialCodes.java
-          : userCode,
+        userCode,
         language == 'c_cpp' ? 'cpp' : language,
         monaco.Uri.parse(workspace != null ? workspace.filepath : ''),
       ),
@@ -162,7 +161,10 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
           operation: 'fileUpdate',
           code: editor.getValue(),
         };
+        console.log(editor.getValue());
         websocket.send(JSON.stringify(currUpdater));
+      } else {
+        console.log('no websocket');
       }
       const codeNlanguage: CodeAndLanguage = {
         currentUserCode: editor.getValue(),
@@ -172,8 +174,10 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
         dispatch(updateUserCode(codeNlanguage));
       } else if (props.page == 'DailyChallenge') {
         dispatch(changeDcCode(codeNlanguage));
-      } else {
+      } else if (props.page == 'Tutorials') {
         dispatch(changeTutorialCode(codeNlanguage));
+      } else {
+        console.log('hi from editor09');
       }
     });
 

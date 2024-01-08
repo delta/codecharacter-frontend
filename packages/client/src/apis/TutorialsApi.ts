@@ -13,10 +13,18 @@
  */
 
 import * as runtime from '../runtime';
-import { TutorialsGetRequest } from '../models';
+import {
+  CodeTutorialMatchRequest,
+  GenericError,
+  TutorialsGetRequest,
+} from '../models';
 
-export interface GetTutorialByNumberRequest {
-  tutorialNumber: number;
+export interface CreateCodeTutorialMatchRequest {
+  codeTutorialMatchRequest: CodeTutorialMatchRequest;
+}
+
+export interface GetCodeTutorialByNumberRequest {
+  codeTutorialNumber: number;
 }
 
 /**
@@ -27,15 +35,37 @@ export interface GetTutorialByNumberRequest {
  */
 export interface TutorialsApiInterface {
   /**
-   * Get a single tutorial
-   * @summary Get tutorial by number
-   * @param {number} tutorialNumber
+   * Match making for Tutorials
+   * @summary Match Execution for Tutorials
+   * @param {CodeTutorialMatchRequest} codeTutorialMatchRequest
    * @param {*} [options] Override http request option.
    * @throws {RequiredError}
    * @memberof TutorialsApiInterface
    */
-  getTutorialByNumberRaw(
-    requestParameters: GetTutorialByNumberRequest,
+  createCodeTutorialMatchRaw(
+    requestParameters: CreateCodeTutorialMatchRequest,
+    initOverrides?: RequestInit,
+  ): Promise<runtime.ApiResponse<void>>;
+
+  /**
+   * Match making for Tutorials
+   * Match Execution for Tutorials
+   */
+  createCodeTutorialMatch(
+    codeTutorialMatchRequest: CodeTutorialMatchRequest,
+    initOverrides?: RequestInit,
+  ): Promise<void>;
+
+  /**
+   * Get a single tutorial
+   * @summary Get tutorial by number
+   * @param {number} codeTutorialNumber
+   * @param {*} [options] Override http request option.
+   * @throws {RequiredError}
+   * @memberof TutorialsApiInterface
+   */
+  getCodeTutorialByNumberRaw(
+    requestParameters: GetCodeTutorialByNumberRequest,
     initOverrides?: RequestInit,
   ): Promise<runtime.ApiResponse<TutorialsGetRequest>>;
 
@@ -43,8 +73,8 @@ export interface TutorialsApiInterface {
    * Get a single tutorial
    * Get tutorial by number
    */
-  getTutorialByNumber(
-    tutorialNumber: number,
+  getCodeTutorialByNumber(
+    codeTutorialNumber: number,
     initOverrides?: RequestInit,
   ): Promise<TutorialsGetRequest>;
 }
@@ -57,20 +87,80 @@ export class TutorialsApi
   implements TutorialsApiInterface
 {
   /**
+   * Match making for Tutorials
+   * Match Execution for Tutorials
+   */
+  async createCodeTutorialMatchRaw(
+    requestParameters: CreateCodeTutorialMatchRequest,
+    initOverrides?: RequestInit,
+  ): Promise<runtime.ApiResponse<void>> {
+    if (
+      requestParameters.codeTutorialMatchRequest === null ||
+      requestParameters.codeTutorialMatchRequest === undefined
+    ) {
+      throw new runtime.RequiredError(
+        'codeTutorialMatchRequest',
+        'Required parameter requestParameters.codeTutorialMatchRequest was null or undefined when calling createCodeTutorialMatch.',
+      );
+    }
+
+    const queryParameters: any = {};
+
+    const headerParameters: runtime.HTTPHeaders = {};
+
+    headerParameters['Content-Type'] = 'application/json';
+
+    if (this.configuration && this.configuration.accessToken) {
+      const token = this.configuration.accessToken;
+      const tokenString = await token('http-bearer', []);
+
+      if (tokenString) {
+        headerParameters['Authorization'] = `Bearer ${tokenString}`;
+      }
+    }
+    const response = await this.request(
+      {
+        path: `/codetutorial/submit`,
+        method: 'POST',
+        headers: headerParameters,
+        query: queryParameters,
+        body: requestParameters.codeTutorialMatchRequest,
+      },
+      initOverrides,
+    );
+
+    return new runtime.VoidApiResponse(response);
+  }
+
+  /**
+   * Match making for Tutorials
+   * Match Execution for Tutorials
+   */
+  async createCodeTutorialMatch(
+    codeTutorialMatchRequest: CodeTutorialMatchRequest,
+    initOverrides?: RequestInit,
+  ): Promise<void> {
+    await this.createCodeTutorialMatchRaw(
+      { codeTutorialMatchRequest: codeTutorialMatchRequest },
+      initOverrides,
+    );
+  }
+
+  /**
    * Get a single tutorial
    * Get tutorial by number
    */
-  async getTutorialByNumberRaw(
-    requestParameters: GetTutorialByNumberRequest,
+  async getCodeTutorialByNumberRaw(
+    requestParameters: GetCodeTutorialByNumberRequest,
     initOverrides?: RequestInit,
   ): Promise<runtime.ApiResponse<TutorialsGetRequest>> {
     if (
-      requestParameters.tutorialNumber === null ||
-      requestParameters.tutorialNumber === undefined
+      requestParameters.codeTutorialNumber === null ||
+      requestParameters.codeTutorialNumber === undefined
     ) {
       throw new runtime.RequiredError(
-        'tutorialNumber',
-        'Required parameter requestParameters.tutorialNumber was null or undefined when calling getTutorialByNumber.',
+        'codeTutorialNumber',
+        'Required parameter requestParameters.codeTutorialNumber was null or undefined when calling getCodeTutorialByNumber.',
       );
     }
 
@@ -88,9 +178,9 @@ export class TutorialsApi
     }
     const response = await this.request(
       {
-        path: `/codetutorial/get/{tutorialNumber}`.replace(
-          `{${'tutorialNumber'}}`,
-          encodeURIComponent(String(requestParameters.tutorialNumber)),
+        path: `/codetutorial/get/{codeTutorialNumber}`.replace(
+          `{${'codeTutorialNumber'}}`,
+          encodeURIComponent(String(requestParameters.codeTutorialNumber)),
         ),
         method: 'GET',
         headers: headerParameters,
@@ -106,12 +196,12 @@ export class TutorialsApi
    * Get a single tutorial
    * Get tutorial by number
    */
-  async getTutorialByNumber(
-    tutorialNumber: number,
+  async getCodeTutorialByNumber(
+    codeTutorialNumber: number,
     initOverrides?: RequestInit,
   ): Promise<TutorialsGetRequest> {
-    const response = await this.getTutorialByNumberRaw(
-      { tutorialNumber: tutorialNumber },
+    const response = await this.getCodeTutorialByNumberRaw(
+      { codeTutorialNumber: codeTutorialNumber },
       initOverrides,
     );
     return await response.value();

@@ -60,6 +60,9 @@
 
 .branding {
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .profileIcons {
@@ -119,6 +122,32 @@
   opacity: 0.8;
 }
 
+.navbarTextButton {
+  background-color: #374043; 
+  color: #fff; 
+  border: none;
+  padding: 8px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px; 
+  margin-right: 10px; 
+}
+
+.navbarTextButton:hover {
+  background-color: #141515; 
+}
+.codeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px; /* Adjust the height as needed */
+}
+.codeTutorialHeading {
+  font-family: 'Bai Jamjuree', sans-serif;
+  color: #ffffff;
+  font-size: 28px;
+  margin: 0.5rem 1rem;
+}
 @media screen and (max-width:650px) {
   .navLogo {
     font-size: 20px;

@@ -70,7 +70,6 @@ import {
   changeTutorialLanguage,
   tutorialCode,
   tutorialCodeLanguage,
-  tutorialSimulation,
 } from '../../store/Tutorials/tutorials';
 import Tour from '../../components/TourProvider/TourProvider';
 import { EditorSteps } from '../../components/TourProvider/EditorSteps';
@@ -132,19 +131,17 @@ export default function Dashboard(): JSX.Element {
   const pageState = useAppSelector(dailyChallengePageState);
   const dailyChallengeSimulationState = useAppSelector(dcSimulation);
   const tutorialsCode = useAppSelector(tutorialCode);
-  const tutorial = useAppSelector(tutorialState);
-  const tutorialSimulationState = useAppSelector(tutorialSimulation);
   const userLanguage =
     pageState == 'Dashboard'
       ? useAppSelector(UserLanguage)
       : pageState == 'DailyChallenge'
       ? useAppSelector(dcCodeLanguage)
       : useAppSelector(tutorialCodeLanguage);
-
+  console.log(tutorialsCode);
   const codeAPI = new CodeApi(apiConfig);
   const dailyChallengeAPI = new DailyChallengesApi(apiConfig);
   const tutorialAPI = new TutorialsApi(apiConfig);
-  const [tutorialNumber, setTutorialNumber] = React.useState(0);
+  const [codeTutorialNumber, setCodeTutorialNumber] = React.useState(1);
   useEffect(() => {
     const cookieValue = document.cookie;
     const bearerToken = cookieValue.split(';');
@@ -168,15 +165,25 @@ export default function Dashboard(): JSX.Element {
         });
     }
     tutorialAPI
-      .getTutorialByNumber(tutorialNumber)
+      .getCodeTutorialByNumber(codeTutorialNumber)
       .then(response => {
         dispatch(initializeTutorialState(response));
-        console.log(tutorial.tutorialCodes);
+        console.log(response);
       })
       .catch(err => {
         if (err instanceof ApiError) Toast.error(err.message);
       });
   }, []);
+  useEffect(() => {
+    tutorialAPI
+      .getCodeTutorialByNumber(codeTutorialNumber)
+      .then(response => {
+        dispatch(initializeTutorialState(response));
+      })
+      .catch(err => {
+        if (err instanceof ApiError) Toast.error(err.message);
+      });
+  }, [codeTutorialNumber]);
 
   useEffect(() => {
     if (localStorage.getItem('firstTime') === null) {
@@ -226,7 +233,6 @@ export default function Dashboard(): JSX.Element {
         dispatch(changeLanguage('c_cpp'));
     }
   };
-  console.log(userLanguage);
   const handleSave = () => {
     let languageType: Language = Language.Cpp;
     if (userLanguage === 'c_cpp') languageType = Language.Cpp;
@@ -307,7 +313,7 @@ export default function Dashboard(): JSX.Element {
         language: languageType,
       })
       .then(() => {
-        if (pageState == 'Dashboard' || pageState == 'Tutorials') {
+        if (pageState == 'Dashboard') {
           Toast.success('Code Submitted');
         }
       })
@@ -328,8 +334,27 @@ export default function Dashboard(): JSX.Element {
           if (err instanceof ApiError) Toast.error(err.message);
         });
     }
+    if (pageState == 'Tutorials') {
+      tutorialAPI
+        .createCodeTutorialMatch({
+          value: tutorialsCode,
+          language: languageType,
+          codeTutorialNumber: codeTutorialNumber,
+        })
+        .then(() => {
+          Toast.success('Code Tutorial Submitted');
+        })
+        .catch(err => {
+          if (err instanceof ApiError) Toast.error(err.message);
+        });
+    }
   };
-
+  const handleNextTutorial = () => {
+    setCodeTutorialNumber(codeTutorialNumber + 1);
+  };
+  const handlePrevTutorial = () => {
+    setCodeTutorialNumber(codeTutorialNumber - 1);
+  };
   const currentUserApi = new CurrentUserApi(apiConfig);
 
   const User = useAppSelector(user);
@@ -374,9 +399,7 @@ export default function Dashboard(): JSX.Element {
             minSize={520}
           >
             <div className={styles.leftPane}>
-              {pageState == 'Dashboard' ||
-              dailyChallenge.challType == 'MAP' ||
-              pageState == 'Tutorials' ? (
+              {pageState == 'Dashboard' || dailyChallenge.challType == 'MAP' ? (
                 <ButtonToolbar
                   className={
                     styles.toolbar +
@@ -414,10 +437,7 @@ export default function Dashboard(): JSX.Element {
                         className={styles.toolbarColumn}
                         sm="1"
                         style={{
-                          marginLeft:
-                            pageState == 'Dashboard' || pageState == 'Tutorials'
-                              ? 0
-                              : '20%',
+                          marginLeft: pageState == 'Dashboard' ? 0 : '20%',
                         }}
                       >
                         <button
@@ -432,7 +452,7 @@ export default function Dashboard(): JSX.Element {
                           />
                         </button>
                       </Col>
-                      {pageState == 'Dashboard' || pageState == 'Tutorials' ? (
+                      {pageState == 'Dashboard' ? (
                         <>
                           <Col className={styles.toolbarColumn} sm="1">
                             <button
@@ -475,6 +495,128 @@ export default function Dashboard(): JSX.Element {
                           />{' '}
                         </button>
                       </Col>
+                    </div>
+                  </div>
+                  <div>
+                    <div className={styles.settingsIconDiv}>
+                      <div className={styles.settingsIcon} id="Settings">
+                        <FontAwesomeIcon
+                          title={'Settings'}
+                          icon={faGear as IconProp}
+                          color={'#cbcbcb'}
+                          onClick={handleOpenSettings}
+                          className={styles.hoverIcon}
+                        />
+                      </div>
+                      <div className={styles.settingsIcon} id="Shortcuts">
+                        <FontAwesomeIcon
+                          title={'Shortcuts'}
+                          icon={faCircleInfo as IconProp}
+                          color={'#cbcbcb'}
+                          onClick={handleOpenInfo}
+                          className={styles.hoverIcon}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <Button
+                      className={styles.closeEditorButton}
+                      onClick={() => {
+                        updateDividerPosition(dividerPosition - 1);
+                      }}
+                      variant="dark"
+                    >
+                      <FontAwesomeIcon
+                        size={'sm'}
+                        icon={faChevronLeft as IconProp}
+                      />
+                    </Button>
+                  </div>
+                  <div>
+                    <Button
+                      className={styles.closeRendererButton}
+                      onClick={() => {
+                        updateDividerPosition(dividerPosition + 1);
+                      }}
+                      variant="dark"
+                    >
+                      <FontAwesomeIcon
+                        size={'sm'}
+                        icon={faChevronRight as IconProp}
+                      />
+                    </Button>
+                  </div>
+                </ButtonToolbar>
+              ) : pageState == 'Tutorials' ? (
+                <ButtonToolbar
+                  className={
+                    styles.toolbar +
+                    (theme == 'vs-dark'
+                      ? ' vs-dark'
+                      : theme == 'vs-light'
+                      ? ' vs'
+                      : ' hc-black')
+                  }
+                  as={Row}
+                  id="TopBar"
+                >
+                  <div className={styles.mainDiv}>
+                    <Col className={styles.toolbarColumn1} sm="1">
+                      <Form.Select
+                        className={styles.toolbarButton1}
+                        value={
+                          userLanguage == 'c_cpp'
+                            ? 'C++'
+                            : userLanguage.charAt(0).toUpperCase() +
+                              userLanguage.slice(1)
+                        }
+                        onChange={e => handleLanguageChange(e.target.value)}
+                        id="LanguageSelector"
+                      >
+                        {languages.map(language => (
+                          <option value={language} key={language}>
+                            {language}
+                          </option>
+                        ))}
+                      </Form.Select>
+                    </Col>
+                    <div className={styles.midDiv}>
+                      <Col className={styles.toolbarColumn} sm="1">
+                        <button
+                          className={styles.toolbarButton}
+                          onClick={handleSubmit}
+                          ref={submitButtonRef}
+                          id="SubmitButton"
+                        >
+                          <FontAwesomeIcon
+                            title="Submit"
+                            icon={faCloudUploadAlt as IconProp}
+                          />{' '}
+                        </button>
+                      </Col>
+                      <>
+                        {codeTutorialNumber == 1 ? (
+                          <></>
+                        ) : (
+                          <button
+                            className={styles.toolbarTextButton}
+                            onClick={handlePrevTutorial}
+                          >
+                            Prev Tutorial
+                          </button>
+                        )}
+                        {codeTutorialNumber == 6 ? (
+                          <> </>
+                        ) : (
+                          <button
+                            className={styles.toolbarTextButton}
+                            onClick={handleNextTutorial}
+                          >
+                            Next Tutorial
+                          </button>
+                        )}
+                      </>
                     </div>
                   </div>
                   <div>
@@ -590,12 +732,16 @@ export default function Dashboard(): JSX.Element {
             <SplitPane
               split="horizontal"
               size={
-                pageState == 'Dashboard' || dailyChallengeSimulationState
+                pageState == 'Dashboard' ||
+                pageState == 'Tutorials' ||
+                dailyChallengeSimulationState
                   ? verticalPercent
                   : '100%'
               }
               allowResize={
-                pageState == 'Dashboard' || dailyChallengeSimulationState
+                pageState == 'Dashboard' ||
+                pageState == 'Tutorials' ||
+                dailyChallengeSimulationState
                   ? true
                   : false
               }
@@ -611,7 +757,9 @@ export default function Dashboard(): JSX.Element {
               }}
             >
               <div className={styles.rightPane} id="MAP">
-                {pageState == 'Dashboard' || dailyChallengeSimulationState ? (
+                {pageState == 'Dashboard' ||
+                pageState == 'Tutorials' ||
+                dailyChallengeSimulationState ? (
                   <RendererComponent />
                 ) : dailyChallenge.challType == 'MAP' ? (
                   <>
@@ -630,7 +778,9 @@ export default function Dashboard(): JSX.Element {
                 )}
               </div>
               <div className={styles.rightPane} id="GameLogs">
-                {pageState == 'Dashboard' || dailyChallengeSimulationState ? (
+                {pageState == 'Dashboard' ||
+                pageState == 'Tutorials' ||
+                dailyChallengeSimulationState ? (
                   <Terminal />
                 ) : (
                   <></>

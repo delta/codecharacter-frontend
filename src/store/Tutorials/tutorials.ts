@@ -1,5 +1,5 @@
 import { ChallengeType, TutorialsGetRequest } from '@codecharacter-2024/client';
-
+// import { Code } from '@codecharacter-2024/client';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '../store';
 import { CodeAndLanguage, languagesAvailable } from '../editor/code';
@@ -10,7 +10,7 @@ import defaultJavaCode from '../../assets/codes/java/Run.java?raw';
 export interface TutorialStateType {
   // eslint-disable-next-line prettier/prettier
   tutorials: TutorialsGetRequest;
-  tutorialCode: string;
+  tutorialCode: string | undefined;
   tutorialAllLanguagesCode: string[];
   tutorialLanguage: string;
   tutorialMap: Array<Array<number>>;
@@ -55,13 +55,22 @@ export const tutorialsSlice = createSlice({
         ? action.payload.description
         : ''),
         (state.tutorials.tutorialCodes = action.payload.tutorialCodes);
+      state.tutorialCode = action.payload.tutorialCodes.cpp;
+      state.tutorialAllLanguagesCode[0] = action.payload.tutorialCodes.cpp;
+      state.tutorialAllLanguagesCode[1] = action.payload.tutorialCodes.python;
+      state.tutorialAllLanguagesCode[2] = action.payload.tutorialCodes.java;
+      // state.tutorialAllLanguagesCode = action.payload.tutorialCodes;
     },
     changeTutorialCode: (state, action: PayloadAction<CodeAndLanguage>) => {
       const tempCurrentUserLanguage = action.payload.currentUserLanguage;
       const desiredIndex = languagesAvailable.indexOf(tempCurrentUserLanguage);
+      const newCodeAndLanguage: CodeAndLanguage = {
+        currentUserCode: action.payload.currentUserCode,
+        currentUserLanguage: action.payload.currentUserLanguage,
+      };
       state.tutorialAllLanguagesCode[desiredIndex] =
-        action.payload.currentUserCode;
-      state.tutorialCode = action.payload.currentUserCode;
+        newCodeAndLanguage.currentUserCode;
+      state.tutorialCode = newCodeAndLanguage.currentUserCode;
     },
     changeTutorialLanguage: (state, action: PayloadAction<string>) => {
       const tempCurrentUserLanguage = action.payload;
