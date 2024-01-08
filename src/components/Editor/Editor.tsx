@@ -84,6 +84,8 @@ buildWorkerDefinition(
   false,
 );
 
+let firstRender = 1;
+
 export default function CodeEditor(props: Editors.Props): JSX.Element {
   const monacoRef = useRef(null);
   const editorRef = useRef(null);
@@ -253,24 +255,26 @@ export default function CodeEditor(props: Editors.Props): JSX.Element {
       languageClientRef?.stop();
       wsClientRef?.close();
     };
-  }, [
-    fontSize,
-    theme,
-    language,
-    keyboardHandler,
-    props.page,
-    autocomplete,
-    userCode,
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    (editorRef.current as any)?.getValue(),
-  ]);
+  }, [fontSize, theme, language, keyboardHandler, props.page, autocomplete]);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   function handleEditorDidMount(editor: any, monaco: any) {
     monacoRef.current = monaco;
     editorRef.current = editor;
-    createEditor(editorRef.current, monacoRef.current);
+    createEditor(editor, monaco);
   }
+
+  useEffect(() => {
+    if (
+      userCode &&
+      editorRef.current &&
+      monacoRef.current &&
+      firstRender == 1
+    ) {
+      createEditor(editorRef.current, monacoRef.current);
+      firstRender = 0;
+    }
+  }, [userCode]);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   function handleEditorWillMount(monaco: any) {
