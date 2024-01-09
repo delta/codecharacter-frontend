@@ -45,10 +45,8 @@ import { lspUrl } from '../../config/config';
 import {
   dcCode,
   changeDcCode,
-  dailyChallengePageState,
 } from '../../store/DailyChallenge/dailyChallenge';
 import {
-  tutorialState,
   changeTutorialCode,
   tutorialCode,
 } from '../../store/Tutorials/tutorials';
@@ -67,11 +65,7 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
   const theme: string = useAppSelector(Theme);
   const autocomplete: boolean = useAppSelector(Autocomplete);
   const dispatch: React.Dispatch<unknown> = useAppDispatch();
-
-  const tutorial = useAppSelector(tutorialState);
-  const tutorialC = useAppSelector(tutorialCode);
   const keyboardHandler = useAppSelector(KeyboardHandler);
-  const pageState = useAppSelector(dailyChallengePageState);
   const userCode: string =
     props.page == 'Dashboard'
       ? useAppSelector(UserCode)
@@ -79,8 +73,7 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
       ? useAppSelector(dcCode)
       : useAppSelector(tutorialCode);
   const language = props.language;
-  // console.log(userCode);
-  // console.log(tutorialC);
+
   monaco.languages.register({
     id: 'cpp',
     extensions: ['.cpp'],
@@ -163,8 +156,6 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
         };
         console.log(editor.getValue());
         websocket.send(JSON.stringify(currUpdater));
-      } else {
-        console.log('no websocket');
       }
       const codeNlanguage: CodeAndLanguage = {
         currentUserCode: editor.getValue(),
@@ -176,8 +167,6 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
         dispatch(changeDcCode(codeNlanguage));
       } else if (props.page == 'Tutorials') {
         dispatch(changeTutorialCode(codeNlanguage));
-      } else {
-        console.log('hi from editor09');
       }
     });
 

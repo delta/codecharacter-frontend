@@ -140,7 +140,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px; /* Adjust the height as needed */
+  height: 60px;
 }
 .codeTutorialHeading {
   font-family: 'Bai Jamjuree', sans-serif;

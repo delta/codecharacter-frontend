@@ -251,3 +251,16 @@
     color: #ffffff;
     transform: scale(1.15);
 }
+
+.codeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; 
+  }
+  .codeTutorialHeading {
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0.5rem 1rem;
+  }

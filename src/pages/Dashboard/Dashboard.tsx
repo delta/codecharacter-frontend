@@ -142,6 +142,8 @@ export default function Dashboard(): JSX.Element {
   const dailyChallengeAPI = new DailyChallengesApi(apiConfig);
   const tutorialAPI = new TutorialsApi(apiConfig);
   const [codeTutorialNumber, setCodeTutorialNumber] = React.useState(1);
+  const [tutorialCompletionStatus, setTutorialCompletionStatus] =
+    React.useState(false);
   useEffect(() => {
     const cookieValue = document.cookie;
     const bearerToken = cookieValue.split(';');
@@ -197,7 +199,7 @@ export default function Dashboard(): JSX.Element {
         })
         .finally(() => localStorage.setItem('firstTime', 'false'));
     }
-  }, []);
+  }, [codeTutorialNumber]);
 
   const languages: string[] = ['C++', 'Python', 'Java'];
 
@@ -342,6 +344,7 @@ export default function Dashboard(): JSX.Element {
           codeTutorialNumber: codeTutorialNumber,
         })
         .then(() => {
+          setTutorialCompletionStatus(true);
           Toast.success('Code Tutorial Submitted');
         })
         .catch(err => {
@@ -350,10 +353,19 @@ export default function Dashboard(): JSX.Element {
     }
   };
   const handleNextTutorial = () => {
-    setCodeTutorialNumber(codeTutorialNumber + 1);
+    if (tutorialCompletionStatus) {
+      setCodeTutorialNumber(codeTutorialNumber + 1);
+      console.log(tutorialsCode);
+      codeAPI.getLatestCode().then(response => {
+        dispatch(initializeEditorStates(response));
+      });
+    }
   };
   const handlePrevTutorial = () => {
     setCodeTutorialNumber(codeTutorialNumber - 1);
+    codeAPI.getLatestCode().then(response => {
+      dispatch(initializeEditorStates(response));
+    });
   };
   const currentUserApi = new CurrentUserApi(apiConfig);
 
@@ -617,6 +629,16 @@ export default function Dashboard(): JSX.Element {
                           </button>
                         )}
                       </>
+                      <div className={styles.codeContainer}>
+                        {pageState == 'Tutorials' ? (
+                          <div className={styles.codeTutorialHeading}>
+                            {'Tutorial  Number    '}
+                            {codeTutorialNumber}
+                          </div>
+                        ) : (
+                          <></>
+                        )}
+                      </div>
                     </div>
                   </div>
                   <div>
