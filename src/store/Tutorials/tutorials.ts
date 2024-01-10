@@ -14,7 +14,7 @@ export interface TutorialStateType {
   tutorialAllLanguagesCode: string[];
   tutorialLanguage: string;
   tutorialMap: Array<Array<number>>;
-  isSimulating: boolean;
+  isCompleted: boolean;
 }
 
 const initialState: TutorialStateType = {
@@ -38,7 +38,7 @@ const initialState: TutorialStateType = {
   ],
   tutorialLanguage: 'c_cpp',
   tutorialMap: [],
-  isSimulating: false,
+  isCompleted: false,
 };
 
 export const tutorialsSlice = createSlice({
@@ -59,6 +59,7 @@ export const tutorialsSlice = createSlice({
       state.tutorialAllLanguagesCode[0] = action.payload.tutorialCodes.cpp;
       state.tutorialAllLanguagesCode[1] = action.payload.tutorialCodes.python;
       state.tutorialAllLanguagesCode[2] = action.payload.tutorialCodes.java;
+      state.isCompleted = false;
       // state.tutorialAllLanguagesCode = action.payload.tutorialCodes;
     },
     changeTutorialCode: (state, action: PayloadAction<CodeAndLanguage>) => {
@@ -81,8 +82,8 @@ export const tutorialsSlice = createSlice({
     changeTutorialMap: (state, action: PayloadAction<Array<Array<number>>>) => {
       state.tutorialMap = action.payload;
     },
-    changeSimulationState: (state, action: PayloadAction<boolean>) => {
-      state.isSimulating = action.payload;
+    changeCompletionState: (state, action: PayloadAction<boolean>) => {
+      state.isCompleted = action.payload;
     },
   },
 });
@@ -92,7 +93,7 @@ export const {
   changeTutorialCode,
   changeTutorialLanguage,
   changeTutorialMap,
-  changeSimulationState,
+  changeCompletionState,
 } = tutorialsSlice.actions;
 export const tutorialState = (state: RootState): TutorialsGetRequest =>
   state.tutorials.tutorials;
@@ -104,7 +105,7 @@ export const tutorialCodeLanguage = (state: RootState): string =>
   state.tutorials.tutorialLanguage;
 export const tutorialMap = (state: RootState): Array<Array<number>> =>
   state.tutorials.tutorialMap;
-export const tutorialSimulation = (state: RootState): boolean =>
-  state.tutorials.isSimulating;
+export const tutorialCompletion = (state: RootState): boolean =>
+  state.tutorials.isCompleted;
 
 export default tutorialsSlice.reducer;

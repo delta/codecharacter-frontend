@@ -70,6 +70,8 @@ import {
   changeTutorialLanguage,
   tutorialCode,
   tutorialCodeLanguage,
+  changeCompletionState,
+  tutorialCompletion,
 } from '../../store/Tutorials/tutorials';
 import Tour from '../../components/TourProvider/TourProvider';
 import { EditorSteps } from '../../components/TourProvider/EditorSteps';
@@ -141,9 +143,8 @@ export default function Dashboard(): JSX.Element {
   const codeAPI = new CodeApi(apiConfig);
   const dailyChallengeAPI = new DailyChallengesApi(apiConfig);
   const tutorialAPI = new TutorialsApi(apiConfig);
-  const [codeTutorialNumber, setCodeTutorialNumber] = React.useState(1);
-  const [tutorialCompletionStatus, setTutorialCompletionStatus] =
-    React.useState(false);
+  const [codeTutorialNumber, setCodeTutorialNumber] = React.useState(2);
+  const tutorialCompletionStatus = useAppSelector(tutorialCompletion);
   useEffect(() => {
     const cookieValue = document.cookie;
     const bearerToken = cookieValue.split(';');
@@ -170,7 +171,6 @@ export default function Dashboard(): JSX.Element {
       .getCodeTutorialByNumber(codeTutorialNumber)
       .then(response => {
         dispatch(initializeTutorialState(response));
-        console.log(response);
       })
       .catch(err => {
         if (err instanceof ApiError) Toast.error(err.message);
@@ -344,7 +344,7 @@ export default function Dashboard(): JSX.Element {
           codeTutorialNumber: codeTutorialNumber,
         })
         .then(() => {
-          setTutorialCompletionStatus(true);
+          dispatch(changeCompletionState(true));
           Toast.success('Code Tutorial Submitted');
         })
         .catch(err => {
@@ -355,17 +355,10 @@ export default function Dashboard(): JSX.Element {
   const handleNextTutorial = () => {
     if (tutorialCompletionStatus) {
       setCodeTutorialNumber(codeTutorialNumber + 1);
-      console.log(tutorialsCode);
-      codeAPI.getLatestCode().then(response => {
-        dispatch(initializeEditorStates(response));
-      });
     }
   };
   const handlePrevTutorial = () => {
     setCodeTutorialNumber(codeTutorialNumber - 1);
-    codeAPI.getLatestCode().then(response => {
-      dispatch(initializeEditorStates(response));
-    });
   };
   const currentUserApi = new CurrentUserApi(apiConfig);
 
@@ -781,7 +774,7 @@ export default function Dashboard(): JSX.Element {
             >
               <div className={styles.rightPane} id="MAP">
                 {pageState == 'Dashboard' ||
-                pageState == 'Tutorials' ||
+                (pageState == 'Tutorials' && codeTutorialNumber != 6) ||
                 dailyChallengeSimulationState ? (
                   <RendererComponent />
                 ) : dailyChallenge.challType == 'MAP' ? (
@@ -796,6 +789,8 @@ export default function Dashboard(): JSX.Element {
                       ></img>
                     </div>
                   </>
+                ) : pageState == 'Tutorials' && codeTutorialNumber == 6 ? (
+                  <MapDesigner pageType={'Tutorials'} />
                 ) : (
                   <MapDesigner pageType={'DailyChallenge'} />
                 )}
