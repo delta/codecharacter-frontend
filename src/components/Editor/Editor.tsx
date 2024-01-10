@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import * as Editor from './EditorTypes';
 import styles from './style.module.css';
 import { useRef, useEffect } from 'react';
@@ -66,6 +67,7 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
   const autocomplete: boolean = useAppSelector(Autocomplete);
   const dispatch: React.Dispatch<unknown> = useAppDispatch();
   const keyboardHandler = useAppSelector(KeyboardHandler);
+  console.log(props.tutorialNumber);
   const userCode: string =
     props.page == 'Dashboard'
       ? useAppSelector(UserCode)
@@ -275,7 +277,15 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
       editor?.dispose();
       wsClient?.close(1000);
     };
-  }, [fontSize, theme, language, keyboardHandler, props.page, autocomplete]);
+  }, [
+    fontSize,
+    theme,
+    language,
+    keyboardHandler,
+    props.page,
+    autocomplete,
+    props.tutorialNumber,
+  ]);
 
   return <div className={styles.Editor} ref={divCodeEditor}></div>;
 }

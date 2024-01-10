@@ -730,6 +730,7 @@ export default function Dashboard(): JSX.Element {
                     page={pageState}
                     SaveRef={saveButtonRef}
                     SubmitRef={submitButtonRef}
+                    tutorialNumber={codeTutorialNumber}
                   />
                 ) : (
                   <CodeBlock

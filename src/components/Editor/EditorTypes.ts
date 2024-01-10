@@ -11,6 +11,7 @@ export type Props = {
   page: PageType[keyof PageType];
   SaveRef: RefObject<HTMLButtonElement>;
   SubmitRef: RefObject<HTMLButtonElement>;
+  tutorialNumber: number;
 };
 
 export type Workspace = {
