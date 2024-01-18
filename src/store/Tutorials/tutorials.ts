@@ -15,11 +15,11 @@ export interface TutorialStateType {
   tutorialLanguage: string;
   tutorialMap: Array<Array<number>>;
   isCompleted: boolean;
+  tutorialId: number;
 }
 
 const initialState: TutorialStateType = {
   tutorials: {
-    tutorialId: 0,
     tutorialName: '',
     description: '',
     tutorialType: '' as ChallengeType,
@@ -39,6 +39,7 @@ const initialState: TutorialStateType = {
   tutorialLanguage: 'c_cpp',
   tutorialMap: [],
   isCompleted: false,
+  tutorialId: 1,
 };
 
 export const tutorialsSlice = createSlice({
@@ -50,7 +51,7 @@ export const tutorialsSlice = createSlice({
       action: PayloadAction<TutorialsGetRequest>,
     ) => {
       state.tutorials.tutorialName = action.payload.tutorialName;
-      state.tutorials.tutorialId = action.payload.tutorialId;
+      // state.tutorials.tutorialId = action.payload.tutorialId;
       (state.tutorials.description = action.payload.description
         ? action.payload.description
         : ''),
@@ -82,6 +83,12 @@ export const tutorialsSlice = createSlice({
     changeTutorialMap: (state, action: PayloadAction<Array<Array<number>>>) => {
       state.tutorialMap = action.payload;
     },
+    changeTutorialIdPlus: state => {
+      state.tutorialId = state.tutorialId + 1;
+    },
+    changeTutorialIdMinus: state => {
+      state.tutorialId = state.tutorialId - 1;
+    },
     changeCompletionState: (state, action: PayloadAction<boolean>) => {
       state.isCompleted = action.payload;
     },
@@ -94,6 +101,8 @@ export const {
   changeTutorialLanguage,
   changeTutorialMap,
   changeCompletionState,
+  changeTutorialIdPlus,
+  changeTutorialIdMinus,
 } = tutorialsSlice.actions;
 export const tutorialState = (state: RootState): TutorialsGetRequest =>
   state.tutorials.tutorials;
@@ -101,6 +110,8 @@ export const tutorialCode = (state: RootState): string =>
   state.tutorials.tutorialCode;
 export const tutorialDescription = (state: RootState): string | undefined =>
   state.tutorials.tutorials.description;
+export const tutorialId = (state: RootState): number | undefined =>
+  state.tutorials.tutorialId;
 export const tutorialCodeLanguage = (state: RootState): string =>
   state.tutorials.tutorialLanguage;
 export const tutorialMap = (state: RootState): Array<Array<number>> =>

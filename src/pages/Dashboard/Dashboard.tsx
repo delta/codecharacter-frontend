@@ -72,6 +72,9 @@ import {
   tutorialCodeLanguage,
   changeCompletionState,
   tutorialCompletion,
+  tutorialId,
+  changeTutorialIdPlus,
+  changeTutorialIdMinus,
 } from '../../store/Tutorials/tutorials';
 import Tour from '../../components/TourProvider/TourProvider';
 import { EditorSteps } from '../../components/TourProvider/EditorSteps';
@@ -143,8 +146,10 @@ export default function Dashboard(): JSX.Element {
   const codeAPI = new CodeApi(apiConfig);
   const dailyChallengeAPI = new DailyChallengesApi(apiConfig);
   const tutorialAPI = new TutorialsApi(apiConfig);
-  const [codeTutorialNumber, setCodeTutorialNumber] = React.useState(2);
-  const tutorialCompletionStatus = useAppSelector(tutorialCompletion);
+  const codeTutorialNumber = useAppSelector(tutorialId);
+  // const [codeTutorialNumber, setCodeTutorialNumber] = React.useState(1);
+  // const tutorialCompletionStatus = useAppSelector(tutorialCompletion);
+  console.log(codeTutorialNumber);
   useEffect(() => {
     const cookieValue = document.cookie;
     const bearerToken = cookieValue.split(';');
@@ -344,7 +349,6 @@ export default function Dashboard(): JSX.Element {
           codeTutorialNumber: codeTutorialNumber,
         })
         .then(() => {
-          dispatch(changeCompletionState(true));
           Toast.success('Code Tutorial Submitted');
         })
         .catch(err => {
@@ -353,12 +357,10 @@ export default function Dashboard(): JSX.Element {
     }
   };
   const handleNextTutorial = () => {
-    if (tutorialCompletionStatus) {
-      setCodeTutorialNumber(codeTutorialNumber + 1);
-    }
+    dispatch(changeTutorialIdPlus());
   };
   const handlePrevTutorial = () => {
-    setCodeTutorialNumber(codeTutorialNumber - 1);
+    dispatch(changeTutorialIdMinus());
   };
   const currentUserApi = new CurrentUserApi(apiConfig);
 
