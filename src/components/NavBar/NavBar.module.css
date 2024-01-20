@@ -5,6 +5,8 @@
   background-color: #232627;
   width: 100%;
   z-index: 1000;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 .navBarContainer {
@@ -126,11 +128,13 @@
   background-color: #374043; 
   color: #fff; 
   border: none;
+  height: 50%;
+  width: max-content;
   padding: 8px 10px;
   font-size: 20px;
   cursor: pointer;
   border-radius: 5px; 
-  margin-right: 10px; 
+  margin-right: 40px; 
 }
 
 .navbarTextButton:hover {
@@ -148,6 +152,13 @@
   font-size: 28px;
   margin: 0.5rem 1rem;
 }
+.notifIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 @media screen and (max-width:650px) {
   .navLogo {
     font-size: 20px;

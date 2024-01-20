@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import {
   CodeApi,
   Language,
@@ -44,7 +43,6 @@ import {
   mapCommitNameChanged,
 } from '../../store/SelfMatchMakeModal/SelfMatchModal';
 import { loggedIn, user } from '../../store/User/UserSlice';
-import * as React from 'react';
 import {
   IsSettingsOpen,
   IsInfoOpen,
@@ -59,13 +57,11 @@ import {
   dailyChallengeState,
   initializeDailyChallengeState,
   dailyChallengePageState,
-  changeDcLanguage,
   dcCodeLanguage,
   dcCode,
   dcSimulation,
 } from '../../store/DailyChallenge/dailyChallenge';
 import {
-  tutorialState,
   initializeTutorialState,
   changeTutorialLanguage,
   tutorialCode,
@@ -136,20 +132,17 @@ export default function Dashboard(): JSX.Element {
   const pageState = useAppSelector(dailyChallengePageState);
   const dailyChallengeSimulationState = useAppSelector(dcSimulation);
   const tutorialsCode = useAppSelector(tutorialCode);
+  const tutorialCompletionState = useAppSelector(tutorialCompletion);
   const userLanguage =
     pageState == 'Dashboard'
       ? useAppSelector(UserLanguage)
       : pageState == 'DailyChallenge'
       ? useAppSelector(dcCodeLanguage)
       : useAppSelector(tutorialCodeLanguage);
-  console.log(tutorialsCode);
   const codeAPI = new CodeApi(apiConfig);
   const dailyChallengeAPI = new DailyChallengesApi(apiConfig);
   const tutorialAPI = new TutorialsApi(apiConfig);
   const codeTutorialNumber = useAppSelector(tutorialId);
-  // const [codeTutorialNumber, setCodeTutorialNumber] = React.useState(1);
-  // const tutorialCompletionStatus = useAppSelector(tutorialCompletion);
-  console.log(codeTutorialNumber);
   useEffect(() => {
     const cookieValue = document.cookie;
     const bearerToken = cookieValue.split(';');
@@ -186,8 +179,14 @@ export default function Dashboard(): JSX.Element {
       .getCodeTutorialByNumber(codeTutorialNumber)
       .then(response => {
         dispatch(initializeTutorialState(response));
+        if (codeTutorialNumber != 1) {
+          dispatch(changeCompletionState(true));
+        }
       })
       .catch(err => {
+        if (err.message == 'Complete the current tutorial first') {
+          dispatch(changeCompletionState(false));
+        }
         if (err instanceof ApiError) Toast.error(err.message);
       });
   }, [codeTutorialNumber]);
@@ -357,7 +356,11 @@ export default function Dashboard(): JSX.Element {
     }
   };
   const handleNextTutorial = () => {
-    dispatch(changeTutorialIdPlus());
+    if (tutorialCompletionState) {
+      dispatch(changeTutorialIdPlus());
+    } else {
+      Toast.error('Complete the current tutorial first');
+    }
   };
   const handlePrevTutorial = () => {
     dispatch(changeTutorialIdMinus());

@@ -111,7 +111,7 @@
     box-shadow: none;
 }
 .toolbarTextButton {
-    background-color: #232627; 
+    background-color: #292929; 
     color: #fff; 
     border: none;
     padding: 8px 10px;
@@ -258,9 +258,9 @@
     align-items: center;
     height: 60px; 
   }
-  .codeTutorialHeading {
-    font-family: 'Bai Jamjuree', sans-serif;
-    color: #ffffff;
-    font-size: 20px;
-    margin: 0.5rem 1rem;
-  }
+.codeTutorialHeading {
+font-family: 'Bai Jamjuree', sans-serif;
+color: #ffffff;
+font-size: 17px;
+margin: 0.5rem 1rem;
+}
