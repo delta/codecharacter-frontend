@@ -206,6 +206,7 @@ export default function CodeEditor(props: Editors.Props): JSX.Element {
             writer,
           });
           languageClientRef = languageClient;
+          console.info(languageClient);
           languageClient.start();
           reader.onClose(() => languageClient.stop());
         });
