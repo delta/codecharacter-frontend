@@ -269,10 +269,14 @@ export default function CodeEditor(props: Editors.Props): JSX.Element {
       userCode &&
       editorRef.current &&
       monacoRef.current &&
-      firstRender == 1
+      firstRender != 0 &&
+      (localStorage.getItem('firstEditorRender') == null
+        ? true
+        : parseInt(localStorage.getItem('firstEditorRender') as string) != 0)
     ) {
-      createEditor(editorRef.current, monacoRef.current);
+      (editorRef.current as any).setValue(userCode);
       firstRender = 0;
+      localStorage.setItem('firstEditorRender', firstRender.toString());
     }
   }, [userCode]);
 
