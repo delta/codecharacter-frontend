@@ -66,11 +66,8 @@ import {
   changeTutorialLanguage,
   tutorialCode,
   tutorialCodeLanguage,
-  changeCompletionState,
-  tutorialCompletion,
   tutorialId,
-  changeTutorialIdPlus,
-  changeTutorialIdMinus,
+  changeTutorialId,
 } from '../../store/Tutorials/tutorials';
 import Tour from '../../components/TourProvider/TourProvider';
 import { EditorSteps } from '../../components/TourProvider/EditorSteps';
@@ -132,7 +129,6 @@ export default function Dashboard(): JSX.Element {
   const pageState = useAppSelector(dailyChallengePageState);
   const dailyChallengeSimulationState = useAppSelector(dcSimulation);
   const tutorialsCode = useAppSelector(tutorialCode);
-  const tutorialCompletionState = useAppSelector(tutorialCompletion);
   const userLanguage =
     pageState == 'Dashboard'
       ? useAppSelector(UserLanguage)
@@ -179,13 +175,10 @@ export default function Dashboard(): JSX.Element {
       .getCodeTutorialByNumber(codeTutorialNumber)
       .then(response => {
         dispatch(initializeTutorialState(response));
-        if (codeTutorialNumber != 1) {
-          dispatch(changeCompletionState(true));
-        }
       })
       .catch(err => {
         if (err.message == 'Complete the current tutorial first') {
-          dispatch(changeCompletionState(false));
+          dispatch(changeTutorialId(0));
         }
         if (err instanceof ApiError) Toast.error(err.message);
       });
@@ -356,14 +349,10 @@ export default function Dashboard(): JSX.Element {
     }
   };
   const handleNextTutorial = () => {
-    if (tutorialCompletionState) {
-      dispatch(changeTutorialIdPlus());
-    } else {
-      Toast.error('Complete the current tutorial first');
-    }
+    dispatch(changeTutorialId(1));
   };
   const handlePrevTutorial = () => {
-    dispatch(changeTutorialIdMinus());
+    dispatch(changeTutorialId(0));
   };
   const currentUserApi = new CurrentUserApi(apiConfig);
 

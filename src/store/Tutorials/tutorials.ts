@@ -1,5 +1,4 @@
 import { ChallengeType, TutorialsGetRequest } from '@codecharacter-2024/client';
-// import { Code } from '@codecharacter-2024/client';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '../store';
 import { CodeAndLanguage, languagesAvailable } from '../editor/code';
@@ -8,7 +7,6 @@ import defaultPythonCode from '../../assets/codes/python/run.py?raw';
 import defaultJavaCode from '../../assets/codes/java/Run.java?raw';
 
 export interface TutorialStateType {
-  // eslint-disable-next-line prettier/prettier
   tutorials: TutorialsGetRequest;
   tutorialCode: string | undefined;
   tutorialAllLanguagesCode: string[];
@@ -51,7 +49,6 @@ export const tutorialsSlice = createSlice({
       action: PayloadAction<TutorialsGetRequest>,
     ) => {
       state.tutorials.tutorialName = action.payload.tutorialName;
-      // state.tutorials.tutorialId = action.payload.tutorialId;
       (state.tutorials.description = action.payload.description
         ? action.payload.description
         : ''),
@@ -61,7 +58,6 @@ export const tutorialsSlice = createSlice({
       state.tutorialAllLanguagesCode[1] = action.payload.tutorialCodes.python;
       state.tutorialAllLanguagesCode[2] = action.payload.tutorialCodes.java;
       state.isCompleted = false;
-      // state.tutorialAllLanguagesCode = action.payload.tutorialCodes;
     },
     changeTutorialCode: (state, action: PayloadAction<CodeAndLanguage>) => {
       const tempCurrentUserLanguage = action.payload.currentUserLanguage;
@@ -83,11 +79,12 @@ export const tutorialsSlice = createSlice({
     changeTutorialMap: (state, action: PayloadAction<Array<Array<number>>>) => {
       state.tutorialMap = action.payload;
     },
-    changeTutorialIdPlus: state => {
-      state.tutorialId = state.tutorialId + 1;
-    },
-    changeTutorialIdMinus: state => {
-      state.tutorialId = state.tutorialId - 1;
+    changeTutorialId: (state, action: PayloadAction<number>) => {
+      if (action.payload == 1) {
+        state.tutorialId = state.tutorialId + 1;
+      } else {
+        state.tutorialId = state.tutorialId - 1;
+      }
     },
     changeCompletionState: (state, action: PayloadAction<boolean>) => {
       state.isCompleted = action.payload;
@@ -101,8 +98,7 @@ export const {
   changeTutorialLanguage,
   changeTutorialMap,
   changeCompletionState,
-  changeTutorialIdPlus,
-  changeTutorialIdMinus,
+  changeTutorialId,
 } = tutorialsSlice.actions;
 export const tutorialState = (state: RootState): TutorialsGetRequest =>
   state.tutorials.tutorials;
@@ -110,7 +106,7 @@ export const tutorialCode = (state: RootState): string =>
   state.tutorials.tutorialCode;
 export const tutorialDescription = (state: RootState): string | undefined =>
   state.tutorials.tutorials.description;
-export const tutorialId = (state: RootState): number | undefined =>
+export const tutorialId = (state: RootState): number =>
   state.tutorials.tutorialId;
 export const tutorialCodeLanguage = (state: RootState): string =>
   state.tutorials.tutorialLanguage;
