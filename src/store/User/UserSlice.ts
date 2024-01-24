@@ -20,6 +20,7 @@ export interface User {
   college: string;
   avatarId: number;
   recaptchaCode: string;
+  codeTutorialLevel: number;
 }
 
 interface register {
@@ -48,6 +49,7 @@ const initialState: register = {
     college: '',
     avatarId: 0,
     recaptchaCode: '',
+    codeTutorialLevel: 1,
   },
   loading: false,
   isRegistered: false,
@@ -203,6 +205,7 @@ export const UserSlice = createSlice({
         state.user.country = action.payload.country;
         state.user.college = action.payload.college;
         state.user.avatarId = action.payload.avatarId;
+        // state.user.avatarId=  action.payload.
       })
       .addCase(getUserDetailsAction.rejected, state => {
         state.loading = false;

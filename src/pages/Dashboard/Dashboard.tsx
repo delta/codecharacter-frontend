@@ -123,6 +123,7 @@ export default function Dashboard(): JSX.Element {
   }, [horizontalPercent, verticalPercent, mainContainerRef.current]);
 
   const userCode = useAppSelector(UserCode);
+  // console.log(userCode);
   const dailyChallengeCode = useAppSelector(dcCode);
   const dispatch = useAppDispatch();
   const dailyChallenge = useAppSelector(dailyChallengeState);
@@ -138,7 +139,8 @@ export default function Dashboard(): JSX.Element {
   const codeAPI = new CodeApi(apiConfig);
   const dailyChallengeAPI = new DailyChallengesApi(apiConfig);
   const tutorialAPI = new TutorialsApi(apiConfig);
-  const codeTutorialNumber = useAppSelector(tutorialId);
+  const User = useAppSelector(user);
+  const codeTutorialNumber = User.codeTutorialLevel;
   useEffect(() => {
     const cookieValue = document.cookie;
     const bearerToken = cookieValue.split(';');
@@ -161,14 +163,6 @@ export default function Dashboard(): JSX.Element {
           if (err instanceof ApiError) Toast.error(err.message);
         });
     }
-    tutorialAPI
-      .getCodeTutorialByNumber(codeTutorialNumber)
-      .then(response => {
-        dispatch(initializeTutorialState(response));
-      })
-      .catch(err => {
-        if (err instanceof ApiError) Toast.error(err.message);
-      });
   }, []);
   useEffect(() => {
     tutorialAPI
@@ -196,7 +190,7 @@ export default function Dashboard(): JSX.Element {
         })
         .finally(() => localStorage.setItem('firstTime', 'false'));
     }
-  }, [codeTutorialNumber]);
+  }, []);
 
   const languages: string[] = ['C++', 'Python', 'Java'];
 
@@ -356,7 +350,7 @@ export default function Dashboard(): JSX.Element {
   };
   const currentUserApi = new CurrentUserApi(apiConfig);
 
-  const User = useAppSelector(user);
+  // const User = useAppSelector(user);/
   const navigate = useNavigate();
 
   const setOpened = (opened: boolean) => {

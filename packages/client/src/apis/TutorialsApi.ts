@@ -13,11 +13,11 @@
  */
 
 import * as runtime from '../runtime';
-import {
+import type {
   CodeTutorialMatchRequest,
   GenericError,
   TutorialsGetRequest,
-} from '../models';
+} from '../models/index';
 
 export interface CreateCodeTutorialMatchRequest {
   codeTutorialMatchRequest: CodeTutorialMatchRequest;
@@ -44,7 +44,7 @@ export interface TutorialsApiInterface {
    */
   createCodeTutorialMatchRaw(
     requestParameters: CreateCodeTutorialMatchRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<void>>;
 
   /**
@@ -53,7 +53,7 @@ export interface TutorialsApiInterface {
    */
   createCodeTutorialMatch(
     codeTutorialMatchRequest: CodeTutorialMatchRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<void>;
 
   /**
@@ -66,7 +66,7 @@ export interface TutorialsApiInterface {
    */
   getCodeTutorialByNumberRaw(
     requestParameters: GetCodeTutorialByNumberRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<TutorialsGetRequest>>;
 
   /**
@@ -75,7 +75,7 @@ export interface TutorialsApiInterface {
    */
   getCodeTutorialByNumber(
     codeTutorialNumber: number,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<TutorialsGetRequest>;
 }
 
@@ -92,7 +92,7 @@ export class TutorialsApi
    */
   async createCodeTutorialMatchRaw(
     requestParameters: CreateCodeTutorialMatchRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<void>> {
     if (
       requestParameters.codeTutorialMatchRequest === null ||
@@ -138,7 +138,7 @@ export class TutorialsApi
    */
   async createCodeTutorialMatch(
     codeTutorialMatchRequest: CodeTutorialMatchRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<void> {
     await this.createCodeTutorialMatchRaw(
       { codeTutorialMatchRequest: codeTutorialMatchRequest },
@@ -152,7 +152,7 @@ export class TutorialsApi
    */
   async getCodeTutorialByNumberRaw(
     requestParameters: GetCodeTutorialByNumberRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<TutorialsGetRequest>> {
     if (
       requestParameters.codeTutorialNumber === null ||
@@ -198,7 +198,7 @@ export class TutorialsApi
    */
   async getCodeTutorialByNumber(
     codeTutorialNumber: number,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<TutorialsGetRequest> {
     const response = await this.getCodeTutorialByNumberRaw(
       { codeTutorialNumber: codeTutorialNumber },

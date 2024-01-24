@@ -13,12 +13,12 @@
  */
 
 import * as runtime from '../runtime';
-import {
+import type {
   ActivateUserRequest,
   GenericError,
   RatingHistory,
   RegisterUserRequest,
-} from '../models';
+} from '../models/index';
 
 export interface ActivateUserOperationRequest {
   userId: string;
@@ -51,7 +51,7 @@ export interface UserApiInterface {
    */
   activateUserRaw(
     requestParameters: ActivateUserOperationRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<void>>;
 
   /**
@@ -61,7 +61,7 @@ export interface UserApiInterface {
   activateUser(
     userId: string,
     activateUserRequest: ActivateUserRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<void>;
 
   /**
@@ -74,7 +74,7 @@ export interface UserApiInterface {
    */
   getRatingHistoryRaw(
     requestParameters: GetRatingHistoryRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<Array<RatingHistory>>>;
 
   /**
@@ -83,7 +83,7 @@ export interface UserApiInterface {
    */
   getRatingHistory(
     userId: string,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<Array<RatingHistory>>;
 
   /**
@@ -96,7 +96,7 @@ export interface UserApiInterface {
    */
   registerRaw(
     requestParameters: RegisterRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<void>>;
 
   /**
@@ -105,7 +105,7 @@ export interface UserApiInterface {
    */
   register(
     registerUserRequest: RegisterUserRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<void>;
 }
 
@@ -119,7 +119,7 @@ export class UserApi extends runtime.BaseAPI implements UserApiInterface {
    */
   async activateUserRaw(
     requestParameters: ActivateUserOperationRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<void>> {
     if (
       requestParameters.userId === null ||
@@ -171,7 +171,7 @@ export class UserApi extends runtime.BaseAPI implements UserApiInterface {
   async activateUser(
     userId: string,
     activateUserRequest: ActivateUserRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<void> {
     await this.activateUserRaw(
       { userId: userId, activateUserRequest: activateUserRequest },
@@ -185,7 +185,7 @@ export class UserApi extends runtime.BaseAPI implements UserApiInterface {
    */
   async getRatingHistoryRaw(
     requestParameters: GetRatingHistoryRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<Array<RatingHistory>>> {
     if (
       requestParameters.userId === null ||
@@ -231,7 +231,7 @@ export class UserApi extends runtime.BaseAPI implements UserApiInterface {
    */
   async getRatingHistory(
     userId: string,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<Array<RatingHistory>> {
     const response = await this.getRatingHistoryRaw(
       { userId: userId },
@@ -246,7 +246,7 @@ export class UserApi extends runtime.BaseAPI implements UserApiInterface {
    */
   async registerRaw(
     requestParameters: RegisterRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<void>> {
     if (
       requestParameters.registerUserRequest === null ||
@@ -284,7 +284,7 @@ export class UserApi extends runtime.BaseAPI implements UserApiInterface {
    */
   async register(
     registerUserRequest: RegisterUserRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<void> {
     await this.registerRaw(
       { registerUserRequest: registerUserRequest },

@@ -13,13 +13,13 @@
  */
 
 import * as runtime from '../runtime';
-import {
+import type {
   CompleteProfileRequest,
   CurrentUserProfile,
   GenericError,
   UpdateCurrentUserProfile,
   UpdatePasswordRequest,
-} from '../models';
+} from '../models/index';
 
 export interface CompleteUserProfileRequest {
   completeProfileRequest: CompleteProfileRequest;
@@ -50,7 +50,7 @@ export interface CurrentUserApiInterface {
    */
   completeUserProfileRaw(
     requestParameters: CompleteUserProfileRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<void>>;
 
   /**
@@ -59,7 +59,7 @@ export interface CurrentUserApiInterface {
    */
   completeUserProfile(
     completeProfileRequest: CompleteProfileRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<void>;
 
   /**
@@ -70,14 +70,16 @@ export interface CurrentUserApiInterface {
    * @memberof CurrentUserApiInterface
    */
   getCurrentUserRaw(
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<CurrentUserProfile>>;
 
   /**
    * Get current user profile
    * Get current user profile
    */
-  getCurrentUser(initOverrides?: RequestInit): Promise<CurrentUserProfile>;
+  getCurrentUser(
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
+  ): Promise<CurrentUserProfile>;
 
   /**
    * Update current user
@@ -89,7 +91,7 @@ export interface CurrentUserApiInterface {
    */
   updateCurrentUserRaw(
     requestParameters: UpdateCurrentUserRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<void>>;
 
   /**
@@ -98,7 +100,7 @@ export interface CurrentUserApiInterface {
    */
   updateCurrentUser(
     updateCurrentUserProfile: UpdateCurrentUserProfile,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<void>;
 
   /**
@@ -111,7 +113,7 @@ export interface CurrentUserApiInterface {
    */
   updatePasswordRaw(
     requestParameters: UpdatePasswordOperationRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<void>>;
 
   /**
@@ -120,7 +122,7 @@ export interface CurrentUserApiInterface {
    */
   updatePassword(
     updatePasswordRequest: UpdatePasswordRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<void>;
 }
 
@@ -137,7 +139,7 @@ export class CurrentUserApi
    */
   async completeUserProfileRaw(
     requestParameters: CompleteUserProfileRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<void>> {
     if (
       requestParameters.completeProfileRequest === null ||
@@ -183,7 +185,7 @@ export class CurrentUserApi
    */
   async completeUserProfile(
     completeProfileRequest: CompleteProfileRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<void> {
     await this.completeUserProfileRaw(
       { completeProfileRequest: completeProfileRequest },
@@ -196,7 +198,7 @@ export class CurrentUserApi
    * Get current user profile
    */
   async getCurrentUserRaw(
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<CurrentUserProfile>> {
     const queryParameters: any = {};
 
@@ -228,7 +230,7 @@ export class CurrentUserApi
    * Get current user profile
    */
   async getCurrentUser(
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<CurrentUserProfile> {
     const response = await this.getCurrentUserRaw(initOverrides);
     return await response.value();
@@ -240,7 +242,7 @@ export class CurrentUserApi
    */
   async updateCurrentUserRaw(
     requestParameters: UpdateCurrentUserRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<void>> {
     if (
       requestParameters.updateCurrentUserProfile === null ||
@@ -286,7 +288,7 @@ export class CurrentUserApi
    */
   async updateCurrentUser(
     updateCurrentUserProfile: UpdateCurrentUserProfile,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<void> {
     await this.updateCurrentUserRaw(
       { updateCurrentUserProfile: updateCurrentUserProfile },
@@ -300,7 +302,7 @@ export class CurrentUserApi
    */
   async updatePasswordRaw(
     requestParameters: UpdatePasswordOperationRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<void>> {
     if (
       requestParameters.updatePasswordRequest === null ||
@@ -346,7 +348,7 @@ export class CurrentUserApi
    */
   async updatePassword(
     updatePasswordRequest: UpdatePasswordRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<void> {
     await this.updatePasswordRaw(
       { updatePasswordRequest: updatePasswordRequest },

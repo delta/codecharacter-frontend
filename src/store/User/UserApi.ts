@@ -2,6 +2,7 @@ import { UserApi, AuthApi, CurrentUserApi } from '@codecharacter-2024/client';
 import { apiConfig, ApiError, authConfig } from '../../api/ApiConfig';
 import { User } from './UserSlice';
 import Toast, { toast } from 'react-hot-toast';
+// import { CurrentUserProfile } from '@codecharacter-2024/client';
 
 export const startRegister = (user: User): Promise<{ user: User }> => {
   return new Promise<{ user: User }>((resolve, reject) => {
@@ -66,6 +67,7 @@ export const getUserDetails = (): Promise<{
   country: string;
   avatarId: number;
   isTutorialComplete: boolean;
+  codeTutorialLevel: number;
 }> => {
   return new Promise((resolve, reject) => {
     const currentUserapi = new CurrentUserApi(apiConfig);
@@ -82,6 +84,7 @@ export const getUserDetails = (): Promise<{
           country: res.country,
           avatarId: res.avatarId,
           isTutorialComplete: res.isTutorialComplete,
+          codeTutorialLevel: res.codeTutorialLevel,
         });
       })
       .catch(error => {

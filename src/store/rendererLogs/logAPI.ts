@@ -7,6 +7,7 @@ export const getLogs = (id: string): Promise<string> => {
     gameAPI
       .getGameLogsByGameId(id)
       .then(logs => {
+        console.log(`resolved with ${logs}`);
         resolve(logs);
       })
       .catch(error => {

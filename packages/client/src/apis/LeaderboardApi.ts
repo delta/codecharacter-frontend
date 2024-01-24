@@ -13,7 +13,7 @@
  */
 
 import * as runtime from '../runtime';
-import { LeaderboardEntry, TierType } from '../models';
+import type { LeaderboardEntry, TierType } from '../models/index';
 
 export interface GetLeaderboardRequest {
   page?: number;
@@ -40,7 +40,7 @@ export interface LeaderboardApiInterface {
    */
   getLeaderboardRaw(
     requestParameters: GetLeaderboardRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<Array<LeaderboardEntry>>>;
 
   /**
@@ -51,7 +51,7 @@ export interface LeaderboardApiInterface {
     page?: number,
     size?: number,
     tier?: TierType,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<Array<LeaderboardEntry>>;
 }
 
@@ -68,7 +68,7 @@ export class LeaderboardApi
    */
   async getLeaderboardRaw(
     requestParameters: GetLeaderboardRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<Array<LeaderboardEntry>>> {
     const queryParameters: any = {};
 
@@ -115,7 +115,7 @@ export class LeaderboardApi
     page?: number,
     size?: number,
     tier?: TierType,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<Array<LeaderboardEntry>> {
     const response = await this.getLeaderboardRaw(
       { page: page, size: size, tier: tier },

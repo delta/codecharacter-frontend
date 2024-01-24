@@ -29,22 +29,25 @@ export interface AuthStatusResponse {
 
 /**
  * @export
- * @enum {string}
  */
-export enum AuthStatusResponseStatusEnum {
-  Authenticated = 'AUTHENTICATED',
-  ProfileIncomplete = 'PROFILE_INCOMPLETE',
-  ActivationPending = 'ACTIVATION_PENDING',
-}
+export const AuthStatusResponseStatusEnum = {
+  Authenticated: 'AUTHENTICATED',
+  ProfileIncomplete: 'PROFILE_INCOMPLETE',
+  ActivationPending: 'ACTIVATION_PENDING',
+} as const;
+export type AuthStatusResponseStatusEnum =
+  (typeof AuthStatusResponseStatusEnum)[keyof typeof AuthStatusResponseStatusEnum];
+
 /**
  *
  * @export
- * @enum {string}
  */
-export enum ChallengeType {
-  Code = 'CODE',
-  Map = 'MAP',
-}
+export const ChallengeType = {
+  Code: 'CODE',
+  Map: 'MAP',
+} as const;
+export type ChallengeType = (typeof ChallengeType)[keyof typeof ChallengeType];
+
 /**
  * Code model
  * @export
@@ -59,10 +62,10 @@ export interface Code {
   code: string;
   /**
    *
-   * @type {Date}
+   * @type {string}
    * @memberof Code
    */
-  lastSavedAt: Date;
+  lastSavedAt: string;
   /**
    *
    * @type {Language}
@@ -108,10 +111,10 @@ export interface CodeRevision {
   language: Language;
   /**
    *
-   * @type {Date}
+   * @type {string}
    * @memberof CodeRevision
    */
-  createdAt: Date;
+  createdAt: string;
 }
 /**
  * Request Model for the tutorial mode
@@ -138,15 +141,17 @@ export interface CodeTutorialMatchRequest {
    */
   codeTutorialNumber: number;
 }
+
 /**
  *
  * @export
- * @enum {string}
  */
-export enum CodeType {
-  Normal = 'NORMAL',
-  DailyChallenge = 'DAILY_CHALLENGE',
-}
+export const CodeType = {
+  Normal: 'NORMAL',
+  DailyChallenge: 'DAILY_CHALLENGE',
+} as const;
+export type CodeType = (typeof CodeType)[keyof typeof CodeType];
+
 /**
  * Model for complete profile request
  * @export
@@ -339,7 +344,7 @@ export interface CurrentUserProfile {
    * @type {number}
    * @memberof CurrentUserProfile
    */
-  codeTutorialLevel?: number;
+  codeTutorialLevel: number;
   /**
    *
    * @type {TierType}
@@ -541,10 +546,10 @@ export interface GameMap {
   mapImage: string;
   /**
    *
-   * @type {Date}
+   * @type {string}
    * @memberof GameMap
    */
-  lastSavedAt: Date;
+  lastSavedAt: string;
 }
 /**
  * GameMap revision model
@@ -572,10 +577,10 @@ export interface GameMapRevision {
   parentRevision?: string;
   /**
    *
-   * @type {Date}
+   * @type {string}
    * @memberof GameMapRevision
    */
-  createdAt: Date;
+  createdAt: string;
   /**
    *
    * @type {string}
@@ -583,26 +588,29 @@ export interface GameMapRevision {
    */
   message: string;
 }
+
 /**
  *
  * @export
- * @enum {string}
  */
-export enum GameMapType {
-  Normal = 'NORMAL',
-  DailyChallenge = 'DAILY_CHALLENGE',
-}
+export const GameMapType = {
+  Normal: 'NORMAL',
+  DailyChallenge: 'DAILY_CHALLENGE',
+} as const;
+export type GameMapType = (typeof GameMapType)[keyof typeof GameMapType];
+
 /**
  *
  * @export
- * @enum {string}
  */
-export enum GameStatus {
-  Idle = 'IDLE',
-  Executing = 'EXECUTING',
-  Executed = 'EXECUTED',
-  ExecuteError = 'EXECUTE_ERROR',
-}
+export const GameStatus = {
+  Idle: 'IDLE',
+  Executing: 'EXECUTING',
+  Executed: 'EXECUTED',
+  ExecuteError: 'EXECUTE_ERROR',
+} as const;
+export type GameStatus = (typeof GameStatus)[keyof typeof GameStatus];
+
 /**
  * Model for Generic Error
  * @export
@@ -616,17 +624,19 @@ export interface GenericError {
    */
   message?: string;
 }
+
 /**
  * Language of source files
  * @export
- * @enum {string}
  */
-export enum Language {
-  C = 'C',
-  Cpp = 'CPP',
-  Java = 'JAVA',
-  Python = 'PYTHON',
-}
+export const Language = {
+  C: 'C',
+  Cpp: 'CPP',
+  Java: 'JAVA',
+  Python: 'PYTHON',
+} as const;
+export type Language = (typeof Language)[keyof typeof Language];
+
 /**
  * Leaderboard entry model
  * @export
@@ -697,10 +707,10 @@ export interface Match {
   matchVerdict: Verdict;
   /**
    *
-   * @type {Date}
+   * @type {string}
    * @memberof Match
    */
-  createdAt: Date;
+  createdAt: string;
   /**
    *
    * @type {PublicUser}
@@ -714,17 +724,19 @@ export interface Match {
    */
   user2?: PublicUser;
 }
+
 /**
  * Match Mode
  * @export
- * @enum {string}
  */
-export enum MatchMode {
-  Self = 'SELF',
-  Manual = 'MANUAL',
-  Auto = 'AUTO',
-  Dailychallenge = 'DAILYCHALLENGE',
-}
+export const MatchMode = {
+  Self: 'SELF',
+  Manual: 'MANUAL',
+  Auto: 'AUTO',
+  Dailychallenge: 'DAILYCHALLENGE',
+} as const;
+export type MatchMode = (typeof MatchMode)[keyof typeof MatchMode];
+
 /**
  * Notification model
  * @export
@@ -751,10 +763,10 @@ export interface Notification {
   content: string;
   /**
    *
-   * @type {Date}
+   * @type {string}
    * @memberof Notification
    */
-  createdAt: Date;
+  createdAt: string;
   /**
    *
    * @type {boolean}
@@ -857,10 +869,10 @@ export interface RatingHistory {
   ratingDeviation: number;
   /**
    *
-   * @type {Date}
+   * @type {string}
    * @memberof RatingHistory
    */
-  validFrom: Date;
+  validFrom: string;
 }
 /**
  * Register user request
@@ -948,18 +960,20 @@ export interface ResetPasswordRequest {
    */
   passwordConfirmation: string;
 }
+
 /**
  *
  * @export
- * @enum {string}
  */
-export enum TierType {
-  TierPractice = 'TIER_PRACTICE',
-  Tier1 = 'TIER1',
-  Tier2 = 'TIER2',
-  Tier3 = 'TIER3',
-  Tier4 = 'TIER4',
-}
+export const TierType = {
+  TierPractice: 'TIER_PRACTICE',
+  Tier1: 'TIER1',
+  Tier2: 'TIER2',
+  Tier3: 'TIER3',
+  Tier4: 'TIER4',
+} as const;
+export type TierType = (typeof TierType)[keyof typeof TierType];
+
 /**
  * The object containing the code for the tutorial
  * @export
@@ -991,17 +1005,20 @@ export interface TutorialCodeObject {
    */
   image?: string;
 }
+
 /**
  *
  * @export
- * @enum {string}
  */
-export enum TutorialUpdateType {
-  Next = 'NEXT',
-  Previous = 'PREVIOUS',
-  Skip = 'SKIP',
-  Reset = 'RESET',
-}
+export const TutorialUpdateType = {
+  Next: 'NEXT',
+  Previous: 'PREVIOUS',
+  Skip: 'SKIP',
+  Reset: 'RESET',
+} as const;
+export type TutorialUpdateType =
+  (typeof TutorialUpdateType)[keyof typeof TutorialUpdateType];
+
 /**
  * Get the game tutorials
  * @export
@@ -1194,15 +1211,16 @@ export interface UserStats {
    */
   ties: number;
 }
+
 /**
  * Match/Game verdict
  * @export
- * @enum {string}
  */
-export enum Verdict {
-  Player1 = 'PLAYER1',
-  Player2 = 'PLAYER2',
-  Tie = 'TIE',
-  Success = 'SUCCESS',
-  Failure = 'FAILURE',
-}
+export const Verdict = {
+  Player1: 'PLAYER1',
+  Player2: 'PLAYER2',
+  Tie: 'TIE',
+  Success: 'SUCCESS',
+  Failure: 'FAILURE',
+} as const;
+export type Verdict = (typeof Verdict)[keyof typeof Verdict];

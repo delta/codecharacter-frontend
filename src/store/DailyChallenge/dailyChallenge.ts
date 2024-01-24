@@ -110,7 +110,7 @@ export const dailyChallengeState = (
 ): DailyChallengeGetRequest => state.dailyChallenge.dailyChallenge;
 export const dailyChallengePageState = (
   state: RootState,
-): 'Dashboard' | 'DailyChallenge' | 'Tutorials' | undefined =>
+): 'Dashboard' | 'DailyChallenge' | 'Tutorials' =>
   state.dailyChallenge.pageType;
 export const dailyChallengeCompletionState = (
   state: RootState,

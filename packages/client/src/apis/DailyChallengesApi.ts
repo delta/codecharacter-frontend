@@ -13,12 +13,12 @@
  */
 
 import * as runtime from '../runtime';
-import {
+import type {
   DailyChallengeGetRequest,
   DailyChallengeLeaderBoardResponse,
   DailyChallengeMatchRequest,
   GenericError,
-} from '../models';
+} from '../models/index';
 
 export interface CreateDailyChallengeMatchRequest {
   dailyChallengeMatchRequest: DailyChallengeMatchRequest;
@@ -46,7 +46,7 @@ export interface DailyChallengesApiInterface {
    */
   createDailyChallengeMatchRaw(
     requestParameters: CreateDailyChallengeMatchRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<void>>;
 
   /**
@@ -55,7 +55,7 @@ export interface DailyChallengesApiInterface {
    */
   createDailyChallengeMatch(
     dailyChallengeMatchRequest: DailyChallengeMatchRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<void>;
 
   /**
@@ -66,7 +66,7 @@ export interface DailyChallengesApiInterface {
    * @memberof DailyChallengesApiInterface
    */
   getDailyChallengeRaw(
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<DailyChallengeGetRequest>>;
 
   /**
@@ -74,7 +74,7 @@ export interface DailyChallengesApiInterface {
    * Get Daily Challenge for the day
    */
   getDailyChallenge(
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<DailyChallengeGetRequest>;
 
   /**
@@ -88,7 +88,7 @@ export interface DailyChallengesApiInterface {
    */
   getDailyChallengeLeaderBoardRaw(
     requestParameters: GetDailyChallengeLeaderBoardRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<Array<DailyChallengeLeaderBoardResponse>>>;
 
   /**
@@ -98,7 +98,7 @@ export interface DailyChallengesApiInterface {
   getDailyChallengeLeaderBoard(
     page?: number,
     size?: number,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<Array<DailyChallengeLeaderBoardResponse>>;
 }
 
@@ -115,7 +115,7 @@ export class DailyChallengesApi
    */
   async createDailyChallengeMatchRaw(
     requestParameters: CreateDailyChallengeMatchRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<void>> {
     if (
       requestParameters.dailyChallengeMatchRequest === null ||
@@ -161,7 +161,7 @@ export class DailyChallengesApi
    */
   async createDailyChallengeMatch(
     dailyChallengeMatchRequest: DailyChallengeMatchRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<void> {
     await this.createDailyChallengeMatchRaw(
       { dailyChallengeMatchRequest: dailyChallengeMatchRequest },
@@ -174,7 +174,7 @@ export class DailyChallengesApi
    * Get Daily Challenge for the day
    */
   async getDailyChallengeRaw(
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<DailyChallengeGetRequest>> {
     const queryParameters: any = {};
 
@@ -206,7 +206,7 @@ export class DailyChallengesApi
    * Get Daily Challenge for the day
    */
   async getDailyChallenge(
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<DailyChallengeGetRequest> {
     const response = await this.getDailyChallengeRaw(initOverrides);
     return await response.value();
@@ -218,7 +218,7 @@ export class DailyChallengesApi
    */
   async getDailyChallengeLeaderBoardRaw(
     requestParameters: GetDailyChallengeLeaderBoardRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<Array<DailyChallengeLeaderBoardResponse>>> {
     const queryParameters: any = {};
 
@@ -260,7 +260,7 @@ export class DailyChallengesApi
   async getDailyChallengeLeaderBoard(
     page?: number,
     size?: number,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<Array<DailyChallengeLeaderBoardResponse>> {
     const response = await this.getDailyChallengeLeaderBoardRaw(
       { page: page, size: size },

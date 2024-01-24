@@ -35,7 +35,7 @@ export interface GameApiInterface {
    */
   getGameLogsByGameIdRaw(
     requestParameters: GetGameLogsByGameIdRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<string>>;
 
   /**
@@ -44,7 +44,7 @@ export interface GameApiInterface {
    */
   getGameLogsByGameId(
     gameId: string,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<string>;
 }
 
@@ -58,7 +58,7 @@ export class GameApi extends runtime.BaseAPI implements GameApiInterface {
    */
   async getGameLogsByGameIdRaw(
     requestParameters: GetGameLogsByGameIdRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<string>> {
     if (
       requestParameters.gameId === null ||
@@ -95,7 +95,11 @@ export class GameApi extends runtime.BaseAPI implements GameApiInterface {
       initOverrides,
     );
 
-    return new runtime.TextApiResponse(response) as any;
+    if (this.isJsonMime(response.headers.get('content-type'))) {
+      return new runtime.JSONApiResponse<string>(response);
+    } else {
+      return new runtime.TextApiResponse(response) as any;
+    }
   }
 
   /**
@@ -104,7 +108,7 @@ export class GameApi extends runtime.BaseAPI implements GameApiInterface {
    */
   async getGameLogsByGameId(
     gameId: string,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<string> {
     const response = await this.getGameLogsByGameIdRaw(
       { gameId: gameId },

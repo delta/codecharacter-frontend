@@ -13,7 +13,7 @@
  */
 
 import * as runtime from '../runtime';
-import {
+import type {
   CreateMapRevisionRequest,
   GameMap,
   GameMapRevision,
@@ -21,7 +21,7 @@ import {
   GenericError,
   MapCommitByCommitIdResponse,
   UpdateLatestMapRequest,
-} from '../models';
+} from '../models/index';
 
 export interface CreateMapRevisionOperationRequest {
   createMapRevisionRequest: CreateMapRevisionRequest;
@@ -60,7 +60,7 @@ export interface MapApiInterface {
    */
   createMapRevisionRaw(
     requestParameters: CreateMapRevisionOperationRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<void>>;
 
   /**
@@ -69,7 +69,7 @@ export interface MapApiInterface {
    */
   createMapRevision(
     createMapRevisionRequest: CreateMapRevisionRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<void>;
 
   /**
@@ -82,7 +82,7 @@ export interface MapApiInterface {
    */
   getLatestMapRaw(
     requestParameters: GetLatestMapRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<GameMap>>;
 
   /**
@@ -91,7 +91,7 @@ export interface MapApiInterface {
    */
   getLatestMap(
     type?: GameMapType,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<GameMap>;
 
   /**
@@ -104,7 +104,7 @@ export interface MapApiInterface {
    */
   getMapByCommitIDRaw(
     requestParameters: GetMapByCommitIDRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<MapCommitByCommitIdResponse>>;
 
   /**
@@ -112,7 +112,7 @@ export interface MapApiInterface {
    */
   getMapByCommitID(
     commitId: string,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<MapCommitByCommitIdResponse>;
 
   /**
@@ -125,7 +125,7 @@ export interface MapApiInterface {
    */
   getMapRevisionsRaw(
     requestParameters: GetMapRevisionsRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<Array<GameMapRevision>>>;
 
   /**
@@ -134,7 +134,7 @@ export interface MapApiInterface {
    */
   getMapRevisions(
     type?: GameMapType,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<Array<GameMapRevision>>;
 
   /**
@@ -147,7 +147,7 @@ export interface MapApiInterface {
    */
   updateLatestMapRaw(
     requestParameters: UpdateLatestMapOperationRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<void>>;
 
   /**
@@ -156,7 +156,7 @@ export interface MapApiInterface {
    */
   updateLatestMap(
     updateLatestMapRequest: UpdateLatestMapRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<void>;
 }
 
@@ -170,7 +170,7 @@ export class MapApi extends runtime.BaseAPI implements MapApiInterface {
    */
   async createMapRevisionRaw(
     requestParameters: CreateMapRevisionOperationRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<void>> {
     if (
       requestParameters.createMapRevisionRequest === null ||
@@ -216,7 +216,7 @@ export class MapApi extends runtime.BaseAPI implements MapApiInterface {
    */
   async createMapRevision(
     createMapRevisionRequest: CreateMapRevisionRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<void> {
     await this.createMapRevisionRaw(
       { createMapRevisionRequest: createMapRevisionRequest },
@@ -230,7 +230,7 @@ export class MapApi extends runtime.BaseAPI implements MapApiInterface {
    */
   async getLatestMapRaw(
     requestParameters: GetLatestMapRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<GameMap>> {
     const queryParameters: any = {};
 
@@ -267,7 +267,7 @@ export class MapApi extends runtime.BaseAPI implements MapApiInterface {
    */
   async getLatestMap(
     type?: GameMapType,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<GameMap> {
     const response = await this.getLatestMapRaw({ type: type }, initOverrides);
     return await response.value();
@@ -278,7 +278,7 @@ export class MapApi extends runtime.BaseAPI implements MapApiInterface {
    */
   async getMapByCommitIDRaw(
     requestParameters: GetMapByCommitIDRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<MapCommitByCommitIdResponse>> {
     if (
       requestParameters.commitId === null ||
@@ -323,7 +323,7 @@ export class MapApi extends runtime.BaseAPI implements MapApiInterface {
    */
   async getMapByCommitID(
     commitId: string,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<MapCommitByCommitIdResponse> {
     const response = await this.getMapByCommitIDRaw(
       { commitId: commitId },
@@ -338,7 +338,7 @@ export class MapApi extends runtime.BaseAPI implements MapApiInterface {
    */
   async getMapRevisionsRaw(
     requestParameters: GetMapRevisionsRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<Array<GameMapRevision>>> {
     const queryParameters: any = {};
 
@@ -375,7 +375,7 @@ export class MapApi extends runtime.BaseAPI implements MapApiInterface {
    */
   async getMapRevisions(
     type?: GameMapType,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<Array<GameMapRevision>> {
     const response = await this.getMapRevisionsRaw(
       { type: type },
@@ -390,7 +390,7 @@ export class MapApi extends runtime.BaseAPI implements MapApiInterface {
    */
   async updateLatestMapRaw(
     requestParameters: UpdateLatestMapOperationRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<runtime.ApiResponse<void>> {
     if (
       requestParameters.updateLatestMapRequest === null ||
@@ -436,7 +436,7 @@ export class MapApi extends runtime.BaseAPI implements MapApiInterface {
    */
   async updateLatestMap(
     updateLatestMapRequest: UpdateLatestMapRequest,
-    initOverrides?: RequestInit,
+    initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<void> {
     await this.updateLatestMapRaw(
       { updateLatestMapRequest: updateLatestMapRequest },
