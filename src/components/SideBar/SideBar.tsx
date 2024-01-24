@@ -22,6 +22,7 @@ import {
 import { useTour } from '@reactour/tour';
 import { CurrentUserApi } from '@codecharacter-2024/client';
 import { apiConfig } from '../../api/ApiConfig';
+import { getLogAction } from '../../store/rendererLogs/logSlice';
 
 const icons = [
   { icon: codeIcon, route: 'dashboard', tooltip: 'Code Editor' },
@@ -43,7 +44,6 @@ const SideBar: React.FunctionComponent = () => {
 
   const { setIsOpen } = useTour();
   const isTourOver = useAppSelector(IsTourOver);
-
   const currentUserApi = new CurrentUserApi(apiConfig);
 
   const dispatch = useAppDispatch();
@@ -140,7 +140,12 @@ const SideBar: React.FunctionComponent = () => {
                 <div
                   className={styles.deltaLogo}
                   onClick={() => {
-                    window.open('https://delta.nitt.edu/');
+                    dispatch(
+                      getLogAction({
+                        id: 'sjdnjkndsg',
+                        callback: () => {},
+                      }),
+                    );
                   }}
                 >
                   <img src={deltaLogo} alt="delta" />

@@ -2,6 +2,8 @@ import { RendererUtils } from '@codecharacter-2024/renderer';
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { RootState } from '../store';
 import { getLogs } from './logAPI';
+import { p1logs } from './chumma';
+import { normalLogs } from './normalchumma';
 
 const initialState = {
   logs: '',
@@ -11,12 +13,14 @@ export const getLogAction = createAsyncThunk(
   'logs/getLogs',
   async (idWithCallback: { id: string; callback: () => void }) => {
     try {
-      getLogs(idWithCallback.id).then(logs => {
-        idWithCallback.callback();
-        setTimeout(() => {
-          RendererUtils.loadLog(logs);
-        }, 1000);
-      });
+      // getLogs(idWithCallback.id).then(logs => {
+      //   idWithCallback.callback();
+      //   setTimeout(() => {
+      //     RendererUtils.loadLog(logs);
+      //   }, 1000);
+      // });
+      // console.log(normalLogs);
+      RendererUtils.loadLog(p1logs);
       return '';
     } catch (error) {
       throw error;

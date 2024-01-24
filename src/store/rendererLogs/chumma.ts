@@ -1,0 +1,30767 @@
+export const p1logs = `INIT
+TURN, 0
+PRINT, TURN 0 LOGS:To be spawned at Position(0,0)
+PRINT, To be spawned at Position(0,1)
+PRINT, To be spawned at Position(0,2)
+PRINT, Type 1 at Position (0,0)
+PRINT, Type 2 at Position (0,1)
+PRINT, Type 3 at Position (0,2)
+PRINT, 
+SPAWN, A, 0, 1, 0, 0
+SPAWN, A, 1, 2, 0, 1
+SPAWN, A, 2, 3, 0, 2
+SPAWN, D, 3, 1, 0, 0
+SPAWN, D, 4, 2, 0, 1
+SPAWN, D, 5, 3, 0, 2
+TURN, 1
+PRINT, TURN 1 LOGS:To be spawned at Position(0,3)
+PRINT, To be spawned at Position(0,4)
+PRINT, To be spawned at Position(0,5)
+PRINT, Type 1 at Position (0,3)
+PRINT, Type 2 at Position (0,4)
+PRINT, Type 3 at Position (0,5)
+PRINT, 
+SHOOT, D, 0, 3, 6
+SHOOT, D, 1, 4, 18
+SHOOT, D, 2, 5, 13
+SHOOT, A, 3, 0, 6
+SHOOT, A, 4, 1, 18
+SHOOT, A, 5, 2, 13
+SPAWN, A, 6, 1, 0, 3
+SPAWN, A, 7, 2, 0, 4
+SPAWN, A, 8, 3, 0, 5
+SPAWN, D, 9, 1, 0, 3
+SPAWN, D, 10, 2, 0, 4
+SPAWN, D, 11, 3, 0, 5
+TURN, 2
+PRINT, TURN 2 LOGS:To be spawned at Position(0,6)
+PRINT, To be spawned at Position(0,7)
+PRINT, To be spawned at Position(0,8)
+PRINT, Type 1 at Position (0,6)
+PRINT, Type 2 at Position (0,7)
+PRINT, Type 3 at Position (0,8)
+PRINT, 
+SHOOT, D, 0, 3, 2
+SHOOT, D, 1, 4, 16
+SHOOT, D, 2, 5, 11
+SHOOT, D, 6, 9, 6
+SHOOT, D, 7, 10, 18
+SHOOT, D, 8, 11, 13
+SHOOT, A, 3, 0, 2
+SHOOT, A, 4, 1, 16
+SHOOT, A, 5, 2, 11
+SHOOT, A, 9, 6, 6
+SHOOT, A, 10, 7, 18
+SHOOT, A, 11, 8, 13
+SPAWN, A, 12, 1, 0, 6
+SPAWN, A, 13, 2, 0, 7
+SPAWN, A, 14, 3, 0, 8
+SPAWN, D, 15, 1, 0, 6
+SPAWN, D, 16, 2, 0, 7
+SPAWN, D, 17, 3, 0, 8
+TURN, 3
+PRINT, TURN 3 LOGS:To be spawned at Position(0,9)
+PRINT, To be spawned at Position(0,10)
+PRINT, To be spawned at Position(0,11)
+PRINT, Type 1 at Position (0,9)
+PRINT, Type 2 at Position (0,10)
+PRINT, Type 3 at Position (0,11)
+PRINT, 
+SHOOT, D, 0, 3, 0
+SHOOT, D, 1, 4, 14
+SHOOT, D, 2, 5, 9
+SHOOT, D, 6, 9, 2
+SHOOT, D, 7, 10, 16
+SHOOT, D, 8, 11, 11
+SHOOT, D, 12, 15, 6
+SHOOT, D, 13, 16, 18
+SHOOT, D, 14, 17, 13
+SHOOT, A, 3, 0, 0
+SHOOT, A, 4, 1, 14
+SHOOT, A, 5, 2, 9
+SHOOT, A, 9, 6, 2
+SHOOT, A, 10, 7, 16
+SHOOT, A, 11, 8, 11
+SHOOT, A, 15, 12, 6
+SHOOT, A, 16, 13, 18
+SHOOT, A, 17, 14, 13
+DEAD, A, 0
+DEAD, D, 3
+SPAWN, A, 18, 1, 0, 9
+SPAWN, A, 19, 2, 0, 10
+SPAWN, A, 20, 3, 0, 11
+SPAWN, D, 21, 1, 0, 9
+SPAWN, D, 22, 2, 0, 10
+SPAWN, D, 23, 3, 0, 11
+TURN, 4
+PRINT, TURN 4 LOGS:To be spawned at Position(0,12)
+PRINT, To be spawned at Position(0,13)
+PRINT, To be spawned at Position(0,14)
+PRINT, Type 1 at Position (0,12)
+PRINT, Type 2 at Position (0,13)
+PRINT, Type 3 at Position (0,14)
+PRINT, 
+SHOOT, D, 1, 4, 12
+SHOOT, D, 2, 5, 7
+SHOOT, D, 6, 9, 0
+SHOOT, D, 7, 10, 14
+SHOOT, D, 8, 11, 9
+SHOOT, D, 12, 15, 2
+SHOOT, D, 13, 16, 16
+SHOOT, D, 14, 17, 11
+SHOOT, D, 18, 21, 6
+SHOOT, D, 19, 22, 18
+SHOOT, D, 20, 23, 13
+SHOOT, A, 4, 1, 12
+SHOOT, A, 5, 2, 7
+SHOOT, A, 9, 6, 0
+SHOOT, A, 10, 7, 14
+SHOOT, A, 11, 8, 9
+SHOOT, A, 15, 12, 2
+SHOOT, A, 16, 13, 16
+SHOOT, A, 17, 14, 11
+SHOOT, A, 21, 18, 6
+SHOOT, A, 22, 19, 18
+SHOOT, A, 23, 20, 13
+DEAD, A, 6
+DEAD, D, 9
+SPAWN, A, 24, 1, 0, 12
+SPAWN, A, 25, 2, 0, 13
+SPAWN, A, 26, 3, 0, 14
+SPAWN, D, 27, 1, 0, 12
+SPAWN, D, 28, 2, 0, 13
+SPAWN, D, 29, 3, 0, 14
+TURN, 5
+PRINT, TURN 5 LOGS:To be spawned at Position(0,15)
+PRINT, To be spawned at Position(0,16)
+PRINT, To be spawned at Position(0,17)
+PRINT, Type 1 at Position (0,15)
+PRINT, Type 2 at Position (0,16)
+PRINT, Type 3 at Position (0,17)
+PRINT, 
+SHOOT, D, 1, 4, 10
+SHOOT, D, 2, 5, 5
+SHOOT, D, 7, 10, 12
+SHOOT, D, 8, 11, 7
+SHOOT, D, 12, 15, 0
+SHOOT, D, 13, 16, 14
+SHOOT, D, 14, 17, 9
+SHOOT, D, 18, 21, 2
+SHOOT, D, 19, 22, 16
+SHOOT, D, 20, 23, 11
+SHOOT, D, 24, 27, 6
+SHOOT, D, 25, 28, 18
+SHOOT, D, 26, 29, 13
+SHOOT, A, 4, 1, 10
+SHOOT, A, 5, 2, 5
+SHOOT, A, 10, 7, 12
+SHOOT, A, 11, 8, 7
+SHOOT, A, 15, 12, 0
+SHOOT, A, 16, 13, 14
+SHOOT, A, 17, 14, 9
+SHOOT, A, 21, 18, 2
+SHOOT, A, 22, 19, 16
+SHOOT, A, 23, 20, 11
+SHOOT, A, 27, 24, 6
+SHOOT, A, 28, 25, 18
+SHOOT, A, 29, 26, 13
+DEAD, A, 12
+DEAD, D, 15
+SPAWN, A, 30, 1, 0, 15
+SPAWN, A, 31, 2, 0, 16
+SPAWN, A, 32, 3, 0, 17
+SPAWN, D, 33, 1, 0, 15
+SPAWN, D, 34, 2, 0, 16
+SPAWN, D, 35, 3, 0, 17
+TURN, 6
+PRINT, TURN 6 LOGS:To be spawned at Position(0,18)
+PRINT, To be spawned at Position(0,19)
+PRINT, To be spawned at Position(0,20)
+PRINT, Type 1 at Position (0,18)
+PRINT, Type 2 at Position (0,19)
+PRINT, Type 3 at Position (0,20)
+PRINT, 
+SHOOT, D, 1, 4, 8
+SHOOT, D, 2, 5, 3
+SHOOT, D, 7, 10, 10
+SHOOT, D, 8, 11, 5
+SHOOT, D, 13, 16, 12
+SHOOT, D, 14, 17, 7
+SHOOT, D, 18, 21, 0
+SHOOT, D, 19, 22, 14
+SHOOT, D, 20, 23, 9
+SHOOT, D, 24, 27, 2
+SHOOT, D, 25, 28, 16
+SHOOT, D, 26, 29, 11
+SHOOT, D, 30, 33, 6
+SHOOT, D, 31, 34, 18
+SHOOT, D, 32, 35, 13
+SHOOT, A, 4, 1, 8
+SHOOT, A, 5, 2, 3
+SHOOT, A, 10, 7, 10
+SHOOT, A, 11, 8, 5
+SHOOT, A, 16, 13, 12
+SHOOT, A, 17, 14, 7
+SHOOT, A, 21, 18, 0
+SHOOT, A, 22, 19, 14
+SHOOT, A, 23, 20, 9
+SHOOT, A, 27, 24, 2
+SHOOT, A, 28, 25, 16
+SHOOT, A, 29, 26, 11
+SHOOT, A, 33, 30, 6
+SHOOT, A, 34, 31, 18
+SHOOT, A, 35, 32, 13
+DEAD, A, 18
+DEAD, D, 21
+SPAWN, A, 36, 1, 0, 18
+SPAWN, A, 37, 2, 0, 19
+SPAWN, A, 38, 3, 0, 20
+SPAWN, D, 39, 1, 0, 18
+SPAWN, D, 40, 2, 0, 19
+SPAWN, D, 41, 3, 0, 20
+TURN, 7
+PRINT, TURN 7 LOGS:To be spawned at Position(0,21)
+PRINT, To be spawned at Position(0,22)
+PRINT, To be spawned at Position(0,23)
+PRINT, Type 1 at Position (0,21)
+PRINT, Type 2 at Position (0,22)
+PRINT, Type 3 at Position (0,23)
+PRINT, 
+SHOOT, D, 1, 4, 6
+SHOOT, D, 2, 5, 1
+SHOOT, D, 7, 10, 8
+SHOOT, D, 8, 11, 3
+SHOOT, D, 13, 16, 10
+SHOOT, D, 14, 17, 5
+SHOOT, D, 19, 22, 12
+SHOOT, D, 20, 23, 7
+SHOOT, D, 24, 27, 0
+SHOOT, D, 25, 28, 14
+SHOOT, D, 26, 29, 9
+SHOOT, D, 30, 33, 2
+SHOOT, D, 31, 34, 16
+SHOOT, D, 32, 35, 11
+SHOOT, D, 36, 39, 6
+SHOOT, D, 37, 40, 18
+SHOOT, D, 38, 41, 13
+SHOOT, A, 4, 1, 6
+SHOOT, A, 5, 2, 1
+SHOOT, A, 10, 7, 8
+SHOOT, A, 11, 8, 3
+SHOOT, A, 16, 13, 10
+SHOOT, A, 17, 14, 5
+SHOOT, A, 22, 19, 12
+SHOOT, A, 23, 20, 7
+SHOOT, A, 27, 24, 0
+SHOOT, A, 28, 25, 14
+SHOOT, A, 29, 26, 9
+SHOOT, A, 33, 30, 2
+SHOOT, A, 34, 31, 16
+SHOOT, A, 35, 32, 11
+SHOOT, A, 39, 36, 6
+SHOOT, A, 40, 37, 18
+SHOOT, A, 41, 38, 13
+DEAD, A, 24
+DEAD, D, 27
+SPAWN, A, 42, 1, 0, 21
+SPAWN, A, 43, 2, 0, 22
+SPAWN, A, 44, 3, 0, 23
+SPAWN, D, 45, 1, 0, 21
+SPAWN, D, 46, 2, 0, 22
+SPAWN, D, 47, 3, 0, 23
+TURN, 8
+PRINT, TURN 8 LOGS:To be spawned at Position(0,24)
+PRINT, To be spawned at Position(0,25)
+PRINT, To be spawned at Position(0,26)
+PRINT, Type 1 at Position (0,24)
+PRINT, Type 2 at Position (0,25)
+PRINT, Type 3 at Position (0,26)
+PRINT, 
+SHOOT, D, 1, 4, 4
+SHOOT, D, 2, 5, 0
+SHOOT, D, 7, 10, 6
+SHOOT, D, 8, 11, 1
+SHOOT, D, 13, 16, 8
+SHOOT, D, 14, 17, 3
+SHOOT, D, 19, 22, 10
+SHOOT, D, 20, 23, 5
+SHOOT, D, 25, 28, 12
+SHOOT, D, 26, 29, 7
+SHOOT, D, 30, 33, 0
+SHOOT, D, 31, 34, 14
+SHOOT, D, 32, 35, 9
+SHOOT, D, 36, 39, 2
+SHOOT, D, 37, 40, 16
+SHOOT, D, 38, 41, 11
+SHOOT, D, 42, 45, 6
+SHOOT, D, 43, 46, 18
+SHOOT, D, 44, 47, 13
+SHOOT, A, 4, 1, 4
+SHOOT, A, 5, 2, 0
+SHOOT, A, 10, 7, 6
+SHOOT, A, 11, 8, 1
+SHOOT, A, 16, 13, 8
+SHOOT, A, 17, 14, 3
+SHOOT, A, 22, 19, 10
+SHOOT, A, 23, 20, 5
+SHOOT, A, 28, 25, 12
+SHOOT, A, 29, 26, 7
+SHOOT, A, 33, 30, 0
+SHOOT, A, 34, 31, 14
+SHOOT, A, 35, 32, 9
+SHOOT, A, 39, 36, 2
+SHOOT, A, 40, 37, 16
+SHOOT, A, 41, 38, 11
+SHOOT, A, 45, 42, 6
+SHOOT, A, 46, 43, 18
+SHOOT, A, 47, 44, 13
+DEAD, A, 2
+DEAD, A, 30
+DEAD, D, 5
+DEAD, D, 33
+SPAWN, A, 48, 1, 0, 24
+SPAWN, A, 49, 2, 0, 25
+SPAWN, A, 50, 3, 0, 26
+SPAWN, D, 51, 1, 0, 24
+SPAWN, D, 52, 2, 0, 25
+SPAWN, D, 53, 3, 0, 26
+TURN, 9
+PRINT, TURN 9 LOGS:To be spawned at Position(0,27)
+PRINT, To be spawned at Position(0,28)
+PRINT, To be spawned at Position(0,29)
+PRINT, Type 1 at Position (0,27)
+PRINT, Type 2 at Position (0,28)
+PRINT, Type 3 at Position (0,29)
+PRINT, 
+SHOOT, D, 1, 4, 2
+SHOOT, D, 7, 10, 4
+SHOOT, D, 8, 11, 0
+SHOOT, D, 13, 16, 6
+SHOOT, D, 14, 17, 1
+SHOOT, D, 19, 22, 8
+SHOOT, D, 20, 23, 3
+SHOOT, D, 25, 28, 10
+SHOOT, D, 26, 29, 5
+SHOOT, D, 31, 34, 12
+SHOOT, D, 32, 35, 7
+SHOOT, D, 36, 39, 0
+SHOOT, D, 37, 40, 14
+SHOOT, D, 38, 41, 9
+SHOOT, D, 42, 45, 2
+SHOOT, D, 43, 46, 16
+SHOOT, D, 44, 47, 11
+SHOOT, D, 48, 51, 6
+SHOOT, D, 49, 52, 18
+SHOOT, D, 50, 53, 13
+SHOOT, A, 4, 1, 2
+SHOOT, A, 10, 7, 4
+SHOOT, A, 11, 8, 0
+SHOOT, A, 16, 13, 6
+SHOOT, A, 17, 14, 1
+SHOOT, A, 22, 19, 8
+SHOOT, A, 23, 20, 3
+SHOOT, A, 28, 25, 10
+SHOOT, A, 29, 26, 5
+SHOOT, A, 34, 31, 12
+SHOOT, A, 35, 32, 7
+SHOOT, A, 39, 36, 0
+SHOOT, A, 40, 37, 14
+SHOOT, A, 41, 38, 9
+SHOOT, A, 45, 42, 2
+SHOOT, A, 46, 43, 16
+SHOOT, A, 47, 44, 11
+SHOOT, A, 51, 48, 6
+SHOOT, A, 52, 49, 18
+SHOOT, A, 53, 50, 13
+DEAD, A, 8
+DEAD, A, 36
+DEAD, D, 11
+DEAD, D, 39
+SPAWN, A, 54, 1, 0, 27
+SPAWN, A, 55, 2, 0, 28
+SPAWN, A, 56, 3, 0, 29
+SPAWN, D, 57, 1, 0, 27
+SPAWN, D, 58, 2, 0, 28
+SPAWN, D, 59, 3, 0, 29
+TURN, 10
+PRINT, TURN 10 LOGS:To be spawned at Position(0,30)
+PRINT, To be spawned at Position(0,31)
+PRINT, To be spawned at Position(0,32)
+PRINT, Type 1 at Position (0,30)
+PRINT, Type 2 at Position (0,31)
+PRINT, Type 3 at Position (0,32)
+PRINT, 
+SHOOT, D, 1, 4, 0
+SHOOT, D, 7, 10, 2
+SHOOT, D, 13, 16, 4
+SHOOT, D, 14, 17, 0
+SHOOT, D, 19, 22, 6
+SHOOT, D, 20, 23, 1
+SHOOT, D, 25, 28, 8
+SHOOT, D, 26, 29, 3
+SHOOT, D, 31, 34, 10
+SHOOT, D, 32, 35, 5
+SHOOT, D, 37, 40, 12
+SHOOT, D, 38, 41, 7
+SHOOT, D, 42, 45, 0
+SHOOT, D, 43, 46, 14
+SHOOT, D, 44, 47, 9
+SHOOT, D, 48, 51, 2
+SHOOT, D, 49, 52, 16
+SHOOT, D, 50, 53, 11
+SHOOT, D, 54, 57, 6
+SHOOT, D, 55, 58, 18
+SHOOT, D, 56, 59, 13
+SHOOT, A, 4, 1, 0
+SHOOT, A, 10, 7, 2
+SHOOT, A, 16, 13, 4
+SHOOT, A, 17, 14, 0
+SHOOT, A, 22, 19, 6
+SHOOT, A, 23, 20, 1
+SHOOT, A, 28, 25, 8
+SHOOT, A, 29, 26, 3
+SHOOT, A, 34, 31, 10
+SHOOT, A, 35, 32, 5
+SHOOT, A, 40, 37, 12
+SHOOT, A, 41, 38, 7
+SHOOT, A, 45, 42, 0
+SHOOT, A, 46, 43, 14
+SHOOT, A, 47, 44, 9
+SHOOT, A, 51, 48, 2
+SHOOT, A, 52, 49, 16
+SHOOT, A, 53, 50, 11
+SHOOT, A, 57, 54, 6
+SHOOT, A, 58, 55, 18
+SHOOT, A, 59, 56, 13
+DEAD, A, 1
+DEAD, A, 14
+DEAD, A, 42
+DEAD, D, 4
+DEAD, D, 17
+DEAD, D, 45
+SPAWN, A, 60, 1, 0, 30
+SPAWN, A, 61, 2, 0, 31
+SPAWN, A, 62, 3, 0, 32
+SPAWN, D, 63, 1, 0, 30
+SPAWN, D, 64, 2, 0, 31
+SPAWN, D, 65, 3, 0, 32
+TURN, 11
+PRINT, TURN 11 LOGS:To be spawned at Position(0,33)
+PRINT, To be spawned at Position(0,34)
+PRINT, To be spawned at Position(0,35)
+PRINT, Type 1 at Position (0,33)
+PRINT, Type 2 at Position (0,34)
+PRINT, Type 3 at Position (0,35)
+PRINT, 
+SHOOT, D, 7, 10, 0
+SHOOT, D, 13, 16, 2
+SHOOT, D, 19, 22, 4
+SHOOT, D, 20, 23, 0
+SHOOT, D, 25, 28, 6
+SHOOT, D, 26, 29, 1
+SHOOT, D, 31, 34, 8
+SHOOT, D, 32, 35, 3
+SHOOT, D, 37, 40, 10
+SHOOT, D, 38, 41, 5
+SHOOT, D, 43, 46, 12
+SHOOT, D, 44, 47, 7
+SHOOT, D, 48, 51, 0
+SHOOT, D, 49, 52, 14
+SHOOT, D, 50, 53, 9
+SHOOT, D, 54, 57, 2
+SHOOT, D, 55, 58, 16
+SHOOT, D, 56, 59, 11
+SHOOT, D, 60, 63, 6
+SHOOT, D, 61, 64, 18
+SHOOT, D, 62, 65, 13
+SHOOT, A, 10, 7, 0
+SHOOT, A, 16, 13, 2
+SHOOT, A, 22, 19, 4
+SHOOT, A, 23, 20, 0
+SHOOT, A, 28, 25, 6
+SHOOT, A, 29, 26, 1
+SHOOT, A, 34, 31, 8
+SHOOT, A, 35, 32, 3
+SHOOT, A, 40, 37, 10
+SHOOT, A, 41, 38, 5
+SHOOT, A, 46, 43, 12
+SHOOT, A, 47, 44, 7
+SHOOT, A, 51, 48, 0
+SHOOT, A, 52, 49, 14
+SHOOT, A, 53, 50, 9
+SHOOT, A, 57, 54, 2
+SHOOT, A, 58, 55, 16
+SHOOT, A, 59, 56, 11
+SHOOT, A, 63, 60, 6
+SHOOT, A, 64, 61, 18
+SHOOT, A, 65, 62, 13
+DEAD, A, 7
+DEAD, A, 20
+DEAD, A, 48
+DEAD, D, 10
+DEAD, D, 23
+DEAD, D, 51
+SPAWN, A, 66, 1, 0, 33
+SPAWN, A, 67, 2, 0, 34
+SPAWN, A, 68, 3, 0, 35
+SPAWN, D, 69, 1, 0, 33
+SPAWN, D, 70, 2, 0, 34
+SPAWN, D, 71, 3, 0, 35
+TURN, 12
+PRINT, TURN 12 LOGS:To be spawned at Position(0,36)
+PRINT, To be spawned at Position(0,37)
+PRINT, To be spawned at Position(0,38)
+PRINT, Type 1 at Position (0,36)
+PRINT, Type 2 at Position (0,37)
+PRINT, Type 3 at Position (0,38)
+PRINT, 
+SHOOT, D, 13, 16, 0
+SHOOT, D, 19, 22, 2
+SHOOT, D, 25, 28, 4
+SHOOT, D, 26, 29, 0
+SHOOT, D, 31, 34, 6
+SHOOT, D, 32, 35, 1
+SHOOT, D, 37, 40, 8
+SHOOT, D, 38, 41, 3
+SHOOT, D, 43, 46, 10
+SHOOT, D, 44, 47, 5
+SHOOT, D, 49, 52, 12
+SHOOT, D, 50, 53, 7
+SHOOT, D, 54, 57, 0
+SHOOT, D, 55, 58, 14
+SHOOT, D, 56, 59, 9
+SHOOT, D, 60, 63, 2
+SHOOT, D, 61, 64, 16
+SHOOT, D, 62, 65, 11
+SHOOT, D, 66, 69, 6
+SHOOT, D, 67, 70, 18
+SHOOT, D, 68, 71, 13
+SHOOT, A, 16, 13, 0
+SHOOT, A, 22, 19, 2
+SHOOT, A, 28, 25, 4
+SHOOT, A, 29, 26, 0
+SHOOT, A, 34, 31, 6
+SHOOT, A, 35, 32, 1
+SHOOT, A, 40, 37, 8
+SHOOT, A, 41, 38, 3
+SHOOT, A, 46, 43, 10
+SHOOT, A, 47, 44, 5
+SHOOT, A, 52, 49, 12
+SHOOT, A, 53, 50, 7
+SHOOT, A, 57, 54, 0
+SHOOT, A, 58, 55, 14
+SHOOT, A, 59, 56, 9
+SHOOT, A, 63, 60, 2
+SHOOT, A, 64, 61, 16
+SHOOT, A, 65, 62, 11
+SHOOT, A, 69, 66, 6
+SHOOT, A, 70, 67, 18
+SHOOT, A, 71, 68, 13
+DEAD, A, 13
+DEAD, A, 26
+DEAD, A, 54
+DEAD, D, 16
+DEAD, D, 29
+DEAD, D, 57
+SPAWN, A, 72, 1, 0, 36
+SPAWN, A, 73, 2, 0, 37
+SPAWN, A, 74, 3, 0, 38
+SPAWN, D, 75, 1, 0, 36
+SPAWN, D, 76, 2, 0, 37
+SPAWN, D, 77, 3, 0, 38
+TURN, 13
+PRINT, TURN 13 LOGS:To be spawned at Position(0,39)
+PRINT, To be spawned at Position(0,40)
+PRINT, To be spawned at Position(0,41)
+PRINT, Type 1 at Position (0,39)
+PRINT, Type 2 at Position (0,40)
+PRINT, Type 3 at Position (0,41)
+PRINT, 
+SHOOT, D, 19, 22, 0
+SHOOT, D, 25, 28, 2
+SHOOT, D, 31, 34, 4
+SHOOT, D, 32, 35, 0
+SHOOT, D, 37, 40, 6
+SHOOT, D, 38, 41, 1
+SHOOT, D, 43, 46, 8
+SHOOT, D, 44, 47, 3
+SHOOT, D, 49, 52, 10
+SHOOT, D, 50, 53, 5
+SHOOT, D, 55, 58, 12
+SHOOT, D, 56, 59, 7
+SHOOT, D, 60, 63, 0
+SHOOT, D, 61, 64, 14
+SHOOT, D, 62, 65, 9
+SHOOT, D, 66, 69, 2
+SHOOT, D, 67, 70, 16
+SHOOT, D, 68, 71, 11
+SHOOT, D, 72, 75, 6
+SHOOT, D, 73, 76, 18
+SHOOT, D, 74, 77, 13
+SHOOT, A, 22, 19, 0
+SHOOT, A, 28, 25, 2
+SHOOT, A, 34, 31, 4
+SHOOT, A, 35, 32, 0
+SHOOT, A, 40, 37, 6
+SHOOT, A, 41, 38, 1
+SHOOT, A, 46, 43, 8
+SHOOT, A, 47, 44, 3
+SHOOT, A, 52, 49, 10
+SHOOT, A, 53, 50, 5
+SHOOT, A, 58, 55, 12
+SHOOT, A, 59, 56, 7
+SHOOT, A, 63, 60, 0
+SHOOT, A, 64, 61, 14
+SHOOT, A, 65, 62, 9
+SHOOT, A, 69, 66, 2
+SHOOT, A, 70, 67, 16
+SHOOT, A, 71, 68, 11
+SHOOT, A, 75, 72, 6
+SHOOT, A, 76, 73, 18
+SHOOT, A, 77, 74, 13
+DEAD, A, 19
+DEAD, A, 32
+DEAD, A, 60
+DEAD, D, 22
+DEAD, D, 35
+DEAD, D, 63
+SPAWN, A, 78, 1, 0, 39
+SPAWN, A, 79, 2, 0, 40
+SPAWN, A, 80, 3, 0, 41
+SPAWN, D, 81, 1, 0, 39
+SPAWN, D, 82, 2, 0, 40
+SPAWN, D, 83, 3, 0, 41
+TURN, 14
+PRINT, TURN 14 LOGS:To be spawned at Position(0,42)
+PRINT, To be spawned at Position(0,43)
+PRINT, To be spawned at Position(0,44)
+PRINT, Type 1 at Position (0,42)
+PRINT, Type 2 at Position (0,43)
+PRINT, Type 3 at Position (0,44)
+PRINT, 
+SHOOT, D, 25, 28, 0
+SHOOT, D, 31, 34, 2
+SHOOT, D, 37, 40, 4
+SHOOT, D, 38, 41, 0
+SHOOT, D, 43, 46, 6
+SHOOT, D, 44, 47, 1
+SHOOT, D, 49, 52, 8
+SHOOT, D, 50, 53, 3
+SHOOT, D, 55, 58, 10
+SHOOT, D, 56, 59, 5
+SHOOT, D, 61, 64, 12
+SHOOT, D, 62, 65, 7
+SHOOT, D, 66, 69, 0
+SHOOT, D, 67, 70, 14
+SHOOT, D, 68, 71, 9
+SHOOT, D, 72, 75, 2
+SHOOT, D, 73, 76, 16
+SHOOT, D, 74, 77, 11
+SHOOT, D, 78, 81, 6
+SHOOT, D, 79, 82, 18
+SHOOT, D, 80, 83, 13
+SHOOT, A, 28, 25, 0
+SHOOT, A, 34, 31, 2
+SHOOT, A, 40, 37, 4
+SHOOT, A, 41, 38, 0
+SHOOT, A, 46, 43, 6
+SHOOT, A, 47, 44, 1
+SHOOT, A, 52, 49, 8
+SHOOT, A, 53, 50, 3
+SHOOT, A, 58, 55, 10
+SHOOT, A, 59, 56, 5
+SHOOT, A, 64, 61, 12
+SHOOT, A, 65, 62, 7
+SHOOT, A, 69, 66, 0
+SHOOT, A, 70, 67, 14
+SHOOT, A, 71, 68, 9
+SHOOT, A, 75, 72, 2
+SHOOT, A, 76, 73, 16
+SHOOT, A, 77, 74, 11
+SHOOT, A, 81, 78, 6
+SHOOT, A, 82, 79, 18
+SHOOT, A, 83, 80, 13
+DEAD, A, 25
+DEAD, A, 38
+DEAD, A, 66
+DEAD, D, 28
+DEAD, D, 41
+DEAD, D, 69
+SPAWN, A, 84, 1, 0, 42
+SPAWN, A, 85, 2, 0, 43
+SPAWN, A, 86, 3, 0, 44
+SPAWN, D, 87, 1, 0, 42
+SPAWN, D, 88, 2, 0, 43
+SPAWN, D, 89, 3, 0, 44
+TURN, 15
+PRINT, TURN 15 LOGS:To be spawned at Position(0,45)
+PRINT, To be spawned at Position(0,46)
+PRINT, To be spawned at Position(0,47)
+PRINT, Type 1 at Position (0,45)
+PRINT, Type 2 at Position (0,46)
+PRINT, Type 3 at Position (0,47)
+PRINT, 
+SHOOT, D, 31, 34, 0
+SHOOT, D, 37, 40, 2
+SHOOT, D, 43, 46, 4
+SHOOT, D, 44, 47, 0
+SHOOT, D, 49, 52, 6
+SHOOT, D, 50, 53, 1
+SHOOT, D, 55, 58, 8
+SHOOT, D, 56, 59, 3
+SHOOT, D, 61, 64, 10
+SHOOT, D, 62, 65, 5
+SHOOT, D, 67, 70, 12
+SHOOT, D, 68, 71, 7
+SHOOT, D, 72, 75, 0
+SHOOT, D, 73, 76, 14
+SHOOT, D, 74, 77, 9
+SHOOT, D, 78, 81, 2
+SHOOT, D, 79, 82, 16
+SHOOT, D, 80, 83, 11
+SHOOT, D, 84, 87, 6
+SHOOT, D, 85, 88, 18
+SHOOT, D, 86, 89, 13
+SHOOT, A, 34, 31, 0
+SHOOT, A, 40, 37, 2
+SHOOT, A, 46, 43, 4
+SHOOT, A, 47, 44, 0
+SHOOT, A, 52, 49, 6
+SHOOT, A, 53, 50, 1
+SHOOT, A, 58, 55, 8
+SHOOT, A, 59, 56, 3
+SHOOT, A, 64, 61, 10
+SHOOT, A, 65, 62, 5
+SHOOT, A, 70, 67, 12
+SHOOT, A, 71, 68, 7
+SHOOT, A, 75, 72, 0
+SHOOT, A, 76, 73, 14
+SHOOT, A, 77, 74, 9
+SHOOT, A, 81, 78, 2
+SHOOT, A, 82, 79, 16
+SHOOT, A, 83, 80, 11
+SHOOT, A, 87, 84, 6
+SHOOT, A, 88, 85, 18
+SHOOT, A, 89, 86, 13
+DEAD, A, 31
+DEAD, A, 44
+DEAD, A, 72
+DEAD, D, 34
+DEAD, D, 47
+DEAD, D, 75
+SPAWN, A, 90, 1, 0, 45
+SPAWN, A, 91, 2, 0, 46
+SPAWN, A, 92, 3, 0, 47
+SPAWN, D, 93, 1, 0, 45
+SPAWN, D, 94, 2, 0, 46
+SPAWN, D, 95, 3, 0, 47
+TURN, 16
+PRINT, TURN 16 LOGS:To be spawned at Position(0,48)
+PRINT, To be spawned at Position(0,49)
+PRINT, To be spawned at Position(0,50)
+PRINT, Type 1 at Position (0,48)
+PRINT, Type 2 at Position (0,49)
+PRINT, Type 3 at Position (0,50)
+PRINT, 
+SHOOT, D, 37, 40, 0
+SHOOT, D, 43, 46, 2
+SHOOT, D, 49, 52, 4
+SHOOT, D, 50, 53, 0
+SHOOT, D, 55, 58, 6
+SHOOT, D, 56, 59, 1
+SHOOT, D, 61, 64, 8
+SHOOT, D, 62, 65, 3
+SHOOT, D, 67, 70, 10
+SHOOT, D, 68, 71, 5
+SHOOT, D, 73, 76, 12
+SHOOT, D, 74, 77, 7
+SHOOT, D, 78, 81, 0
+SHOOT, D, 79, 82, 14
+SHOOT, D, 80, 83, 9
+SHOOT, D, 84, 87, 2
+SHOOT, D, 85, 88, 16
+SHOOT, D, 86, 89, 11
+SHOOT, D, 90, 93, 6
+SHOOT, D, 91, 94, 18
+SHOOT, D, 92, 95, 13
+SHOOT, A, 40, 37, 0
+SHOOT, A, 46, 43, 2
+SHOOT, A, 52, 49, 4
+SHOOT, A, 53, 50, 0
+SHOOT, A, 58, 55, 6
+SHOOT, A, 59, 56, 1
+SHOOT, A, 64, 61, 8
+SHOOT, A, 65, 62, 3
+SHOOT, A, 70, 67, 10
+SHOOT, A, 71, 68, 5
+SHOOT, A, 76, 73, 12
+SHOOT, A, 77, 74, 7
+SHOOT, A, 81, 78, 0
+SHOOT, A, 82, 79, 14
+SHOOT, A, 83, 80, 9
+SHOOT, A, 87, 84, 2
+SHOOT, A, 88, 85, 16
+SHOOT, A, 89, 86, 11
+SHOOT, A, 93, 90, 6
+SHOOT, A, 94, 91, 18
+SHOOT, A, 95, 92, 13
+DEAD, A, 37
+DEAD, A, 50
+DEAD, A, 78
+DEAD, D, 40
+DEAD, D, 53
+DEAD, D, 81
+SPAWN, A, 96, 1, 0, 48
+SPAWN, A, 97, 2, 0, 49
+SPAWN, A, 98, 3, 0, 50
+SPAWN, D, 99, 1, 0, 48
+SPAWN, D, 100, 2, 0, 49
+SPAWN, D, 101, 3, 0, 50
+TURN, 17
+PRINT, TURN 17 LOGS:To be spawned at Position(0,51)
+PRINT, To be spawned at Position(0,52)
+PRINT, To be spawned at Position(0,53)
+PRINT, Type 1 at Position (0,51)
+PRINT, Type 2 at Position (0,52)
+PRINT, Type 3 at Position (0,53)
+PRINT, 
+SHOOT, D, 43, 46, 0
+SHOOT, D, 49, 52, 2
+SHOOT, D, 55, 58, 4
+SHOOT, D, 56, 59, 0
+SHOOT, D, 61, 64, 6
+SHOOT, D, 62, 65, 1
+SHOOT, D, 67, 70, 8
+SHOOT, D, 68, 71, 3
+SHOOT, D, 73, 76, 10
+SHOOT, D, 74, 77, 5
+SHOOT, D, 79, 82, 12
+SHOOT, D, 80, 83, 7
+SHOOT, D, 84, 87, 0
+SHOOT, D, 85, 88, 14
+SHOOT, D, 86, 89, 9
+SHOOT, D, 90, 93, 2
+SHOOT, D, 91, 94, 16
+SHOOT, D, 92, 95, 11
+SHOOT, D, 96, 99, 6
+SHOOT, D, 97, 100, 18
+SHOOT, D, 98, 101, 13
+SHOOT, A, 46, 43, 0
+SHOOT, A, 52, 49, 2
+SHOOT, A, 58, 55, 4
+SHOOT, A, 59, 56, 0
+SHOOT, A, 64, 61, 6
+SHOOT, A, 65, 62, 1
+SHOOT, A, 70, 67, 8
+SHOOT, A, 71, 68, 3
+SHOOT, A, 76, 73, 10
+SHOOT, A, 77, 74, 5
+SHOOT, A, 82, 79, 12
+SHOOT, A, 83, 80, 7
+SHOOT, A, 87, 84, 0
+SHOOT, A, 88, 85, 14
+SHOOT, A, 89, 86, 9
+SHOOT, A, 93, 90, 2
+SHOOT, A, 94, 91, 16
+SHOOT, A, 95, 92, 11
+SHOOT, A, 99, 96, 6
+SHOOT, A, 100, 97, 18
+SHOOT, A, 101, 98, 13
+DEAD, A, 43
+DEAD, A, 56
+DEAD, A, 84
+DEAD, D, 46
+DEAD, D, 59
+DEAD, D, 87
+SPAWN, A, 102, 1, 0, 51
+SPAWN, A, 103, 2, 0, 52
+SPAWN, A, 104, 3, 0, 53
+SPAWN, D, 105, 1, 0, 51
+SPAWN, D, 106, 2, 0, 52
+SPAWN, D, 107, 3, 0, 53
+TURN, 18
+PRINT, TURN 18 LOGS:To be spawned at Position(0,54)
+PRINT, To be spawned at Position(0,55)
+PRINT, To be spawned at Position(0,56)
+PRINT, Type 1 at Position (0,54)
+PRINT, Type 2 at Position (0,55)
+PRINT, Type 3 at Position (0,56)
+PRINT, 
+SHOOT, D, 49, 52, 0
+SHOOT, D, 55, 58, 2
+SHOOT, D, 61, 64, 4
+SHOOT, D, 62, 65, 0
+SHOOT, D, 67, 70, 6
+SHOOT, D, 68, 71, 1
+SHOOT, D, 73, 76, 8
+SHOOT, D, 74, 77, 3
+SHOOT, D, 79, 82, 10
+SHOOT, D, 80, 83, 5
+SHOOT, D, 85, 88, 12
+SHOOT, D, 86, 89, 7
+SHOOT, D, 90, 93, 0
+SHOOT, D, 91, 94, 14
+SHOOT, D, 92, 95, 9
+SHOOT, D, 96, 99, 2
+SHOOT, D, 97, 100, 16
+SHOOT, D, 98, 101, 11
+SHOOT, D, 102, 105, 6
+SHOOT, D, 103, 106, 18
+SHOOT, D, 104, 107, 13
+SHOOT, A, 52, 49, 0
+SHOOT, A, 58, 55, 2
+SHOOT, A, 64, 61, 4
+SHOOT, A, 65, 62, 0
+SHOOT, A, 70, 67, 6
+SHOOT, A, 71, 68, 1
+SHOOT, A, 76, 73, 8
+SHOOT, A, 77, 74, 3
+SHOOT, A, 82, 79, 10
+SHOOT, A, 83, 80, 5
+SHOOT, A, 88, 85, 12
+SHOOT, A, 89, 86, 7
+SHOOT, A, 93, 90, 0
+SHOOT, A, 94, 91, 14
+SHOOT, A, 95, 92, 9
+SHOOT, A, 99, 96, 2
+SHOOT, A, 100, 97, 16
+SHOOT, A, 101, 98, 11
+SHOOT, A, 105, 102, 6
+SHOOT, A, 106, 103, 18
+SHOOT, A, 107, 104, 13
+DEAD, A, 49
+DEAD, A, 62
+DEAD, A, 90
+DEAD, D, 52
+DEAD, D, 65
+DEAD, D, 93
+SPAWN, A, 108, 1, 0, 54
+SPAWN, A, 109, 2, 0, 55
+SPAWN, A, 110, 3, 0, 56
+SPAWN, D, 111, 1, 0, 54
+SPAWN, D, 112, 2, 0, 55
+SPAWN, D, 113, 3, 0, 56
+TURN, 19
+PRINT, TURN 19 LOGS:To be spawned at Position(0,57)
+PRINT, To be spawned at Position(0,58)
+PRINT, To be spawned at Position(0,59)
+PRINT, Type 1 at Position (0,57)
+PRINT, Type 2 at Position (0,58)
+PRINT, Type 3 at Position (0,59)
+PRINT, 
+SHOOT, D, 55, 58, 0
+SHOOT, D, 61, 64, 2
+SHOOT, D, 67, 70, 4
+SHOOT, D, 68, 71, 0
+SHOOT, D, 73, 76, 6
+SHOOT, D, 74, 77, 1
+SHOOT, D, 79, 82, 8
+SHOOT, D, 80, 83, 3
+SHOOT, D, 85, 88, 10
+SHOOT, D, 86, 89, 5
+SHOOT, D, 91, 94, 12
+SHOOT, D, 92, 95, 7
+SHOOT, D, 96, 99, 0
+SHOOT, D, 97, 100, 14
+SHOOT, D, 98, 101, 9
+SHOOT, D, 102, 105, 2
+SHOOT, D, 103, 106, 16
+SHOOT, D, 104, 107, 11
+SHOOT, D, 108, 111, 6
+SHOOT, D, 109, 112, 18
+SHOOT, D, 110, 113, 13
+SHOOT, A, 58, 55, 0
+SHOOT, A, 64, 61, 2
+SHOOT, A, 70, 67, 4
+SHOOT, A, 71, 68, 0
+SHOOT, A, 76, 73, 6
+SHOOT, A, 77, 74, 1
+SHOOT, A, 82, 79, 8
+SHOOT, A, 83, 80, 3
+SHOOT, A, 88, 85, 10
+SHOOT, A, 89, 86, 5
+SHOOT, A, 94, 91, 12
+SHOOT, A, 95, 92, 7
+SHOOT, A, 99, 96, 0
+SHOOT, A, 100, 97, 14
+SHOOT, A, 101, 98, 9
+SHOOT, A, 105, 102, 2
+SHOOT, A, 106, 103, 16
+SHOOT, A, 107, 104, 11
+SHOOT, A, 111, 108, 6
+SHOOT, A, 112, 109, 18
+SHOOT, A, 113, 110, 13
+DEAD, A, 55
+DEAD, A, 68
+DEAD, A, 96
+DEAD, D, 58
+DEAD, D, 71
+DEAD, D, 99
+SPAWN, A, 114, 1, 0, 57
+SPAWN, A, 115, 2, 0, 58
+SPAWN, A, 116, 3, 0, 59
+SPAWN, D, 117, 1, 0, 57
+SPAWN, D, 118, 2, 0, 58
+SPAWN, D, 119, 3, 0, 59
+TURN, 20
+PRINT, TURN 20 LOGS:To be spawned at Position(0,60)
+PRINT, To be spawned at Position(0,61)
+PRINT, To be spawned at Position(0,62)
+PRINT, Type 1 at Position (0,60)
+PRINT, Type 2 at Position (0,61)
+PRINT, Type 3 at Position (0,62)
+PRINT, 
+SHOOT, D, 61, 64, 0
+SHOOT, D, 67, 70, 2
+SHOOT, D, 73, 76, 4
+SHOOT, D, 74, 77, 0
+SHOOT, D, 79, 82, 6
+SHOOT, D, 80, 83, 1
+SHOOT, D, 85, 88, 8
+SHOOT, D, 86, 89, 3
+SHOOT, D, 91, 94, 10
+SHOOT, D, 92, 95, 5
+SHOOT, D, 97, 100, 12
+SHOOT, D, 98, 101, 7
+SHOOT, D, 102, 105, 0
+SHOOT, D, 103, 106, 14
+SHOOT, D, 104, 107, 9
+SHOOT, D, 108, 111, 2
+SHOOT, D, 109, 112, 16
+SHOOT, D, 110, 113, 11
+SHOOT, D, 114, 117, 6
+SHOOT, D, 115, 118, 18
+SHOOT, D, 116, 119, 13
+SHOOT, A, 64, 61, 0
+SHOOT, A, 70, 67, 2
+SHOOT, A, 76, 73, 4
+SHOOT, A, 77, 74, 0
+SHOOT, A, 82, 79, 6
+SHOOT, A, 83, 80, 1
+SHOOT, A, 88, 85, 8
+SHOOT, A, 89, 86, 3
+SHOOT, A, 94, 91, 10
+SHOOT, A, 95, 92, 5
+SHOOT, A, 100, 97, 12
+SHOOT, A, 101, 98, 7
+SHOOT, A, 105, 102, 0
+SHOOT, A, 106, 103, 14
+SHOOT, A, 107, 104, 9
+SHOOT, A, 111, 108, 2
+SHOOT, A, 112, 109, 16
+SHOOT, A, 113, 110, 11
+SHOOT, A, 117, 114, 6
+SHOOT, A, 118, 115, 18
+SHOOT, A, 119, 116, 13
+DEAD, A, 61
+DEAD, A, 74
+DEAD, A, 102
+DEAD, D, 64
+DEAD, D, 77
+DEAD, D, 105
+SPAWN, A, 120, 1, 0, 60
+SPAWN, A, 121, 2, 0, 61
+SPAWN, A, 122, 3, 0, 62
+SPAWN, D, 123, 1, 0, 60
+SPAWN, D, 124, 2, 0, 61
+SPAWN, D, 125, 3, 0, 62
+TURN, 21
+PRINT, TURN 21 LOGS:To be spawned at Position(0,63)
+PRINT, To be spawned at Position(1,0)
+PRINT, To be spawned at Position(1,63)
+PRINT, Type 1 at Position (0,63)
+PRINT, Type 2 at Position (1,0)
+PRINT, Type 3 at Position (1,63)
+PRINT, 
+SHOOT, D, 67, 70, 0
+SHOOT, D, 73, 76, 2
+SHOOT, D, 79, 82, 4
+SHOOT, D, 80, 83, 0
+SHOOT, D, 85, 88, 6
+SHOOT, D, 86, 89, 1
+SHOOT, D, 91, 94, 8
+SHOOT, D, 92, 95, 3
+SHOOT, D, 97, 100, 10
+SHOOT, D, 98, 101, 5
+SHOOT, D, 103, 106, 12
+SHOOT, D, 104, 107, 7
+SHOOT, D, 108, 111, 0
+SHOOT, D, 109, 112, 14
+SHOOT, D, 110, 113, 9
+SHOOT, D, 114, 117, 2
+SHOOT, D, 115, 118, 16
+SHOOT, D, 116, 119, 11
+SHOOT, D, 120, 123, 6
+SHOOT, D, 121, 124, 18
+SHOOT, D, 122, 125, 13
+SHOOT, A, 70, 67, 0
+SHOOT, A, 76, 73, 2
+SHOOT, A, 82, 79, 4
+SHOOT, A, 83, 80, 0
+SHOOT, A, 88, 85, 6
+SHOOT, A, 89, 86, 1
+SHOOT, A, 94, 91, 8
+SHOOT, A, 95, 92, 3
+SHOOT, A, 100, 97, 10
+SHOOT, A, 101, 98, 5
+SHOOT, A, 106, 103, 12
+SHOOT, A, 107, 104, 7
+SHOOT, A, 111, 108, 0
+SHOOT, A, 112, 109, 14
+SHOOT, A, 113, 110, 9
+SHOOT, A, 117, 114, 2
+SHOOT, A, 118, 115, 16
+SHOOT, A, 119, 116, 11
+SHOOT, A, 123, 120, 6
+SHOOT, A, 124, 121, 18
+SHOOT, A, 125, 122, 13
+DEAD, A, 67
+DEAD, A, 80
+DEAD, A, 108
+DEAD, D, 70
+DEAD, D, 83
+DEAD, D, 111
+SPAWN, A, 126, 1, 0, 63
+SPAWN, A, 127, 2, 1, 0
+SPAWN, A, 128, 3, 1, 63
+SPAWN, D, 129, 1, 0, 63
+SPAWN, D, 130, 2, 1, 0
+SPAWN, D, 131, 3, 1, 63
+TURN, 22
+PRINT, TURN 22 LOGS:To be spawned at Position(2,0)
+PRINT, To be spawned at Position(2,63)
+PRINT, To be spawned at Position(3,0)
+PRINT, Type 1 at Position (2,0)
+PRINT, Type 2 at Position (2,63)
+PRINT, Type 3 at Position (3,0)
+PRINT, 
+SHOOT, D, 73, 76, 0
+SHOOT, D, 79, 82, 2
+SHOOT, D, 85, 88, 4
+SHOOT, D, 86, 89, 0
+SHOOT, D, 91, 94, 6
+SHOOT, D, 92, 95, 1
+SHOOT, D, 97, 100, 8
+SHOOT, D, 98, 101, 3
+SHOOT, D, 103, 106, 10
+SHOOT, D, 104, 107, 5
+SHOOT, D, 109, 112, 12
+SHOOT, D, 110, 113, 7
+SHOOT, D, 114, 117, 0
+SHOOT, D, 115, 118, 14
+SHOOT, D, 116, 119, 9
+SHOOT, D, 120, 123, 2
+SHOOT, D, 121, 124, 16
+SHOOT, D, 122, 125, 11
+SHOOT, D, 126, 129, 6
+SHOOT, D, 127, 130, 18
+SHOOT, D, 128, 131, 13
+SHOOT, A, 76, 73, 0
+SHOOT, A, 82, 79, 2
+SHOOT, A, 88, 85, 4
+SHOOT, A, 89, 86, 0
+SHOOT, A, 94, 91, 6
+SHOOT, A, 95, 92, 1
+SHOOT, A, 100, 97, 8
+SHOOT, A, 101, 98, 3
+SHOOT, A, 106, 103, 10
+SHOOT, A, 107, 104, 5
+SHOOT, A, 112, 109, 12
+SHOOT, A, 113, 110, 7
+SHOOT, A, 117, 114, 0
+SHOOT, A, 118, 115, 14
+SHOOT, A, 119, 116, 9
+SHOOT, A, 123, 120, 2
+SHOOT, A, 124, 121, 16
+SHOOT, A, 125, 122, 11
+SHOOT, A, 129, 126, 6
+SHOOT, A, 130, 127, 18
+SHOOT, A, 131, 128, 13
+DEAD, A, 73
+DEAD, A, 86
+DEAD, A, 114
+DEAD, D, 76
+DEAD, D, 89
+DEAD, D, 117
+SPAWN, A, 132, 1, 2, 0
+SPAWN, A, 133, 2, 2, 63
+SPAWN, A, 134, 3, 3, 0
+SPAWN, D, 135, 1, 2, 0
+SPAWN, D, 136, 2, 2, 63
+SPAWN, D, 137, 3, 3, 0
+TURN, 23
+PRINT, TURN 23 LOGS:To be spawned at Position(3,63)
+PRINT, To be spawned at Position(4,0)
+PRINT, To be spawned at Position(4,63)
+PRINT, Type 1 at Position (3,63)
+PRINT, Type 2 at Position (4,0)
+PRINT, Type 3 at Position (4,63)
+PRINT, 
+SHOOT, D, 79, 82, 0
+SHOOT, D, 85, 88, 2
+SHOOT, D, 91, 94, 4
+SHOOT, D, 92, 95, 0
+SHOOT, D, 97, 100, 6
+SHOOT, D, 98, 101, 1
+SHOOT, D, 103, 106, 8
+SHOOT, D, 104, 107, 3
+SHOOT, D, 109, 112, 10
+SHOOT, D, 110, 113, 5
+SHOOT, D, 115, 118, 12
+SHOOT, D, 116, 119, 7
+SHOOT, D, 120, 123, 0
+SHOOT, D, 121, 124, 14
+SHOOT, D, 122, 125, 9
+SHOOT, D, 126, 129, 2
+SHOOT, D, 127, 130, 16
+SHOOT, D, 128, 131, 11
+SHOOT, D, 132, 135, 6
+SHOOT, D, 133, 136, 18
+SHOOT, D, 134, 137, 13
+SHOOT, A, 82, 79, 0
+SHOOT, A, 88, 85, 2
+SHOOT, A, 94, 91, 4
+SHOOT, A, 95, 92, 0
+SHOOT, A, 100, 97, 6
+SHOOT, A, 101, 98, 1
+SHOOT, A, 106, 103, 8
+SHOOT, A, 107, 104, 3
+SHOOT, A, 112, 109, 10
+SHOOT, A, 113, 110, 5
+SHOOT, A, 118, 115, 12
+SHOOT, A, 119, 116, 7
+SHOOT, A, 123, 120, 0
+SHOOT, A, 124, 121, 14
+SHOOT, A, 125, 122, 9
+SHOOT, A, 129, 126, 2
+SHOOT, A, 130, 127, 16
+SHOOT, A, 131, 128, 11
+SHOOT, A, 135, 132, 6
+SHOOT, A, 136, 133, 18
+SHOOT, A, 137, 134, 13
+DEAD, A, 79
+DEAD, A, 92
+DEAD, A, 120
+DEAD, D, 82
+DEAD, D, 95
+DEAD, D, 123
+SPAWN, A, 138, 1, 3, 63
+SPAWN, A, 139, 2, 4, 0
+SPAWN, A, 140, 3, 4, 63
+SPAWN, D, 141, 1, 3, 63
+SPAWN, D, 142, 2, 4, 0
+SPAWN, D, 143, 3, 4, 63
+TURN, 24
+PRINT, TURN 24 LOGS:To be spawned at Position(5,0)
+PRINT, To be spawned at Position(5,63)
+PRINT, To be spawned at Position(6,0)
+PRINT, Type 1 at Position (5,0)
+PRINT, Type 2 at Position (5,63)
+PRINT, Type 3 at Position (6,0)
+PRINT, 
+SHOOT, D, 85, 88, 0
+SHOOT, D, 91, 94, 2
+SHOOT, D, 97, 100, 4
+SHOOT, D, 98, 101, 0
+SHOOT, D, 103, 106, 6
+SHOOT, D, 104, 107, 1
+SHOOT, D, 109, 112, 8
+SHOOT, D, 110, 113, 3
+SHOOT, D, 115, 118, 10
+SHOOT, D, 116, 119, 5
+SHOOT, D, 121, 124, 12
+SHOOT, D, 122, 125, 7
+SHOOT, D, 126, 129, 0
+SHOOT, D, 127, 130, 14
+SHOOT, D, 128, 131, 9
+SHOOT, D, 132, 135, 2
+SHOOT, D, 133, 136, 16
+SHOOT, D, 134, 137, 11
+SHOOT, D, 138, 141, 6
+SHOOT, D, 139, 142, 18
+SHOOT, D, 140, 143, 13
+SHOOT, A, 88, 85, 0
+SHOOT, A, 94, 91, 2
+SHOOT, A, 100, 97, 4
+SHOOT, A, 101, 98, 0
+SHOOT, A, 106, 103, 6
+SHOOT, A, 107, 104, 1
+SHOOT, A, 112, 109, 8
+SHOOT, A, 113, 110, 3
+SHOOT, A, 118, 115, 10
+SHOOT, A, 119, 116, 5
+SHOOT, A, 124, 121, 12
+SHOOT, A, 125, 122, 7
+SHOOT, A, 129, 126, 0
+SHOOT, A, 130, 127, 14
+SHOOT, A, 131, 128, 9
+SHOOT, A, 135, 132, 2
+SHOOT, A, 136, 133, 16
+SHOOT, A, 137, 134, 11
+SHOOT, A, 141, 138, 6
+SHOOT, A, 142, 139, 18
+SHOOT, A, 143, 140, 13
+DEAD, A, 85
+DEAD, A, 98
+DEAD, A, 126
+DEAD, D, 88
+DEAD, D, 101
+DEAD, D, 129
+SPAWN, A, 144, 1, 5, 0
+SPAWN, A, 145, 2, 5, 63
+SPAWN, A, 146, 3, 6, 0
+SPAWN, D, 147, 1, 5, 0
+SPAWN, D, 148, 2, 5, 63
+SPAWN, D, 149, 3, 6, 0
+TURN, 25
+PRINT, TURN 25 LOGS:To be spawned at Position(6,63)
+PRINT, To be spawned at Position(7,0)
+PRINT, To be spawned at Position(7,63)
+PRINT, Type 1 at Position (6,63)
+PRINT, Type 2 at Position (7,0)
+PRINT, Type 3 at Position (7,63)
+PRINT, 
+SHOOT, D, 91, 94, 0
+SHOOT, D, 97, 100, 2
+SHOOT, D, 103, 106, 4
+SHOOT, D, 104, 107, 0
+SHOOT, D, 109, 112, 6
+SHOOT, D, 110, 113, 1
+SHOOT, D, 115, 118, 8
+SHOOT, D, 116, 119, 3
+SHOOT, D, 121, 124, 10
+SHOOT, D, 122, 125, 5
+SHOOT, D, 127, 130, 12
+SHOOT, D, 128, 131, 7
+SHOOT, D, 132, 135, 0
+SHOOT, D, 133, 136, 14
+SHOOT, D, 134, 137, 9
+SHOOT, D, 138, 141, 2
+SHOOT, D, 139, 142, 16
+SHOOT, D, 140, 143, 11
+SHOOT, D, 144, 147, 6
+SHOOT, D, 145, 148, 18
+SHOOT, D, 146, 149, 13
+SHOOT, A, 94, 91, 0
+SHOOT, A, 100, 97, 2
+SHOOT, A, 106, 103, 4
+SHOOT, A, 107, 104, 0
+SHOOT, A, 112, 109, 6
+SHOOT, A, 113, 110, 1
+SHOOT, A, 118, 115, 8
+SHOOT, A, 119, 116, 3
+SHOOT, A, 124, 121, 10
+SHOOT, A, 125, 122, 5
+SHOOT, A, 130, 127, 12
+SHOOT, A, 131, 128, 7
+SHOOT, A, 135, 132, 0
+SHOOT, A, 136, 133, 14
+SHOOT, A, 137, 134, 9
+SHOOT, A, 141, 138, 2
+SHOOT, A, 142, 139, 16
+SHOOT, A, 143, 140, 11
+SHOOT, A, 147, 144, 6
+SHOOT, A, 148, 145, 18
+SHOOT, A, 149, 146, 13
+DEAD, A, 91
+DEAD, A, 104
+DEAD, A, 132
+DEAD, D, 94
+DEAD, D, 107
+DEAD, D, 135
+SPAWN, A, 150, 1, 6, 63
+SPAWN, A, 151, 2, 7, 0
+SPAWN, A, 152, 3, 7, 63
+SPAWN, D, 153, 1, 6, 63
+SPAWN, D, 154, 2, 7, 0
+SPAWN, D, 155, 3, 7, 63
+TURN, 26
+PRINT, TURN 26 LOGS:To be spawned at Position(8,0)
+PRINT, To be spawned at Position(8,63)
+PRINT, To be spawned at Position(9,0)
+PRINT, Type 1 at Position (8,0)
+PRINT, Type 2 at Position (8,63)
+PRINT, Type 3 at Position (9,0)
+PRINT, 
+SHOOT, D, 97, 100, 0
+SHOOT, D, 103, 106, 2
+SHOOT, D, 109, 112, 4
+SHOOT, D, 110, 113, 0
+SHOOT, D, 115, 118, 6
+SHOOT, D, 116, 119, 1
+SHOOT, D, 121, 124, 8
+SHOOT, D, 122, 125, 3
+SHOOT, D, 127, 130, 10
+SHOOT, D, 128, 131, 5
+SHOOT, D, 133, 136, 12
+SHOOT, D, 134, 137, 7
+SHOOT, D, 138, 141, 0
+SHOOT, D, 139, 142, 14
+SHOOT, D, 140, 143, 9
+SHOOT, D, 144, 147, 2
+SHOOT, D, 145, 148, 16
+SHOOT, D, 146, 149, 11
+SHOOT, D, 150, 153, 6
+SHOOT, D, 151, 154, 18
+SHOOT, D, 152, 155, 13
+SHOOT, A, 100, 97, 0
+SHOOT, A, 106, 103, 2
+SHOOT, A, 112, 109, 4
+SHOOT, A, 113, 110, 0
+SHOOT, A, 118, 115, 6
+SHOOT, A, 119, 116, 1
+SHOOT, A, 124, 121, 8
+SHOOT, A, 125, 122, 3
+SHOOT, A, 130, 127, 10
+SHOOT, A, 131, 128, 5
+SHOOT, A, 136, 133, 12
+SHOOT, A, 137, 134, 7
+SHOOT, A, 141, 138, 0
+SHOOT, A, 142, 139, 14
+SHOOT, A, 143, 140, 9
+SHOOT, A, 147, 144, 2
+SHOOT, A, 148, 145, 16
+SHOOT, A, 149, 146, 11
+SHOOT, A, 153, 150, 6
+SHOOT, A, 154, 151, 18
+SHOOT, A, 155, 152, 13
+DEAD, A, 97
+DEAD, A, 110
+DEAD, A, 138
+DEAD, D, 100
+DEAD, D, 113
+DEAD, D, 141
+SPAWN, A, 156, 1, 8, 0
+SPAWN, A, 157, 2, 8, 63
+SPAWN, A, 158, 3, 9, 0
+SPAWN, D, 159, 1, 8, 0
+SPAWN, D, 160, 2, 8, 63
+SPAWN, D, 161, 3, 9, 0
+TURN, 27
+PRINT, TURN 27 LOGS:To be spawned at Position(9,63)
+PRINT, To be spawned at Position(10,0)
+PRINT, To be spawned at Position(10,63)
+PRINT, Type 1 at Position (9,63)
+PRINT, Type 2 at Position (10,0)
+PRINT, Type 3 at Position (10,63)
+PRINT, 
+SHOOT, D, 103, 106, 0
+SHOOT, D, 109, 112, 2
+SHOOT, D, 115, 118, 4
+SHOOT, D, 116, 119, 0
+SHOOT, D, 121, 124, 6
+SHOOT, D, 122, 125, 1
+SHOOT, D, 127, 130, 8
+SHOOT, D, 128, 131, 3
+SHOOT, D, 133, 136, 10
+SHOOT, D, 134, 137, 5
+SHOOT, D, 139, 142, 12
+SHOOT, D, 140, 143, 7
+SHOOT, D, 144, 147, 0
+SHOOT, D, 145, 148, 14
+SHOOT, D, 146, 149, 9
+SHOOT, D, 150, 153, 2
+SHOOT, D, 151, 154, 16
+SHOOT, D, 152, 155, 11
+SHOOT, D, 156, 159, 6
+SHOOT, D, 157, 160, 18
+SHOOT, D, 158, 161, 13
+SHOOT, A, 106, 103, 0
+SHOOT, A, 112, 109, 2
+SHOOT, A, 118, 115, 4
+SHOOT, A, 119, 116, 0
+SHOOT, A, 124, 121, 6
+SHOOT, A, 125, 122, 1
+SHOOT, A, 130, 127, 8
+SHOOT, A, 131, 128, 3
+SHOOT, A, 136, 133, 10
+SHOOT, A, 137, 134, 5
+SHOOT, A, 142, 139, 12
+SHOOT, A, 143, 140, 7
+SHOOT, A, 147, 144, 0
+SHOOT, A, 148, 145, 14
+SHOOT, A, 149, 146, 9
+SHOOT, A, 153, 150, 2
+SHOOT, A, 154, 151, 16
+SHOOT, A, 155, 152, 11
+SHOOT, A, 159, 156, 6
+SHOOT, A, 160, 157, 18
+SHOOT, A, 161, 158, 13
+DEAD, A, 103
+DEAD, A, 116
+DEAD, A, 144
+DEAD, D, 106
+DEAD, D, 119
+DEAD, D, 147
+SPAWN, A, 162, 1, 9, 63
+SPAWN, A, 163, 2, 10, 0
+SPAWN, A, 164, 3, 10, 63
+SPAWN, D, 165, 1, 9, 63
+SPAWN, D, 166, 2, 10, 0
+SPAWN, D, 167, 3, 10, 63
+TURN, 28
+PRINT, TURN 28 LOGS:To be spawned at Position(11,0)
+PRINT, To be spawned at Position(11,63)
+PRINT, To be spawned at Position(12,0)
+PRINT, Type 1 at Position (11,0)
+PRINT, Type 2 at Position (11,63)
+PRINT, Type 3 at Position (12,0)
+PRINT, 
+SHOOT, D, 109, 112, 0
+SHOOT, D, 115, 118, 2
+SHOOT, D, 121, 124, 4
+SHOOT, D, 122, 125, 0
+SHOOT, D, 127, 130, 6
+SHOOT, D, 128, 131, 1
+SHOOT, D, 133, 136, 8
+SHOOT, D, 134, 137, 3
+SHOOT, D, 139, 142, 10
+SHOOT, D, 140, 143, 5
+SHOOT, D, 145, 148, 12
+SHOOT, D, 146, 149, 7
+SHOOT, D, 150, 153, 0
+SHOOT, D, 151, 154, 14
+SHOOT, D, 152, 155, 9
+SHOOT, D, 156, 159, 2
+SHOOT, D, 157, 160, 16
+SHOOT, D, 158, 161, 11
+SHOOT, D, 162, 165, 6
+SHOOT, D, 163, 166, 18
+SHOOT, D, 164, 167, 13
+SHOOT, A, 112, 109, 0
+SHOOT, A, 118, 115, 2
+SHOOT, A, 124, 121, 4
+SHOOT, A, 125, 122, 0
+SHOOT, A, 130, 127, 6
+SHOOT, A, 131, 128, 1
+SHOOT, A, 136, 133, 8
+SHOOT, A, 137, 134, 3
+SHOOT, A, 142, 139, 10
+SHOOT, A, 143, 140, 5
+SHOOT, A, 148, 145, 12
+SHOOT, A, 149, 146, 7
+SHOOT, A, 153, 150, 0
+SHOOT, A, 154, 151, 14
+SHOOT, A, 155, 152, 9
+SHOOT, A, 159, 156, 2
+SHOOT, A, 160, 157, 16
+SHOOT, A, 161, 158, 11
+SHOOT, A, 165, 162, 6
+SHOOT, A, 166, 163, 18
+SHOOT, A, 167, 164, 13
+DEAD, A, 109
+DEAD, A, 122
+DEAD, A, 150
+DEAD, D, 112
+DEAD, D, 125
+DEAD, D, 153
+SPAWN, A, 168, 1, 11, 0
+SPAWN, A, 169, 2, 11, 63
+SPAWN, A, 170, 3, 12, 0
+SPAWN, D, 171, 1, 11, 0
+SPAWN, D, 172, 2, 11, 63
+SPAWN, D, 173, 3, 12, 0
+TURN, 29
+PRINT, TURN 29 LOGS:To be spawned at Position(12,63)
+PRINT, To be spawned at Position(13,0)
+PRINT, To be spawned at Position(13,63)
+PRINT, Type 1 at Position (12,63)
+PRINT, Type 2 at Position (13,0)
+PRINT, Type 3 at Position (13,63)
+PRINT, 
+SHOOT, D, 115, 118, 0
+SHOOT, D, 121, 124, 2
+SHOOT, D, 127, 130, 4
+SHOOT, D, 128, 131, 0
+SHOOT, D, 133, 136, 6
+SHOOT, D, 134, 137, 1
+SHOOT, D, 139, 142, 8
+SHOOT, D, 140, 143, 3
+SHOOT, D, 145, 148, 10
+SHOOT, D, 146, 149, 5
+SHOOT, D, 151, 154, 12
+SHOOT, D, 152, 155, 7
+SHOOT, D, 156, 159, 0
+SHOOT, D, 157, 160, 14
+SHOOT, D, 158, 161, 9
+SHOOT, D, 162, 165, 2
+SHOOT, D, 163, 166, 16
+SHOOT, D, 164, 167, 11
+SHOOT, D, 168, 171, 6
+SHOOT, D, 169, 172, 18
+SHOOT, D, 170, 173, 13
+SHOOT, A, 118, 115, 0
+SHOOT, A, 124, 121, 2
+SHOOT, A, 130, 127, 4
+SHOOT, A, 131, 128, 0
+SHOOT, A, 136, 133, 6
+SHOOT, A, 137, 134, 1
+SHOOT, A, 142, 139, 8
+SHOOT, A, 143, 140, 3
+SHOOT, A, 148, 145, 10
+SHOOT, A, 149, 146, 5
+SHOOT, A, 154, 151, 12
+SHOOT, A, 155, 152, 7
+SHOOT, A, 159, 156, 0
+SHOOT, A, 160, 157, 14
+SHOOT, A, 161, 158, 9
+SHOOT, A, 165, 162, 2
+SHOOT, A, 166, 163, 16
+SHOOT, A, 167, 164, 11
+SHOOT, A, 171, 168, 6
+SHOOT, A, 172, 169, 18
+SHOOT, A, 173, 170, 13
+DEAD, A, 115
+DEAD, A, 128
+DEAD, A, 156
+DEAD, D, 118
+DEAD, D, 131
+DEAD, D, 159
+SPAWN, A, 174, 1, 12, 63
+SPAWN, A, 175, 2, 13, 0
+SPAWN, A, 176, 3, 13, 63
+SPAWN, D, 177, 1, 12, 63
+SPAWN, D, 178, 2, 13, 0
+SPAWN, D, 179, 3, 13, 63
+TURN, 30
+PRINT, TURN 30 LOGS:To be spawned at Position(14,0)
+PRINT, To be spawned at Position(14,63)
+PRINT, To be spawned at Position(15,0)
+PRINT, Type 1 at Position (14,0)
+PRINT, Type 2 at Position (14,63)
+PRINT, Type 3 at Position (15,0)
+PRINT, 
+SHOOT, D, 121, 124, 0
+SHOOT, D, 127, 130, 2
+SHOOT, D, 133, 136, 4
+SHOOT, D, 134, 137, 0
+SHOOT, D, 139, 142, 6
+SHOOT, D, 140, 143, 1
+SHOOT, D, 145, 148, 8
+SHOOT, D, 146, 149, 3
+SHOOT, D, 151, 154, 10
+SHOOT, D, 152, 155, 5
+SHOOT, D, 157, 160, 12
+SHOOT, D, 158, 161, 7
+SHOOT, D, 162, 165, 0
+SHOOT, D, 163, 166, 14
+SHOOT, D, 164, 167, 9
+SHOOT, D, 168, 171, 2
+SHOOT, D, 169, 172, 16
+SHOOT, D, 170, 173, 11
+SHOOT, D, 174, 177, 6
+SHOOT, D, 175, 178, 18
+SHOOT, D, 176, 179, 13
+SHOOT, A, 124, 121, 0
+SHOOT, A, 130, 127, 2
+SHOOT, A, 136, 133, 4
+SHOOT, A, 137, 134, 0
+SHOOT, A, 142, 139, 6
+SHOOT, A, 143, 140, 1
+SHOOT, A, 148, 145, 8
+SHOOT, A, 149, 146, 3
+SHOOT, A, 154, 151, 10
+SHOOT, A, 155, 152, 5
+SHOOT, A, 160, 157, 12
+SHOOT, A, 161, 158, 7
+SHOOT, A, 165, 162, 0
+SHOOT, A, 166, 163, 14
+SHOOT, A, 167, 164, 9
+SHOOT, A, 171, 168, 2
+SHOOT, A, 172, 169, 16
+SHOOT, A, 173, 170, 11
+SHOOT, A, 177, 174, 6
+SHOOT, A, 178, 175, 18
+SHOOT, A, 179, 176, 13
+DEAD, A, 121
+DEAD, A, 134
+DEAD, A, 162
+DEAD, D, 124
+DEAD, D, 137
+DEAD, D, 165
+SPAWN, A, 180, 1, 14, 0
+SPAWN, A, 181, 2, 14, 63
+SPAWN, A, 182, 3, 15, 0
+SPAWN, D, 183, 1, 14, 0
+SPAWN, D, 184, 2, 14, 63
+SPAWN, D, 185, 3, 15, 0
+TURN, 31
+PRINT, TURN 31 LOGS:To be spawned at Position(15,63)
+PRINT, To be spawned at Position(16,0)
+PRINT, To be spawned at Position(16,63)
+PRINT, Type 1 at Position (15,63)
+PRINT, Type 2 at Position (16,0)
+PRINT, Type 3 at Position (16,63)
+PRINT, 
+SHOOT, D, 127, 130, 0
+SHOOT, D, 133, 136, 2
+SHOOT, D, 139, 142, 4
+SHOOT, D, 140, 143, 0
+SHOOT, D, 145, 148, 6
+SHOOT, D, 146, 149, 1
+SHOOT, D, 151, 154, 8
+SHOOT, D, 152, 155, 3
+SHOOT, D, 157, 160, 10
+SHOOT, D, 158, 161, 5
+SHOOT, D, 163, 166, 12
+SHOOT, D, 164, 167, 7
+SHOOT, D, 168, 171, 0
+SHOOT, D, 169, 172, 14
+SHOOT, D, 170, 173, 9
+SHOOT, D, 174, 177, 2
+SHOOT, D, 175, 178, 16
+SHOOT, D, 176, 179, 11
+SHOOT, D, 180, 183, 6
+SHOOT, D, 181, 184, 18
+SHOOT, D, 182, 185, 13
+SHOOT, A, 130, 127, 0
+SHOOT, A, 136, 133, 2
+SHOOT, A, 142, 139, 4
+SHOOT, A, 143, 140, 0
+SHOOT, A, 148, 145, 6
+SHOOT, A, 149, 146, 1
+SHOOT, A, 154, 151, 8
+SHOOT, A, 155, 152, 3
+SHOOT, A, 160, 157, 10
+SHOOT, A, 161, 158, 5
+SHOOT, A, 166, 163, 12
+SHOOT, A, 167, 164, 7
+SHOOT, A, 171, 168, 0
+SHOOT, A, 172, 169, 14
+SHOOT, A, 173, 170, 9
+SHOOT, A, 177, 174, 2
+SHOOT, A, 178, 175, 16
+SHOOT, A, 179, 176, 11
+SHOOT, A, 183, 180, 6
+SHOOT, A, 184, 181, 18
+SHOOT, A, 185, 182, 13
+DEAD, A, 127
+DEAD, A, 140
+DEAD, A, 168
+DEAD, D, 130
+DEAD, D, 143
+DEAD, D, 171
+SPAWN, A, 186, 1, 15, 63
+SPAWN, A, 187, 2, 16, 0
+SPAWN, A, 188, 3, 16, 63
+SPAWN, D, 189, 1, 15, 63
+SPAWN, D, 190, 2, 16, 0
+SPAWN, D, 191, 3, 16, 63
+TURN, 32
+PRINT, TURN 32 LOGS:To be spawned at Position(17,0)
+PRINT, To be spawned at Position(17,63)
+PRINT, To be spawned at Position(18,0)
+PRINT, Type 1 at Position (17,0)
+PRINT, Type 2 at Position (17,63)
+PRINT, Type 3 at Position (18,0)
+PRINT, 
+SHOOT, D, 133, 136, 0
+SHOOT, D, 139, 142, 2
+SHOOT, D, 145, 148, 4
+SHOOT, D, 146, 149, 0
+SHOOT, D, 151, 154, 6
+SHOOT, D, 152, 155, 1
+SHOOT, D, 157, 160, 8
+SHOOT, D, 158, 161, 3
+SHOOT, D, 163, 166, 10
+SHOOT, D, 164, 167, 5
+SHOOT, D, 169, 172, 12
+SHOOT, D, 170, 173, 7
+SHOOT, D, 174, 177, 0
+SHOOT, D, 175, 178, 14
+SHOOT, D, 176, 179, 9
+SHOOT, D, 180, 183, 2
+SHOOT, D, 181, 184, 16
+SHOOT, D, 182, 185, 11
+SHOOT, D, 186, 189, 6
+SHOOT, D, 187, 190, 18
+SHOOT, D, 188, 191, 13
+SHOOT, A, 136, 133, 0
+SHOOT, A, 142, 139, 2
+SHOOT, A, 148, 145, 4
+SHOOT, A, 149, 146, 0
+SHOOT, A, 154, 151, 6
+SHOOT, A, 155, 152, 1
+SHOOT, A, 160, 157, 8
+SHOOT, A, 161, 158, 3
+SHOOT, A, 166, 163, 10
+SHOOT, A, 167, 164, 5
+SHOOT, A, 172, 169, 12
+SHOOT, A, 173, 170, 7
+SHOOT, A, 177, 174, 0
+SHOOT, A, 178, 175, 14
+SHOOT, A, 179, 176, 9
+SHOOT, A, 183, 180, 2
+SHOOT, A, 184, 181, 16
+SHOOT, A, 185, 182, 11
+SHOOT, A, 189, 186, 6
+SHOOT, A, 190, 187, 18
+SHOOT, A, 191, 188, 13
+DEAD, A, 133
+DEAD, A, 146
+DEAD, A, 174
+DEAD, D, 136
+DEAD, D, 149
+DEAD, D, 177
+SPAWN, A, 192, 1, 17, 0
+SPAWN, A, 193, 2, 17, 63
+SPAWN, A, 194, 3, 18, 0
+SPAWN, D, 195, 1, 17, 0
+SPAWN, D, 196, 2, 17, 63
+SPAWN, D, 197, 3, 18, 0
+TURN, 33
+PRINT, TURN 33 LOGS:To be spawned at Position(18,63)
+PRINT, To be spawned at Position(19,0)
+PRINT, To be spawned at Position(19,63)
+PRINT, Type 1 at Position (18,63)
+PRINT, Type 2 at Position (19,0)
+PRINT, Type 3 at Position (19,63)
+PRINT, 
+SHOOT, D, 139, 142, 0
+SHOOT, D, 145, 148, 2
+SHOOT, D, 151, 154, 4
+SHOOT, D, 152, 155, 0
+SHOOT, D, 157, 160, 6
+SHOOT, D, 158, 161, 1
+SHOOT, D, 163, 166, 8
+SHOOT, D, 164, 167, 3
+SHOOT, D, 169, 172, 10
+SHOOT, D, 170, 173, 5
+SHOOT, D, 175, 178, 12
+SHOOT, D, 176, 179, 7
+SHOOT, D, 180, 183, 0
+SHOOT, D, 181, 184, 14
+SHOOT, D, 182, 185, 9
+SHOOT, D, 186, 189, 2
+SHOOT, D, 187, 190, 16
+SHOOT, D, 188, 191, 11
+SHOOT, D, 192, 195, 6
+SHOOT, D, 193, 196, 18
+SHOOT, D, 194, 197, 13
+SHOOT, A, 142, 139, 0
+SHOOT, A, 148, 145, 2
+SHOOT, A, 154, 151, 4
+SHOOT, A, 155, 152, 0
+SHOOT, A, 160, 157, 6
+SHOOT, A, 161, 158, 1
+SHOOT, A, 166, 163, 8
+SHOOT, A, 167, 164, 3
+SHOOT, A, 172, 169, 10
+SHOOT, A, 173, 170, 5
+SHOOT, A, 178, 175, 12
+SHOOT, A, 179, 176, 7
+SHOOT, A, 183, 180, 0
+SHOOT, A, 184, 181, 14
+SHOOT, A, 185, 182, 9
+SHOOT, A, 189, 186, 2
+SHOOT, A, 190, 187, 16
+SHOOT, A, 191, 188, 11
+SHOOT, A, 195, 192, 6
+SHOOT, A, 196, 193, 18
+SHOOT, A, 197, 194, 13
+DEAD, A, 139
+DEAD, A, 152
+DEAD, A, 180
+DEAD, D, 142
+DEAD, D, 155
+DEAD, D, 183
+SPAWN, A, 198, 1, 18, 63
+SPAWN, A, 199, 2, 19, 0
+SPAWN, A, 200, 3, 19, 63
+SPAWN, D, 201, 1, 18, 63
+SPAWN, D, 202, 2, 19, 0
+SPAWN, D, 203, 3, 19, 63
+TURN, 34
+PRINT, TURN 34 LOGS:To be spawned at Position(20,0)
+PRINT, To be spawned at Position(20,63)
+PRINT, To be spawned at Position(21,0)
+PRINT, Type 1 at Position (20,0)
+PRINT, Type 2 at Position (20,63)
+PRINT, Type 3 at Position (21,0)
+PRINT, 
+SHOOT, D, 145, 148, 0
+SHOOT, D, 151, 154, 2
+SHOOT, D, 157, 160, 4
+SHOOT, D, 158, 161, 0
+SHOOT, D, 163, 166, 6
+SHOOT, D, 164, 167, 1
+SHOOT, D, 169, 172, 8
+SHOOT, D, 170, 173, 3
+SHOOT, D, 175, 178, 10
+SHOOT, D, 176, 179, 5
+SHOOT, D, 181, 184, 12
+SHOOT, D, 182, 185, 7
+SHOOT, D, 186, 189, 0
+SHOOT, D, 187, 190, 14
+SHOOT, D, 188, 191, 9
+SHOOT, D, 192, 195, 2
+SHOOT, D, 193, 196, 16
+SHOOT, D, 194, 197, 11
+SHOOT, D, 198, 201, 6
+SHOOT, D, 199, 202, 18
+SHOOT, D, 200, 203, 13
+SHOOT, A, 148, 145, 0
+SHOOT, A, 154, 151, 2
+SHOOT, A, 160, 157, 4
+SHOOT, A, 161, 158, 0
+SHOOT, A, 166, 163, 6
+SHOOT, A, 167, 164, 1
+SHOOT, A, 172, 169, 8
+SHOOT, A, 173, 170, 3
+SHOOT, A, 178, 175, 10
+SHOOT, A, 179, 176, 5
+SHOOT, A, 184, 181, 12
+SHOOT, A, 185, 182, 7
+SHOOT, A, 189, 186, 0
+SHOOT, A, 190, 187, 14
+SHOOT, A, 191, 188, 9
+SHOOT, A, 195, 192, 2
+SHOOT, A, 196, 193, 16
+SHOOT, A, 197, 194, 11
+SHOOT, A, 201, 198, 6
+SHOOT, A, 202, 199, 18
+SHOOT, A, 203, 200, 13
+DEAD, A, 145
+DEAD, A, 158
+DEAD, A, 186
+DEAD, D, 148
+DEAD, D, 161
+DEAD, D, 189
+SPAWN, A, 204, 1, 20, 0
+SPAWN, A, 205, 2, 20, 63
+SPAWN, A, 206, 3, 21, 0
+SPAWN, D, 207, 1, 20, 0
+SPAWN, D, 208, 2, 20, 63
+SPAWN, D, 209, 3, 21, 0
+TURN, 35
+PRINT, TURN 35 LOGS:To be spawned at Position(21,63)
+PRINT, To be spawned at Position(22,0)
+PRINT, To be spawned at Position(22,63)
+PRINT, Type 1 at Position (21,63)
+PRINT, Type 2 at Position (22,0)
+PRINT, Type 3 at Position (22,63)
+PRINT, 
+SHOOT, D, 151, 154, 0
+SHOOT, D, 157, 160, 2
+SHOOT, D, 163, 166, 4
+SHOOT, D, 164, 167, 0
+SHOOT, D, 169, 172, 6
+SHOOT, D, 170, 173, 1
+SHOOT, D, 175, 178, 8
+SHOOT, D, 176, 179, 3
+SHOOT, D, 181, 184, 10
+SHOOT, D, 182, 185, 5
+SHOOT, D, 187, 190, 12
+SHOOT, D, 188, 191, 7
+SHOOT, D, 192, 195, 0
+SHOOT, D, 193, 196, 14
+SHOOT, D, 194, 197, 9
+SHOOT, D, 198, 201, 2
+SHOOT, D, 199, 202, 16
+SHOOT, D, 200, 203, 11
+SHOOT, D, 204, 207, 6
+SHOOT, D, 205, 208, 18
+SHOOT, D, 206, 209, 13
+SHOOT, A, 154, 151, 0
+SHOOT, A, 160, 157, 2
+SHOOT, A, 166, 163, 4
+SHOOT, A, 167, 164, 0
+SHOOT, A, 172, 169, 6
+SHOOT, A, 173, 170, 1
+SHOOT, A, 178, 175, 8
+SHOOT, A, 179, 176, 3
+SHOOT, A, 184, 181, 10
+SHOOT, A, 185, 182, 5
+SHOOT, A, 190, 187, 12
+SHOOT, A, 191, 188, 7
+SHOOT, A, 195, 192, 0
+SHOOT, A, 196, 193, 14
+SHOOT, A, 197, 194, 9
+SHOOT, A, 201, 198, 2
+SHOOT, A, 202, 199, 16
+SHOOT, A, 203, 200, 11
+SHOOT, A, 207, 204, 6
+SHOOT, A, 208, 205, 18
+SHOOT, A, 209, 206, 13
+DEAD, A, 151
+DEAD, A, 164
+DEAD, A, 192
+DEAD, D, 154
+DEAD, D, 167
+DEAD, D, 195
+SPAWN, A, 210, 1, 21, 63
+SPAWN, A, 211, 2, 22, 0
+SPAWN, A, 212, 3, 22, 63
+SPAWN, D, 213, 1, 21, 63
+SPAWN, D, 214, 2, 22, 0
+SPAWN, D, 215, 3, 22, 63
+TURN, 36
+PRINT, TURN 36 LOGS:To be spawned at Position(23,0)
+PRINT, To be spawned at Position(23,63)
+PRINT, To be spawned at Position(24,0)
+PRINT, Type 1 at Position (23,0)
+PRINT, Type 2 at Position (23,63)
+PRINT, Type 3 at Position (24,0)
+PRINT, 
+SHOOT, D, 157, 160, 0
+SHOOT, D, 163, 166, 2
+SHOOT, D, 169, 172, 4
+SHOOT, D, 170, 173, 0
+SHOOT, D, 175, 178, 6
+SHOOT, D, 176, 179, 1
+SHOOT, D, 181, 184, 8
+SHOOT, D, 182, 185, 3
+SHOOT, D, 187, 190, 10
+SHOOT, D, 188, 191, 5
+SHOOT, D, 193, 196, 12
+SHOOT, D, 194, 197, 7
+SHOOT, D, 198, 201, 0
+SHOOT, D, 199, 202, 14
+SHOOT, D, 200, 203, 9
+SHOOT, D, 204, 207, 2
+SHOOT, D, 205, 208, 16
+SHOOT, D, 206, 209, 11
+SHOOT, D, 210, 213, 6
+SHOOT, D, 211, 214, 18
+SHOOT, D, 212, 215, 13
+SHOOT, A, 160, 157, 0
+SHOOT, A, 166, 163, 2
+SHOOT, A, 172, 169, 4
+SHOOT, A, 173, 170, 0
+SHOOT, A, 178, 175, 6
+SHOOT, A, 179, 176, 1
+SHOOT, A, 184, 181, 8
+SHOOT, A, 185, 182, 3
+SHOOT, A, 190, 187, 10
+SHOOT, A, 191, 188, 5
+SHOOT, A, 196, 193, 12
+SHOOT, A, 197, 194, 7
+SHOOT, A, 201, 198, 0
+SHOOT, A, 202, 199, 14
+SHOOT, A, 203, 200, 9
+SHOOT, A, 207, 204, 2
+SHOOT, A, 208, 205, 16
+SHOOT, A, 209, 206, 11
+SHOOT, A, 213, 210, 6
+SHOOT, A, 214, 211, 18
+SHOOT, A, 215, 212, 13
+DEAD, A, 157
+DEAD, A, 170
+DEAD, A, 198
+DEAD, D, 160
+DEAD, D, 173
+DEAD, D, 201
+SPAWN, A, 216, 1, 23, 0
+SPAWN, A, 217, 2, 23, 63
+SPAWN, A, 218, 3, 24, 0
+SPAWN, D, 219, 1, 23, 0
+SPAWN, D, 220, 2, 23, 63
+SPAWN, D, 221, 3, 24, 0
+TURN, 37
+PRINT, TURN 37 LOGS:To be spawned at Position(24,63)
+PRINT, To be spawned at Position(25,0)
+PRINT, To be spawned at Position(25,63)
+PRINT, Type 1 at Position (24,63)
+PRINT, Type 2 at Position (25,0)
+PRINT, Type 3 at Position (25,63)
+PRINT, 
+SHOOT, D, 163, 166, 0
+SHOOT, D, 169, 172, 2
+SHOOT, D, 175, 178, 4
+SHOOT, D, 176, 179, 0
+SHOOT, D, 181, 184, 6
+SHOOT, D, 182, 185, 1
+SHOOT, D, 187, 190, 8
+SHOOT, D, 188, 191, 3
+SHOOT, D, 193, 196, 10
+SHOOT, D, 194, 197, 5
+SHOOT, D, 199, 202, 12
+SHOOT, D, 200, 203, 7
+SHOOT, D, 204, 207, 0
+SHOOT, D, 205, 208, 14
+SHOOT, D, 206, 209, 9
+SHOOT, D, 210, 213, 2
+SHOOT, D, 211, 214, 16
+SHOOT, D, 212, 215, 11
+SHOOT, D, 216, 219, 6
+SHOOT, D, 217, 220, 18
+SHOOT, D, 218, 221, 13
+SHOOT, A, 166, 163, 0
+SHOOT, A, 172, 169, 2
+SHOOT, A, 178, 175, 4
+SHOOT, A, 179, 176, 0
+SHOOT, A, 184, 181, 6
+SHOOT, A, 185, 182, 1
+SHOOT, A, 190, 187, 8
+SHOOT, A, 191, 188, 3
+SHOOT, A, 196, 193, 10
+SHOOT, A, 197, 194, 5
+SHOOT, A, 202, 199, 12
+SHOOT, A, 203, 200, 7
+SHOOT, A, 207, 204, 0
+SHOOT, A, 208, 205, 14
+SHOOT, A, 209, 206, 9
+SHOOT, A, 213, 210, 2
+SHOOT, A, 214, 211, 16
+SHOOT, A, 215, 212, 11
+SHOOT, A, 219, 216, 6
+SHOOT, A, 220, 217, 18
+SHOOT, A, 221, 218, 13
+DEAD, A, 163
+DEAD, A, 176
+DEAD, A, 204
+DEAD, D, 166
+DEAD, D, 179
+DEAD, D, 207
+SPAWN, A, 222, 1, 24, 63
+SPAWN, A, 223, 2, 25, 0
+SPAWN, A, 224, 3, 25, 63
+SPAWN, D, 225, 1, 24, 63
+SPAWN, D, 226, 2, 25, 0
+SPAWN, D, 227, 3, 25, 63
+TURN, 38
+PRINT, TURN 38 LOGS:To be spawned at Position(26,0)
+PRINT, To be spawned at Position(26,63)
+PRINT, To be spawned at Position(27,0)
+PRINT, Type 1 at Position (26,0)
+PRINT, Type 2 at Position (26,63)
+PRINT, Type 3 at Position (27,0)
+PRINT, 
+SHOOT, D, 169, 172, 0
+SHOOT, D, 175, 178, 2
+SHOOT, D, 181, 184, 4
+SHOOT, D, 182, 185, 0
+SHOOT, D, 187, 190, 6
+SHOOT, D, 188, 191, 1
+SHOOT, D, 193, 196, 8
+SHOOT, D, 194, 197, 3
+SHOOT, D, 199, 202, 10
+SHOOT, D, 200, 203, 5
+SHOOT, D, 205, 208, 12
+SHOOT, D, 206, 209, 7
+SHOOT, D, 210, 213, 0
+SHOOT, D, 211, 214, 14
+SHOOT, D, 212, 215, 9
+SHOOT, D, 216, 219, 2
+SHOOT, D, 217, 220, 16
+SHOOT, D, 218, 221, 11
+SHOOT, D, 222, 225, 6
+SHOOT, D, 223, 226, 18
+SHOOT, D, 224, 227, 13
+SHOOT, A, 172, 169, 0
+SHOOT, A, 178, 175, 2
+SHOOT, A, 184, 181, 4
+SHOOT, A, 185, 182, 0
+SHOOT, A, 190, 187, 6
+SHOOT, A, 191, 188, 1
+SHOOT, A, 196, 193, 8
+SHOOT, A, 197, 194, 3
+SHOOT, A, 202, 199, 10
+SHOOT, A, 203, 200, 5
+SHOOT, A, 208, 205, 12
+SHOOT, A, 209, 206, 7
+SHOOT, A, 213, 210, 0
+SHOOT, A, 214, 211, 14
+SHOOT, A, 215, 212, 9
+SHOOT, A, 219, 216, 2
+SHOOT, A, 220, 217, 16
+SHOOT, A, 221, 218, 11
+SHOOT, A, 225, 222, 6
+SHOOT, A, 226, 223, 18
+SHOOT, A, 227, 224, 13
+DEAD, A, 169
+DEAD, A, 182
+DEAD, A, 210
+DEAD, D, 172
+DEAD, D, 185
+DEAD, D, 213
+SPAWN, A, 228, 1, 26, 0
+SPAWN, A, 229, 2, 26, 63
+SPAWN, A, 230, 3, 27, 0
+SPAWN, D, 231, 1, 26, 0
+SPAWN, D, 232, 2, 26, 63
+SPAWN, D, 233, 3, 27, 0
+TURN, 39
+PRINT, TURN 39 LOGS:To be spawned at Position(27,63)
+PRINT, To be spawned at Position(28,0)
+PRINT, To be spawned at Position(28,63)
+PRINT, Type 1 at Position (27,63)
+PRINT, Type 2 at Position (28,0)
+PRINT, Type 3 at Position (28,63)
+PRINT, 
+SHOOT, D, 175, 178, 0
+SHOOT, D, 181, 184, 2
+SHOOT, D, 187, 190, 4
+SHOOT, D, 188, 191, 0
+SHOOT, D, 193, 196, 6
+SHOOT, D, 194, 197, 1
+SHOOT, D, 199, 202, 8
+SHOOT, D, 200, 203, 3
+SHOOT, D, 205, 208, 10
+SHOOT, D, 206, 209, 5
+SHOOT, D, 211, 214, 12
+SHOOT, D, 212, 215, 7
+SHOOT, D, 216, 219, 0
+SHOOT, D, 217, 220, 14
+SHOOT, D, 218, 221, 9
+SHOOT, D, 222, 225, 2
+SHOOT, D, 223, 226, 16
+SHOOT, D, 224, 227, 11
+SHOOT, D, 228, 231, 6
+SHOOT, D, 229, 232, 18
+SHOOT, D, 230, 233, 13
+SHOOT, A, 178, 175, 0
+SHOOT, A, 184, 181, 2
+SHOOT, A, 190, 187, 4
+SHOOT, A, 191, 188, 0
+SHOOT, A, 196, 193, 6
+SHOOT, A, 197, 194, 1
+SHOOT, A, 202, 199, 8
+SHOOT, A, 203, 200, 3
+SHOOT, A, 208, 205, 10
+SHOOT, A, 209, 206, 5
+SHOOT, A, 214, 211, 12
+SHOOT, A, 215, 212, 7
+SHOOT, A, 219, 216, 0
+SHOOT, A, 220, 217, 14
+SHOOT, A, 221, 218, 9
+SHOOT, A, 225, 222, 2
+SHOOT, A, 226, 223, 16
+SHOOT, A, 227, 224, 11
+SHOOT, A, 231, 228, 6
+SHOOT, A, 232, 229, 18
+SHOOT, A, 233, 230, 13
+DEAD, A, 175
+DEAD, A, 188
+DEAD, A, 216
+DEAD, D, 178
+DEAD, D, 191
+DEAD, D, 219
+SPAWN, A, 234, 1, 27, 63
+SPAWN, A, 235, 2, 28, 0
+SPAWN, A, 236, 3, 28, 63
+SPAWN, D, 237, 1, 27, 63
+SPAWN, D, 238, 2, 28, 0
+SPAWN, D, 239, 3, 28, 63
+TURN, 40
+PRINT, TURN 40 LOGS:To be spawned at Position(29,0)
+PRINT, To be spawned at Position(29,63)
+PRINT, To be spawned at Position(30,0)
+PRINT, Type 1 at Position (29,0)
+PRINT, Type 2 at Position (29,63)
+PRINT, Type 3 at Position (30,0)
+PRINT, 
+SHOOT, D, 181, 184, 0
+SHOOT, D, 187, 190, 2
+SHOOT, D, 193, 196, 4
+SHOOT, D, 194, 197, 0
+SHOOT, D, 199, 202, 6
+SHOOT, D, 200, 203, 1
+SHOOT, D, 205, 208, 8
+SHOOT, D, 206, 209, 3
+SHOOT, D, 211, 214, 10
+SHOOT, D, 212, 215, 5
+SHOOT, D, 217, 220, 12
+SHOOT, D, 218, 221, 7
+SHOOT, D, 222, 225, 0
+SHOOT, D, 223, 226, 14
+SHOOT, D, 224, 227, 9
+SHOOT, D, 228, 231, 2
+SHOOT, D, 229, 232, 16
+SHOOT, D, 230, 233, 11
+SHOOT, D, 234, 237, 6
+SHOOT, D, 235, 238, 18
+SHOOT, D, 236, 239, 13
+SHOOT, A, 184, 181, 0
+SHOOT, A, 190, 187, 2
+SHOOT, A, 196, 193, 4
+SHOOT, A, 197, 194, 0
+SHOOT, A, 202, 199, 6
+SHOOT, A, 203, 200, 1
+SHOOT, A, 208, 205, 8
+SHOOT, A, 209, 206, 3
+SHOOT, A, 214, 211, 10
+SHOOT, A, 215, 212, 5
+SHOOT, A, 220, 217, 12
+SHOOT, A, 221, 218, 7
+SHOOT, A, 225, 222, 0
+SHOOT, A, 226, 223, 14
+SHOOT, A, 227, 224, 9
+SHOOT, A, 231, 228, 2
+SHOOT, A, 232, 229, 16
+SHOOT, A, 233, 230, 11
+SHOOT, A, 237, 234, 6
+SHOOT, A, 238, 235, 18
+SHOOT, A, 239, 236, 13
+DEAD, A, 181
+DEAD, A, 194
+DEAD, A, 222
+DEAD, D, 184
+DEAD, D, 197
+DEAD, D, 225
+SPAWN, A, 240, 1, 29, 0
+SPAWN, A, 241, 2, 29, 63
+SPAWN, A, 242, 3, 30, 0
+SPAWN, D, 243, 1, 29, 0
+SPAWN, D, 244, 2, 29, 63
+SPAWN, D, 245, 3, 30, 0
+TURN, 41
+PRINT, TURN 41 LOGS:To be spawned at Position(30,63)
+PRINT, To be spawned at Position(31,0)
+PRINT, To be spawned at Position(31,63)
+PRINT, Type 1 at Position (30,63)
+PRINT, Type 2 at Position (31,0)
+PRINT, Type 3 at Position (31,63)
+PRINT, 
+SHOOT, D, 187, 190, 0
+SHOOT, D, 193, 196, 2
+SHOOT, D, 199, 202, 4
+SHOOT, D, 200, 203, 0
+SHOOT, D, 205, 208, 6
+SHOOT, D, 206, 209, 1
+SHOOT, D, 211, 214, 8
+SHOOT, D, 212, 215, 3
+SHOOT, D, 217, 220, 10
+SHOOT, D, 218, 221, 5
+SHOOT, D, 223, 226, 12
+SHOOT, D, 224, 227, 7
+SHOOT, D, 228, 231, 0
+SHOOT, D, 229, 232, 14
+SHOOT, D, 230, 233, 9
+SHOOT, D, 234, 237, 2
+SHOOT, D, 235, 238, 16
+SHOOT, D, 236, 239, 11
+SHOOT, D, 240, 243, 6
+SHOOT, D, 241, 244, 18
+SHOOT, D, 242, 245, 13
+SHOOT, A, 190, 187, 0
+SHOOT, A, 196, 193, 2
+SHOOT, A, 202, 199, 4
+SHOOT, A, 203, 200, 0
+SHOOT, A, 208, 205, 6
+SHOOT, A, 209, 206, 1
+SHOOT, A, 214, 211, 8
+SHOOT, A, 215, 212, 3
+SHOOT, A, 220, 217, 10
+SHOOT, A, 221, 218, 5
+SHOOT, A, 226, 223, 12
+SHOOT, A, 227, 224, 7
+SHOOT, A, 231, 228, 0
+SHOOT, A, 232, 229, 14
+SHOOT, A, 233, 230, 9
+SHOOT, A, 237, 234, 2
+SHOOT, A, 238, 235, 16
+SHOOT, A, 239, 236, 11
+SHOOT, A, 243, 240, 6
+SHOOT, A, 244, 241, 18
+SHOOT, A, 245, 242, 13
+DEAD, A, 187
+DEAD, A, 200
+DEAD, A, 228
+DEAD, D, 190
+DEAD, D, 203
+DEAD, D, 231
+SPAWN, A, 246, 1, 30, 63
+SPAWN, A, 247, 2, 31, 0
+SPAWN, A, 248, 3, 31, 63
+SPAWN, D, 249, 1, 30, 63
+SPAWN, D, 250, 2, 31, 0
+SPAWN, D, 251, 3, 31, 63
+TURN, 42
+PRINT, TURN 42 LOGS:To be spawned at Position(32,0)
+PRINT, To be spawned at Position(32,63)
+PRINT, To be spawned at Position(33,0)
+PRINT, Type 1 at Position (32,0)
+PRINT, Type 2 at Position (32,63)
+PRINT, Type 3 at Position (33,0)
+PRINT, 
+SHOOT, D, 193, 196, 0
+SHOOT, D, 199, 202, 2
+SHOOT, D, 205, 208, 4
+SHOOT, D, 206, 209, 0
+SHOOT, D, 211, 214, 6
+SHOOT, D, 212, 215, 1
+SHOOT, D, 217, 220, 8
+SHOOT, D, 218, 221, 3
+SHOOT, D, 223, 226, 10
+SHOOT, D, 224, 227, 5
+SHOOT, D, 229, 232, 12
+SHOOT, D, 230, 233, 7
+SHOOT, D, 234, 237, 0
+SHOOT, D, 235, 238, 14
+SHOOT, D, 236, 239, 9
+SHOOT, D, 240, 243, 2
+SHOOT, D, 241, 244, 16
+SHOOT, D, 242, 245, 11
+SHOOT, D, 246, 249, 6
+SHOOT, D, 247, 250, 18
+SHOOT, D, 248, 251, 13
+SHOOT, A, 196, 193, 0
+SHOOT, A, 202, 199, 2
+SHOOT, A, 208, 205, 4
+SHOOT, A, 209, 206, 0
+SHOOT, A, 214, 211, 6
+SHOOT, A, 215, 212, 1
+SHOOT, A, 220, 217, 8
+SHOOT, A, 221, 218, 3
+SHOOT, A, 226, 223, 10
+SHOOT, A, 227, 224, 5
+SHOOT, A, 232, 229, 12
+SHOOT, A, 233, 230, 7
+SHOOT, A, 237, 234, 0
+SHOOT, A, 238, 235, 14
+SHOOT, A, 239, 236, 9
+SHOOT, A, 243, 240, 2
+SHOOT, A, 244, 241, 16
+SHOOT, A, 245, 242, 11
+SHOOT, A, 249, 246, 6
+SHOOT, A, 250, 247, 18
+SHOOT, A, 251, 248, 13
+DEAD, A, 193
+DEAD, A, 206
+DEAD, A, 234
+DEAD, D, 196
+DEAD, D, 209
+DEAD, D, 237
+SPAWN, A, 252, 1, 32, 0
+SPAWN, A, 253, 2, 32, 63
+SPAWN, A, 254, 3, 33, 0
+SPAWN, D, 255, 1, 32, 0
+SPAWN, D, 256, 2, 32, 63
+SPAWN, D, 257, 3, 33, 0
+TURN, 43
+PRINT, TURN 43 LOGS:To be spawned at Position(33,63)
+PRINT, To be spawned at Position(34,0)
+PRINT, To be spawned at Position(34,63)
+PRINT, Type 1 at Position (33,63)
+PRINT, Type 2 at Position (34,0)
+PRINT, Type 3 at Position (34,63)
+PRINT, 
+SHOOT, D, 199, 202, 0
+SHOOT, D, 205, 208, 2
+SHOOT, D, 211, 214, 4
+SHOOT, D, 212, 215, 0
+SHOOT, D, 217, 220, 6
+SHOOT, D, 218, 221, 1
+SHOOT, D, 223, 226, 8
+SHOOT, D, 224, 227, 3
+SHOOT, D, 229, 232, 10
+SHOOT, D, 230, 233, 5
+SHOOT, D, 235, 238, 12
+SHOOT, D, 236, 239, 7
+SHOOT, D, 240, 243, 0
+SHOOT, D, 241, 244, 14
+SHOOT, D, 242, 245, 9
+SHOOT, D, 246, 249, 2
+SHOOT, D, 247, 250, 16
+SHOOT, D, 248, 251, 11
+SHOOT, D, 252, 255, 6
+SHOOT, D, 253, 256, 18
+SHOOT, D, 254, 257, 13
+SHOOT, A, 202, 199, 0
+SHOOT, A, 208, 205, 2
+SHOOT, A, 214, 211, 4
+SHOOT, A, 215, 212, 0
+SHOOT, A, 220, 217, 6
+SHOOT, A, 221, 218, 1
+SHOOT, A, 226, 223, 8
+SHOOT, A, 227, 224, 3
+SHOOT, A, 232, 229, 10
+SHOOT, A, 233, 230, 5
+SHOOT, A, 238, 235, 12
+SHOOT, A, 239, 236, 7
+SHOOT, A, 243, 240, 0
+SHOOT, A, 244, 241, 14
+SHOOT, A, 245, 242, 9
+SHOOT, A, 249, 246, 2
+SHOOT, A, 250, 247, 16
+SHOOT, A, 251, 248, 11
+SHOOT, A, 255, 252, 6
+SHOOT, A, 256, 253, 18
+SHOOT, A, 257, 254, 13
+DEAD, A, 199
+DEAD, A, 212
+DEAD, A, 240
+DEAD, D, 202
+DEAD, D, 215
+DEAD, D, 243
+SPAWN, A, 258, 1, 33, 63
+SPAWN, A, 259, 2, 34, 0
+SPAWN, A, 260, 3, 34, 63
+SPAWN, D, 261, 1, 33, 63
+SPAWN, D, 262, 2, 34, 0
+SPAWN, D, 263, 3, 34, 63
+TURN, 44
+PRINT, TURN 44 LOGS:To be spawned at Position(35,0)
+PRINT, To be spawned at Position(35,63)
+PRINT, To be spawned at Position(36,0)
+PRINT, Type 1 at Position (35,0)
+PRINT, Type 2 at Position (35,63)
+PRINT, Type 3 at Position (36,0)
+PRINT, 
+SHOOT, D, 205, 208, 0
+SHOOT, D, 211, 214, 2
+SHOOT, D, 217, 220, 4
+SHOOT, D, 218, 221, 0
+SHOOT, D, 223, 226, 6
+SHOOT, D, 224, 227, 1
+SHOOT, D, 229, 232, 8
+SHOOT, D, 230, 233, 3
+SHOOT, D, 235, 238, 10
+SHOOT, D, 236, 239, 5
+SHOOT, D, 241, 244, 12
+SHOOT, D, 242, 245, 7
+SHOOT, D, 246, 249, 0
+SHOOT, D, 247, 250, 14
+SHOOT, D, 248, 251, 9
+SHOOT, D, 252, 255, 2
+SHOOT, D, 253, 256, 16
+SHOOT, D, 254, 257, 11
+SHOOT, D, 258, 261, 6
+SHOOT, D, 259, 262, 18
+SHOOT, D, 260, 263, 13
+SHOOT, A, 208, 205, 0
+SHOOT, A, 214, 211, 2
+SHOOT, A, 220, 217, 4
+SHOOT, A, 221, 218, 0
+SHOOT, A, 226, 223, 6
+SHOOT, A, 227, 224, 1
+SHOOT, A, 232, 229, 8
+SHOOT, A, 233, 230, 3
+SHOOT, A, 238, 235, 10
+SHOOT, A, 239, 236, 5
+SHOOT, A, 244, 241, 12
+SHOOT, A, 245, 242, 7
+SHOOT, A, 249, 246, 0
+SHOOT, A, 250, 247, 14
+SHOOT, A, 251, 248, 9
+SHOOT, A, 255, 252, 2
+SHOOT, A, 256, 253, 16
+SHOOT, A, 257, 254, 11
+SHOOT, A, 261, 258, 6
+SHOOT, A, 262, 259, 18
+SHOOT, A, 263, 260, 13
+DEAD, A, 205
+DEAD, A, 218
+DEAD, A, 246
+DEAD, D, 208
+DEAD, D, 221
+DEAD, D, 249
+SPAWN, A, 264, 1, 35, 0
+SPAWN, A, 265, 2, 35, 63
+SPAWN, A, 266, 3, 36, 0
+SPAWN, D, 267, 1, 35, 0
+SPAWN, D, 268, 2, 35, 63
+SPAWN, D, 269, 3, 36, 0
+TURN, 45
+PRINT, TURN 45 LOGS:To be spawned at Position(36,63)
+PRINT, To be spawned at Position(37,0)
+PRINT, To be spawned at Position(37,63)
+PRINT, Type 1 at Position (36,63)
+PRINT, Type 2 at Position (37,0)
+PRINT, Type 3 at Position (37,63)
+PRINT, 
+SHOOT, D, 211, 214, 0
+SHOOT, D, 217, 220, 2
+SHOOT, D, 223, 226, 4
+SHOOT, D, 224, 227, 0
+SHOOT, D, 229, 232, 6
+SHOOT, D, 230, 233, 1
+SHOOT, D, 235, 238, 8
+SHOOT, D, 236, 239, 3
+SHOOT, D, 241, 244, 10
+SHOOT, D, 242, 245, 5
+SHOOT, D, 247, 250, 12
+SHOOT, D, 248, 251, 7
+SHOOT, D, 252, 255, 0
+SHOOT, D, 253, 256, 14
+SHOOT, D, 254, 257, 9
+SHOOT, D, 258, 261, 2
+SHOOT, D, 259, 262, 16
+SHOOT, D, 260, 263, 11
+SHOOT, D, 264, 267, 6
+SHOOT, D, 265, 268, 18
+SHOOT, D, 266, 269, 13
+SHOOT, A, 214, 211, 0
+SHOOT, A, 220, 217, 2
+SHOOT, A, 226, 223, 4
+SHOOT, A, 227, 224, 0
+SHOOT, A, 232, 229, 6
+SHOOT, A, 233, 230, 1
+SHOOT, A, 238, 235, 8
+SHOOT, A, 239, 236, 3
+SHOOT, A, 244, 241, 10
+SHOOT, A, 245, 242, 5
+SHOOT, A, 250, 247, 12
+SHOOT, A, 251, 248, 7
+SHOOT, A, 255, 252, 0
+SHOOT, A, 256, 253, 14
+SHOOT, A, 257, 254, 9
+SHOOT, A, 261, 258, 2
+SHOOT, A, 262, 259, 16
+SHOOT, A, 263, 260, 11
+SHOOT, A, 267, 264, 6
+SHOOT, A, 268, 265, 18
+SHOOT, A, 269, 266, 13
+DEAD, A, 211
+DEAD, A, 224
+DEAD, A, 252
+DEAD, D, 214
+DEAD, D, 227
+DEAD, D, 255
+SPAWN, A, 270, 1, 36, 63
+SPAWN, A, 271, 2, 37, 0
+SPAWN, A, 272, 3, 37, 63
+SPAWN, D, 273, 1, 36, 63
+SPAWN, D, 274, 2, 37, 0
+SPAWN, D, 275, 3, 37, 63
+TURN, 46
+PRINT, TURN 46 LOGS:To be spawned at Position(38,0)
+PRINT, To be spawned at Position(38,63)
+PRINT, To be spawned at Position(39,0)
+PRINT, Type 1 at Position (38,0)
+PRINT, Type 2 at Position (38,63)
+PRINT, Type 3 at Position (39,0)
+PRINT, 
+SHOOT, D, 217, 220, 0
+SHOOT, D, 223, 226, 2
+SHOOT, D, 229, 232, 4
+SHOOT, D, 230, 233, 0
+SHOOT, D, 235, 238, 6
+SHOOT, D, 236, 239, 1
+SHOOT, D, 241, 244, 8
+SHOOT, D, 242, 245, 3
+SHOOT, D, 247, 250, 10
+SHOOT, D, 248, 251, 5
+SHOOT, D, 253, 256, 12
+SHOOT, D, 254, 257, 7
+SHOOT, D, 258, 261, 0
+SHOOT, D, 259, 262, 14
+SHOOT, D, 260, 263, 9
+SHOOT, D, 264, 267, 2
+SHOOT, D, 265, 268, 16
+SHOOT, D, 266, 269, 11
+SHOOT, D, 270, 273, 6
+SHOOT, D, 271, 274, 18
+SHOOT, D, 272, 275, 13
+SHOOT, A, 220, 217, 0
+SHOOT, A, 226, 223, 2
+SHOOT, A, 232, 229, 4
+SHOOT, A, 233, 230, 0
+SHOOT, A, 238, 235, 6
+SHOOT, A, 239, 236, 1
+SHOOT, A, 244, 241, 8
+SHOOT, A, 245, 242, 3
+SHOOT, A, 250, 247, 10
+SHOOT, A, 251, 248, 5
+SHOOT, A, 256, 253, 12
+SHOOT, A, 257, 254, 7
+SHOOT, A, 261, 258, 0
+SHOOT, A, 262, 259, 14
+SHOOT, A, 263, 260, 9
+SHOOT, A, 267, 264, 2
+SHOOT, A, 268, 265, 16
+SHOOT, A, 269, 266, 11
+SHOOT, A, 273, 270, 6
+SHOOT, A, 274, 271, 18
+SHOOT, A, 275, 272, 13
+DEAD, A, 217
+DEAD, A, 230
+DEAD, A, 258
+DEAD, D, 220
+DEAD, D, 233
+DEAD, D, 261
+SPAWN, A, 276, 1, 38, 0
+SPAWN, A, 277, 2, 38, 63
+SPAWN, A, 278, 3, 39, 0
+SPAWN, D, 279, 1, 38, 0
+SPAWN, D, 280, 2, 38, 63
+SPAWN, D, 281, 3, 39, 0
+TURN, 47
+PRINT, TURN 47 LOGS:To be spawned at Position(39,63)
+PRINT, To be spawned at Position(40,0)
+PRINT, To be spawned at Position(40,63)
+PRINT, Type 1 at Position (39,63)
+PRINT, Type 2 at Position (40,0)
+PRINT, Type 3 at Position (40,63)
+PRINT, 
+SHOOT, D, 223, 226, 0
+SHOOT, D, 229, 232, 2
+SHOOT, D, 235, 238, 4
+SHOOT, D, 236, 239, 0
+SHOOT, D, 241, 244, 6
+SHOOT, D, 242, 245, 1
+SHOOT, D, 247, 250, 8
+SHOOT, D, 248, 251, 3
+SHOOT, D, 253, 256, 10
+SHOOT, D, 254, 257, 5
+SHOOT, D, 259, 262, 12
+SHOOT, D, 260, 263, 7
+SHOOT, D, 264, 267, 0
+SHOOT, D, 265, 268, 14
+SHOOT, D, 266, 269, 9
+SHOOT, D, 270, 273, 2
+SHOOT, D, 271, 274, 16
+SHOOT, D, 272, 275, 11
+SHOOT, D, 276, 279, 6
+SHOOT, D, 277, 280, 18
+SHOOT, D, 278, 281, 13
+SHOOT, A, 226, 223, 0
+SHOOT, A, 232, 229, 2
+SHOOT, A, 238, 235, 4
+SHOOT, A, 239, 236, 0
+SHOOT, A, 244, 241, 6
+SHOOT, A, 245, 242, 1
+SHOOT, A, 250, 247, 8
+SHOOT, A, 251, 248, 3
+SHOOT, A, 256, 253, 10
+SHOOT, A, 257, 254, 5
+SHOOT, A, 262, 259, 12
+SHOOT, A, 263, 260, 7
+SHOOT, A, 267, 264, 0
+SHOOT, A, 268, 265, 14
+SHOOT, A, 269, 266, 9
+SHOOT, A, 273, 270, 2
+SHOOT, A, 274, 271, 16
+SHOOT, A, 275, 272, 11
+SHOOT, A, 279, 276, 6
+SHOOT, A, 280, 277, 18
+SHOOT, A, 281, 278, 13
+DEAD, A, 223
+DEAD, A, 236
+DEAD, A, 264
+DEAD, D, 226
+DEAD, D, 239
+DEAD, D, 267
+SPAWN, A, 282, 1, 39, 63
+SPAWN, A, 283, 2, 40, 0
+SPAWN, A, 284, 3, 40, 63
+SPAWN, D, 285, 1, 39, 63
+SPAWN, D, 286, 2, 40, 0
+SPAWN, D, 287, 3, 40, 63
+TURN, 48
+PRINT, TURN 48 LOGS:To be spawned at Position(41,0)
+PRINT, To be spawned at Position(41,63)
+PRINT, To be spawned at Position(42,0)
+PRINT, Type 1 at Position (41,0)
+PRINT, Type 2 at Position (41,63)
+PRINT, Type 3 at Position (42,0)
+PRINT, 
+SHOOT, D, 229, 232, 0
+SHOOT, D, 235, 238, 2
+SHOOT, D, 241, 244, 4
+SHOOT, D, 242, 245, 0
+SHOOT, D, 247, 250, 6
+SHOOT, D, 248, 251, 1
+SHOOT, D, 253, 256, 8
+SHOOT, D, 254, 257, 3
+SHOOT, D, 259, 262, 10
+SHOOT, D, 260, 263, 5
+SHOOT, D, 265, 268, 12
+SHOOT, D, 266, 269, 7
+SHOOT, D, 270, 273, 0
+SHOOT, D, 271, 274, 14
+SHOOT, D, 272, 275, 9
+SHOOT, D, 276, 279, 2
+SHOOT, D, 277, 280, 16
+SHOOT, D, 278, 281, 11
+SHOOT, D, 282, 285, 6
+SHOOT, D, 283, 286, 18
+SHOOT, D, 284, 287, 13
+SHOOT, A, 232, 229, 0
+SHOOT, A, 238, 235, 2
+SHOOT, A, 244, 241, 4
+SHOOT, A, 245, 242, 0
+SHOOT, A, 250, 247, 6
+SHOOT, A, 251, 248, 1
+SHOOT, A, 256, 253, 8
+SHOOT, A, 257, 254, 3
+SHOOT, A, 262, 259, 10
+SHOOT, A, 263, 260, 5
+SHOOT, A, 268, 265, 12
+SHOOT, A, 269, 266, 7
+SHOOT, A, 273, 270, 0
+SHOOT, A, 274, 271, 14
+SHOOT, A, 275, 272, 9
+SHOOT, A, 279, 276, 2
+SHOOT, A, 280, 277, 16
+SHOOT, A, 281, 278, 11
+SHOOT, A, 285, 282, 6
+SHOOT, A, 286, 283, 18
+SHOOT, A, 287, 284, 13
+DEAD, A, 229
+DEAD, A, 242
+DEAD, A, 270
+DEAD, D, 232
+DEAD, D, 245
+DEAD, D, 273
+SPAWN, A, 288, 1, 41, 0
+SPAWN, A, 289, 2, 41, 63
+SPAWN, A, 290, 3, 42, 0
+SPAWN, D, 291, 1, 41, 0
+SPAWN, D, 292, 2, 41, 63
+SPAWN, D, 293, 3, 42, 0
+TURN, 49
+PRINT, TURN 49 LOGS:To be spawned at Position(42,63)
+PRINT, To be spawned at Position(43,0)
+PRINT, To be spawned at Position(43,63)
+PRINT, Type 1 at Position (42,63)
+PRINT, Type 2 at Position (43,0)
+PRINT, Type 3 at Position (43,63)
+PRINT, 
+SHOOT, D, 235, 238, 0
+SHOOT, D, 241, 244, 2
+SHOOT, D, 247, 250, 4
+SHOOT, D, 248, 251, 0
+SHOOT, D, 253, 256, 6
+SHOOT, D, 254, 257, 1
+SHOOT, D, 259, 262, 8
+SHOOT, D, 260, 263, 3
+SHOOT, D, 265, 268, 10
+SHOOT, D, 266, 269, 5
+SHOOT, D, 271, 274, 12
+SHOOT, D, 272, 275, 7
+SHOOT, D, 276, 279, 0
+SHOOT, D, 277, 280, 14
+SHOOT, D, 278, 281, 9
+SHOOT, D, 282, 285, 2
+SHOOT, D, 283, 286, 16
+SHOOT, D, 284, 287, 11
+SHOOT, D, 288, 291, 6
+SHOOT, D, 289, 292, 18
+SHOOT, D, 290, 293, 13
+SHOOT, A, 238, 235, 0
+SHOOT, A, 244, 241, 2
+SHOOT, A, 250, 247, 4
+SHOOT, A, 251, 248, 0
+SHOOT, A, 256, 253, 6
+SHOOT, A, 257, 254, 1
+SHOOT, A, 262, 259, 8
+SHOOT, A, 263, 260, 3
+SHOOT, A, 268, 265, 10
+SHOOT, A, 269, 266, 5
+SHOOT, A, 274, 271, 12
+SHOOT, A, 275, 272, 7
+SHOOT, A, 279, 276, 0
+SHOOT, A, 280, 277, 14
+SHOOT, A, 281, 278, 9
+SHOOT, A, 285, 282, 2
+SHOOT, A, 286, 283, 16
+SHOOT, A, 287, 284, 11
+SHOOT, A, 291, 288, 6
+SHOOT, A, 292, 289, 18
+SHOOT, A, 293, 290, 13
+DEAD, A, 235
+DEAD, A, 248
+DEAD, A, 276
+DEAD, D, 238
+DEAD, D, 251
+DEAD, D, 279
+SPAWN, A, 294, 1, 42, 63
+SPAWN, A, 295, 2, 43, 0
+SPAWN, A, 296, 3, 43, 63
+SPAWN, D, 297, 1, 42, 63
+SPAWN, D, 298, 2, 43, 0
+SPAWN, D, 299, 3, 43, 63
+TURN, 50
+PRINT, TURN 50 LOGS:To be spawned at Position(44,0)
+PRINT, To be spawned at Position(44,63)
+PRINT, To be spawned at Position(45,0)
+PRINT, Type 1 at Position (44,0)
+PRINT, Type 2 at Position (44,63)
+PRINT, Type 3 at Position (45,0)
+PRINT, 
+SHOOT, D, 241, 244, 0
+SHOOT, D, 247, 250, 2
+SHOOT, D, 253, 256, 4
+SHOOT, D, 254, 257, 0
+SHOOT, D, 259, 262, 6
+SHOOT, D, 260, 263, 1
+SHOOT, D, 265, 268, 8
+SHOOT, D, 266, 269, 3
+SHOOT, D, 271, 274, 10
+SHOOT, D, 272, 275, 5
+SHOOT, D, 277, 280, 12
+SHOOT, D, 278, 281, 7
+SHOOT, D, 282, 285, 0
+SHOOT, D, 283, 286, 14
+SHOOT, D, 284, 287, 9
+SHOOT, D, 288, 291, 2
+SHOOT, D, 289, 292, 16
+SHOOT, D, 290, 293, 11
+SHOOT, D, 294, 297, 6
+SHOOT, D, 295, 298, 18
+SHOOT, D, 296, 299, 13
+SHOOT, A, 244, 241, 0
+SHOOT, A, 250, 247, 2
+SHOOT, A, 256, 253, 4
+SHOOT, A, 257, 254, 0
+SHOOT, A, 262, 259, 6
+SHOOT, A, 263, 260, 1
+SHOOT, A, 268, 265, 8
+SHOOT, A, 269, 266, 3
+SHOOT, A, 274, 271, 10
+SHOOT, A, 275, 272, 5
+SHOOT, A, 280, 277, 12
+SHOOT, A, 281, 278, 7
+SHOOT, A, 285, 282, 0
+SHOOT, A, 286, 283, 14
+SHOOT, A, 287, 284, 9
+SHOOT, A, 291, 288, 2
+SHOOT, A, 292, 289, 16
+SHOOT, A, 293, 290, 11
+SHOOT, A, 297, 294, 6
+SHOOT, A, 298, 295, 18
+SHOOT, A, 299, 296, 13
+DEAD, A, 241
+DEAD, A, 254
+DEAD, A, 282
+DEAD, D, 244
+DEAD, D, 257
+DEAD, D, 285
+SPAWN, A, 300, 1, 44, 0
+SPAWN, A, 301, 2, 44, 63
+SPAWN, A, 302, 3, 45, 0
+SPAWN, D, 303, 1, 44, 0
+SPAWN, D, 304, 2, 44, 63
+SPAWN, D, 305, 3, 45, 0
+TURN, 51
+PRINT, TURN 51 LOGS:To be spawned at Position(45,63)
+PRINT, To be spawned at Position(46,0)
+PRINT, To be spawned at Position(46,63)
+PRINT, Type 1 at Position (45,63)
+PRINT, Type 2 at Position (46,0)
+PRINT, Type 3 at Position (46,63)
+PRINT, 
+SHOOT, D, 247, 250, 0
+SHOOT, D, 253, 256, 2
+SHOOT, D, 259, 262, 4
+SHOOT, D, 260, 263, 0
+SHOOT, D, 265, 268, 6
+SHOOT, D, 266, 269, 1
+SHOOT, D, 271, 274, 8
+SHOOT, D, 272, 275, 3
+SHOOT, D, 277, 280, 10
+SHOOT, D, 278, 281, 5
+SHOOT, D, 283, 286, 12
+SHOOT, D, 284, 287, 7
+SHOOT, D, 288, 291, 0
+SHOOT, D, 289, 292, 14
+SHOOT, D, 290, 293, 9
+SHOOT, D, 294, 297, 2
+SHOOT, D, 295, 298, 16
+SHOOT, D, 296, 299, 11
+SHOOT, D, 300, 303, 6
+SHOOT, D, 301, 304, 18
+SHOOT, D, 302, 305, 13
+SHOOT, A, 250, 247, 0
+SHOOT, A, 256, 253, 2
+SHOOT, A, 262, 259, 4
+SHOOT, A, 263, 260, 0
+SHOOT, A, 268, 265, 6
+SHOOT, A, 269, 266, 1
+SHOOT, A, 274, 271, 8
+SHOOT, A, 275, 272, 3
+SHOOT, A, 280, 277, 10
+SHOOT, A, 281, 278, 5
+SHOOT, A, 286, 283, 12
+SHOOT, A, 287, 284, 7
+SHOOT, A, 291, 288, 0
+SHOOT, A, 292, 289, 14
+SHOOT, A, 293, 290, 9
+SHOOT, A, 297, 294, 2
+SHOOT, A, 298, 295, 16
+SHOOT, A, 299, 296, 11
+SHOOT, A, 303, 300, 6
+SHOOT, A, 304, 301, 18
+SHOOT, A, 305, 302, 13
+DEAD, A, 247
+DEAD, A, 260
+DEAD, A, 288
+DEAD, D, 250
+DEAD, D, 263
+DEAD, D, 291
+SPAWN, A, 306, 1, 45, 63
+SPAWN, A, 307, 2, 46, 0
+SPAWN, A, 308, 3, 46, 63
+SPAWN, D, 309, 1, 45, 63
+SPAWN, D, 310, 2, 46, 0
+SPAWN, D, 311, 3, 46, 63
+TURN, 52
+PRINT, TURN 52 LOGS:To be spawned at Position(47,0)
+PRINT, To be spawned at Position(47,63)
+PRINT, To be spawned at Position(48,0)
+PRINT, Type 1 at Position (47,0)
+PRINT, Type 2 at Position (47,63)
+PRINT, Type 3 at Position (48,0)
+PRINT, 
+SHOOT, D, 253, 256, 0
+SHOOT, D, 259, 262, 2
+SHOOT, D, 265, 268, 4
+SHOOT, D, 266, 269, 0
+SHOOT, D, 271, 274, 6
+SHOOT, D, 272, 275, 1
+SHOOT, D, 277, 280, 8
+SHOOT, D, 278, 281, 3
+SHOOT, D, 283, 286, 10
+SHOOT, D, 284, 287, 5
+SHOOT, D, 289, 292, 12
+SHOOT, D, 290, 293, 7
+SHOOT, D, 294, 297, 0
+SHOOT, D, 295, 298, 14
+SHOOT, D, 296, 299, 9
+SHOOT, D, 300, 303, 2
+SHOOT, D, 301, 304, 16
+SHOOT, D, 302, 305, 11
+SHOOT, D, 306, 309, 6
+SHOOT, D, 307, 310, 18
+SHOOT, D, 308, 311, 13
+SHOOT, A, 256, 253, 0
+SHOOT, A, 262, 259, 2
+SHOOT, A, 268, 265, 4
+SHOOT, A, 269, 266, 0
+SHOOT, A, 274, 271, 6
+SHOOT, A, 275, 272, 1
+SHOOT, A, 280, 277, 8
+SHOOT, A, 281, 278, 3
+SHOOT, A, 286, 283, 10
+SHOOT, A, 287, 284, 5
+SHOOT, A, 292, 289, 12
+SHOOT, A, 293, 290, 7
+SHOOT, A, 297, 294, 0
+SHOOT, A, 298, 295, 14
+SHOOT, A, 299, 296, 9
+SHOOT, A, 303, 300, 2
+SHOOT, A, 304, 301, 16
+SHOOT, A, 305, 302, 11
+SHOOT, A, 309, 306, 6
+SHOOT, A, 310, 307, 18
+SHOOT, A, 311, 308, 13
+DEAD, A, 253
+DEAD, A, 266
+DEAD, A, 294
+DEAD, D, 256
+DEAD, D, 269
+DEAD, D, 297
+SPAWN, A, 312, 1, 47, 0
+SPAWN, A, 313, 2, 47, 63
+SPAWN, A, 314, 3, 48, 0
+SPAWN, D, 315, 1, 47, 0
+SPAWN, D, 316, 2, 47, 63
+SPAWN, D, 317, 3, 48, 0
+TURN, 53
+PRINT, TURN 53 LOGS:To be spawned at Position(48,63)
+PRINT, To be spawned at Position(49,0)
+PRINT, To be spawned at Position(49,63)
+PRINT, Type 1 at Position (48,63)
+PRINT, Type 2 at Position (49,0)
+PRINT, Type 3 at Position (49,63)
+PRINT, 
+SHOOT, D, 259, 262, 0
+SHOOT, D, 265, 268, 2
+SHOOT, D, 271, 274, 4
+SHOOT, D, 272, 275, 0
+SHOOT, D, 277, 280, 6
+SHOOT, D, 278, 281, 1
+SHOOT, D, 283, 286, 8
+SHOOT, D, 284, 287, 3
+SHOOT, D, 289, 292, 10
+SHOOT, D, 290, 293, 5
+SHOOT, D, 295, 298, 12
+SHOOT, D, 296, 299, 7
+SHOOT, D, 300, 303, 0
+SHOOT, D, 301, 304, 14
+SHOOT, D, 302, 305, 9
+SHOOT, D, 306, 309, 2
+SHOOT, D, 307, 310, 16
+SHOOT, D, 308, 311, 11
+SHOOT, D, 312, 315, 6
+SHOOT, D, 313, 316, 18
+SHOOT, D, 314, 317, 13
+SHOOT, A, 262, 259, 0
+SHOOT, A, 268, 265, 2
+SHOOT, A, 274, 271, 4
+SHOOT, A, 275, 272, 0
+SHOOT, A, 280, 277, 6
+SHOOT, A, 281, 278, 1
+SHOOT, A, 286, 283, 8
+SHOOT, A, 287, 284, 3
+SHOOT, A, 292, 289, 10
+SHOOT, A, 293, 290, 5
+SHOOT, A, 298, 295, 12
+SHOOT, A, 299, 296, 7
+SHOOT, A, 303, 300, 0
+SHOOT, A, 304, 301, 14
+SHOOT, A, 305, 302, 9
+SHOOT, A, 309, 306, 2
+SHOOT, A, 310, 307, 16
+SHOOT, A, 311, 308, 11
+SHOOT, A, 315, 312, 6
+SHOOT, A, 316, 313, 18
+SHOOT, A, 317, 314, 13
+DEAD, A, 259
+DEAD, A, 272
+DEAD, A, 300
+DEAD, D, 262
+DEAD, D, 275
+DEAD, D, 303
+SPAWN, A, 318, 1, 48, 63
+SPAWN, A, 319, 2, 49, 0
+SPAWN, A, 320, 3, 49, 63
+SPAWN, D, 321, 1, 48, 63
+SPAWN, D, 322, 2, 49, 0
+SPAWN, D, 323, 3, 49, 63
+TURN, 54
+PRINT, TURN 54 LOGS:To be spawned at Position(50,0)
+PRINT, To be spawned at Position(50,63)
+PRINT, To be spawned at Position(51,0)
+PRINT, Type 1 at Position (50,0)
+PRINT, Type 2 at Position (50,63)
+PRINT, Type 3 at Position (51,0)
+PRINT, 
+SHOOT, D, 265, 268, 0
+SHOOT, D, 271, 274, 2
+SHOOT, D, 277, 280, 4
+SHOOT, D, 278, 281, 0
+SHOOT, D, 283, 286, 6
+SHOOT, D, 284, 287, 1
+SHOOT, D, 289, 292, 8
+SHOOT, D, 290, 293, 3
+SHOOT, D, 295, 298, 10
+SHOOT, D, 296, 299, 5
+SHOOT, D, 301, 304, 12
+SHOOT, D, 302, 305, 7
+SHOOT, D, 306, 309, 0
+SHOOT, D, 307, 310, 14
+SHOOT, D, 308, 311, 9
+SHOOT, D, 312, 315, 2
+SHOOT, D, 313, 316, 16
+SHOOT, D, 314, 317, 11
+SHOOT, D, 318, 321, 6
+SHOOT, D, 319, 322, 18
+SHOOT, D, 320, 323, 13
+SHOOT, A, 268, 265, 0
+SHOOT, A, 274, 271, 2
+SHOOT, A, 280, 277, 4
+SHOOT, A, 281, 278, 0
+SHOOT, A, 286, 283, 6
+SHOOT, A, 287, 284, 1
+SHOOT, A, 292, 289, 8
+SHOOT, A, 293, 290, 3
+SHOOT, A, 298, 295, 10
+SHOOT, A, 299, 296, 5
+SHOOT, A, 304, 301, 12
+SHOOT, A, 305, 302, 7
+SHOOT, A, 309, 306, 0
+SHOOT, A, 310, 307, 14
+SHOOT, A, 311, 308, 9
+SHOOT, A, 315, 312, 2
+SHOOT, A, 316, 313, 16
+SHOOT, A, 317, 314, 11
+SHOOT, A, 321, 318, 6
+SHOOT, A, 322, 319, 18
+SHOOT, A, 323, 320, 13
+DEAD, A, 265
+DEAD, A, 278
+DEAD, A, 306
+DEAD, D, 268
+DEAD, D, 281
+DEAD, D, 309
+SPAWN, A, 324, 1, 50, 0
+SPAWN, A, 325, 2, 50, 63
+SPAWN, A, 326, 3, 51, 0
+SPAWN, D, 327, 1, 50, 0
+SPAWN, D, 328, 2, 50, 63
+SPAWN, D, 329, 3, 51, 0
+TURN, 55
+PRINT, TURN 55 LOGS:To be spawned at Position(51,63)
+PRINT, To be spawned at Position(52,0)
+PRINT, To be spawned at Position(52,63)
+PRINT, Type 1 at Position (51,63)
+PRINT, Type 2 at Position (52,0)
+PRINT, Type 3 at Position (52,63)
+PRINT, 
+SHOOT, D, 271, 274, 0
+SHOOT, D, 277, 280, 2
+SHOOT, D, 283, 286, 4
+SHOOT, D, 284, 287, 0
+SHOOT, D, 289, 292, 6
+SHOOT, D, 290, 293, 1
+SHOOT, D, 295, 298, 8
+SHOOT, D, 296, 299, 3
+SHOOT, D, 301, 304, 10
+SHOOT, D, 302, 305, 5
+SHOOT, D, 307, 310, 12
+SHOOT, D, 308, 311, 7
+SHOOT, D, 312, 315, 0
+SHOOT, D, 313, 316, 14
+SHOOT, D, 314, 317, 9
+SHOOT, D, 318, 321, 2
+SHOOT, D, 319, 322, 16
+SHOOT, D, 320, 323, 11
+SHOOT, D, 324, 327, 6
+SHOOT, D, 325, 328, 18
+SHOOT, D, 326, 329, 13
+SHOOT, A, 274, 271, 0
+SHOOT, A, 280, 277, 2
+SHOOT, A, 286, 283, 4
+SHOOT, A, 287, 284, 0
+SHOOT, A, 292, 289, 6
+SHOOT, A, 293, 290, 1
+SHOOT, A, 298, 295, 8
+SHOOT, A, 299, 296, 3
+SHOOT, A, 304, 301, 10
+SHOOT, A, 305, 302, 5
+SHOOT, A, 310, 307, 12
+SHOOT, A, 311, 308, 7
+SHOOT, A, 315, 312, 0
+SHOOT, A, 316, 313, 14
+SHOOT, A, 317, 314, 9
+SHOOT, A, 321, 318, 2
+SHOOT, A, 322, 319, 16
+SHOOT, A, 323, 320, 11
+SHOOT, A, 327, 324, 6
+SHOOT, A, 328, 325, 18
+SHOOT, A, 329, 326, 13
+DEAD, A, 271
+DEAD, A, 284
+DEAD, A, 312
+DEAD, D, 274
+DEAD, D, 287
+DEAD, D, 315
+SPAWN, A, 330, 1, 51, 63
+SPAWN, A, 331, 2, 52, 0
+SPAWN, A, 332, 3, 52, 63
+SPAWN, D, 333, 1, 51, 63
+SPAWN, D, 334, 2, 52, 0
+SPAWN, D, 335, 3, 52, 63
+TURN, 56
+PRINT, TURN 56 LOGS:To be spawned at Position(53,0)
+PRINT, To be spawned at Position(53,63)
+PRINT, To be spawned at Position(54,0)
+PRINT, Type 1 at Position (53,0)
+PRINT, Type 2 at Position (53,63)
+PRINT, Type 3 at Position (54,0)
+PRINT, 
+SHOOT, D, 277, 280, 0
+SHOOT, D, 283, 286, 2
+SHOOT, D, 289, 292, 4
+SHOOT, D, 290, 293, 0
+SHOOT, D, 295, 298, 6
+SHOOT, D, 296, 299, 1
+SHOOT, D, 301, 304, 8
+SHOOT, D, 302, 305, 3
+SHOOT, D, 307, 310, 10
+SHOOT, D, 308, 311, 5
+SHOOT, D, 313, 316, 12
+SHOOT, D, 314, 317, 7
+SHOOT, D, 318, 321, 0
+SHOOT, D, 319, 322, 14
+SHOOT, D, 320, 323, 9
+SHOOT, D, 324, 327, 2
+SHOOT, D, 325, 328, 16
+SHOOT, D, 326, 329, 11
+SHOOT, D, 330, 333, 6
+SHOOT, D, 331, 334, 18
+SHOOT, D, 332, 335, 13
+SHOOT, A, 280, 277, 0
+SHOOT, A, 286, 283, 2
+SHOOT, A, 292, 289, 4
+SHOOT, A, 293, 290, 0
+SHOOT, A, 298, 295, 6
+SHOOT, A, 299, 296, 1
+SHOOT, A, 304, 301, 8
+SHOOT, A, 305, 302, 3
+SHOOT, A, 310, 307, 10
+SHOOT, A, 311, 308, 5
+SHOOT, A, 316, 313, 12
+SHOOT, A, 317, 314, 7
+SHOOT, A, 321, 318, 0
+SHOOT, A, 322, 319, 14
+SHOOT, A, 323, 320, 9
+SHOOT, A, 327, 324, 2
+SHOOT, A, 328, 325, 16
+SHOOT, A, 329, 326, 11
+SHOOT, A, 333, 330, 6
+SHOOT, A, 334, 331, 18
+SHOOT, A, 335, 332, 13
+DEAD, A, 277
+DEAD, A, 290
+DEAD, A, 318
+DEAD, D, 280
+DEAD, D, 293
+DEAD, D, 321
+SPAWN, A, 336, 1, 53, 0
+SPAWN, A, 337, 2, 53, 63
+SPAWN, A, 338, 3, 54, 0
+SPAWN, D, 339, 1, 53, 0
+SPAWN, D, 340, 2, 53, 63
+SPAWN, D, 341, 3, 54, 0
+TURN, 57
+PRINT, TURN 57 LOGS:To be spawned at Position(54,63)
+PRINT, To be spawned at Position(55,0)
+PRINT, To be spawned at Position(55,63)
+PRINT, Type 1 at Position (54,63)
+PRINT, Type 2 at Position (55,0)
+PRINT, Type 3 at Position (55,63)
+PRINT, 
+SHOOT, D, 283, 286, 0
+SHOOT, D, 289, 292, 2
+SHOOT, D, 295, 298, 4
+SHOOT, D, 296, 299, 0
+SHOOT, D, 301, 304, 6
+SHOOT, D, 302, 305, 1
+SHOOT, D, 307, 310, 8
+SHOOT, D, 308, 311, 3
+SHOOT, D, 313, 316, 10
+SHOOT, D, 314, 317, 5
+SHOOT, D, 319, 322, 12
+SHOOT, D, 320, 323, 7
+SHOOT, D, 324, 327, 0
+SHOOT, D, 325, 328, 14
+SHOOT, D, 326, 329, 9
+SHOOT, D, 330, 333, 2
+SHOOT, D, 331, 334, 16
+SHOOT, D, 332, 335, 11
+SHOOT, D, 336, 339, 6
+SHOOT, D, 337, 340, 18
+SHOOT, D, 338, 341, 13
+SHOOT, A, 286, 283, 0
+SHOOT, A, 292, 289, 2
+SHOOT, A, 298, 295, 4
+SHOOT, A, 299, 296, 0
+SHOOT, A, 304, 301, 6
+SHOOT, A, 305, 302, 1
+SHOOT, A, 310, 307, 8
+SHOOT, A, 311, 308, 3
+SHOOT, A, 316, 313, 10
+SHOOT, A, 317, 314, 5
+SHOOT, A, 322, 319, 12
+SHOOT, A, 323, 320, 7
+SHOOT, A, 327, 324, 0
+SHOOT, A, 328, 325, 14
+SHOOT, A, 329, 326, 9
+SHOOT, A, 333, 330, 2
+SHOOT, A, 334, 331, 16
+SHOOT, A, 335, 332, 11
+SHOOT, A, 339, 336, 6
+SHOOT, A, 340, 337, 18
+SHOOT, A, 341, 338, 13
+DEAD, A, 283
+DEAD, A, 296
+DEAD, A, 324
+DEAD, D, 286
+DEAD, D, 299
+DEAD, D, 327
+SPAWN, A, 342, 1, 54, 63
+SPAWN, A, 343, 2, 55, 0
+SPAWN, A, 344, 3, 55, 63
+SPAWN, D, 345, 1, 54, 63
+SPAWN, D, 346, 2, 55, 0
+SPAWN, D, 347, 3, 55, 63
+TURN, 58
+PRINT, TURN 58 LOGS:To be spawned at Position(56,0)
+PRINT, To be spawned at Position(56,63)
+PRINT, To be spawned at Position(57,0)
+PRINT, Type 1 at Position (56,0)
+PRINT, Type 2 at Position (56,63)
+PRINT, Type 3 at Position (57,0)
+PRINT, 
+SHOOT, D, 289, 292, 0
+SHOOT, D, 295, 298, 2
+SHOOT, D, 301, 304, 4
+SHOOT, D, 302, 305, 0
+SHOOT, D, 307, 310, 6
+SHOOT, D, 308, 311, 1
+SHOOT, D, 313, 316, 8
+SHOOT, D, 314, 317, 3
+SHOOT, D, 319, 322, 10
+SHOOT, D, 320, 323, 5
+SHOOT, D, 325, 328, 12
+SHOOT, D, 326, 329, 7
+SHOOT, D, 330, 333, 0
+SHOOT, D, 331, 334, 14
+SHOOT, D, 332, 335, 9
+SHOOT, D, 336, 339, 2
+SHOOT, D, 337, 340, 16
+SHOOT, D, 338, 341, 11
+SHOOT, D, 342, 345, 6
+SHOOT, D, 343, 346, 18
+SHOOT, D, 344, 347, 13
+SHOOT, A, 292, 289, 0
+SHOOT, A, 298, 295, 2
+SHOOT, A, 304, 301, 4
+SHOOT, A, 305, 302, 0
+SHOOT, A, 310, 307, 6
+SHOOT, A, 311, 308, 1
+SHOOT, A, 316, 313, 8
+SHOOT, A, 317, 314, 3
+SHOOT, A, 322, 319, 10
+SHOOT, A, 323, 320, 5
+SHOOT, A, 328, 325, 12
+SHOOT, A, 329, 326, 7
+SHOOT, A, 333, 330, 0
+SHOOT, A, 334, 331, 14
+SHOOT, A, 335, 332, 9
+SHOOT, A, 339, 336, 2
+SHOOT, A, 340, 337, 16
+SHOOT, A, 341, 338, 11
+SHOOT, A, 345, 342, 6
+SHOOT, A, 346, 343, 18
+SHOOT, A, 347, 344, 13
+DEAD, A, 289
+DEAD, A, 302
+DEAD, A, 330
+DEAD, D, 292
+DEAD, D, 305
+DEAD, D, 333
+SPAWN, A, 348, 1, 56, 0
+SPAWN, A, 349, 2, 56, 63
+SPAWN, A, 350, 3, 57, 0
+SPAWN, D, 351, 1, 56, 0
+SPAWN, D, 352, 2, 56, 63
+SPAWN, D, 353, 3, 57, 0
+TURN, 59
+PRINT, TURN 59 LOGS:To be spawned at Position(57,63)
+PRINT, To be spawned at Position(58,0)
+PRINT, To be spawned at Position(58,63)
+PRINT, Type 1 at Position (57,63)
+PRINT, Type 2 at Position (58,0)
+PRINT, Type 3 at Position (58,63)
+PRINT, 
+SHOOT, D, 295, 298, 0
+SHOOT, D, 301, 304, 2
+SHOOT, D, 307, 310, 4
+SHOOT, D, 308, 311, 0
+SHOOT, D, 313, 316, 6
+SHOOT, D, 314, 317, 1
+SHOOT, D, 319, 322, 8
+SHOOT, D, 320, 323, 3
+SHOOT, D, 325, 328, 10
+SHOOT, D, 326, 329, 5
+SHOOT, D, 331, 334, 12
+SHOOT, D, 332, 335, 7
+SHOOT, D, 336, 339, 0
+SHOOT, D, 337, 340, 14
+SHOOT, D, 338, 341, 9
+SHOOT, D, 342, 345, 2
+SHOOT, D, 343, 346, 16
+SHOOT, D, 344, 347, 11
+SHOOT, D, 348, 351, 6
+SHOOT, D, 349, 352, 18
+SHOOT, D, 350, 353, 13
+SHOOT, A, 298, 295, 0
+SHOOT, A, 304, 301, 2
+SHOOT, A, 310, 307, 4
+SHOOT, A, 311, 308, 0
+SHOOT, A, 316, 313, 6
+SHOOT, A, 317, 314, 1
+SHOOT, A, 322, 319, 8
+SHOOT, A, 323, 320, 3
+SHOOT, A, 328, 325, 10
+SHOOT, A, 329, 326, 5
+SHOOT, A, 334, 331, 12
+SHOOT, A, 335, 332, 7
+SHOOT, A, 339, 336, 0
+SHOOT, A, 340, 337, 14
+SHOOT, A, 341, 338, 9
+SHOOT, A, 345, 342, 2
+SHOOT, A, 346, 343, 16
+SHOOT, A, 347, 344, 11
+SHOOT, A, 351, 348, 6
+SHOOT, A, 352, 349, 18
+SHOOT, A, 353, 350, 13
+DEAD, A, 295
+DEAD, A, 308
+DEAD, A, 336
+DEAD, D, 298
+DEAD, D, 311
+DEAD, D, 339
+SPAWN, A, 354, 1, 57, 63
+SPAWN, A, 355, 2, 58, 0
+SPAWN, A, 356, 3, 58, 63
+SPAWN, D, 357, 1, 57, 63
+SPAWN, D, 358, 2, 58, 0
+SPAWN, D, 359, 3, 58, 63
+TURN, 60
+PRINT, TURN 60 LOGS:To be spawned at Position(59,0)
+PRINT, To be spawned at Position(59,63)
+PRINT, To be spawned at Position(60,0)
+PRINT, Type 1 at Position (59,0)
+PRINT, Type 2 at Position (59,63)
+PRINT, Type 3 at Position (60,0)
+PRINT, 
+SHOOT, D, 301, 304, 0
+SHOOT, D, 307, 310, 2
+SHOOT, D, 313, 316, 4
+SHOOT, D, 314, 317, 0
+SHOOT, D, 319, 322, 6
+SHOOT, D, 320, 323, 1
+SHOOT, D, 325, 328, 8
+SHOOT, D, 326, 329, 3
+SHOOT, D, 331, 334, 10
+SHOOT, D, 332, 335, 5
+SHOOT, D, 337, 340, 12
+SHOOT, D, 338, 341, 7
+SHOOT, D, 342, 345, 0
+SHOOT, D, 343, 346, 14
+SHOOT, D, 344, 347, 9
+SHOOT, D, 348, 351, 2
+SHOOT, D, 349, 352, 16
+SHOOT, D, 350, 353, 11
+SHOOT, D, 354, 357, 6
+SHOOT, D, 355, 358, 18
+SHOOT, D, 356, 359, 13
+SHOOT, A, 304, 301, 0
+SHOOT, A, 310, 307, 2
+SHOOT, A, 316, 313, 4
+SHOOT, A, 317, 314, 0
+SHOOT, A, 322, 319, 6
+SHOOT, A, 323, 320, 1
+SHOOT, A, 328, 325, 8
+SHOOT, A, 329, 326, 3
+SHOOT, A, 334, 331, 10
+SHOOT, A, 335, 332, 5
+SHOOT, A, 340, 337, 12
+SHOOT, A, 341, 338, 7
+SHOOT, A, 345, 342, 0
+SHOOT, A, 346, 343, 14
+SHOOT, A, 347, 344, 9
+SHOOT, A, 351, 348, 2
+SHOOT, A, 352, 349, 16
+SHOOT, A, 353, 350, 11
+SHOOT, A, 357, 354, 6
+SHOOT, A, 358, 355, 18
+SHOOT, A, 359, 356, 13
+DEAD, A, 301
+DEAD, A, 314
+DEAD, A, 342
+DEAD, D, 304
+DEAD, D, 317
+DEAD, D, 345
+SPAWN, A, 360, 1, 59, 0
+SPAWN, A, 361, 2, 59, 63
+SPAWN, A, 362, 3, 60, 0
+SPAWN, D, 363, 1, 59, 0
+SPAWN, D, 364, 2, 59, 63
+SPAWN, D, 365, 3, 60, 0
+TURN, 61
+PRINT, TURN 61 LOGS:To be spawned at Position(60,63)
+PRINT, To be spawned at Position(61,0)
+PRINT, To be spawned at Position(61,63)
+PRINT, Type 1 at Position (60,63)
+PRINT, Type 2 at Position (61,0)
+PRINT, Type 3 at Position (61,63)
+PRINT, 
+SHOOT, D, 307, 310, 0
+SHOOT, D, 313, 316, 2
+SHOOT, D, 319, 322, 4
+SHOOT, D, 320, 323, 0
+SHOOT, D, 325, 328, 6
+SHOOT, D, 326, 329, 1
+SHOOT, D, 331, 334, 8
+SHOOT, D, 332, 335, 3
+SHOOT, D, 337, 340, 10
+SHOOT, D, 338, 341, 5
+SHOOT, D, 343, 346, 12
+SHOOT, D, 344, 347, 7
+SHOOT, D, 348, 351, 0
+SHOOT, D, 349, 352, 14
+SHOOT, D, 350, 353, 9
+SHOOT, D, 354, 357, 2
+SHOOT, D, 355, 358, 16
+SHOOT, D, 356, 359, 11
+SHOOT, D, 360, 363, 6
+SHOOT, D, 361, 364, 18
+SHOOT, D, 362, 365, 13
+SHOOT, A, 310, 307, 0
+SHOOT, A, 316, 313, 2
+SHOOT, A, 322, 319, 4
+SHOOT, A, 323, 320, 0
+SHOOT, A, 328, 325, 6
+SHOOT, A, 329, 326, 1
+SHOOT, A, 334, 331, 8
+SHOOT, A, 335, 332, 3
+SHOOT, A, 340, 337, 10
+SHOOT, A, 341, 338, 5
+SHOOT, A, 346, 343, 12
+SHOOT, A, 347, 344, 7
+SHOOT, A, 351, 348, 0
+SHOOT, A, 352, 349, 14
+SHOOT, A, 353, 350, 9
+SHOOT, A, 357, 354, 2
+SHOOT, A, 358, 355, 16
+SHOOT, A, 359, 356, 11
+SHOOT, A, 363, 360, 6
+SHOOT, A, 364, 361, 18
+SHOOT, A, 365, 362, 13
+DEAD, A, 307
+DEAD, A, 320
+DEAD, A, 348
+DEAD, D, 310
+DEAD, D, 323
+DEAD, D, 351
+SPAWN, A, 366, 1, 60, 63
+SPAWN, A, 367, 2, 61, 0
+SPAWN, A, 368, 3, 61, 63
+SPAWN, D, 369, 1, 60, 63
+SPAWN, D, 370, 2, 61, 0
+SPAWN, D, 371, 3, 61, 63
+TURN, 62
+PRINT, TURN 62 LOGS:To be spawned at Position(62,0)
+PRINT, To be spawned at Position(62,63)
+PRINT, To be spawned at Position(63,0)
+PRINT, Type 1 at Position (62,0)
+PRINT, Type 2 at Position (62,63)
+PRINT, Type 3 at Position (63,0)
+PRINT, 
+SHOOT, D, 313, 316, 0
+SHOOT, D, 319, 322, 2
+SHOOT, D, 325, 328, 4
+SHOOT, D, 326, 329, 0
+SHOOT, D, 331, 334, 6
+SHOOT, D, 332, 335, 1
+SHOOT, D, 337, 340, 8
+SHOOT, D, 338, 341, 3
+SHOOT, D, 343, 346, 10
+SHOOT, D, 344, 347, 5
+SHOOT, D, 349, 352, 12
+SHOOT, D, 350, 353, 7
+SHOOT, D, 354, 357, 0
+SHOOT, D, 355, 358, 14
+SHOOT, D, 356, 359, 9
+SHOOT, D, 360, 363, 2
+SHOOT, D, 361, 364, 16
+SHOOT, D, 362, 365, 11
+SHOOT, D, 366, 369, 6
+SHOOT, D, 367, 370, 18
+SHOOT, D, 368, 371, 13
+SHOOT, A, 316, 313, 0
+SHOOT, A, 322, 319, 2
+SHOOT, A, 328, 325, 4
+SHOOT, A, 329, 326, 0
+SHOOT, A, 334, 331, 6
+SHOOT, A, 335, 332, 1
+SHOOT, A, 340, 337, 8
+SHOOT, A, 341, 338, 3
+SHOOT, A, 346, 343, 10
+SHOOT, A, 347, 344, 5
+SHOOT, A, 352, 349, 12
+SHOOT, A, 353, 350, 7
+SHOOT, A, 357, 354, 0
+SHOOT, A, 358, 355, 14
+SHOOT, A, 359, 356, 9
+SHOOT, A, 363, 360, 2
+SHOOT, A, 364, 361, 16
+SHOOT, A, 365, 362, 11
+SHOOT, A, 369, 366, 6
+SHOOT, A, 370, 367, 18
+SHOOT, A, 371, 368, 13
+DEAD, A, 313
+DEAD, A, 326
+DEAD, A, 354
+DEAD, D, 316
+DEAD, D, 329
+DEAD, D, 357
+SPAWN, A, 372, 1, 62, 0
+SPAWN, A, 373, 2, 62, 63
+SPAWN, A, 374, 3, 63, 0
+SPAWN, D, 375, 1, 62, 0
+SPAWN, D, 376, 2, 62, 63
+SPAWN, D, 377, 3, 63, 0
+TURN, 63
+PRINT, TURN 63 LOGS:To be spawned at Position(63,1)
+PRINT, To be spawned at Position(63,2)
+PRINT, To be spawned at Position(63,3)
+PRINT, Type 1 at Position (63,1)
+PRINT, Type 2 at Position (63,2)
+PRINT, Type 3 at Position (63,3)
+PRINT, 
+SHOOT, D, 319, 322, 0
+SHOOT, D, 325, 328, 2
+SHOOT, D, 331, 334, 4
+SHOOT, D, 332, 335, 0
+SHOOT, D, 337, 340, 6
+SHOOT, D, 338, 341, 1
+SHOOT, D, 343, 346, 8
+SHOOT, D, 344, 347, 3
+SHOOT, D, 349, 352, 10
+SHOOT, D, 350, 353, 5
+SHOOT, D, 355, 358, 12
+SHOOT, D, 356, 359, 7
+SHOOT, D, 360, 363, 0
+SHOOT, D, 361, 364, 14
+SHOOT, D, 362, 365, 9
+SHOOT, D, 366, 369, 2
+SHOOT, D, 367, 370, 16
+SHOOT, D, 368, 371, 11
+SHOOT, D, 372, 375, 6
+SHOOT, D, 373, 376, 18
+SHOOT, D, 374, 377, 13
+SHOOT, A, 322, 319, 0
+SHOOT, A, 328, 325, 2
+SHOOT, A, 334, 331, 4
+SHOOT, A, 335, 332, 0
+SHOOT, A, 340, 337, 6
+SHOOT, A, 341, 338, 1
+SHOOT, A, 346, 343, 8
+SHOOT, A, 347, 344, 3
+SHOOT, A, 352, 349, 10
+SHOOT, A, 353, 350, 5
+SHOOT, A, 358, 355, 12
+SHOOT, A, 359, 356, 7
+SHOOT, A, 363, 360, 0
+SHOOT, A, 364, 361, 14
+SHOOT, A, 365, 362, 9
+SHOOT, A, 369, 366, 2
+SHOOT, A, 370, 367, 16
+SHOOT, A, 371, 368, 11
+SHOOT, A, 375, 372, 6
+SHOOT, A, 376, 373, 18
+SHOOT, A, 377, 374, 13
+DEAD, A, 319
+DEAD, A, 332
+DEAD, A, 360
+DEAD, D, 322
+DEAD, D, 335
+DEAD, D, 363
+SPAWN, A, 378, 1, 63, 1
+SPAWN, A, 379, 2, 63, 2
+SPAWN, A, 380, 3, 63, 3
+SPAWN, D, 381, 1, 63, 1
+SPAWN, D, 382, 2, 63, 2
+SPAWN, D, 383, 3, 63, 3
+TURN, 64
+PRINT, TURN 64 LOGS:To be spawned at Position(63,4)
+PRINT, To be spawned at Position(63,5)
+PRINT, To be spawned at Position(63,6)
+PRINT, Type 1 at Position (63,4)
+PRINT, Type 2 at Position (63,5)
+PRINT, Type 3 at Position (63,6)
+PRINT, 
+SHOOT, D, 325, 328, 0
+SHOOT, D, 331, 334, 2
+SHOOT, D, 337, 340, 4
+SHOOT, D, 338, 341, 0
+SHOOT, D, 343, 346, 6
+SHOOT, D, 344, 347, 1
+SHOOT, D, 349, 352, 8
+SHOOT, D, 350, 353, 3
+SHOOT, D, 355, 358, 10
+SHOOT, D, 356, 359, 5
+SHOOT, D, 361, 364, 12
+SHOOT, D, 362, 365, 7
+SHOOT, D, 366, 369, 0
+SHOOT, D, 367, 370, 14
+SHOOT, D, 368, 371, 9
+SHOOT, D, 372, 375, 2
+SHOOT, D, 373, 376, 16
+SHOOT, D, 374, 377, 11
+SHOOT, D, 378, 381, 6
+SHOOT, D, 379, 382, 18
+SHOOT, D, 380, 383, 13
+SHOOT, A, 328, 325, 0
+SHOOT, A, 334, 331, 2
+SHOOT, A, 340, 337, 4
+SHOOT, A, 341, 338, 0
+SHOOT, A, 346, 343, 6
+SHOOT, A, 347, 344, 1
+SHOOT, A, 352, 349, 8
+SHOOT, A, 353, 350, 3
+SHOOT, A, 358, 355, 10
+SHOOT, A, 359, 356, 5
+SHOOT, A, 364, 361, 12
+SHOOT, A, 365, 362, 7
+SHOOT, A, 369, 366, 0
+SHOOT, A, 370, 367, 14
+SHOOT, A, 371, 368, 9
+SHOOT, A, 375, 372, 2
+SHOOT, A, 376, 373, 16
+SHOOT, A, 377, 374, 11
+SHOOT, A, 381, 378, 6
+SHOOT, A, 382, 379, 18
+SHOOT, A, 383, 380, 13
+DEAD, A, 325
+DEAD, A, 338
+DEAD, A, 366
+DEAD, D, 328
+DEAD, D, 341
+DEAD, D, 369
+SPAWN, A, 384, 1, 63, 4
+SPAWN, A, 385, 2, 63, 5
+SPAWN, A, 386, 3, 63, 6
+SPAWN, D, 387, 1, 63, 4
+SPAWN, D, 388, 2, 63, 5
+SPAWN, D, 389, 3, 63, 6
+TURN, 65
+PRINT, TURN 65 LOGS:To be spawned at Position(63,7)
+PRINT, To be spawned at Position(63,8)
+PRINT, To be spawned at Position(63,9)
+PRINT, Type 1 at Position (63,7)
+PRINT, Type 2 at Position (63,8)
+PRINT, Type 3 at Position (63,9)
+PRINT, 
+SHOOT, D, 331, 334, 0
+SHOOT, D, 337, 340, 2
+SHOOT, D, 343, 346, 4
+SHOOT, D, 344, 347, 0
+SHOOT, D, 349, 352, 6
+SHOOT, D, 350, 353, 1
+SHOOT, D, 355, 358, 8
+SHOOT, D, 356, 359, 3
+SHOOT, D, 361, 364, 10
+SHOOT, D, 362, 365, 5
+SHOOT, D, 367, 370, 12
+SHOOT, D, 368, 371, 7
+SHOOT, D, 372, 375, 0
+SHOOT, D, 373, 376, 14
+SHOOT, D, 374, 377, 9
+SHOOT, D, 378, 381, 2
+SHOOT, D, 379, 382, 16
+SHOOT, D, 380, 383, 11
+SHOOT, D, 384, 387, 6
+SHOOT, D, 385, 388, 18
+SHOOT, D, 386, 389, 13
+SHOOT, A, 334, 331, 0
+SHOOT, A, 340, 337, 2
+SHOOT, A, 346, 343, 4
+SHOOT, A, 347, 344, 0
+SHOOT, A, 352, 349, 6
+SHOOT, A, 353, 350, 1
+SHOOT, A, 358, 355, 8
+SHOOT, A, 359, 356, 3
+SHOOT, A, 364, 361, 10
+SHOOT, A, 365, 362, 5
+SHOOT, A, 370, 367, 12
+SHOOT, A, 371, 368, 7
+SHOOT, A, 375, 372, 0
+SHOOT, A, 376, 373, 14
+SHOOT, A, 377, 374, 9
+SHOOT, A, 381, 378, 2
+SHOOT, A, 382, 379, 16
+SHOOT, A, 383, 380, 11
+SHOOT, A, 387, 384, 6
+SHOOT, A, 388, 385, 18
+SHOOT, A, 389, 386, 13
+DEAD, A, 331
+DEAD, A, 344
+DEAD, A, 372
+DEAD, D, 334
+DEAD, D, 347
+DEAD, D, 375
+SPAWN, A, 390, 1, 63, 7
+SPAWN, A, 391, 2, 63, 8
+SPAWN, A, 392, 3, 63, 9
+SPAWN, D, 393, 1, 63, 7
+SPAWN, D, 394, 2, 63, 8
+SPAWN, D, 395, 3, 63, 9
+TURN, 66
+PRINT, TURN 66 LOGS:To be spawned at Position(63,10)
+PRINT, To be spawned at Position(63,11)
+PRINT, To be spawned at Position(63,12)
+PRINT, Type 1 at Position (63,10)
+PRINT, Type 2 at Position (63,11)
+PRINT, Type 3 at Position (63,12)
+PRINT, 
+SHOOT, D, 337, 340, 0
+SHOOT, D, 343, 346, 2
+SHOOT, D, 349, 352, 4
+SHOOT, D, 350, 353, 0
+SHOOT, D, 355, 358, 6
+SHOOT, D, 356, 359, 1
+SHOOT, D, 361, 364, 8
+SHOOT, D, 362, 365, 3
+SHOOT, D, 367, 370, 10
+SHOOT, D, 368, 371, 5
+SHOOT, D, 373, 376, 12
+SHOOT, D, 374, 377, 7
+SHOOT, D, 378, 381, 0
+SHOOT, D, 379, 382, 14
+SHOOT, D, 380, 383, 9
+SHOOT, D, 384, 387, 2
+SHOOT, D, 385, 388, 16
+SHOOT, D, 386, 389, 11
+SHOOT, D, 390, 393, 6
+SHOOT, D, 391, 394, 18
+SHOOT, D, 392, 395, 13
+SHOOT, A, 340, 337, 0
+SHOOT, A, 346, 343, 2
+SHOOT, A, 352, 349, 4
+SHOOT, A, 353, 350, 0
+SHOOT, A, 358, 355, 6
+SHOOT, A, 359, 356, 1
+SHOOT, A, 364, 361, 8
+SHOOT, A, 365, 362, 3
+SHOOT, A, 370, 367, 10
+SHOOT, A, 371, 368, 5
+SHOOT, A, 376, 373, 12
+SHOOT, A, 377, 374, 7
+SHOOT, A, 381, 378, 0
+SHOOT, A, 382, 379, 14
+SHOOT, A, 383, 380, 9
+SHOOT, A, 387, 384, 2
+SHOOT, A, 388, 385, 16
+SHOOT, A, 389, 386, 11
+SHOOT, A, 393, 390, 6
+SHOOT, A, 394, 391, 18
+SHOOT, A, 395, 392, 13
+DEAD, A, 337
+DEAD, A, 350
+DEAD, A, 378
+DEAD, D, 340
+DEAD, D, 353
+DEAD, D, 381
+SPAWN, A, 396, 1, 63, 10
+SPAWN, A, 397, 2, 63, 11
+SPAWN, A, 398, 3, 63, 12
+SPAWN, D, 399, 1, 63, 10
+SPAWN, D, 400, 2, 63, 11
+SPAWN, D, 401, 3, 63, 12
+TURN, 67
+PRINT, TURN 67 LOGS:To be spawned at Position(63,13)
+PRINT, To be spawned at Position(63,14)
+PRINT, To be spawned at Position(63,15)
+PRINT, Type 1 at Position (63,13)
+PRINT, Type 2 at Position (63,14)
+PRINT, Type 3 at Position (63,15)
+PRINT, 
+SHOOT, D, 343, 346, 0
+SHOOT, D, 349, 352, 2
+SHOOT, D, 355, 358, 4
+SHOOT, D, 356, 359, 0
+SHOOT, D, 361, 364, 6
+SHOOT, D, 362, 365, 1
+SHOOT, D, 367, 370, 8
+SHOOT, D, 368, 371, 3
+SHOOT, D, 373, 376, 10
+SHOOT, D, 374, 377, 5
+SHOOT, D, 379, 382, 12
+SHOOT, D, 380, 383, 7
+SHOOT, D, 384, 387, 0
+SHOOT, D, 385, 388, 14
+SHOOT, D, 386, 389, 9
+SHOOT, D, 390, 393, 2
+SHOOT, D, 391, 394, 16
+SHOOT, D, 392, 395, 11
+SHOOT, D, 396, 399, 6
+SHOOT, D, 397, 400, 18
+SHOOT, D, 398, 401, 13
+SHOOT, A, 346, 343, 0
+SHOOT, A, 352, 349, 2
+SHOOT, A, 358, 355, 4
+SHOOT, A, 359, 356, 0
+SHOOT, A, 364, 361, 6
+SHOOT, A, 365, 362, 1
+SHOOT, A, 370, 367, 8
+SHOOT, A, 371, 368, 3
+SHOOT, A, 376, 373, 10
+SHOOT, A, 377, 374, 5
+SHOOT, A, 382, 379, 12
+SHOOT, A, 383, 380, 7
+SHOOT, A, 387, 384, 0
+SHOOT, A, 388, 385, 14
+SHOOT, A, 389, 386, 9
+SHOOT, A, 393, 390, 2
+SHOOT, A, 394, 391, 16
+SHOOT, A, 395, 392, 11
+SHOOT, A, 399, 396, 6
+SHOOT, A, 400, 397, 18
+SHOOT, A, 401, 398, 13
+DEAD, A, 343
+DEAD, A, 356
+DEAD, A, 384
+DEAD, D, 346
+DEAD, D, 359
+DEAD, D, 387
+SPAWN, A, 402, 1, 63, 13
+SPAWN, A, 403, 2, 63, 14
+SPAWN, A, 404, 3, 63, 15
+SPAWN, D, 405, 1, 63, 13
+SPAWN, D, 406, 2, 63, 14
+SPAWN, D, 407, 3, 63, 15
+TURN, 68
+PRINT, TURN 68 LOGS:To be spawned at Position(63,16)
+PRINT, To be spawned at Position(63,17)
+PRINT, To be spawned at Position(63,18)
+PRINT, Type 1 at Position (63,16)
+PRINT, Type 2 at Position (63,17)
+PRINT, Type 3 at Position (63,18)
+PRINT, 
+SHOOT, D, 349, 352, 0
+SHOOT, D, 355, 358, 2
+SHOOT, D, 361, 364, 4
+SHOOT, D, 362, 365, 0
+SHOOT, D, 367, 370, 6
+SHOOT, D, 368, 371, 1
+SHOOT, D, 373, 376, 8
+SHOOT, D, 374, 377, 3
+SHOOT, D, 379, 382, 10
+SHOOT, D, 380, 383, 5
+SHOOT, D, 385, 388, 12
+SHOOT, D, 386, 389, 7
+SHOOT, D, 390, 393, 0
+SHOOT, D, 391, 394, 14
+SHOOT, D, 392, 395, 9
+SHOOT, D, 396, 399, 2
+SHOOT, D, 397, 400, 16
+SHOOT, D, 398, 401, 11
+SHOOT, D, 402, 405, 6
+SHOOT, D, 403, 406, 18
+SHOOT, D, 404, 407, 13
+SHOOT, A, 352, 349, 0
+SHOOT, A, 358, 355, 2
+SHOOT, A, 364, 361, 4
+SHOOT, A, 365, 362, 0
+SHOOT, A, 370, 367, 6
+SHOOT, A, 371, 368, 1
+SHOOT, A, 376, 373, 8
+SHOOT, A, 377, 374, 3
+SHOOT, A, 382, 379, 10
+SHOOT, A, 383, 380, 5
+SHOOT, A, 388, 385, 12
+SHOOT, A, 389, 386, 7
+SHOOT, A, 393, 390, 0
+SHOOT, A, 394, 391, 14
+SHOOT, A, 395, 392, 9
+SHOOT, A, 399, 396, 2
+SHOOT, A, 400, 397, 16
+SHOOT, A, 401, 398, 11
+SHOOT, A, 405, 402, 6
+SHOOT, A, 406, 403, 18
+SHOOT, A, 407, 404, 13
+DEAD, A, 349
+DEAD, A, 362
+DEAD, A, 390
+DEAD, D, 352
+DEAD, D, 365
+DEAD, D, 393
+SPAWN, A, 408, 1, 63, 16
+SPAWN, A, 409, 2, 63, 17
+SPAWN, A, 410, 3, 63, 18
+SPAWN, D, 411, 1, 63, 16
+SPAWN, D, 412, 2, 63, 17
+SPAWN, D, 413, 3, 63, 18
+TURN, 69
+PRINT, TURN 69 LOGS:To be spawned at Position(63,19)
+PRINT, To be spawned at Position(63,20)
+PRINT, To be spawned at Position(63,21)
+PRINT, Type 1 at Position (63,19)
+PRINT, Type 2 at Position (63,20)
+PRINT, Type 3 at Position (63,21)
+PRINT, 
+SHOOT, D, 355, 358, 0
+SHOOT, D, 361, 364, 2
+SHOOT, D, 367, 370, 4
+SHOOT, D, 368, 371, 0
+SHOOT, D, 373, 376, 6
+SHOOT, D, 374, 377, 1
+SHOOT, D, 379, 382, 8
+SHOOT, D, 380, 383, 3
+SHOOT, D, 385, 388, 10
+SHOOT, D, 386, 389, 5
+SHOOT, D, 391, 394, 12
+SHOOT, D, 392, 395, 7
+SHOOT, D, 396, 399, 0
+SHOOT, D, 397, 400, 14
+SHOOT, D, 398, 401, 9
+SHOOT, D, 402, 405, 2
+SHOOT, D, 403, 406, 16
+SHOOT, D, 404, 407, 11
+SHOOT, D, 408, 411, 6
+SHOOT, D, 409, 412, 18
+SHOOT, D, 410, 413, 13
+SHOOT, A, 358, 355, 0
+SHOOT, A, 364, 361, 2
+SHOOT, A, 370, 367, 4
+SHOOT, A, 371, 368, 0
+SHOOT, A, 376, 373, 6
+SHOOT, A, 377, 374, 1
+SHOOT, A, 382, 379, 8
+SHOOT, A, 383, 380, 3
+SHOOT, A, 388, 385, 10
+SHOOT, A, 389, 386, 5
+SHOOT, A, 394, 391, 12
+SHOOT, A, 395, 392, 7
+SHOOT, A, 399, 396, 0
+SHOOT, A, 400, 397, 14
+SHOOT, A, 401, 398, 9
+SHOOT, A, 405, 402, 2
+SHOOT, A, 406, 403, 16
+SHOOT, A, 407, 404, 11
+SHOOT, A, 411, 408, 6
+SHOOT, A, 412, 409, 18
+SHOOT, A, 413, 410, 13
+DEAD, A, 355
+DEAD, A, 368
+DEAD, A, 396
+DEAD, D, 358
+DEAD, D, 371
+DEAD, D, 399
+SPAWN, A, 414, 1, 63, 19
+SPAWN, A, 415, 2, 63, 20
+SPAWN, A, 416, 3, 63, 21
+SPAWN, D, 417, 1, 63, 19
+SPAWN, D, 418, 2, 63, 20
+SPAWN, D, 419, 3, 63, 21
+TURN, 70
+PRINT, TURN 70 LOGS:To be spawned at Position(63,22)
+PRINT, To be spawned at Position(63,23)
+PRINT, To be spawned at Position(63,24)
+PRINT, Type 1 at Position (63,22)
+PRINT, Type 2 at Position (63,23)
+PRINT, Type 3 at Position (63,24)
+PRINT, 
+SHOOT, D, 361, 364, 0
+SHOOT, D, 367, 370, 2
+SHOOT, D, 373, 376, 4
+SHOOT, D, 374, 377, 0
+SHOOT, D, 379, 382, 6
+SHOOT, D, 380, 383, 1
+SHOOT, D, 385, 388, 8
+SHOOT, D, 386, 389, 3
+SHOOT, D, 391, 394, 10
+SHOOT, D, 392, 395, 5
+SHOOT, D, 397, 400, 12
+SHOOT, D, 398, 401, 7
+SHOOT, D, 402, 405, 0
+SHOOT, D, 403, 406, 14
+SHOOT, D, 404, 407, 9
+SHOOT, D, 408, 411, 2
+SHOOT, D, 409, 412, 16
+SHOOT, D, 410, 413, 11
+SHOOT, D, 414, 417, 6
+SHOOT, D, 415, 418, 18
+SHOOT, D, 416, 419, 13
+SHOOT, A, 364, 361, 0
+SHOOT, A, 370, 367, 2
+SHOOT, A, 376, 373, 4
+SHOOT, A, 377, 374, 0
+SHOOT, A, 382, 379, 6
+SHOOT, A, 383, 380, 1
+SHOOT, A, 388, 385, 8
+SHOOT, A, 389, 386, 3
+SHOOT, A, 394, 391, 10
+SHOOT, A, 395, 392, 5
+SHOOT, A, 400, 397, 12
+SHOOT, A, 401, 398, 7
+SHOOT, A, 405, 402, 0
+SHOOT, A, 406, 403, 14
+SHOOT, A, 407, 404, 9
+SHOOT, A, 411, 408, 2
+SHOOT, A, 412, 409, 16
+SHOOT, A, 413, 410, 11
+SHOOT, A, 417, 414, 6
+SHOOT, A, 418, 415, 18
+SHOOT, A, 419, 416, 13
+DEAD, A, 361
+DEAD, A, 374
+DEAD, A, 402
+DEAD, D, 364
+DEAD, D, 377
+DEAD, D, 405
+SPAWN, A, 420, 1, 63, 22
+SPAWN, A, 421, 2, 63, 23
+SPAWN, A, 422, 3, 63, 24
+SPAWN, D, 423, 1, 63, 22
+SPAWN, D, 424, 2, 63, 23
+SPAWN, D, 425, 3, 63, 24
+TURN, 71
+PRINT, TURN 71 LOGS:To be spawned at Position(63,25)
+PRINT, To be spawned at Position(63,26)
+PRINT, To be spawned at Position(63,27)
+PRINT, Type 1 at Position (63,25)
+PRINT, Type 2 at Position (63,26)
+PRINT, Type 3 at Position (63,27)
+PRINT, 
+SHOOT, D, 367, 370, 0
+SHOOT, D, 373, 376, 2
+SHOOT, D, 379, 382, 4
+SHOOT, D, 380, 383, 0
+SHOOT, D, 385, 388, 6
+SHOOT, D, 386, 389, 1
+SHOOT, D, 391, 394, 8
+SHOOT, D, 392, 395, 3
+SHOOT, D, 397, 400, 10
+SHOOT, D, 398, 401, 5
+SHOOT, D, 403, 406, 12
+SHOOT, D, 404, 407, 7
+SHOOT, D, 408, 411, 0
+SHOOT, D, 409, 412, 14
+SHOOT, D, 410, 413, 9
+SHOOT, D, 414, 417, 2
+SHOOT, D, 415, 418, 16
+SHOOT, D, 416, 419, 11
+SHOOT, D, 420, 423, 6
+SHOOT, D, 421, 424, 18
+SHOOT, D, 422, 425, 13
+SHOOT, A, 370, 367, 0
+SHOOT, A, 376, 373, 2
+SHOOT, A, 382, 379, 4
+SHOOT, A, 383, 380, 0
+SHOOT, A, 388, 385, 6
+SHOOT, A, 389, 386, 1
+SHOOT, A, 394, 391, 8
+SHOOT, A, 395, 392, 3
+SHOOT, A, 400, 397, 10
+SHOOT, A, 401, 398, 5
+SHOOT, A, 406, 403, 12
+SHOOT, A, 407, 404, 7
+SHOOT, A, 411, 408, 0
+SHOOT, A, 412, 409, 14
+SHOOT, A, 413, 410, 9
+SHOOT, A, 417, 414, 2
+SHOOT, A, 418, 415, 16
+SHOOT, A, 419, 416, 11
+SHOOT, A, 423, 420, 6
+SHOOT, A, 424, 421, 18
+SHOOT, A, 425, 422, 13
+DEAD, A, 367
+DEAD, A, 380
+DEAD, A, 408
+DEAD, D, 370
+DEAD, D, 383
+DEAD, D, 411
+SPAWN, A, 426, 1, 63, 25
+SPAWN, A, 427, 2, 63, 26
+SPAWN, A, 428, 3, 63, 27
+SPAWN, D, 429, 1, 63, 25
+SPAWN, D, 430, 2, 63, 26
+SPAWN, D, 431, 3, 63, 27
+TURN, 72
+PRINT, TURN 72 LOGS:To be spawned at Position(63,28)
+PRINT, To be spawned at Position(63,29)
+PRINT, To be spawned at Position(63,30)
+PRINT, Type 1 at Position (63,28)
+PRINT, Type 2 at Position (63,29)
+PRINT, Type 3 at Position (63,30)
+PRINT, 
+SHOOT, D, 373, 376, 0
+SHOOT, D, 379, 382, 2
+SHOOT, D, 385, 388, 4
+SHOOT, D, 386, 389, 0
+SHOOT, D, 391, 394, 6
+SHOOT, D, 392, 395, 1
+SHOOT, D, 397, 400, 8
+SHOOT, D, 398, 401, 3
+SHOOT, D, 403, 406, 10
+SHOOT, D, 404, 407, 5
+SHOOT, D, 409, 412, 12
+SHOOT, D, 410, 413, 7
+SHOOT, D, 414, 417, 0
+SHOOT, D, 415, 418, 14
+SHOOT, D, 416, 419, 9
+SHOOT, D, 420, 423, 2
+SHOOT, D, 421, 424, 16
+SHOOT, D, 422, 425, 11
+SHOOT, D, 426, 429, 6
+SHOOT, D, 427, 430, 18
+SHOOT, D, 428, 431, 13
+SHOOT, A, 376, 373, 0
+SHOOT, A, 382, 379, 2
+SHOOT, A, 388, 385, 4
+SHOOT, A, 389, 386, 0
+SHOOT, A, 394, 391, 6
+SHOOT, A, 395, 392, 1
+SHOOT, A, 400, 397, 8
+SHOOT, A, 401, 398, 3
+SHOOT, A, 406, 403, 10
+SHOOT, A, 407, 404, 5
+SHOOT, A, 412, 409, 12
+SHOOT, A, 413, 410, 7
+SHOOT, A, 417, 414, 0
+SHOOT, A, 418, 415, 14
+SHOOT, A, 419, 416, 9
+SHOOT, A, 423, 420, 2
+SHOOT, A, 424, 421, 16
+SHOOT, A, 425, 422, 11
+SHOOT, A, 429, 426, 6
+SHOOT, A, 430, 427, 18
+SHOOT, A, 431, 428, 13
+DEAD, A, 373
+DEAD, A, 386
+DEAD, A, 414
+DEAD, D, 376
+DEAD, D, 389
+DEAD, D, 417
+SPAWN, A, 432, 1, 63, 28
+SPAWN, A, 433, 2, 63, 29
+SPAWN, A, 434, 3, 63, 30
+SPAWN, D, 435, 1, 63, 28
+SPAWN, D, 436, 2, 63, 29
+SPAWN, D, 437, 3, 63, 30
+TURN, 73
+PRINT, TURN 73 LOGS:To be spawned at Position(63,31)
+PRINT, To be spawned at Position(63,32)
+PRINT, To be spawned at Position(63,33)
+PRINT, Type 1 at Position (63,31)
+PRINT, Type 2 at Position (63,32)
+PRINT, Type 3 at Position (63,33)
+PRINT, 
+SHOOT, D, 379, 382, 0
+SHOOT, D, 385, 388, 2
+SHOOT, D, 391, 394, 4
+SHOOT, D, 392, 395, 0
+SHOOT, D, 397, 400, 6
+SHOOT, D, 398, 401, 1
+SHOOT, D, 403, 406, 8
+SHOOT, D, 404, 407, 3
+SHOOT, D, 409, 412, 10
+SHOOT, D, 410, 413, 5
+SHOOT, D, 415, 418, 12
+SHOOT, D, 416, 419, 7
+SHOOT, D, 420, 423, 0
+SHOOT, D, 421, 424, 14
+SHOOT, D, 422, 425, 9
+SHOOT, D, 426, 429, 2
+SHOOT, D, 427, 430, 16
+SHOOT, D, 428, 431, 11
+SHOOT, D, 432, 435, 6
+SHOOT, D, 433, 436, 18
+SHOOT, D, 434, 437, 13
+SHOOT, A, 382, 379, 0
+SHOOT, A, 388, 385, 2
+SHOOT, A, 394, 391, 4
+SHOOT, A, 395, 392, 0
+SHOOT, A, 400, 397, 6
+SHOOT, A, 401, 398, 1
+SHOOT, A, 406, 403, 8
+SHOOT, A, 407, 404, 3
+SHOOT, A, 412, 409, 10
+SHOOT, A, 413, 410, 5
+SHOOT, A, 418, 415, 12
+SHOOT, A, 419, 416, 7
+SHOOT, A, 423, 420, 0
+SHOOT, A, 424, 421, 14
+SHOOT, A, 425, 422, 9
+SHOOT, A, 429, 426, 2
+SHOOT, A, 430, 427, 16
+SHOOT, A, 431, 428, 11
+SHOOT, A, 435, 432, 6
+SHOOT, A, 436, 433, 18
+SHOOT, A, 437, 434, 13
+DEAD, A, 379
+DEAD, A, 392
+DEAD, A, 420
+DEAD, D, 382
+DEAD, D, 395
+DEAD, D, 423
+SPAWN, A, 438, 1, 63, 31
+SPAWN, A, 439, 2, 63, 32
+SPAWN, A, 440, 3, 63, 33
+SPAWN, D, 441, 1, 63, 31
+SPAWN, D, 442, 2, 63, 32
+SPAWN, D, 443, 3, 63, 33
+TURN, 74
+PRINT, TURN 74 LOGS:To be spawned at Position(63,34)
+PRINT, To be spawned at Position(63,35)
+PRINT, To be spawned at Position(63,36)
+PRINT, Type 1 at Position (63,34)
+PRINT, Type 2 at Position (63,35)
+PRINT, Type 3 at Position (63,36)
+PRINT, 
+SHOOT, D, 385, 388, 0
+SHOOT, D, 391, 394, 2
+SHOOT, D, 397, 400, 4
+SHOOT, D, 398, 401, 0
+SHOOT, D, 403, 406, 6
+SHOOT, D, 404, 407, 1
+SHOOT, D, 409, 412, 8
+SHOOT, D, 410, 413, 3
+SHOOT, D, 415, 418, 10
+SHOOT, D, 416, 419, 5
+SHOOT, D, 421, 424, 12
+SHOOT, D, 422, 425, 7
+SHOOT, D, 426, 429, 0
+SHOOT, D, 427, 430, 14
+SHOOT, D, 428, 431, 9
+SHOOT, D, 432, 435, 2
+SHOOT, D, 433, 436, 16
+SHOOT, D, 434, 437, 11
+SHOOT, D, 438, 441, 6
+SHOOT, D, 439, 442, 18
+SHOOT, D, 440, 443, 13
+SHOOT, A, 388, 385, 0
+SHOOT, A, 394, 391, 2
+SHOOT, A, 400, 397, 4
+SHOOT, A, 401, 398, 0
+SHOOT, A, 406, 403, 6
+SHOOT, A, 407, 404, 1
+SHOOT, A, 412, 409, 8
+SHOOT, A, 413, 410, 3
+SHOOT, A, 418, 415, 10
+SHOOT, A, 419, 416, 5
+SHOOT, A, 424, 421, 12
+SHOOT, A, 425, 422, 7
+SHOOT, A, 429, 426, 0
+SHOOT, A, 430, 427, 14
+SHOOT, A, 431, 428, 9
+SHOOT, A, 435, 432, 2
+SHOOT, A, 436, 433, 16
+SHOOT, A, 437, 434, 11
+SHOOT, A, 441, 438, 6
+SHOOT, A, 442, 439, 18
+SHOOT, A, 443, 440, 13
+DEAD, A, 385
+DEAD, A, 398
+DEAD, A, 426
+DEAD, D, 388
+DEAD, D, 401
+DEAD, D, 429
+SPAWN, A, 444, 1, 63, 34
+SPAWN, A, 445, 2, 63, 35
+SPAWN, A, 446, 3, 63, 36
+SPAWN, D, 447, 1, 63, 34
+SPAWN, D, 448, 2, 63, 35
+SPAWN, D, 449, 3, 63, 36
+TURN, 75
+PRINT, TURN 75 LOGS:To be spawned at Position(63,37)
+PRINT, To be spawned at Position(63,38)
+PRINT, To be spawned at Position(63,39)
+PRINT, Type 1 at Position (63,37)
+PRINT, Type 2 at Position (63,38)
+PRINT, Type 3 at Position (63,39)
+PRINT, 
+SHOOT, D, 391, 394, 0
+SHOOT, D, 397, 400, 2
+SHOOT, D, 403, 406, 4
+SHOOT, D, 404, 407, 0
+SHOOT, D, 409, 412, 6
+SHOOT, D, 410, 413, 1
+SHOOT, D, 415, 418, 8
+SHOOT, D, 416, 419, 3
+SHOOT, D, 421, 424, 10
+SHOOT, D, 422, 425, 5
+SHOOT, D, 427, 430, 12
+SHOOT, D, 428, 431, 7
+SHOOT, D, 432, 435, 0
+SHOOT, D, 433, 436, 14
+SHOOT, D, 434, 437, 9
+SHOOT, D, 438, 441, 2
+SHOOT, D, 439, 442, 16
+SHOOT, D, 440, 443, 11
+SHOOT, D, 444, 447, 6
+SHOOT, D, 445, 448, 18
+SHOOT, D, 446, 449, 13
+SHOOT, A, 394, 391, 0
+SHOOT, A, 400, 397, 2
+SHOOT, A, 406, 403, 4
+SHOOT, A, 407, 404, 0
+SHOOT, A, 412, 409, 6
+SHOOT, A, 413, 410, 1
+SHOOT, A, 418, 415, 8
+SHOOT, A, 419, 416, 3
+SHOOT, A, 424, 421, 10
+SHOOT, A, 425, 422, 5
+SHOOT, A, 430, 427, 12
+SHOOT, A, 431, 428, 7
+SHOOT, A, 435, 432, 0
+SHOOT, A, 436, 433, 14
+SHOOT, A, 437, 434, 9
+SHOOT, A, 441, 438, 2
+SHOOT, A, 442, 439, 16
+SHOOT, A, 443, 440, 11
+SHOOT, A, 447, 444, 6
+SHOOT, A, 448, 445, 18
+SHOOT, A, 449, 446, 13
+DEAD, A, 391
+DEAD, A, 404
+DEAD, A, 432
+DEAD, D, 394
+DEAD, D, 407
+DEAD, D, 435
+SPAWN, A, 450, 1, 63, 37
+SPAWN, A, 451, 2, 63, 38
+SPAWN, A, 452, 3, 63, 39
+SPAWN, D, 453, 1, 63, 37
+SPAWN, D, 454, 2, 63, 38
+SPAWN, D, 455, 3, 63, 39
+TURN, 76
+PRINT, TURN 76 LOGS:To be spawned at Position(63,40)
+PRINT, To be spawned at Position(63,41)
+PRINT, To be spawned at Position(63,42)
+PRINT, Type 1 at Position (63,40)
+PRINT, Type 2 at Position (63,41)
+PRINT, Type 3 at Position (63,42)
+PRINT, 
+SHOOT, D, 397, 400, 0
+SHOOT, D, 403, 406, 2
+SHOOT, D, 409, 412, 4
+SHOOT, D, 410, 413, 0
+SHOOT, D, 415, 418, 6
+SHOOT, D, 416, 419, 1
+SHOOT, D, 421, 424, 8
+SHOOT, D, 422, 425, 3
+SHOOT, D, 427, 430, 10
+SHOOT, D, 428, 431, 5
+SHOOT, D, 433, 436, 12
+SHOOT, D, 434, 437, 7
+SHOOT, D, 438, 441, 0
+SHOOT, D, 439, 442, 14
+SHOOT, D, 440, 443, 9
+SHOOT, D, 444, 447, 2
+SHOOT, D, 445, 448, 16
+SHOOT, D, 446, 449, 11
+SHOOT, D, 450, 453, 6
+SHOOT, D, 451, 454, 18
+SHOOT, D, 452, 455, 13
+SHOOT, A, 400, 397, 0
+SHOOT, A, 406, 403, 2
+SHOOT, A, 412, 409, 4
+SHOOT, A, 413, 410, 0
+SHOOT, A, 418, 415, 6
+SHOOT, A, 419, 416, 1
+SHOOT, A, 424, 421, 8
+SHOOT, A, 425, 422, 3
+SHOOT, A, 430, 427, 10
+SHOOT, A, 431, 428, 5
+SHOOT, A, 436, 433, 12
+SHOOT, A, 437, 434, 7
+SHOOT, A, 441, 438, 0
+SHOOT, A, 442, 439, 14
+SHOOT, A, 443, 440, 9
+SHOOT, A, 447, 444, 2
+SHOOT, A, 448, 445, 16
+SHOOT, A, 449, 446, 11
+SHOOT, A, 453, 450, 6
+SHOOT, A, 454, 451, 18
+SHOOT, A, 455, 452, 13
+DEAD, A, 397
+DEAD, A, 410
+DEAD, A, 438
+DEAD, D, 400
+DEAD, D, 413
+DEAD, D, 441
+SPAWN, A, 456, 1, 63, 40
+SPAWN, A, 457, 2, 63, 41
+SPAWN, A, 458, 3, 63, 42
+SPAWN, D, 459, 1, 63, 40
+SPAWN, D, 460, 2, 63, 41
+SPAWN, D, 461, 3, 63, 42
+TURN, 77
+PRINT, TURN 77 LOGS:To be spawned at Position(63,43)
+PRINT, To be spawned at Position(63,44)
+PRINT, To be spawned at Position(63,45)
+PRINT, Type 1 at Position (63,43)
+PRINT, Type 2 at Position (63,44)
+PRINT, Type 3 at Position (63,45)
+PRINT, 
+SHOOT, D, 403, 406, 0
+SHOOT, D, 409, 412, 2
+SHOOT, D, 415, 418, 4
+SHOOT, D, 416, 419, 0
+SHOOT, D, 421, 424, 6
+SHOOT, D, 422, 425, 1
+SHOOT, D, 427, 430, 8
+SHOOT, D, 428, 431, 3
+SHOOT, D, 433, 436, 10
+SHOOT, D, 434, 437, 5
+SHOOT, D, 439, 442, 12
+SHOOT, D, 440, 443, 7
+SHOOT, D, 444, 447, 0
+SHOOT, D, 445, 448, 14
+SHOOT, D, 446, 449, 9
+SHOOT, D, 450, 453, 2
+SHOOT, D, 451, 454, 16
+SHOOT, D, 452, 455, 11
+SHOOT, D, 456, 459, 6
+SHOOT, D, 457, 460, 18
+SHOOT, D, 458, 461, 13
+SHOOT, A, 406, 403, 0
+SHOOT, A, 412, 409, 2
+SHOOT, A, 418, 415, 4
+SHOOT, A, 419, 416, 0
+SHOOT, A, 424, 421, 6
+SHOOT, A, 425, 422, 1
+SHOOT, A, 430, 427, 8
+SHOOT, A, 431, 428, 3
+SHOOT, A, 436, 433, 10
+SHOOT, A, 437, 434, 5
+SHOOT, A, 442, 439, 12
+SHOOT, A, 443, 440, 7
+SHOOT, A, 447, 444, 0
+SHOOT, A, 448, 445, 14
+SHOOT, A, 449, 446, 9
+SHOOT, A, 453, 450, 2
+SHOOT, A, 454, 451, 16
+SHOOT, A, 455, 452, 11
+SHOOT, A, 459, 456, 6
+SHOOT, A, 460, 457, 18
+SHOOT, A, 461, 458, 13
+DEAD, A, 403
+DEAD, A, 416
+DEAD, A, 444
+DEAD, D, 406
+DEAD, D, 419
+DEAD, D, 447
+SPAWN, A, 462, 1, 63, 43
+SPAWN, A, 463, 2, 63, 44
+SPAWN, A, 464, 3, 63, 45
+SPAWN, D, 465, 1, 63, 43
+SPAWN, D, 466, 2, 63, 44
+SPAWN, D, 467, 3, 63, 45
+TURN, 78
+PRINT, TURN 78 LOGS:To be spawned at Position(63,46)
+PRINT, To be spawned at Position(63,47)
+PRINT, To be spawned at Position(63,48)
+PRINT, Type 1 at Position (63,46)
+PRINT, Type 2 at Position (63,47)
+PRINT, Type 3 at Position (63,48)
+PRINT, 
+SHOOT, D, 409, 412, 0
+SHOOT, D, 415, 418, 2
+SHOOT, D, 421, 424, 4
+SHOOT, D, 422, 425, 0
+SHOOT, D, 427, 430, 6
+SHOOT, D, 428, 431, 1
+SHOOT, D, 433, 436, 8
+SHOOT, D, 434, 437, 3
+SHOOT, D, 439, 442, 10
+SHOOT, D, 440, 443, 5
+SHOOT, D, 445, 448, 12
+SHOOT, D, 446, 449, 7
+SHOOT, D, 450, 453, 0
+SHOOT, D, 451, 454, 14
+SHOOT, D, 452, 455, 9
+SHOOT, D, 456, 459, 2
+SHOOT, D, 457, 460, 16
+SHOOT, D, 458, 461, 11
+SHOOT, D, 462, 465, 6
+SHOOT, D, 463, 466, 18
+SHOOT, D, 464, 467, 13
+SHOOT, A, 412, 409, 0
+SHOOT, A, 418, 415, 2
+SHOOT, A, 424, 421, 4
+SHOOT, A, 425, 422, 0
+SHOOT, A, 430, 427, 6
+SHOOT, A, 431, 428, 1
+SHOOT, A, 436, 433, 8
+SHOOT, A, 437, 434, 3
+SHOOT, A, 442, 439, 10
+SHOOT, A, 443, 440, 5
+SHOOT, A, 448, 445, 12
+SHOOT, A, 449, 446, 7
+SHOOT, A, 453, 450, 0
+SHOOT, A, 454, 451, 14
+SHOOT, A, 455, 452, 9
+SHOOT, A, 459, 456, 2
+SHOOT, A, 460, 457, 16
+SHOOT, A, 461, 458, 11
+SHOOT, A, 465, 462, 6
+SHOOT, A, 466, 463, 18
+SHOOT, A, 467, 464, 13
+DEAD, A, 409
+DEAD, A, 422
+DEAD, A, 450
+DEAD, D, 412
+DEAD, D, 425
+DEAD, D, 453
+SPAWN, A, 468, 1, 63, 46
+SPAWN, A, 469, 2, 63, 47
+SPAWN, A, 470, 3, 63, 48
+SPAWN, D, 471, 1, 63, 46
+SPAWN, D, 472, 2, 63, 47
+SPAWN, D, 473, 3, 63, 48
+TURN, 79
+PRINT, TURN 79 LOGS:To be spawned at Position(63,49)
+PRINT, To be spawned at Position(63,50)
+PRINT, To be spawned at Position(63,51)
+PRINT, Type 1 at Position (63,49)
+PRINT, Type 2 at Position (63,50)
+PRINT, Type 3 at Position (63,51)
+PRINT, 
+SHOOT, D, 415, 418, 0
+SHOOT, D, 421, 424, 2
+SHOOT, D, 427, 430, 4
+SHOOT, D, 428, 431, 0
+SHOOT, D, 433, 436, 6
+SHOOT, D, 434, 437, 1
+SHOOT, D, 439, 442, 8
+SHOOT, D, 440, 443, 3
+SHOOT, D, 445, 448, 10
+SHOOT, D, 446, 449, 5
+SHOOT, D, 451, 454, 12
+SHOOT, D, 452, 455, 7
+SHOOT, D, 456, 459, 0
+SHOOT, D, 457, 460, 14
+SHOOT, D, 458, 461, 9
+SHOOT, D, 462, 465, 2
+SHOOT, D, 463, 466, 16
+SHOOT, D, 464, 467, 11
+SHOOT, D, 468, 471, 6
+SHOOT, D, 469, 472, 18
+SHOOT, D, 470, 473, 13
+SHOOT, A, 418, 415, 0
+SHOOT, A, 424, 421, 2
+SHOOT, A, 430, 427, 4
+SHOOT, A, 431, 428, 0
+SHOOT, A, 436, 433, 6
+SHOOT, A, 437, 434, 1
+SHOOT, A, 442, 439, 8
+SHOOT, A, 443, 440, 3
+SHOOT, A, 448, 445, 10
+SHOOT, A, 449, 446, 5
+SHOOT, A, 454, 451, 12
+SHOOT, A, 455, 452, 7
+SHOOT, A, 459, 456, 0
+SHOOT, A, 460, 457, 14
+SHOOT, A, 461, 458, 9
+SHOOT, A, 465, 462, 2
+SHOOT, A, 466, 463, 16
+SHOOT, A, 467, 464, 11
+SHOOT, A, 471, 468, 6
+SHOOT, A, 472, 469, 18
+SHOOT, A, 473, 470, 13
+DEAD, A, 415
+DEAD, A, 428
+DEAD, A, 456
+DEAD, D, 418
+DEAD, D, 431
+DEAD, D, 459
+SPAWN, A, 474, 1, 63, 49
+SPAWN, A, 475, 2, 63, 50
+SPAWN, A, 476, 3, 63, 51
+SPAWN, D, 477, 1, 63, 49
+SPAWN, D, 478, 2, 63, 50
+SPAWN, D, 479, 3, 63, 51
+TURN, 80
+PRINT, TURN 80 LOGS:To be spawned at Position(63,52)
+PRINT, To be spawned at Position(63,53)
+PRINT, To be spawned at Position(63,54)
+PRINT, Type 1 at Position (63,52)
+PRINT, Type 2 at Position (63,53)
+PRINT, Type 3 at Position (63,54)
+PRINT, 
+SHOOT, D, 421, 424, 0
+SHOOT, D, 427, 430, 2
+SHOOT, D, 433, 436, 4
+SHOOT, D, 434, 437, 0
+SHOOT, D, 439, 442, 6
+SHOOT, D, 440, 443, 1
+SHOOT, D, 445, 448, 8
+SHOOT, D, 446, 449, 3
+SHOOT, D, 451, 454, 10
+SHOOT, D, 452, 455, 5
+SHOOT, D, 457, 460, 12
+SHOOT, D, 458, 461, 7
+SHOOT, D, 462, 465, 0
+SHOOT, D, 463, 466, 14
+SHOOT, D, 464, 467, 9
+SHOOT, D, 468, 471, 2
+SHOOT, D, 469, 472, 16
+SHOOT, D, 470, 473, 11
+SHOOT, D, 474, 477, 6
+SHOOT, D, 475, 478, 18
+SHOOT, D, 476, 479, 13
+SHOOT, A, 424, 421, 0
+SHOOT, A, 430, 427, 2
+SHOOT, A, 436, 433, 4
+SHOOT, A, 437, 434, 0
+SHOOT, A, 442, 439, 6
+SHOOT, A, 443, 440, 1
+SHOOT, A, 448, 445, 8
+SHOOT, A, 449, 446, 3
+SHOOT, A, 454, 451, 10
+SHOOT, A, 455, 452, 5
+SHOOT, A, 460, 457, 12
+SHOOT, A, 461, 458, 7
+SHOOT, A, 465, 462, 0
+SHOOT, A, 466, 463, 14
+SHOOT, A, 467, 464, 9
+SHOOT, A, 471, 468, 2
+SHOOT, A, 472, 469, 16
+SHOOT, A, 473, 470, 11
+SHOOT, A, 477, 474, 6
+SHOOT, A, 478, 475, 18
+SHOOT, A, 479, 476, 13
+DEAD, A, 421
+DEAD, A, 434
+DEAD, A, 462
+DEAD, D, 424
+DEAD, D, 437
+DEAD, D, 465
+SPAWN, A, 480, 1, 63, 52
+SPAWN, A, 481, 2, 63, 53
+SPAWN, A, 482, 3, 63, 54
+SPAWN, D, 483, 1, 63, 52
+SPAWN, D, 484, 2, 63, 53
+SPAWN, D, 485, 3, 63, 54
+TURN, 81
+PRINT, TURN 81 LOGS:To be spawned at Position(63,55)
+PRINT, To be spawned at Position(63,56)
+PRINT, To be spawned at Position(63,57)
+PRINT, Type 1 at Position (63,55)
+PRINT, Type 2 at Position (63,56)
+PRINT, Type 3 at Position (63,57)
+PRINT, 
+SHOOT, D, 427, 430, 0
+SHOOT, D, 433, 436, 2
+SHOOT, D, 439, 442, 4
+SHOOT, D, 440, 443, 0
+SHOOT, D, 445, 448, 6
+SHOOT, D, 446, 449, 1
+SHOOT, D, 451, 454, 8
+SHOOT, D, 452, 455, 3
+SHOOT, D, 457, 460, 10
+SHOOT, D, 458, 461, 5
+SHOOT, D, 463, 466, 12
+SHOOT, D, 464, 467, 7
+SHOOT, D, 468, 471, 0
+SHOOT, D, 469, 472, 14
+SHOOT, D, 470, 473, 9
+SHOOT, D, 474, 477, 2
+SHOOT, D, 475, 478, 16
+SHOOT, D, 476, 479, 11
+SHOOT, D, 480, 483, 6
+SHOOT, D, 481, 484, 18
+SHOOT, D, 482, 485, 13
+SHOOT, A, 430, 427, 0
+SHOOT, A, 436, 433, 2
+SHOOT, A, 442, 439, 4
+SHOOT, A, 443, 440, 0
+SHOOT, A, 448, 445, 6
+SHOOT, A, 449, 446, 1
+SHOOT, A, 454, 451, 8
+SHOOT, A, 455, 452, 3
+SHOOT, A, 460, 457, 10
+SHOOT, A, 461, 458, 5
+SHOOT, A, 466, 463, 12
+SHOOT, A, 467, 464, 7
+SHOOT, A, 471, 468, 0
+SHOOT, A, 472, 469, 14
+SHOOT, A, 473, 470, 9
+SHOOT, A, 477, 474, 2
+SHOOT, A, 478, 475, 16
+SHOOT, A, 479, 476, 11
+SHOOT, A, 483, 480, 6
+SHOOT, A, 484, 481, 18
+SHOOT, A, 485, 482, 13
+DEAD, A, 427
+DEAD, A, 440
+DEAD, A, 468
+DEAD, D, 430
+DEAD, D, 443
+DEAD, D, 471
+SPAWN, A, 486, 1, 63, 55
+SPAWN, A, 487, 2, 63, 56
+SPAWN, A, 488, 3, 63, 57
+SPAWN, D, 489, 1, 63, 55
+SPAWN, D, 490, 2, 63, 56
+SPAWN, D, 491, 3, 63, 57
+TURN, 82
+PRINT, TURN 82 LOGS:To be spawned at Position(63,58)
+PRINT, To be spawned at Position(63,59)
+PRINT, To be spawned at Position(63,60)
+PRINT, Type 1 at Position (63,58)
+PRINT, Type 2 at Position (63,59)
+PRINT, Type 3 at Position (63,60)
+PRINT, 
+SHOOT, D, 433, 436, 0
+SHOOT, D, 439, 442, 2
+SHOOT, D, 445, 448, 4
+SHOOT, D, 446, 449, 0
+SHOOT, D, 451, 454, 6
+SHOOT, D, 452, 455, 1
+SHOOT, D, 457, 460, 8
+SHOOT, D, 458, 461, 3
+SHOOT, D, 463, 466, 10
+SHOOT, D, 464, 467, 5
+SHOOT, D, 469, 472, 12
+SHOOT, D, 470, 473, 7
+SHOOT, D, 474, 477, 0
+SHOOT, D, 475, 478, 14
+SHOOT, D, 476, 479, 9
+SHOOT, D, 480, 483, 2
+SHOOT, D, 481, 484, 16
+SHOOT, D, 482, 485, 11
+SHOOT, D, 486, 489, 6
+SHOOT, D, 487, 490, 18
+SHOOT, D, 488, 491, 13
+SHOOT, A, 436, 433, 0
+SHOOT, A, 442, 439, 2
+SHOOT, A, 448, 445, 4
+SHOOT, A, 449, 446, 0
+SHOOT, A, 454, 451, 6
+SHOOT, A, 455, 452, 1
+SHOOT, A, 460, 457, 8
+SHOOT, A, 461, 458, 3
+SHOOT, A, 466, 463, 10
+SHOOT, A, 467, 464, 5
+SHOOT, A, 472, 469, 12
+SHOOT, A, 473, 470, 7
+SHOOT, A, 477, 474, 0
+SHOOT, A, 478, 475, 14
+SHOOT, A, 479, 476, 9
+SHOOT, A, 483, 480, 2
+SHOOT, A, 484, 481, 16
+SHOOT, A, 485, 482, 11
+SHOOT, A, 489, 486, 6
+SHOOT, A, 490, 487, 18
+SHOOT, A, 491, 488, 13
+DEAD, A, 433
+DEAD, A, 446
+DEAD, A, 474
+DEAD, D, 436
+DEAD, D, 449
+DEAD, D, 477
+SPAWN, A, 492, 1, 63, 58
+SPAWN, A, 493, 2, 63, 59
+SPAWN, A, 494, 3, 63, 60
+SPAWN, D, 495, 1, 63, 58
+SPAWN, D, 496, 2, 63, 59
+SPAWN, D, 497, 3, 63, 60
+TURN, 83
+PRINT, TURN 83 LOGS:To be spawned at Position(63,61)
+PRINT, To be spawned at Position(63,62)
+PRINT, To be spawned at Position(63,63)
+PRINT, Type 1 at Position (63,61)
+PRINT, Type 2 at Position (63,62)
+PRINT, Type 3 at Position (63,63)
+PRINT, 
+SHOOT, D, 439, 442, 0
+SHOOT, D, 445, 448, 2
+SHOOT, D, 451, 454, 4
+SHOOT, D, 452, 455, 0
+SHOOT, D, 457, 460, 6
+SHOOT, D, 458, 461, 1
+SHOOT, D, 463, 466, 8
+SHOOT, D, 464, 467, 3
+SHOOT, D, 469, 472, 10
+SHOOT, D, 470, 473, 5
+SHOOT, D, 475, 478, 12
+SHOOT, D, 476, 479, 7
+SHOOT, D, 480, 483, 0
+SHOOT, D, 481, 484, 14
+SHOOT, D, 482, 485, 9
+SHOOT, D, 486, 489, 2
+SHOOT, D, 487, 490, 16
+SHOOT, D, 488, 491, 11
+SHOOT, D, 492, 495, 6
+SHOOT, D, 493, 496, 18
+SHOOT, D, 494, 497, 13
+SHOOT, A, 442, 439, 0
+SHOOT, A, 448, 445, 2
+SHOOT, A, 454, 451, 4
+SHOOT, A, 455, 452, 0
+SHOOT, A, 460, 457, 6
+SHOOT, A, 461, 458, 1
+SHOOT, A, 466, 463, 8
+SHOOT, A, 467, 464, 3
+SHOOT, A, 472, 469, 10
+SHOOT, A, 473, 470, 5
+SHOOT, A, 478, 475, 12
+SHOOT, A, 479, 476, 7
+SHOOT, A, 483, 480, 0
+SHOOT, A, 484, 481, 14
+SHOOT, A, 485, 482, 9
+SHOOT, A, 489, 486, 2
+SHOOT, A, 490, 487, 16
+SHOOT, A, 491, 488, 11
+SHOOT, A, 495, 492, 6
+SHOOT, A, 496, 493, 18
+SHOOT, A, 497, 494, 13
+DEAD, A, 439
+DEAD, A, 452
+DEAD, A, 480
+DEAD, D, 442
+DEAD, D, 455
+DEAD, D, 483
+SPAWN, A, 498, 1, 63, 61
+SPAWN, A, 499, 2, 63, 62
+SPAWN, A, 500, 3, 63, 63
+SPAWN, D, 501, 1, 63, 61
+SPAWN, D, 502, 2, 63, 62
+SPAWN, D, 503, 3, 63, 63
+TURN, 84
+PRINT, TURN 84 LOGS:To be spawned at Position(0,0)
+PRINT, To be spawned at Position(0,1)
+PRINT, To be spawned at Position(0,2)
+PRINT, Type 1 at Position (0,0)
+PRINT, Type 2 at Position (0,1)
+PRINT, Type 3 at Position (0,2)
+PRINT, 
+SHOOT, D, 445, 448, 0
+SHOOT, D, 451, 454, 2
+SHOOT, D, 457, 460, 4
+SHOOT, D, 458, 461, 0
+SHOOT, D, 463, 466, 6
+SHOOT, D, 464, 467, 1
+SHOOT, D, 469, 472, 8
+SHOOT, D, 470, 473, 3
+SHOOT, D, 475, 478, 10
+SHOOT, D, 476, 479, 5
+SHOOT, D, 481, 484, 12
+SHOOT, D, 482, 485, 7
+SHOOT, D, 486, 489, 0
+SHOOT, D, 487, 490, 14
+SHOOT, D, 488, 491, 9
+SHOOT, D, 492, 495, 2
+SHOOT, D, 493, 496, 16
+SHOOT, D, 494, 497, 11
+SHOOT, D, 498, 501, 6
+SHOOT, D, 499, 502, 18
+SHOOT, D, 500, 503, 13
+SHOOT, A, 448, 445, 0
+SHOOT, A, 454, 451, 2
+SHOOT, A, 460, 457, 4
+SHOOT, A, 461, 458, 0
+SHOOT, A, 466, 463, 6
+SHOOT, A, 467, 464, 1
+SHOOT, A, 472, 469, 8
+SHOOT, A, 473, 470, 3
+SHOOT, A, 478, 475, 10
+SHOOT, A, 479, 476, 5
+SHOOT, A, 484, 481, 12
+SHOOT, A, 485, 482, 7
+SHOOT, A, 489, 486, 0
+SHOOT, A, 490, 487, 14
+SHOOT, A, 491, 488, 9
+SHOOT, A, 495, 492, 2
+SHOOT, A, 496, 493, 16
+SHOOT, A, 497, 494, 11
+SHOOT, A, 501, 498, 6
+SHOOT, A, 502, 499, 18
+SHOOT, A, 503, 500, 13
+DEAD, A, 445
+DEAD, A, 458
+DEAD, A, 486
+DEAD, D, 448
+DEAD, D, 461
+DEAD, D, 489
+SPAWN, A, 504, 1, 0, 0
+SPAWN, A, 505, 2, 0, 1
+SPAWN, A, 506, 3, 0, 2
+SPAWN, D, 507, 1, 0, 0
+SPAWN, D, 508, 2, 0, 1
+SPAWN, D, 509, 3, 0, 2
+TURN, 85
+PRINT, TURN 85 LOGS:To be spawned at Position(0,3)
+PRINT, To be spawned at Position(0,4)
+PRINT, To be spawned at Position(0,5)
+PRINT, Type 1 at Position (0,3)
+PRINT, Type 2 at Position (0,4)
+PRINT, Type 3 at Position (0,5)
+PRINT, 
+SHOOT, D, 451, 454, 0
+SHOOT, D, 457, 460, 2
+SHOOT, D, 463, 466, 4
+SHOOT, D, 464, 467, 0
+SHOOT, D, 469, 472, 6
+SHOOT, D, 470, 473, 1
+SHOOT, D, 475, 478, 8
+SHOOT, D, 476, 479, 3
+SHOOT, D, 481, 484, 10
+SHOOT, D, 482, 485, 5
+SHOOT, D, 487, 490, 12
+SHOOT, D, 488, 491, 7
+SHOOT, D, 492, 495, 0
+SHOOT, D, 493, 496, 14
+SHOOT, D, 494, 497, 9
+SHOOT, D, 498, 501, 2
+SHOOT, D, 499, 502, 16
+SHOOT, D, 500, 503, 11
+SHOOT, D, 504, 507, 6
+SHOOT, D, 505, 508, 18
+SHOOT, D, 506, 509, 13
+SHOOT, A, 454, 451, 0
+SHOOT, A, 460, 457, 2
+SHOOT, A, 466, 463, 4
+SHOOT, A, 467, 464, 0
+SHOOT, A, 472, 469, 6
+SHOOT, A, 473, 470, 1
+SHOOT, A, 478, 475, 8
+SHOOT, A, 479, 476, 3
+SHOOT, A, 484, 481, 10
+SHOOT, A, 485, 482, 5
+SHOOT, A, 490, 487, 12
+SHOOT, A, 491, 488, 7
+SHOOT, A, 495, 492, 0
+SHOOT, A, 496, 493, 14
+SHOOT, A, 497, 494, 9
+SHOOT, A, 501, 498, 2
+SHOOT, A, 502, 499, 16
+SHOOT, A, 503, 500, 11
+SHOOT, A, 507, 504, 6
+SHOOT, A, 508, 505, 18
+SHOOT, A, 509, 506, 13
+DEAD, A, 451
+DEAD, A, 464
+DEAD, A, 492
+DEAD, D, 454
+DEAD, D, 467
+DEAD, D, 495
+SPAWN, A, 510, 1, 0, 3
+SPAWN, A, 511, 2, 0, 4
+SPAWN, A, 512, 3, 0, 5
+SPAWN, D, 513, 1, 0, 3
+SPAWN, D, 514, 2, 0, 4
+SPAWN, D, 515, 3, 0, 5
+TURN, 86
+PRINT, TURN 86 LOGS:To be spawned at Position(0,6)
+PRINT, To be spawned at Position(0,7)
+PRINT, To be spawned at Position(0,8)
+PRINT, Type 1 at Position (0,6)
+PRINT, Type 2 at Position (0,7)
+PRINT, Type 3 at Position (0,8)
+PRINT, 
+SHOOT, D, 457, 460, 0
+SHOOT, D, 463, 466, 2
+SHOOT, D, 469, 472, 4
+SHOOT, D, 470, 473, 0
+SHOOT, D, 475, 478, 6
+SHOOT, D, 476, 479, 1
+SHOOT, D, 481, 484, 8
+SHOOT, D, 482, 485, 3
+SHOOT, D, 487, 490, 10
+SHOOT, D, 488, 491, 5
+SHOOT, D, 493, 496, 12
+SHOOT, D, 494, 497, 7
+SHOOT, D, 498, 501, 0
+SHOOT, D, 499, 502, 14
+SHOOT, D, 500, 503, 9
+SHOOT, D, 504, 507, 2
+SHOOT, D, 505, 508, 16
+SHOOT, D, 506, 509, 11
+SHOOT, D, 510, 513, 6
+SHOOT, D, 511, 514, 18
+SHOOT, D, 512, 515, 13
+SHOOT, A, 460, 457, 0
+SHOOT, A, 466, 463, 2
+SHOOT, A, 472, 469, 4
+SHOOT, A, 473, 470, 0
+SHOOT, A, 478, 475, 6
+SHOOT, A, 479, 476, 1
+SHOOT, A, 484, 481, 8
+SHOOT, A, 485, 482, 3
+SHOOT, A, 490, 487, 10
+SHOOT, A, 491, 488, 5
+SHOOT, A, 496, 493, 12
+SHOOT, A, 497, 494, 7
+SHOOT, A, 501, 498, 0
+SHOOT, A, 502, 499, 14
+SHOOT, A, 503, 500, 9
+SHOOT, A, 507, 504, 2
+SHOOT, A, 508, 505, 16
+SHOOT, A, 509, 506, 11
+SHOOT, A, 513, 510, 6
+SHOOT, A, 514, 511, 18
+SHOOT, A, 515, 512, 13
+DEAD, A, 457
+DEAD, A, 470
+DEAD, A, 498
+DEAD, D, 460
+DEAD, D, 473
+DEAD, D, 501
+SPAWN, A, 516, 1, 0, 6
+SPAWN, A, 517, 2, 0, 7
+SPAWN, A, 518, 3, 0, 8
+SPAWN, D, 519, 1, 0, 6
+SPAWN, D, 520, 2, 0, 7
+SPAWN, D, 521, 3, 0, 8
+TURN, 87
+PRINT, TURN 87 LOGS:To be spawned at Position(0,9)
+PRINT, To be spawned at Position(0,10)
+PRINT, To be spawned at Position(0,11)
+PRINT, Type 1 at Position (0,9)
+PRINT, Type 2 at Position (0,10)
+PRINT, Type 3 at Position (0,11)
+PRINT, 
+SHOOT, D, 463, 466, 0
+SHOOT, D, 469, 472, 2
+SHOOT, D, 475, 478, 4
+SHOOT, D, 476, 479, 0
+SHOOT, D, 481, 484, 6
+SHOOT, D, 482, 485, 1
+SHOOT, D, 487, 490, 8
+SHOOT, D, 488, 491, 3
+SHOOT, D, 493, 496, 10
+SHOOT, D, 494, 497, 5
+SHOOT, D, 499, 502, 12
+SHOOT, D, 500, 503, 7
+SHOOT, D, 504, 507, 0
+SHOOT, D, 505, 508, 14
+SHOOT, D, 506, 509, 9
+SHOOT, D, 510, 513, 2
+SHOOT, D, 511, 514, 16
+SHOOT, D, 512, 515, 11
+SHOOT, D, 516, 519, 6
+SHOOT, D, 517, 520, 18
+SHOOT, D, 518, 521, 13
+SHOOT, A, 466, 463, 0
+SHOOT, A, 472, 469, 2
+SHOOT, A, 478, 475, 4
+SHOOT, A, 479, 476, 0
+SHOOT, A, 484, 481, 6
+SHOOT, A, 485, 482, 1
+SHOOT, A, 490, 487, 8
+SHOOT, A, 491, 488, 3
+SHOOT, A, 496, 493, 10
+SHOOT, A, 497, 494, 5
+SHOOT, A, 502, 499, 12
+SHOOT, A, 503, 500, 7
+SHOOT, A, 507, 504, 0
+SHOOT, A, 508, 505, 14
+SHOOT, A, 509, 506, 9
+SHOOT, A, 513, 510, 2
+SHOOT, A, 514, 511, 16
+SHOOT, A, 515, 512, 11
+SHOOT, A, 519, 516, 6
+SHOOT, A, 520, 517, 18
+SHOOT, A, 521, 518, 13
+DEAD, A, 463
+DEAD, A, 476
+DEAD, A, 504
+DEAD, D, 466
+DEAD, D, 479
+DEAD, D, 507
+SPAWN, A, 522, 1, 0, 9
+SPAWN, A, 523, 2, 0, 10
+SPAWN, A, 524, 3, 0, 11
+SPAWN, D, 525, 1, 0, 9
+SPAWN, D, 526, 2, 0, 10
+SPAWN, D, 527, 3, 0, 11
+TURN, 88
+PRINT, TURN 88 LOGS:To be spawned at Position(0,12)
+PRINT, To be spawned at Position(0,13)
+PRINT, To be spawned at Position(0,14)
+PRINT, Type 1 at Position (0,12)
+PRINT, Type 2 at Position (0,13)
+PRINT, Type 3 at Position (0,14)
+PRINT, 
+SHOOT, D, 469, 472, 0
+SHOOT, D, 475, 478, 2
+SHOOT, D, 481, 484, 4
+SHOOT, D, 482, 485, 0
+SHOOT, D, 487, 490, 6
+SHOOT, D, 488, 491, 1
+SHOOT, D, 493, 496, 8
+SHOOT, D, 494, 497, 3
+SHOOT, D, 499, 502, 10
+SHOOT, D, 500, 503, 5
+SHOOT, D, 505, 508, 12
+SHOOT, D, 506, 509, 7
+SHOOT, D, 510, 513, 0
+SHOOT, D, 511, 514, 14
+SHOOT, D, 512, 515, 9
+SHOOT, D, 516, 519, 2
+SHOOT, D, 517, 520, 16
+SHOOT, D, 518, 521, 11
+SHOOT, D, 522, 525, 6
+SHOOT, D, 523, 526, 18
+SHOOT, D, 524, 527, 13
+SHOOT, A, 472, 469, 0
+SHOOT, A, 478, 475, 2
+SHOOT, A, 484, 481, 4
+SHOOT, A, 485, 482, 0
+SHOOT, A, 490, 487, 6
+SHOOT, A, 491, 488, 1
+SHOOT, A, 496, 493, 8
+SHOOT, A, 497, 494, 3
+SHOOT, A, 502, 499, 10
+SHOOT, A, 503, 500, 5
+SHOOT, A, 508, 505, 12
+SHOOT, A, 509, 506, 7
+SHOOT, A, 513, 510, 0
+SHOOT, A, 514, 511, 14
+SHOOT, A, 515, 512, 9
+SHOOT, A, 519, 516, 2
+SHOOT, A, 520, 517, 16
+SHOOT, A, 521, 518, 11
+SHOOT, A, 525, 522, 6
+SHOOT, A, 526, 523, 18
+SHOOT, A, 527, 524, 13
+DEAD, A, 469
+DEAD, A, 482
+DEAD, A, 510
+DEAD, D, 472
+DEAD, D, 485
+DEAD, D, 513
+SPAWN, A, 528, 1, 0, 12
+SPAWN, A, 529, 2, 0, 13
+SPAWN, A, 530, 3, 0, 14
+SPAWN, D, 531, 1, 0, 12
+SPAWN, D, 532, 2, 0, 13
+SPAWN, D, 533, 3, 0, 14
+TURN, 89
+PRINT, TURN 89 LOGS:To be spawned at Position(0,15)
+PRINT, To be spawned at Position(0,16)
+PRINT, To be spawned at Position(0,17)
+PRINT, Type 1 at Position (0,15)
+PRINT, Type 2 at Position (0,16)
+PRINT, Type 3 at Position (0,17)
+PRINT, 
+SHOOT, D, 475, 478, 0
+SHOOT, D, 481, 484, 2
+SHOOT, D, 487, 490, 4
+SHOOT, D, 488, 491, 0
+SHOOT, D, 493, 496, 6
+SHOOT, D, 494, 497, 1
+SHOOT, D, 499, 502, 8
+SHOOT, D, 500, 503, 3
+SHOOT, D, 505, 508, 10
+SHOOT, D, 506, 509, 5
+SHOOT, D, 511, 514, 12
+SHOOT, D, 512, 515, 7
+SHOOT, D, 516, 519, 0
+SHOOT, D, 517, 520, 14
+SHOOT, D, 518, 521, 9
+SHOOT, D, 522, 525, 2
+SHOOT, D, 523, 526, 16
+SHOOT, D, 524, 527, 11
+SHOOT, D, 528, 531, 6
+SHOOT, D, 529, 532, 18
+SHOOT, D, 530, 533, 13
+SHOOT, A, 478, 475, 0
+SHOOT, A, 484, 481, 2
+SHOOT, A, 490, 487, 4
+SHOOT, A, 491, 488, 0
+SHOOT, A, 496, 493, 6
+SHOOT, A, 497, 494, 1
+SHOOT, A, 502, 499, 8
+SHOOT, A, 503, 500, 3
+SHOOT, A, 508, 505, 10
+SHOOT, A, 509, 506, 5
+SHOOT, A, 514, 511, 12
+SHOOT, A, 515, 512, 7
+SHOOT, A, 519, 516, 0
+SHOOT, A, 520, 517, 14
+SHOOT, A, 521, 518, 9
+SHOOT, A, 525, 522, 2
+SHOOT, A, 526, 523, 16
+SHOOT, A, 527, 524, 11
+SHOOT, A, 531, 528, 6
+SHOOT, A, 532, 529, 18
+SHOOT, A, 533, 530, 13
+DEAD, A, 475
+DEAD, A, 488
+DEAD, A, 516
+DEAD, D, 478
+DEAD, D, 491
+DEAD, D, 519
+SPAWN, A, 534, 1, 0, 15
+SPAWN, A, 535, 2, 0, 16
+SPAWN, A, 536, 3, 0, 17
+SPAWN, D, 537, 1, 0, 15
+SPAWN, D, 538, 2, 0, 16
+SPAWN, D, 539, 3, 0, 17
+TURN, 90
+PRINT, TURN 90 LOGS:To be spawned at Position(0,18)
+PRINT, To be spawned at Position(0,19)
+PRINT, To be spawned at Position(0,20)
+PRINT, Type 1 at Position (0,18)
+PRINT, Type 2 at Position (0,19)
+PRINT, Type 3 at Position (0,20)
+PRINT, 
+SHOOT, D, 481, 484, 0
+SHOOT, D, 487, 490, 2
+SHOOT, D, 493, 496, 4
+SHOOT, D, 494, 497, 0
+SHOOT, D, 499, 502, 6
+SHOOT, D, 500, 503, 1
+SHOOT, D, 505, 508, 8
+SHOOT, D, 506, 509, 3
+SHOOT, D, 511, 514, 10
+SHOOT, D, 512, 515, 5
+SHOOT, D, 517, 520, 12
+SHOOT, D, 518, 521, 7
+SHOOT, D, 522, 525, 0
+SHOOT, D, 523, 526, 14
+SHOOT, D, 524, 527, 9
+SHOOT, D, 528, 531, 2
+SHOOT, D, 529, 532, 16
+SHOOT, D, 530, 533, 11
+SHOOT, D, 534, 537, 6
+SHOOT, D, 535, 538, 18
+SHOOT, D, 536, 539, 13
+SHOOT, A, 484, 481, 0
+SHOOT, A, 490, 487, 2
+SHOOT, A, 496, 493, 4
+SHOOT, A, 497, 494, 0
+SHOOT, A, 502, 499, 6
+SHOOT, A, 503, 500, 1
+SHOOT, A, 508, 505, 8
+SHOOT, A, 509, 506, 3
+SHOOT, A, 514, 511, 10
+SHOOT, A, 515, 512, 5
+SHOOT, A, 520, 517, 12
+SHOOT, A, 521, 518, 7
+SHOOT, A, 525, 522, 0
+SHOOT, A, 526, 523, 14
+SHOOT, A, 527, 524, 9
+SHOOT, A, 531, 528, 2
+SHOOT, A, 532, 529, 16
+SHOOT, A, 533, 530, 11
+SHOOT, A, 537, 534, 6
+SHOOT, A, 538, 535, 18
+SHOOT, A, 539, 536, 13
+DEAD, A, 481
+DEAD, A, 494
+DEAD, A, 522
+DEAD, D, 484
+DEAD, D, 497
+DEAD, D, 525
+SPAWN, A, 540, 1, 0, 18
+SPAWN, A, 541, 2, 0, 19
+SPAWN, A, 542, 3, 0, 20
+SPAWN, D, 543, 1, 0, 18
+SPAWN, D, 544, 2, 0, 19
+SPAWN, D, 545, 3, 0, 20
+TURN, 91
+PRINT, TURN 91 LOGS:To be spawned at Position(0,21)
+PRINT, To be spawned at Position(0,22)
+PRINT, To be spawned at Position(0,23)
+PRINT, Type 1 at Position (0,21)
+PRINT, Type 2 at Position (0,22)
+PRINT, Type 3 at Position (0,23)
+PRINT, 
+SHOOT, D, 487, 490, 0
+SHOOT, D, 493, 496, 2
+SHOOT, D, 499, 502, 4
+SHOOT, D, 500, 503, 0
+SHOOT, D, 505, 508, 6
+SHOOT, D, 506, 509, 1
+SHOOT, D, 511, 514, 8
+SHOOT, D, 512, 515, 3
+SHOOT, D, 517, 520, 10
+SHOOT, D, 518, 521, 5
+SHOOT, D, 523, 526, 12
+SHOOT, D, 524, 527, 7
+SHOOT, D, 528, 531, 0
+SHOOT, D, 529, 532, 14
+SHOOT, D, 530, 533, 9
+SHOOT, D, 534, 537, 2
+SHOOT, D, 535, 538, 16
+SHOOT, D, 536, 539, 11
+SHOOT, D, 540, 543, 6
+SHOOT, D, 541, 544, 18
+SHOOT, D, 542, 545, 13
+SHOOT, A, 490, 487, 0
+SHOOT, A, 496, 493, 2
+SHOOT, A, 502, 499, 4
+SHOOT, A, 503, 500, 0
+SHOOT, A, 508, 505, 6
+SHOOT, A, 509, 506, 1
+SHOOT, A, 514, 511, 8
+SHOOT, A, 515, 512, 3
+SHOOT, A, 520, 517, 10
+SHOOT, A, 521, 518, 5
+SHOOT, A, 526, 523, 12
+SHOOT, A, 527, 524, 7
+SHOOT, A, 531, 528, 0
+SHOOT, A, 532, 529, 14
+SHOOT, A, 533, 530, 9
+SHOOT, A, 537, 534, 2
+SHOOT, A, 538, 535, 16
+SHOOT, A, 539, 536, 11
+SHOOT, A, 543, 540, 6
+SHOOT, A, 544, 541, 18
+SHOOT, A, 545, 542, 13
+DEAD, A, 487
+DEAD, A, 500
+DEAD, A, 528
+DEAD, D, 490
+DEAD, D, 503
+DEAD, D, 531
+SPAWN, A, 546, 1, 0, 21
+SPAWN, A, 547, 2, 0, 22
+SPAWN, A, 548, 3, 0, 23
+SPAWN, D, 549, 1, 0, 21
+SPAWN, D, 550, 2, 0, 22
+SPAWN, D, 551, 3, 0, 23
+TURN, 92
+PRINT, TURN 92 LOGS:To be spawned at Position(0,24)
+PRINT, To be spawned at Position(0,25)
+PRINT, To be spawned at Position(0,26)
+PRINT, Type 1 at Position (0,24)
+PRINT, Type 2 at Position (0,25)
+PRINT, Type 3 at Position (0,26)
+PRINT, 
+SHOOT, D, 493, 496, 0
+SHOOT, D, 499, 502, 2
+SHOOT, D, 505, 508, 4
+SHOOT, D, 506, 509, 0
+SHOOT, D, 511, 514, 6
+SHOOT, D, 512, 515, 1
+SHOOT, D, 517, 520, 8
+SHOOT, D, 518, 521, 3
+SHOOT, D, 523, 526, 10
+SHOOT, D, 524, 527, 5
+SHOOT, D, 529, 532, 12
+SHOOT, D, 530, 533, 7
+SHOOT, D, 534, 537, 0
+SHOOT, D, 535, 538, 14
+SHOOT, D, 536, 539, 9
+SHOOT, D, 540, 543, 2
+SHOOT, D, 541, 544, 16
+SHOOT, D, 542, 545, 11
+SHOOT, D, 546, 549, 6
+SHOOT, D, 547, 550, 18
+SHOOT, D, 548, 551, 13
+SHOOT, A, 496, 493, 0
+SHOOT, A, 502, 499, 2
+SHOOT, A, 508, 505, 4
+SHOOT, A, 509, 506, 0
+SHOOT, A, 514, 511, 6
+SHOOT, A, 515, 512, 1
+SHOOT, A, 520, 517, 8
+SHOOT, A, 521, 518, 3
+SHOOT, A, 526, 523, 10
+SHOOT, A, 527, 524, 5
+SHOOT, A, 532, 529, 12
+SHOOT, A, 533, 530, 7
+SHOOT, A, 537, 534, 0
+SHOOT, A, 538, 535, 14
+SHOOT, A, 539, 536, 9
+SHOOT, A, 543, 540, 2
+SHOOT, A, 544, 541, 16
+SHOOT, A, 545, 542, 11
+SHOOT, A, 549, 546, 6
+SHOOT, A, 550, 547, 18
+SHOOT, A, 551, 548, 13
+DEAD, A, 493
+DEAD, A, 506
+DEAD, A, 534
+DEAD, D, 496
+DEAD, D, 509
+DEAD, D, 537
+SPAWN, A, 552, 1, 0, 24
+SPAWN, A, 553, 2, 0, 25
+SPAWN, A, 554, 3, 0, 26
+SPAWN, D, 555, 1, 0, 24
+SPAWN, D, 556, 2, 0, 25
+SPAWN, D, 557, 3, 0, 26
+TURN, 93
+PRINT, TURN 93 LOGS:To be spawned at Position(0,27)
+PRINT, To be spawned at Position(0,28)
+PRINT, To be spawned at Position(0,29)
+PRINT, Type 1 at Position (0,27)
+PRINT, Type 2 at Position (0,28)
+PRINT, Type 3 at Position (0,29)
+PRINT, 
+SHOOT, D, 499, 502, 0
+SHOOT, D, 505, 508, 2
+SHOOT, D, 511, 514, 4
+SHOOT, D, 512, 515, 0
+SHOOT, D, 517, 520, 6
+SHOOT, D, 518, 521, 1
+SHOOT, D, 523, 526, 8
+SHOOT, D, 524, 527, 3
+SHOOT, D, 529, 532, 10
+SHOOT, D, 530, 533, 5
+SHOOT, D, 535, 538, 12
+SHOOT, D, 536, 539, 7
+SHOOT, D, 540, 543, 0
+SHOOT, D, 541, 544, 14
+SHOOT, D, 542, 545, 9
+SHOOT, D, 546, 549, 2
+SHOOT, D, 547, 550, 16
+SHOOT, D, 548, 551, 11
+SHOOT, D, 552, 555, 6
+SHOOT, D, 553, 556, 18
+SHOOT, D, 554, 557, 13
+SHOOT, A, 502, 499, 0
+SHOOT, A, 508, 505, 2
+SHOOT, A, 514, 511, 4
+SHOOT, A, 515, 512, 0
+SHOOT, A, 520, 517, 6
+SHOOT, A, 521, 518, 1
+SHOOT, A, 526, 523, 8
+SHOOT, A, 527, 524, 3
+SHOOT, A, 532, 529, 10
+SHOOT, A, 533, 530, 5
+SHOOT, A, 538, 535, 12
+SHOOT, A, 539, 536, 7
+SHOOT, A, 543, 540, 0
+SHOOT, A, 544, 541, 14
+SHOOT, A, 545, 542, 9
+SHOOT, A, 549, 546, 2
+SHOOT, A, 550, 547, 16
+SHOOT, A, 551, 548, 11
+SHOOT, A, 555, 552, 6
+SHOOT, A, 556, 553, 18
+SHOOT, A, 557, 554, 13
+DEAD, A, 499
+DEAD, A, 512
+DEAD, A, 540
+DEAD, D, 502
+DEAD, D, 515
+DEAD, D, 543
+SPAWN, A, 558, 1, 0, 27
+SPAWN, A, 559, 2, 0, 28
+SPAWN, A, 560, 3, 0, 29
+SPAWN, D, 561, 1, 0, 27
+SPAWN, D, 562, 2, 0, 28
+SPAWN, D, 563, 3, 0, 29
+TURN, 94
+PRINT, TURN 94 LOGS:To be spawned at Position(0,30)
+PRINT, To be spawned at Position(0,31)
+PRINT, To be spawned at Position(0,32)
+PRINT, Type 1 at Position (0,30)
+PRINT, Type 2 at Position (0,31)
+PRINT, Type 3 at Position (0,32)
+PRINT, 
+SHOOT, D, 505, 508, 0
+SHOOT, D, 511, 514, 2
+SHOOT, D, 517, 520, 4
+SHOOT, D, 518, 521, 0
+SHOOT, D, 523, 526, 6
+SHOOT, D, 524, 527, 1
+SHOOT, D, 529, 532, 8
+SHOOT, D, 530, 533, 3
+SHOOT, D, 535, 538, 10
+SHOOT, D, 536, 539, 5
+SHOOT, D, 541, 544, 12
+SHOOT, D, 542, 545, 7
+SHOOT, D, 546, 549, 0
+SHOOT, D, 547, 550, 14
+SHOOT, D, 548, 551, 9
+SHOOT, D, 552, 555, 2
+SHOOT, D, 553, 556, 16
+SHOOT, D, 554, 557, 11
+SHOOT, D, 558, 561, 6
+SHOOT, D, 559, 562, 18
+SHOOT, D, 560, 563, 13
+SHOOT, A, 508, 505, 0
+SHOOT, A, 514, 511, 2
+SHOOT, A, 520, 517, 4
+SHOOT, A, 521, 518, 0
+SHOOT, A, 526, 523, 6
+SHOOT, A, 527, 524, 1
+SHOOT, A, 532, 529, 8
+SHOOT, A, 533, 530, 3
+SHOOT, A, 538, 535, 10
+SHOOT, A, 539, 536, 5
+SHOOT, A, 544, 541, 12
+SHOOT, A, 545, 542, 7
+SHOOT, A, 549, 546, 0
+SHOOT, A, 550, 547, 14
+SHOOT, A, 551, 548, 9
+SHOOT, A, 555, 552, 2
+SHOOT, A, 556, 553, 16
+SHOOT, A, 557, 554, 11
+SHOOT, A, 561, 558, 6
+SHOOT, A, 562, 559, 18
+SHOOT, A, 563, 560, 13
+DEAD, A, 505
+DEAD, A, 518
+DEAD, A, 546
+DEAD, D, 508
+DEAD, D, 521
+DEAD, D, 549
+SPAWN, A, 564, 1, 0, 30
+SPAWN, A, 565, 2, 0, 31
+SPAWN, A, 566, 3, 0, 32
+SPAWN, D, 567, 1, 0, 30
+SPAWN, D, 568, 2, 0, 31
+SPAWN, D, 569, 3, 0, 32
+TURN, 95
+PRINT, TURN 95 LOGS:To be spawned at Position(0,33)
+PRINT, To be spawned at Position(0,34)
+PRINT, To be spawned at Position(0,35)
+PRINT, Type 1 at Position (0,33)
+PRINT, Type 2 at Position (0,34)
+PRINT, Type 3 at Position (0,35)
+PRINT, 
+SHOOT, D, 511, 514, 0
+SHOOT, D, 517, 520, 2
+SHOOT, D, 523, 526, 4
+SHOOT, D, 524, 527, 0
+SHOOT, D, 529, 532, 6
+SHOOT, D, 530, 533, 1
+SHOOT, D, 535, 538, 8
+SHOOT, D, 536, 539, 3
+SHOOT, D, 541, 544, 10
+SHOOT, D, 542, 545, 5
+SHOOT, D, 547, 550, 12
+SHOOT, D, 548, 551, 7
+SHOOT, D, 552, 555, 0
+SHOOT, D, 553, 556, 14
+SHOOT, D, 554, 557, 9
+SHOOT, D, 558, 561, 2
+SHOOT, D, 559, 562, 16
+SHOOT, D, 560, 563, 11
+SHOOT, D, 564, 567, 6
+SHOOT, D, 565, 568, 18
+SHOOT, D, 566, 569, 13
+SHOOT, A, 514, 511, 0
+SHOOT, A, 520, 517, 2
+SHOOT, A, 526, 523, 4
+SHOOT, A, 527, 524, 0
+SHOOT, A, 532, 529, 6
+SHOOT, A, 533, 530, 1
+SHOOT, A, 538, 535, 8
+SHOOT, A, 539, 536, 3
+SHOOT, A, 544, 541, 10
+SHOOT, A, 545, 542, 5
+SHOOT, A, 550, 547, 12
+SHOOT, A, 551, 548, 7
+SHOOT, A, 555, 552, 0
+SHOOT, A, 556, 553, 14
+SHOOT, A, 557, 554, 9
+SHOOT, A, 561, 558, 2
+SHOOT, A, 562, 559, 16
+SHOOT, A, 563, 560, 11
+SHOOT, A, 567, 564, 6
+SHOOT, A, 568, 565, 18
+SHOOT, A, 569, 566, 13
+DEAD, A, 511
+DEAD, A, 524
+DEAD, A, 552
+DEAD, D, 514
+DEAD, D, 527
+DEAD, D, 555
+SPAWN, A, 570, 1, 0, 33
+SPAWN, A, 571, 2, 0, 34
+SPAWN, A, 572, 3, 0, 35
+SPAWN, D, 573, 1, 0, 33
+SPAWN, D, 574, 2, 0, 34
+SPAWN, D, 575, 3, 0, 35
+TURN, 96
+PRINT, TURN 96 LOGS:To be spawned at Position(0,36)
+PRINT, To be spawned at Position(0,37)
+PRINT, To be spawned at Position(0,38)
+PRINT, Type 1 at Position (0,36)
+PRINT, Type 2 at Position (0,37)
+PRINT, Type 3 at Position (0,38)
+PRINT, 
+SHOOT, D, 517, 520, 0
+SHOOT, D, 523, 526, 2
+SHOOT, D, 529, 532, 4
+SHOOT, D, 530, 533, 0
+SHOOT, D, 535, 538, 6
+SHOOT, D, 536, 539, 1
+SHOOT, D, 541, 544, 8
+SHOOT, D, 542, 545, 3
+SHOOT, D, 547, 550, 10
+SHOOT, D, 548, 551, 5
+SHOOT, D, 553, 556, 12
+SHOOT, D, 554, 557, 7
+SHOOT, D, 558, 561, 0
+SHOOT, D, 559, 562, 14
+SHOOT, D, 560, 563, 9
+SHOOT, D, 564, 567, 2
+SHOOT, D, 565, 568, 16
+SHOOT, D, 566, 569, 11
+SHOOT, D, 570, 573, 6
+SHOOT, D, 571, 574, 18
+SHOOT, D, 572, 575, 13
+SHOOT, A, 520, 517, 0
+SHOOT, A, 526, 523, 2
+SHOOT, A, 532, 529, 4
+SHOOT, A, 533, 530, 0
+SHOOT, A, 538, 535, 6
+SHOOT, A, 539, 536, 1
+SHOOT, A, 544, 541, 8
+SHOOT, A, 545, 542, 3
+SHOOT, A, 550, 547, 10
+SHOOT, A, 551, 548, 5
+SHOOT, A, 556, 553, 12
+SHOOT, A, 557, 554, 7
+SHOOT, A, 561, 558, 0
+SHOOT, A, 562, 559, 14
+SHOOT, A, 563, 560, 9
+SHOOT, A, 567, 564, 2
+SHOOT, A, 568, 565, 16
+SHOOT, A, 569, 566, 11
+SHOOT, A, 573, 570, 6
+SHOOT, A, 574, 571, 18
+SHOOT, A, 575, 572, 13
+DEAD, A, 517
+DEAD, A, 530
+DEAD, A, 558
+DEAD, D, 520
+DEAD, D, 533
+DEAD, D, 561
+SPAWN, A, 576, 1, 0, 36
+SPAWN, A, 577, 2, 0, 37
+SPAWN, A, 578, 3, 0, 38
+SPAWN, D, 579, 1, 0, 36
+SPAWN, D, 580, 2, 0, 37
+SPAWN, D, 581, 3, 0, 38
+TURN, 97
+PRINT, TURN 97 LOGS:To be spawned at Position(0,39)
+PRINT, To be spawned at Position(0,40)
+PRINT, To be spawned at Position(0,41)
+PRINT, Type 1 at Position (0,39)
+PRINT, Type 2 at Position (0,40)
+PRINT, Type 3 at Position (0,41)
+PRINT, 
+SHOOT, D, 523, 526, 0
+SHOOT, D, 529, 532, 2
+SHOOT, D, 535, 538, 4
+SHOOT, D, 536, 539, 0
+SHOOT, D, 541, 544, 6
+SHOOT, D, 542, 545, 1
+SHOOT, D, 547, 550, 8
+SHOOT, D, 548, 551, 3
+SHOOT, D, 553, 556, 10
+SHOOT, D, 554, 557, 5
+SHOOT, D, 559, 562, 12
+SHOOT, D, 560, 563, 7
+SHOOT, D, 564, 567, 0
+SHOOT, D, 565, 568, 14
+SHOOT, D, 566, 569, 9
+SHOOT, D, 570, 573, 2
+SHOOT, D, 571, 574, 16
+SHOOT, D, 572, 575, 11
+SHOOT, D, 576, 579, 6
+SHOOT, D, 577, 580, 18
+SHOOT, D, 578, 581, 13
+SHOOT, A, 526, 523, 0
+SHOOT, A, 532, 529, 2
+SHOOT, A, 538, 535, 4
+SHOOT, A, 539, 536, 0
+SHOOT, A, 544, 541, 6
+SHOOT, A, 545, 542, 1
+SHOOT, A, 550, 547, 8
+SHOOT, A, 551, 548, 3
+SHOOT, A, 556, 553, 10
+SHOOT, A, 557, 554, 5
+SHOOT, A, 562, 559, 12
+SHOOT, A, 563, 560, 7
+SHOOT, A, 567, 564, 0
+SHOOT, A, 568, 565, 14
+SHOOT, A, 569, 566, 9
+SHOOT, A, 573, 570, 2
+SHOOT, A, 574, 571, 16
+SHOOT, A, 575, 572, 11
+SHOOT, A, 579, 576, 6
+SHOOT, A, 580, 577, 18
+SHOOT, A, 581, 578, 13
+DEAD, A, 523
+DEAD, A, 536
+DEAD, A, 564
+DEAD, D, 526
+DEAD, D, 539
+DEAD, D, 567
+SPAWN, A, 582, 1, 0, 39
+SPAWN, A, 583, 2, 0, 40
+SPAWN, A, 584, 3, 0, 41
+SPAWN, D, 585, 1, 0, 39
+SPAWN, D, 586, 2, 0, 40
+SPAWN, D, 587, 3, 0, 41
+TURN, 98
+PRINT, TURN 98 LOGS:To be spawned at Position(0,42)
+PRINT, To be spawned at Position(0,43)
+PRINT, To be spawned at Position(0,44)
+PRINT, Type 1 at Position (0,42)
+PRINT, Type 2 at Position (0,43)
+PRINT, Type 3 at Position (0,44)
+PRINT, 
+SHOOT, D, 529, 532, 0
+SHOOT, D, 535, 538, 2
+SHOOT, D, 541, 544, 4
+SHOOT, D, 542, 545, 0
+SHOOT, D, 547, 550, 6
+SHOOT, D, 548, 551, 1
+SHOOT, D, 553, 556, 8
+SHOOT, D, 554, 557, 3
+SHOOT, D, 559, 562, 10
+SHOOT, D, 560, 563, 5
+SHOOT, D, 565, 568, 12
+SHOOT, D, 566, 569, 7
+SHOOT, D, 570, 573, 0
+SHOOT, D, 571, 574, 14
+SHOOT, D, 572, 575, 9
+SHOOT, D, 576, 579, 2
+SHOOT, D, 577, 580, 16
+SHOOT, D, 578, 581, 11
+SHOOT, D, 582, 585, 6
+SHOOT, D, 583, 586, 18
+SHOOT, D, 584, 587, 13
+SHOOT, A, 532, 529, 0
+SHOOT, A, 538, 535, 2
+SHOOT, A, 544, 541, 4
+SHOOT, A, 545, 542, 0
+SHOOT, A, 550, 547, 6
+SHOOT, A, 551, 548, 1
+SHOOT, A, 556, 553, 8
+SHOOT, A, 557, 554, 3
+SHOOT, A, 562, 559, 10
+SHOOT, A, 563, 560, 5
+SHOOT, A, 568, 565, 12
+SHOOT, A, 569, 566, 7
+SHOOT, A, 573, 570, 0
+SHOOT, A, 574, 571, 14
+SHOOT, A, 575, 572, 9
+SHOOT, A, 579, 576, 2
+SHOOT, A, 580, 577, 16
+SHOOT, A, 581, 578, 11
+SHOOT, A, 585, 582, 6
+SHOOT, A, 586, 583, 18
+SHOOT, A, 587, 584, 13
+DEAD, A, 529
+DEAD, A, 542
+DEAD, A, 570
+DEAD, D, 532
+DEAD, D, 545
+DEAD, D, 573
+SPAWN, A, 588, 1, 0, 42
+SPAWN, A, 589, 2, 0, 43
+SPAWN, A, 590, 3, 0, 44
+SPAWN, D, 591, 1, 0, 42
+SPAWN, D, 592, 2, 0, 43
+SPAWN, D, 593, 3, 0, 44
+TURN, 99
+PRINT, TURN 99 LOGS:To be spawned at Position(0,45)
+PRINT, To be spawned at Position(0,46)
+PRINT, To be spawned at Position(0,47)
+PRINT, Type 1 at Position (0,45)
+PRINT, Type 2 at Position (0,46)
+PRINT, Type 3 at Position (0,47)
+PRINT, 
+SHOOT, D, 535, 538, 0
+SHOOT, D, 541, 544, 2
+SHOOT, D, 547, 550, 4
+SHOOT, D, 548, 551, 0
+SHOOT, D, 553, 556, 6
+SHOOT, D, 554, 557, 1
+SHOOT, D, 559, 562, 8
+SHOOT, D, 560, 563, 3
+SHOOT, D, 565, 568, 10
+SHOOT, D, 566, 569, 5
+SHOOT, D, 571, 574, 12
+SHOOT, D, 572, 575, 7
+SHOOT, D, 576, 579, 0
+SHOOT, D, 577, 580, 14
+SHOOT, D, 578, 581, 9
+SHOOT, D, 582, 585, 2
+SHOOT, D, 583, 586, 16
+SHOOT, D, 584, 587, 11
+SHOOT, D, 588, 591, 6
+SHOOT, D, 589, 592, 18
+SHOOT, D, 590, 593, 13
+SHOOT, A, 538, 535, 0
+SHOOT, A, 544, 541, 2
+SHOOT, A, 550, 547, 4
+SHOOT, A, 551, 548, 0
+SHOOT, A, 556, 553, 6
+SHOOT, A, 557, 554, 1
+SHOOT, A, 562, 559, 8
+SHOOT, A, 563, 560, 3
+SHOOT, A, 568, 565, 10
+SHOOT, A, 569, 566, 5
+SHOOT, A, 574, 571, 12
+SHOOT, A, 575, 572, 7
+SHOOT, A, 579, 576, 0
+SHOOT, A, 580, 577, 14
+SHOOT, A, 581, 578, 9
+SHOOT, A, 585, 582, 2
+SHOOT, A, 586, 583, 16
+SHOOT, A, 587, 584, 11
+SHOOT, A, 591, 588, 6
+SHOOT, A, 592, 589, 18
+SHOOT, A, 593, 590, 13
+DEAD, A, 535
+DEAD, A, 548
+DEAD, A, 576
+DEAD, D, 538
+DEAD, D, 551
+DEAD, D, 579
+SPAWN, A, 594, 1, 0, 45
+SPAWN, A, 595, 2, 0, 46
+SPAWN, A, 596, 3, 0, 47
+SPAWN, D, 597, 1, 0, 45
+SPAWN, D, 598, 2, 0, 46
+SPAWN, D, 599, 3, 0, 47
+TURN, 100
+PRINT, TURN 100 LOGS:To be spawned at Position(0,48)
+PRINT, To be spawned at Position(0,49)
+PRINT, To be spawned at Position(0,50)
+PRINT, Type 1 at Position (0,48)
+PRINT, Type 2 at Position (0,49)
+PRINT, Type 3 at Position (0,50)
+PRINT, 
+SHOOT, D, 541, 544, 0
+SHOOT, D, 547, 550, 2
+SHOOT, D, 553, 556, 4
+SHOOT, D, 554, 557, 0
+SHOOT, D, 559, 562, 6
+SHOOT, D, 560, 563, 1
+SHOOT, D, 565, 568, 8
+SHOOT, D, 566, 569, 3
+SHOOT, D, 571, 574, 10
+SHOOT, D, 572, 575, 5
+SHOOT, D, 577, 580, 12
+SHOOT, D, 578, 581, 7
+SHOOT, D, 582, 585, 0
+SHOOT, D, 583, 586, 14
+SHOOT, D, 584, 587, 9
+SHOOT, D, 588, 591, 2
+SHOOT, D, 589, 592, 16
+SHOOT, D, 590, 593, 11
+SHOOT, D, 594, 597, 6
+SHOOT, D, 595, 598, 18
+SHOOT, D, 596, 599, 13
+SHOOT, A, 544, 541, 0
+SHOOT, A, 550, 547, 2
+SHOOT, A, 556, 553, 4
+SHOOT, A, 557, 554, 0
+SHOOT, A, 562, 559, 6
+SHOOT, A, 563, 560, 1
+SHOOT, A, 568, 565, 8
+SHOOT, A, 569, 566, 3
+SHOOT, A, 574, 571, 10
+SHOOT, A, 575, 572, 5
+SHOOT, A, 580, 577, 12
+SHOOT, A, 581, 578, 7
+SHOOT, A, 585, 582, 0
+SHOOT, A, 586, 583, 14
+SHOOT, A, 587, 584, 9
+SHOOT, A, 591, 588, 2
+SHOOT, A, 592, 589, 16
+SHOOT, A, 593, 590, 11
+SHOOT, A, 597, 594, 6
+SHOOT, A, 598, 595, 18
+SHOOT, A, 599, 596, 13
+DEAD, A, 541
+DEAD, A, 554
+DEAD, A, 582
+DEAD, D, 544
+DEAD, D, 557
+DEAD, D, 585
+SPAWN, A, 600, 1, 0, 48
+SPAWN, A, 601, 2, 0, 49
+SPAWN, A, 602, 3, 0, 50
+SPAWN, D, 603, 1, 0, 48
+SPAWN, D, 604, 2, 0, 49
+SPAWN, D, 605, 3, 0, 50
+TURN, 101
+PRINT, TURN 101 LOGS:To be spawned at Position(0,51)
+PRINT, To be spawned at Position(0,52)
+PRINT, To be spawned at Position(0,53)
+PRINT, Type 1 at Position (0,51)
+PRINT, Type 2 at Position (0,52)
+PRINT, Type 3 at Position (0,53)
+PRINT, 
+SHOOT, D, 547, 550, 0
+SHOOT, D, 553, 556, 2
+SHOOT, D, 559, 562, 4
+SHOOT, D, 560, 563, 0
+SHOOT, D, 565, 568, 6
+SHOOT, D, 566, 569, 1
+SHOOT, D, 571, 574, 8
+SHOOT, D, 572, 575, 3
+SHOOT, D, 577, 580, 10
+SHOOT, D, 578, 581, 5
+SHOOT, D, 583, 586, 12
+SHOOT, D, 584, 587, 7
+SHOOT, D, 588, 591, 0
+SHOOT, D, 589, 592, 14
+SHOOT, D, 590, 593, 9
+SHOOT, D, 594, 597, 2
+SHOOT, D, 595, 598, 16
+SHOOT, D, 596, 599, 11
+SHOOT, D, 600, 603, 6
+SHOOT, D, 601, 604, 18
+SHOOT, D, 602, 605, 13
+SHOOT, A, 550, 547, 0
+SHOOT, A, 556, 553, 2
+SHOOT, A, 562, 559, 4
+SHOOT, A, 563, 560, 0
+SHOOT, A, 568, 565, 6
+SHOOT, A, 569, 566, 1
+SHOOT, A, 574, 571, 8
+SHOOT, A, 575, 572, 3
+SHOOT, A, 580, 577, 10
+SHOOT, A, 581, 578, 5
+SHOOT, A, 586, 583, 12
+SHOOT, A, 587, 584, 7
+SHOOT, A, 591, 588, 0
+SHOOT, A, 592, 589, 14
+SHOOT, A, 593, 590, 9
+SHOOT, A, 597, 594, 2
+SHOOT, A, 598, 595, 16
+SHOOT, A, 599, 596, 11
+SHOOT, A, 603, 600, 6
+SHOOT, A, 604, 601, 18
+SHOOT, A, 605, 602, 13
+DEAD, A, 547
+DEAD, A, 560
+DEAD, A, 588
+DEAD, D, 550
+DEAD, D, 563
+DEAD, D, 591
+SPAWN, A, 606, 1, 0, 51
+SPAWN, A, 607, 2, 0, 52
+SPAWN, A, 608, 3, 0, 53
+SPAWN, D, 609, 1, 0, 51
+SPAWN, D, 610, 2, 0, 52
+SPAWN, D, 611, 3, 0, 53
+TURN, 102
+PRINT, TURN 102 LOGS:To be spawned at Position(0,54)
+PRINT, To be spawned at Position(0,55)
+PRINT, To be spawned at Position(0,56)
+PRINT, Type 1 at Position (0,54)
+PRINT, Type 2 at Position (0,55)
+PRINT, Type 3 at Position (0,56)
+PRINT, 
+SHOOT, D, 553, 556, 0
+SHOOT, D, 559, 562, 2
+SHOOT, D, 565, 568, 4
+SHOOT, D, 566, 569, 0
+SHOOT, D, 571, 574, 6
+SHOOT, D, 572, 575, 1
+SHOOT, D, 577, 580, 8
+SHOOT, D, 578, 581, 3
+SHOOT, D, 583, 586, 10
+SHOOT, D, 584, 587, 5
+SHOOT, D, 589, 592, 12
+SHOOT, D, 590, 593, 7
+SHOOT, D, 594, 597, 0
+SHOOT, D, 595, 598, 14
+SHOOT, D, 596, 599, 9
+SHOOT, D, 600, 603, 2
+SHOOT, D, 601, 604, 16
+SHOOT, D, 602, 605, 11
+SHOOT, D, 606, 609, 6
+SHOOT, D, 607, 610, 18
+SHOOT, D, 608, 611, 13
+SHOOT, A, 556, 553, 0
+SHOOT, A, 562, 559, 2
+SHOOT, A, 568, 565, 4
+SHOOT, A, 569, 566, 0
+SHOOT, A, 574, 571, 6
+SHOOT, A, 575, 572, 1
+SHOOT, A, 580, 577, 8
+SHOOT, A, 581, 578, 3
+SHOOT, A, 586, 583, 10
+SHOOT, A, 587, 584, 5
+SHOOT, A, 592, 589, 12
+SHOOT, A, 593, 590, 7
+SHOOT, A, 597, 594, 0
+SHOOT, A, 598, 595, 14
+SHOOT, A, 599, 596, 9
+SHOOT, A, 603, 600, 2
+SHOOT, A, 604, 601, 16
+SHOOT, A, 605, 602, 11
+SHOOT, A, 609, 606, 6
+SHOOT, A, 610, 607, 18
+SHOOT, A, 611, 608, 13
+DEAD, A, 553
+DEAD, A, 566
+DEAD, A, 594
+DEAD, D, 556
+DEAD, D, 569
+DEAD, D, 597
+SPAWN, A, 612, 1, 0, 54
+SPAWN, A, 613, 2, 0, 55
+SPAWN, A, 614, 3, 0, 56
+SPAWN, D, 615, 1, 0, 54
+SPAWN, D, 616, 2, 0, 55
+SPAWN, D, 617, 3, 0, 56
+TURN, 103
+PRINT, TURN 103 LOGS:To be spawned at Position(0,57)
+PRINT, To be spawned at Position(0,58)
+PRINT, To be spawned at Position(0,59)
+PRINT, Type 1 at Position (0,57)
+PRINT, Type 2 at Position (0,58)
+PRINT, Type 3 at Position (0,59)
+PRINT, 
+SHOOT, D, 559, 562, 0
+SHOOT, D, 565, 568, 2
+SHOOT, D, 571, 574, 4
+SHOOT, D, 572, 575, 0
+SHOOT, D, 577, 580, 6
+SHOOT, D, 578, 581, 1
+SHOOT, D, 583, 586, 8
+SHOOT, D, 584, 587, 3
+SHOOT, D, 589, 592, 10
+SHOOT, D, 590, 593, 5
+SHOOT, D, 595, 598, 12
+SHOOT, D, 596, 599, 7
+SHOOT, D, 600, 603, 0
+SHOOT, D, 601, 604, 14
+SHOOT, D, 602, 605, 9
+SHOOT, D, 606, 609, 2
+SHOOT, D, 607, 610, 16
+SHOOT, D, 608, 611, 11
+SHOOT, D, 612, 615, 6
+SHOOT, D, 613, 616, 18
+SHOOT, D, 614, 617, 13
+SHOOT, A, 562, 559, 0
+SHOOT, A, 568, 565, 2
+SHOOT, A, 574, 571, 4
+SHOOT, A, 575, 572, 0
+SHOOT, A, 580, 577, 6
+SHOOT, A, 581, 578, 1
+SHOOT, A, 586, 583, 8
+SHOOT, A, 587, 584, 3
+SHOOT, A, 592, 589, 10
+SHOOT, A, 593, 590, 5
+SHOOT, A, 598, 595, 12
+SHOOT, A, 599, 596, 7
+SHOOT, A, 603, 600, 0
+SHOOT, A, 604, 601, 14
+SHOOT, A, 605, 602, 9
+SHOOT, A, 609, 606, 2
+SHOOT, A, 610, 607, 16
+SHOOT, A, 611, 608, 11
+SHOOT, A, 615, 612, 6
+SHOOT, A, 616, 613, 18
+SHOOT, A, 617, 614, 13
+DEAD, A, 559
+DEAD, A, 572
+DEAD, A, 600
+DEAD, D, 562
+DEAD, D, 575
+DEAD, D, 603
+SPAWN, A, 618, 1, 0, 57
+SPAWN, A, 619, 2, 0, 58
+SPAWN, A, 620, 3, 0, 59
+SPAWN, D, 621, 1, 0, 57
+SPAWN, D, 622, 2, 0, 58
+SPAWN, D, 623, 3, 0, 59
+TURN, 104
+PRINT, TURN 104 LOGS:To be spawned at Position(0,60)
+PRINT, To be spawned at Position(0,61)
+PRINT, To be spawned at Position(0,62)
+PRINT, Type 1 at Position (0,60)
+PRINT, Type 2 at Position (0,61)
+PRINT, Type 3 at Position (0,62)
+PRINT, 
+SHOOT, D, 565, 568, 0
+SHOOT, D, 571, 574, 2
+SHOOT, D, 577, 580, 4
+SHOOT, D, 578, 581, 0
+SHOOT, D, 583, 586, 6
+SHOOT, D, 584, 587, 1
+SHOOT, D, 589, 592, 8
+SHOOT, D, 590, 593, 3
+SHOOT, D, 595, 598, 10
+SHOOT, D, 596, 599, 5
+SHOOT, D, 601, 604, 12
+SHOOT, D, 602, 605, 7
+SHOOT, D, 606, 609, 0
+SHOOT, D, 607, 610, 14
+SHOOT, D, 608, 611, 9
+SHOOT, D, 612, 615, 2
+SHOOT, D, 613, 616, 16
+SHOOT, D, 614, 617, 11
+SHOOT, D, 618, 621, 6
+SHOOT, D, 619, 622, 18
+SHOOT, D, 620, 623, 13
+SHOOT, A, 568, 565, 0
+SHOOT, A, 574, 571, 2
+SHOOT, A, 580, 577, 4
+SHOOT, A, 581, 578, 0
+SHOOT, A, 586, 583, 6
+SHOOT, A, 587, 584, 1
+SHOOT, A, 592, 589, 8
+SHOOT, A, 593, 590, 3
+SHOOT, A, 598, 595, 10
+SHOOT, A, 599, 596, 5
+SHOOT, A, 604, 601, 12
+SHOOT, A, 605, 602, 7
+SHOOT, A, 609, 606, 0
+SHOOT, A, 610, 607, 14
+SHOOT, A, 611, 608, 9
+SHOOT, A, 615, 612, 2
+SHOOT, A, 616, 613, 16
+SHOOT, A, 617, 614, 11
+SHOOT, A, 621, 618, 6
+SHOOT, A, 622, 619, 18
+SHOOT, A, 623, 620, 13
+DEAD, A, 565
+DEAD, A, 578
+DEAD, A, 606
+DEAD, D, 568
+DEAD, D, 581
+DEAD, D, 609
+SPAWN, A, 624, 1, 0, 60
+SPAWN, A, 625, 2, 0, 61
+SPAWN, A, 626, 3, 0, 62
+SPAWN, D, 627, 1, 0, 60
+SPAWN, D, 628, 2, 0, 61
+SPAWN, D, 629, 3, 0, 62
+TURN, 105
+PRINT, TURN 105 LOGS:To be spawned at Position(0,63)
+PRINT, To be spawned at Position(1,0)
+PRINT, To be spawned at Position(1,63)
+PRINT, Type 1 at Position (0,63)
+PRINT, Type 2 at Position (1,0)
+PRINT, Type 3 at Position (1,63)
+PRINT, 
+SHOOT, D, 571, 574, 0
+SHOOT, D, 577, 580, 2
+SHOOT, D, 583, 586, 4
+SHOOT, D, 584, 587, 0
+SHOOT, D, 589, 592, 6
+SHOOT, D, 590, 593, 1
+SHOOT, D, 595, 598, 8
+SHOOT, D, 596, 599, 3
+SHOOT, D, 601, 604, 10
+SHOOT, D, 602, 605, 5
+SHOOT, D, 607, 610, 12
+SHOOT, D, 608, 611, 7
+SHOOT, D, 612, 615, 0
+SHOOT, D, 613, 616, 14
+SHOOT, D, 614, 617, 9
+SHOOT, D, 618, 621, 2
+SHOOT, D, 619, 622, 16
+SHOOT, D, 620, 623, 11
+SHOOT, D, 624, 627, 6
+SHOOT, D, 625, 628, 18
+SHOOT, D, 626, 629, 13
+SHOOT, A, 574, 571, 0
+SHOOT, A, 580, 577, 2
+SHOOT, A, 586, 583, 4
+SHOOT, A, 587, 584, 0
+SHOOT, A, 592, 589, 6
+SHOOT, A, 593, 590, 1
+SHOOT, A, 598, 595, 8
+SHOOT, A, 599, 596, 3
+SHOOT, A, 604, 601, 10
+SHOOT, A, 605, 602, 5
+SHOOT, A, 610, 607, 12
+SHOOT, A, 611, 608, 7
+SHOOT, A, 615, 612, 0
+SHOOT, A, 616, 613, 14
+SHOOT, A, 617, 614, 9
+SHOOT, A, 621, 618, 2
+SHOOT, A, 622, 619, 16
+SHOOT, A, 623, 620, 11
+SHOOT, A, 627, 624, 6
+SHOOT, A, 628, 625, 18
+SHOOT, A, 629, 626, 13
+DEAD, A, 571
+DEAD, A, 584
+DEAD, A, 612
+DEAD, D, 574
+DEAD, D, 587
+DEAD, D, 615
+SPAWN, A, 630, 1, 0, 63
+SPAWN, A, 631, 2, 1, 0
+SPAWN, A, 632, 3, 1, 63
+SPAWN, D, 633, 1, 0, 63
+SPAWN, D, 634, 2, 1, 0
+SPAWN, D, 635, 3, 1, 63
+TURN, 106
+PRINT, TURN 106 LOGS:To be spawned at Position(2,0)
+PRINT, To be spawned at Position(2,63)
+PRINT, To be spawned at Position(3,0)
+PRINT, Type 1 at Position (2,0)
+PRINT, Type 2 at Position (2,63)
+PRINT, Type 3 at Position (3,0)
+PRINT, 
+SHOOT, D, 577, 580, 0
+SHOOT, D, 583, 586, 2
+SHOOT, D, 589, 592, 4
+SHOOT, D, 590, 593, 0
+SHOOT, D, 595, 598, 6
+SHOOT, D, 596, 599, 1
+SHOOT, D, 601, 604, 8
+SHOOT, D, 602, 605, 3
+SHOOT, D, 607, 610, 10
+SHOOT, D, 608, 611, 5
+SHOOT, D, 613, 616, 12
+SHOOT, D, 614, 617, 7
+SHOOT, D, 618, 621, 0
+SHOOT, D, 619, 622, 14
+SHOOT, D, 620, 623, 9
+SHOOT, D, 624, 627, 2
+SHOOT, D, 625, 628, 16
+SHOOT, D, 626, 629, 11
+SHOOT, D, 630, 633, 6
+SHOOT, D, 631, 634, 18
+SHOOT, D, 632, 635, 13
+SHOOT, A, 580, 577, 0
+SHOOT, A, 586, 583, 2
+SHOOT, A, 592, 589, 4
+SHOOT, A, 593, 590, 0
+SHOOT, A, 598, 595, 6
+SHOOT, A, 599, 596, 1
+SHOOT, A, 604, 601, 8
+SHOOT, A, 605, 602, 3
+SHOOT, A, 610, 607, 10
+SHOOT, A, 611, 608, 5
+SHOOT, A, 616, 613, 12
+SHOOT, A, 617, 614, 7
+SHOOT, A, 621, 618, 0
+SHOOT, A, 622, 619, 14
+SHOOT, A, 623, 620, 9
+SHOOT, A, 627, 624, 2
+SHOOT, A, 628, 625, 16
+SHOOT, A, 629, 626, 11
+SHOOT, A, 633, 630, 6
+SHOOT, A, 634, 631, 18
+SHOOT, A, 635, 632, 13
+DEAD, A, 577
+DEAD, A, 590
+DEAD, A, 618
+DEAD, D, 580
+DEAD, D, 593
+DEAD, D, 621
+SPAWN, A, 636, 1, 2, 0
+SPAWN, A, 637, 2, 2, 63
+SPAWN, A, 638, 3, 3, 0
+SPAWN, D, 639, 1, 2, 0
+SPAWN, D, 640, 2, 2, 63
+SPAWN, D, 641, 3, 3, 0
+TURN, 107
+PRINT, TURN 107 LOGS:To be spawned at Position(3,63)
+PRINT, To be spawned at Position(4,0)
+PRINT, To be spawned at Position(4,63)
+PRINT, Type 1 at Position (3,63)
+PRINT, Type 2 at Position (4,0)
+PRINT, Type 3 at Position (4,63)
+PRINT, 
+SHOOT, D, 583, 586, 0
+SHOOT, D, 589, 592, 2
+SHOOT, D, 595, 598, 4
+SHOOT, D, 596, 599, 0
+SHOOT, D, 601, 604, 6
+SHOOT, D, 602, 605, 1
+SHOOT, D, 607, 610, 8
+SHOOT, D, 608, 611, 3
+SHOOT, D, 613, 616, 10
+SHOOT, D, 614, 617, 5
+SHOOT, D, 619, 622, 12
+SHOOT, D, 620, 623, 7
+SHOOT, D, 624, 627, 0
+SHOOT, D, 625, 628, 14
+SHOOT, D, 626, 629, 9
+SHOOT, D, 630, 633, 2
+SHOOT, D, 631, 634, 16
+SHOOT, D, 632, 635, 11
+SHOOT, D, 636, 639, 6
+SHOOT, D, 637, 640, 18
+SHOOT, D, 638, 641, 13
+SHOOT, A, 586, 583, 0
+SHOOT, A, 592, 589, 2
+SHOOT, A, 598, 595, 4
+SHOOT, A, 599, 596, 0
+SHOOT, A, 604, 601, 6
+SHOOT, A, 605, 602, 1
+SHOOT, A, 610, 607, 8
+SHOOT, A, 611, 608, 3
+SHOOT, A, 616, 613, 10
+SHOOT, A, 617, 614, 5
+SHOOT, A, 622, 619, 12
+SHOOT, A, 623, 620, 7
+SHOOT, A, 627, 624, 0
+SHOOT, A, 628, 625, 14
+SHOOT, A, 629, 626, 9
+SHOOT, A, 633, 630, 2
+SHOOT, A, 634, 631, 16
+SHOOT, A, 635, 632, 11
+SHOOT, A, 639, 636, 6
+SHOOT, A, 640, 637, 18
+SHOOT, A, 641, 638, 13
+DEAD, A, 583
+DEAD, A, 596
+DEAD, A, 624
+DEAD, D, 586
+DEAD, D, 599
+DEAD, D, 627
+SPAWN, A, 642, 1, 3, 63
+SPAWN, A, 643, 2, 4, 0
+SPAWN, A, 644, 3, 4, 63
+SPAWN, D, 645, 1, 3, 63
+SPAWN, D, 646, 2, 4, 0
+SPAWN, D, 647, 3, 4, 63
+TURN, 108
+PRINT, TURN 108 LOGS:To be spawned at Position(5,0)
+PRINT, To be spawned at Position(5,63)
+PRINT, To be spawned at Position(6,0)
+PRINT, Type 1 at Position (5,0)
+PRINT, Type 2 at Position (5,63)
+PRINT, Type 3 at Position (6,0)
+PRINT, 
+SHOOT, D, 589, 592, 0
+SHOOT, D, 595, 598, 2
+SHOOT, D, 601, 604, 4
+SHOOT, D, 602, 605, 0
+SHOOT, D, 607, 610, 6
+SHOOT, D, 608, 611, 1
+SHOOT, D, 613, 616, 8
+SHOOT, D, 614, 617, 3
+SHOOT, D, 619, 622, 10
+SHOOT, D, 620, 623, 5
+SHOOT, D, 625, 628, 12
+SHOOT, D, 626, 629, 7
+SHOOT, D, 630, 633, 0
+SHOOT, D, 631, 634, 14
+SHOOT, D, 632, 635, 9
+SHOOT, D, 636, 639, 2
+SHOOT, D, 637, 640, 16
+SHOOT, D, 638, 641, 11
+SHOOT, D, 642, 645, 6
+SHOOT, D, 643, 646, 18
+SHOOT, D, 644, 647, 13
+SHOOT, A, 592, 589, 0
+SHOOT, A, 598, 595, 2
+SHOOT, A, 604, 601, 4
+SHOOT, A, 605, 602, 0
+SHOOT, A, 610, 607, 6
+SHOOT, A, 611, 608, 1
+SHOOT, A, 616, 613, 8
+SHOOT, A, 617, 614, 3
+SHOOT, A, 622, 619, 10
+SHOOT, A, 623, 620, 5
+SHOOT, A, 628, 625, 12
+SHOOT, A, 629, 626, 7
+SHOOT, A, 633, 630, 0
+SHOOT, A, 634, 631, 14
+SHOOT, A, 635, 632, 9
+SHOOT, A, 639, 636, 2
+SHOOT, A, 640, 637, 16
+SHOOT, A, 641, 638, 11
+SHOOT, A, 645, 642, 6
+SHOOT, A, 646, 643, 18
+SHOOT, A, 647, 644, 13
+DEAD, A, 589
+DEAD, A, 602
+DEAD, A, 630
+DEAD, D, 592
+DEAD, D, 605
+DEAD, D, 633
+SPAWN, A, 648, 1, 5, 0
+SPAWN, A, 649, 2, 5, 63
+SPAWN, A, 650, 3, 6, 0
+SPAWN, D, 651, 1, 5, 0
+SPAWN, D, 652, 2, 5, 63
+SPAWN, D, 653, 3, 6, 0
+TURN, 109
+PRINT, TURN 109 LOGS:To be spawned at Position(6,63)
+PRINT, To be spawned at Position(7,0)
+PRINT, To be spawned at Position(7,63)
+PRINT, Type 1 at Position (6,63)
+PRINT, Type 2 at Position (7,0)
+PRINT, Type 3 at Position (7,63)
+PRINT, 
+SHOOT, D, 595, 598, 0
+SHOOT, D, 601, 604, 2
+SHOOT, D, 607, 610, 4
+SHOOT, D, 608, 611, 0
+SHOOT, D, 613, 616, 6
+SHOOT, D, 614, 617, 1
+SHOOT, D, 619, 622, 8
+SHOOT, D, 620, 623, 3
+SHOOT, D, 625, 628, 10
+SHOOT, D, 626, 629, 5
+SHOOT, D, 631, 634, 12
+SHOOT, D, 632, 635, 7
+SHOOT, D, 636, 639, 0
+SHOOT, D, 637, 640, 14
+SHOOT, D, 638, 641, 9
+SHOOT, D, 642, 645, 2
+SHOOT, D, 643, 646, 16
+SHOOT, D, 644, 647, 11
+SHOOT, D, 648, 651, 6
+SHOOT, D, 649, 652, 18
+SHOOT, D, 650, 653, 13
+SHOOT, A, 598, 595, 0
+SHOOT, A, 604, 601, 2
+SHOOT, A, 610, 607, 4
+SHOOT, A, 611, 608, 0
+SHOOT, A, 616, 613, 6
+SHOOT, A, 617, 614, 1
+SHOOT, A, 622, 619, 8
+SHOOT, A, 623, 620, 3
+SHOOT, A, 628, 625, 10
+SHOOT, A, 629, 626, 5
+SHOOT, A, 634, 631, 12
+SHOOT, A, 635, 632, 7
+SHOOT, A, 639, 636, 0
+SHOOT, A, 640, 637, 14
+SHOOT, A, 641, 638, 9
+SHOOT, A, 645, 642, 2
+SHOOT, A, 646, 643, 16
+SHOOT, A, 647, 644, 11
+SHOOT, A, 651, 648, 6
+SHOOT, A, 652, 649, 18
+SHOOT, A, 653, 650, 13
+DEAD, A, 595
+DEAD, A, 608
+DEAD, A, 636
+DEAD, D, 598
+DEAD, D, 611
+DEAD, D, 639
+SPAWN, A, 654, 1, 6, 63
+SPAWN, A, 655, 2, 7, 0
+SPAWN, A, 656, 3, 7, 63
+SPAWN, D, 657, 1, 6, 63
+SPAWN, D, 658, 2, 7, 0
+SPAWN, D, 659, 3, 7, 63
+TURN, 110
+PRINT, TURN 110 LOGS:To be spawned at Position(8,0)
+PRINT, To be spawned at Position(8,63)
+PRINT, To be spawned at Position(9,0)
+PRINT, Type 1 at Position (8,0)
+PRINT, Type 2 at Position (8,63)
+PRINT, Type 3 at Position (9,0)
+PRINT, 
+SHOOT, D, 601, 604, 0
+SHOOT, D, 607, 610, 2
+SHOOT, D, 613, 616, 4
+SHOOT, D, 614, 617, 0
+SHOOT, D, 619, 622, 6
+SHOOT, D, 620, 623, 1
+SHOOT, D, 625, 628, 8
+SHOOT, D, 626, 629, 3
+SHOOT, D, 631, 634, 10
+SHOOT, D, 632, 635, 5
+SHOOT, D, 637, 640, 12
+SHOOT, D, 638, 641, 7
+SHOOT, D, 642, 645, 0
+SHOOT, D, 643, 646, 14
+SHOOT, D, 644, 647, 9
+SHOOT, D, 648, 651, 2
+SHOOT, D, 649, 652, 16
+SHOOT, D, 650, 653, 11
+SHOOT, D, 654, 657, 6
+SHOOT, D, 655, 658, 18
+SHOOT, D, 656, 659, 13
+SHOOT, A, 604, 601, 0
+SHOOT, A, 610, 607, 2
+SHOOT, A, 616, 613, 4
+SHOOT, A, 617, 614, 0
+SHOOT, A, 622, 619, 6
+SHOOT, A, 623, 620, 1
+SHOOT, A, 628, 625, 8
+SHOOT, A, 629, 626, 3
+SHOOT, A, 634, 631, 10
+SHOOT, A, 635, 632, 5
+SHOOT, A, 640, 637, 12
+SHOOT, A, 641, 638, 7
+SHOOT, A, 645, 642, 0
+SHOOT, A, 646, 643, 14
+SHOOT, A, 647, 644, 9
+SHOOT, A, 651, 648, 2
+SHOOT, A, 652, 649, 16
+SHOOT, A, 653, 650, 11
+SHOOT, A, 657, 654, 6
+SHOOT, A, 658, 655, 18
+SHOOT, A, 659, 656, 13
+DEAD, A, 601
+DEAD, A, 614
+DEAD, A, 642
+DEAD, D, 604
+DEAD, D, 617
+DEAD, D, 645
+SPAWN, A, 660, 1, 8, 0
+SPAWN, A, 661, 2, 8, 63
+SPAWN, A, 662, 3, 9, 0
+SPAWN, D, 663, 1, 8, 0
+SPAWN, D, 664, 2, 8, 63
+SPAWN, D, 665, 3, 9, 0
+TURN, 111
+PRINT, TURN 111 LOGS:To be spawned at Position(9,63)
+PRINT, To be spawned at Position(10,0)
+PRINT, To be spawned at Position(10,63)
+PRINT, Type 1 at Position (9,63)
+PRINT, Type 2 at Position (10,0)
+PRINT, Type 3 at Position (10,63)
+PRINT, 
+SHOOT, D, 607, 610, 0
+SHOOT, D, 613, 616, 2
+SHOOT, D, 619, 622, 4
+SHOOT, D, 620, 623, 0
+SHOOT, D, 625, 628, 6
+SHOOT, D, 626, 629, 1
+SHOOT, D, 631, 634, 8
+SHOOT, D, 632, 635, 3
+SHOOT, D, 637, 640, 10
+SHOOT, D, 638, 641, 5
+SHOOT, D, 643, 646, 12
+SHOOT, D, 644, 647, 7
+SHOOT, D, 648, 651, 0
+SHOOT, D, 649, 652, 14
+SHOOT, D, 650, 653, 9
+SHOOT, D, 654, 657, 2
+SHOOT, D, 655, 658, 16
+SHOOT, D, 656, 659, 11
+SHOOT, D, 660, 663, 6
+SHOOT, D, 661, 664, 18
+SHOOT, D, 662, 665, 13
+SHOOT, A, 610, 607, 0
+SHOOT, A, 616, 613, 2
+SHOOT, A, 622, 619, 4
+SHOOT, A, 623, 620, 0
+SHOOT, A, 628, 625, 6
+SHOOT, A, 629, 626, 1
+SHOOT, A, 634, 631, 8
+SHOOT, A, 635, 632, 3
+SHOOT, A, 640, 637, 10
+SHOOT, A, 641, 638, 5
+SHOOT, A, 646, 643, 12
+SHOOT, A, 647, 644, 7
+SHOOT, A, 651, 648, 0
+SHOOT, A, 652, 649, 14
+SHOOT, A, 653, 650, 9
+SHOOT, A, 657, 654, 2
+SHOOT, A, 658, 655, 16
+SHOOT, A, 659, 656, 11
+SHOOT, A, 663, 660, 6
+SHOOT, A, 664, 661, 18
+SHOOT, A, 665, 662, 13
+DEAD, A, 607
+DEAD, A, 620
+DEAD, A, 648
+DEAD, D, 610
+DEAD, D, 623
+DEAD, D, 651
+SPAWN, A, 666, 1, 9, 63
+SPAWN, A, 667, 2, 10, 0
+SPAWN, A, 668, 3, 10, 63
+SPAWN, D, 669, 1, 9, 63
+SPAWN, D, 670, 2, 10, 0
+SPAWN, D, 671, 3, 10, 63
+TURN, 112
+PRINT, TURN 112 LOGS:To be spawned at Position(11,0)
+PRINT, To be spawned at Position(11,63)
+PRINT, To be spawned at Position(12,0)
+PRINT, Type 1 at Position (11,0)
+PRINT, Type 2 at Position (11,63)
+PRINT, Type 3 at Position (12,0)
+PRINT, 
+SHOOT, D, 613, 616, 0
+SHOOT, D, 619, 622, 2
+SHOOT, D, 625, 628, 4
+SHOOT, D, 626, 629, 0
+SHOOT, D, 631, 634, 6
+SHOOT, D, 632, 635, 1
+SHOOT, D, 637, 640, 8
+SHOOT, D, 638, 641, 3
+SHOOT, D, 643, 646, 10
+SHOOT, D, 644, 647, 5
+SHOOT, D, 649, 652, 12
+SHOOT, D, 650, 653, 7
+SHOOT, D, 654, 657, 0
+SHOOT, D, 655, 658, 14
+SHOOT, D, 656, 659, 9
+SHOOT, D, 660, 663, 2
+SHOOT, D, 661, 664, 16
+SHOOT, D, 662, 665, 11
+SHOOT, D, 666, 669, 6
+SHOOT, D, 667, 670, 18
+SHOOT, D, 668, 671, 13
+SHOOT, A, 616, 613, 0
+SHOOT, A, 622, 619, 2
+SHOOT, A, 628, 625, 4
+SHOOT, A, 629, 626, 0
+SHOOT, A, 634, 631, 6
+SHOOT, A, 635, 632, 1
+SHOOT, A, 640, 637, 8
+SHOOT, A, 641, 638, 3
+SHOOT, A, 646, 643, 10
+SHOOT, A, 647, 644, 5
+SHOOT, A, 652, 649, 12
+SHOOT, A, 653, 650, 7
+SHOOT, A, 657, 654, 0
+SHOOT, A, 658, 655, 14
+SHOOT, A, 659, 656, 9
+SHOOT, A, 663, 660, 2
+SHOOT, A, 664, 661, 16
+SHOOT, A, 665, 662, 11
+SHOOT, A, 669, 666, 6
+SHOOT, A, 670, 667, 18
+SHOOT, A, 671, 668, 13
+DEAD, A, 613
+DEAD, A, 626
+DEAD, A, 654
+DEAD, D, 616
+DEAD, D, 629
+DEAD, D, 657
+SPAWN, A, 672, 1, 11, 0
+SPAWN, A, 673, 2, 11, 63
+SPAWN, A, 674, 3, 12, 0
+SPAWN, D, 675, 1, 11, 0
+SPAWN, D, 676, 2, 11, 63
+SPAWN, D, 677, 3, 12, 0
+TURN, 113
+PRINT, TURN 113 LOGS:To be spawned at Position(12,63)
+PRINT, To be spawned at Position(13,0)
+PRINT, To be spawned at Position(13,63)
+PRINT, Type 1 at Position (12,63)
+PRINT, Type 2 at Position (13,0)
+PRINT, Type 3 at Position (13,63)
+PRINT, 
+SHOOT, D, 619, 622, 0
+SHOOT, D, 625, 628, 2
+SHOOT, D, 631, 634, 4
+SHOOT, D, 632, 635, 0
+SHOOT, D, 637, 640, 6
+SHOOT, D, 638, 641, 1
+SHOOT, D, 643, 646, 8
+SHOOT, D, 644, 647, 3
+SHOOT, D, 649, 652, 10
+SHOOT, D, 650, 653, 5
+SHOOT, D, 655, 658, 12
+SHOOT, D, 656, 659, 7
+SHOOT, D, 660, 663, 0
+SHOOT, D, 661, 664, 14
+SHOOT, D, 662, 665, 9
+SHOOT, D, 666, 669, 2
+SHOOT, D, 667, 670, 16
+SHOOT, D, 668, 671, 11
+SHOOT, D, 672, 675, 6
+SHOOT, D, 673, 676, 18
+SHOOT, D, 674, 677, 13
+SHOOT, A, 622, 619, 0
+SHOOT, A, 628, 625, 2
+SHOOT, A, 634, 631, 4
+SHOOT, A, 635, 632, 0
+SHOOT, A, 640, 637, 6
+SHOOT, A, 641, 638, 1
+SHOOT, A, 646, 643, 8
+SHOOT, A, 647, 644, 3
+SHOOT, A, 652, 649, 10
+SHOOT, A, 653, 650, 5
+SHOOT, A, 658, 655, 12
+SHOOT, A, 659, 656, 7
+SHOOT, A, 663, 660, 0
+SHOOT, A, 664, 661, 14
+SHOOT, A, 665, 662, 9
+SHOOT, A, 669, 666, 2
+SHOOT, A, 670, 667, 16
+SHOOT, A, 671, 668, 11
+SHOOT, A, 675, 672, 6
+SHOOT, A, 676, 673, 18
+SHOOT, A, 677, 674, 13
+DEAD, A, 619
+DEAD, A, 632
+DEAD, A, 660
+DEAD, D, 622
+DEAD, D, 635
+DEAD, D, 663
+SPAWN, A, 678, 1, 12, 63
+SPAWN, A, 679, 2, 13, 0
+SPAWN, A, 680, 3, 13, 63
+SPAWN, D, 681, 1, 12, 63
+SPAWN, D, 682, 2, 13, 0
+SPAWN, D, 683, 3, 13, 63
+TURN, 114
+PRINT, TURN 114 LOGS:To be spawned at Position(14,0)
+PRINT, To be spawned at Position(14,63)
+PRINT, To be spawned at Position(15,0)
+PRINT, Type 1 at Position (14,0)
+PRINT, Type 2 at Position (14,63)
+PRINT, Type 3 at Position (15,0)
+PRINT, 
+SHOOT, D, 625, 628, 0
+SHOOT, D, 631, 634, 2
+SHOOT, D, 637, 640, 4
+SHOOT, D, 638, 641, 0
+SHOOT, D, 643, 646, 6
+SHOOT, D, 644, 647, 1
+SHOOT, D, 649, 652, 8
+SHOOT, D, 650, 653, 3
+SHOOT, D, 655, 658, 10
+SHOOT, D, 656, 659, 5
+SHOOT, D, 661, 664, 12
+SHOOT, D, 662, 665, 7
+SHOOT, D, 666, 669, 0
+SHOOT, D, 667, 670, 14
+SHOOT, D, 668, 671, 9
+SHOOT, D, 672, 675, 2
+SHOOT, D, 673, 676, 16
+SHOOT, D, 674, 677, 11
+SHOOT, D, 678, 681, 6
+SHOOT, D, 679, 682, 18
+SHOOT, D, 680, 683, 13
+SHOOT, A, 628, 625, 0
+SHOOT, A, 634, 631, 2
+SHOOT, A, 640, 637, 4
+SHOOT, A, 641, 638, 0
+SHOOT, A, 646, 643, 6
+SHOOT, A, 647, 644, 1
+SHOOT, A, 652, 649, 8
+SHOOT, A, 653, 650, 3
+SHOOT, A, 658, 655, 10
+SHOOT, A, 659, 656, 5
+SHOOT, A, 664, 661, 12
+SHOOT, A, 665, 662, 7
+SHOOT, A, 669, 666, 0
+SHOOT, A, 670, 667, 14
+SHOOT, A, 671, 668, 9
+SHOOT, A, 675, 672, 2
+SHOOT, A, 676, 673, 16
+SHOOT, A, 677, 674, 11
+SHOOT, A, 681, 678, 6
+SHOOT, A, 682, 679, 18
+SHOOT, A, 683, 680, 13
+DEAD, A, 625
+DEAD, A, 638
+DEAD, A, 666
+DEAD, D, 628
+DEAD, D, 641
+DEAD, D, 669
+SPAWN, A, 684, 1, 14, 0
+SPAWN, A, 685, 2, 14, 63
+SPAWN, A, 686, 3, 15, 0
+SPAWN, D, 687, 1, 14, 0
+SPAWN, D, 688, 2, 14, 63
+SPAWN, D, 689, 3, 15, 0
+TURN, 115
+PRINT, TURN 115 LOGS:To be spawned at Position(15,63)
+PRINT, To be spawned at Position(16,0)
+PRINT, To be spawned at Position(16,63)
+PRINT, Type 1 at Position (15,63)
+PRINT, Type 2 at Position (16,0)
+PRINT, Type 3 at Position (16,63)
+PRINT, 
+SHOOT, D, 631, 634, 0
+SHOOT, D, 637, 640, 2
+SHOOT, D, 643, 646, 4
+SHOOT, D, 644, 647, 0
+SHOOT, D, 649, 652, 6
+SHOOT, D, 650, 653, 1
+SHOOT, D, 655, 658, 8
+SHOOT, D, 656, 659, 3
+SHOOT, D, 661, 664, 10
+SHOOT, D, 662, 665, 5
+SHOOT, D, 667, 670, 12
+SHOOT, D, 668, 671, 7
+SHOOT, D, 672, 675, 0
+SHOOT, D, 673, 676, 14
+SHOOT, D, 674, 677, 9
+SHOOT, D, 678, 681, 2
+SHOOT, D, 679, 682, 16
+SHOOT, D, 680, 683, 11
+SHOOT, D, 684, 687, 6
+SHOOT, D, 685, 688, 18
+SHOOT, D, 686, 689, 13
+SHOOT, A, 634, 631, 0
+SHOOT, A, 640, 637, 2
+SHOOT, A, 646, 643, 4
+SHOOT, A, 647, 644, 0
+SHOOT, A, 652, 649, 6
+SHOOT, A, 653, 650, 1
+SHOOT, A, 658, 655, 8
+SHOOT, A, 659, 656, 3
+SHOOT, A, 664, 661, 10
+SHOOT, A, 665, 662, 5
+SHOOT, A, 670, 667, 12
+SHOOT, A, 671, 668, 7
+SHOOT, A, 675, 672, 0
+SHOOT, A, 676, 673, 14
+SHOOT, A, 677, 674, 9
+SHOOT, A, 681, 678, 2
+SHOOT, A, 682, 679, 16
+SHOOT, A, 683, 680, 11
+SHOOT, A, 687, 684, 6
+SHOOT, A, 688, 685, 18
+SHOOT, A, 689, 686, 13
+DEAD, A, 631
+DEAD, A, 644
+DEAD, A, 672
+DEAD, D, 634
+DEAD, D, 647
+DEAD, D, 675
+SPAWN, A, 690, 1, 15, 63
+SPAWN, A, 691, 2, 16, 0
+SPAWN, A, 692, 3, 16, 63
+SPAWN, D, 693, 1, 15, 63
+SPAWN, D, 694, 2, 16, 0
+SPAWN, D, 695, 3, 16, 63
+TURN, 116
+PRINT, TURN 116 LOGS:To be spawned at Position(17,0)
+PRINT, To be spawned at Position(17,63)
+PRINT, To be spawned at Position(18,0)
+PRINT, Type 1 at Position (17,0)
+PRINT, Type 2 at Position (17,63)
+PRINT, Type 3 at Position (18,0)
+PRINT, 
+SHOOT, D, 637, 640, 0
+SHOOT, D, 643, 646, 2
+SHOOT, D, 649, 652, 4
+SHOOT, D, 650, 653, 0
+SHOOT, D, 655, 658, 6
+SHOOT, D, 656, 659, 1
+SHOOT, D, 661, 664, 8
+SHOOT, D, 662, 665, 3
+SHOOT, D, 667, 670, 10
+SHOOT, D, 668, 671, 5
+SHOOT, D, 673, 676, 12
+SHOOT, D, 674, 677, 7
+SHOOT, D, 678, 681, 0
+SHOOT, D, 679, 682, 14
+SHOOT, D, 680, 683, 9
+SHOOT, D, 684, 687, 2
+SHOOT, D, 685, 688, 16
+SHOOT, D, 686, 689, 11
+SHOOT, D, 690, 693, 6
+SHOOT, D, 691, 694, 18
+SHOOT, D, 692, 695, 13
+SHOOT, A, 640, 637, 0
+SHOOT, A, 646, 643, 2
+SHOOT, A, 652, 649, 4
+SHOOT, A, 653, 650, 0
+SHOOT, A, 658, 655, 6
+SHOOT, A, 659, 656, 1
+SHOOT, A, 664, 661, 8
+SHOOT, A, 665, 662, 3
+SHOOT, A, 670, 667, 10
+SHOOT, A, 671, 668, 5
+SHOOT, A, 676, 673, 12
+SHOOT, A, 677, 674, 7
+SHOOT, A, 681, 678, 0
+SHOOT, A, 682, 679, 14
+SHOOT, A, 683, 680, 9
+SHOOT, A, 687, 684, 2
+SHOOT, A, 688, 685, 16
+SHOOT, A, 689, 686, 11
+SHOOT, A, 693, 690, 6
+SHOOT, A, 694, 691, 18
+SHOOT, A, 695, 692, 13
+DEAD, A, 637
+DEAD, A, 650
+DEAD, A, 678
+DEAD, D, 640
+DEAD, D, 653
+DEAD, D, 681
+SPAWN, A, 696, 1, 17, 0
+SPAWN, A, 697, 2, 17, 63
+SPAWN, A, 698, 3, 18, 0
+SPAWN, D, 699, 1, 17, 0
+SPAWN, D, 700, 2, 17, 63
+SPAWN, D, 701, 3, 18, 0
+TURN, 117
+PRINT, TURN 117 LOGS:To be spawned at Position(18,63)
+PRINT, To be spawned at Position(19,0)
+PRINT, To be spawned at Position(19,63)
+PRINT, Type 1 at Position (18,63)
+PRINT, Type 2 at Position (19,0)
+PRINT, Type 3 at Position (19,63)
+PRINT, 
+SHOOT, D, 643, 646, 0
+SHOOT, D, 649, 652, 2
+SHOOT, D, 655, 658, 4
+SHOOT, D, 656, 659, 0
+SHOOT, D, 661, 664, 6
+SHOOT, D, 662, 665, 1
+SHOOT, D, 667, 670, 8
+SHOOT, D, 668, 671, 3
+SHOOT, D, 673, 676, 10
+SHOOT, D, 674, 677, 5
+SHOOT, D, 679, 682, 12
+SHOOT, D, 680, 683, 7
+SHOOT, D, 684, 687, 0
+SHOOT, D, 685, 688, 14
+SHOOT, D, 686, 689, 9
+SHOOT, D, 690, 693, 2
+SHOOT, D, 691, 694, 16
+SHOOT, D, 692, 695, 11
+SHOOT, D, 696, 699, 6
+SHOOT, D, 697, 700, 18
+SHOOT, D, 698, 701, 13
+SHOOT, A, 646, 643, 0
+SHOOT, A, 652, 649, 2
+SHOOT, A, 658, 655, 4
+SHOOT, A, 659, 656, 0
+SHOOT, A, 664, 661, 6
+SHOOT, A, 665, 662, 1
+SHOOT, A, 670, 667, 8
+SHOOT, A, 671, 668, 3
+SHOOT, A, 676, 673, 10
+SHOOT, A, 677, 674, 5
+SHOOT, A, 682, 679, 12
+SHOOT, A, 683, 680, 7
+SHOOT, A, 687, 684, 0
+SHOOT, A, 688, 685, 14
+SHOOT, A, 689, 686, 9
+SHOOT, A, 693, 690, 2
+SHOOT, A, 694, 691, 16
+SHOOT, A, 695, 692, 11
+SHOOT, A, 699, 696, 6
+SHOOT, A, 700, 697, 18
+SHOOT, A, 701, 698, 13
+DEAD, A, 643
+DEAD, A, 656
+DEAD, A, 684
+DEAD, D, 646
+DEAD, D, 659
+DEAD, D, 687
+SPAWN, A, 702, 1, 18, 63
+SPAWN, A, 703, 2, 19, 0
+SPAWN, A, 704, 3, 19, 63
+SPAWN, D, 705, 1, 18, 63
+SPAWN, D, 706, 2, 19, 0
+SPAWN, D, 707, 3, 19, 63
+TURN, 118
+PRINT, TURN 118 LOGS:To be spawned at Position(20,0)
+PRINT, To be spawned at Position(20,63)
+PRINT, To be spawned at Position(21,0)
+PRINT, Type 1 at Position (20,0)
+PRINT, Type 2 at Position (20,63)
+PRINT, Type 3 at Position (21,0)
+PRINT, 
+SHOOT, D, 649, 652, 0
+SHOOT, D, 655, 658, 2
+SHOOT, D, 661, 664, 4
+SHOOT, D, 662, 665, 0
+SHOOT, D, 667, 670, 6
+SHOOT, D, 668, 671, 1
+SHOOT, D, 673, 676, 8
+SHOOT, D, 674, 677, 3
+SHOOT, D, 679, 682, 10
+SHOOT, D, 680, 683, 5
+SHOOT, D, 685, 688, 12
+SHOOT, D, 686, 689, 7
+SHOOT, D, 690, 693, 0
+SHOOT, D, 691, 694, 14
+SHOOT, D, 692, 695, 9
+SHOOT, D, 696, 699, 2
+SHOOT, D, 697, 700, 16
+SHOOT, D, 698, 701, 11
+SHOOT, D, 702, 705, 6
+SHOOT, D, 703, 706, 18
+SHOOT, D, 704, 707, 13
+SHOOT, A, 652, 649, 0
+SHOOT, A, 658, 655, 2
+SHOOT, A, 664, 661, 4
+SHOOT, A, 665, 662, 0
+SHOOT, A, 670, 667, 6
+SHOOT, A, 671, 668, 1
+SHOOT, A, 676, 673, 8
+SHOOT, A, 677, 674, 3
+SHOOT, A, 682, 679, 10
+SHOOT, A, 683, 680, 5
+SHOOT, A, 688, 685, 12
+SHOOT, A, 689, 686, 7
+SHOOT, A, 693, 690, 0
+SHOOT, A, 694, 691, 14
+SHOOT, A, 695, 692, 9
+SHOOT, A, 699, 696, 2
+SHOOT, A, 700, 697, 16
+SHOOT, A, 701, 698, 11
+SHOOT, A, 705, 702, 6
+SHOOT, A, 706, 703, 18
+SHOOT, A, 707, 704, 13
+DEAD, A, 649
+DEAD, A, 662
+DEAD, A, 690
+DEAD, D, 652
+DEAD, D, 665
+DEAD, D, 693
+SPAWN, A, 708, 1, 20, 0
+SPAWN, A, 709, 2, 20, 63
+SPAWN, A, 710, 3, 21, 0
+SPAWN, D, 711, 1, 20, 0
+SPAWN, D, 712, 2, 20, 63
+SPAWN, D, 713, 3, 21, 0
+TURN, 119
+PRINT, TURN 119 LOGS:To be spawned at Position(21,63)
+PRINT, To be spawned at Position(22,0)
+PRINT, To be spawned at Position(22,63)
+PRINT, Type 1 at Position (21,63)
+PRINT, Type 2 at Position (22,0)
+PRINT, Type 3 at Position (22,63)
+PRINT, 
+SHOOT, D, 655, 658, 0
+SHOOT, D, 661, 664, 2
+SHOOT, D, 667, 670, 4
+SHOOT, D, 668, 671, 0
+SHOOT, D, 673, 676, 6
+SHOOT, D, 674, 677, 1
+SHOOT, D, 679, 682, 8
+SHOOT, D, 680, 683, 3
+SHOOT, D, 685, 688, 10
+SHOOT, D, 686, 689, 5
+SHOOT, D, 691, 694, 12
+SHOOT, D, 692, 695, 7
+SHOOT, D, 696, 699, 0
+SHOOT, D, 697, 700, 14
+SHOOT, D, 698, 701, 9
+SHOOT, D, 702, 705, 2
+SHOOT, D, 703, 706, 16
+SHOOT, D, 704, 707, 11
+SHOOT, D, 708, 711, 6
+SHOOT, D, 709, 712, 18
+SHOOT, D, 710, 713, 13
+SHOOT, A, 658, 655, 0
+SHOOT, A, 664, 661, 2
+SHOOT, A, 670, 667, 4
+SHOOT, A, 671, 668, 0
+SHOOT, A, 676, 673, 6
+SHOOT, A, 677, 674, 1
+SHOOT, A, 682, 679, 8
+SHOOT, A, 683, 680, 3
+SHOOT, A, 688, 685, 10
+SHOOT, A, 689, 686, 5
+SHOOT, A, 694, 691, 12
+SHOOT, A, 695, 692, 7
+SHOOT, A, 699, 696, 0
+SHOOT, A, 700, 697, 14
+SHOOT, A, 701, 698, 9
+SHOOT, A, 705, 702, 2
+SHOOT, A, 706, 703, 16
+SHOOT, A, 707, 704, 11
+SHOOT, A, 711, 708, 6
+SHOOT, A, 712, 709, 18
+SHOOT, A, 713, 710, 13
+DEAD, A, 655
+DEAD, A, 668
+DEAD, A, 696
+DEAD, D, 658
+DEAD, D, 671
+DEAD, D, 699
+SPAWN, A, 714, 1, 21, 63
+SPAWN, A, 715, 2, 22, 0
+SPAWN, A, 716, 3, 22, 63
+SPAWN, D, 717, 1, 21, 63
+SPAWN, D, 718, 2, 22, 0
+SPAWN, D, 719, 3, 22, 63
+TURN, 120
+PRINT, TURN 120 LOGS:To be spawned at Position(23,0)
+PRINT, To be spawned at Position(23,63)
+PRINT, To be spawned at Position(24,0)
+PRINT, Type 1 at Position (23,0)
+PRINT, Type 2 at Position (23,63)
+PRINT, Type 3 at Position (24,0)
+PRINT, 
+SHOOT, D, 661, 664, 0
+SHOOT, D, 667, 670, 2
+SHOOT, D, 673, 676, 4
+SHOOT, D, 674, 677, 0
+SHOOT, D, 679, 682, 6
+SHOOT, D, 680, 683, 1
+SHOOT, D, 685, 688, 8
+SHOOT, D, 686, 689, 3
+SHOOT, D, 691, 694, 10
+SHOOT, D, 692, 695, 5
+SHOOT, D, 697, 700, 12
+SHOOT, D, 698, 701, 7
+SHOOT, D, 702, 705, 0
+SHOOT, D, 703, 706, 14
+SHOOT, D, 704, 707, 9
+SHOOT, D, 708, 711, 2
+SHOOT, D, 709, 712, 16
+SHOOT, D, 710, 713, 11
+SHOOT, D, 714, 717, 6
+SHOOT, D, 715, 718, 18
+SHOOT, D, 716, 719, 13
+SHOOT, A, 664, 661, 0
+SHOOT, A, 670, 667, 2
+SHOOT, A, 676, 673, 4
+SHOOT, A, 677, 674, 0
+SHOOT, A, 682, 679, 6
+SHOOT, A, 683, 680, 1
+SHOOT, A, 688, 685, 8
+SHOOT, A, 689, 686, 3
+SHOOT, A, 694, 691, 10
+SHOOT, A, 695, 692, 5
+SHOOT, A, 700, 697, 12
+SHOOT, A, 701, 698, 7
+SHOOT, A, 705, 702, 0
+SHOOT, A, 706, 703, 14
+SHOOT, A, 707, 704, 9
+SHOOT, A, 711, 708, 2
+SHOOT, A, 712, 709, 16
+SHOOT, A, 713, 710, 11
+SHOOT, A, 717, 714, 6
+SHOOT, A, 718, 715, 18
+SHOOT, A, 719, 716, 13
+DEAD, A, 661
+DEAD, A, 674
+DEAD, A, 702
+DEAD, D, 664
+DEAD, D, 677
+DEAD, D, 705
+SPAWN, A, 720, 1, 23, 0
+SPAWN, A, 721, 2, 23, 63
+SPAWN, A, 722, 3, 24, 0
+SPAWN, D, 723, 1, 23, 0
+SPAWN, D, 724, 2, 23, 63
+SPAWN, D, 725, 3, 24, 0
+TURN, 121
+PRINT, TURN 121 LOGS:To be spawned at Position(24,63)
+PRINT, To be spawned at Position(25,0)
+PRINT, To be spawned at Position(25,63)
+PRINT, Type 1 at Position (24,63)
+PRINT, Type 2 at Position (25,0)
+PRINT, Type 3 at Position (25,63)
+PRINT, 
+SHOOT, D, 667, 670, 0
+SHOOT, D, 673, 676, 2
+SHOOT, D, 679, 682, 4
+SHOOT, D, 680, 683, 0
+SHOOT, D, 685, 688, 6
+SHOOT, D, 686, 689, 1
+SHOOT, D, 691, 694, 8
+SHOOT, D, 692, 695, 3
+SHOOT, D, 697, 700, 10
+SHOOT, D, 698, 701, 5
+SHOOT, D, 703, 706, 12
+SHOOT, D, 704, 707, 7
+SHOOT, D, 708, 711, 0
+SHOOT, D, 709, 712, 14
+SHOOT, D, 710, 713, 9
+SHOOT, D, 714, 717, 2
+SHOOT, D, 715, 718, 16
+SHOOT, D, 716, 719, 11
+SHOOT, D, 720, 723, 6
+SHOOT, D, 721, 724, 18
+SHOOT, D, 722, 725, 13
+SHOOT, A, 670, 667, 0
+SHOOT, A, 676, 673, 2
+SHOOT, A, 682, 679, 4
+SHOOT, A, 683, 680, 0
+SHOOT, A, 688, 685, 6
+SHOOT, A, 689, 686, 1
+SHOOT, A, 694, 691, 8
+SHOOT, A, 695, 692, 3
+SHOOT, A, 700, 697, 10
+SHOOT, A, 701, 698, 5
+SHOOT, A, 706, 703, 12
+SHOOT, A, 707, 704, 7
+SHOOT, A, 711, 708, 0
+SHOOT, A, 712, 709, 14
+SHOOT, A, 713, 710, 9
+SHOOT, A, 717, 714, 2
+SHOOT, A, 718, 715, 16
+SHOOT, A, 719, 716, 11
+SHOOT, A, 723, 720, 6
+SHOOT, A, 724, 721, 18
+SHOOT, A, 725, 722, 13
+DEAD, A, 667
+DEAD, A, 680
+DEAD, A, 708
+DEAD, D, 670
+DEAD, D, 683
+DEAD, D, 711
+SPAWN, A, 726, 1, 24, 63
+SPAWN, A, 727, 2, 25, 0
+SPAWN, A, 728, 3, 25, 63
+SPAWN, D, 729, 1, 24, 63
+SPAWN, D, 730, 2, 25, 0
+SPAWN, D, 731, 3, 25, 63
+TURN, 122
+PRINT, TURN 122 LOGS:To be spawned at Position(26,0)
+PRINT, To be spawned at Position(26,63)
+PRINT, To be spawned at Position(27,0)
+PRINT, Type 1 at Position (26,0)
+PRINT, Type 2 at Position (26,63)
+PRINT, Type 3 at Position (27,0)
+PRINT, 
+SHOOT, D, 673, 676, 0
+SHOOT, D, 679, 682, 2
+SHOOT, D, 685, 688, 4
+SHOOT, D, 686, 689, 0
+SHOOT, D, 691, 694, 6
+SHOOT, D, 692, 695, 1
+SHOOT, D, 697, 700, 8
+SHOOT, D, 698, 701, 3
+SHOOT, D, 703, 706, 10
+SHOOT, D, 704, 707, 5
+SHOOT, D, 709, 712, 12
+SHOOT, D, 710, 713, 7
+SHOOT, D, 714, 717, 0
+SHOOT, D, 715, 718, 14
+SHOOT, D, 716, 719, 9
+SHOOT, D, 720, 723, 2
+SHOOT, D, 721, 724, 16
+SHOOT, D, 722, 725, 11
+SHOOT, D, 726, 729, 6
+SHOOT, D, 727, 730, 18
+SHOOT, D, 728, 731, 13
+SHOOT, A, 676, 673, 0
+SHOOT, A, 682, 679, 2
+SHOOT, A, 688, 685, 4
+SHOOT, A, 689, 686, 0
+SHOOT, A, 694, 691, 6
+SHOOT, A, 695, 692, 1
+SHOOT, A, 700, 697, 8
+SHOOT, A, 701, 698, 3
+SHOOT, A, 706, 703, 10
+SHOOT, A, 707, 704, 5
+SHOOT, A, 712, 709, 12
+SHOOT, A, 713, 710, 7
+SHOOT, A, 717, 714, 0
+SHOOT, A, 718, 715, 14
+SHOOT, A, 719, 716, 9
+SHOOT, A, 723, 720, 2
+SHOOT, A, 724, 721, 16
+SHOOT, A, 725, 722, 11
+SHOOT, A, 729, 726, 6
+SHOOT, A, 730, 727, 18
+SHOOT, A, 731, 728, 13
+DEAD, A, 673
+DEAD, A, 686
+DEAD, A, 714
+DEAD, D, 676
+DEAD, D, 689
+DEAD, D, 717
+SPAWN, A, 732, 1, 26, 0
+SPAWN, A, 733, 2, 26, 63
+SPAWN, A, 734, 3, 27, 0
+SPAWN, D, 735, 1, 26, 0
+SPAWN, D, 736, 2, 26, 63
+SPAWN, D, 737, 3, 27, 0
+TURN, 123
+PRINT, TURN 123 LOGS:To be spawned at Position(27,63)
+PRINT, To be spawned at Position(28,0)
+PRINT, To be spawned at Position(28,63)
+PRINT, Type 1 at Position (27,63)
+PRINT, Type 2 at Position (28,0)
+PRINT, Type 3 at Position (28,63)
+PRINT, 
+SHOOT, D, 679, 682, 0
+SHOOT, D, 685, 688, 2
+SHOOT, D, 691, 694, 4
+SHOOT, D, 692, 695, 0
+SHOOT, D, 697, 700, 6
+SHOOT, D, 698, 701, 1
+SHOOT, D, 703, 706, 8
+SHOOT, D, 704, 707, 3
+SHOOT, D, 709, 712, 10
+SHOOT, D, 710, 713, 5
+SHOOT, D, 715, 718, 12
+SHOOT, D, 716, 719, 7
+SHOOT, D, 720, 723, 0
+SHOOT, D, 721, 724, 14
+SHOOT, D, 722, 725, 9
+SHOOT, D, 726, 729, 2
+SHOOT, D, 727, 730, 16
+SHOOT, D, 728, 731, 11
+SHOOT, D, 732, 735, 6
+SHOOT, D, 733, 736, 18
+SHOOT, D, 734, 737, 13
+SHOOT, A, 682, 679, 0
+SHOOT, A, 688, 685, 2
+SHOOT, A, 694, 691, 4
+SHOOT, A, 695, 692, 0
+SHOOT, A, 700, 697, 6
+SHOOT, A, 701, 698, 1
+SHOOT, A, 706, 703, 8
+SHOOT, A, 707, 704, 3
+SHOOT, A, 712, 709, 10
+SHOOT, A, 713, 710, 5
+SHOOT, A, 718, 715, 12
+SHOOT, A, 719, 716, 7
+SHOOT, A, 723, 720, 0
+SHOOT, A, 724, 721, 14
+SHOOT, A, 725, 722, 9
+SHOOT, A, 729, 726, 2
+SHOOT, A, 730, 727, 16
+SHOOT, A, 731, 728, 11
+SHOOT, A, 735, 732, 6
+SHOOT, A, 736, 733, 18
+SHOOT, A, 737, 734, 13
+DEAD, A, 679
+DEAD, A, 692
+DEAD, A, 720
+DEAD, D, 682
+DEAD, D, 695
+DEAD, D, 723
+SPAWN, A, 738, 1, 27, 63
+SPAWN, A, 739, 2, 28, 0
+SPAWN, A, 740, 3, 28, 63
+SPAWN, D, 741, 1, 27, 63
+SPAWN, D, 742, 2, 28, 0
+SPAWN, D, 743, 3, 28, 63
+TURN, 124
+PRINT, TURN 124 LOGS:To be spawned at Position(29,0)
+PRINT, To be spawned at Position(29,63)
+PRINT, To be spawned at Position(30,0)
+PRINT, Type 1 at Position (29,0)
+PRINT, Type 2 at Position (29,63)
+PRINT, Type 3 at Position (30,0)
+PRINT, 
+SHOOT, D, 685, 688, 0
+SHOOT, D, 691, 694, 2
+SHOOT, D, 697, 700, 4
+SHOOT, D, 698, 701, 0
+SHOOT, D, 703, 706, 6
+SHOOT, D, 704, 707, 1
+SHOOT, D, 709, 712, 8
+SHOOT, D, 710, 713, 3
+SHOOT, D, 715, 718, 10
+SHOOT, D, 716, 719, 5
+SHOOT, D, 721, 724, 12
+SHOOT, D, 722, 725, 7
+SHOOT, D, 726, 729, 0
+SHOOT, D, 727, 730, 14
+SHOOT, D, 728, 731, 9
+SHOOT, D, 732, 735, 2
+SHOOT, D, 733, 736, 16
+SHOOT, D, 734, 737, 11
+SHOOT, D, 738, 741, 6
+SHOOT, D, 739, 742, 18
+SHOOT, D, 740, 743, 13
+SHOOT, A, 688, 685, 0
+SHOOT, A, 694, 691, 2
+SHOOT, A, 700, 697, 4
+SHOOT, A, 701, 698, 0
+SHOOT, A, 706, 703, 6
+SHOOT, A, 707, 704, 1
+SHOOT, A, 712, 709, 8
+SHOOT, A, 713, 710, 3
+SHOOT, A, 718, 715, 10
+SHOOT, A, 719, 716, 5
+SHOOT, A, 724, 721, 12
+SHOOT, A, 725, 722, 7
+SHOOT, A, 729, 726, 0
+SHOOT, A, 730, 727, 14
+SHOOT, A, 731, 728, 9
+SHOOT, A, 735, 732, 2
+SHOOT, A, 736, 733, 16
+SHOOT, A, 737, 734, 11
+SHOOT, A, 741, 738, 6
+SHOOT, A, 742, 739, 18
+SHOOT, A, 743, 740, 13
+DEAD, A, 685
+DEAD, A, 698
+DEAD, A, 726
+DEAD, D, 688
+DEAD, D, 701
+DEAD, D, 729
+SPAWN, A, 744, 1, 29, 0
+SPAWN, A, 745, 2, 29, 63
+SPAWN, A, 746, 3, 30, 0
+SPAWN, D, 747, 1, 29, 0
+SPAWN, D, 748, 2, 29, 63
+SPAWN, D, 749, 3, 30, 0
+TURN, 125
+PRINT, TURN 125 LOGS:To be spawned at Position(30,63)
+PRINT, To be spawned at Position(31,0)
+PRINT, To be spawned at Position(31,63)
+PRINT, Type 1 at Position (30,63)
+PRINT, Type 2 at Position (31,0)
+PRINT, Type 3 at Position (31,63)
+PRINT, 
+SHOOT, D, 691, 694, 0
+SHOOT, D, 697, 700, 2
+SHOOT, D, 703, 706, 4
+SHOOT, D, 704, 707, 0
+SHOOT, D, 709, 712, 6
+SHOOT, D, 710, 713, 1
+SHOOT, D, 715, 718, 8
+SHOOT, D, 716, 719, 3
+SHOOT, D, 721, 724, 10
+SHOOT, D, 722, 725, 5
+SHOOT, D, 727, 730, 12
+SHOOT, D, 728, 731, 7
+SHOOT, D, 732, 735, 0
+SHOOT, D, 733, 736, 14
+SHOOT, D, 734, 737, 9
+SHOOT, D, 738, 741, 2
+SHOOT, D, 739, 742, 16
+SHOOT, D, 740, 743, 11
+SHOOT, D, 744, 747, 6
+SHOOT, D, 745, 748, 18
+SHOOT, D, 746, 749, 13
+SHOOT, A, 694, 691, 0
+SHOOT, A, 700, 697, 2
+SHOOT, A, 706, 703, 4
+SHOOT, A, 707, 704, 0
+SHOOT, A, 712, 709, 6
+SHOOT, A, 713, 710, 1
+SHOOT, A, 718, 715, 8
+SHOOT, A, 719, 716, 3
+SHOOT, A, 724, 721, 10
+SHOOT, A, 725, 722, 5
+SHOOT, A, 730, 727, 12
+SHOOT, A, 731, 728, 7
+SHOOT, A, 735, 732, 0
+SHOOT, A, 736, 733, 14
+SHOOT, A, 737, 734, 9
+SHOOT, A, 741, 738, 2
+SHOOT, A, 742, 739, 16
+SHOOT, A, 743, 740, 11
+SHOOT, A, 747, 744, 6
+SHOOT, A, 748, 745, 18
+SHOOT, A, 749, 746, 13
+DEAD, A, 691
+DEAD, A, 704
+DEAD, A, 732
+DEAD, D, 694
+DEAD, D, 707
+DEAD, D, 735
+SPAWN, A, 750, 1, 30, 63
+SPAWN, A, 751, 2, 31, 0
+SPAWN, A, 752, 3, 31, 63
+SPAWN, D, 753, 1, 30, 63
+SPAWN, D, 754, 2, 31, 0
+SPAWN, D, 755, 3, 31, 63
+TURN, 126
+PRINT, TURN 126 LOGS:To be spawned at Position(32,0)
+PRINT, To be spawned at Position(32,63)
+PRINT, To be spawned at Position(33,0)
+PRINT, Type 1 at Position (32,0)
+PRINT, Type 2 at Position (32,63)
+PRINT, Type 3 at Position (33,0)
+PRINT, 
+SHOOT, D, 697, 700, 0
+SHOOT, D, 703, 706, 2
+SHOOT, D, 709, 712, 4
+SHOOT, D, 710, 713, 0
+SHOOT, D, 715, 718, 6
+SHOOT, D, 716, 719, 1
+SHOOT, D, 721, 724, 8
+SHOOT, D, 722, 725, 3
+SHOOT, D, 727, 730, 10
+SHOOT, D, 728, 731, 5
+SHOOT, D, 733, 736, 12
+SHOOT, D, 734, 737, 7
+SHOOT, D, 738, 741, 0
+SHOOT, D, 739, 742, 14
+SHOOT, D, 740, 743, 9
+SHOOT, D, 744, 747, 2
+SHOOT, D, 745, 748, 16
+SHOOT, D, 746, 749, 11
+SHOOT, D, 750, 753, 6
+SHOOT, D, 751, 754, 18
+SHOOT, D, 752, 755, 13
+SHOOT, A, 700, 697, 0
+SHOOT, A, 706, 703, 2
+SHOOT, A, 712, 709, 4
+SHOOT, A, 713, 710, 0
+SHOOT, A, 718, 715, 6
+SHOOT, A, 719, 716, 1
+SHOOT, A, 724, 721, 8
+SHOOT, A, 725, 722, 3
+SHOOT, A, 730, 727, 10
+SHOOT, A, 731, 728, 5
+SHOOT, A, 736, 733, 12
+SHOOT, A, 737, 734, 7
+SHOOT, A, 741, 738, 0
+SHOOT, A, 742, 739, 14
+SHOOT, A, 743, 740, 9
+SHOOT, A, 747, 744, 2
+SHOOT, A, 748, 745, 16
+SHOOT, A, 749, 746, 11
+SHOOT, A, 753, 750, 6
+SHOOT, A, 754, 751, 18
+SHOOT, A, 755, 752, 13
+DEAD, A, 697
+DEAD, A, 710
+DEAD, A, 738
+DEAD, D, 700
+DEAD, D, 713
+DEAD, D, 741
+SPAWN, A, 756, 1, 32, 0
+SPAWN, A, 757, 2, 32, 63
+SPAWN, A, 758, 3, 33, 0
+SPAWN, D, 759, 1, 32, 0
+SPAWN, D, 760, 2, 32, 63
+SPAWN, D, 761, 3, 33, 0
+TURN, 127
+PRINT, TURN 127 LOGS:To be spawned at Position(33,63)
+PRINT, To be spawned at Position(34,0)
+PRINT, To be spawned at Position(34,63)
+PRINT, Type 1 at Position (33,63)
+PRINT, Type 2 at Position (34,0)
+PRINT, Type 3 at Position (34,63)
+PRINT, 
+SHOOT, D, 703, 706, 0
+SHOOT, D, 709, 712, 2
+SHOOT, D, 715, 718, 4
+SHOOT, D, 716, 719, 0
+SHOOT, D, 721, 724, 6
+SHOOT, D, 722, 725, 1
+SHOOT, D, 727, 730, 8
+SHOOT, D, 728, 731, 3
+SHOOT, D, 733, 736, 10
+SHOOT, D, 734, 737, 5
+SHOOT, D, 739, 742, 12
+SHOOT, D, 740, 743, 7
+SHOOT, D, 744, 747, 0
+SHOOT, D, 745, 748, 14
+SHOOT, D, 746, 749, 9
+SHOOT, D, 750, 753, 2
+SHOOT, D, 751, 754, 16
+SHOOT, D, 752, 755, 11
+SHOOT, D, 756, 759, 6
+SHOOT, D, 757, 760, 18
+SHOOT, D, 758, 761, 13
+SHOOT, A, 706, 703, 0
+SHOOT, A, 712, 709, 2
+SHOOT, A, 718, 715, 4
+SHOOT, A, 719, 716, 0
+SHOOT, A, 724, 721, 6
+SHOOT, A, 725, 722, 1
+SHOOT, A, 730, 727, 8
+SHOOT, A, 731, 728, 3
+SHOOT, A, 736, 733, 10
+SHOOT, A, 737, 734, 5
+SHOOT, A, 742, 739, 12
+SHOOT, A, 743, 740, 7
+SHOOT, A, 747, 744, 0
+SHOOT, A, 748, 745, 14
+SHOOT, A, 749, 746, 9
+SHOOT, A, 753, 750, 2
+SHOOT, A, 754, 751, 16
+SHOOT, A, 755, 752, 11
+SHOOT, A, 759, 756, 6
+SHOOT, A, 760, 757, 18
+SHOOT, A, 761, 758, 13
+DEAD, A, 703
+DEAD, A, 716
+DEAD, A, 744
+DEAD, D, 706
+DEAD, D, 719
+DEAD, D, 747
+SPAWN, A, 762, 1, 33, 63
+SPAWN, A, 763, 2, 34, 0
+SPAWN, A, 764, 3, 34, 63
+SPAWN, D, 765, 1, 33, 63
+SPAWN, D, 766, 2, 34, 0
+SPAWN, D, 767, 3, 34, 63
+TURN, 128
+PRINT, TURN 128 LOGS:To be spawned at Position(35,0)
+PRINT, To be spawned at Position(35,63)
+PRINT, To be spawned at Position(36,0)
+PRINT, Type 1 at Position (35,0)
+PRINT, Type 2 at Position (35,63)
+PRINT, Type 3 at Position (36,0)
+PRINT, 
+SHOOT, D, 709, 712, 0
+SHOOT, D, 715, 718, 2
+SHOOT, D, 721, 724, 4
+SHOOT, D, 722, 725, 0
+SHOOT, D, 727, 730, 6
+SHOOT, D, 728, 731, 1
+SHOOT, D, 733, 736, 8
+SHOOT, D, 734, 737, 3
+SHOOT, D, 739, 742, 10
+SHOOT, D, 740, 743, 5
+SHOOT, D, 745, 748, 12
+SHOOT, D, 746, 749, 7
+SHOOT, D, 750, 753, 0
+SHOOT, D, 751, 754, 14
+SHOOT, D, 752, 755, 9
+SHOOT, D, 756, 759, 2
+SHOOT, D, 757, 760, 16
+SHOOT, D, 758, 761, 11
+SHOOT, D, 762, 765, 6
+SHOOT, D, 763, 766, 18
+SHOOT, D, 764, 767, 13
+SHOOT, A, 712, 709, 0
+SHOOT, A, 718, 715, 2
+SHOOT, A, 724, 721, 4
+SHOOT, A, 725, 722, 0
+SHOOT, A, 730, 727, 6
+SHOOT, A, 731, 728, 1
+SHOOT, A, 736, 733, 8
+SHOOT, A, 737, 734, 3
+SHOOT, A, 742, 739, 10
+SHOOT, A, 743, 740, 5
+SHOOT, A, 748, 745, 12
+SHOOT, A, 749, 746, 7
+SHOOT, A, 753, 750, 0
+SHOOT, A, 754, 751, 14
+SHOOT, A, 755, 752, 9
+SHOOT, A, 759, 756, 2
+SHOOT, A, 760, 757, 16
+SHOOT, A, 761, 758, 11
+SHOOT, A, 765, 762, 6
+SHOOT, A, 766, 763, 18
+SHOOT, A, 767, 764, 13
+DEAD, A, 709
+DEAD, A, 722
+DEAD, A, 750
+DEAD, D, 712
+DEAD, D, 725
+DEAD, D, 753
+SPAWN, A, 768, 1, 35, 0
+SPAWN, A, 769, 2, 35, 63
+SPAWN, A, 770, 3, 36, 0
+SPAWN, D, 771, 1, 35, 0
+SPAWN, D, 772, 2, 35, 63
+SPAWN, D, 773, 3, 36, 0
+TURN, 129
+PRINT, TURN 129 LOGS:To be spawned at Position(36,63)
+PRINT, To be spawned at Position(37,0)
+PRINT, To be spawned at Position(37,63)
+PRINT, Type 1 at Position (36,63)
+PRINT, Type 2 at Position (37,0)
+PRINT, Type 3 at Position (37,63)
+PRINT, 
+SHOOT, D, 715, 718, 0
+SHOOT, D, 721, 724, 2
+SHOOT, D, 727, 730, 4
+SHOOT, D, 728, 731, 0
+SHOOT, D, 733, 736, 6
+SHOOT, D, 734, 737, 1
+SHOOT, D, 739, 742, 8
+SHOOT, D, 740, 743, 3
+SHOOT, D, 745, 748, 10
+SHOOT, D, 746, 749, 5
+SHOOT, D, 751, 754, 12
+SHOOT, D, 752, 755, 7
+SHOOT, D, 756, 759, 0
+SHOOT, D, 757, 760, 14
+SHOOT, D, 758, 761, 9
+SHOOT, D, 762, 765, 2
+SHOOT, D, 763, 766, 16
+SHOOT, D, 764, 767, 11
+SHOOT, D, 768, 771, 6
+SHOOT, D, 769, 772, 18
+SHOOT, D, 770, 773, 13
+SHOOT, A, 718, 715, 0
+SHOOT, A, 724, 721, 2
+SHOOT, A, 730, 727, 4
+SHOOT, A, 731, 728, 0
+SHOOT, A, 736, 733, 6
+SHOOT, A, 737, 734, 1
+SHOOT, A, 742, 739, 8
+SHOOT, A, 743, 740, 3
+SHOOT, A, 748, 745, 10
+SHOOT, A, 749, 746, 5
+SHOOT, A, 754, 751, 12
+SHOOT, A, 755, 752, 7
+SHOOT, A, 759, 756, 0
+SHOOT, A, 760, 757, 14
+SHOOT, A, 761, 758, 9
+SHOOT, A, 765, 762, 2
+SHOOT, A, 766, 763, 16
+SHOOT, A, 767, 764, 11
+SHOOT, A, 771, 768, 6
+SHOOT, A, 772, 769, 18
+SHOOT, A, 773, 770, 13
+DEAD, A, 715
+DEAD, A, 728
+DEAD, A, 756
+DEAD, D, 718
+DEAD, D, 731
+DEAD, D, 759
+SPAWN, A, 774, 1, 36, 63
+SPAWN, A, 775, 2, 37, 0
+SPAWN, A, 776, 3, 37, 63
+SPAWN, D, 777, 1, 36, 63
+SPAWN, D, 778, 2, 37, 0
+SPAWN, D, 779, 3, 37, 63
+TURN, 130
+PRINT, TURN 130 LOGS:To be spawned at Position(38,0)
+PRINT, To be spawned at Position(38,63)
+PRINT, To be spawned at Position(39,0)
+PRINT, Type 1 at Position (38,0)
+PRINT, Type 2 at Position (38,63)
+PRINT, Type 3 at Position (39,0)
+PRINT, 
+SHOOT, D, 721, 724, 0
+SHOOT, D, 727, 730, 2
+SHOOT, D, 733, 736, 4
+SHOOT, D, 734, 737, 0
+SHOOT, D, 739, 742, 6
+SHOOT, D, 740, 743, 1
+SHOOT, D, 745, 748, 8
+SHOOT, D, 746, 749, 3
+SHOOT, D, 751, 754, 10
+SHOOT, D, 752, 755, 5
+SHOOT, D, 757, 760, 12
+SHOOT, D, 758, 761, 7
+SHOOT, D, 762, 765, 0
+SHOOT, D, 763, 766, 14
+SHOOT, D, 764, 767, 9
+SHOOT, D, 768, 771, 2
+SHOOT, D, 769, 772, 16
+SHOOT, D, 770, 773, 11
+SHOOT, D, 774, 777, 6
+SHOOT, D, 775, 778, 18
+SHOOT, D, 776, 779, 13
+SHOOT, A, 724, 721, 0
+SHOOT, A, 730, 727, 2
+SHOOT, A, 736, 733, 4
+SHOOT, A, 737, 734, 0
+SHOOT, A, 742, 739, 6
+SHOOT, A, 743, 740, 1
+SHOOT, A, 748, 745, 8
+SHOOT, A, 749, 746, 3
+SHOOT, A, 754, 751, 10
+SHOOT, A, 755, 752, 5
+SHOOT, A, 760, 757, 12
+SHOOT, A, 761, 758, 7
+SHOOT, A, 765, 762, 0
+SHOOT, A, 766, 763, 14
+SHOOT, A, 767, 764, 9
+SHOOT, A, 771, 768, 2
+SHOOT, A, 772, 769, 16
+SHOOT, A, 773, 770, 11
+SHOOT, A, 777, 774, 6
+SHOOT, A, 778, 775, 18
+SHOOT, A, 779, 776, 13
+DEAD, A, 721
+DEAD, A, 734
+DEAD, A, 762
+DEAD, D, 724
+DEAD, D, 737
+DEAD, D, 765
+SPAWN, A, 780, 1, 38, 0
+SPAWN, A, 781, 2, 38, 63
+SPAWN, A, 782, 3, 39, 0
+SPAWN, D, 783, 1, 38, 0
+SPAWN, D, 784, 2, 38, 63
+SPAWN, D, 785, 3, 39, 0
+TURN, 131
+PRINT, TURN 131 LOGS:To be spawned at Position(39,63)
+PRINT, To be spawned at Position(40,0)
+PRINT, To be spawned at Position(40,63)
+PRINT, Type 1 at Position (39,63)
+PRINT, Type 2 at Position (40,0)
+PRINT, Type 3 at Position (40,63)
+PRINT, 
+SHOOT, D, 727, 730, 0
+SHOOT, D, 733, 736, 2
+SHOOT, D, 739, 742, 4
+SHOOT, D, 740, 743, 0
+SHOOT, D, 745, 748, 6
+SHOOT, D, 746, 749, 1
+SHOOT, D, 751, 754, 8
+SHOOT, D, 752, 755, 3
+SHOOT, D, 757, 760, 10
+SHOOT, D, 758, 761, 5
+SHOOT, D, 763, 766, 12
+SHOOT, D, 764, 767, 7
+SHOOT, D, 768, 771, 0
+SHOOT, D, 769, 772, 14
+SHOOT, D, 770, 773, 9
+SHOOT, D, 774, 777, 2
+SHOOT, D, 775, 778, 16
+SHOOT, D, 776, 779, 11
+SHOOT, D, 780, 783, 6
+SHOOT, D, 781, 784, 18
+SHOOT, D, 782, 785, 13
+SHOOT, A, 730, 727, 0
+SHOOT, A, 736, 733, 2
+SHOOT, A, 742, 739, 4
+SHOOT, A, 743, 740, 0
+SHOOT, A, 748, 745, 6
+SHOOT, A, 749, 746, 1
+SHOOT, A, 754, 751, 8
+SHOOT, A, 755, 752, 3
+SHOOT, A, 760, 757, 10
+SHOOT, A, 761, 758, 5
+SHOOT, A, 766, 763, 12
+SHOOT, A, 767, 764, 7
+SHOOT, A, 771, 768, 0
+SHOOT, A, 772, 769, 14
+SHOOT, A, 773, 770, 9
+SHOOT, A, 777, 774, 2
+SHOOT, A, 778, 775, 16
+SHOOT, A, 779, 776, 11
+SHOOT, A, 783, 780, 6
+SHOOT, A, 784, 781, 18
+SHOOT, A, 785, 782, 13
+DEAD, A, 727
+DEAD, A, 740
+DEAD, A, 768
+DEAD, D, 730
+DEAD, D, 743
+DEAD, D, 771
+SPAWN, A, 786, 1, 39, 63
+SPAWN, A, 787, 2, 40, 0
+SPAWN, A, 788, 3, 40, 63
+SPAWN, D, 789, 1, 39, 63
+SPAWN, D, 790, 2, 40, 0
+SPAWN, D, 791, 3, 40, 63
+TURN, 132
+PRINT, TURN 132 LOGS:To be spawned at Position(41,0)
+PRINT, To be spawned at Position(41,63)
+PRINT, To be spawned at Position(42,0)
+PRINT, Type 1 at Position (41,0)
+PRINT, Type 2 at Position (41,63)
+PRINT, Type 3 at Position (42,0)
+PRINT, 
+SHOOT, D, 733, 736, 0
+SHOOT, D, 739, 742, 2
+SHOOT, D, 745, 748, 4
+SHOOT, D, 746, 749, 0
+SHOOT, D, 751, 754, 6
+SHOOT, D, 752, 755, 1
+SHOOT, D, 757, 760, 8
+SHOOT, D, 758, 761, 3
+SHOOT, D, 763, 766, 10
+SHOOT, D, 764, 767, 5
+SHOOT, D, 769, 772, 12
+SHOOT, D, 770, 773, 7
+SHOOT, D, 774, 777, 0
+SHOOT, D, 775, 778, 14
+SHOOT, D, 776, 779, 9
+SHOOT, D, 780, 783, 2
+SHOOT, D, 781, 784, 16
+SHOOT, D, 782, 785, 11
+SHOOT, D, 786, 789, 6
+SHOOT, D, 787, 790, 18
+SHOOT, D, 788, 791, 13
+SHOOT, A, 736, 733, 0
+SHOOT, A, 742, 739, 2
+SHOOT, A, 748, 745, 4
+SHOOT, A, 749, 746, 0
+SHOOT, A, 754, 751, 6
+SHOOT, A, 755, 752, 1
+SHOOT, A, 760, 757, 8
+SHOOT, A, 761, 758, 3
+SHOOT, A, 766, 763, 10
+SHOOT, A, 767, 764, 5
+SHOOT, A, 772, 769, 12
+SHOOT, A, 773, 770, 7
+SHOOT, A, 777, 774, 0
+SHOOT, A, 778, 775, 14
+SHOOT, A, 779, 776, 9
+SHOOT, A, 783, 780, 2
+SHOOT, A, 784, 781, 16
+SHOOT, A, 785, 782, 11
+SHOOT, A, 789, 786, 6
+SHOOT, A, 790, 787, 18
+SHOOT, A, 791, 788, 13
+DEAD, A, 733
+DEAD, A, 746
+DEAD, A, 774
+DEAD, D, 736
+DEAD, D, 749
+DEAD, D, 777
+SPAWN, A, 792, 1, 41, 0
+SPAWN, A, 793, 2, 41, 63
+SPAWN, A, 794, 3, 42, 0
+SPAWN, D, 795, 1, 41, 0
+SPAWN, D, 796, 2, 41, 63
+SPAWN, D, 797, 3, 42, 0
+TURN, 133
+PRINT, TURN 133 LOGS:To be spawned at Position(42,63)
+PRINT, To be spawned at Position(43,0)
+PRINT, To be spawned at Position(43,63)
+PRINT, Type 1 at Position (42,63)
+PRINT, Type 2 at Position (43,0)
+PRINT, Type 3 at Position (43,63)
+PRINT, 
+SHOOT, D, 739, 742, 0
+SHOOT, D, 745, 748, 2
+SHOOT, D, 751, 754, 4
+SHOOT, D, 752, 755, 0
+SHOOT, D, 757, 760, 6
+SHOOT, D, 758, 761, 1
+SHOOT, D, 763, 766, 8
+SHOOT, D, 764, 767, 3
+SHOOT, D, 769, 772, 10
+SHOOT, D, 770, 773, 5
+SHOOT, D, 775, 778, 12
+SHOOT, D, 776, 779, 7
+SHOOT, D, 780, 783, 0
+SHOOT, D, 781, 784, 14
+SHOOT, D, 782, 785, 9
+SHOOT, D, 786, 789, 2
+SHOOT, D, 787, 790, 16
+SHOOT, D, 788, 791, 11
+SHOOT, D, 792, 795, 6
+SHOOT, D, 793, 796, 18
+SHOOT, D, 794, 797, 13
+SHOOT, A, 742, 739, 0
+SHOOT, A, 748, 745, 2
+SHOOT, A, 754, 751, 4
+SHOOT, A, 755, 752, 0
+SHOOT, A, 760, 757, 6
+SHOOT, A, 761, 758, 1
+SHOOT, A, 766, 763, 8
+SHOOT, A, 767, 764, 3
+SHOOT, A, 772, 769, 10
+SHOOT, A, 773, 770, 5
+SHOOT, A, 778, 775, 12
+SHOOT, A, 779, 776, 7
+SHOOT, A, 783, 780, 0
+SHOOT, A, 784, 781, 14
+SHOOT, A, 785, 782, 9
+SHOOT, A, 789, 786, 2
+SHOOT, A, 790, 787, 16
+SHOOT, A, 791, 788, 11
+SHOOT, A, 795, 792, 6
+SHOOT, A, 796, 793, 18
+SHOOT, A, 797, 794, 13
+DEAD, A, 739
+DEAD, A, 752
+DEAD, A, 780
+DEAD, D, 742
+DEAD, D, 755
+DEAD, D, 783
+SPAWN, A, 798, 1, 42, 63
+SPAWN, A, 799, 2, 43, 0
+SPAWN, A, 800, 3, 43, 63
+SPAWN, D, 801, 1, 42, 63
+SPAWN, D, 802, 2, 43, 0
+SPAWN, D, 803, 3, 43, 63
+TURN, 134
+PRINT, TURN 134 LOGS:To be spawned at Position(44,0)
+PRINT, To be spawned at Position(44,63)
+PRINT, To be spawned at Position(45,0)
+PRINT, Type 1 at Position (44,0)
+PRINT, Type 2 at Position (44,63)
+PRINT, Type 3 at Position (45,0)
+PRINT, 
+SHOOT, D, 745, 748, 0
+SHOOT, D, 751, 754, 2
+SHOOT, D, 757, 760, 4
+SHOOT, D, 758, 761, 0
+SHOOT, D, 763, 766, 6
+SHOOT, D, 764, 767, 1
+SHOOT, D, 769, 772, 8
+SHOOT, D, 770, 773, 3
+SHOOT, D, 775, 778, 10
+SHOOT, D, 776, 779, 5
+SHOOT, D, 781, 784, 12
+SHOOT, D, 782, 785, 7
+SHOOT, D, 786, 789, 0
+SHOOT, D, 787, 790, 14
+SHOOT, D, 788, 791, 9
+SHOOT, D, 792, 795, 2
+SHOOT, D, 793, 796, 16
+SHOOT, D, 794, 797, 11
+SHOOT, D, 798, 801, 6
+SHOOT, D, 799, 802, 18
+SHOOT, D, 800, 803, 13
+SHOOT, A, 748, 745, 0
+SHOOT, A, 754, 751, 2
+SHOOT, A, 760, 757, 4
+SHOOT, A, 761, 758, 0
+SHOOT, A, 766, 763, 6
+SHOOT, A, 767, 764, 1
+SHOOT, A, 772, 769, 8
+SHOOT, A, 773, 770, 3
+SHOOT, A, 778, 775, 10
+SHOOT, A, 779, 776, 5
+SHOOT, A, 784, 781, 12
+SHOOT, A, 785, 782, 7
+SHOOT, A, 789, 786, 0
+SHOOT, A, 790, 787, 14
+SHOOT, A, 791, 788, 9
+SHOOT, A, 795, 792, 2
+SHOOT, A, 796, 793, 16
+SHOOT, A, 797, 794, 11
+SHOOT, A, 801, 798, 6
+SHOOT, A, 802, 799, 18
+SHOOT, A, 803, 800, 13
+DEAD, A, 745
+DEAD, A, 758
+DEAD, A, 786
+DEAD, D, 748
+DEAD, D, 761
+DEAD, D, 789
+SPAWN, A, 804, 1, 44, 0
+SPAWN, A, 805, 2, 44, 63
+SPAWN, A, 806, 3, 45, 0
+SPAWN, D, 807, 1, 44, 0
+SPAWN, D, 808, 2, 44, 63
+SPAWN, D, 809, 3, 45, 0
+TURN, 135
+PRINT, TURN 135 LOGS:To be spawned at Position(45,63)
+PRINT, To be spawned at Position(46,0)
+PRINT, To be spawned at Position(46,63)
+PRINT, Type 1 at Position (45,63)
+PRINT, Type 2 at Position (46,0)
+PRINT, Type 3 at Position (46,63)
+PRINT, 
+SHOOT, D, 751, 754, 0
+SHOOT, D, 757, 760, 2
+SHOOT, D, 763, 766, 4
+SHOOT, D, 764, 767, 0
+SHOOT, D, 769, 772, 6
+SHOOT, D, 770, 773, 1
+SHOOT, D, 775, 778, 8
+SHOOT, D, 776, 779, 3
+SHOOT, D, 781, 784, 10
+SHOOT, D, 782, 785, 5
+SHOOT, D, 787, 790, 12
+SHOOT, D, 788, 791, 7
+SHOOT, D, 792, 795, 0
+SHOOT, D, 793, 796, 14
+SHOOT, D, 794, 797, 9
+SHOOT, D, 798, 801, 2
+SHOOT, D, 799, 802, 16
+SHOOT, D, 800, 803, 11
+SHOOT, D, 804, 807, 6
+SHOOT, D, 805, 808, 18
+SHOOT, D, 806, 809, 13
+SHOOT, A, 754, 751, 0
+SHOOT, A, 760, 757, 2
+SHOOT, A, 766, 763, 4
+SHOOT, A, 767, 764, 0
+SHOOT, A, 772, 769, 6
+SHOOT, A, 773, 770, 1
+SHOOT, A, 778, 775, 8
+SHOOT, A, 779, 776, 3
+SHOOT, A, 784, 781, 10
+SHOOT, A, 785, 782, 5
+SHOOT, A, 790, 787, 12
+SHOOT, A, 791, 788, 7
+SHOOT, A, 795, 792, 0
+SHOOT, A, 796, 793, 14
+SHOOT, A, 797, 794, 9
+SHOOT, A, 801, 798, 2
+SHOOT, A, 802, 799, 16
+SHOOT, A, 803, 800, 11
+SHOOT, A, 807, 804, 6
+SHOOT, A, 808, 805, 18
+SHOOT, A, 809, 806, 13
+DEAD, A, 751
+DEAD, A, 764
+DEAD, A, 792
+DEAD, D, 754
+DEAD, D, 767
+DEAD, D, 795
+SPAWN, A, 810, 1, 45, 63
+SPAWN, A, 811, 2, 46, 0
+SPAWN, A, 812, 3, 46, 63
+SPAWN, D, 813, 1, 45, 63
+SPAWN, D, 814, 2, 46, 0
+SPAWN, D, 815, 3, 46, 63
+TURN, 136
+PRINT, TURN 136 LOGS:To be spawned at Position(47,0)
+PRINT, To be spawned at Position(47,63)
+PRINT, To be spawned at Position(48,0)
+PRINT, Type 1 at Position (47,0)
+PRINT, Type 2 at Position (47,63)
+PRINT, Type 3 at Position (48,0)
+PRINT, 
+SHOOT, D, 757, 760, 0
+SHOOT, D, 763, 766, 2
+SHOOT, D, 769, 772, 4
+SHOOT, D, 770, 773, 0
+SHOOT, D, 775, 778, 6
+SHOOT, D, 776, 779, 1
+SHOOT, D, 781, 784, 8
+SHOOT, D, 782, 785, 3
+SHOOT, D, 787, 790, 10
+SHOOT, D, 788, 791, 5
+SHOOT, D, 793, 796, 12
+SHOOT, D, 794, 797, 7
+SHOOT, D, 798, 801, 0
+SHOOT, D, 799, 802, 14
+SHOOT, D, 800, 803, 9
+SHOOT, D, 804, 807, 2
+SHOOT, D, 805, 808, 16
+SHOOT, D, 806, 809, 11
+SHOOT, D, 810, 813, 6
+SHOOT, D, 811, 814, 18
+SHOOT, D, 812, 815, 13
+SHOOT, A, 760, 757, 0
+SHOOT, A, 766, 763, 2
+SHOOT, A, 772, 769, 4
+SHOOT, A, 773, 770, 0
+SHOOT, A, 778, 775, 6
+SHOOT, A, 779, 776, 1
+SHOOT, A, 784, 781, 8
+SHOOT, A, 785, 782, 3
+SHOOT, A, 790, 787, 10
+SHOOT, A, 791, 788, 5
+SHOOT, A, 796, 793, 12
+SHOOT, A, 797, 794, 7
+SHOOT, A, 801, 798, 0
+SHOOT, A, 802, 799, 14
+SHOOT, A, 803, 800, 9
+SHOOT, A, 807, 804, 2
+SHOOT, A, 808, 805, 16
+SHOOT, A, 809, 806, 11
+SHOOT, A, 813, 810, 6
+SHOOT, A, 814, 811, 18
+SHOOT, A, 815, 812, 13
+DEAD, A, 757
+DEAD, A, 770
+DEAD, A, 798
+DEAD, D, 760
+DEAD, D, 773
+DEAD, D, 801
+SPAWN, A, 816, 1, 47, 0
+SPAWN, A, 817, 2, 47, 63
+SPAWN, A, 818, 3, 48, 0
+SPAWN, D, 819, 1, 47, 0
+SPAWN, D, 820, 2, 47, 63
+SPAWN, D, 821, 3, 48, 0
+TURN, 137
+PRINT, TURN 137 LOGS:To be spawned at Position(48,63)
+PRINT, To be spawned at Position(49,0)
+PRINT, To be spawned at Position(49,63)
+PRINT, Type 1 at Position (48,63)
+PRINT, Type 2 at Position (49,0)
+PRINT, Type 3 at Position (49,63)
+PRINT, 
+SHOOT, D, 763, 766, 0
+SHOOT, D, 769, 772, 2
+SHOOT, D, 775, 778, 4
+SHOOT, D, 776, 779, 0
+SHOOT, D, 781, 784, 6
+SHOOT, D, 782, 785, 1
+SHOOT, D, 787, 790, 8
+SHOOT, D, 788, 791, 3
+SHOOT, D, 793, 796, 10
+SHOOT, D, 794, 797, 5
+SHOOT, D, 799, 802, 12
+SHOOT, D, 800, 803, 7
+SHOOT, D, 804, 807, 0
+SHOOT, D, 805, 808, 14
+SHOOT, D, 806, 809, 9
+SHOOT, D, 810, 813, 2
+SHOOT, D, 811, 814, 16
+SHOOT, D, 812, 815, 11
+SHOOT, D, 816, 819, 6
+SHOOT, D, 817, 820, 18
+SHOOT, D, 818, 821, 13
+SHOOT, A, 766, 763, 0
+SHOOT, A, 772, 769, 2
+SHOOT, A, 778, 775, 4
+SHOOT, A, 779, 776, 0
+SHOOT, A, 784, 781, 6
+SHOOT, A, 785, 782, 1
+SHOOT, A, 790, 787, 8
+SHOOT, A, 791, 788, 3
+SHOOT, A, 796, 793, 10
+SHOOT, A, 797, 794, 5
+SHOOT, A, 802, 799, 12
+SHOOT, A, 803, 800, 7
+SHOOT, A, 807, 804, 0
+SHOOT, A, 808, 805, 14
+SHOOT, A, 809, 806, 9
+SHOOT, A, 813, 810, 2
+SHOOT, A, 814, 811, 16
+SHOOT, A, 815, 812, 11
+SHOOT, A, 819, 816, 6
+SHOOT, A, 820, 817, 18
+SHOOT, A, 821, 818, 13
+DEAD, A, 763
+DEAD, A, 776
+DEAD, A, 804
+DEAD, D, 766
+DEAD, D, 779
+DEAD, D, 807
+SPAWN, A, 822, 1, 48, 63
+SPAWN, A, 823, 2, 49, 0
+SPAWN, A, 824, 3, 49, 63
+SPAWN, D, 825, 1, 48, 63
+SPAWN, D, 826, 2, 49, 0
+SPAWN, D, 827, 3, 49, 63
+TURN, 138
+PRINT, TURN 138 LOGS:To be spawned at Position(50,0)
+PRINT, To be spawned at Position(50,63)
+PRINT, To be spawned at Position(51,0)
+PRINT, Type 1 at Position (50,0)
+PRINT, Type 2 at Position (50,63)
+PRINT, Type 3 at Position (51,0)
+PRINT, 
+SHOOT, D, 769, 772, 0
+SHOOT, D, 775, 778, 2
+SHOOT, D, 781, 784, 4
+SHOOT, D, 782, 785, 0
+SHOOT, D, 787, 790, 6
+SHOOT, D, 788, 791, 1
+SHOOT, D, 793, 796, 8
+SHOOT, D, 794, 797, 3
+SHOOT, D, 799, 802, 10
+SHOOT, D, 800, 803, 5
+SHOOT, D, 805, 808, 12
+SHOOT, D, 806, 809, 7
+SHOOT, D, 810, 813, 0
+SHOOT, D, 811, 814, 14
+SHOOT, D, 812, 815, 9
+SHOOT, D, 816, 819, 2
+SHOOT, D, 817, 820, 16
+SHOOT, D, 818, 821, 11
+SHOOT, D, 822, 825, 6
+SHOOT, D, 823, 826, 18
+SHOOT, D, 824, 827, 13
+SHOOT, A, 772, 769, 0
+SHOOT, A, 778, 775, 2
+SHOOT, A, 784, 781, 4
+SHOOT, A, 785, 782, 0
+SHOOT, A, 790, 787, 6
+SHOOT, A, 791, 788, 1
+SHOOT, A, 796, 793, 8
+SHOOT, A, 797, 794, 3
+SHOOT, A, 802, 799, 10
+SHOOT, A, 803, 800, 5
+SHOOT, A, 808, 805, 12
+SHOOT, A, 809, 806, 7
+SHOOT, A, 813, 810, 0
+SHOOT, A, 814, 811, 14
+SHOOT, A, 815, 812, 9
+SHOOT, A, 819, 816, 2
+SHOOT, A, 820, 817, 16
+SHOOT, A, 821, 818, 11
+SHOOT, A, 825, 822, 6
+SHOOT, A, 826, 823, 18
+SHOOT, A, 827, 824, 13
+DEAD, A, 769
+DEAD, A, 782
+DEAD, A, 810
+DEAD, D, 772
+DEAD, D, 785
+DEAD, D, 813
+SPAWN, A, 828, 1, 50, 0
+SPAWN, A, 829, 2, 50, 63
+SPAWN, A, 830, 3, 51, 0
+SPAWN, D, 831, 1, 50, 0
+SPAWN, D, 832, 2, 50, 63
+SPAWN, D, 833, 3, 51, 0
+TURN, 139
+PRINT, TURN 139 LOGS:To be spawned at Position(51,63)
+PRINT, To be spawned at Position(52,0)
+PRINT, To be spawned at Position(52,63)
+PRINT, Type 1 at Position (51,63)
+PRINT, Type 2 at Position (52,0)
+PRINT, Type 3 at Position (52,63)
+PRINT, 
+SHOOT, D, 775, 778, 0
+SHOOT, D, 781, 784, 2
+SHOOT, D, 787, 790, 4
+SHOOT, D, 788, 791, 0
+SHOOT, D, 793, 796, 6
+SHOOT, D, 794, 797, 1
+SHOOT, D, 799, 802, 8
+SHOOT, D, 800, 803, 3
+SHOOT, D, 805, 808, 10
+SHOOT, D, 806, 809, 5
+SHOOT, D, 811, 814, 12
+SHOOT, D, 812, 815, 7
+SHOOT, D, 816, 819, 0
+SHOOT, D, 817, 820, 14
+SHOOT, D, 818, 821, 9
+SHOOT, D, 822, 825, 2
+SHOOT, D, 823, 826, 16
+SHOOT, D, 824, 827, 11
+SHOOT, D, 828, 831, 6
+SHOOT, D, 829, 832, 18
+SHOOT, D, 830, 833, 13
+SHOOT, A, 778, 775, 0
+SHOOT, A, 784, 781, 2
+SHOOT, A, 790, 787, 4
+SHOOT, A, 791, 788, 0
+SHOOT, A, 796, 793, 6
+SHOOT, A, 797, 794, 1
+SHOOT, A, 802, 799, 8
+SHOOT, A, 803, 800, 3
+SHOOT, A, 808, 805, 10
+SHOOT, A, 809, 806, 5
+SHOOT, A, 814, 811, 12
+SHOOT, A, 815, 812, 7
+SHOOT, A, 819, 816, 0
+SHOOT, A, 820, 817, 14
+SHOOT, A, 821, 818, 9
+SHOOT, A, 825, 822, 2
+SHOOT, A, 826, 823, 16
+SHOOT, A, 827, 824, 11
+SHOOT, A, 831, 828, 6
+SHOOT, A, 832, 829, 18
+SHOOT, A, 833, 830, 13
+DEAD, A, 775
+DEAD, A, 788
+DEAD, A, 816
+DEAD, D, 778
+DEAD, D, 791
+DEAD, D, 819
+SPAWN, A, 834, 1, 51, 63
+SPAWN, A, 835, 2, 52, 0
+SPAWN, A, 836, 3, 52, 63
+SPAWN, D, 837, 1, 51, 63
+SPAWN, D, 838, 2, 52, 0
+SPAWN, D, 839, 3, 52, 63
+TURN, 140
+PRINT, TURN 140 LOGS:To be spawned at Position(53,0)
+PRINT, To be spawned at Position(53,63)
+PRINT, To be spawned at Position(54,0)
+PRINT, Type 1 at Position (53,0)
+PRINT, Type 2 at Position (53,63)
+PRINT, Type 3 at Position (54,0)
+PRINT, 
+SHOOT, D, 781, 784, 0
+SHOOT, D, 787, 790, 2
+SHOOT, D, 793, 796, 4
+SHOOT, D, 794, 797, 0
+SHOOT, D, 799, 802, 6
+SHOOT, D, 800, 803, 1
+SHOOT, D, 805, 808, 8
+SHOOT, D, 806, 809, 3
+SHOOT, D, 811, 814, 10
+SHOOT, D, 812, 815, 5
+SHOOT, D, 817, 820, 12
+SHOOT, D, 818, 821, 7
+SHOOT, D, 822, 825, 0
+SHOOT, D, 823, 826, 14
+SHOOT, D, 824, 827, 9
+SHOOT, D, 828, 831, 2
+SHOOT, D, 829, 832, 16
+SHOOT, D, 830, 833, 11
+SHOOT, D, 834, 837, 6
+SHOOT, D, 835, 838, 18
+SHOOT, D, 836, 839, 13
+SHOOT, A, 784, 781, 0
+SHOOT, A, 790, 787, 2
+SHOOT, A, 796, 793, 4
+SHOOT, A, 797, 794, 0
+SHOOT, A, 802, 799, 6
+SHOOT, A, 803, 800, 1
+SHOOT, A, 808, 805, 8
+SHOOT, A, 809, 806, 3
+SHOOT, A, 814, 811, 10
+SHOOT, A, 815, 812, 5
+SHOOT, A, 820, 817, 12
+SHOOT, A, 821, 818, 7
+SHOOT, A, 825, 822, 0
+SHOOT, A, 826, 823, 14
+SHOOT, A, 827, 824, 9
+SHOOT, A, 831, 828, 2
+SHOOT, A, 832, 829, 16
+SHOOT, A, 833, 830, 11
+SHOOT, A, 837, 834, 6
+SHOOT, A, 838, 835, 18
+SHOOT, A, 839, 836, 13
+DEAD, A, 781
+DEAD, A, 794
+DEAD, A, 822
+DEAD, D, 784
+DEAD, D, 797
+DEAD, D, 825
+SPAWN, A, 840, 1, 53, 0
+SPAWN, A, 841, 2, 53, 63
+SPAWN, A, 842, 3, 54, 0
+SPAWN, D, 843, 1, 53, 0
+SPAWN, D, 844, 2, 53, 63
+SPAWN, D, 845, 3, 54, 0
+TURN, 141
+PRINT, TURN 141 LOGS:To be spawned at Position(54,63)
+PRINT, To be spawned at Position(55,0)
+PRINT, To be spawned at Position(55,63)
+PRINT, Type 1 at Position (54,63)
+PRINT, Type 2 at Position (55,0)
+PRINT, Type 3 at Position (55,63)
+PRINT, 
+SHOOT, D, 787, 790, 0
+SHOOT, D, 793, 796, 2
+SHOOT, D, 799, 802, 4
+SHOOT, D, 800, 803, 0
+SHOOT, D, 805, 808, 6
+SHOOT, D, 806, 809, 1
+SHOOT, D, 811, 814, 8
+SHOOT, D, 812, 815, 3
+SHOOT, D, 817, 820, 10
+SHOOT, D, 818, 821, 5
+SHOOT, D, 823, 826, 12
+SHOOT, D, 824, 827, 7
+SHOOT, D, 828, 831, 0
+SHOOT, D, 829, 832, 14
+SHOOT, D, 830, 833, 9
+SHOOT, D, 834, 837, 2
+SHOOT, D, 835, 838, 16
+SHOOT, D, 836, 839, 11
+SHOOT, D, 840, 843, 6
+SHOOT, D, 841, 844, 18
+SHOOT, D, 842, 845, 13
+SHOOT, A, 790, 787, 0
+SHOOT, A, 796, 793, 2
+SHOOT, A, 802, 799, 4
+SHOOT, A, 803, 800, 0
+SHOOT, A, 808, 805, 6
+SHOOT, A, 809, 806, 1
+SHOOT, A, 814, 811, 8
+SHOOT, A, 815, 812, 3
+SHOOT, A, 820, 817, 10
+SHOOT, A, 821, 818, 5
+SHOOT, A, 826, 823, 12
+SHOOT, A, 827, 824, 7
+SHOOT, A, 831, 828, 0
+SHOOT, A, 832, 829, 14
+SHOOT, A, 833, 830, 9
+SHOOT, A, 837, 834, 2
+SHOOT, A, 838, 835, 16
+SHOOT, A, 839, 836, 11
+SHOOT, A, 843, 840, 6
+SHOOT, A, 844, 841, 18
+SHOOT, A, 845, 842, 13
+DEAD, A, 787
+DEAD, A, 800
+DEAD, A, 828
+DEAD, D, 790
+DEAD, D, 803
+DEAD, D, 831
+SPAWN, A, 846, 1, 54, 63
+SPAWN, A, 847, 2, 55, 0
+SPAWN, A, 848, 3, 55, 63
+SPAWN, D, 849, 1, 54, 63
+SPAWN, D, 850, 2, 55, 0
+SPAWN, D, 851, 3, 55, 63
+TURN, 142
+PRINT, TURN 142 LOGS:To be spawned at Position(56,0)
+PRINT, To be spawned at Position(56,63)
+PRINT, To be spawned at Position(57,0)
+PRINT, Type 1 at Position (56,0)
+PRINT, Type 2 at Position (56,63)
+PRINT, Type 3 at Position (57,0)
+PRINT, 
+SHOOT, D, 793, 796, 0
+SHOOT, D, 799, 802, 2
+SHOOT, D, 805, 808, 4
+SHOOT, D, 806, 809, 0
+SHOOT, D, 811, 814, 6
+SHOOT, D, 812, 815, 1
+SHOOT, D, 817, 820, 8
+SHOOT, D, 818, 821, 3
+SHOOT, D, 823, 826, 10
+SHOOT, D, 824, 827, 5
+SHOOT, D, 829, 832, 12
+SHOOT, D, 830, 833, 7
+SHOOT, D, 834, 837, 0
+SHOOT, D, 835, 838, 14
+SHOOT, D, 836, 839, 9
+SHOOT, D, 840, 843, 2
+SHOOT, D, 841, 844, 16
+SHOOT, D, 842, 845, 11
+SHOOT, D, 846, 849, 6
+SHOOT, D, 847, 850, 18
+SHOOT, D, 848, 851, 13
+SHOOT, A, 796, 793, 0
+SHOOT, A, 802, 799, 2
+SHOOT, A, 808, 805, 4
+SHOOT, A, 809, 806, 0
+SHOOT, A, 814, 811, 6
+SHOOT, A, 815, 812, 1
+SHOOT, A, 820, 817, 8
+SHOOT, A, 821, 818, 3
+SHOOT, A, 826, 823, 10
+SHOOT, A, 827, 824, 5
+SHOOT, A, 832, 829, 12
+SHOOT, A, 833, 830, 7
+SHOOT, A, 837, 834, 0
+SHOOT, A, 838, 835, 14
+SHOOT, A, 839, 836, 9
+SHOOT, A, 843, 840, 2
+SHOOT, A, 844, 841, 16
+SHOOT, A, 845, 842, 11
+SHOOT, A, 849, 846, 6
+SHOOT, A, 850, 847, 18
+SHOOT, A, 851, 848, 13
+DEAD, A, 793
+DEAD, A, 806
+DEAD, A, 834
+DEAD, D, 796
+DEAD, D, 809
+DEAD, D, 837
+SPAWN, A, 852, 1, 56, 0
+SPAWN, A, 853, 2, 56, 63
+SPAWN, A, 854, 3, 57, 0
+SPAWN, D, 855, 1, 56, 0
+SPAWN, D, 856, 2, 56, 63
+SPAWN, D, 857, 3, 57, 0
+TURN, 143
+PRINT, TURN 143 LOGS:To be spawned at Position(57,63)
+PRINT, To be spawned at Position(58,0)
+PRINT, To be spawned at Position(58,63)
+PRINT, Type 1 at Position (57,63)
+PRINT, Type 2 at Position (58,0)
+PRINT, Type 3 at Position (58,63)
+PRINT, 
+SHOOT, D, 799, 802, 0
+SHOOT, D, 805, 808, 2
+SHOOT, D, 811, 814, 4
+SHOOT, D, 812, 815, 0
+SHOOT, D, 817, 820, 6
+SHOOT, D, 818, 821, 1
+SHOOT, D, 823, 826, 8
+SHOOT, D, 824, 827, 3
+SHOOT, D, 829, 832, 10
+SHOOT, D, 830, 833, 5
+SHOOT, D, 835, 838, 12
+SHOOT, D, 836, 839, 7
+SHOOT, D, 840, 843, 0
+SHOOT, D, 841, 844, 14
+SHOOT, D, 842, 845, 9
+SHOOT, D, 846, 849, 2
+SHOOT, D, 847, 850, 16
+SHOOT, D, 848, 851, 11
+SHOOT, D, 852, 855, 6
+SHOOT, D, 853, 856, 18
+SHOOT, D, 854, 857, 13
+SHOOT, A, 802, 799, 0
+SHOOT, A, 808, 805, 2
+SHOOT, A, 814, 811, 4
+SHOOT, A, 815, 812, 0
+SHOOT, A, 820, 817, 6
+SHOOT, A, 821, 818, 1
+SHOOT, A, 826, 823, 8
+SHOOT, A, 827, 824, 3
+SHOOT, A, 832, 829, 10
+SHOOT, A, 833, 830, 5
+SHOOT, A, 838, 835, 12
+SHOOT, A, 839, 836, 7
+SHOOT, A, 843, 840, 0
+SHOOT, A, 844, 841, 14
+SHOOT, A, 845, 842, 9
+SHOOT, A, 849, 846, 2
+SHOOT, A, 850, 847, 16
+SHOOT, A, 851, 848, 11
+SHOOT, A, 855, 852, 6
+SHOOT, A, 856, 853, 18
+SHOOT, A, 857, 854, 13
+DEAD, A, 799
+DEAD, A, 812
+DEAD, A, 840
+DEAD, D, 802
+DEAD, D, 815
+DEAD, D, 843
+SPAWN, A, 858, 1, 57, 63
+SPAWN, A, 859, 2, 58, 0
+SPAWN, A, 860, 3, 58, 63
+SPAWN, D, 861, 1, 57, 63
+SPAWN, D, 862, 2, 58, 0
+SPAWN, D, 863, 3, 58, 63
+TURN, 144
+PRINT, TURN 144 LOGS:To be spawned at Position(59,0)
+PRINT, To be spawned at Position(59,63)
+PRINT, To be spawned at Position(60,0)
+PRINT, Type 1 at Position (59,0)
+PRINT, Type 2 at Position (59,63)
+PRINT, Type 3 at Position (60,0)
+PRINT, 
+SHOOT, D, 805, 808, 0
+SHOOT, D, 811, 814, 2
+SHOOT, D, 817, 820, 4
+SHOOT, D, 818, 821, 0
+SHOOT, D, 823, 826, 6
+SHOOT, D, 824, 827, 1
+SHOOT, D, 829, 832, 8
+SHOOT, D, 830, 833, 3
+SHOOT, D, 835, 838, 10
+SHOOT, D, 836, 839, 5
+SHOOT, D, 841, 844, 12
+SHOOT, D, 842, 845, 7
+SHOOT, D, 846, 849, 0
+SHOOT, D, 847, 850, 14
+SHOOT, D, 848, 851, 9
+SHOOT, D, 852, 855, 2
+SHOOT, D, 853, 856, 16
+SHOOT, D, 854, 857, 11
+SHOOT, D, 858, 861, 6
+SHOOT, D, 859, 862, 18
+SHOOT, D, 860, 863, 13
+SHOOT, A, 808, 805, 0
+SHOOT, A, 814, 811, 2
+SHOOT, A, 820, 817, 4
+SHOOT, A, 821, 818, 0
+SHOOT, A, 826, 823, 6
+SHOOT, A, 827, 824, 1
+SHOOT, A, 832, 829, 8
+SHOOT, A, 833, 830, 3
+SHOOT, A, 838, 835, 10
+SHOOT, A, 839, 836, 5
+SHOOT, A, 844, 841, 12
+SHOOT, A, 845, 842, 7
+SHOOT, A, 849, 846, 0
+SHOOT, A, 850, 847, 14
+SHOOT, A, 851, 848, 9
+SHOOT, A, 855, 852, 2
+SHOOT, A, 856, 853, 16
+SHOOT, A, 857, 854, 11
+SHOOT, A, 861, 858, 6
+SHOOT, A, 862, 859, 18
+SHOOT, A, 863, 860, 13
+DEAD, A, 805
+DEAD, A, 818
+DEAD, A, 846
+DEAD, D, 808
+DEAD, D, 821
+DEAD, D, 849
+SPAWN, A, 864, 1, 59, 0
+SPAWN, A, 865, 2, 59, 63
+SPAWN, A, 866, 3, 60, 0
+SPAWN, D, 867, 1, 59, 0
+SPAWN, D, 868, 2, 59, 63
+SPAWN, D, 869, 3, 60, 0
+TURN, 145
+PRINT, TURN 145 LOGS:To be spawned at Position(60,63)
+PRINT, To be spawned at Position(61,0)
+PRINT, To be spawned at Position(61,63)
+PRINT, Type 1 at Position (60,63)
+PRINT, Type 2 at Position (61,0)
+PRINT, Type 3 at Position (61,63)
+PRINT, 
+SHOOT, D, 811, 814, 0
+SHOOT, D, 817, 820, 2
+SHOOT, D, 823, 826, 4
+SHOOT, D, 824, 827, 0
+SHOOT, D, 829, 832, 6
+SHOOT, D, 830, 833, 1
+SHOOT, D, 835, 838, 8
+SHOOT, D, 836, 839, 3
+SHOOT, D, 841, 844, 10
+SHOOT, D, 842, 845, 5
+SHOOT, D, 847, 850, 12
+SHOOT, D, 848, 851, 7
+SHOOT, D, 852, 855, 0
+SHOOT, D, 853, 856, 14
+SHOOT, D, 854, 857, 9
+SHOOT, D, 858, 861, 2
+SHOOT, D, 859, 862, 16
+SHOOT, D, 860, 863, 11
+SHOOT, D, 864, 867, 6
+SHOOT, D, 865, 868, 18
+SHOOT, D, 866, 869, 13
+SHOOT, A, 814, 811, 0
+SHOOT, A, 820, 817, 2
+SHOOT, A, 826, 823, 4
+SHOOT, A, 827, 824, 0
+SHOOT, A, 832, 829, 6
+SHOOT, A, 833, 830, 1
+SHOOT, A, 838, 835, 8
+SHOOT, A, 839, 836, 3
+SHOOT, A, 844, 841, 10
+SHOOT, A, 845, 842, 5
+SHOOT, A, 850, 847, 12
+SHOOT, A, 851, 848, 7
+SHOOT, A, 855, 852, 0
+SHOOT, A, 856, 853, 14
+SHOOT, A, 857, 854, 9
+SHOOT, A, 861, 858, 2
+SHOOT, A, 862, 859, 16
+SHOOT, A, 863, 860, 11
+SHOOT, A, 867, 864, 6
+SHOOT, A, 868, 865, 18
+SHOOT, A, 869, 866, 13
+DEAD, A, 811
+DEAD, A, 824
+DEAD, A, 852
+DEAD, D, 814
+DEAD, D, 827
+DEAD, D, 855
+SPAWN, A, 870, 1, 60, 63
+SPAWN, A, 871, 2, 61, 0
+SPAWN, A, 872, 3, 61, 63
+SPAWN, D, 873, 1, 60, 63
+SPAWN, D, 874, 2, 61, 0
+SPAWN, D, 875, 3, 61, 63
+TURN, 146
+PRINT, TURN 146 LOGS:To be spawned at Position(62,0)
+PRINT, To be spawned at Position(62,63)
+PRINT, To be spawned at Position(63,0)
+PRINT, Type 1 at Position (62,0)
+PRINT, Type 2 at Position (62,63)
+PRINT, Type 3 at Position (63,0)
+PRINT, 
+SHOOT, D, 817, 820, 0
+SHOOT, D, 823, 826, 2
+SHOOT, D, 829, 832, 4
+SHOOT, D, 830, 833, 0
+SHOOT, D, 835, 838, 6
+SHOOT, D, 836, 839, 1
+SHOOT, D, 841, 844, 8
+SHOOT, D, 842, 845, 3
+SHOOT, D, 847, 850, 10
+SHOOT, D, 848, 851, 5
+SHOOT, D, 853, 856, 12
+SHOOT, D, 854, 857, 7
+SHOOT, D, 858, 861, 0
+SHOOT, D, 859, 862, 14
+SHOOT, D, 860, 863, 9
+SHOOT, D, 864, 867, 2
+SHOOT, D, 865, 868, 16
+SHOOT, D, 866, 869, 11
+SHOOT, D, 870, 873, 6
+SHOOT, D, 871, 874, 18
+SHOOT, D, 872, 875, 13
+SHOOT, A, 820, 817, 0
+SHOOT, A, 826, 823, 2
+SHOOT, A, 832, 829, 4
+SHOOT, A, 833, 830, 0
+SHOOT, A, 838, 835, 6
+SHOOT, A, 839, 836, 1
+SHOOT, A, 844, 841, 8
+SHOOT, A, 845, 842, 3
+SHOOT, A, 850, 847, 10
+SHOOT, A, 851, 848, 5
+SHOOT, A, 856, 853, 12
+SHOOT, A, 857, 854, 7
+SHOOT, A, 861, 858, 0
+SHOOT, A, 862, 859, 14
+SHOOT, A, 863, 860, 9
+SHOOT, A, 867, 864, 2
+SHOOT, A, 868, 865, 16
+SHOOT, A, 869, 866, 11
+SHOOT, A, 873, 870, 6
+SHOOT, A, 874, 871, 18
+SHOOT, A, 875, 872, 13
+DEAD, A, 817
+DEAD, A, 830
+DEAD, A, 858
+DEAD, D, 820
+DEAD, D, 833
+DEAD, D, 861
+SPAWN, A, 876, 1, 62, 0
+SPAWN, A, 877, 2, 62, 63
+SPAWN, A, 878, 3, 63, 0
+SPAWN, D, 879, 1, 62, 0
+SPAWN, D, 880, 2, 62, 63
+SPAWN, D, 881, 3, 63, 0
+TURN, 147
+PRINT, TURN 147 LOGS:To be spawned at Position(63,1)
+PRINT, To be spawned at Position(63,2)
+PRINT, To be spawned at Position(63,3)
+PRINT, Type 1 at Position (63,1)
+PRINT, Type 2 at Position (63,2)
+PRINT, Type 3 at Position (63,3)
+PRINT, 
+SHOOT, D, 823, 826, 0
+SHOOT, D, 829, 832, 2
+SHOOT, D, 835, 838, 4
+SHOOT, D, 836, 839, 0
+SHOOT, D, 841, 844, 6
+SHOOT, D, 842, 845, 1
+SHOOT, D, 847, 850, 8
+SHOOT, D, 848, 851, 3
+SHOOT, D, 853, 856, 10
+SHOOT, D, 854, 857, 5
+SHOOT, D, 859, 862, 12
+SHOOT, D, 860, 863, 7
+SHOOT, D, 864, 867, 0
+SHOOT, D, 865, 868, 14
+SHOOT, D, 866, 869, 9
+SHOOT, D, 870, 873, 2
+SHOOT, D, 871, 874, 16
+SHOOT, D, 872, 875, 11
+SHOOT, D, 876, 879, 6
+SHOOT, D, 877, 880, 18
+SHOOT, D, 878, 881, 13
+SHOOT, A, 826, 823, 0
+SHOOT, A, 832, 829, 2
+SHOOT, A, 838, 835, 4
+SHOOT, A, 839, 836, 0
+SHOOT, A, 844, 841, 6
+SHOOT, A, 845, 842, 1
+SHOOT, A, 850, 847, 8
+SHOOT, A, 851, 848, 3
+SHOOT, A, 856, 853, 10
+SHOOT, A, 857, 854, 5
+SHOOT, A, 862, 859, 12
+SHOOT, A, 863, 860, 7
+SHOOT, A, 867, 864, 0
+SHOOT, A, 868, 865, 14
+SHOOT, A, 869, 866, 9
+SHOOT, A, 873, 870, 2
+SHOOT, A, 874, 871, 16
+SHOOT, A, 875, 872, 11
+SHOOT, A, 879, 876, 6
+SHOOT, A, 880, 877, 18
+SHOOT, A, 881, 878, 13
+DEAD, A, 823
+DEAD, A, 836
+DEAD, A, 864
+DEAD, D, 826
+DEAD, D, 839
+DEAD, D, 867
+SPAWN, A, 882, 1, 63, 1
+SPAWN, A, 883, 2, 63, 2
+SPAWN, A, 884, 3, 63, 3
+SPAWN, D, 885, 1, 63, 1
+SPAWN, D, 886, 2, 63, 2
+SPAWN, D, 887, 3, 63, 3
+TURN, 148
+PRINT, TURN 148 LOGS:To be spawned at Position(63,4)
+PRINT, To be spawned at Position(63,5)
+PRINT, To be spawned at Position(63,6)
+PRINT, Type 1 at Position (63,4)
+PRINT, Type 2 at Position (63,5)
+PRINT, Type 3 at Position (63,6)
+PRINT, 
+SHOOT, D, 829, 832, 0
+SHOOT, D, 835, 838, 2
+SHOOT, D, 841, 844, 4
+SHOOT, D, 842, 845, 0
+SHOOT, D, 847, 850, 6
+SHOOT, D, 848, 851, 1
+SHOOT, D, 853, 856, 8
+SHOOT, D, 854, 857, 3
+SHOOT, D, 859, 862, 10
+SHOOT, D, 860, 863, 5
+SHOOT, D, 865, 868, 12
+SHOOT, D, 866, 869, 7
+SHOOT, D, 870, 873, 0
+SHOOT, D, 871, 874, 14
+SHOOT, D, 872, 875, 9
+SHOOT, D, 876, 879, 2
+SHOOT, D, 877, 880, 16
+SHOOT, D, 878, 881, 11
+SHOOT, D, 882, 885, 6
+SHOOT, D, 883, 886, 18
+SHOOT, D, 884, 887, 13
+SHOOT, A, 832, 829, 0
+SHOOT, A, 838, 835, 2
+SHOOT, A, 844, 841, 4
+SHOOT, A, 845, 842, 0
+SHOOT, A, 850, 847, 6
+SHOOT, A, 851, 848, 1
+SHOOT, A, 856, 853, 8
+SHOOT, A, 857, 854, 3
+SHOOT, A, 862, 859, 10
+SHOOT, A, 863, 860, 5
+SHOOT, A, 868, 865, 12
+SHOOT, A, 869, 866, 7
+SHOOT, A, 873, 870, 0
+SHOOT, A, 874, 871, 14
+SHOOT, A, 875, 872, 9
+SHOOT, A, 879, 876, 2
+SHOOT, A, 880, 877, 16
+SHOOT, A, 881, 878, 11
+SHOOT, A, 885, 882, 6
+SHOOT, A, 886, 883, 18
+SHOOT, A, 887, 884, 13
+DEAD, A, 829
+DEAD, A, 842
+DEAD, A, 870
+DEAD, D, 832
+DEAD, D, 845
+DEAD, D, 873
+SPAWN, A, 888, 1, 63, 4
+SPAWN, A, 889, 2, 63, 5
+SPAWN, A, 890, 3, 63, 6
+SPAWN, D, 891, 1, 63, 4
+SPAWN, D, 892, 2, 63, 5
+SPAWN, D, 893, 3, 63, 6
+TURN, 149
+PRINT, TURN 149 LOGS:To be spawned at Position(63,7)
+PRINT, To be spawned at Position(63,8)
+PRINT, To be spawned at Position(63,9)
+PRINT, Type 1 at Position (63,7)
+PRINT, Type 2 at Position (63,8)
+PRINT, Type 3 at Position (63,9)
+PRINT, 
+SHOOT, D, 835, 838, 0
+SHOOT, D, 841, 844, 2
+SHOOT, D, 847, 850, 4
+SHOOT, D, 848, 851, 0
+SHOOT, D, 853, 856, 6
+SHOOT, D, 854, 857, 1
+SHOOT, D, 859, 862, 8
+SHOOT, D, 860, 863, 3
+SHOOT, D, 865, 868, 10
+SHOOT, D, 866, 869, 5
+SHOOT, D, 871, 874, 12
+SHOOT, D, 872, 875, 7
+SHOOT, D, 876, 879, 0
+SHOOT, D, 877, 880, 14
+SHOOT, D, 878, 881, 9
+SHOOT, D, 882, 885, 2
+SHOOT, D, 883, 886, 16
+SHOOT, D, 884, 887, 11
+SHOOT, D, 888, 891, 6
+SHOOT, D, 889, 892, 18
+SHOOT, D, 890, 893, 13
+SHOOT, A, 838, 835, 0
+SHOOT, A, 844, 841, 2
+SHOOT, A, 850, 847, 4
+SHOOT, A, 851, 848, 0
+SHOOT, A, 856, 853, 6
+SHOOT, A, 857, 854, 1
+SHOOT, A, 862, 859, 8
+SHOOT, A, 863, 860, 3
+SHOOT, A, 868, 865, 10
+SHOOT, A, 869, 866, 5
+SHOOT, A, 874, 871, 12
+SHOOT, A, 875, 872, 7
+SHOOT, A, 879, 876, 0
+SHOOT, A, 880, 877, 14
+SHOOT, A, 881, 878, 9
+SHOOT, A, 885, 882, 2
+SHOOT, A, 886, 883, 16
+SHOOT, A, 887, 884, 11
+SHOOT, A, 891, 888, 6
+SHOOT, A, 892, 889, 18
+SHOOT, A, 893, 890, 13
+DEAD, A, 835
+DEAD, A, 848
+DEAD, A, 876
+DEAD, D, 838
+DEAD, D, 851
+DEAD, D, 879
+SPAWN, A, 894, 1, 63, 7
+SPAWN, A, 895, 2, 63, 8
+SPAWN, A, 896, 3, 63, 9
+SPAWN, D, 897, 1, 63, 7
+SPAWN, D, 898, 2, 63, 8
+SPAWN, D, 899, 3, 63, 9
+TURN, 150
+PRINT, TURN 150 LOGS:To be spawned at Position(63,10)
+PRINT, To be spawned at Position(63,11)
+PRINT, To be spawned at Position(63,12)
+PRINT, Type 1 at Position (63,10)
+PRINT, Type 2 at Position (63,11)
+PRINT, Type 3 at Position (63,12)
+PRINT, 
+SHOOT, D, 841, 844, 0
+SHOOT, D, 847, 850, 2
+SHOOT, D, 853, 856, 4
+SHOOT, D, 854, 857, 0
+SHOOT, D, 859, 862, 6
+SHOOT, D, 860, 863, 1
+SHOOT, D, 865, 868, 8
+SHOOT, D, 866, 869, 3
+SHOOT, D, 871, 874, 10
+SHOOT, D, 872, 875, 5
+SHOOT, D, 877, 880, 12
+SHOOT, D, 878, 881, 7
+SHOOT, D, 882, 885, 0
+SHOOT, D, 883, 886, 14
+SHOOT, D, 884, 887, 9
+SHOOT, D, 888, 891, 2
+SHOOT, D, 889, 892, 16
+SHOOT, D, 890, 893, 11
+SHOOT, D, 894, 897, 6
+SHOOT, D, 895, 898, 18
+SHOOT, D, 896, 899, 13
+SHOOT, A, 844, 841, 0
+SHOOT, A, 850, 847, 2
+SHOOT, A, 856, 853, 4
+SHOOT, A, 857, 854, 0
+SHOOT, A, 862, 859, 6
+SHOOT, A, 863, 860, 1
+SHOOT, A, 868, 865, 8
+SHOOT, A, 869, 866, 3
+SHOOT, A, 874, 871, 10
+SHOOT, A, 875, 872, 5
+SHOOT, A, 880, 877, 12
+SHOOT, A, 881, 878, 7
+SHOOT, A, 885, 882, 0
+SHOOT, A, 886, 883, 14
+SHOOT, A, 887, 884, 9
+SHOOT, A, 891, 888, 2
+SHOOT, A, 892, 889, 16
+SHOOT, A, 893, 890, 11
+SHOOT, A, 897, 894, 6
+SHOOT, A, 898, 895, 18
+SHOOT, A, 899, 896, 13
+DEAD, A, 841
+DEAD, A, 854
+DEAD, A, 882
+DEAD, D, 844
+DEAD, D, 857
+DEAD, D, 885
+SPAWN, A, 900, 1, 63, 10
+SPAWN, A, 901, 2, 63, 11
+SPAWN, A, 902, 3, 63, 12
+SPAWN, D, 903, 1, 63, 10
+SPAWN, D, 904, 2, 63, 11
+SPAWN, D, 905, 3, 63, 12
+TURN, 151
+PRINT, TURN 151 LOGS:To be spawned at Position(63,13)
+PRINT, To be spawned at Position(63,14)
+PRINT, To be spawned at Position(63,15)
+PRINT, Type 1 at Position (63,13)
+PRINT, Type 2 at Position (63,14)
+PRINT, Type 3 at Position (63,15)
+PRINT, 
+SHOOT, D, 847, 850, 0
+SHOOT, D, 853, 856, 2
+SHOOT, D, 859, 862, 4
+SHOOT, D, 860, 863, 0
+SHOOT, D, 865, 868, 6
+SHOOT, D, 866, 869, 1
+SHOOT, D, 871, 874, 8
+SHOOT, D, 872, 875, 3
+SHOOT, D, 877, 880, 10
+SHOOT, D, 878, 881, 5
+SHOOT, D, 883, 886, 12
+SHOOT, D, 884, 887, 7
+SHOOT, D, 888, 891, 0
+SHOOT, D, 889, 892, 14
+SHOOT, D, 890, 893, 9
+SHOOT, D, 894, 897, 2
+SHOOT, D, 895, 898, 16
+SHOOT, D, 896, 899, 11
+SHOOT, D, 900, 903, 6
+SHOOT, D, 901, 904, 18
+SHOOT, D, 902, 905, 13
+SHOOT, A, 850, 847, 0
+SHOOT, A, 856, 853, 2
+SHOOT, A, 862, 859, 4
+SHOOT, A, 863, 860, 0
+SHOOT, A, 868, 865, 6
+SHOOT, A, 869, 866, 1
+SHOOT, A, 874, 871, 8
+SHOOT, A, 875, 872, 3
+SHOOT, A, 880, 877, 10
+SHOOT, A, 881, 878, 5
+SHOOT, A, 886, 883, 12
+SHOOT, A, 887, 884, 7
+SHOOT, A, 891, 888, 0
+SHOOT, A, 892, 889, 14
+SHOOT, A, 893, 890, 9
+SHOOT, A, 897, 894, 2
+SHOOT, A, 898, 895, 16
+SHOOT, A, 899, 896, 11
+SHOOT, A, 903, 900, 6
+SHOOT, A, 904, 901, 18
+SHOOT, A, 905, 902, 13
+DEAD, A, 847
+DEAD, A, 860
+DEAD, A, 888
+DEAD, D, 850
+DEAD, D, 863
+DEAD, D, 891
+SPAWN, A, 906, 1, 63, 13
+SPAWN, A, 907, 2, 63, 14
+SPAWN, A, 908, 3, 63, 15
+SPAWN, D, 909, 1, 63, 13
+SPAWN, D, 910, 2, 63, 14
+SPAWN, D, 911, 3, 63, 15
+TURN, 152
+PRINT, TURN 152 LOGS:To be spawned at Position(63,16)
+PRINT, To be spawned at Position(63,17)
+PRINT, To be spawned at Position(63,18)
+PRINT, Type 1 at Position (63,16)
+PRINT, Type 2 at Position (63,17)
+PRINT, Type 3 at Position (63,18)
+PRINT, 
+SHOOT, D, 853, 856, 0
+SHOOT, D, 859, 862, 2
+SHOOT, D, 865, 868, 4
+SHOOT, D, 866, 869, 0
+SHOOT, D, 871, 874, 6
+SHOOT, D, 872, 875, 1
+SHOOT, D, 877, 880, 8
+SHOOT, D, 878, 881, 3
+SHOOT, D, 883, 886, 10
+SHOOT, D, 884, 887, 5
+SHOOT, D, 889, 892, 12
+SHOOT, D, 890, 893, 7
+SHOOT, D, 894, 897, 0
+SHOOT, D, 895, 898, 14
+SHOOT, D, 896, 899, 9
+SHOOT, D, 900, 903, 2
+SHOOT, D, 901, 904, 16
+SHOOT, D, 902, 905, 11
+SHOOT, D, 906, 909, 6
+SHOOT, D, 907, 910, 18
+SHOOT, D, 908, 911, 13
+SHOOT, A, 856, 853, 0
+SHOOT, A, 862, 859, 2
+SHOOT, A, 868, 865, 4
+SHOOT, A, 869, 866, 0
+SHOOT, A, 874, 871, 6
+SHOOT, A, 875, 872, 1
+SHOOT, A, 880, 877, 8
+SHOOT, A, 881, 878, 3
+SHOOT, A, 886, 883, 10
+SHOOT, A, 887, 884, 5
+SHOOT, A, 892, 889, 12
+SHOOT, A, 893, 890, 7
+SHOOT, A, 897, 894, 0
+SHOOT, A, 898, 895, 14
+SHOOT, A, 899, 896, 9
+SHOOT, A, 903, 900, 2
+SHOOT, A, 904, 901, 16
+SHOOT, A, 905, 902, 11
+SHOOT, A, 909, 906, 6
+SHOOT, A, 910, 907, 18
+SHOOT, A, 911, 908, 13
+DEAD, A, 853
+DEAD, A, 866
+DEAD, A, 894
+DEAD, D, 856
+DEAD, D, 869
+DEAD, D, 897
+SPAWN, A, 912, 1, 63, 16
+SPAWN, A, 913, 2, 63, 17
+SPAWN, A, 914, 3, 63, 18
+SPAWN, D, 915, 1, 63, 16
+SPAWN, D, 916, 2, 63, 17
+SPAWN, D, 917, 3, 63, 18
+TURN, 153
+PRINT, TURN 153 LOGS:To be spawned at Position(63,19)
+PRINT, To be spawned at Position(63,20)
+PRINT, To be spawned at Position(63,21)
+PRINT, Type 1 at Position (63,19)
+PRINT, Type 2 at Position (63,20)
+PRINT, Type 3 at Position (63,21)
+PRINT, 
+SHOOT, D, 859, 862, 0
+SHOOT, D, 865, 868, 2
+SHOOT, D, 871, 874, 4
+SHOOT, D, 872, 875, 0
+SHOOT, D, 877, 880, 6
+SHOOT, D, 878, 881, 1
+SHOOT, D, 883, 886, 8
+SHOOT, D, 884, 887, 3
+SHOOT, D, 889, 892, 10
+SHOOT, D, 890, 893, 5
+SHOOT, D, 895, 898, 12
+SHOOT, D, 896, 899, 7
+SHOOT, D, 900, 903, 0
+SHOOT, D, 901, 904, 14
+SHOOT, D, 902, 905, 9
+SHOOT, D, 906, 909, 2
+SHOOT, D, 907, 910, 16
+SHOOT, D, 908, 911, 11
+SHOOT, D, 912, 915, 6
+SHOOT, D, 913, 916, 18
+SHOOT, D, 914, 917, 13
+SHOOT, A, 862, 859, 0
+SHOOT, A, 868, 865, 2
+SHOOT, A, 874, 871, 4
+SHOOT, A, 875, 872, 0
+SHOOT, A, 880, 877, 6
+SHOOT, A, 881, 878, 1
+SHOOT, A, 886, 883, 8
+SHOOT, A, 887, 884, 3
+SHOOT, A, 892, 889, 10
+SHOOT, A, 893, 890, 5
+SHOOT, A, 898, 895, 12
+SHOOT, A, 899, 896, 7
+SHOOT, A, 903, 900, 0
+SHOOT, A, 904, 901, 14
+SHOOT, A, 905, 902, 9
+SHOOT, A, 909, 906, 2
+SHOOT, A, 910, 907, 16
+SHOOT, A, 911, 908, 11
+SHOOT, A, 915, 912, 6
+SHOOT, A, 916, 913, 18
+SHOOT, A, 917, 914, 13
+DEAD, A, 859
+DEAD, A, 872
+DEAD, A, 900
+DEAD, D, 862
+DEAD, D, 875
+DEAD, D, 903
+SPAWN, A, 918, 1, 63, 19
+SPAWN, A, 919, 2, 63, 20
+SPAWN, A, 920, 3, 63, 21
+SPAWN, D, 921, 1, 63, 19
+SPAWN, D, 922, 2, 63, 20
+SPAWN, D, 923, 3, 63, 21
+TURN, 154
+PRINT, TURN 154 LOGS:To be spawned at Position(63,22)
+PRINT, To be spawned at Position(63,23)
+PRINT, To be spawned at Position(63,24)
+PRINT, Type 1 at Position (63,22)
+PRINT, Type 2 at Position (63,23)
+PRINT, Type 3 at Position (63,24)
+PRINT, 
+SHOOT, D, 865, 868, 0
+SHOOT, D, 871, 874, 2
+SHOOT, D, 877, 880, 4
+SHOOT, D, 878, 881, 0
+SHOOT, D, 883, 886, 6
+SHOOT, D, 884, 887, 1
+SHOOT, D, 889, 892, 8
+SHOOT, D, 890, 893, 3
+SHOOT, D, 895, 898, 10
+SHOOT, D, 896, 899, 5
+SHOOT, D, 901, 904, 12
+SHOOT, D, 902, 905, 7
+SHOOT, D, 906, 909, 0
+SHOOT, D, 907, 910, 14
+SHOOT, D, 908, 911, 9
+SHOOT, D, 912, 915, 2
+SHOOT, D, 913, 916, 16
+SHOOT, D, 914, 917, 11
+SHOOT, D, 918, 921, 6
+SHOOT, D, 919, 922, 18
+SHOOT, D, 920, 923, 13
+SHOOT, A, 868, 865, 0
+SHOOT, A, 874, 871, 2
+SHOOT, A, 880, 877, 4
+SHOOT, A, 881, 878, 0
+SHOOT, A, 886, 883, 6
+SHOOT, A, 887, 884, 1
+SHOOT, A, 892, 889, 8
+SHOOT, A, 893, 890, 3
+SHOOT, A, 898, 895, 10
+SHOOT, A, 899, 896, 5
+SHOOT, A, 904, 901, 12
+SHOOT, A, 905, 902, 7
+SHOOT, A, 909, 906, 0
+SHOOT, A, 910, 907, 14
+SHOOT, A, 911, 908, 9
+SHOOT, A, 915, 912, 2
+SHOOT, A, 916, 913, 16
+SHOOT, A, 917, 914, 11
+SHOOT, A, 921, 918, 6
+SHOOT, A, 922, 919, 18
+SHOOT, A, 923, 920, 13
+DEAD, A, 865
+DEAD, A, 878
+DEAD, A, 906
+DEAD, D, 868
+DEAD, D, 881
+DEAD, D, 909
+SPAWN, A, 924, 1, 63, 22
+SPAWN, A, 925, 2, 63, 23
+SPAWN, A, 926, 3, 63, 24
+SPAWN, D, 927, 1, 63, 22
+SPAWN, D, 928, 2, 63, 23
+SPAWN, D, 929, 3, 63, 24
+TURN, 155
+PRINT, TURN 155 LOGS:To be spawned at Position(63,25)
+PRINT, To be spawned at Position(63,26)
+PRINT, To be spawned at Position(63,27)
+PRINT, Type 1 at Position (63,25)
+PRINT, Type 2 at Position (63,26)
+PRINT, Type 3 at Position (63,27)
+PRINT, 
+SHOOT, D, 871, 874, 0
+SHOOT, D, 877, 880, 2
+SHOOT, D, 883, 886, 4
+SHOOT, D, 884, 887, 0
+SHOOT, D, 889, 892, 6
+SHOOT, D, 890, 893, 1
+SHOOT, D, 895, 898, 8
+SHOOT, D, 896, 899, 3
+SHOOT, D, 901, 904, 10
+SHOOT, D, 902, 905, 5
+SHOOT, D, 907, 910, 12
+SHOOT, D, 908, 911, 7
+SHOOT, D, 912, 915, 0
+SHOOT, D, 913, 916, 14
+SHOOT, D, 914, 917, 9
+SHOOT, D, 918, 921, 2
+SHOOT, D, 919, 922, 16
+SHOOT, D, 920, 923, 11
+SHOOT, D, 924, 927, 6
+SHOOT, D, 925, 928, 18
+SHOOT, D, 926, 929, 13
+SHOOT, A, 874, 871, 0
+SHOOT, A, 880, 877, 2
+SHOOT, A, 886, 883, 4
+SHOOT, A, 887, 884, 0
+SHOOT, A, 892, 889, 6
+SHOOT, A, 893, 890, 1
+SHOOT, A, 898, 895, 8
+SHOOT, A, 899, 896, 3
+SHOOT, A, 904, 901, 10
+SHOOT, A, 905, 902, 5
+SHOOT, A, 910, 907, 12
+SHOOT, A, 911, 908, 7
+SHOOT, A, 915, 912, 0
+SHOOT, A, 916, 913, 14
+SHOOT, A, 917, 914, 9
+SHOOT, A, 921, 918, 2
+SHOOT, A, 922, 919, 16
+SHOOT, A, 923, 920, 11
+SHOOT, A, 927, 924, 6
+SHOOT, A, 928, 925, 18
+SHOOT, A, 929, 926, 13
+DEAD, A, 871
+DEAD, A, 884
+DEAD, A, 912
+DEAD, D, 874
+DEAD, D, 887
+DEAD, D, 915
+SPAWN, A, 930, 1, 63, 25
+SPAWN, A, 931, 2, 63, 26
+SPAWN, A, 932, 3, 63, 27
+SPAWN, D, 933, 1, 63, 25
+SPAWN, D, 934, 2, 63, 26
+SPAWN, D, 935, 3, 63, 27
+TURN, 156
+PRINT, TURN 156 LOGS:To be spawned at Position(63,28)
+PRINT, To be spawned at Position(63,29)
+PRINT, To be spawned at Position(63,30)
+PRINT, Type 1 at Position (63,28)
+PRINT, Type 2 at Position (63,29)
+PRINT, Type 3 at Position (63,30)
+PRINT, 
+SHOOT, D, 877, 880, 0
+SHOOT, D, 883, 886, 2
+SHOOT, D, 889, 892, 4
+SHOOT, D, 890, 893, 0
+SHOOT, D, 895, 898, 6
+SHOOT, D, 896, 899, 1
+SHOOT, D, 901, 904, 8
+SHOOT, D, 902, 905, 3
+SHOOT, D, 907, 910, 10
+SHOOT, D, 908, 911, 5
+SHOOT, D, 913, 916, 12
+SHOOT, D, 914, 917, 7
+SHOOT, D, 918, 921, 0
+SHOOT, D, 919, 922, 14
+SHOOT, D, 920, 923, 9
+SHOOT, D, 924, 927, 2
+SHOOT, D, 925, 928, 16
+SHOOT, D, 926, 929, 11
+SHOOT, D, 930, 933, 6
+SHOOT, D, 931, 934, 18
+SHOOT, D, 932, 935, 13
+SHOOT, A, 880, 877, 0
+SHOOT, A, 886, 883, 2
+SHOOT, A, 892, 889, 4
+SHOOT, A, 893, 890, 0
+SHOOT, A, 898, 895, 6
+SHOOT, A, 899, 896, 1
+SHOOT, A, 904, 901, 8
+SHOOT, A, 905, 902, 3
+SHOOT, A, 910, 907, 10
+SHOOT, A, 911, 908, 5
+SHOOT, A, 916, 913, 12
+SHOOT, A, 917, 914, 7
+SHOOT, A, 921, 918, 0
+SHOOT, A, 922, 919, 14
+SHOOT, A, 923, 920, 9
+SHOOT, A, 927, 924, 2
+SHOOT, A, 928, 925, 16
+SHOOT, A, 929, 926, 11
+SHOOT, A, 933, 930, 6
+SHOOT, A, 934, 931, 18
+SHOOT, A, 935, 932, 13
+DEAD, A, 877
+DEAD, A, 890
+DEAD, A, 918
+DEAD, D, 880
+DEAD, D, 893
+DEAD, D, 921
+SPAWN, A, 936, 1, 63, 28
+SPAWN, A, 937, 2, 63, 29
+SPAWN, A, 938, 3, 63, 30
+SPAWN, D, 939, 1, 63, 28
+SPAWN, D, 940, 2, 63, 29
+SPAWN, D, 941, 3, 63, 30
+TURN, 157
+PRINT, TURN 157 LOGS:To be spawned at Position(63,31)
+PRINT, To be spawned at Position(63,32)
+PRINT, To be spawned at Position(63,33)
+PRINT, Type 1 at Position (63,31)
+PRINT, Type 2 at Position (63,32)
+PRINT, Type 3 at Position (63,33)
+PRINT, 
+SHOOT, D, 883, 886, 0
+SHOOT, D, 889, 892, 2
+SHOOT, D, 895, 898, 4
+SHOOT, D, 896, 899, 0
+SHOOT, D, 901, 904, 6
+SHOOT, D, 902, 905, 1
+SHOOT, D, 907, 910, 8
+SHOOT, D, 908, 911, 3
+SHOOT, D, 913, 916, 10
+SHOOT, D, 914, 917, 5
+SHOOT, D, 919, 922, 12
+SHOOT, D, 920, 923, 7
+SHOOT, D, 924, 927, 0
+SHOOT, D, 925, 928, 14
+SHOOT, D, 926, 929, 9
+SHOOT, D, 930, 933, 2
+SHOOT, D, 931, 934, 16
+SHOOT, D, 932, 935, 11
+SHOOT, D, 936, 939, 6
+SHOOT, D, 937, 940, 18
+SHOOT, D, 938, 941, 13
+SHOOT, A, 886, 883, 0
+SHOOT, A, 892, 889, 2
+SHOOT, A, 898, 895, 4
+SHOOT, A, 899, 896, 0
+SHOOT, A, 904, 901, 6
+SHOOT, A, 905, 902, 1
+SHOOT, A, 910, 907, 8
+SHOOT, A, 911, 908, 3
+SHOOT, A, 916, 913, 10
+SHOOT, A, 917, 914, 5
+SHOOT, A, 922, 919, 12
+SHOOT, A, 923, 920, 7
+SHOOT, A, 927, 924, 0
+SHOOT, A, 928, 925, 14
+SHOOT, A, 929, 926, 9
+SHOOT, A, 933, 930, 2
+SHOOT, A, 934, 931, 16
+SHOOT, A, 935, 932, 11
+SHOOT, A, 939, 936, 6
+SHOOT, A, 940, 937, 18
+SHOOT, A, 941, 938, 13
+DEAD, A, 883
+DEAD, A, 896
+DEAD, A, 924
+DEAD, D, 886
+DEAD, D, 899
+DEAD, D, 927
+SPAWN, A, 942, 1, 63, 31
+SPAWN, A, 943, 2, 63, 32
+SPAWN, A, 944, 3, 63, 33
+SPAWN, D, 945, 1, 63, 31
+SPAWN, D, 946, 2, 63, 32
+SPAWN, D, 947, 3, 63, 33
+TURN, 158
+PRINT, TURN 158 LOGS:To be spawned at Position(63,34)
+PRINT, To be spawned at Position(63,35)
+PRINT, To be spawned at Position(63,36)
+PRINT, Type 1 at Position (63,34)
+PRINT, Type 2 at Position (63,35)
+PRINT, Type 3 at Position (63,36)
+PRINT, 
+SHOOT, D, 889, 892, 0
+SHOOT, D, 895, 898, 2
+SHOOT, D, 901, 904, 4
+SHOOT, D, 902, 905, 0
+SHOOT, D, 907, 910, 6
+SHOOT, D, 908, 911, 1
+SHOOT, D, 913, 916, 8
+SHOOT, D, 914, 917, 3
+SHOOT, D, 919, 922, 10
+SHOOT, D, 920, 923, 5
+SHOOT, D, 925, 928, 12
+SHOOT, D, 926, 929, 7
+SHOOT, D, 930, 933, 0
+SHOOT, D, 931, 934, 14
+SHOOT, D, 932, 935, 9
+SHOOT, D, 936, 939, 2
+SHOOT, D, 937, 940, 16
+SHOOT, D, 938, 941, 11
+SHOOT, D, 942, 945, 6
+SHOOT, D, 943, 946, 18
+SHOOT, D, 944, 947, 13
+SHOOT, A, 892, 889, 0
+SHOOT, A, 898, 895, 2
+SHOOT, A, 904, 901, 4
+SHOOT, A, 905, 902, 0
+SHOOT, A, 910, 907, 6
+SHOOT, A, 911, 908, 1
+SHOOT, A, 916, 913, 8
+SHOOT, A, 917, 914, 3
+SHOOT, A, 922, 919, 10
+SHOOT, A, 923, 920, 5
+SHOOT, A, 928, 925, 12
+SHOOT, A, 929, 926, 7
+SHOOT, A, 933, 930, 0
+SHOOT, A, 934, 931, 14
+SHOOT, A, 935, 932, 9
+SHOOT, A, 939, 936, 2
+SHOOT, A, 940, 937, 16
+SHOOT, A, 941, 938, 11
+SHOOT, A, 945, 942, 6
+SHOOT, A, 946, 943, 18
+SHOOT, A, 947, 944, 13
+DEAD, A, 889
+DEAD, A, 902
+DEAD, A, 930
+DEAD, D, 892
+DEAD, D, 905
+DEAD, D, 933
+SPAWN, A, 948, 1, 63, 34
+SPAWN, A, 949, 2, 63, 35
+SPAWN, A, 950, 3, 63, 36
+SPAWN, D, 951, 1, 63, 34
+SPAWN, D, 952, 2, 63, 35
+SPAWN, D, 953, 3, 63, 36
+TURN, 159
+PRINT, TURN 159 LOGS:To be spawned at Position(63,37)
+PRINT, To be spawned at Position(63,38)
+PRINT, To be spawned at Position(63,39)
+PRINT, Type 1 at Position (63,37)
+PRINT, Type 2 at Position (63,38)
+PRINT, Type 3 at Position (63,39)
+PRINT, 
+SHOOT, D, 895, 898, 0
+SHOOT, D, 901, 904, 2
+SHOOT, D, 907, 910, 4
+SHOOT, D, 908, 911, 0
+SHOOT, D, 913, 916, 6
+SHOOT, D, 914, 917, 1
+SHOOT, D, 919, 922, 8
+SHOOT, D, 920, 923, 3
+SHOOT, D, 925, 928, 10
+SHOOT, D, 926, 929, 5
+SHOOT, D, 931, 934, 12
+SHOOT, D, 932, 935, 7
+SHOOT, D, 936, 939, 0
+SHOOT, D, 937, 940, 14
+SHOOT, D, 938, 941, 9
+SHOOT, D, 942, 945, 2
+SHOOT, D, 943, 946, 16
+SHOOT, D, 944, 947, 11
+SHOOT, D, 948, 951, 6
+SHOOT, D, 949, 952, 18
+SHOOT, D, 950, 953, 13
+SHOOT, A, 898, 895, 0
+SHOOT, A, 904, 901, 2
+SHOOT, A, 910, 907, 4
+SHOOT, A, 911, 908, 0
+SHOOT, A, 916, 913, 6
+SHOOT, A, 917, 914, 1
+SHOOT, A, 922, 919, 8
+SHOOT, A, 923, 920, 3
+SHOOT, A, 928, 925, 10
+SHOOT, A, 929, 926, 5
+SHOOT, A, 934, 931, 12
+SHOOT, A, 935, 932, 7
+SHOOT, A, 939, 936, 0
+SHOOT, A, 940, 937, 14
+SHOOT, A, 941, 938, 9
+SHOOT, A, 945, 942, 2
+SHOOT, A, 946, 943, 16
+SHOOT, A, 947, 944, 11
+SHOOT, A, 951, 948, 6
+SHOOT, A, 952, 949, 18
+SHOOT, A, 953, 950, 13
+DEAD, A, 895
+DEAD, A, 908
+DEAD, A, 936
+DEAD, D, 898
+DEAD, D, 911
+DEAD, D, 939
+SPAWN, A, 954, 1, 63, 37
+SPAWN, A, 955, 2, 63, 38
+SPAWN, A, 956, 3, 63, 39
+SPAWN, D, 957, 1, 63, 37
+SPAWN, D, 958, 2, 63, 38
+SPAWN, D, 959, 3, 63, 39
+TURN, 160
+PRINT, TURN 160 LOGS:To be spawned at Position(63,40)
+PRINT, To be spawned at Position(63,41)
+PRINT, To be spawned at Position(63,42)
+PRINT, Type 1 at Position (63,40)
+PRINT, Type 2 at Position (63,41)
+PRINT, Type 3 at Position (63,42)
+PRINT, 
+SHOOT, D, 901, 904, 0
+SHOOT, D, 907, 910, 2
+SHOOT, D, 913, 916, 4
+SHOOT, D, 914, 917, 0
+SHOOT, D, 919, 922, 6
+SHOOT, D, 920, 923, 1
+SHOOT, D, 925, 928, 8
+SHOOT, D, 926, 929, 3
+SHOOT, D, 931, 934, 10
+SHOOT, D, 932, 935, 5
+SHOOT, D, 937, 940, 12
+SHOOT, D, 938, 941, 7
+SHOOT, D, 942, 945, 0
+SHOOT, D, 943, 946, 14
+SHOOT, D, 944, 947, 9
+SHOOT, D, 948, 951, 2
+SHOOT, D, 949, 952, 16
+SHOOT, D, 950, 953, 11
+SHOOT, D, 954, 957, 6
+SHOOT, D, 955, 958, 18
+SHOOT, D, 956, 959, 13
+SHOOT, A, 904, 901, 0
+SHOOT, A, 910, 907, 2
+SHOOT, A, 916, 913, 4
+SHOOT, A, 917, 914, 0
+SHOOT, A, 922, 919, 6
+SHOOT, A, 923, 920, 1
+SHOOT, A, 928, 925, 8
+SHOOT, A, 929, 926, 3
+SHOOT, A, 934, 931, 10
+SHOOT, A, 935, 932, 5
+SHOOT, A, 940, 937, 12
+SHOOT, A, 941, 938, 7
+SHOOT, A, 945, 942, 0
+SHOOT, A, 946, 943, 14
+SHOOT, A, 947, 944, 9
+SHOOT, A, 951, 948, 2
+SHOOT, A, 952, 949, 16
+SHOOT, A, 953, 950, 11
+SHOOT, A, 957, 954, 6
+SHOOT, A, 958, 955, 18
+SHOOT, A, 959, 956, 13
+DEAD, A, 901
+DEAD, A, 914
+DEAD, A, 942
+DEAD, D, 904
+DEAD, D, 917
+DEAD, D, 945
+SPAWN, A, 960, 1, 63, 40
+SPAWN, A, 961, 2, 63, 41
+SPAWN, A, 962, 3, 63, 42
+SPAWN, D, 963, 1, 63, 40
+SPAWN, D, 964, 2, 63, 41
+SPAWN, D, 965, 3, 63, 42
+TURN, 161
+PRINT, TURN 161 LOGS:To be spawned at Position(63,43)
+PRINT, To be spawned at Position(63,44)
+PRINT, To be spawned at Position(63,45)
+PRINT, Type 1 at Position (63,43)
+PRINT, Type 2 at Position (63,44)
+PRINT, Type 3 at Position (63,45)
+PRINT, 
+SHOOT, D, 907, 910, 0
+SHOOT, D, 913, 916, 2
+SHOOT, D, 919, 922, 4
+SHOOT, D, 920, 923, 0
+SHOOT, D, 925, 928, 6
+SHOOT, D, 926, 929, 1
+SHOOT, D, 931, 934, 8
+SHOOT, D, 932, 935, 3
+SHOOT, D, 937, 940, 10
+SHOOT, D, 938, 941, 5
+SHOOT, D, 943, 946, 12
+SHOOT, D, 944, 947, 7
+SHOOT, D, 948, 951, 0
+SHOOT, D, 949, 952, 14
+SHOOT, D, 950, 953, 9
+SHOOT, D, 954, 957, 2
+SHOOT, D, 955, 958, 16
+SHOOT, D, 956, 959, 11
+SHOOT, D, 960, 963, 6
+SHOOT, D, 961, 964, 18
+SHOOT, D, 962, 965, 13
+SHOOT, A, 910, 907, 0
+SHOOT, A, 916, 913, 2
+SHOOT, A, 922, 919, 4
+SHOOT, A, 923, 920, 0
+SHOOT, A, 928, 925, 6
+SHOOT, A, 929, 926, 1
+SHOOT, A, 934, 931, 8
+SHOOT, A, 935, 932, 3
+SHOOT, A, 940, 937, 10
+SHOOT, A, 941, 938, 5
+SHOOT, A, 946, 943, 12
+SHOOT, A, 947, 944, 7
+SHOOT, A, 951, 948, 0
+SHOOT, A, 952, 949, 14
+SHOOT, A, 953, 950, 9
+SHOOT, A, 957, 954, 2
+SHOOT, A, 958, 955, 16
+SHOOT, A, 959, 956, 11
+SHOOT, A, 963, 960, 6
+SHOOT, A, 964, 961, 18
+SHOOT, A, 965, 962, 13
+DEAD, A, 907
+DEAD, A, 920
+DEAD, A, 948
+DEAD, D, 910
+DEAD, D, 923
+DEAD, D, 951
+SPAWN, A, 966, 1, 63, 43
+SPAWN, A, 967, 2, 63, 44
+SPAWN, A, 968, 3, 63, 45
+SPAWN, D, 969, 1, 63, 43
+SPAWN, D, 970, 2, 63, 44
+SPAWN, D, 971, 3, 63, 45
+TURN, 162
+PRINT, TURN 162 LOGS:To be spawned at Position(63,46)
+PRINT, To be spawned at Position(63,47)
+PRINT, To be spawned at Position(63,48)
+PRINT, Type 1 at Position (63,46)
+PRINT, Type 2 at Position (63,47)
+PRINT, Type 3 at Position (63,48)
+PRINT, 
+SHOOT, D, 913, 916, 0
+SHOOT, D, 919, 922, 2
+SHOOT, D, 925, 928, 4
+SHOOT, D, 926, 929, 0
+SHOOT, D, 931, 934, 6
+SHOOT, D, 932, 935, 1
+SHOOT, D, 937, 940, 8
+SHOOT, D, 938, 941, 3
+SHOOT, D, 943, 946, 10
+SHOOT, D, 944, 947, 5
+SHOOT, D, 949, 952, 12
+SHOOT, D, 950, 953, 7
+SHOOT, D, 954, 957, 0
+SHOOT, D, 955, 958, 14
+SHOOT, D, 956, 959, 9
+SHOOT, D, 960, 963, 2
+SHOOT, D, 961, 964, 16
+SHOOT, D, 962, 965, 11
+SHOOT, D, 966, 969, 6
+SHOOT, D, 967, 970, 18
+SHOOT, D, 968, 971, 13
+SHOOT, A, 916, 913, 0
+SHOOT, A, 922, 919, 2
+SHOOT, A, 928, 925, 4
+SHOOT, A, 929, 926, 0
+SHOOT, A, 934, 931, 6
+SHOOT, A, 935, 932, 1
+SHOOT, A, 940, 937, 8
+SHOOT, A, 941, 938, 3
+SHOOT, A, 946, 943, 10
+SHOOT, A, 947, 944, 5
+SHOOT, A, 952, 949, 12
+SHOOT, A, 953, 950, 7
+SHOOT, A, 957, 954, 0
+SHOOT, A, 958, 955, 14
+SHOOT, A, 959, 956, 9
+SHOOT, A, 963, 960, 2
+SHOOT, A, 964, 961, 16
+SHOOT, A, 965, 962, 11
+SHOOT, A, 969, 966, 6
+SHOOT, A, 970, 967, 18
+SHOOT, A, 971, 968, 13
+DEAD, A, 913
+DEAD, A, 926
+DEAD, A, 954
+DEAD, D, 916
+DEAD, D, 929
+DEAD, D, 957
+SPAWN, A, 972, 1, 63, 46
+SPAWN, A, 973, 2, 63, 47
+SPAWN, A, 974, 3, 63, 48
+SPAWN, D, 975, 1, 63, 46
+SPAWN, D, 976, 2, 63, 47
+SPAWN, D, 977, 3, 63, 48
+TURN, 163
+PRINT, TURN 163 LOGS:To be spawned at Position(63,49)
+PRINT, To be spawned at Position(63,50)
+PRINT, To be spawned at Position(63,51)
+PRINT, Type 1 at Position (63,49)
+PRINT, Type 2 at Position (63,50)
+PRINT, Type 3 at Position (63,51)
+PRINT, 
+SHOOT, D, 919, 922, 0
+SHOOT, D, 925, 928, 2
+SHOOT, D, 931, 934, 4
+SHOOT, D, 932, 935, 0
+SHOOT, D, 937, 940, 6
+SHOOT, D, 938, 941, 1
+SHOOT, D, 943, 946, 8
+SHOOT, D, 944, 947, 3
+SHOOT, D, 949, 952, 10
+SHOOT, D, 950, 953, 5
+SHOOT, D, 955, 958, 12
+SHOOT, D, 956, 959, 7
+SHOOT, D, 960, 963, 0
+SHOOT, D, 961, 964, 14
+SHOOT, D, 962, 965, 9
+SHOOT, D, 966, 969, 2
+SHOOT, D, 967, 970, 16
+SHOOT, D, 968, 971, 11
+SHOOT, D, 972, 975, 6
+SHOOT, D, 973, 976, 18
+SHOOT, D, 974, 977, 13
+SHOOT, A, 922, 919, 0
+SHOOT, A, 928, 925, 2
+SHOOT, A, 934, 931, 4
+SHOOT, A, 935, 932, 0
+SHOOT, A, 940, 937, 6
+SHOOT, A, 941, 938, 1
+SHOOT, A, 946, 943, 8
+SHOOT, A, 947, 944, 3
+SHOOT, A, 952, 949, 10
+SHOOT, A, 953, 950, 5
+SHOOT, A, 958, 955, 12
+SHOOT, A, 959, 956, 7
+SHOOT, A, 963, 960, 0
+SHOOT, A, 964, 961, 14
+SHOOT, A, 965, 962, 9
+SHOOT, A, 969, 966, 2
+SHOOT, A, 970, 967, 16
+SHOOT, A, 971, 968, 11
+SHOOT, A, 975, 972, 6
+SHOOT, A, 976, 973, 18
+SHOOT, A, 977, 974, 13
+DEAD, A, 919
+DEAD, A, 932
+DEAD, A, 960
+DEAD, D, 922
+DEAD, D, 935
+DEAD, D, 963
+SPAWN, A, 978, 1, 63, 49
+SPAWN, A, 979, 2, 63, 50
+SPAWN, A, 980, 3, 63, 51
+SPAWN, D, 981, 1, 63, 49
+SPAWN, D, 982, 2, 63, 50
+SPAWN, D, 983, 3, 63, 51
+TURN, 164
+PRINT, TURN 164 LOGS:To be spawned at Position(63,52)
+PRINT, To be spawned at Position(63,53)
+PRINT, To be spawned at Position(63,54)
+PRINT, Type 1 at Position (63,52)
+PRINT, Type 2 at Position (63,53)
+PRINT, Type 3 at Position (63,54)
+PRINT, 
+SHOOT, D, 925, 928, 0
+SHOOT, D, 931, 934, 2
+SHOOT, D, 937, 940, 4
+SHOOT, D, 938, 941, 0
+SHOOT, D, 943, 946, 6
+SHOOT, D, 944, 947, 1
+SHOOT, D, 949, 952, 8
+SHOOT, D, 950, 953, 3
+SHOOT, D, 955, 958, 10
+SHOOT, D, 956, 959, 5
+SHOOT, D, 961, 964, 12
+SHOOT, D, 962, 965, 7
+SHOOT, D, 966, 969, 0
+SHOOT, D, 967, 970, 14
+SHOOT, D, 968, 971, 9
+SHOOT, D, 972, 975, 2
+SHOOT, D, 973, 976, 16
+SHOOT, D, 974, 977, 11
+SHOOT, D, 978, 981, 6
+SHOOT, D, 979, 982, 18
+SHOOT, D, 980, 983, 13
+SHOOT, A, 928, 925, 0
+SHOOT, A, 934, 931, 2
+SHOOT, A, 940, 937, 4
+SHOOT, A, 941, 938, 0
+SHOOT, A, 946, 943, 6
+SHOOT, A, 947, 944, 1
+SHOOT, A, 952, 949, 8
+SHOOT, A, 953, 950, 3
+SHOOT, A, 958, 955, 10
+SHOOT, A, 959, 956, 5
+SHOOT, A, 964, 961, 12
+SHOOT, A, 965, 962, 7
+SHOOT, A, 969, 966, 0
+SHOOT, A, 970, 967, 14
+SHOOT, A, 971, 968, 9
+SHOOT, A, 975, 972, 2
+SHOOT, A, 976, 973, 16
+SHOOT, A, 977, 974, 11
+SHOOT, A, 981, 978, 6
+SHOOT, A, 982, 979, 18
+SHOOT, A, 983, 980, 13
+DEAD, A, 925
+DEAD, A, 938
+DEAD, A, 966
+DEAD, D, 928
+DEAD, D, 941
+DEAD, D, 969
+SPAWN, A, 984, 1, 63, 52
+SPAWN, A, 985, 2, 63, 53
+SPAWN, A, 986, 3, 63, 54
+SPAWN, D, 987, 1, 63, 52
+SPAWN, D, 988, 2, 63, 53
+SPAWN, D, 989, 3, 63, 54
+TURN, 165
+PRINT, TURN 165 LOGS:To be spawned at Position(63,55)
+PRINT, To be spawned at Position(63,56)
+PRINT, To be spawned at Position(63,57)
+PRINT, Type 1 at Position (63,55)
+PRINT, Type 2 at Position (63,56)
+PRINT, Type 3 at Position (63,57)
+PRINT, 
+SHOOT, D, 931, 934, 0
+SHOOT, D, 937, 940, 2
+SHOOT, D, 943, 946, 4
+SHOOT, D, 944, 947, 0
+SHOOT, D, 949, 952, 6
+SHOOT, D, 950, 953, 1
+SHOOT, D, 955, 958, 8
+SHOOT, D, 956, 959, 3
+SHOOT, D, 961, 964, 10
+SHOOT, D, 962, 965, 5
+SHOOT, D, 967, 970, 12
+SHOOT, D, 968, 971, 7
+SHOOT, D, 972, 975, 0
+SHOOT, D, 973, 976, 14
+SHOOT, D, 974, 977, 9
+SHOOT, D, 978, 981, 2
+SHOOT, D, 979, 982, 16
+SHOOT, D, 980, 983, 11
+SHOOT, D, 984, 987, 6
+SHOOT, D, 985, 988, 18
+SHOOT, D, 986, 989, 13
+SHOOT, A, 934, 931, 0
+SHOOT, A, 940, 937, 2
+SHOOT, A, 946, 943, 4
+SHOOT, A, 947, 944, 0
+SHOOT, A, 952, 949, 6
+SHOOT, A, 953, 950, 1
+SHOOT, A, 958, 955, 8
+SHOOT, A, 959, 956, 3
+SHOOT, A, 964, 961, 10
+SHOOT, A, 965, 962, 5
+SHOOT, A, 970, 967, 12
+SHOOT, A, 971, 968, 7
+SHOOT, A, 975, 972, 0
+SHOOT, A, 976, 973, 14
+SHOOT, A, 977, 974, 9
+SHOOT, A, 981, 978, 2
+SHOOT, A, 982, 979, 16
+SHOOT, A, 983, 980, 11
+SHOOT, A, 987, 984, 6
+SHOOT, A, 988, 985, 18
+SHOOT, A, 989, 986, 13
+DEAD, A, 931
+DEAD, A, 944
+DEAD, A, 972
+DEAD, D, 934
+DEAD, D, 947
+DEAD, D, 975
+SPAWN, A, 990, 1, 63, 55
+SPAWN, A, 991, 2, 63, 56
+SPAWN, A, 992, 3, 63, 57
+SPAWN, D, 993, 1, 63, 55
+SPAWN, D, 994, 2, 63, 56
+SPAWN, D, 995, 3, 63, 57
+TURN, 166
+PRINT, TURN 166 LOGS:To be spawned at Position(63,58)
+PRINT, To be spawned at Position(63,59)
+PRINT, To be spawned at Position(63,60)
+PRINT, Type 1 at Position (63,58)
+PRINT, Type 2 at Position (63,59)
+PRINT, Type 3 at Position (63,60)
+PRINT, 
+SHOOT, D, 937, 940, 0
+SHOOT, D, 943, 946, 2
+SHOOT, D, 949, 952, 4
+SHOOT, D, 950, 953, 0
+SHOOT, D, 955, 958, 6
+SHOOT, D, 956, 959, 1
+SHOOT, D, 961, 964, 8
+SHOOT, D, 962, 965, 3
+SHOOT, D, 967, 970, 10
+SHOOT, D, 968, 971, 5
+SHOOT, D, 973, 976, 12
+SHOOT, D, 974, 977, 7
+SHOOT, D, 978, 981, 0
+SHOOT, D, 979, 982, 14
+SHOOT, D, 980, 983, 9
+SHOOT, D, 984, 987, 2
+SHOOT, D, 985, 988, 16
+SHOOT, D, 986, 989, 11
+SHOOT, D, 990, 993, 6
+SHOOT, D, 991, 994, 18
+SHOOT, D, 992, 995, 13
+SHOOT, A, 940, 937, 0
+SHOOT, A, 946, 943, 2
+SHOOT, A, 952, 949, 4
+SHOOT, A, 953, 950, 0
+SHOOT, A, 958, 955, 6
+SHOOT, A, 959, 956, 1
+SHOOT, A, 964, 961, 8
+SHOOT, A, 965, 962, 3
+SHOOT, A, 970, 967, 10
+SHOOT, A, 971, 968, 5
+SHOOT, A, 976, 973, 12
+SHOOT, A, 977, 974, 7
+SHOOT, A, 981, 978, 0
+SHOOT, A, 982, 979, 14
+SHOOT, A, 983, 980, 9
+SHOOT, A, 987, 984, 2
+SHOOT, A, 988, 985, 16
+SHOOT, A, 989, 986, 11
+SHOOT, A, 993, 990, 6
+SHOOT, A, 994, 991, 18
+SHOOT, A, 995, 992, 13
+DEAD, A, 937
+DEAD, A, 950
+DEAD, A, 978
+DEAD, D, 940
+DEAD, D, 953
+DEAD, D, 981
+SPAWN, A, 996, 1, 63, 58
+SPAWN, A, 997, 2, 63, 59
+SPAWN, A, 998, 3, 63, 60
+SPAWN, D, 999, 1, 63, 58
+SPAWN, D, 1000, 2, 63, 59
+SPAWN, D, 1001, 3, 63, 60
+TURN, 167
+PRINT, TURN 167 LOGS:To be spawned at Position(63,61)
+PRINT, To be spawned at Position(63,62)
+PRINT, To be spawned at Position(63,63)
+PRINT, Type 1 at Position (63,61)
+PRINT, Type 2 at Position (63,62)
+PRINT, Type 3 at Position (63,63)
+PRINT, 
+SHOOT, D, 943, 946, 0
+SHOOT, D, 949, 952, 2
+SHOOT, D, 955, 958, 4
+SHOOT, D, 956, 959, 0
+SHOOT, D, 961, 964, 6
+SHOOT, D, 962, 965, 1
+SHOOT, D, 967, 970, 8
+SHOOT, D, 968, 971, 3
+SHOOT, D, 973, 976, 10
+SHOOT, D, 974, 977, 5
+SHOOT, D, 979, 982, 12
+SHOOT, D, 980, 983, 7
+SHOOT, D, 984, 987, 0
+SHOOT, D, 985, 988, 14
+SHOOT, D, 986, 989, 9
+SHOOT, D, 990, 993, 2
+SHOOT, D, 991, 994, 16
+SHOOT, D, 992, 995, 11
+SHOOT, D, 996, 999, 6
+SHOOT, D, 997, 1000, 18
+SHOOT, D, 998, 1001, 13
+SHOOT, A, 946, 943, 0
+SHOOT, A, 952, 949, 2
+SHOOT, A, 958, 955, 4
+SHOOT, A, 959, 956, 0
+SHOOT, A, 964, 961, 6
+SHOOT, A, 965, 962, 1
+SHOOT, A, 970, 967, 8
+SHOOT, A, 971, 968, 3
+SHOOT, A, 976, 973, 10
+SHOOT, A, 977, 974, 5
+SHOOT, A, 982, 979, 12
+SHOOT, A, 983, 980, 7
+SHOOT, A, 987, 984, 0
+SHOOT, A, 988, 985, 14
+SHOOT, A, 989, 986, 9
+SHOOT, A, 993, 990, 2
+SHOOT, A, 994, 991, 16
+SHOOT, A, 995, 992, 11
+SHOOT, A, 999, 996, 6
+SHOOT, A, 1000, 997, 18
+SHOOT, A, 1001, 998, 13
+DEAD, A, 943
+DEAD, A, 956
+DEAD, A, 984
+DEAD, D, 946
+DEAD, D, 959
+DEAD, D, 987
+SPAWN, A, 1002, 1, 63, 61
+SPAWN, A, 1003, 2, 63, 62
+SPAWN, A, 1004, 3, 63, 63
+SPAWN, D, 1005, 1, 63, 61
+SPAWN, D, 1006, 2, 63, 62
+SPAWN, D, 1007, 3, 63, 63
+TURN, 168
+PRINT, TURN 168 LOGS:To be spawned at Position(0,0)
+PRINT, To be spawned at Position(0,1)
+PRINT, To be spawned at Position(0,2)
+PRINT, Type 1 at Position (0,0)
+PRINT, Type 2 at Position (0,1)
+PRINT, Type 3 at Position (0,2)
+PRINT, 
+SHOOT, D, 949, 952, 0
+SHOOT, D, 955, 958, 2
+SHOOT, D, 961, 964, 4
+SHOOT, D, 962, 965, 0
+SHOOT, D, 967, 970, 6
+SHOOT, D, 968, 971, 1
+SHOOT, D, 973, 976, 8
+SHOOT, D, 974, 977, 3
+SHOOT, D, 979, 982, 10
+SHOOT, D, 980, 983, 5
+SHOOT, D, 985, 988, 12
+SHOOT, D, 986, 989, 7
+SHOOT, D, 990, 993, 0
+SHOOT, D, 991, 994, 14
+SHOOT, D, 992, 995, 9
+SHOOT, D, 996, 999, 2
+SHOOT, D, 997, 1000, 16
+SHOOT, D, 998, 1001, 11
+SHOOT, D, 1002, 1005, 6
+SHOOT, D, 1003, 1006, 18
+SHOOT, D, 1004, 1007, 13
+SHOOT, A, 952, 949, 0
+SHOOT, A, 958, 955, 2
+SHOOT, A, 964, 961, 4
+SHOOT, A, 965, 962, 0
+SHOOT, A, 970, 967, 6
+SHOOT, A, 971, 968, 1
+SHOOT, A, 976, 973, 8
+SHOOT, A, 977, 974, 3
+SHOOT, A, 982, 979, 10
+SHOOT, A, 983, 980, 5
+SHOOT, A, 988, 985, 12
+SHOOT, A, 989, 986, 7
+SHOOT, A, 993, 990, 0
+SHOOT, A, 994, 991, 14
+SHOOT, A, 995, 992, 9
+SHOOT, A, 999, 996, 2
+SHOOT, A, 1000, 997, 16
+SHOOT, A, 1001, 998, 11
+SHOOT, A, 1005, 1002, 6
+SHOOT, A, 1006, 1003, 18
+SHOOT, A, 1007, 1004, 13
+DEAD, A, 949
+DEAD, A, 962
+DEAD, A, 990
+DEAD, D, 952
+DEAD, D, 965
+DEAD, D, 993
+SPAWN, A, 1008, 1, 0, 0
+SPAWN, A, 1009, 2, 0, 1
+SPAWN, A, 1010, 3, 0, 2
+SPAWN, D, 1011, 1, 0, 0
+SPAWN, D, 1012, 2, 0, 1
+SPAWN, D, 1013, 3, 0, 2
+TURN, 169
+PRINT, TURN 169 LOGS:To be spawned at Position(0,3)
+PRINT, To be spawned at Position(0,4)
+PRINT, To be spawned at Position(0,5)
+PRINT, Type 1 at Position (0,3)
+PRINT, Type 2 at Position (0,4)
+PRINT, Type 3 at Position (0,5)
+PRINT, 
+SHOOT, D, 955, 958, 0
+SHOOT, D, 961, 964, 2
+SHOOT, D, 967, 970, 4
+SHOOT, D, 968, 971, 0
+SHOOT, D, 973, 976, 6
+SHOOT, D, 974, 977, 1
+SHOOT, D, 979, 982, 8
+SHOOT, D, 980, 983, 3
+SHOOT, D, 985, 988, 10
+SHOOT, D, 986, 989, 5
+SHOOT, D, 991, 994, 12
+SHOOT, D, 992, 995, 7
+SHOOT, D, 996, 999, 0
+SHOOT, D, 997, 1000, 14
+SHOOT, D, 998, 1001, 9
+SHOOT, D, 1002, 1005, 2
+SHOOT, D, 1003, 1006, 16
+SHOOT, D, 1004, 1007, 11
+SHOOT, D, 1008, 1011, 6
+SHOOT, D, 1009, 1012, 18
+SHOOT, D, 1010, 1013, 13
+SHOOT, A, 958, 955, 0
+SHOOT, A, 964, 961, 2
+SHOOT, A, 970, 967, 4
+SHOOT, A, 971, 968, 0
+SHOOT, A, 976, 973, 6
+SHOOT, A, 977, 974, 1
+SHOOT, A, 982, 979, 8
+SHOOT, A, 983, 980, 3
+SHOOT, A, 988, 985, 10
+SHOOT, A, 989, 986, 5
+SHOOT, A, 994, 991, 12
+SHOOT, A, 995, 992, 7
+SHOOT, A, 999, 996, 0
+SHOOT, A, 1000, 997, 14
+SHOOT, A, 1001, 998, 9
+SHOOT, A, 1005, 1002, 2
+SHOOT, A, 1006, 1003, 16
+SHOOT, A, 1007, 1004, 11
+SHOOT, A, 1011, 1008, 6
+SHOOT, A, 1012, 1009, 18
+SHOOT, A, 1013, 1010, 13
+DEAD, A, 955
+DEAD, A, 968
+DEAD, A, 996
+DEAD, D, 958
+DEAD, D, 971
+DEAD, D, 999
+SPAWN, A, 1014, 1, 0, 3
+SPAWN, A, 1015, 2, 0, 4
+SPAWN, A, 1016, 3, 0, 5
+SPAWN, D, 1017, 1, 0, 3
+SPAWN, D, 1018, 2, 0, 4
+SPAWN, D, 1019, 3, 0, 5
+TURN, 170
+PRINT, TURN 170 LOGS:To be spawned at Position(0,6)
+PRINT, To be spawned at Position(0,7)
+PRINT, To be spawned at Position(0,8)
+PRINT, Type 1 at Position (0,6)
+PRINT, Type 2 at Position (0,7)
+PRINT, Type 3 at Position (0,8)
+PRINT, 
+SHOOT, D, 961, 964, 0
+SHOOT, D, 967, 970, 2
+SHOOT, D, 973, 976, 4
+SHOOT, D, 974, 977, 0
+SHOOT, D, 979, 982, 6
+SHOOT, D, 980, 983, 1
+SHOOT, D, 985, 988, 8
+SHOOT, D, 986, 989, 3
+SHOOT, D, 991, 994, 10
+SHOOT, D, 992, 995, 5
+SHOOT, D, 997, 1000, 12
+SHOOT, D, 998, 1001, 7
+SHOOT, D, 1002, 1005, 0
+SHOOT, D, 1003, 1006, 14
+SHOOT, D, 1004, 1007, 9
+SHOOT, D, 1008, 1011, 2
+SHOOT, D, 1009, 1012, 16
+SHOOT, D, 1010, 1013, 11
+SHOOT, D, 1014, 1017, 6
+SHOOT, D, 1015, 1018, 18
+SHOOT, D, 1016, 1019, 13
+SHOOT, A, 964, 961, 0
+SHOOT, A, 970, 967, 2
+SHOOT, A, 976, 973, 4
+SHOOT, A, 977, 974, 0
+SHOOT, A, 982, 979, 6
+SHOOT, A, 983, 980, 1
+SHOOT, A, 988, 985, 8
+SHOOT, A, 989, 986, 3
+SHOOT, A, 994, 991, 10
+SHOOT, A, 995, 992, 5
+SHOOT, A, 1000, 997, 12
+SHOOT, A, 1001, 998, 7
+SHOOT, A, 1005, 1002, 0
+SHOOT, A, 1006, 1003, 14
+SHOOT, A, 1007, 1004, 9
+SHOOT, A, 1011, 1008, 2
+SHOOT, A, 1012, 1009, 16
+SHOOT, A, 1013, 1010, 11
+SHOOT, A, 1017, 1014, 6
+SHOOT, A, 1018, 1015, 18
+SHOOT, A, 1019, 1016, 13
+DEAD, A, 961
+DEAD, A, 974
+DEAD, A, 1002
+DEAD, D, 964
+DEAD, D, 977
+DEAD, D, 1005
+SPAWN, A, 1020, 1, 0, 6
+SPAWN, A, 1021, 2, 0, 7
+SPAWN, A, 1022, 3, 0, 8
+SPAWN, D, 1023, 1, 0, 6
+SPAWN, D, 1024, 2, 0, 7
+SPAWN, D, 1025, 3, 0, 8
+TURN, 171
+PRINT, TURN 171 LOGS:To be spawned at Position(0,9)
+PRINT, To be spawned at Position(0,10)
+PRINT, To be spawned at Position(0,11)
+PRINT, Type 1 at Position (0,9)
+PRINT, Type 2 at Position (0,10)
+PRINT, Type 3 at Position (0,11)
+PRINT, 
+SHOOT, D, 967, 970, 0
+SHOOT, D, 973, 976, 2
+SHOOT, D, 979, 982, 4
+SHOOT, D, 980, 983, 0
+SHOOT, D, 985, 988, 6
+SHOOT, D, 986, 989, 1
+SHOOT, D, 991, 994, 8
+SHOOT, D, 992, 995, 3
+SHOOT, D, 997, 1000, 10
+SHOOT, D, 998, 1001, 5
+SHOOT, D, 1003, 1006, 12
+SHOOT, D, 1004, 1007, 7
+SHOOT, D, 1008, 1011, 0
+SHOOT, D, 1009, 1012, 14
+SHOOT, D, 1010, 1013, 9
+SHOOT, D, 1014, 1017, 2
+SHOOT, D, 1015, 1018, 16
+SHOOT, D, 1016, 1019, 11
+SHOOT, D, 1020, 1023, 6
+SHOOT, D, 1021, 1024, 18
+SHOOT, D, 1022, 1025, 13
+SHOOT, A, 970, 967, 0
+SHOOT, A, 976, 973, 2
+SHOOT, A, 982, 979, 4
+SHOOT, A, 983, 980, 0
+SHOOT, A, 988, 985, 6
+SHOOT, A, 989, 986, 1
+SHOOT, A, 994, 991, 8
+SHOOT, A, 995, 992, 3
+SHOOT, A, 1000, 997, 10
+SHOOT, A, 1001, 998, 5
+SHOOT, A, 1006, 1003, 12
+SHOOT, A, 1007, 1004, 7
+SHOOT, A, 1011, 1008, 0
+SHOOT, A, 1012, 1009, 14
+SHOOT, A, 1013, 1010, 9
+SHOOT, A, 1017, 1014, 2
+SHOOT, A, 1018, 1015, 16
+SHOOT, A, 1019, 1016, 11
+SHOOT, A, 1023, 1020, 6
+SHOOT, A, 1024, 1021, 18
+SHOOT, A, 1025, 1022, 13
+DEAD, A, 967
+DEAD, A, 980
+DEAD, A, 1008
+DEAD, D, 970
+DEAD, D, 983
+DEAD, D, 1011
+SPAWN, A, 1026, 1, 0, 9
+SPAWN, A, 1027, 2, 0, 10
+SPAWN, A, 1028, 3, 0, 11
+SPAWN, D, 1029, 1, 0, 9
+SPAWN, D, 1030, 2, 0, 10
+SPAWN, D, 1031, 3, 0, 11
+TURN, 172
+PRINT, TURN 172 LOGS:To be spawned at Position(0,12)
+PRINT, To be spawned at Position(0,13)
+PRINT, To be spawned at Position(0,14)
+PRINT, Type 1 at Position (0,12)
+PRINT, Type 2 at Position (0,13)
+PRINT, Type 3 at Position (0,14)
+PRINT, 
+SHOOT, D, 973, 976, 0
+SHOOT, D, 979, 982, 2
+SHOOT, D, 985, 988, 4
+SHOOT, D, 986, 989, 0
+SHOOT, D, 991, 994, 6
+SHOOT, D, 992, 995, 1
+SHOOT, D, 997, 1000, 8
+SHOOT, D, 998, 1001, 3
+SHOOT, D, 1003, 1006, 10
+SHOOT, D, 1004, 1007, 5
+SHOOT, D, 1009, 1012, 12
+SHOOT, D, 1010, 1013, 7
+SHOOT, D, 1014, 1017, 0
+SHOOT, D, 1015, 1018, 14
+SHOOT, D, 1016, 1019, 9
+SHOOT, D, 1020, 1023, 2
+SHOOT, D, 1021, 1024, 16
+SHOOT, D, 1022, 1025, 11
+SHOOT, D, 1026, 1029, 6
+SHOOT, D, 1027, 1030, 18
+SHOOT, D, 1028, 1031, 13
+SHOOT, A, 976, 973, 0
+SHOOT, A, 982, 979, 2
+SHOOT, A, 988, 985, 4
+SHOOT, A, 989, 986, 0
+SHOOT, A, 994, 991, 6
+SHOOT, A, 995, 992, 1
+SHOOT, A, 1000, 997, 8
+SHOOT, A, 1001, 998, 3
+SHOOT, A, 1006, 1003, 10
+SHOOT, A, 1007, 1004, 5
+SHOOT, A, 1012, 1009, 12
+SHOOT, A, 1013, 1010, 7
+SHOOT, A, 1017, 1014, 0
+SHOOT, A, 1018, 1015, 14
+SHOOT, A, 1019, 1016, 9
+SHOOT, A, 1023, 1020, 2
+SHOOT, A, 1024, 1021, 16
+SHOOT, A, 1025, 1022, 11
+SHOOT, A, 1029, 1026, 6
+SHOOT, A, 1030, 1027, 18
+SHOOT, A, 1031, 1028, 13
+DEAD, A, 973
+DEAD, A, 986
+DEAD, A, 1014
+DEAD, D, 976
+DEAD, D, 989
+DEAD, D, 1017
+SPAWN, A, 1032, 1, 0, 12
+SPAWN, A, 1033, 2, 0, 13
+SPAWN, A, 1034, 3, 0, 14
+SPAWN, D, 1035, 1, 0, 12
+SPAWN, D, 1036, 2, 0, 13
+SPAWN, D, 1037, 3, 0, 14
+TURN, 173
+PRINT, TURN 173 LOGS:To be spawned at Position(0,15)
+PRINT, To be spawned at Position(0,16)
+PRINT, To be spawned at Position(0,17)
+PRINT, Type 1 at Position (0,15)
+PRINT, Type 2 at Position (0,16)
+PRINT, Type 3 at Position (0,17)
+PRINT, 
+SHOOT, D, 979, 982, 0
+SHOOT, D, 985, 988, 2
+SHOOT, D, 991, 994, 4
+SHOOT, D, 992, 995, 0
+SHOOT, D, 997, 1000, 6
+SHOOT, D, 998, 1001, 1
+SHOOT, D, 1003, 1006, 8
+SHOOT, D, 1004, 1007, 3
+SHOOT, D, 1009, 1012, 10
+SHOOT, D, 1010, 1013, 5
+SHOOT, D, 1015, 1018, 12
+SHOOT, D, 1016, 1019, 7
+SHOOT, D, 1020, 1023, 0
+SHOOT, D, 1021, 1024, 14
+SHOOT, D, 1022, 1025, 9
+SHOOT, D, 1026, 1029, 2
+SHOOT, D, 1027, 1030, 16
+SHOOT, D, 1028, 1031, 11
+SHOOT, D, 1032, 1035, 6
+SHOOT, D, 1033, 1036, 18
+SHOOT, D, 1034, 1037, 13
+SHOOT, A, 982, 979, 0
+SHOOT, A, 988, 985, 2
+SHOOT, A, 994, 991, 4
+SHOOT, A, 995, 992, 0
+SHOOT, A, 1000, 997, 6
+SHOOT, A, 1001, 998, 1
+SHOOT, A, 1006, 1003, 8
+SHOOT, A, 1007, 1004, 3
+SHOOT, A, 1012, 1009, 10
+SHOOT, A, 1013, 1010, 5
+SHOOT, A, 1018, 1015, 12
+SHOOT, A, 1019, 1016, 7
+SHOOT, A, 1023, 1020, 0
+SHOOT, A, 1024, 1021, 14
+SHOOT, A, 1025, 1022, 9
+SHOOT, A, 1029, 1026, 2
+SHOOT, A, 1030, 1027, 16
+SHOOT, A, 1031, 1028, 11
+SHOOT, A, 1035, 1032, 6
+SHOOT, A, 1036, 1033, 18
+SHOOT, A, 1037, 1034, 13
+DEAD, A, 979
+DEAD, A, 992
+DEAD, A, 1020
+DEAD, D, 982
+DEAD, D, 995
+DEAD, D, 1023
+SPAWN, A, 1038, 1, 0, 15
+SPAWN, A, 1039, 2, 0, 16
+SPAWN, A, 1040, 3, 0, 17
+SPAWN, D, 1041, 1, 0, 15
+SPAWN, D, 1042, 2, 0, 16
+SPAWN, D, 1043, 3, 0, 17
+TURN, 174
+PRINT, TURN 174 LOGS:To be spawned at Position(0,18)
+PRINT, To be spawned at Position(0,19)
+PRINT, To be spawned at Position(0,20)
+PRINT, Type 1 at Position (0,18)
+PRINT, Type 2 at Position (0,19)
+PRINT, Type 3 at Position (0,20)
+PRINT, 
+SHOOT, D, 985, 988, 0
+SHOOT, D, 991, 994, 2
+SHOOT, D, 997, 1000, 4
+SHOOT, D, 998, 1001, 0
+SHOOT, D, 1003, 1006, 6
+SHOOT, D, 1004, 1007, 1
+SHOOT, D, 1009, 1012, 8
+SHOOT, D, 1010, 1013, 3
+SHOOT, D, 1015, 1018, 10
+SHOOT, D, 1016, 1019, 5
+SHOOT, D, 1021, 1024, 12
+SHOOT, D, 1022, 1025, 7
+SHOOT, D, 1026, 1029, 0
+SHOOT, D, 1027, 1030, 14
+SHOOT, D, 1028, 1031, 9
+SHOOT, D, 1032, 1035, 2
+SHOOT, D, 1033, 1036, 16
+SHOOT, D, 1034, 1037, 11
+SHOOT, D, 1038, 1041, 6
+SHOOT, D, 1039, 1042, 18
+SHOOT, D, 1040, 1043, 13
+SHOOT, A, 988, 985, 0
+SHOOT, A, 994, 991, 2
+SHOOT, A, 1000, 997, 4
+SHOOT, A, 1001, 998, 0
+SHOOT, A, 1006, 1003, 6
+SHOOT, A, 1007, 1004, 1
+SHOOT, A, 1012, 1009, 8
+SHOOT, A, 1013, 1010, 3
+SHOOT, A, 1018, 1015, 10
+SHOOT, A, 1019, 1016, 5
+SHOOT, A, 1024, 1021, 12
+SHOOT, A, 1025, 1022, 7
+SHOOT, A, 1029, 1026, 0
+SHOOT, A, 1030, 1027, 14
+SHOOT, A, 1031, 1028, 9
+SHOOT, A, 1035, 1032, 2
+SHOOT, A, 1036, 1033, 16
+SHOOT, A, 1037, 1034, 11
+SHOOT, A, 1041, 1038, 6
+SHOOT, A, 1042, 1039, 18
+SHOOT, A, 1043, 1040, 13
+DEAD, A, 985
+DEAD, A, 998
+DEAD, A, 1026
+DEAD, D, 988
+DEAD, D, 1001
+DEAD, D, 1029
+SPAWN, A, 1044, 1, 0, 18
+SPAWN, A, 1045, 2, 0, 19
+SPAWN, A, 1046, 3, 0, 20
+SPAWN, D, 1047, 1, 0, 18
+SPAWN, D, 1048, 2, 0, 19
+SPAWN, D, 1049, 3, 0, 20
+TURN, 175
+PRINT, TURN 175 LOGS:To be spawned at Position(0,21)
+PRINT, To be spawned at Position(0,22)
+PRINT, To be spawned at Position(0,23)
+PRINT, Type 1 at Position (0,21)
+PRINT, Type 2 at Position (0,22)
+PRINT, Type 3 at Position (0,23)
+PRINT, 
+SHOOT, D, 991, 994, 0
+SHOOT, D, 997, 1000, 2
+SHOOT, D, 1003, 1006, 4
+SHOOT, D, 1004, 1007, 0
+SHOOT, D, 1009, 1012, 6
+SHOOT, D, 1010, 1013, 1
+SHOOT, D, 1015, 1018, 8
+SHOOT, D, 1016, 1019, 3
+SHOOT, D, 1021, 1024, 10
+SHOOT, D, 1022, 1025, 5
+SHOOT, D, 1027, 1030, 12
+SHOOT, D, 1028, 1031, 7
+SHOOT, D, 1032, 1035, 0
+SHOOT, D, 1033, 1036, 14
+SHOOT, D, 1034, 1037, 9
+SHOOT, D, 1038, 1041, 2
+SHOOT, D, 1039, 1042, 16
+SHOOT, D, 1040, 1043, 11
+SHOOT, D, 1044, 1047, 6
+SHOOT, D, 1045, 1048, 18
+SHOOT, D, 1046, 1049, 13
+SHOOT, A, 994, 991, 0
+SHOOT, A, 1000, 997, 2
+SHOOT, A, 1006, 1003, 4
+SHOOT, A, 1007, 1004, 0
+SHOOT, A, 1012, 1009, 6
+SHOOT, A, 1013, 1010, 1
+SHOOT, A, 1018, 1015, 8
+SHOOT, A, 1019, 1016, 3
+SHOOT, A, 1024, 1021, 10
+SHOOT, A, 1025, 1022, 5
+SHOOT, A, 1030, 1027, 12
+SHOOT, A, 1031, 1028, 7
+SHOOT, A, 1035, 1032, 0
+SHOOT, A, 1036, 1033, 14
+SHOOT, A, 1037, 1034, 9
+SHOOT, A, 1041, 1038, 2
+SHOOT, A, 1042, 1039, 16
+SHOOT, A, 1043, 1040, 11
+SHOOT, A, 1047, 1044, 6
+SHOOT, A, 1048, 1045, 18
+SHOOT, A, 1049, 1046, 13
+DEAD, A, 991
+DEAD, A, 1004
+DEAD, A, 1032
+DEAD, D, 994
+DEAD, D, 1007
+DEAD, D, 1035
+SPAWN, A, 1050, 1, 0, 21
+SPAWN, A, 1051, 2, 0, 22
+SPAWN, A, 1052, 3, 0, 23
+SPAWN, D, 1053, 1, 0, 21
+SPAWN, D, 1054, 2, 0, 22
+SPAWN, D, 1055, 3, 0, 23
+TURN, 176
+PRINT, TURN 176 LOGS:To be spawned at Position(0,24)
+PRINT, To be spawned at Position(0,25)
+PRINT, To be spawned at Position(0,26)
+PRINT, Type 1 at Position (0,24)
+PRINT, Type 2 at Position (0,25)
+PRINT, Type 3 at Position (0,26)
+PRINT, 
+SHOOT, D, 997, 1000, 0
+SHOOT, D, 1003, 1006, 2
+SHOOT, D, 1009, 1012, 4
+SHOOT, D, 1010, 1013, 0
+SHOOT, D, 1015, 1018, 6
+SHOOT, D, 1016, 1019, 1
+SHOOT, D, 1021, 1024, 8
+SHOOT, D, 1022, 1025, 3
+SHOOT, D, 1027, 1030, 10
+SHOOT, D, 1028, 1031, 5
+SHOOT, D, 1033, 1036, 12
+SHOOT, D, 1034, 1037, 7
+SHOOT, D, 1038, 1041, 0
+SHOOT, D, 1039, 1042, 14
+SHOOT, D, 1040, 1043, 9
+SHOOT, D, 1044, 1047, 2
+SHOOT, D, 1045, 1048, 16
+SHOOT, D, 1046, 1049, 11
+SHOOT, D, 1050, 1053, 6
+SHOOT, D, 1051, 1054, 18
+SHOOT, D, 1052, 1055, 13
+SHOOT, A, 1000, 997, 0
+SHOOT, A, 1006, 1003, 2
+SHOOT, A, 1012, 1009, 4
+SHOOT, A, 1013, 1010, 0
+SHOOT, A, 1018, 1015, 6
+SHOOT, A, 1019, 1016, 1
+SHOOT, A, 1024, 1021, 8
+SHOOT, A, 1025, 1022, 3
+SHOOT, A, 1030, 1027, 10
+SHOOT, A, 1031, 1028, 5
+SHOOT, A, 1036, 1033, 12
+SHOOT, A, 1037, 1034, 7
+SHOOT, A, 1041, 1038, 0
+SHOOT, A, 1042, 1039, 14
+SHOOT, A, 1043, 1040, 9
+SHOOT, A, 1047, 1044, 2
+SHOOT, A, 1048, 1045, 16
+SHOOT, A, 1049, 1046, 11
+SHOOT, A, 1053, 1050, 6
+SHOOT, A, 1054, 1051, 18
+SHOOT, A, 1055, 1052, 13
+DEAD, A, 997
+DEAD, A, 1010
+DEAD, A, 1038
+DEAD, D, 1000
+DEAD, D, 1013
+DEAD, D, 1041
+SPAWN, A, 1056, 1, 0, 24
+SPAWN, A, 1057, 2, 0, 25
+SPAWN, A, 1058, 3, 0, 26
+SPAWN, D, 1059, 1, 0, 24
+SPAWN, D, 1060, 2, 0, 25
+SPAWN, D, 1061, 3, 0, 26
+TURN, 177
+PRINT, TURN 177 LOGS:To be spawned at Position(0,27)
+PRINT, To be spawned at Position(0,28)
+PRINT, To be spawned at Position(0,29)
+PRINT, Type 1 at Position (0,27)
+PRINT, Type 2 at Position (0,28)
+PRINT, Type 3 at Position (0,29)
+PRINT, 
+SHOOT, D, 1003, 1006, 0
+SHOOT, D, 1009, 1012, 2
+SHOOT, D, 1015, 1018, 4
+SHOOT, D, 1016, 1019, 0
+SHOOT, D, 1021, 1024, 6
+SHOOT, D, 1022, 1025, 1
+SHOOT, D, 1027, 1030, 8
+SHOOT, D, 1028, 1031, 3
+SHOOT, D, 1033, 1036, 10
+SHOOT, D, 1034, 1037, 5
+SHOOT, D, 1039, 1042, 12
+SHOOT, D, 1040, 1043, 7
+SHOOT, D, 1044, 1047, 0
+SHOOT, D, 1045, 1048, 14
+SHOOT, D, 1046, 1049, 9
+SHOOT, D, 1050, 1053, 2
+SHOOT, D, 1051, 1054, 16
+SHOOT, D, 1052, 1055, 11
+SHOOT, D, 1056, 1059, 6
+SHOOT, D, 1057, 1060, 18
+SHOOT, D, 1058, 1061, 13
+SHOOT, A, 1006, 1003, 0
+SHOOT, A, 1012, 1009, 2
+SHOOT, A, 1018, 1015, 4
+SHOOT, A, 1019, 1016, 0
+SHOOT, A, 1024, 1021, 6
+SHOOT, A, 1025, 1022, 1
+SHOOT, A, 1030, 1027, 8
+SHOOT, A, 1031, 1028, 3
+SHOOT, A, 1036, 1033, 10
+SHOOT, A, 1037, 1034, 5
+SHOOT, A, 1042, 1039, 12
+SHOOT, A, 1043, 1040, 7
+SHOOT, A, 1047, 1044, 0
+SHOOT, A, 1048, 1045, 14
+SHOOT, A, 1049, 1046, 9
+SHOOT, A, 1053, 1050, 2
+SHOOT, A, 1054, 1051, 16
+SHOOT, A, 1055, 1052, 11
+SHOOT, A, 1059, 1056, 6
+SHOOT, A, 1060, 1057, 18
+SHOOT, A, 1061, 1058, 13
+DEAD, A, 1003
+DEAD, A, 1016
+DEAD, A, 1044
+DEAD, D, 1006
+DEAD, D, 1019
+DEAD, D, 1047
+SPAWN, A, 1062, 1, 0, 27
+SPAWN, A, 1063, 2, 0, 28
+SPAWN, A, 1064, 3, 0, 29
+SPAWN, D, 1065, 1, 0, 27
+SPAWN, D, 1066, 2, 0, 28
+SPAWN, D, 1067, 3, 0, 29
+TURN, 178
+PRINT, TURN 178 LOGS:To be spawned at Position(0,30)
+PRINT, To be spawned at Position(0,31)
+PRINT, To be spawned at Position(0,32)
+PRINT, Type 1 at Position (0,30)
+PRINT, Type 2 at Position (0,31)
+PRINT, Type 3 at Position (0,32)
+PRINT, 
+SHOOT, D, 1009, 1012, 0
+SHOOT, D, 1015, 1018, 2
+SHOOT, D, 1021, 1024, 4
+SHOOT, D, 1022, 1025, 0
+SHOOT, D, 1027, 1030, 6
+SHOOT, D, 1028, 1031, 1
+SHOOT, D, 1033, 1036, 8
+SHOOT, D, 1034, 1037, 3
+SHOOT, D, 1039, 1042, 10
+SHOOT, D, 1040, 1043, 5
+SHOOT, D, 1045, 1048, 12
+SHOOT, D, 1046, 1049, 7
+SHOOT, D, 1050, 1053, 0
+SHOOT, D, 1051, 1054, 14
+SHOOT, D, 1052, 1055, 9
+SHOOT, D, 1056, 1059, 2
+SHOOT, D, 1057, 1060, 16
+SHOOT, D, 1058, 1061, 11
+SHOOT, D, 1062, 1065, 6
+SHOOT, D, 1063, 1066, 18
+SHOOT, D, 1064, 1067, 13
+SHOOT, A, 1012, 1009, 0
+SHOOT, A, 1018, 1015, 2
+SHOOT, A, 1024, 1021, 4
+SHOOT, A, 1025, 1022, 0
+SHOOT, A, 1030, 1027, 6
+SHOOT, A, 1031, 1028, 1
+SHOOT, A, 1036, 1033, 8
+SHOOT, A, 1037, 1034, 3
+SHOOT, A, 1042, 1039, 10
+SHOOT, A, 1043, 1040, 5
+SHOOT, A, 1048, 1045, 12
+SHOOT, A, 1049, 1046, 7
+SHOOT, A, 1053, 1050, 0
+SHOOT, A, 1054, 1051, 14
+SHOOT, A, 1055, 1052, 9
+SHOOT, A, 1059, 1056, 2
+SHOOT, A, 1060, 1057, 16
+SHOOT, A, 1061, 1058, 11
+SHOOT, A, 1065, 1062, 6
+SHOOT, A, 1066, 1063, 18
+SHOOT, A, 1067, 1064, 13
+DEAD, A, 1009
+DEAD, A, 1022
+DEAD, A, 1050
+DEAD, D, 1012
+DEAD, D, 1025
+DEAD, D, 1053
+SPAWN, A, 1068, 1, 0, 30
+SPAWN, A, 1069, 2, 0, 31
+SPAWN, A, 1070, 3, 0, 32
+SPAWN, D, 1071, 1, 0, 30
+SPAWN, D, 1072, 2, 0, 31
+SPAWN, D, 1073, 3, 0, 32
+TURN, 179
+PRINT, TURN 179 LOGS:To be spawned at Position(0,33)
+PRINT, To be spawned at Position(0,34)
+PRINT, To be spawned at Position(0,35)
+PRINT, Type 1 at Position (0,33)
+PRINT, Type 2 at Position (0,34)
+PRINT, Type 3 at Position (0,35)
+PRINT, 
+SHOOT, D, 1015, 1018, 0
+SHOOT, D, 1021, 1024, 2
+SHOOT, D, 1027, 1030, 4
+SHOOT, D, 1028, 1031, 0
+SHOOT, D, 1033, 1036, 6
+SHOOT, D, 1034, 1037, 1
+SHOOT, D, 1039, 1042, 8
+SHOOT, D, 1040, 1043, 3
+SHOOT, D, 1045, 1048, 10
+SHOOT, D, 1046, 1049, 5
+SHOOT, D, 1051, 1054, 12
+SHOOT, D, 1052, 1055, 7
+SHOOT, D, 1056, 1059, 0
+SHOOT, D, 1057, 1060, 14
+SHOOT, D, 1058, 1061, 9
+SHOOT, D, 1062, 1065, 2
+SHOOT, D, 1063, 1066, 16
+SHOOT, D, 1064, 1067, 11
+SHOOT, D, 1068, 1071, 6
+SHOOT, D, 1069, 1072, 18
+SHOOT, D, 1070, 1073, 13
+SHOOT, A, 1018, 1015, 0
+SHOOT, A, 1024, 1021, 2
+SHOOT, A, 1030, 1027, 4
+SHOOT, A, 1031, 1028, 0
+SHOOT, A, 1036, 1033, 6
+SHOOT, A, 1037, 1034, 1
+SHOOT, A, 1042, 1039, 8
+SHOOT, A, 1043, 1040, 3
+SHOOT, A, 1048, 1045, 10
+SHOOT, A, 1049, 1046, 5
+SHOOT, A, 1054, 1051, 12
+SHOOT, A, 1055, 1052, 7
+SHOOT, A, 1059, 1056, 0
+SHOOT, A, 1060, 1057, 14
+SHOOT, A, 1061, 1058, 9
+SHOOT, A, 1065, 1062, 2
+SHOOT, A, 1066, 1063, 16
+SHOOT, A, 1067, 1064, 11
+SHOOT, A, 1071, 1068, 6
+SHOOT, A, 1072, 1069, 18
+SHOOT, A, 1073, 1070, 13
+DEAD, A, 1015
+DEAD, A, 1028
+DEAD, A, 1056
+DEAD, D, 1018
+DEAD, D, 1031
+DEAD, D, 1059
+SPAWN, A, 1074, 1, 0, 33
+SPAWN, A, 1075, 2, 0, 34
+SPAWN, A, 1076, 3, 0, 35
+SPAWN, D, 1077, 1, 0, 33
+SPAWN, D, 1078, 2, 0, 34
+SPAWN, D, 1079, 3, 0, 35
+TURN, 180
+PRINT, TURN 180 LOGS:To be spawned at Position(0,36)
+PRINT, To be spawned at Position(0,37)
+PRINT, To be spawned at Position(0,38)
+PRINT, Type 1 at Position (0,36)
+PRINT, Type 2 at Position (0,37)
+PRINT, Type 3 at Position (0,38)
+PRINT, 
+SHOOT, D, 1021, 1024, 0
+SHOOT, D, 1027, 1030, 2
+SHOOT, D, 1033, 1036, 4
+SHOOT, D, 1034, 1037, 0
+SHOOT, D, 1039, 1042, 6
+SHOOT, D, 1040, 1043, 1
+SHOOT, D, 1045, 1048, 8
+SHOOT, D, 1046, 1049, 3
+SHOOT, D, 1051, 1054, 10
+SHOOT, D, 1052, 1055, 5
+SHOOT, D, 1057, 1060, 12
+SHOOT, D, 1058, 1061, 7
+SHOOT, D, 1062, 1065, 0
+SHOOT, D, 1063, 1066, 14
+SHOOT, D, 1064, 1067, 9
+SHOOT, D, 1068, 1071, 2
+SHOOT, D, 1069, 1072, 16
+SHOOT, D, 1070, 1073, 11
+SHOOT, D, 1074, 1077, 6
+SHOOT, D, 1075, 1078, 18
+SHOOT, D, 1076, 1079, 13
+SHOOT, A, 1024, 1021, 0
+SHOOT, A, 1030, 1027, 2
+SHOOT, A, 1036, 1033, 4
+SHOOT, A, 1037, 1034, 0
+SHOOT, A, 1042, 1039, 6
+SHOOT, A, 1043, 1040, 1
+SHOOT, A, 1048, 1045, 8
+SHOOT, A, 1049, 1046, 3
+SHOOT, A, 1054, 1051, 10
+SHOOT, A, 1055, 1052, 5
+SHOOT, A, 1060, 1057, 12
+SHOOT, A, 1061, 1058, 7
+SHOOT, A, 1065, 1062, 0
+SHOOT, A, 1066, 1063, 14
+SHOOT, A, 1067, 1064, 9
+SHOOT, A, 1071, 1068, 2
+SHOOT, A, 1072, 1069, 16
+SHOOT, A, 1073, 1070, 11
+SHOOT, A, 1077, 1074, 6
+SHOOT, A, 1078, 1075, 18
+SHOOT, A, 1079, 1076, 13
+DEAD, A, 1021
+DEAD, A, 1034
+DEAD, A, 1062
+DEAD, D, 1024
+DEAD, D, 1037
+DEAD, D, 1065
+SPAWN, A, 1080, 1, 0, 36
+SPAWN, A, 1081, 2, 0, 37
+SPAWN, A, 1082, 3, 0, 38
+SPAWN, D, 1083, 1, 0, 36
+SPAWN, D, 1084, 2, 0, 37
+SPAWN, D, 1085, 3, 0, 38
+TURN, 181
+PRINT, TURN 181 LOGS:To be spawned at Position(0,39)
+PRINT, To be spawned at Position(0,40)
+PRINT, To be spawned at Position(0,41)
+PRINT, Type 1 at Position (0,39)
+PRINT, Type 2 at Position (0,40)
+PRINT, Type 3 at Position (0,41)
+PRINT, 
+SHOOT, D, 1027, 1030, 0
+SHOOT, D, 1033, 1036, 2
+SHOOT, D, 1039, 1042, 4
+SHOOT, D, 1040, 1043, 0
+SHOOT, D, 1045, 1048, 6
+SHOOT, D, 1046, 1049, 1
+SHOOT, D, 1051, 1054, 8
+SHOOT, D, 1052, 1055, 3
+SHOOT, D, 1057, 1060, 10
+SHOOT, D, 1058, 1061, 5
+SHOOT, D, 1063, 1066, 12
+SHOOT, D, 1064, 1067, 7
+SHOOT, D, 1068, 1071, 0
+SHOOT, D, 1069, 1072, 14
+SHOOT, D, 1070, 1073, 9
+SHOOT, D, 1074, 1077, 2
+SHOOT, D, 1075, 1078, 16
+SHOOT, D, 1076, 1079, 11
+SHOOT, D, 1080, 1083, 6
+SHOOT, D, 1081, 1084, 18
+SHOOT, D, 1082, 1085, 13
+SHOOT, A, 1030, 1027, 0
+SHOOT, A, 1036, 1033, 2
+SHOOT, A, 1042, 1039, 4
+SHOOT, A, 1043, 1040, 0
+SHOOT, A, 1048, 1045, 6
+SHOOT, A, 1049, 1046, 1
+SHOOT, A, 1054, 1051, 8
+SHOOT, A, 1055, 1052, 3
+SHOOT, A, 1060, 1057, 10
+SHOOT, A, 1061, 1058, 5
+SHOOT, A, 1066, 1063, 12
+SHOOT, A, 1067, 1064, 7
+SHOOT, A, 1071, 1068, 0
+SHOOT, A, 1072, 1069, 14
+SHOOT, A, 1073, 1070, 9
+SHOOT, A, 1077, 1074, 2
+SHOOT, A, 1078, 1075, 16
+SHOOT, A, 1079, 1076, 11
+SHOOT, A, 1083, 1080, 6
+SHOOT, A, 1084, 1081, 18
+SHOOT, A, 1085, 1082, 13
+DEAD, A, 1027
+DEAD, A, 1040
+DEAD, A, 1068
+DEAD, D, 1030
+DEAD, D, 1043
+DEAD, D, 1071
+SPAWN, A, 1086, 1, 0, 39
+SPAWN, A, 1087, 2, 0, 40
+SPAWN, A, 1088, 3, 0, 41
+SPAWN, D, 1089, 1, 0, 39
+SPAWN, D, 1090, 2, 0, 40
+SPAWN, D, 1091, 3, 0, 41
+TURN, 182
+PRINT, TURN 182 LOGS:To be spawned at Position(0,42)
+PRINT, To be spawned at Position(0,43)
+PRINT, To be spawned at Position(0,44)
+PRINT, Type 1 at Position (0,42)
+PRINT, Type 2 at Position (0,43)
+PRINT, Type 3 at Position (0,44)
+PRINT, 
+SHOOT, D, 1033, 1036, 0
+SHOOT, D, 1039, 1042, 2
+SHOOT, D, 1045, 1048, 4
+SHOOT, D, 1046, 1049, 0
+SHOOT, D, 1051, 1054, 6
+SHOOT, D, 1052, 1055, 1
+SHOOT, D, 1057, 1060, 8
+SHOOT, D, 1058, 1061, 3
+SHOOT, D, 1063, 1066, 10
+SHOOT, D, 1064, 1067, 5
+SHOOT, D, 1069, 1072, 12
+SHOOT, D, 1070, 1073, 7
+SHOOT, D, 1074, 1077, 0
+SHOOT, D, 1075, 1078, 14
+SHOOT, D, 1076, 1079, 9
+SHOOT, D, 1080, 1083, 2
+SHOOT, D, 1081, 1084, 16
+SHOOT, D, 1082, 1085, 11
+SHOOT, D, 1086, 1089, 6
+SHOOT, D, 1087, 1090, 18
+SHOOT, D, 1088, 1091, 13
+SHOOT, A, 1036, 1033, 0
+SHOOT, A, 1042, 1039, 2
+SHOOT, A, 1048, 1045, 4
+SHOOT, A, 1049, 1046, 0
+SHOOT, A, 1054, 1051, 6
+SHOOT, A, 1055, 1052, 1
+SHOOT, A, 1060, 1057, 8
+SHOOT, A, 1061, 1058, 3
+SHOOT, A, 1066, 1063, 10
+SHOOT, A, 1067, 1064, 5
+SHOOT, A, 1072, 1069, 12
+SHOOT, A, 1073, 1070, 7
+SHOOT, A, 1077, 1074, 0
+SHOOT, A, 1078, 1075, 14
+SHOOT, A, 1079, 1076, 9
+SHOOT, A, 1083, 1080, 2
+SHOOT, A, 1084, 1081, 16
+SHOOT, A, 1085, 1082, 11
+SHOOT, A, 1089, 1086, 6
+SHOOT, A, 1090, 1087, 18
+SHOOT, A, 1091, 1088, 13
+DEAD, A, 1033
+DEAD, A, 1046
+DEAD, A, 1074
+DEAD, D, 1036
+DEAD, D, 1049
+DEAD, D, 1077
+SPAWN, A, 1092, 1, 0, 42
+SPAWN, A, 1093, 2, 0, 43
+SPAWN, A, 1094, 3, 0, 44
+SPAWN, D, 1095, 1, 0, 42
+SPAWN, D, 1096, 2, 0, 43
+SPAWN, D, 1097, 3, 0, 44
+TURN, 183
+PRINT, TURN 183 LOGS:To be spawned at Position(0,45)
+PRINT, To be spawned at Position(0,46)
+PRINT, To be spawned at Position(0,47)
+PRINT, Type 1 at Position (0,45)
+PRINT, Type 2 at Position (0,46)
+PRINT, Type 3 at Position (0,47)
+PRINT, 
+SHOOT, D, 1039, 1042, 0
+SHOOT, D, 1045, 1048, 2
+SHOOT, D, 1051, 1054, 4
+SHOOT, D, 1052, 1055, 0
+SHOOT, D, 1057, 1060, 6
+SHOOT, D, 1058, 1061, 1
+SHOOT, D, 1063, 1066, 8
+SHOOT, D, 1064, 1067, 3
+SHOOT, D, 1069, 1072, 10
+SHOOT, D, 1070, 1073, 5
+SHOOT, D, 1075, 1078, 12
+SHOOT, D, 1076, 1079, 7
+SHOOT, D, 1080, 1083, 0
+SHOOT, D, 1081, 1084, 14
+SHOOT, D, 1082, 1085, 9
+SHOOT, D, 1086, 1089, 2
+SHOOT, D, 1087, 1090, 16
+SHOOT, D, 1088, 1091, 11
+SHOOT, D, 1092, 1095, 6
+SHOOT, D, 1093, 1096, 18
+SHOOT, D, 1094, 1097, 13
+SHOOT, A, 1042, 1039, 0
+SHOOT, A, 1048, 1045, 2
+SHOOT, A, 1054, 1051, 4
+SHOOT, A, 1055, 1052, 0
+SHOOT, A, 1060, 1057, 6
+SHOOT, A, 1061, 1058, 1
+SHOOT, A, 1066, 1063, 8
+SHOOT, A, 1067, 1064, 3
+SHOOT, A, 1072, 1069, 10
+SHOOT, A, 1073, 1070, 5
+SHOOT, A, 1078, 1075, 12
+SHOOT, A, 1079, 1076, 7
+SHOOT, A, 1083, 1080, 0
+SHOOT, A, 1084, 1081, 14
+SHOOT, A, 1085, 1082, 9
+SHOOT, A, 1089, 1086, 2
+SHOOT, A, 1090, 1087, 16
+SHOOT, A, 1091, 1088, 11
+SHOOT, A, 1095, 1092, 6
+SHOOT, A, 1096, 1093, 18
+SHOOT, A, 1097, 1094, 13
+DEAD, A, 1039
+DEAD, A, 1052
+DEAD, A, 1080
+DEAD, D, 1042
+DEAD, D, 1055
+DEAD, D, 1083
+SPAWN, A, 1098, 1, 0, 45
+SPAWN, A, 1099, 2, 0, 46
+SPAWN, A, 1100, 3, 0, 47
+SPAWN, D, 1101, 1, 0, 45
+SPAWN, D, 1102, 2, 0, 46
+SPAWN, D, 1103, 3, 0, 47
+TURN, 184
+PRINT, TURN 184 LOGS:To be spawned at Position(0,48)
+PRINT, To be spawned at Position(0,49)
+PRINT, To be spawned at Position(0,50)
+PRINT, Type 1 at Position (0,48)
+PRINT, Type 2 at Position (0,49)
+PRINT, Type 3 at Position (0,50)
+PRINT, 
+SHOOT, D, 1045, 1048, 0
+SHOOT, D, 1051, 1054, 2
+SHOOT, D, 1057, 1060, 4
+SHOOT, D, 1058, 1061, 0
+SHOOT, D, 1063, 1066, 6
+SHOOT, D, 1064, 1067, 1
+SHOOT, D, 1069, 1072, 8
+SHOOT, D, 1070, 1073, 3
+SHOOT, D, 1075, 1078, 10
+SHOOT, D, 1076, 1079, 5
+SHOOT, D, 1081, 1084, 12
+SHOOT, D, 1082, 1085, 7
+SHOOT, D, 1086, 1089, 0
+SHOOT, D, 1087, 1090, 14
+SHOOT, D, 1088, 1091, 9
+SHOOT, D, 1092, 1095, 2
+SHOOT, D, 1093, 1096, 16
+SHOOT, D, 1094, 1097, 11
+SHOOT, D, 1098, 1101, 6
+SHOOT, D, 1099, 1102, 18
+SHOOT, D, 1100, 1103, 13
+SHOOT, A, 1048, 1045, 0
+SHOOT, A, 1054, 1051, 2
+SHOOT, A, 1060, 1057, 4
+SHOOT, A, 1061, 1058, 0
+SHOOT, A, 1066, 1063, 6
+SHOOT, A, 1067, 1064, 1
+SHOOT, A, 1072, 1069, 8
+SHOOT, A, 1073, 1070, 3
+SHOOT, A, 1078, 1075, 10
+SHOOT, A, 1079, 1076, 5
+SHOOT, A, 1084, 1081, 12
+SHOOT, A, 1085, 1082, 7
+SHOOT, A, 1089, 1086, 0
+SHOOT, A, 1090, 1087, 14
+SHOOT, A, 1091, 1088, 9
+SHOOT, A, 1095, 1092, 2
+SHOOT, A, 1096, 1093, 16
+SHOOT, A, 1097, 1094, 11
+SHOOT, A, 1101, 1098, 6
+SHOOT, A, 1102, 1099, 18
+SHOOT, A, 1103, 1100, 13
+DEAD, A, 1045
+DEAD, A, 1058
+DEAD, A, 1086
+DEAD, D, 1048
+DEAD, D, 1061
+DEAD, D, 1089
+SPAWN, A, 1104, 1, 0, 48
+SPAWN, A, 1105, 2, 0, 49
+SPAWN, A, 1106, 3, 0, 50
+SPAWN, D, 1107, 1, 0, 48
+SPAWN, D, 1108, 2, 0, 49
+SPAWN, D, 1109, 3, 0, 50
+TURN, 185
+PRINT, TURN 185 LOGS:To be spawned at Position(0,51)
+PRINT, To be spawned at Position(0,52)
+PRINT, To be spawned at Position(0,53)
+PRINT, Type 1 at Position (0,51)
+PRINT, Type 2 at Position (0,52)
+PRINT, Type 3 at Position (0,53)
+PRINT, 
+SHOOT, D, 1051, 1054, 0
+SHOOT, D, 1057, 1060, 2
+SHOOT, D, 1063, 1066, 4
+SHOOT, D, 1064, 1067, 0
+SHOOT, D, 1069, 1072, 6
+SHOOT, D, 1070, 1073, 1
+SHOOT, D, 1075, 1078, 8
+SHOOT, D, 1076, 1079, 3
+SHOOT, D, 1081, 1084, 10
+SHOOT, D, 1082, 1085, 5
+SHOOT, D, 1087, 1090, 12
+SHOOT, D, 1088, 1091, 7
+SHOOT, D, 1092, 1095, 0
+SHOOT, D, 1093, 1096, 14
+SHOOT, D, 1094, 1097, 9
+SHOOT, D, 1098, 1101, 2
+SHOOT, D, 1099, 1102, 16
+SHOOT, D, 1100, 1103, 11
+SHOOT, D, 1104, 1107, 6
+SHOOT, D, 1105, 1108, 18
+SHOOT, D, 1106, 1109, 13
+SHOOT, A, 1054, 1051, 0
+SHOOT, A, 1060, 1057, 2
+SHOOT, A, 1066, 1063, 4
+SHOOT, A, 1067, 1064, 0
+SHOOT, A, 1072, 1069, 6
+SHOOT, A, 1073, 1070, 1
+SHOOT, A, 1078, 1075, 8
+SHOOT, A, 1079, 1076, 3
+SHOOT, A, 1084, 1081, 10
+SHOOT, A, 1085, 1082, 5
+SHOOT, A, 1090, 1087, 12
+SHOOT, A, 1091, 1088, 7
+SHOOT, A, 1095, 1092, 0
+SHOOT, A, 1096, 1093, 14
+SHOOT, A, 1097, 1094, 9
+SHOOT, A, 1101, 1098, 2
+SHOOT, A, 1102, 1099, 16
+SHOOT, A, 1103, 1100, 11
+SHOOT, A, 1107, 1104, 6
+SHOOT, A, 1108, 1105, 18
+SHOOT, A, 1109, 1106, 13
+DEAD, A, 1051
+DEAD, A, 1064
+DEAD, A, 1092
+DEAD, D, 1054
+DEAD, D, 1067
+DEAD, D, 1095
+SPAWN, A, 1110, 1, 0, 51
+SPAWN, A, 1111, 2, 0, 52
+SPAWN, A, 1112, 3, 0, 53
+SPAWN, D, 1113, 1, 0, 51
+SPAWN, D, 1114, 2, 0, 52
+SPAWN, D, 1115, 3, 0, 53
+TURN, 186
+PRINT, TURN 186 LOGS:To be spawned at Position(0,54)
+PRINT, To be spawned at Position(0,55)
+PRINT, To be spawned at Position(0,56)
+PRINT, Type 1 at Position (0,54)
+PRINT, Type 2 at Position (0,55)
+PRINT, Type 3 at Position (0,56)
+PRINT, 
+SHOOT, D, 1057, 1060, 0
+SHOOT, D, 1063, 1066, 2
+SHOOT, D, 1069, 1072, 4
+SHOOT, D, 1070, 1073, 0
+SHOOT, D, 1075, 1078, 6
+SHOOT, D, 1076, 1079, 1
+SHOOT, D, 1081, 1084, 8
+SHOOT, D, 1082, 1085, 3
+SHOOT, D, 1087, 1090, 10
+SHOOT, D, 1088, 1091, 5
+SHOOT, D, 1093, 1096, 12
+SHOOT, D, 1094, 1097, 7
+SHOOT, D, 1098, 1101, 0
+SHOOT, D, 1099, 1102, 14
+SHOOT, D, 1100, 1103, 9
+SHOOT, D, 1104, 1107, 2
+SHOOT, D, 1105, 1108, 16
+SHOOT, D, 1106, 1109, 11
+SHOOT, D, 1110, 1113, 6
+SHOOT, D, 1111, 1114, 18
+SHOOT, D, 1112, 1115, 13
+SHOOT, A, 1060, 1057, 0
+SHOOT, A, 1066, 1063, 2
+SHOOT, A, 1072, 1069, 4
+SHOOT, A, 1073, 1070, 0
+SHOOT, A, 1078, 1075, 6
+SHOOT, A, 1079, 1076, 1
+SHOOT, A, 1084, 1081, 8
+SHOOT, A, 1085, 1082, 3
+SHOOT, A, 1090, 1087, 10
+SHOOT, A, 1091, 1088, 5
+SHOOT, A, 1096, 1093, 12
+SHOOT, A, 1097, 1094, 7
+SHOOT, A, 1101, 1098, 0
+SHOOT, A, 1102, 1099, 14
+SHOOT, A, 1103, 1100, 9
+SHOOT, A, 1107, 1104, 2
+SHOOT, A, 1108, 1105, 16
+SHOOT, A, 1109, 1106, 11
+SHOOT, A, 1113, 1110, 6
+SHOOT, A, 1114, 1111, 18
+SHOOT, A, 1115, 1112, 13
+DEAD, A, 1057
+DEAD, A, 1070
+DEAD, A, 1098
+DEAD, D, 1060
+DEAD, D, 1073
+DEAD, D, 1101
+SPAWN, A, 1116, 1, 0, 54
+SPAWN, A, 1117, 2, 0, 55
+SPAWN, A, 1118, 3, 0, 56
+SPAWN, D, 1119, 1, 0, 54
+SPAWN, D, 1120, 2, 0, 55
+SPAWN, D, 1121, 3, 0, 56
+TURN, 187
+PRINT, TURN 187 LOGS:To be spawned at Position(0,57)
+PRINT, To be spawned at Position(0,58)
+PRINT, To be spawned at Position(0,59)
+PRINT, Type 1 at Position (0,57)
+PRINT, Type 2 at Position (0,58)
+PRINT, Type 3 at Position (0,59)
+PRINT, 
+SHOOT, D, 1063, 1066, 0
+SHOOT, D, 1069, 1072, 2
+SHOOT, D, 1075, 1078, 4
+SHOOT, D, 1076, 1079, 0
+SHOOT, D, 1081, 1084, 6
+SHOOT, D, 1082, 1085, 1
+SHOOT, D, 1087, 1090, 8
+SHOOT, D, 1088, 1091, 3
+SHOOT, D, 1093, 1096, 10
+SHOOT, D, 1094, 1097, 5
+SHOOT, D, 1099, 1102, 12
+SHOOT, D, 1100, 1103, 7
+SHOOT, D, 1104, 1107, 0
+SHOOT, D, 1105, 1108, 14
+SHOOT, D, 1106, 1109, 9
+SHOOT, D, 1110, 1113, 2
+SHOOT, D, 1111, 1114, 16
+SHOOT, D, 1112, 1115, 11
+SHOOT, D, 1116, 1119, 6
+SHOOT, D, 1117, 1120, 18
+SHOOT, D, 1118, 1121, 13
+SHOOT, A, 1066, 1063, 0
+SHOOT, A, 1072, 1069, 2
+SHOOT, A, 1078, 1075, 4
+SHOOT, A, 1079, 1076, 0
+SHOOT, A, 1084, 1081, 6
+SHOOT, A, 1085, 1082, 1
+SHOOT, A, 1090, 1087, 8
+SHOOT, A, 1091, 1088, 3
+SHOOT, A, 1096, 1093, 10
+SHOOT, A, 1097, 1094, 5
+SHOOT, A, 1102, 1099, 12
+SHOOT, A, 1103, 1100, 7
+SHOOT, A, 1107, 1104, 0
+SHOOT, A, 1108, 1105, 14
+SHOOT, A, 1109, 1106, 9
+SHOOT, A, 1113, 1110, 2
+SHOOT, A, 1114, 1111, 16
+SHOOT, A, 1115, 1112, 11
+SHOOT, A, 1119, 1116, 6
+SHOOT, A, 1120, 1117, 18
+SHOOT, A, 1121, 1118, 13
+DEAD, A, 1063
+DEAD, A, 1076
+DEAD, A, 1104
+DEAD, D, 1066
+DEAD, D, 1079
+DEAD, D, 1107
+SPAWN, A, 1122, 1, 0, 57
+SPAWN, A, 1123, 2, 0, 58
+SPAWN, A, 1124, 3, 0, 59
+SPAWN, D, 1125, 1, 0, 57
+SPAWN, D, 1126, 2, 0, 58
+SPAWN, D, 1127, 3, 0, 59
+TURN, 188
+PRINT, TURN 188 LOGS:To be spawned at Position(0,60)
+PRINT, To be spawned at Position(0,61)
+PRINT, To be spawned at Position(0,62)
+PRINT, Type 1 at Position (0,60)
+PRINT, Type 2 at Position (0,61)
+PRINT, Type 3 at Position (0,62)
+PRINT, 
+SHOOT, D, 1069, 1072, 0
+SHOOT, D, 1075, 1078, 2
+SHOOT, D, 1081, 1084, 4
+SHOOT, D, 1082, 1085, 0
+SHOOT, D, 1087, 1090, 6
+SHOOT, D, 1088, 1091, 1
+SHOOT, D, 1093, 1096, 8
+SHOOT, D, 1094, 1097, 3
+SHOOT, D, 1099, 1102, 10
+SHOOT, D, 1100, 1103, 5
+SHOOT, D, 1105, 1108, 12
+SHOOT, D, 1106, 1109, 7
+SHOOT, D, 1110, 1113, 0
+SHOOT, D, 1111, 1114, 14
+SHOOT, D, 1112, 1115, 9
+SHOOT, D, 1116, 1119, 2
+SHOOT, D, 1117, 1120, 16
+SHOOT, D, 1118, 1121, 11
+SHOOT, D, 1122, 1125, 6
+SHOOT, D, 1123, 1126, 18
+SHOOT, D, 1124, 1127, 13
+SHOOT, A, 1072, 1069, 0
+SHOOT, A, 1078, 1075, 2
+SHOOT, A, 1084, 1081, 4
+SHOOT, A, 1085, 1082, 0
+SHOOT, A, 1090, 1087, 6
+SHOOT, A, 1091, 1088, 1
+SHOOT, A, 1096, 1093, 8
+SHOOT, A, 1097, 1094, 3
+SHOOT, A, 1102, 1099, 10
+SHOOT, A, 1103, 1100, 5
+SHOOT, A, 1108, 1105, 12
+SHOOT, A, 1109, 1106, 7
+SHOOT, A, 1113, 1110, 0
+SHOOT, A, 1114, 1111, 14
+SHOOT, A, 1115, 1112, 9
+SHOOT, A, 1119, 1116, 2
+SHOOT, A, 1120, 1117, 16
+SHOOT, A, 1121, 1118, 11
+SHOOT, A, 1125, 1122, 6
+SHOOT, A, 1126, 1123, 18
+SHOOT, A, 1127, 1124, 13
+DEAD, A, 1069
+DEAD, A, 1082
+DEAD, A, 1110
+DEAD, D, 1072
+DEAD, D, 1085
+DEAD, D, 1113
+SPAWN, A, 1128, 1, 0, 60
+SPAWN, A, 1129, 2, 0, 61
+SPAWN, A, 1130, 3, 0, 62
+SPAWN, D, 1131, 1, 0, 60
+SPAWN, D, 1132, 2, 0, 61
+SPAWN, D, 1133, 3, 0, 62
+TURN, 189
+PRINT, TURN 189 LOGS:To be spawned at Position(0,63)
+PRINT, To be spawned at Position(1,0)
+PRINT, To be spawned at Position(1,63)
+PRINT, Type 1 at Position (0,63)
+PRINT, Type 2 at Position (1,0)
+PRINT, Type 3 at Position (1,63)
+PRINT, 
+SHOOT, D, 1075, 1078, 0
+SHOOT, D, 1081, 1084, 2
+SHOOT, D, 1087, 1090, 4
+SHOOT, D, 1088, 1091, 0
+SHOOT, D, 1093, 1096, 6
+SHOOT, D, 1094, 1097, 1
+SHOOT, D, 1099, 1102, 8
+SHOOT, D, 1100, 1103, 3
+SHOOT, D, 1105, 1108, 10
+SHOOT, D, 1106, 1109, 5
+SHOOT, D, 1111, 1114, 12
+SHOOT, D, 1112, 1115, 7
+SHOOT, D, 1116, 1119, 0
+SHOOT, D, 1117, 1120, 14
+SHOOT, D, 1118, 1121, 9
+SHOOT, D, 1122, 1125, 2
+SHOOT, D, 1123, 1126, 16
+SHOOT, D, 1124, 1127, 11
+SHOOT, D, 1128, 1131, 6
+SHOOT, D, 1129, 1132, 18
+SHOOT, D, 1130, 1133, 13
+SHOOT, A, 1078, 1075, 0
+SHOOT, A, 1084, 1081, 2
+SHOOT, A, 1090, 1087, 4
+SHOOT, A, 1091, 1088, 0
+SHOOT, A, 1096, 1093, 6
+SHOOT, A, 1097, 1094, 1
+SHOOT, A, 1102, 1099, 8
+SHOOT, A, 1103, 1100, 3
+SHOOT, A, 1108, 1105, 10
+SHOOT, A, 1109, 1106, 5
+SHOOT, A, 1114, 1111, 12
+SHOOT, A, 1115, 1112, 7
+SHOOT, A, 1119, 1116, 0
+SHOOT, A, 1120, 1117, 14
+SHOOT, A, 1121, 1118, 9
+SHOOT, A, 1125, 1122, 2
+SHOOT, A, 1126, 1123, 16
+SHOOT, A, 1127, 1124, 11
+SHOOT, A, 1131, 1128, 6
+SHOOT, A, 1132, 1129, 18
+SHOOT, A, 1133, 1130, 13
+DEAD, A, 1075
+DEAD, A, 1088
+DEAD, A, 1116
+DEAD, D, 1078
+DEAD, D, 1091
+DEAD, D, 1119
+SPAWN, A, 1134, 1, 0, 63
+SPAWN, A, 1135, 2, 1, 0
+SPAWN, A, 1136, 3, 1, 63
+SPAWN, D, 1137, 1, 0, 63
+SPAWN, D, 1138, 2, 1, 0
+SPAWN, D, 1139, 3, 1, 63
+TURN, 190
+PRINT, TURN 190 LOGS:To be spawned at Position(2,0)
+PRINT, To be spawned at Position(2,63)
+PRINT, To be spawned at Position(3,0)
+PRINT, Type 1 at Position (2,0)
+PRINT, Type 2 at Position (2,63)
+PRINT, Type 3 at Position (3,0)
+PRINT, 
+SHOOT, D, 1081, 1084, 0
+SHOOT, D, 1087, 1090, 2
+SHOOT, D, 1093, 1096, 4
+SHOOT, D, 1094, 1097, 0
+SHOOT, D, 1099, 1102, 6
+SHOOT, D, 1100, 1103, 1
+SHOOT, D, 1105, 1108, 8
+SHOOT, D, 1106, 1109, 3
+SHOOT, D, 1111, 1114, 10
+SHOOT, D, 1112, 1115, 5
+SHOOT, D, 1117, 1120, 12
+SHOOT, D, 1118, 1121, 7
+SHOOT, D, 1122, 1125, 0
+SHOOT, D, 1123, 1126, 14
+SHOOT, D, 1124, 1127, 9
+SHOOT, D, 1128, 1131, 2
+SHOOT, D, 1129, 1132, 16
+SHOOT, D, 1130, 1133, 11
+SHOOT, D, 1134, 1137, 6
+SHOOT, D, 1135, 1138, 18
+SHOOT, D, 1136, 1139, 13
+SHOOT, A, 1084, 1081, 0
+SHOOT, A, 1090, 1087, 2
+SHOOT, A, 1096, 1093, 4
+SHOOT, A, 1097, 1094, 0
+SHOOT, A, 1102, 1099, 6
+SHOOT, A, 1103, 1100, 1
+SHOOT, A, 1108, 1105, 8
+SHOOT, A, 1109, 1106, 3
+SHOOT, A, 1114, 1111, 10
+SHOOT, A, 1115, 1112, 5
+SHOOT, A, 1120, 1117, 12
+SHOOT, A, 1121, 1118, 7
+SHOOT, A, 1125, 1122, 0
+SHOOT, A, 1126, 1123, 14
+SHOOT, A, 1127, 1124, 9
+SHOOT, A, 1131, 1128, 2
+SHOOT, A, 1132, 1129, 16
+SHOOT, A, 1133, 1130, 11
+SHOOT, A, 1137, 1134, 6
+SHOOT, A, 1138, 1135, 18
+SHOOT, A, 1139, 1136, 13
+DEAD, A, 1081
+DEAD, A, 1094
+DEAD, A, 1122
+DEAD, D, 1084
+DEAD, D, 1097
+DEAD, D, 1125
+SPAWN, A, 1140, 1, 2, 0
+SPAWN, A, 1141, 2, 2, 63
+SPAWN, A, 1142, 3, 3, 0
+SPAWN, D, 1143, 1, 2, 0
+SPAWN, D, 1144, 2, 2, 63
+SPAWN, D, 1145, 3, 3, 0
+TURN, 191
+PRINT, TURN 191 LOGS:To be spawned at Position(3,63)
+PRINT, To be spawned at Position(4,0)
+PRINT, To be spawned at Position(4,63)
+PRINT, Type 1 at Position (3,63)
+PRINT, Type 2 at Position (4,0)
+PRINT, Type 3 at Position (4,63)
+PRINT, 
+SHOOT, D, 1087, 1090, 0
+SHOOT, D, 1093, 1096, 2
+SHOOT, D, 1099, 1102, 4
+SHOOT, D, 1100, 1103, 0
+SHOOT, D, 1105, 1108, 6
+SHOOT, D, 1106, 1109, 1
+SHOOT, D, 1111, 1114, 8
+SHOOT, D, 1112, 1115, 3
+SHOOT, D, 1117, 1120, 10
+SHOOT, D, 1118, 1121, 5
+SHOOT, D, 1123, 1126, 12
+SHOOT, D, 1124, 1127, 7
+SHOOT, D, 1128, 1131, 0
+SHOOT, D, 1129, 1132, 14
+SHOOT, D, 1130, 1133, 9
+SHOOT, D, 1134, 1137, 2
+SHOOT, D, 1135, 1138, 16
+SHOOT, D, 1136, 1139, 11
+SHOOT, D, 1140, 1143, 6
+SHOOT, D, 1141, 1144, 18
+SHOOT, D, 1142, 1145, 13
+SHOOT, A, 1090, 1087, 0
+SHOOT, A, 1096, 1093, 2
+SHOOT, A, 1102, 1099, 4
+SHOOT, A, 1103, 1100, 0
+SHOOT, A, 1108, 1105, 6
+SHOOT, A, 1109, 1106, 1
+SHOOT, A, 1114, 1111, 8
+SHOOT, A, 1115, 1112, 3
+SHOOT, A, 1120, 1117, 10
+SHOOT, A, 1121, 1118, 5
+SHOOT, A, 1126, 1123, 12
+SHOOT, A, 1127, 1124, 7
+SHOOT, A, 1131, 1128, 0
+SHOOT, A, 1132, 1129, 14
+SHOOT, A, 1133, 1130, 9
+SHOOT, A, 1137, 1134, 2
+SHOOT, A, 1138, 1135, 16
+SHOOT, A, 1139, 1136, 11
+SHOOT, A, 1143, 1140, 6
+SHOOT, A, 1144, 1141, 18
+SHOOT, A, 1145, 1142, 13
+DEAD, A, 1087
+DEAD, A, 1100
+DEAD, A, 1128
+DEAD, D, 1090
+DEAD, D, 1103
+DEAD, D, 1131
+SPAWN, A, 1146, 1, 3, 63
+SPAWN, A, 1147, 2, 4, 0
+SPAWN, A, 1148, 3, 4, 63
+SPAWN, D, 1149, 1, 3, 63
+SPAWN, D, 1150, 2, 4, 0
+SPAWN, D, 1151, 3, 4, 63
+TURN, 192
+PRINT, TURN 192 LOGS:To be spawned at Position(5,0)
+PRINT, To be spawned at Position(5,63)
+PRINT, To be spawned at Position(6,0)
+PRINT, Type 1 at Position (5,0)
+PRINT, Type 2 at Position (5,63)
+PRINT, Type 3 at Position (6,0)
+PRINT, 
+SHOOT, D, 1093, 1096, 0
+SHOOT, D, 1099, 1102, 2
+SHOOT, D, 1105, 1108, 4
+SHOOT, D, 1106, 1109, 0
+SHOOT, D, 1111, 1114, 6
+SHOOT, D, 1112, 1115, 1
+SHOOT, D, 1117, 1120, 8
+SHOOT, D, 1118, 1121, 3
+SHOOT, D, 1123, 1126, 10
+SHOOT, D, 1124, 1127, 5
+SHOOT, D, 1129, 1132, 12
+SHOOT, D, 1130, 1133, 7
+SHOOT, D, 1134, 1137, 0
+SHOOT, D, 1135, 1138, 14
+SHOOT, D, 1136, 1139, 9
+SHOOT, D, 1140, 1143, 2
+SHOOT, D, 1141, 1144, 16
+SHOOT, D, 1142, 1145, 11
+SHOOT, D, 1146, 1149, 6
+SHOOT, D, 1147, 1150, 18
+SHOOT, D, 1148, 1151, 13
+SHOOT, A, 1096, 1093, 0
+SHOOT, A, 1102, 1099, 2
+SHOOT, A, 1108, 1105, 4
+SHOOT, A, 1109, 1106, 0
+SHOOT, A, 1114, 1111, 6
+SHOOT, A, 1115, 1112, 1
+SHOOT, A, 1120, 1117, 8
+SHOOT, A, 1121, 1118, 3
+SHOOT, A, 1126, 1123, 10
+SHOOT, A, 1127, 1124, 5
+SHOOT, A, 1132, 1129, 12
+SHOOT, A, 1133, 1130, 7
+SHOOT, A, 1137, 1134, 0
+SHOOT, A, 1138, 1135, 14
+SHOOT, A, 1139, 1136, 9
+SHOOT, A, 1143, 1140, 2
+SHOOT, A, 1144, 1141, 16
+SHOOT, A, 1145, 1142, 11
+SHOOT, A, 1149, 1146, 6
+SHOOT, A, 1150, 1147, 18
+SHOOT, A, 1151, 1148, 13
+DEAD, A, 1093
+DEAD, A, 1106
+DEAD, A, 1134
+DEAD, D, 1096
+DEAD, D, 1109
+DEAD, D, 1137
+SPAWN, A, 1152, 1, 5, 0
+SPAWN, A, 1153, 2, 5, 63
+SPAWN, A, 1154, 3, 6, 0
+SPAWN, D, 1155, 1, 5, 0
+SPAWN, D, 1156, 2, 5, 63
+SPAWN, D, 1157, 3, 6, 0
+TURN, 193
+PRINT, TURN 193 LOGS:To be spawned at Position(6,63)
+PRINT, To be spawned at Position(7,0)
+PRINT, To be spawned at Position(7,63)
+PRINT, Type 1 at Position (6,63)
+PRINT, Type 2 at Position (7,0)
+PRINT, Type 3 at Position (7,63)
+PRINT, 
+SHOOT, D, 1099, 1102, 0
+SHOOT, D, 1105, 1108, 2
+SHOOT, D, 1111, 1114, 4
+SHOOT, D, 1112, 1115, 0
+SHOOT, D, 1117, 1120, 6
+SHOOT, D, 1118, 1121, 1
+SHOOT, D, 1123, 1126, 8
+SHOOT, D, 1124, 1127, 3
+SHOOT, D, 1129, 1132, 10
+SHOOT, D, 1130, 1133, 5
+SHOOT, D, 1135, 1138, 12
+SHOOT, D, 1136, 1139, 7
+SHOOT, D, 1140, 1143, 0
+SHOOT, D, 1141, 1144, 14
+SHOOT, D, 1142, 1145, 9
+SHOOT, D, 1146, 1149, 2
+SHOOT, D, 1147, 1150, 16
+SHOOT, D, 1148, 1151, 11
+SHOOT, D, 1152, 1155, 6
+SHOOT, D, 1153, 1156, 18
+SHOOT, D, 1154, 1157, 13
+SHOOT, A, 1102, 1099, 0
+SHOOT, A, 1108, 1105, 2
+SHOOT, A, 1114, 1111, 4
+SHOOT, A, 1115, 1112, 0
+SHOOT, A, 1120, 1117, 6
+SHOOT, A, 1121, 1118, 1
+SHOOT, A, 1126, 1123, 8
+SHOOT, A, 1127, 1124, 3
+SHOOT, A, 1132, 1129, 10
+SHOOT, A, 1133, 1130, 5
+SHOOT, A, 1138, 1135, 12
+SHOOT, A, 1139, 1136, 7
+SHOOT, A, 1143, 1140, 0
+SHOOT, A, 1144, 1141, 14
+SHOOT, A, 1145, 1142, 9
+SHOOT, A, 1149, 1146, 2
+SHOOT, A, 1150, 1147, 16
+SHOOT, A, 1151, 1148, 11
+SHOOT, A, 1155, 1152, 6
+SHOOT, A, 1156, 1153, 18
+SHOOT, A, 1157, 1154, 13
+DEAD, A, 1099
+DEAD, A, 1112
+DEAD, A, 1140
+DEAD, D, 1102
+DEAD, D, 1115
+DEAD, D, 1143
+SPAWN, A, 1158, 1, 6, 63
+SPAWN, A, 1159, 2, 7, 0
+SPAWN, A, 1160, 3, 7, 63
+SPAWN, D, 1161, 1, 6, 63
+SPAWN, D, 1162, 2, 7, 0
+SPAWN, D, 1163, 3, 7, 63
+TURN, 194
+PRINT, TURN 194 LOGS:To be spawned at Position(8,0)
+PRINT, To be spawned at Position(8,63)
+PRINT, To be spawned at Position(9,0)
+PRINT, Type 1 at Position (8,0)
+PRINT, Type 2 at Position (8,63)
+PRINT, Type 3 at Position (9,0)
+PRINT, 
+SHOOT, D, 1105, 1108, 0
+SHOOT, D, 1111, 1114, 2
+SHOOT, D, 1117, 1120, 4
+SHOOT, D, 1118, 1121, 0
+SHOOT, D, 1123, 1126, 6
+SHOOT, D, 1124, 1127, 1
+SHOOT, D, 1129, 1132, 8
+SHOOT, D, 1130, 1133, 3
+SHOOT, D, 1135, 1138, 10
+SHOOT, D, 1136, 1139, 5
+SHOOT, D, 1141, 1144, 12
+SHOOT, D, 1142, 1145, 7
+SHOOT, D, 1146, 1149, 0
+SHOOT, D, 1147, 1150, 14
+SHOOT, D, 1148, 1151, 9
+SHOOT, D, 1152, 1155, 2
+SHOOT, D, 1153, 1156, 16
+SHOOT, D, 1154, 1157, 11
+SHOOT, D, 1158, 1161, 6
+SHOOT, D, 1159, 1162, 18
+SHOOT, D, 1160, 1163, 13
+SHOOT, A, 1108, 1105, 0
+SHOOT, A, 1114, 1111, 2
+SHOOT, A, 1120, 1117, 4
+SHOOT, A, 1121, 1118, 0
+SHOOT, A, 1126, 1123, 6
+SHOOT, A, 1127, 1124, 1
+SHOOT, A, 1132, 1129, 8
+SHOOT, A, 1133, 1130, 3
+SHOOT, A, 1138, 1135, 10
+SHOOT, A, 1139, 1136, 5
+SHOOT, A, 1144, 1141, 12
+SHOOT, A, 1145, 1142, 7
+SHOOT, A, 1149, 1146, 0
+SHOOT, A, 1150, 1147, 14
+SHOOT, A, 1151, 1148, 9
+SHOOT, A, 1155, 1152, 2
+SHOOT, A, 1156, 1153, 16
+SHOOT, A, 1157, 1154, 11
+SHOOT, A, 1161, 1158, 6
+SHOOT, A, 1162, 1159, 18
+SHOOT, A, 1163, 1160, 13
+DEAD, A, 1105
+DEAD, A, 1118
+DEAD, A, 1146
+DEAD, D, 1108
+DEAD, D, 1121
+DEAD, D, 1149
+SPAWN, A, 1164, 1, 8, 0
+SPAWN, A, 1165, 2, 8, 63
+SPAWN, A, 1166, 3, 9, 0
+SPAWN, D, 1167, 1, 8, 0
+SPAWN, D, 1168, 2, 8, 63
+SPAWN, D, 1169, 3, 9, 0
+TURN, 195
+PRINT, TURN 195 LOGS:To be spawned at Position(9,63)
+PRINT, To be spawned at Position(10,0)
+PRINT, To be spawned at Position(10,63)
+PRINT, Type 1 at Position (9,63)
+PRINT, Type 2 at Position (10,0)
+PRINT, Type 3 at Position (10,63)
+PRINT, 
+SHOOT, D, 1111, 1114, 0
+SHOOT, D, 1117, 1120, 2
+SHOOT, D, 1123, 1126, 4
+SHOOT, D, 1124, 1127, 0
+SHOOT, D, 1129, 1132, 6
+SHOOT, D, 1130, 1133, 1
+SHOOT, D, 1135, 1138, 8
+SHOOT, D, 1136, 1139, 3
+SHOOT, D, 1141, 1144, 10
+SHOOT, D, 1142, 1145, 5
+SHOOT, D, 1147, 1150, 12
+SHOOT, D, 1148, 1151, 7
+SHOOT, D, 1152, 1155, 0
+SHOOT, D, 1153, 1156, 14
+SHOOT, D, 1154, 1157, 9
+SHOOT, D, 1158, 1161, 2
+SHOOT, D, 1159, 1162, 16
+SHOOT, D, 1160, 1163, 11
+SHOOT, D, 1164, 1167, 6
+SHOOT, D, 1165, 1168, 18
+SHOOT, D, 1166, 1169, 13
+SHOOT, A, 1114, 1111, 0
+SHOOT, A, 1120, 1117, 2
+SHOOT, A, 1126, 1123, 4
+SHOOT, A, 1127, 1124, 0
+SHOOT, A, 1132, 1129, 6
+SHOOT, A, 1133, 1130, 1
+SHOOT, A, 1138, 1135, 8
+SHOOT, A, 1139, 1136, 3
+SHOOT, A, 1144, 1141, 10
+SHOOT, A, 1145, 1142, 5
+SHOOT, A, 1150, 1147, 12
+SHOOT, A, 1151, 1148, 7
+SHOOT, A, 1155, 1152, 0
+SHOOT, A, 1156, 1153, 14
+SHOOT, A, 1157, 1154, 9
+SHOOT, A, 1161, 1158, 2
+SHOOT, A, 1162, 1159, 16
+SHOOT, A, 1163, 1160, 11
+SHOOT, A, 1167, 1164, 6
+SHOOT, A, 1168, 1165, 18
+SHOOT, A, 1169, 1166, 13
+DEAD, A, 1111
+DEAD, A, 1124
+DEAD, A, 1152
+DEAD, D, 1114
+DEAD, D, 1127
+DEAD, D, 1155
+SPAWN, A, 1170, 1, 9, 63
+SPAWN, A, 1171, 2, 10, 0
+SPAWN, A, 1172, 3, 10, 63
+SPAWN, D, 1173, 1, 9, 63
+SPAWN, D, 1174, 2, 10, 0
+SPAWN, D, 1175, 3, 10, 63
+TURN, 196
+PRINT, TURN 196 LOGS:To be spawned at Position(11,0)
+PRINT, To be spawned at Position(11,63)
+PRINT, To be spawned at Position(12,0)
+PRINT, Type 1 at Position (11,0)
+PRINT, Type 2 at Position (11,63)
+PRINT, Type 3 at Position (12,0)
+PRINT, 
+SHOOT, D, 1117, 1120, 0
+SHOOT, D, 1123, 1126, 2
+SHOOT, D, 1129, 1132, 4
+SHOOT, D, 1130, 1133, 0
+SHOOT, D, 1135, 1138, 6
+SHOOT, D, 1136, 1139, 1
+SHOOT, D, 1141, 1144, 8
+SHOOT, D, 1142, 1145, 3
+SHOOT, D, 1147, 1150, 10
+SHOOT, D, 1148, 1151, 5
+SHOOT, D, 1153, 1156, 12
+SHOOT, D, 1154, 1157, 7
+SHOOT, D, 1158, 1161, 0
+SHOOT, D, 1159, 1162, 14
+SHOOT, D, 1160, 1163, 9
+SHOOT, D, 1164, 1167, 2
+SHOOT, D, 1165, 1168, 16
+SHOOT, D, 1166, 1169, 11
+SHOOT, D, 1170, 1173, 6
+SHOOT, D, 1171, 1174, 18
+SHOOT, D, 1172, 1175, 13
+SHOOT, A, 1120, 1117, 0
+SHOOT, A, 1126, 1123, 2
+SHOOT, A, 1132, 1129, 4
+SHOOT, A, 1133, 1130, 0
+SHOOT, A, 1138, 1135, 6
+SHOOT, A, 1139, 1136, 1
+SHOOT, A, 1144, 1141, 8
+SHOOT, A, 1145, 1142, 3
+SHOOT, A, 1150, 1147, 10
+SHOOT, A, 1151, 1148, 5
+SHOOT, A, 1156, 1153, 12
+SHOOT, A, 1157, 1154, 7
+SHOOT, A, 1161, 1158, 0
+SHOOT, A, 1162, 1159, 14
+SHOOT, A, 1163, 1160, 9
+SHOOT, A, 1167, 1164, 2
+SHOOT, A, 1168, 1165, 16
+SHOOT, A, 1169, 1166, 11
+SHOOT, A, 1173, 1170, 6
+SHOOT, A, 1174, 1171, 18
+SHOOT, A, 1175, 1172, 13
+DEAD, A, 1117
+DEAD, A, 1130
+DEAD, A, 1158
+DEAD, D, 1120
+DEAD, D, 1133
+DEAD, D, 1161
+SPAWN, A, 1176, 1, 11, 0
+SPAWN, A, 1177, 2, 11, 63
+SPAWN, A, 1178, 3, 12, 0
+SPAWN, D, 1179, 1, 11, 0
+SPAWN, D, 1180, 2, 11, 63
+SPAWN, D, 1181, 3, 12, 0
+TURN, 197
+PRINT, TURN 197 LOGS:To be spawned at Position(12,63)
+PRINT, To be spawned at Position(13,0)
+PRINT, To be spawned at Position(13,63)
+PRINT, Type 1 at Position (12,63)
+PRINT, Type 2 at Position (13,0)
+PRINT, Type 3 at Position (13,63)
+PRINT, 
+SHOOT, D, 1123, 1126, 0
+SHOOT, D, 1129, 1132, 2
+SHOOT, D, 1135, 1138, 4
+SHOOT, D, 1136, 1139, 0
+SHOOT, D, 1141, 1144, 6
+SHOOT, D, 1142, 1145, 1
+SHOOT, D, 1147, 1150, 8
+SHOOT, D, 1148, 1151, 3
+SHOOT, D, 1153, 1156, 10
+SHOOT, D, 1154, 1157, 5
+SHOOT, D, 1159, 1162, 12
+SHOOT, D, 1160, 1163, 7
+SHOOT, D, 1164, 1167, 0
+SHOOT, D, 1165, 1168, 14
+SHOOT, D, 1166, 1169, 9
+SHOOT, D, 1170, 1173, 2
+SHOOT, D, 1171, 1174, 16
+SHOOT, D, 1172, 1175, 11
+SHOOT, D, 1176, 1179, 6
+SHOOT, D, 1177, 1180, 18
+SHOOT, D, 1178, 1181, 13
+SHOOT, A, 1126, 1123, 0
+SHOOT, A, 1132, 1129, 2
+SHOOT, A, 1138, 1135, 4
+SHOOT, A, 1139, 1136, 0
+SHOOT, A, 1144, 1141, 6
+SHOOT, A, 1145, 1142, 1
+SHOOT, A, 1150, 1147, 8
+SHOOT, A, 1151, 1148, 3
+SHOOT, A, 1156, 1153, 10
+SHOOT, A, 1157, 1154, 5
+SHOOT, A, 1162, 1159, 12
+SHOOT, A, 1163, 1160, 7
+SHOOT, A, 1167, 1164, 0
+SHOOT, A, 1168, 1165, 14
+SHOOT, A, 1169, 1166, 9
+SHOOT, A, 1173, 1170, 2
+SHOOT, A, 1174, 1171, 16
+SHOOT, A, 1175, 1172, 11
+SHOOT, A, 1179, 1176, 6
+SHOOT, A, 1180, 1177, 18
+SHOOT, A, 1181, 1178, 13
+DEAD, A, 1123
+DEAD, A, 1136
+DEAD, A, 1164
+DEAD, D, 1126
+DEAD, D, 1139
+DEAD, D, 1167
+SPAWN, A, 1182, 1, 12, 63
+SPAWN, A, 1183, 2, 13, 0
+SPAWN, A, 1184, 3, 13, 63
+SPAWN, D, 1185, 1, 12, 63
+SPAWN, D, 1186, 2, 13, 0
+SPAWN, D, 1187, 3, 13, 63
+TURN, 198
+PRINT, TURN 198 LOGS:To be spawned at Position(14,0)
+PRINT, To be spawned at Position(14,63)
+PRINT, To be spawned at Position(15,0)
+PRINT, Type 1 at Position (14,0)
+PRINT, Type 2 at Position (14,63)
+PRINT, Type 3 at Position (15,0)
+PRINT, 
+SHOOT, D, 1129, 1132, 0
+SHOOT, D, 1135, 1138, 2
+SHOOT, D, 1141, 1144, 4
+SHOOT, D, 1142, 1145, 0
+SHOOT, D, 1147, 1150, 6
+SHOOT, D, 1148, 1151, 1
+SHOOT, D, 1153, 1156, 8
+SHOOT, D, 1154, 1157, 3
+SHOOT, D, 1159, 1162, 10
+SHOOT, D, 1160, 1163, 5
+SHOOT, D, 1165, 1168, 12
+SHOOT, D, 1166, 1169, 7
+SHOOT, D, 1170, 1173, 0
+SHOOT, D, 1171, 1174, 14
+SHOOT, D, 1172, 1175, 9
+SHOOT, D, 1176, 1179, 2
+SHOOT, D, 1177, 1180, 16
+SHOOT, D, 1178, 1181, 11
+SHOOT, D, 1182, 1185, 6
+SHOOT, D, 1183, 1186, 18
+SHOOT, D, 1184, 1187, 13
+SHOOT, A, 1132, 1129, 0
+SHOOT, A, 1138, 1135, 2
+SHOOT, A, 1144, 1141, 4
+SHOOT, A, 1145, 1142, 0
+SHOOT, A, 1150, 1147, 6
+SHOOT, A, 1151, 1148, 1
+SHOOT, A, 1156, 1153, 8
+SHOOT, A, 1157, 1154, 3
+SHOOT, A, 1162, 1159, 10
+SHOOT, A, 1163, 1160, 5
+SHOOT, A, 1168, 1165, 12
+SHOOT, A, 1169, 1166, 7
+SHOOT, A, 1173, 1170, 0
+SHOOT, A, 1174, 1171, 14
+SHOOT, A, 1175, 1172, 9
+SHOOT, A, 1179, 1176, 2
+SHOOT, A, 1180, 1177, 16
+SHOOT, A, 1181, 1178, 11
+SHOOT, A, 1185, 1182, 6
+SHOOT, A, 1186, 1183, 18
+SHOOT, A, 1187, 1184, 13
+DEAD, A, 1129
+DEAD, A, 1142
+DEAD, A, 1170
+DEAD, D, 1132
+DEAD, D, 1145
+DEAD, D, 1173
+SPAWN, A, 1188, 1, 14, 0
+SPAWN, A, 1189, 2, 14, 63
+SPAWN, A, 1190, 3, 15, 0
+SPAWN, D, 1191, 1, 14, 0
+SPAWN, D, 1192, 2, 14, 63
+SPAWN, D, 1193, 3, 15, 0
+TURN, 199
+PRINT, TURN 199 LOGS:To be spawned at Position(15,63)
+PRINT, To be spawned at Position(16,0)
+PRINT, To be spawned at Position(16,63)
+PRINT, Type 1 at Position (15,63)
+PRINT, Type 2 at Position (16,0)
+PRINT, Type 3 at Position (16,63)
+PRINT, 
+SHOOT, D, 1135, 1138, 0
+SHOOT, D, 1141, 1144, 2
+SHOOT, D, 1147, 1150, 4
+SHOOT, D, 1148, 1151, 0
+SHOOT, D, 1153, 1156, 6
+SHOOT, D, 1154, 1157, 1
+SHOOT, D, 1159, 1162, 8
+SHOOT, D, 1160, 1163, 3
+SHOOT, D, 1165, 1168, 10
+SHOOT, D, 1166, 1169, 5
+SHOOT, D, 1171, 1174, 12
+SHOOT, D, 1172, 1175, 7
+SHOOT, D, 1176, 1179, 0
+SHOOT, D, 1177, 1180, 14
+SHOOT, D, 1178, 1181, 9
+SHOOT, D, 1182, 1185, 2
+SHOOT, D, 1183, 1186, 16
+SHOOT, D, 1184, 1187, 11
+SHOOT, D, 1188, 1191, 6
+SHOOT, D, 1189, 1192, 18
+SHOOT, D, 1190, 1193, 13
+SHOOT, A, 1138, 1135, 0
+SHOOT, A, 1144, 1141, 2
+SHOOT, A, 1150, 1147, 4
+SHOOT, A, 1151, 1148, 0
+SHOOT, A, 1156, 1153, 6
+SHOOT, A, 1157, 1154, 1
+SHOOT, A, 1162, 1159, 8
+SHOOT, A, 1163, 1160, 3
+SHOOT, A, 1168, 1165, 10
+SHOOT, A, 1169, 1166, 5
+SHOOT, A, 1174, 1171, 12
+SHOOT, A, 1175, 1172, 7
+SHOOT, A, 1179, 1176, 0
+SHOOT, A, 1180, 1177, 14
+SHOOT, A, 1181, 1178, 9
+SHOOT, A, 1185, 1182, 2
+SHOOT, A, 1186, 1183, 16
+SHOOT, A, 1187, 1184, 11
+SHOOT, A, 1191, 1188, 6
+SHOOT, A, 1192, 1189, 18
+SHOOT, A, 1193, 1190, 13
+DEAD, A, 1135
+DEAD, A, 1148
+DEAD, A, 1176
+DEAD, D, 1138
+DEAD, D, 1151
+DEAD, D, 1179
+SPAWN, A, 1194, 1, 15, 63
+SPAWN, A, 1195, 2, 16, 0
+SPAWN, A, 1196, 3, 16, 63
+SPAWN, D, 1197, 1, 15, 63
+SPAWN, D, 1198, 2, 16, 0
+SPAWN, D, 1199, 3, 16, 63
+TURN, 200
+PRINT, TURN 200 LOGS:To be spawned at Position(17,0)
+PRINT, To be spawned at Position(17,63)
+PRINT, To be spawned at Position(18,0)
+PRINT, Type 1 at Position (17,0)
+PRINT, Type 2 at Position (17,63)
+PRINT, Type 3 at Position (18,0)
+PRINT, 
+SHOOT, D, 1141, 1144, 0
+SHOOT, D, 1147, 1150, 2
+SHOOT, D, 1153, 1156, 4
+SHOOT, D, 1154, 1157, 0
+SHOOT, D, 1159, 1162, 6
+SHOOT, D, 1160, 1163, 1
+SHOOT, D, 1165, 1168, 8
+SHOOT, D, 1166, 1169, 3
+SHOOT, D, 1171, 1174, 10
+SHOOT, D, 1172, 1175, 5
+SHOOT, D, 1177, 1180, 12
+SHOOT, D, 1178, 1181, 7
+SHOOT, D, 1182, 1185, 0
+SHOOT, D, 1183, 1186, 14
+SHOOT, D, 1184, 1187, 9
+SHOOT, D, 1188, 1191, 2
+SHOOT, D, 1189, 1192, 16
+SHOOT, D, 1190, 1193, 11
+SHOOT, D, 1194, 1197, 6
+SHOOT, D, 1195, 1198, 18
+SHOOT, D, 1196, 1199, 13
+SHOOT, A, 1144, 1141, 0
+SHOOT, A, 1150, 1147, 2
+SHOOT, A, 1156, 1153, 4
+SHOOT, A, 1157, 1154, 0
+SHOOT, A, 1162, 1159, 6
+SHOOT, A, 1163, 1160, 1
+SHOOT, A, 1168, 1165, 8
+SHOOT, A, 1169, 1166, 3
+SHOOT, A, 1174, 1171, 10
+SHOOT, A, 1175, 1172, 5
+SHOOT, A, 1180, 1177, 12
+SHOOT, A, 1181, 1178, 7
+SHOOT, A, 1185, 1182, 0
+SHOOT, A, 1186, 1183, 14
+SHOOT, A, 1187, 1184, 9
+SHOOT, A, 1191, 1188, 2
+SHOOT, A, 1192, 1189, 16
+SHOOT, A, 1193, 1190, 11
+SHOOT, A, 1197, 1194, 6
+SHOOT, A, 1198, 1195, 18
+SHOOT, A, 1199, 1196, 13
+DEAD, A, 1141
+DEAD, A, 1154
+DEAD, A, 1182
+DEAD, D, 1144
+DEAD, D, 1157
+DEAD, D, 1185
+SPAWN, A, 1200, 1, 17, 0
+SPAWN, A, 1201, 2, 17, 63
+SPAWN, A, 1202, 3, 18, 0
+SPAWN, D, 1203, 1, 17, 0
+SPAWN, D, 1204, 2, 17, 63
+SPAWN, D, 1205, 3, 18, 0
+TURN, 201
+PRINT, TURN 201 LOGS:To be spawned at Position(18,63)
+PRINT, To be spawned at Position(19,0)
+PRINT, To be spawned at Position(19,63)
+PRINT, Type 1 at Position (18,63)
+PRINT, Type 2 at Position (19,0)
+PRINT, Type 3 at Position (19,63)
+PRINT, 
+SHOOT, D, 1147, 1150, 0
+SHOOT, D, 1153, 1156, 2
+SHOOT, D, 1159, 1162, 4
+SHOOT, D, 1160, 1163, 0
+SHOOT, D, 1165, 1168, 6
+SHOOT, D, 1166, 1169, 1
+SHOOT, D, 1171, 1174, 8
+SHOOT, D, 1172, 1175, 3
+SHOOT, D, 1177, 1180, 10
+SHOOT, D, 1178, 1181, 5
+SHOOT, D, 1183, 1186, 12
+SHOOT, D, 1184, 1187, 7
+SHOOT, D, 1188, 1191, 0
+SHOOT, D, 1189, 1192, 14
+SHOOT, D, 1190, 1193, 9
+SHOOT, D, 1194, 1197, 2
+SHOOT, D, 1195, 1198, 16
+SHOOT, D, 1196, 1199, 11
+SHOOT, D, 1200, 1203, 6
+SHOOT, D, 1201, 1204, 18
+SHOOT, D, 1202, 1205, 13
+SHOOT, A, 1150, 1147, 0
+SHOOT, A, 1156, 1153, 2
+SHOOT, A, 1162, 1159, 4
+SHOOT, A, 1163, 1160, 0
+SHOOT, A, 1168, 1165, 6
+SHOOT, A, 1169, 1166, 1
+SHOOT, A, 1174, 1171, 8
+SHOOT, A, 1175, 1172, 3
+SHOOT, A, 1180, 1177, 10
+SHOOT, A, 1181, 1178, 5
+SHOOT, A, 1186, 1183, 12
+SHOOT, A, 1187, 1184, 7
+SHOOT, A, 1191, 1188, 0
+SHOOT, A, 1192, 1189, 14
+SHOOT, A, 1193, 1190, 9
+SHOOT, A, 1197, 1194, 2
+SHOOT, A, 1198, 1195, 16
+SHOOT, A, 1199, 1196, 11
+SHOOT, A, 1203, 1200, 6
+SHOOT, A, 1204, 1201, 18
+SHOOT, A, 1205, 1202, 13
+DEAD, A, 1147
+DEAD, A, 1160
+DEAD, A, 1188
+DEAD, D, 1150
+DEAD, D, 1163
+DEAD, D, 1191
+SPAWN, A, 1206, 1, 18, 63
+SPAWN, A, 1207, 2, 19, 0
+SPAWN, A, 1208, 3, 19, 63
+SPAWN, D, 1209, 1, 18, 63
+SPAWN, D, 1210, 2, 19, 0
+SPAWN, D, 1211, 3, 19, 63
+TURN, 202
+PRINT, TURN 202 LOGS:To be spawned at Position(20,0)
+PRINT, To be spawned at Position(20,63)
+PRINT, To be spawned at Position(21,0)
+PRINT, Type 1 at Position (20,0)
+PRINT, Type 2 at Position (20,63)
+PRINT, Type 3 at Position (21,0)
+PRINT, 
+SHOOT, D, 1153, 1156, 0
+SHOOT, D, 1159, 1162, 2
+SHOOT, D, 1165, 1168, 4
+SHOOT, D, 1166, 1169, 0
+SHOOT, D, 1171, 1174, 6
+SHOOT, D, 1172, 1175, 1
+SHOOT, D, 1177, 1180, 8
+SHOOT, D, 1178, 1181, 3
+SHOOT, D, 1183, 1186, 10
+SHOOT, D, 1184, 1187, 5
+SHOOT, D, 1189, 1192, 12
+SHOOT, D, 1190, 1193, 7
+SHOOT, D, 1194, 1197, 0
+SHOOT, D, 1195, 1198, 14
+SHOOT, D, 1196, 1199, 9
+SHOOT, D, 1200, 1203, 2
+SHOOT, D, 1201, 1204, 16
+SHOOT, D, 1202, 1205, 11
+SHOOT, D, 1206, 1209, 6
+SHOOT, D, 1207, 1210, 18
+SHOOT, D, 1208, 1211, 13
+SHOOT, A, 1156, 1153, 0
+SHOOT, A, 1162, 1159, 2
+SHOOT, A, 1168, 1165, 4
+SHOOT, A, 1169, 1166, 0
+SHOOT, A, 1174, 1171, 6
+SHOOT, A, 1175, 1172, 1
+SHOOT, A, 1180, 1177, 8
+SHOOT, A, 1181, 1178, 3
+SHOOT, A, 1186, 1183, 10
+SHOOT, A, 1187, 1184, 5
+SHOOT, A, 1192, 1189, 12
+SHOOT, A, 1193, 1190, 7
+SHOOT, A, 1197, 1194, 0
+SHOOT, A, 1198, 1195, 14
+SHOOT, A, 1199, 1196, 9
+SHOOT, A, 1203, 1200, 2
+SHOOT, A, 1204, 1201, 16
+SHOOT, A, 1205, 1202, 11
+SHOOT, A, 1209, 1206, 6
+SHOOT, A, 1210, 1207, 18
+SHOOT, A, 1211, 1208, 13
+DEAD, A, 1153
+DEAD, A, 1166
+DEAD, A, 1194
+DEAD, D, 1156
+DEAD, D, 1169
+DEAD, D, 1197
+SPAWN, A, 1212, 1, 20, 0
+SPAWN, A, 1213, 2, 20, 63
+SPAWN, A, 1214, 3, 21, 0
+SPAWN, D, 1215, 1, 20, 0
+SPAWN, D, 1216, 2, 20, 63
+SPAWN, D, 1217, 3, 21, 0
+TURN, 203
+PRINT, TURN 203 LOGS:To be spawned at Position(21,63)
+PRINT, To be spawned at Position(22,0)
+PRINT, To be spawned at Position(22,63)
+PRINT, Type 1 at Position (21,63)
+PRINT, Type 2 at Position (22,0)
+PRINT, Type 3 at Position (22,63)
+PRINT, 
+SHOOT, D, 1159, 1162, 0
+SHOOT, D, 1165, 1168, 2
+SHOOT, D, 1171, 1174, 4
+SHOOT, D, 1172, 1175, 0
+SHOOT, D, 1177, 1180, 6
+SHOOT, D, 1178, 1181, 1
+SHOOT, D, 1183, 1186, 8
+SHOOT, D, 1184, 1187, 3
+SHOOT, D, 1189, 1192, 10
+SHOOT, D, 1190, 1193, 5
+SHOOT, D, 1195, 1198, 12
+SHOOT, D, 1196, 1199, 7
+SHOOT, D, 1200, 1203, 0
+SHOOT, D, 1201, 1204, 14
+SHOOT, D, 1202, 1205, 9
+SHOOT, D, 1206, 1209, 2
+SHOOT, D, 1207, 1210, 16
+SHOOT, D, 1208, 1211, 11
+SHOOT, D, 1212, 1215, 6
+SHOOT, D, 1213, 1216, 18
+SHOOT, D, 1214, 1217, 13
+SHOOT, A, 1162, 1159, 0
+SHOOT, A, 1168, 1165, 2
+SHOOT, A, 1174, 1171, 4
+SHOOT, A, 1175, 1172, 0
+SHOOT, A, 1180, 1177, 6
+SHOOT, A, 1181, 1178, 1
+SHOOT, A, 1186, 1183, 8
+SHOOT, A, 1187, 1184, 3
+SHOOT, A, 1192, 1189, 10
+SHOOT, A, 1193, 1190, 5
+SHOOT, A, 1198, 1195, 12
+SHOOT, A, 1199, 1196, 7
+SHOOT, A, 1203, 1200, 0
+SHOOT, A, 1204, 1201, 14
+SHOOT, A, 1205, 1202, 9
+SHOOT, A, 1209, 1206, 2
+SHOOT, A, 1210, 1207, 16
+SHOOT, A, 1211, 1208, 11
+SHOOT, A, 1215, 1212, 6
+SHOOT, A, 1216, 1213, 18
+SHOOT, A, 1217, 1214, 13
+DEAD, A, 1159
+DEAD, A, 1172
+DEAD, A, 1200
+DEAD, D, 1162
+DEAD, D, 1175
+DEAD, D, 1203
+SPAWN, A, 1218, 1, 21, 63
+SPAWN, A, 1219, 2, 22, 0
+SPAWN, A, 1220, 3, 22, 63
+SPAWN, D, 1221, 1, 21, 63
+SPAWN, D, 1222, 2, 22, 0
+SPAWN, D, 1223, 3, 22, 63
+TURN, 204
+PRINT, TURN 204 LOGS:To be spawned at Position(23,0)
+PRINT, To be spawned at Position(23,63)
+PRINT, To be spawned at Position(24,0)
+PRINT, Type 1 at Position (23,0)
+PRINT, Type 2 at Position (23,63)
+PRINT, Type 3 at Position (24,0)
+PRINT, 
+SHOOT, D, 1165, 1168, 0
+SHOOT, D, 1171, 1174, 2
+SHOOT, D, 1177, 1180, 4
+SHOOT, D, 1178, 1181, 0
+SHOOT, D, 1183, 1186, 6
+SHOOT, D, 1184, 1187, 1
+SHOOT, D, 1189, 1192, 8
+SHOOT, D, 1190, 1193, 3
+SHOOT, D, 1195, 1198, 10
+SHOOT, D, 1196, 1199, 5
+SHOOT, D, 1201, 1204, 12
+SHOOT, D, 1202, 1205, 7
+SHOOT, D, 1206, 1209, 0
+SHOOT, D, 1207, 1210, 14
+SHOOT, D, 1208, 1211, 9
+SHOOT, D, 1212, 1215, 2
+SHOOT, D, 1213, 1216, 16
+SHOOT, D, 1214, 1217, 11
+SHOOT, D, 1218, 1221, 6
+SHOOT, D, 1219, 1222, 18
+SHOOT, D, 1220, 1223, 13
+SHOOT, A, 1168, 1165, 0
+SHOOT, A, 1174, 1171, 2
+SHOOT, A, 1180, 1177, 4
+SHOOT, A, 1181, 1178, 0
+SHOOT, A, 1186, 1183, 6
+SHOOT, A, 1187, 1184, 1
+SHOOT, A, 1192, 1189, 8
+SHOOT, A, 1193, 1190, 3
+SHOOT, A, 1198, 1195, 10
+SHOOT, A, 1199, 1196, 5
+SHOOT, A, 1204, 1201, 12
+SHOOT, A, 1205, 1202, 7
+SHOOT, A, 1209, 1206, 0
+SHOOT, A, 1210, 1207, 14
+SHOOT, A, 1211, 1208, 9
+SHOOT, A, 1215, 1212, 2
+SHOOT, A, 1216, 1213, 16
+SHOOT, A, 1217, 1214, 11
+SHOOT, A, 1221, 1218, 6
+SHOOT, A, 1222, 1219, 18
+SHOOT, A, 1223, 1220, 13
+DEAD, A, 1165
+DEAD, A, 1178
+DEAD, A, 1206
+DEAD, D, 1168
+DEAD, D, 1181
+DEAD, D, 1209
+SPAWN, A, 1224, 1, 23, 0
+SPAWN, A, 1225, 2, 23, 63
+SPAWN, A, 1226, 3, 24, 0
+SPAWN, D, 1227, 1, 23, 0
+SPAWN, D, 1228, 2, 23, 63
+SPAWN, D, 1229, 3, 24, 0
+TURN, 205
+PRINT, TURN 205 LOGS:To be spawned at Position(24,63)
+PRINT, To be spawned at Position(25,0)
+PRINT, To be spawned at Position(25,63)
+PRINT, Type 1 at Position (24,63)
+PRINT, Type 2 at Position (25,0)
+PRINT, Type 3 at Position (25,63)
+PRINT, 
+SHOOT, D, 1171, 1174, 0
+SHOOT, D, 1177, 1180, 2
+SHOOT, D, 1183, 1186, 4
+SHOOT, D, 1184, 1187, 0
+SHOOT, D, 1189, 1192, 6
+SHOOT, D, 1190, 1193, 1
+SHOOT, D, 1195, 1198, 8
+SHOOT, D, 1196, 1199, 3
+SHOOT, D, 1201, 1204, 10
+SHOOT, D, 1202, 1205, 5
+SHOOT, D, 1207, 1210, 12
+SHOOT, D, 1208, 1211, 7
+SHOOT, D, 1212, 1215, 0
+SHOOT, D, 1213, 1216, 14
+SHOOT, D, 1214, 1217, 9
+SHOOT, D, 1218, 1221, 2
+SHOOT, D, 1219, 1222, 16
+SHOOT, D, 1220, 1223, 11
+SHOOT, D, 1224, 1227, 6
+SHOOT, D, 1225, 1228, 18
+SHOOT, D, 1226, 1229, 13
+SHOOT, A, 1174, 1171, 0
+SHOOT, A, 1180, 1177, 2
+SHOOT, A, 1186, 1183, 4
+SHOOT, A, 1187, 1184, 0
+SHOOT, A, 1192, 1189, 6
+SHOOT, A, 1193, 1190, 1
+SHOOT, A, 1198, 1195, 8
+SHOOT, A, 1199, 1196, 3
+SHOOT, A, 1204, 1201, 10
+SHOOT, A, 1205, 1202, 5
+SHOOT, A, 1210, 1207, 12
+SHOOT, A, 1211, 1208, 7
+SHOOT, A, 1215, 1212, 0
+SHOOT, A, 1216, 1213, 14
+SHOOT, A, 1217, 1214, 9
+SHOOT, A, 1221, 1218, 2
+SHOOT, A, 1222, 1219, 16
+SHOOT, A, 1223, 1220, 11
+SHOOT, A, 1227, 1224, 6
+SHOOT, A, 1228, 1225, 18
+SHOOT, A, 1229, 1226, 13
+DEAD, A, 1171
+DEAD, A, 1184
+DEAD, A, 1212
+DEAD, D, 1174
+DEAD, D, 1187
+DEAD, D, 1215
+SPAWN, A, 1230, 1, 24, 63
+SPAWN, A, 1231, 2, 25, 0
+SPAWN, A, 1232, 3, 25, 63
+SPAWN, D, 1233, 1, 24, 63
+SPAWN, D, 1234, 2, 25, 0
+SPAWN, D, 1235, 3, 25, 63
+TURN, 206
+PRINT, TURN 206 LOGS:To be spawned at Position(26,0)
+PRINT, To be spawned at Position(26,63)
+PRINT, To be spawned at Position(27,0)
+PRINT, Type 1 at Position (26,0)
+PRINT, Type 2 at Position (26,63)
+PRINT, Type 3 at Position (27,0)
+PRINT, 
+SHOOT, D, 1177, 1180, 0
+SHOOT, D, 1183, 1186, 2
+SHOOT, D, 1189, 1192, 4
+SHOOT, D, 1190, 1193, 0
+SHOOT, D, 1195, 1198, 6
+SHOOT, D, 1196, 1199, 1
+SHOOT, D, 1201, 1204, 8
+SHOOT, D, 1202, 1205, 3
+SHOOT, D, 1207, 1210, 10
+SHOOT, D, 1208, 1211, 5
+SHOOT, D, 1213, 1216, 12
+SHOOT, D, 1214, 1217, 7
+SHOOT, D, 1218, 1221, 0
+SHOOT, D, 1219, 1222, 14
+SHOOT, D, 1220, 1223, 9
+SHOOT, D, 1224, 1227, 2
+SHOOT, D, 1225, 1228, 16
+SHOOT, D, 1226, 1229, 11
+SHOOT, D, 1230, 1233, 6
+SHOOT, D, 1231, 1234, 18
+SHOOT, D, 1232, 1235, 13
+SHOOT, A, 1180, 1177, 0
+SHOOT, A, 1186, 1183, 2
+SHOOT, A, 1192, 1189, 4
+SHOOT, A, 1193, 1190, 0
+SHOOT, A, 1198, 1195, 6
+SHOOT, A, 1199, 1196, 1
+SHOOT, A, 1204, 1201, 8
+SHOOT, A, 1205, 1202, 3
+SHOOT, A, 1210, 1207, 10
+SHOOT, A, 1211, 1208, 5
+SHOOT, A, 1216, 1213, 12
+SHOOT, A, 1217, 1214, 7
+SHOOT, A, 1221, 1218, 0
+SHOOT, A, 1222, 1219, 14
+SHOOT, A, 1223, 1220, 9
+SHOOT, A, 1227, 1224, 2
+SHOOT, A, 1228, 1225, 16
+SHOOT, A, 1229, 1226, 11
+SHOOT, A, 1233, 1230, 6
+SHOOT, A, 1234, 1231, 18
+SHOOT, A, 1235, 1232, 13
+DEAD, A, 1177
+DEAD, A, 1190
+DEAD, A, 1218
+DEAD, D, 1180
+DEAD, D, 1193
+DEAD, D, 1221
+SPAWN, A, 1236, 1, 26, 0
+SPAWN, A, 1237, 2, 26, 63
+SPAWN, A, 1238, 3, 27, 0
+SPAWN, D, 1239, 1, 26, 0
+SPAWN, D, 1240, 2, 26, 63
+SPAWN, D, 1241, 3, 27, 0
+TURN, 207
+PRINT, TURN 207 LOGS:To be spawned at Position(27,63)
+PRINT, To be spawned at Position(28,0)
+PRINT, To be spawned at Position(28,63)
+PRINT, Type 1 at Position (27,63)
+PRINT, Type 2 at Position (28,0)
+PRINT, Type 3 at Position (28,63)
+PRINT, 
+SHOOT, D, 1183, 1186, 0
+SHOOT, D, 1189, 1192, 2
+SHOOT, D, 1195, 1198, 4
+SHOOT, D, 1196, 1199, 0
+SHOOT, D, 1201, 1204, 6
+SHOOT, D, 1202, 1205, 1
+SHOOT, D, 1207, 1210, 8
+SHOOT, D, 1208, 1211, 3
+SHOOT, D, 1213, 1216, 10
+SHOOT, D, 1214, 1217, 5
+SHOOT, D, 1219, 1222, 12
+SHOOT, D, 1220, 1223, 7
+SHOOT, D, 1224, 1227, 0
+SHOOT, D, 1225, 1228, 14
+SHOOT, D, 1226, 1229, 9
+SHOOT, D, 1230, 1233, 2
+SHOOT, D, 1231, 1234, 16
+SHOOT, D, 1232, 1235, 11
+SHOOT, D, 1236, 1239, 6
+SHOOT, D, 1237, 1240, 18
+SHOOT, D, 1238, 1241, 13
+SHOOT, A, 1186, 1183, 0
+SHOOT, A, 1192, 1189, 2
+SHOOT, A, 1198, 1195, 4
+SHOOT, A, 1199, 1196, 0
+SHOOT, A, 1204, 1201, 6
+SHOOT, A, 1205, 1202, 1
+SHOOT, A, 1210, 1207, 8
+SHOOT, A, 1211, 1208, 3
+SHOOT, A, 1216, 1213, 10
+SHOOT, A, 1217, 1214, 5
+SHOOT, A, 1222, 1219, 12
+SHOOT, A, 1223, 1220, 7
+SHOOT, A, 1227, 1224, 0
+SHOOT, A, 1228, 1225, 14
+SHOOT, A, 1229, 1226, 9
+SHOOT, A, 1233, 1230, 2
+SHOOT, A, 1234, 1231, 16
+SHOOT, A, 1235, 1232, 11
+SHOOT, A, 1239, 1236, 6
+SHOOT, A, 1240, 1237, 18
+SHOOT, A, 1241, 1238, 13
+DEAD, A, 1183
+DEAD, A, 1196
+DEAD, A, 1224
+DEAD, D, 1186
+DEAD, D, 1199
+DEAD, D, 1227
+SPAWN, A, 1242, 1, 27, 63
+SPAWN, A, 1243, 2, 28, 0
+SPAWN, A, 1244, 3, 28, 63
+SPAWN, D, 1245, 1, 27, 63
+SPAWN, D, 1246, 2, 28, 0
+SPAWN, D, 1247, 3, 28, 63
+TURN, 208
+PRINT, TURN 208 LOGS:To be spawned at Position(29,0)
+PRINT, To be spawned at Position(29,63)
+PRINT, To be spawned at Position(30,0)
+PRINT, Type 1 at Position (29,0)
+PRINT, Type 2 at Position (29,63)
+PRINT, Type 3 at Position (30,0)
+PRINT, 
+SHOOT, D, 1189, 1192, 0
+SHOOT, D, 1195, 1198, 2
+SHOOT, D, 1201, 1204, 4
+SHOOT, D, 1202, 1205, 0
+SHOOT, D, 1207, 1210, 6
+SHOOT, D, 1208, 1211, 1
+SHOOT, D, 1213, 1216, 8
+SHOOT, D, 1214, 1217, 3
+SHOOT, D, 1219, 1222, 10
+SHOOT, D, 1220, 1223, 5
+SHOOT, D, 1225, 1228, 12
+SHOOT, D, 1226, 1229, 7
+SHOOT, D, 1230, 1233, 0
+SHOOT, D, 1231, 1234, 14
+SHOOT, D, 1232, 1235, 9
+SHOOT, D, 1236, 1239, 2
+SHOOT, D, 1237, 1240, 16
+SHOOT, D, 1238, 1241, 11
+SHOOT, D, 1242, 1245, 6
+SHOOT, D, 1243, 1246, 18
+SHOOT, D, 1244, 1247, 13
+SHOOT, A, 1192, 1189, 0
+SHOOT, A, 1198, 1195, 2
+SHOOT, A, 1204, 1201, 4
+SHOOT, A, 1205, 1202, 0
+SHOOT, A, 1210, 1207, 6
+SHOOT, A, 1211, 1208, 1
+SHOOT, A, 1216, 1213, 8
+SHOOT, A, 1217, 1214, 3
+SHOOT, A, 1222, 1219, 10
+SHOOT, A, 1223, 1220, 5
+SHOOT, A, 1228, 1225, 12
+SHOOT, A, 1229, 1226, 7
+SHOOT, A, 1233, 1230, 0
+SHOOT, A, 1234, 1231, 14
+SHOOT, A, 1235, 1232, 9
+SHOOT, A, 1239, 1236, 2
+SHOOT, A, 1240, 1237, 16
+SHOOT, A, 1241, 1238, 11
+SHOOT, A, 1245, 1242, 6
+SHOOT, A, 1246, 1243, 18
+SHOOT, A, 1247, 1244, 13
+DEAD, A, 1189
+DEAD, A, 1202
+DEAD, A, 1230
+DEAD, D, 1192
+DEAD, D, 1205
+DEAD, D, 1233
+SPAWN, A, 1248, 1, 29, 0
+SPAWN, A, 1249, 2, 29, 63
+SPAWN, A, 1250, 3, 30, 0
+SPAWN, D, 1251, 1, 29, 0
+SPAWN, D, 1252, 2, 29, 63
+SPAWN, D, 1253, 3, 30, 0
+TURN, 209
+PRINT, TURN 209 LOGS:To be spawned at Position(30,63)
+PRINT, To be spawned at Position(31,0)
+PRINT, To be spawned at Position(31,63)
+PRINT, Type 1 at Position (30,63)
+PRINT, Type 2 at Position (31,0)
+PRINT, Type 3 at Position (31,63)
+PRINT, 
+SHOOT, D, 1195, 1198, 0
+SHOOT, D, 1201, 1204, 2
+SHOOT, D, 1207, 1210, 4
+SHOOT, D, 1208, 1211, 0
+SHOOT, D, 1213, 1216, 6
+SHOOT, D, 1214, 1217, 1
+SHOOT, D, 1219, 1222, 8
+SHOOT, D, 1220, 1223, 3
+SHOOT, D, 1225, 1228, 10
+SHOOT, D, 1226, 1229, 5
+SHOOT, D, 1231, 1234, 12
+SHOOT, D, 1232, 1235, 7
+SHOOT, D, 1236, 1239, 0
+SHOOT, D, 1237, 1240, 14
+SHOOT, D, 1238, 1241, 9
+SHOOT, D, 1242, 1245, 2
+SHOOT, D, 1243, 1246, 16
+SHOOT, D, 1244, 1247, 11
+SHOOT, D, 1248, 1251, 6
+SHOOT, D, 1249, 1252, 18
+SHOOT, D, 1250, 1253, 13
+SHOOT, A, 1198, 1195, 0
+SHOOT, A, 1204, 1201, 2
+SHOOT, A, 1210, 1207, 4
+SHOOT, A, 1211, 1208, 0
+SHOOT, A, 1216, 1213, 6
+SHOOT, A, 1217, 1214, 1
+SHOOT, A, 1222, 1219, 8
+SHOOT, A, 1223, 1220, 3
+SHOOT, A, 1228, 1225, 10
+SHOOT, A, 1229, 1226, 5
+SHOOT, A, 1234, 1231, 12
+SHOOT, A, 1235, 1232, 7
+SHOOT, A, 1239, 1236, 0
+SHOOT, A, 1240, 1237, 14
+SHOOT, A, 1241, 1238, 9
+SHOOT, A, 1245, 1242, 2
+SHOOT, A, 1246, 1243, 16
+SHOOT, A, 1247, 1244, 11
+SHOOT, A, 1251, 1248, 6
+SHOOT, A, 1252, 1249, 18
+SHOOT, A, 1253, 1250, 13
+DEAD, A, 1195
+DEAD, A, 1208
+DEAD, A, 1236
+DEAD, D, 1198
+DEAD, D, 1211
+DEAD, D, 1239
+SPAWN, A, 1254, 1, 30, 63
+SPAWN, A, 1255, 2, 31, 0
+SPAWN, A, 1256, 3, 31, 63
+SPAWN, D, 1257, 1, 30, 63
+SPAWN, D, 1258, 2, 31, 0
+SPAWN, D, 1259, 3, 31, 63
+TURN, 210
+PRINT, TURN 210 LOGS:To be spawned at Position(32,0)
+PRINT, To be spawned at Position(32,63)
+PRINT, To be spawned at Position(33,0)
+PRINT, Type 1 at Position (32,0)
+PRINT, Type 2 at Position (32,63)
+PRINT, Type 3 at Position (33,0)
+PRINT, 
+SHOOT, D, 1201, 1204, 0
+SHOOT, D, 1207, 1210, 2
+SHOOT, D, 1213, 1216, 4
+SHOOT, D, 1214, 1217, 0
+SHOOT, D, 1219, 1222, 6
+SHOOT, D, 1220, 1223, 1
+SHOOT, D, 1225, 1228, 8
+SHOOT, D, 1226, 1229, 3
+SHOOT, D, 1231, 1234, 10
+SHOOT, D, 1232, 1235, 5
+SHOOT, D, 1237, 1240, 12
+SHOOT, D, 1238, 1241, 7
+SHOOT, D, 1242, 1245, 0
+SHOOT, D, 1243, 1246, 14
+SHOOT, D, 1244, 1247, 9
+SHOOT, D, 1248, 1251, 2
+SHOOT, D, 1249, 1252, 16
+SHOOT, D, 1250, 1253, 11
+SHOOT, D, 1254, 1257, 6
+SHOOT, D, 1255, 1258, 18
+SHOOT, D, 1256, 1259, 13
+SHOOT, A, 1204, 1201, 0
+SHOOT, A, 1210, 1207, 2
+SHOOT, A, 1216, 1213, 4
+SHOOT, A, 1217, 1214, 0
+SHOOT, A, 1222, 1219, 6
+SHOOT, A, 1223, 1220, 1
+SHOOT, A, 1228, 1225, 8
+SHOOT, A, 1229, 1226, 3
+SHOOT, A, 1234, 1231, 10
+SHOOT, A, 1235, 1232, 5
+SHOOT, A, 1240, 1237, 12
+SHOOT, A, 1241, 1238, 7
+SHOOT, A, 1245, 1242, 0
+SHOOT, A, 1246, 1243, 14
+SHOOT, A, 1247, 1244, 9
+SHOOT, A, 1251, 1248, 2
+SHOOT, A, 1252, 1249, 16
+SHOOT, A, 1253, 1250, 11
+SHOOT, A, 1257, 1254, 6
+SHOOT, A, 1258, 1255, 18
+SHOOT, A, 1259, 1256, 13
+DEAD, A, 1201
+DEAD, A, 1214
+DEAD, A, 1242
+DEAD, D, 1204
+DEAD, D, 1217
+DEAD, D, 1245
+SPAWN, A, 1260, 1, 32, 0
+SPAWN, A, 1261, 2, 32, 63
+SPAWN, A, 1262, 3, 33, 0
+SPAWN, D, 1263, 1, 32, 0
+SPAWN, D, 1264, 2, 32, 63
+SPAWN, D, 1265, 3, 33, 0
+TURN, 211
+PRINT, TURN 211 LOGS:To be spawned at Position(33,63)
+PRINT, To be spawned at Position(34,0)
+PRINT, To be spawned at Position(34,63)
+PRINT, Type 1 at Position (33,63)
+PRINT, Type 2 at Position (34,0)
+PRINT, Type 3 at Position (34,63)
+PRINT, 
+SHOOT, D, 1207, 1210, 0
+SHOOT, D, 1213, 1216, 2
+SHOOT, D, 1219, 1222, 4
+SHOOT, D, 1220, 1223, 0
+SHOOT, D, 1225, 1228, 6
+SHOOT, D, 1226, 1229, 1
+SHOOT, D, 1231, 1234, 8
+SHOOT, D, 1232, 1235, 3
+SHOOT, D, 1237, 1240, 10
+SHOOT, D, 1238, 1241, 5
+SHOOT, D, 1243, 1246, 12
+SHOOT, D, 1244, 1247, 7
+SHOOT, D, 1248, 1251, 0
+SHOOT, D, 1249, 1252, 14
+SHOOT, D, 1250, 1253, 9
+SHOOT, D, 1254, 1257, 2
+SHOOT, D, 1255, 1258, 16
+SHOOT, D, 1256, 1259, 11
+SHOOT, D, 1260, 1263, 6
+SHOOT, D, 1261, 1264, 18
+SHOOT, D, 1262, 1265, 13
+SHOOT, A, 1210, 1207, 0
+SHOOT, A, 1216, 1213, 2
+SHOOT, A, 1222, 1219, 4
+SHOOT, A, 1223, 1220, 0
+SHOOT, A, 1228, 1225, 6
+SHOOT, A, 1229, 1226, 1
+SHOOT, A, 1234, 1231, 8
+SHOOT, A, 1235, 1232, 3
+SHOOT, A, 1240, 1237, 10
+SHOOT, A, 1241, 1238, 5
+SHOOT, A, 1246, 1243, 12
+SHOOT, A, 1247, 1244, 7
+SHOOT, A, 1251, 1248, 0
+SHOOT, A, 1252, 1249, 14
+SHOOT, A, 1253, 1250, 9
+SHOOT, A, 1257, 1254, 2
+SHOOT, A, 1258, 1255, 16
+SHOOT, A, 1259, 1256, 11
+SHOOT, A, 1263, 1260, 6
+SHOOT, A, 1264, 1261, 18
+SHOOT, A, 1265, 1262, 13
+DEAD, A, 1207
+DEAD, A, 1220
+DEAD, A, 1248
+DEAD, D, 1210
+DEAD, D, 1223
+DEAD, D, 1251
+SPAWN, A, 1266, 1, 33, 63
+SPAWN, A, 1267, 2, 34, 0
+SPAWN, A, 1268, 3, 34, 63
+SPAWN, D, 1269, 1, 33, 63
+SPAWN, D, 1270, 2, 34, 0
+SPAWN, D, 1271, 3, 34, 63
+TURN, 212
+PRINT, TURN 212 LOGS:To be spawned at Position(35,0)
+PRINT, To be spawned at Position(35,63)
+PRINT, To be spawned at Position(36,0)
+PRINT, Type 1 at Position (35,0)
+PRINT, Type 2 at Position (35,63)
+PRINT, Type 3 at Position (36,0)
+PRINT, 
+SHOOT, D, 1213, 1216, 0
+SHOOT, D, 1219, 1222, 2
+SHOOT, D, 1225, 1228, 4
+SHOOT, D, 1226, 1229, 0
+SHOOT, D, 1231, 1234, 6
+SHOOT, D, 1232, 1235, 1
+SHOOT, D, 1237, 1240, 8
+SHOOT, D, 1238, 1241, 3
+SHOOT, D, 1243, 1246, 10
+SHOOT, D, 1244, 1247, 5
+SHOOT, D, 1249, 1252, 12
+SHOOT, D, 1250, 1253, 7
+SHOOT, D, 1254, 1257, 0
+SHOOT, D, 1255, 1258, 14
+SHOOT, D, 1256, 1259, 9
+SHOOT, D, 1260, 1263, 2
+SHOOT, D, 1261, 1264, 16
+SHOOT, D, 1262, 1265, 11
+SHOOT, D, 1266, 1269, 6
+SHOOT, D, 1267, 1270, 18
+SHOOT, D, 1268, 1271, 13
+SHOOT, A, 1216, 1213, 0
+SHOOT, A, 1222, 1219, 2
+SHOOT, A, 1228, 1225, 4
+SHOOT, A, 1229, 1226, 0
+SHOOT, A, 1234, 1231, 6
+SHOOT, A, 1235, 1232, 1
+SHOOT, A, 1240, 1237, 8
+SHOOT, A, 1241, 1238, 3
+SHOOT, A, 1246, 1243, 10
+SHOOT, A, 1247, 1244, 5
+SHOOT, A, 1252, 1249, 12
+SHOOT, A, 1253, 1250, 7
+SHOOT, A, 1257, 1254, 0
+SHOOT, A, 1258, 1255, 14
+SHOOT, A, 1259, 1256, 9
+SHOOT, A, 1263, 1260, 2
+SHOOT, A, 1264, 1261, 16
+SHOOT, A, 1265, 1262, 11
+SHOOT, A, 1269, 1266, 6
+SHOOT, A, 1270, 1267, 18
+SHOOT, A, 1271, 1268, 13
+DEAD, A, 1213
+DEAD, A, 1226
+DEAD, A, 1254
+DEAD, D, 1216
+DEAD, D, 1229
+DEAD, D, 1257
+SPAWN, A, 1272, 1, 35, 0
+SPAWN, A, 1273, 2, 35, 63
+SPAWN, A, 1274, 3, 36, 0
+SPAWN, D, 1275, 1, 35, 0
+SPAWN, D, 1276, 2, 35, 63
+SPAWN, D, 1277, 3, 36, 0
+TURN, 213
+PRINT, TURN 213 LOGS:To be spawned at Position(36,63)
+PRINT, To be spawned at Position(37,0)
+PRINT, To be spawned at Position(37,63)
+PRINT, Type 1 at Position (36,63)
+PRINT, Type 2 at Position (37,0)
+PRINT, Type 3 at Position (37,63)
+PRINT, 
+SHOOT, D, 1219, 1222, 0
+SHOOT, D, 1225, 1228, 2
+SHOOT, D, 1231, 1234, 4
+SHOOT, D, 1232, 1235, 0
+SHOOT, D, 1237, 1240, 6
+SHOOT, D, 1238, 1241, 1
+SHOOT, D, 1243, 1246, 8
+SHOOT, D, 1244, 1247, 3
+SHOOT, D, 1249, 1252, 10
+SHOOT, D, 1250, 1253, 5
+SHOOT, D, 1255, 1258, 12
+SHOOT, D, 1256, 1259, 7
+SHOOT, D, 1260, 1263, 0
+SHOOT, D, 1261, 1264, 14
+SHOOT, D, 1262, 1265, 9
+SHOOT, D, 1266, 1269, 2
+SHOOT, D, 1267, 1270, 16
+SHOOT, D, 1268, 1271, 11
+SHOOT, D, 1272, 1275, 6
+SHOOT, D, 1273, 1276, 18
+SHOOT, D, 1274, 1277, 13
+SHOOT, A, 1222, 1219, 0
+SHOOT, A, 1228, 1225, 2
+SHOOT, A, 1234, 1231, 4
+SHOOT, A, 1235, 1232, 0
+SHOOT, A, 1240, 1237, 6
+SHOOT, A, 1241, 1238, 1
+SHOOT, A, 1246, 1243, 8
+SHOOT, A, 1247, 1244, 3
+SHOOT, A, 1252, 1249, 10
+SHOOT, A, 1253, 1250, 5
+SHOOT, A, 1258, 1255, 12
+SHOOT, A, 1259, 1256, 7
+SHOOT, A, 1263, 1260, 0
+SHOOT, A, 1264, 1261, 14
+SHOOT, A, 1265, 1262, 9
+SHOOT, A, 1269, 1266, 2
+SHOOT, A, 1270, 1267, 16
+SHOOT, A, 1271, 1268, 11
+SHOOT, A, 1275, 1272, 6
+SHOOT, A, 1276, 1273, 18
+SHOOT, A, 1277, 1274, 13
+DEAD, A, 1219
+DEAD, A, 1232
+DEAD, A, 1260
+DEAD, D, 1222
+DEAD, D, 1235
+DEAD, D, 1263
+SPAWN, A, 1278, 1, 36, 63
+SPAWN, A, 1279, 2, 37, 0
+SPAWN, A, 1280, 3, 37, 63
+SPAWN, D, 1281, 1, 36, 63
+SPAWN, D, 1282, 2, 37, 0
+SPAWN, D, 1283, 3, 37, 63
+TURN, 214
+PRINT, TURN 214 LOGS:To be spawned at Position(38,0)
+PRINT, To be spawned at Position(38,63)
+PRINT, To be spawned at Position(39,0)
+PRINT, Type 1 at Position (38,0)
+PRINT, Type 2 at Position (38,63)
+PRINT, Type 3 at Position (39,0)
+PRINT, 
+SHOOT, D, 1225, 1228, 0
+SHOOT, D, 1231, 1234, 2
+SHOOT, D, 1237, 1240, 4
+SHOOT, D, 1238, 1241, 0
+SHOOT, D, 1243, 1246, 6
+SHOOT, D, 1244, 1247, 1
+SHOOT, D, 1249, 1252, 8
+SHOOT, D, 1250, 1253, 3
+SHOOT, D, 1255, 1258, 10
+SHOOT, D, 1256, 1259, 5
+SHOOT, D, 1261, 1264, 12
+SHOOT, D, 1262, 1265, 7
+SHOOT, D, 1266, 1269, 0
+SHOOT, D, 1267, 1270, 14
+SHOOT, D, 1268, 1271, 9
+SHOOT, D, 1272, 1275, 2
+SHOOT, D, 1273, 1276, 16
+SHOOT, D, 1274, 1277, 11
+SHOOT, D, 1278, 1281, 6
+SHOOT, D, 1279, 1282, 18
+SHOOT, D, 1280, 1283, 13
+SHOOT, A, 1228, 1225, 0
+SHOOT, A, 1234, 1231, 2
+SHOOT, A, 1240, 1237, 4
+SHOOT, A, 1241, 1238, 0
+SHOOT, A, 1246, 1243, 6
+SHOOT, A, 1247, 1244, 1
+SHOOT, A, 1252, 1249, 8
+SHOOT, A, 1253, 1250, 3
+SHOOT, A, 1258, 1255, 10
+SHOOT, A, 1259, 1256, 5
+SHOOT, A, 1264, 1261, 12
+SHOOT, A, 1265, 1262, 7
+SHOOT, A, 1269, 1266, 0
+SHOOT, A, 1270, 1267, 14
+SHOOT, A, 1271, 1268, 9
+SHOOT, A, 1275, 1272, 2
+SHOOT, A, 1276, 1273, 16
+SHOOT, A, 1277, 1274, 11
+SHOOT, A, 1281, 1278, 6
+SHOOT, A, 1282, 1279, 18
+SHOOT, A, 1283, 1280, 13
+DEAD, A, 1225
+DEAD, A, 1238
+DEAD, A, 1266
+DEAD, D, 1228
+DEAD, D, 1241
+DEAD, D, 1269
+SPAWN, A, 1284, 1, 38, 0
+SPAWN, A, 1285, 2, 38, 63
+SPAWN, A, 1286, 3, 39, 0
+SPAWN, D, 1287, 1, 38, 0
+SPAWN, D, 1288, 2, 38, 63
+SPAWN, D, 1289, 3, 39, 0
+TURN, 215
+PRINT, TURN 215 LOGS:To be spawned at Position(39,63)
+PRINT, To be spawned at Position(40,0)
+PRINT, To be spawned at Position(40,63)
+PRINT, Type 1 at Position (39,63)
+PRINT, Type 2 at Position (40,0)
+PRINT, Type 3 at Position (40,63)
+PRINT, 
+SHOOT, D, 1231, 1234, 0
+SHOOT, D, 1237, 1240, 2
+SHOOT, D, 1243, 1246, 4
+SHOOT, D, 1244, 1247, 0
+SHOOT, D, 1249, 1252, 6
+SHOOT, D, 1250, 1253, 1
+SHOOT, D, 1255, 1258, 8
+SHOOT, D, 1256, 1259, 3
+SHOOT, D, 1261, 1264, 10
+SHOOT, D, 1262, 1265, 5
+SHOOT, D, 1267, 1270, 12
+SHOOT, D, 1268, 1271, 7
+SHOOT, D, 1272, 1275, 0
+SHOOT, D, 1273, 1276, 14
+SHOOT, D, 1274, 1277, 9
+SHOOT, D, 1278, 1281, 2
+SHOOT, D, 1279, 1282, 16
+SHOOT, D, 1280, 1283, 11
+SHOOT, D, 1284, 1287, 6
+SHOOT, D, 1285, 1288, 18
+SHOOT, D, 1286, 1289, 13
+SHOOT, A, 1234, 1231, 0
+SHOOT, A, 1240, 1237, 2
+SHOOT, A, 1246, 1243, 4
+SHOOT, A, 1247, 1244, 0
+SHOOT, A, 1252, 1249, 6
+SHOOT, A, 1253, 1250, 1
+SHOOT, A, 1258, 1255, 8
+SHOOT, A, 1259, 1256, 3
+SHOOT, A, 1264, 1261, 10
+SHOOT, A, 1265, 1262, 5
+SHOOT, A, 1270, 1267, 12
+SHOOT, A, 1271, 1268, 7
+SHOOT, A, 1275, 1272, 0
+SHOOT, A, 1276, 1273, 14
+SHOOT, A, 1277, 1274, 9
+SHOOT, A, 1281, 1278, 2
+SHOOT, A, 1282, 1279, 16
+SHOOT, A, 1283, 1280, 11
+SHOOT, A, 1287, 1284, 6
+SHOOT, A, 1288, 1285, 18
+SHOOT, A, 1289, 1286, 13
+DEAD, A, 1231
+DEAD, A, 1244
+DEAD, A, 1272
+DEAD, D, 1234
+DEAD, D, 1247
+DEAD, D, 1275
+SPAWN, A, 1290, 1, 39, 63
+SPAWN, A, 1291, 2, 40, 0
+SPAWN, A, 1292, 3, 40, 63
+SPAWN, D, 1293, 1, 39, 63
+SPAWN, D, 1294, 2, 40, 0
+SPAWN, D, 1295, 3, 40, 63
+TURN, 216
+PRINT, TURN 216 LOGS:To be spawned at Position(41,0)
+PRINT, To be spawned at Position(41,63)
+PRINT, To be spawned at Position(42,0)
+PRINT, Type 1 at Position (41,0)
+PRINT, Type 2 at Position (41,63)
+PRINT, Type 3 at Position (42,0)
+PRINT, 
+SHOOT, D, 1237, 1240, 0
+SHOOT, D, 1243, 1246, 2
+SHOOT, D, 1249, 1252, 4
+SHOOT, D, 1250, 1253, 0
+SHOOT, D, 1255, 1258, 6
+SHOOT, D, 1256, 1259, 1
+SHOOT, D, 1261, 1264, 8
+SHOOT, D, 1262, 1265, 3
+SHOOT, D, 1267, 1270, 10
+SHOOT, D, 1268, 1271, 5
+SHOOT, D, 1273, 1276, 12
+SHOOT, D, 1274, 1277, 7
+SHOOT, D, 1278, 1281, 0
+SHOOT, D, 1279, 1282, 14
+SHOOT, D, 1280, 1283, 9
+SHOOT, D, 1284, 1287, 2
+SHOOT, D, 1285, 1288, 16
+SHOOT, D, 1286, 1289, 11
+SHOOT, D, 1290, 1293, 6
+SHOOT, D, 1291, 1294, 18
+SHOOT, D, 1292, 1295, 13
+SHOOT, A, 1240, 1237, 0
+SHOOT, A, 1246, 1243, 2
+SHOOT, A, 1252, 1249, 4
+SHOOT, A, 1253, 1250, 0
+SHOOT, A, 1258, 1255, 6
+SHOOT, A, 1259, 1256, 1
+SHOOT, A, 1264, 1261, 8
+SHOOT, A, 1265, 1262, 3
+SHOOT, A, 1270, 1267, 10
+SHOOT, A, 1271, 1268, 5
+SHOOT, A, 1276, 1273, 12
+SHOOT, A, 1277, 1274, 7
+SHOOT, A, 1281, 1278, 0
+SHOOT, A, 1282, 1279, 14
+SHOOT, A, 1283, 1280, 9
+SHOOT, A, 1287, 1284, 2
+SHOOT, A, 1288, 1285, 16
+SHOOT, A, 1289, 1286, 11
+SHOOT, A, 1293, 1290, 6
+SHOOT, A, 1294, 1291, 18
+SHOOT, A, 1295, 1292, 13
+DEAD, A, 1237
+DEAD, A, 1250
+DEAD, A, 1278
+DEAD, D, 1240
+DEAD, D, 1253
+DEAD, D, 1281
+SPAWN, A, 1296, 1, 41, 0
+SPAWN, A, 1297, 2, 41, 63
+SPAWN, A, 1298, 3, 42, 0
+SPAWN, D, 1299, 1, 41, 0
+SPAWN, D, 1300, 2, 41, 63
+SPAWN, D, 1301, 3, 42, 0
+TURN, 217
+PRINT, TURN 217 LOGS:To be spawned at Position(42,63)
+PRINT, To be spawned at Position(43,0)
+PRINT, To be spawned at Position(43,63)
+PRINT, Type 1 at Position (42,63)
+PRINT, Type 2 at Position (43,0)
+PRINT, Type 3 at Position (43,63)
+PRINT, 
+SHOOT, D, 1243, 1246, 0
+SHOOT, D, 1249, 1252, 2
+SHOOT, D, 1255, 1258, 4
+SHOOT, D, 1256, 1259, 0
+SHOOT, D, 1261, 1264, 6
+SHOOT, D, 1262, 1265, 1
+SHOOT, D, 1267, 1270, 8
+SHOOT, D, 1268, 1271, 3
+SHOOT, D, 1273, 1276, 10
+SHOOT, D, 1274, 1277, 5
+SHOOT, D, 1279, 1282, 12
+SHOOT, D, 1280, 1283, 7
+SHOOT, D, 1284, 1287, 0
+SHOOT, D, 1285, 1288, 14
+SHOOT, D, 1286, 1289, 9
+SHOOT, D, 1290, 1293, 2
+SHOOT, D, 1291, 1294, 16
+SHOOT, D, 1292, 1295, 11
+SHOOT, D, 1296, 1299, 6
+SHOOT, D, 1297, 1300, 18
+SHOOT, D, 1298, 1301, 13
+SHOOT, A, 1246, 1243, 0
+SHOOT, A, 1252, 1249, 2
+SHOOT, A, 1258, 1255, 4
+SHOOT, A, 1259, 1256, 0
+SHOOT, A, 1264, 1261, 6
+SHOOT, A, 1265, 1262, 1
+SHOOT, A, 1270, 1267, 8
+SHOOT, A, 1271, 1268, 3
+SHOOT, A, 1276, 1273, 10
+SHOOT, A, 1277, 1274, 5
+SHOOT, A, 1282, 1279, 12
+SHOOT, A, 1283, 1280, 7
+SHOOT, A, 1287, 1284, 0
+SHOOT, A, 1288, 1285, 14
+SHOOT, A, 1289, 1286, 9
+SHOOT, A, 1293, 1290, 2
+SHOOT, A, 1294, 1291, 16
+SHOOT, A, 1295, 1292, 11
+SHOOT, A, 1299, 1296, 6
+SHOOT, A, 1300, 1297, 18
+SHOOT, A, 1301, 1298, 13
+DEAD, A, 1243
+DEAD, A, 1256
+DEAD, A, 1284
+DEAD, D, 1246
+DEAD, D, 1259
+DEAD, D, 1287
+SPAWN, A, 1302, 1, 42, 63
+SPAWN, A, 1303, 2, 43, 0
+SPAWN, A, 1304, 3, 43, 63
+SPAWN, D, 1305, 1, 42, 63
+SPAWN, D, 1306, 2, 43, 0
+SPAWN, D, 1307, 3, 43, 63
+TURN, 218
+PRINT, TURN 218 LOGS:To be spawned at Position(44,0)
+PRINT, To be spawned at Position(44,63)
+PRINT, To be spawned at Position(45,0)
+PRINT, Type 1 at Position (44,0)
+PRINT, Type 2 at Position (44,63)
+PRINT, Type 3 at Position (45,0)
+PRINT, 
+SHOOT, D, 1249, 1252, 0
+SHOOT, D, 1255, 1258, 2
+SHOOT, D, 1261, 1264, 4
+SHOOT, D, 1262, 1265, 0
+SHOOT, D, 1267, 1270, 6
+SHOOT, D, 1268, 1271, 1
+SHOOT, D, 1273, 1276, 8
+SHOOT, D, 1274, 1277, 3
+SHOOT, D, 1279, 1282, 10
+SHOOT, D, 1280, 1283, 5
+SHOOT, D, 1285, 1288, 12
+SHOOT, D, 1286, 1289, 7
+SHOOT, D, 1290, 1293, 0
+SHOOT, D, 1291, 1294, 14
+SHOOT, D, 1292, 1295, 9
+SHOOT, D, 1296, 1299, 2
+SHOOT, D, 1297, 1300, 16
+SHOOT, D, 1298, 1301, 11
+SHOOT, D, 1302, 1305, 6
+SHOOT, D, 1303, 1306, 18
+SHOOT, D, 1304, 1307, 13
+SHOOT, A, 1252, 1249, 0
+SHOOT, A, 1258, 1255, 2
+SHOOT, A, 1264, 1261, 4
+SHOOT, A, 1265, 1262, 0
+SHOOT, A, 1270, 1267, 6
+SHOOT, A, 1271, 1268, 1
+SHOOT, A, 1276, 1273, 8
+SHOOT, A, 1277, 1274, 3
+SHOOT, A, 1282, 1279, 10
+SHOOT, A, 1283, 1280, 5
+SHOOT, A, 1288, 1285, 12
+SHOOT, A, 1289, 1286, 7
+SHOOT, A, 1293, 1290, 0
+SHOOT, A, 1294, 1291, 14
+SHOOT, A, 1295, 1292, 9
+SHOOT, A, 1299, 1296, 2
+SHOOT, A, 1300, 1297, 16
+SHOOT, A, 1301, 1298, 11
+SHOOT, A, 1305, 1302, 6
+SHOOT, A, 1306, 1303, 18
+SHOOT, A, 1307, 1304, 13
+DEAD, A, 1249
+DEAD, A, 1262
+DEAD, A, 1290
+DEAD, D, 1252
+DEAD, D, 1265
+DEAD, D, 1293
+SPAWN, A, 1308, 1, 44, 0
+SPAWN, A, 1309, 2, 44, 63
+SPAWN, A, 1310, 3, 45, 0
+SPAWN, D, 1311, 1, 44, 0
+SPAWN, D, 1312, 2, 44, 63
+SPAWN, D, 1313, 3, 45, 0
+TURN, 219
+PRINT, TURN 219 LOGS:To be spawned at Position(45,63)
+PRINT, To be spawned at Position(46,0)
+PRINT, To be spawned at Position(46,63)
+PRINT, Type 1 at Position (45,63)
+PRINT, Type 2 at Position (46,0)
+PRINT, Type 3 at Position (46,63)
+PRINT, 
+SHOOT, D, 1255, 1258, 0
+SHOOT, D, 1261, 1264, 2
+SHOOT, D, 1267, 1270, 4
+SHOOT, D, 1268, 1271, 0
+SHOOT, D, 1273, 1276, 6
+SHOOT, D, 1274, 1277, 1
+SHOOT, D, 1279, 1282, 8
+SHOOT, D, 1280, 1283, 3
+SHOOT, D, 1285, 1288, 10
+SHOOT, D, 1286, 1289, 5
+SHOOT, D, 1291, 1294, 12
+SHOOT, D, 1292, 1295, 7
+SHOOT, D, 1296, 1299, 0
+SHOOT, D, 1297, 1300, 14
+SHOOT, D, 1298, 1301, 9
+SHOOT, D, 1302, 1305, 2
+SHOOT, D, 1303, 1306, 16
+SHOOT, D, 1304, 1307, 11
+SHOOT, D, 1308, 1311, 6
+SHOOT, D, 1309, 1312, 18
+SHOOT, D, 1310, 1313, 13
+SHOOT, A, 1258, 1255, 0
+SHOOT, A, 1264, 1261, 2
+SHOOT, A, 1270, 1267, 4
+SHOOT, A, 1271, 1268, 0
+SHOOT, A, 1276, 1273, 6
+SHOOT, A, 1277, 1274, 1
+SHOOT, A, 1282, 1279, 8
+SHOOT, A, 1283, 1280, 3
+SHOOT, A, 1288, 1285, 10
+SHOOT, A, 1289, 1286, 5
+SHOOT, A, 1294, 1291, 12
+SHOOT, A, 1295, 1292, 7
+SHOOT, A, 1299, 1296, 0
+SHOOT, A, 1300, 1297, 14
+SHOOT, A, 1301, 1298, 9
+SHOOT, A, 1305, 1302, 2
+SHOOT, A, 1306, 1303, 16
+SHOOT, A, 1307, 1304, 11
+SHOOT, A, 1311, 1308, 6
+SHOOT, A, 1312, 1309, 18
+SHOOT, A, 1313, 1310, 13
+DEAD, A, 1255
+DEAD, A, 1268
+DEAD, A, 1296
+DEAD, D, 1258
+DEAD, D, 1271
+DEAD, D, 1299
+SPAWN, A, 1314, 1, 45, 63
+SPAWN, A, 1315, 2, 46, 0
+SPAWN, A, 1316, 3, 46, 63
+SPAWN, D, 1317, 1, 45, 63
+SPAWN, D, 1318, 2, 46, 0
+SPAWN, D, 1319, 3, 46, 63
+TURN, 220
+PRINT, TURN 220 LOGS:To be spawned at Position(47,0)
+PRINT, To be spawned at Position(47,63)
+PRINT, To be spawned at Position(48,0)
+PRINT, Type 1 at Position (47,0)
+PRINT, Type 2 at Position (47,63)
+PRINT, Type 3 at Position (48,0)
+PRINT, 
+SHOOT, D, 1261, 1264, 0
+SHOOT, D, 1267, 1270, 2
+SHOOT, D, 1273, 1276, 4
+SHOOT, D, 1274, 1277, 0
+SHOOT, D, 1279, 1282, 6
+SHOOT, D, 1280, 1283, 1
+SHOOT, D, 1285, 1288, 8
+SHOOT, D, 1286, 1289, 3
+SHOOT, D, 1291, 1294, 10
+SHOOT, D, 1292, 1295, 5
+SHOOT, D, 1297, 1300, 12
+SHOOT, D, 1298, 1301, 7
+SHOOT, D, 1302, 1305, 0
+SHOOT, D, 1303, 1306, 14
+SHOOT, D, 1304, 1307, 9
+SHOOT, D, 1308, 1311, 2
+SHOOT, D, 1309, 1312, 16
+SHOOT, D, 1310, 1313, 11
+SHOOT, D, 1314, 1317, 6
+SHOOT, D, 1315, 1318, 18
+SHOOT, D, 1316, 1319, 13
+SHOOT, A, 1264, 1261, 0
+SHOOT, A, 1270, 1267, 2
+SHOOT, A, 1276, 1273, 4
+SHOOT, A, 1277, 1274, 0
+SHOOT, A, 1282, 1279, 6
+SHOOT, A, 1283, 1280, 1
+SHOOT, A, 1288, 1285, 8
+SHOOT, A, 1289, 1286, 3
+SHOOT, A, 1294, 1291, 10
+SHOOT, A, 1295, 1292, 5
+SHOOT, A, 1300, 1297, 12
+SHOOT, A, 1301, 1298, 7
+SHOOT, A, 1305, 1302, 0
+SHOOT, A, 1306, 1303, 14
+SHOOT, A, 1307, 1304, 9
+SHOOT, A, 1311, 1308, 2
+SHOOT, A, 1312, 1309, 16
+SHOOT, A, 1313, 1310, 11
+SHOOT, A, 1317, 1314, 6
+SHOOT, A, 1318, 1315, 18
+SHOOT, A, 1319, 1316, 13
+DEAD, A, 1261
+DEAD, A, 1274
+DEAD, A, 1302
+DEAD, D, 1264
+DEAD, D, 1277
+DEAD, D, 1305
+SPAWN, A, 1320, 1, 47, 0
+SPAWN, A, 1321, 2, 47, 63
+SPAWN, A, 1322, 3, 48, 0
+SPAWN, D, 1323, 1, 47, 0
+SPAWN, D, 1324, 2, 47, 63
+SPAWN, D, 1325, 3, 48, 0
+TURN, 221
+PRINT, TURN 221 LOGS:To be spawned at Position(48,63)
+PRINT, To be spawned at Position(49,0)
+PRINT, To be spawned at Position(49,63)
+PRINT, Type 1 at Position (48,63)
+PRINT, Type 2 at Position (49,0)
+PRINT, Type 3 at Position (49,63)
+PRINT, 
+SHOOT, D, 1267, 1270, 0
+SHOOT, D, 1273, 1276, 2
+SHOOT, D, 1279, 1282, 4
+SHOOT, D, 1280, 1283, 0
+SHOOT, D, 1285, 1288, 6
+SHOOT, D, 1286, 1289, 1
+SHOOT, D, 1291, 1294, 8
+SHOOT, D, 1292, 1295, 3
+SHOOT, D, 1297, 1300, 10
+SHOOT, D, 1298, 1301, 5
+SHOOT, D, 1303, 1306, 12
+SHOOT, D, 1304, 1307, 7
+SHOOT, D, 1308, 1311, 0
+SHOOT, D, 1309, 1312, 14
+SHOOT, D, 1310, 1313, 9
+SHOOT, D, 1314, 1317, 2
+SHOOT, D, 1315, 1318, 16
+SHOOT, D, 1316, 1319, 11
+SHOOT, D, 1320, 1323, 6
+SHOOT, D, 1321, 1324, 18
+SHOOT, D, 1322, 1325, 13
+SHOOT, A, 1270, 1267, 0
+SHOOT, A, 1276, 1273, 2
+SHOOT, A, 1282, 1279, 4
+SHOOT, A, 1283, 1280, 0
+SHOOT, A, 1288, 1285, 6
+SHOOT, A, 1289, 1286, 1
+SHOOT, A, 1294, 1291, 8
+SHOOT, A, 1295, 1292, 3
+SHOOT, A, 1300, 1297, 10
+SHOOT, A, 1301, 1298, 5
+SHOOT, A, 1306, 1303, 12
+SHOOT, A, 1307, 1304, 7
+SHOOT, A, 1311, 1308, 0
+SHOOT, A, 1312, 1309, 14
+SHOOT, A, 1313, 1310, 9
+SHOOT, A, 1317, 1314, 2
+SHOOT, A, 1318, 1315, 16
+SHOOT, A, 1319, 1316, 11
+SHOOT, A, 1323, 1320, 6
+SHOOT, A, 1324, 1321, 18
+SHOOT, A, 1325, 1322, 13
+DEAD, A, 1267
+DEAD, A, 1280
+DEAD, A, 1308
+DEAD, D, 1270
+DEAD, D, 1283
+DEAD, D, 1311
+SPAWN, A, 1326, 1, 48, 63
+SPAWN, A, 1327, 2, 49, 0
+SPAWN, A, 1328, 3, 49, 63
+SPAWN, D, 1329, 1, 48, 63
+SPAWN, D, 1330, 2, 49, 0
+SPAWN, D, 1331, 3, 49, 63
+TURN, 222
+PRINT, TURN 222 LOGS:To be spawned at Position(50,0)
+PRINT, To be spawned at Position(50,63)
+PRINT, To be spawned at Position(51,0)
+PRINT, Type 1 at Position (50,0)
+PRINT, Type 2 at Position (50,63)
+PRINT, Type 3 at Position (51,0)
+PRINT, 
+SHOOT, D, 1273, 1276, 0
+SHOOT, D, 1279, 1282, 2
+SHOOT, D, 1285, 1288, 4
+SHOOT, D, 1286, 1289, 0
+SHOOT, D, 1291, 1294, 6
+SHOOT, D, 1292, 1295, 1
+SHOOT, D, 1297, 1300, 8
+SHOOT, D, 1298, 1301, 3
+SHOOT, D, 1303, 1306, 10
+SHOOT, D, 1304, 1307, 5
+SHOOT, D, 1309, 1312, 12
+SHOOT, D, 1310, 1313, 7
+SHOOT, D, 1314, 1317, 0
+SHOOT, D, 1315, 1318, 14
+SHOOT, D, 1316, 1319, 9
+SHOOT, D, 1320, 1323, 2
+SHOOT, D, 1321, 1324, 16
+SHOOT, D, 1322, 1325, 11
+SHOOT, D, 1326, 1329, 6
+SHOOT, D, 1327, 1330, 18
+SHOOT, D, 1328, 1331, 13
+SHOOT, A, 1276, 1273, 0
+SHOOT, A, 1282, 1279, 2
+SHOOT, A, 1288, 1285, 4
+SHOOT, A, 1289, 1286, 0
+SHOOT, A, 1294, 1291, 6
+SHOOT, A, 1295, 1292, 1
+SHOOT, A, 1300, 1297, 8
+SHOOT, A, 1301, 1298, 3
+SHOOT, A, 1306, 1303, 10
+SHOOT, A, 1307, 1304, 5
+SHOOT, A, 1312, 1309, 12
+SHOOT, A, 1313, 1310, 7
+SHOOT, A, 1317, 1314, 0
+SHOOT, A, 1318, 1315, 14
+SHOOT, A, 1319, 1316, 9
+SHOOT, A, 1323, 1320, 2
+SHOOT, A, 1324, 1321, 16
+SHOOT, A, 1325, 1322, 11
+SHOOT, A, 1329, 1326, 6
+SHOOT, A, 1330, 1327, 18
+SHOOT, A, 1331, 1328, 13
+DEAD, A, 1273
+DEAD, A, 1286
+DEAD, A, 1314
+DEAD, D, 1276
+DEAD, D, 1289
+DEAD, D, 1317
+SPAWN, A, 1332, 1, 50, 0
+SPAWN, A, 1333, 2, 50, 63
+SPAWN, A, 1334, 3, 51, 0
+SPAWN, D, 1335, 1, 50, 0
+SPAWN, D, 1336, 2, 50, 63
+SPAWN, D, 1337, 3, 51, 0
+TURN, 223
+PRINT, TURN 223 LOGS:To be spawned at Position(51,63)
+PRINT, To be spawned at Position(52,0)
+PRINT, To be spawned at Position(52,63)
+PRINT, Type 1 at Position (51,63)
+PRINT, Type 2 at Position (52,0)
+PRINT, Type 3 at Position (52,63)
+PRINT, 
+SHOOT, D, 1279, 1282, 0
+SHOOT, D, 1285, 1288, 2
+SHOOT, D, 1291, 1294, 4
+SHOOT, D, 1292, 1295, 0
+SHOOT, D, 1297, 1300, 6
+SHOOT, D, 1298, 1301, 1
+SHOOT, D, 1303, 1306, 8
+SHOOT, D, 1304, 1307, 3
+SHOOT, D, 1309, 1312, 10
+SHOOT, D, 1310, 1313, 5
+SHOOT, D, 1315, 1318, 12
+SHOOT, D, 1316, 1319, 7
+SHOOT, D, 1320, 1323, 0
+SHOOT, D, 1321, 1324, 14
+SHOOT, D, 1322, 1325, 9
+SHOOT, D, 1326, 1329, 2
+SHOOT, D, 1327, 1330, 16
+SHOOT, D, 1328, 1331, 11
+SHOOT, D, 1332, 1335, 6
+SHOOT, D, 1333, 1336, 18
+SHOOT, D, 1334, 1337, 13
+SHOOT, A, 1282, 1279, 0
+SHOOT, A, 1288, 1285, 2
+SHOOT, A, 1294, 1291, 4
+SHOOT, A, 1295, 1292, 0
+SHOOT, A, 1300, 1297, 6
+SHOOT, A, 1301, 1298, 1
+SHOOT, A, 1306, 1303, 8
+SHOOT, A, 1307, 1304, 3
+SHOOT, A, 1312, 1309, 10
+SHOOT, A, 1313, 1310, 5
+SHOOT, A, 1318, 1315, 12
+SHOOT, A, 1319, 1316, 7
+SHOOT, A, 1323, 1320, 0
+SHOOT, A, 1324, 1321, 14
+SHOOT, A, 1325, 1322, 9
+SHOOT, A, 1329, 1326, 2
+SHOOT, A, 1330, 1327, 16
+SHOOT, A, 1331, 1328, 11
+SHOOT, A, 1335, 1332, 6
+SHOOT, A, 1336, 1333, 18
+SHOOT, A, 1337, 1334, 13
+DEAD, A, 1279
+DEAD, A, 1292
+DEAD, A, 1320
+DEAD, D, 1282
+DEAD, D, 1295
+DEAD, D, 1323
+SPAWN, A, 1338, 1, 51, 63
+SPAWN, A, 1339, 2, 52, 0
+SPAWN, A, 1340, 3, 52, 63
+SPAWN, D, 1341, 1, 51, 63
+SPAWN, D, 1342, 2, 52, 0
+SPAWN, D, 1343, 3, 52, 63
+TURN, 224
+PRINT, TURN 224 LOGS:To be spawned at Position(53,0)
+PRINT, To be spawned at Position(53,63)
+PRINT, To be spawned at Position(54,0)
+PRINT, Type 1 at Position (53,0)
+PRINT, Type 2 at Position (53,63)
+PRINT, Type 3 at Position (54,0)
+PRINT, 
+SHOOT, D, 1285, 1288, 0
+SHOOT, D, 1291, 1294, 2
+SHOOT, D, 1297, 1300, 4
+SHOOT, D, 1298, 1301, 0
+SHOOT, D, 1303, 1306, 6
+SHOOT, D, 1304, 1307, 1
+SHOOT, D, 1309, 1312, 8
+SHOOT, D, 1310, 1313, 3
+SHOOT, D, 1315, 1318, 10
+SHOOT, D, 1316, 1319, 5
+SHOOT, D, 1321, 1324, 12
+SHOOT, D, 1322, 1325, 7
+SHOOT, D, 1326, 1329, 0
+SHOOT, D, 1327, 1330, 14
+SHOOT, D, 1328, 1331, 9
+SHOOT, D, 1332, 1335, 2
+SHOOT, D, 1333, 1336, 16
+SHOOT, D, 1334, 1337, 11
+SHOOT, D, 1338, 1341, 6
+SHOOT, D, 1339, 1342, 18
+SHOOT, D, 1340, 1343, 13
+SHOOT, A, 1288, 1285, 0
+SHOOT, A, 1294, 1291, 2
+SHOOT, A, 1300, 1297, 4
+SHOOT, A, 1301, 1298, 0
+SHOOT, A, 1306, 1303, 6
+SHOOT, A, 1307, 1304, 1
+SHOOT, A, 1312, 1309, 8
+SHOOT, A, 1313, 1310, 3
+SHOOT, A, 1318, 1315, 10
+SHOOT, A, 1319, 1316, 5
+SHOOT, A, 1324, 1321, 12
+SHOOT, A, 1325, 1322, 7
+SHOOT, A, 1329, 1326, 0
+SHOOT, A, 1330, 1327, 14
+SHOOT, A, 1331, 1328, 9
+SHOOT, A, 1335, 1332, 2
+SHOOT, A, 1336, 1333, 16
+SHOOT, A, 1337, 1334, 11
+SHOOT, A, 1341, 1338, 6
+SHOOT, A, 1342, 1339, 18
+SHOOT, A, 1343, 1340, 13
+DEAD, A, 1285
+DEAD, A, 1298
+DEAD, A, 1326
+DEAD, D, 1288
+DEAD, D, 1301
+DEAD, D, 1329
+SPAWN, A, 1344, 1, 53, 0
+SPAWN, A, 1345, 2, 53, 63
+SPAWN, A, 1346, 3, 54, 0
+SPAWN, D, 1347, 1, 53, 0
+SPAWN, D, 1348, 2, 53, 63
+SPAWN, D, 1349, 3, 54, 0
+TURN, 225
+PRINT, TURN 225 LOGS:To be spawned at Position(54,63)
+PRINT, To be spawned at Position(55,0)
+PRINT, To be spawned at Position(55,63)
+PRINT, Type 1 at Position (54,63)
+PRINT, Type 2 at Position (55,0)
+PRINT, Type 3 at Position (55,63)
+PRINT, 
+SHOOT, D, 1291, 1294, 0
+SHOOT, D, 1297, 1300, 2
+SHOOT, D, 1303, 1306, 4
+SHOOT, D, 1304, 1307, 0
+SHOOT, D, 1309, 1312, 6
+SHOOT, D, 1310, 1313, 1
+SHOOT, D, 1315, 1318, 8
+SHOOT, D, 1316, 1319, 3
+SHOOT, D, 1321, 1324, 10
+SHOOT, D, 1322, 1325, 5
+SHOOT, D, 1327, 1330, 12
+SHOOT, D, 1328, 1331, 7
+SHOOT, D, 1332, 1335, 0
+SHOOT, D, 1333, 1336, 14
+SHOOT, D, 1334, 1337, 9
+SHOOT, D, 1338, 1341, 2
+SHOOT, D, 1339, 1342, 16
+SHOOT, D, 1340, 1343, 11
+SHOOT, D, 1344, 1347, 6
+SHOOT, D, 1345, 1348, 18
+SHOOT, D, 1346, 1349, 13
+SHOOT, A, 1294, 1291, 0
+SHOOT, A, 1300, 1297, 2
+SHOOT, A, 1306, 1303, 4
+SHOOT, A, 1307, 1304, 0
+SHOOT, A, 1312, 1309, 6
+SHOOT, A, 1313, 1310, 1
+SHOOT, A, 1318, 1315, 8
+SHOOT, A, 1319, 1316, 3
+SHOOT, A, 1324, 1321, 10
+SHOOT, A, 1325, 1322, 5
+SHOOT, A, 1330, 1327, 12
+SHOOT, A, 1331, 1328, 7
+SHOOT, A, 1335, 1332, 0
+SHOOT, A, 1336, 1333, 14
+SHOOT, A, 1337, 1334, 9
+SHOOT, A, 1341, 1338, 2
+SHOOT, A, 1342, 1339, 16
+SHOOT, A, 1343, 1340, 11
+SHOOT, A, 1347, 1344, 6
+SHOOT, A, 1348, 1345, 18
+SHOOT, A, 1349, 1346, 13
+DEAD, A, 1291
+DEAD, A, 1304
+DEAD, A, 1332
+DEAD, D, 1294
+DEAD, D, 1307
+DEAD, D, 1335
+SPAWN, A, 1350, 1, 54, 63
+SPAWN, A, 1351, 2, 55, 0
+SPAWN, A, 1352, 3, 55, 63
+SPAWN, D, 1353, 1, 54, 63
+SPAWN, D, 1354, 2, 55, 0
+SPAWN, D, 1355, 3, 55, 63
+TURN, 226
+PRINT, TURN 226 LOGS:To be spawned at Position(56,0)
+PRINT, To be spawned at Position(56,63)
+PRINT, To be spawned at Position(57,0)
+PRINT, Type 1 at Position (56,0)
+PRINT, Type 2 at Position (56,63)
+PRINT, Type 3 at Position (57,0)
+PRINT, 
+SHOOT, D, 1297, 1300, 0
+SHOOT, D, 1303, 1306, 2
+SHOOT, D, 1309, 1312, 4
+SHOOT, D, 1310, 1313, 0
+SHOOT, D, 1315, 1318, 6
+SHOOT, D, 1316, 1319, 1
+SHOOT, D, 1321, 1324, 8
+SHOOT, D, 1322, 1325, 3
+SHOOT, D, 1327, 1330, 10
+SHOOT, D, 1328, 1331, 5
+SHOOT, D, 1333, 1336, 12
+SHOOT, D, 1334, 1337, 7
+SHOOT, D, 1338, 1341, 0
+SHOOT, D, 1339, 1342, 14
+SHOOT, D, 1340, 1343, 9
+SHOOT, D, 1344, 1347, 2
+SHOOT, D, 1345, 1348, 16
+SHOOT, D, 1346, 1349, 11
+SHOOT, D, 1350, 1353, 6
+SHOOT, D, 1351, 1354, 18
+SHOOT, D, 1352, 1355, 13
+SHOOT, A, 1300, 1297, 0
+SHOOT, A, 1306, 1303, 2
+SHOOT, A, 1312, 1309, 4
+SHOOT, A, 1313, 1310, 0
+SHOOT, A, 1318, 1315, 6
+SHOOT, A, 1319, 1316, 1
+SHOOT, A, 1324, 1321, 8
+SHOOT, A, 1325, 1322, 3
+SHOOT, A, 1330, 1327, 10
+SHOOT, A, 1331, 1328, 5
+SHOOT, A, 1336, 1333, 12
+SHOOT, A, 1337, 1334, 7
+SHOOT, A, 1341, 1338, 0
+SHOOT, A, 1342, 1339, 14
+SHOOT, A, 1343, 1340, 9
+SHOOT, A, 1347, 1344, 2
+SHOOT, A, 1348, 1345, 16
+SHOOT, A, 1349, 1346, 11
+SHOOT, A, 1353, 1350, 6
+SHOOT, A, 1354, 1351, 18
+SHOOT, A, 1355, 1352, 13
+DEAD, A, 1297
+DEAD, A, 1310
+DEAD, A, 1338
+DEAD, D, 1300
+DEAD, D, 1313
+DEAD, D, 1341
+SPAWN, A, 1356, 1, 56, 0
+SPAWN, A, 1357, 2, 56, 63
+SPAWN, A, 1358, 3, 57, 0
+SPAWN, D, 1359, 1, 56, 0
+SPAWN, D, 1360, 2, 56, 63
+SPAWN, D, 1361, 3, 57, 0
+TURN, 227
+PRINT, TURN 227 LOGS:To be spawned at Position(57,63)
+PRINT, To be spawned at Position(58,0)
+PRINT, To be spawned at Position(58,63)
+PRINT, Type 1 at Position (57,63)
+PRINT, Type 2 at Position (58,0)
+PRINT, Type 3 at Position (58,63)
+PRINT, 
+SHOOT, D, 1303, 1306, 0
+SHOOT, D, 1309, 1312, 2
+SHOOT, D, 1315, 1318, 4
+SHOOT, D, 1316, 1319, 0
+SHOOT, D, 1321, 1324, 6
+SHOOT, D, 1322, 1325, 1
+SHOOT, D, 1327, 1330, 8
+SHOOT, D, 1328, 1331, 3
+SHOOT, D, 1333, 1336, 10
+SHOOT, D, 1334, 1337, 5
+SHOOT, D, 1339, 1342, 12
+SHOOT, D, 1340, 1343, 7
+SHOOT, D, 1344, 1347, 0
+SHOOT, D, 1345, 1348, 14
+SHOOT, D, 1346, 1349, 9
+SHOOT, D, 1350, 1353, 2
+SHOOT, D, 1351, 1354, 16
+SHOOT, D, 1352, 1355, 11
+SHOOT, D, 1356, 1359, 6
+SHOOT, D, 1357, 1360, 18
+SHOOT, D, 1358, 1361, 13
+SHOOT, A, 1306, 1303, 0
+SHOOT, A, 1312, 1309, 2
+SHOOT, A, 1318, 1315, 4
+SHOOT, A, 1319, 1316, 0
+SHOOT, A, 1324, 1321, 6
+SHOOT, A, 1325, 1322, 1
+SHOOT, A, 1330, 1327, 8
+SHOOT, A, 1331, 1328, 3
+SHOOT, A, 1336, 1333, 10
+SHOOT, A, 1337, 1334, 5
+SHOOT, A, 1342, 1339, 12
+SHOOT, A, 1343, 1340, 7
+SHOOT, A, 1347, 1344, 0
+SHOOT, A, 1348, 1345, 14
+SHOOT, A, 1349, 1346, 9
+SHOOT, A, 1353, 1350, 2
+SHOOT, A, 1354, 1351, 16
+SHOOT, A, 1355, 1352, 11
+SHOOT, A, 1359, 1356, 6
+SHOOT, A, 1360, 1357, 18
+SHOOT, A, 1361, 1358, 13
+DEAD, A, 1303
+DEAD, A, 1316
+DEAD, A, 1344
+DEAD, D, 1306
+DEAD, D, 1319
+DEAD, D, 1347
+SPAWN, A, 1362, 1, 57, 63
+SPAWN, A, 1363, 2, 58, 0
+SPAWN, A, 1364, 3, 58, 63
+SPAWN, D, 1365, 1, 57, 63
+SPAWN, D, 1366, 2, 58, 0
+SPAWN, D, 1367, 3, 58, 63
+TURN, 228
+PRINT, TURN 228 LOGS:To be spawned at Position(59,0)
+PRINT, To be spawned at Position(59,63)
+PRINT, To be spawned at Position(60,0)
+PRINT, Type 1 at Position (59,0)
+PRINT, Type 2 at Position (59,63)
+PRINT, Type 3 at Position (60,0)
+PRINT, 
+SHOOT, D, 1309, 1312, 0
+SHOOT, D, 1315, 1318, 2
+SHOOT, D, 1321, 1324, 4
+SHOOT, D, 1322, 1325, 0
+SHOOT, D, 1327, 1330, 6
+SHOOT, D, 1328, 1331, 1
+SHOOT, D, 1333, 1336, 8
+SHOOT, D, 1334, 1337, 3
+SHOOT, D, 1339, 1342, 10
+SHOOT, D, 1340, 1343, 5
+SHOOT, D, 1345, 1348, 12
+SHOOT, D, 1346, 1349, 7
+SHOOT, D, 1350, 1353, 0
+SHOOT, D, 1351, 1354, 14
+SHOOT, D, 1352, 1355, 9
+SHOOT, D, 1356, 1359, 2
+SHOOT, D, 1357, 1360, 16
+SHOOT, D, 1358, 1361, 11
+SHOOT, D, 1362, 1365, 6
+SHOOT, D, 1363, 1366, 18
+SHOOT, D, 1364, 1367, 13
+SHOOT, A, 1312, 1309, 0
+SHOOT, A, 1318, 1315, 2
+SHOOT, A, 1324, 1321, 4
+SHOOT, A, 1325, 1322, 0
+SHOOT, A, 1330, 1327, 6
+SHOOT, A, 1331, 1328, 1
+SHOOT, A, 1336, 1333, 8
+SHOOT, A, 1337, 1334, 3
+SHOOT, A, 1342, 1339, 10
+SHOOT, A, 1343, 1340, 5
+SHOOT, A, 1348, 1345, 12
+SHOOT, A, 1349, 1346, 7
+SHOOT, A, 1353, 1350, 0
+SHOOT, A, 1354, 1351, 14
+SHOOT, A, 1355, 1352, 9
+SHOOT, A, 1359, 1356, 2
+SHOOT, A, 1360, 1357, 16
+SHOOT, A, 1361, 1358, 11
+SHOOT, A, 1365, 1362, 6
+SHOOT, A, 1366, 1363, 18
+SHOOT, A, 1367, 1364, 13
+DEAD, A, 1309
+DEAD, A, 1322
+DEAD, A, 1350
+DEAD, D, 1312
+DEAD, D, 1325
+DEAD, D, 1353
+SPAWN, A, 1368, 1, 59, 0
+SPAWN, A, 1369, 2, 59, 63
+SPAWN, A, 1370, 3, 60, 0
+SPAWN, D, 1371, 1, 59, 0
+SPAWN, D, 1372, 2, 59, 63
+SPAWN, D, 1373, 3, 60, 0
+TURN, 229
+PRINT, TURN 229 LOGS:To be spawned at Position(60,63)
+PRINT, To be spawned at Position(61,0)
+PRINT, To be spawned at Position(61,63)
+PRINT, Type 1 at Position (60,63)
+PRINT, Type 2 at Position (61,0)
+PRINT, Type 3 at Position (61,63)
+PRINT, 
+SHOOT, D, 1315, 1318, 0
+SHOOT, D, 1321, 1324, 2
+SHOOT, D, 1327, 1330, 4
+SHOOT, D, 1328, 1331, 0
+SHOOT, D, 1333, 1336, 6
+SHOOT, D, 1334, 1337, 1
+SHOOT, D, 1339, 1342, 8
+SHOOT, D, 1340, 1343, 3
+SHOOT, D, 1345, 1348, 10
+SHOOT, D, 1346, 1349, 5
+SHOOT, D, 1351, 1354, 12
+SHOOT, D, 1352, 1355, 7
+SHOOT, D, 1356, 1359, 0
+SHOOT, D, 1357, 1360, 14
+SHOOT, D, 1358, 1361, 9
+SHOOT, D, 1362, 1365, 2
+SHOOT, D, 1363, 1366, 16
+SHOOT, D, 1364, 1367, 11
+SHOOT, D, 1368, 1371, 6
+SHOOT, D, 1369, 1372, 18
+SHOOT, D, 1370, 1373, 13
+SHOOT, A, 1318, 1315, 0
+SHOOT, A, 1324, 1321, 2
+SHOOT, A, 1330, 1327, 4
+SHOOT, A, 1331, 1328, 0
+SHOOT, A, 1336, 1333, 6
+SHOOT, A, 1337, 1334, 1
+SHOOT, A, 1342, 1339, 8
+SHOOT, A, 1343, 1340, 3
+SHOOT, A, 1348, 1345, 10
+SHOOT, A, 1349, 1346, 5
+SHOOT, A, 1354, 1351, 12
+SHOOT, A, 1355, 1352, 7
+SHOOT, A, 1359, 1356, 0
+SHOOT, A, 1360, 1357, 14
+SHOOT, A, 1361, 1358, 9
+SHOOT, A, 1365, 1362, 2
+SHOOT, A, 1366, 1363, 16
+SHOOT, A, 1367, 1364, 11
+SHOOT, A, 1371, 1368, 6
+SHOOT, A, 1372, 1369, 18
+SHOOT, A, 1373, 1370, 13
+DEAD, A, 1315
+DEAD, A, 1328
+DEAD, A, 1356
+DEAD, D, 1318
+DEAD, D, 1331
+DEAD, D, 1359
+SPAWN, A, 1374, 1, 60, 63
+SPAWN, A, 1375, 2, 61, 0
+SPAWN, A, 1376, 3, 61, 63
+SPAWN, D, 1377, 1, 60, 63
+SPAWN, D, 1378, 2, 61, 0
+SPAWN, D, 1379, 3, 61, 63
+TURN, 230
+PRINT, TURN 230 LOGS:To be spawned at Position(62,0)
+PRINT, To be spawned at Position(62,63)
+PRINT, To be spawned at Position(63,0)
+PRINT, Type 1 at Position (62,0)
+PRINT, Type 2 at Position (62,63)
+PRINT, Type 3 at Position (63,0)
+PRINT, 
+SHOOT, D, 1321, 1324, 0
+SHOOT, D, 1327, 1330, 2
+SHOOT, D, 1333, 1336, 4
+SHOOT, D, 1334, 1337, 0
+SHOOT, D, 1339, 1342, 6
+SHOOT, D, 1340, 1343, 1
+SHOOT, D, 1345, 1348, 8
+SHOOT, D, 1346, 1349, 3
+SHOOT, D, 1351, 1354, 10
+SHOOT, D, 1352, 1355, 5
+SHOOT, D, 1357, 1360, 12
+SHOOT, D, 1358, 1361, 7
+SHOOT, D, 1362, 1365, 0
+SHOOT, D, 1363, 1366, 14
+SHOOT, D, 1364, 1367, 9
+SHOOT, D, 1368, 1371, 2
+SHOOT, D, 1369, 1372, 16
+SHOOT, D, 1370, 1373, 11
+SHOOT, D, 1374, 1377, 6
+SHOOT, D, 1375, 1378, 18
+SHOOT, D, 1376, 1379, 13
+SHOOT, A, 1324, 1321, 0
+SHOOT, A, 1330, 1327, 2
+SHOOT, A, 1336, 1333, 4
+SHOOT, A, 1337, 1334, 0
+SHOOT, A, 1342, 1339, 6
+SHOOT, A, 1343, 1340, 1
+SHOOT, A, 1348, 1345, 8
+SHOOT, A, 1349, 1346, 3
+SHOOT, A, 1354, 1351, 10
+SHOOT, A, 1355, 1352, 5
+SHOOT, A, 1360, 1357, 12
+SHOOT, A, 1361, 1358, 7
+SHOOT, A, 1365, 1362, 0
+SHOOT, A, 1366, 1363, 14
+SHOOT, A, 1367, 1364, 9
+SHOOT, A, 1371, 1368, 2
+SHOOT, A, 1372, 1369, 16
+SHOOT, A, 1373, 1370, 11
+SHOOT, A, 1377, 1374, 6
+SHOOT, A, 1378, 1375, 18
+SHOOT, A, 1379, 1376, 13
+DEAD, A, 1321
+DEAD, A, 1334
+DEAD, A, 1362
+DEAD, D, 1324
+DEAD, D, 1337
+DEAD, D, 1365
+SPAWN, A, 1380, 1, 62, 0
+SPAWN, A, 1381, 2, 62, 63
+SPAWN, A, 1382, 3, 63, 0
+SPAWN, D, 1383, 1, 62, 0
+SPAWN, D, 1384, 2, 62, 63
+SPAWN, D, 1385, 3, 63, 0
+TURN, 231
+PRINT, TURN 231 LOGS:To be spawned at Position(63,1)
+PRINT, To be spawned at Position(63,2)
+PRINT, To be spawned at Position(63,3)
+PRINT, Type 1 at Position (63,1)
+PRINT, Type 2 at Position (63,2)
+PRINT, Type 3 at Position (63,3)
+PRINT, 
+SHOOT, D, 1327, 1330, 0
+SHOOT, D, 1333, 1336, 2
+SHOOT, D, 1339, 1342, 4
+SHOOT, D, 1340, 1343, 0
+SHOOT, D, 1345, 1348, 6
+SHOOT, D, 1346, 1349, 1
+SHOOT, D, 1351, 1354, 8
+SHOOT, D, 1352, 1355, 3
+SHOOT, D, 1357, 1360, 10
+SHOOT, D, 1358, 1361, 5
+SHOOT, D, 1363, 1366, 12
+SHOOT, D, 1364, 1367, 7
+SHOOT, D, 1368, 1371, 0
+SHOOT, D, 1369, 1372, 14
+SHOOT, D, 1370, 1373, 9
+SHOOT, D, 1374, 1377, 2
+SHOOT, D, 1375, 1378, 16
+SHOOT, D, 1376, 1379, 11
+SHOOT, D, 1380, 1383, 6
+SHOOT, D, 1381, 1384, 18
+SHOOT, D, 1382, 1385, 13
+SHOOT, A, 1330, 1327, 0
+SHOOT, A, 1336, 1333, 2
+SHOOT, A, 1342, 1339, 4
+SHOOT, A, 1343, 1340, 0
+SHOOT, A, 1348, 1345, 6
+SHOOT, A, 1349, 1346, 1
+SHOOT, A, 1354, 1351, 8
+SHOOT, A, 1355, 1352, 3
+SHOOT, A, 1360, 1357, 10
+SHOOT, A, 1361, 1358, 5
+SHOOT, A, 1366, 1363, 12
+SHOOT, A, 1367, 1364, 7
+SHOOT, A, 1371, 1368, 0
+SHOOT, A, 1372, 1369, 14
+SHOOT, A, 1373, 1370, 9
+SHOOT, A, 1377, 1374, 2
+SHOOT, A, 1378, 1375, 16
+SHOOT, A, 1379, 1376, 11
+SHOOT, A, 1383, 1380, 6
+SHOOT, A, 1384, 1381, 18
+SHOOT, A, 1385, 1382, 13
+DEAD, A, 1327
+DEAD, A, 1340
+DEAD, A, 1368
+DEAD, D, 1330
+DEAD, D, 1343
+DEAD, D, 1371
+SPAWN, A, 1386, 1, 63, 1
+SPAWN, A, 1387, 2, 63, 2
+SPAWN, A, 1388, 3, 63, 3
+SPAWN, D, 1389, 1, 63, 1
+SPAWN, D, 1390, 2, 63, 2
+SPAWN, D, 1391, 3, 63, 3
+TURN, 232
+PRINT, TURN 232 LOGS:To be spawned at Position(63,4)
+PRINT, To be spawned at Position(63,5)
+PRINT, To be spawned at Position(63,6)
+PRINT, Type 1 at Position (63,4)
+PRINT, Type 2 at Position (63,5)
+PRINT, Type 3 at Position (63,6)
+PRINT, 
+SHOOT, D, 1333, 1336, 0
+SHOOT, D, 1339, 1342, 2
+SHOOT, D, 1345, 1348, 4
+SHOOT, D, 1346, 1349, 0
+SHOOT, D, 1351, 1354, 6
+SHOOT, D, 1352, 1355, 1
+SHOOT, D, 1357, 1360, 8
+SHOOT, D, 1358, 1361, 3
+SHOOT, D, 1363, 1366, 10
+SHOOT, D, 1364, 1367, 5
+SHOOT, D, 1369, 1372, 12
+SHOOT, D, 1370, 1373, 7
+SHOOT, D, 1374, 1377, 0
+SHOOT, D, 1375, 1378, 14
+SHOOT, D, 1376, 1379, 9
+SHOOT, D, 1380, 1383, 2
+SHOOT, D, 1381, 1384, 16
+SHOOT, D, 1382, 1385, 11
+SHOOT, D, 1386, 1389, 6
+SHOOT, D, 1387, 1390, 18
+SHOOT, D, 1388, 1391, 13
+SHOOT, A, 1336, 1333, 0
+SHOOT, A, 1342, 1339, 2
+SHOOT, A, 1348, 1345, 4
+SHOOT, A, 1349, 1346, 0
+SHOOT, A, 1354, 1351, 6
+SHOOT, A, 1355, 1352, 1
+SHOOT, A, 1360, 1357, 8
+SHOOT, A, 1361, 1358, 3
+SHOOT, A, 1366, 1363, 10
+SHOOT, A, 1367, 1364, 5
+SHOOT, A, 1372, 1369, 12
+SHOOT, A, 1373, 1370, 7
+SHOOT, A, 1377, 1374, 0
+SHOOT, A, 1378, 1375, 14
+SHOOT, A, 1379, 1376, 9
+SHOOT, A, 1383, 1380, 2
+SHOOT, A, 1384, 1381, 16
+SHOOT, A, 1385, 1382, 11
+SHOOT, A, 1389, 1386, 6
+SHOOT, A, 1390, 1387, 18
+SHOOT, A, 1391, 1388, 13
+DEAD, A, 1333
+DEAD, A, 1346
+DEAD, A, 1374
+DEAD, D, 1336
+DEAD, D, 1349
+DEAD, D, 1377
+SPAWN, A, 1392, 1, 63, 4
+SPAWN, A, 1393, 2, 63, 5
+SPAWN, A, 1394, 3, 63, 6
+SPAWN, D, 1395, 1, 63, 4
+SPAWN, D, 1396, 2, 63, 5
+SPAWN, D, 1397, 3, 63, 6
+TURN, 233
+PRINT, TURN 233 LOGS:To be spawned at Position(63,7)
+PRINT, To be spawned at Position(63,8)
+PRINT, To be spawned at Position(63,9)
+PRINT, Type 1 at Position (63,7)
+PRINT, Type 2 at Position (63,8)
+PRINT, Type 3 at Position (63,9)
+PRINT, 
+SHOOT, D, 1339, 1342, 0
+SHOOT, D, 1345, 1348, 2
+SHOOT, D, 1351, 1354, 4
+SHOOT, D, 1352, 1355, 0
+SHOOT, D, 1357, 1360, 6
+SHOOT, D, 1358, 1361, 1
+SHOOT, D, 1363, 1366, 8
+SHOOT, D, 1364, 1367, 3
+SHOOT, D, 1369, 1372, 10
+SHOOT, D, 1370, 1373, 5
+SHOOT, D, 1375, 1378, 12
+SHOOT, D, 1376, 1379, 7
+SHOOT, D, 1380, 1383, 0
+SHOOT, D, 1381, 1384, 14
+SHOOT, D, 1382, 1385, 9
+SHOOT, D, 1386, 1389, 2
+SHOOT, D, 1387, 1390, 16
+SHOOT, D, 1388, 1391, 11
+SHOOT, D, 1392, 1395, 6
+SHOOT, D, 1393, 1396, 18
+SHOOT, D, 1394, 1397, 13
+SHOOT, A, 1342, 1339, 0
+SHOOT, A, 1348, 1345, 2
+SHOOT, A, 1354, 1351, 4
+SHOOT, A, 1355, 1352, 0
+SHOOT, A, 1360, 1357, 6
+SHOOT, A, 1361, 1358, 1
+SHOOT, A, 1366, 1363, 8
+SHOOT, A, 1367, 1364, 3
+SHOOT, A, 1372, 1369, 10
+SHOOT, A, 1373, 1370, 5
+SHOOT, A, 1378, 1375, 12
+SHOOT, A, 1379, 1376, 7
+SHOOT, A, 1383, 1380, 0
+SHOOT, A, 1384, 1381, 14
+SHOOT, A, 1385, 1382, 9
+SHOOT, A, 1389, 1386, 2
+SHOOT, A, 1390, 1387, 16
+SHOOT, A, 1391, 1388, 11
+SHOOT, A, 1395, 1392, 6
+SHOOT, A, 1396, 1393, 18
+SHOOT, A, 1397, 1394, 13
+DEAD, A, 1339
+DEAD, A, 1352
+DEAD, A, 1380
+DEAD, D, 1342
+DEAD, D, 1355
+DEAD, D, 1383
+SPAWN, A, 1398, 1, 63, 7
+SPAWN, A, 1399, 2, 63, 8
+SPAWN, A, 1400, 3, 63, 9
+SPAWN, D, 1401, 1, 63, 7
+SPAWN, D, 1402, 2, 63, 8
+SPAWN, D, 1403, 3, 63, 9
+TURN, 234
+PRINT, TURN 234 LOGS:To be spawned at Position(63,10)
+PRINT, To be spawned at Position(63,11)
+PRINT, To be spawned at Position(63,12)
+PRINT, Type 1 at Position (63,10)
+PRINT, Type 2 at Position (63,11)
+PRINT, Type 3 at Position (63,12)
+PRINT, 
+SHOOT, D, 1345, 1348, 0
+SHOOT, D, 1351, 1354, 2
+SHOOT, D, 1357, 1360, 4
+SHOOT, D, 1358, 1361, 0
+SHOOT, D, 1363, 1366, 6
+SHOOT, D, 1364, 1367, 1
+SHOOT, D, 1369, 1372, 8
+SHOOT, D, 1370, 1373, 3
+SHOOT, D, 1375, 1378, 10
+SHOOT, D, 1376, 1379, 5
+SHOOT, D, 1381, 1384, 12
+SHOOT, D, 1382, 1385, 7
+SHOOT, D, 1386, 1389, 0
+SHOOT, D, 1387, 1390, 14
+SHOOT, D, 1388, 1391, 9
+SHOOT, D, 1392, 1395, 2
+SHOOT, D, 1393, 1396, 16
+SHOOT, D, 1394, 1397, 11
+SHOOT, D, 1398, 1401, 6
+SHOOT, D, 1399, 1402, 18
+SHOOT, D, 1400, 1403, 13
+SHOOT, A, 1348, 1345, 0
+SHOOT, A, 1354, 1351, 2
+SHOOT, A, 1360, 1357, 4
+SHOOT, A, 1361, 1358, 0
+SHOOT, A, 1366, 1363, 6
+SHOOT, A, 1367, 1364, 1
+SHOOT, A, 1372, 1369, 8
+SHOOT, A, 1373, 1370, 3
+SHOOT, A, 1378, 1375, 10
+SHOOT, A, 1379, 1376, 5
+SHOOT, A, 1384, 1381, 12
+SHOOT, A, 1385, 1382, 7
+SHOOT, A, 1389, 1386, 0
+SHOOT, A, 1390, 1387, 14
+SHOOT, A, 1391, 1388, 9
+SHOOT, A, 1395, 1392, 2
+SHOOT, A, 1396, 1393, 16
+SHOOT, A, 1397, 1394, 11
+SHOOT, A, 1401, 1398, 6
+SHOOT, A, 1402, 1399, 18
+SHOOT, A, 1403, 1400, 13
+DEAD, A, 1345
+DEAD, A, 1358
+DEAD, A, 1386
+DEAD, D, 1348
+DEAD, D, 1361
+DEAD, D, 1389
+SPAWN, A, 1404, 1, 63, 10
+SPAWN, A, 1405, 2, 63, 11
+SPAWN, A, 1406, 3, 63, 12
+SPAWN, D, 1407, 1, 63, 10
+SPAWN, D, 1408, 2, 63, 11
+SPAWN, D, 1409, 3, 63, 12
+TURN, 235
+PRINT, TURN 235 LOGS:To be spawned at Position(63,13)
+PRINT, To be spawned at Position(63,14)
+PRINT, To be spawned at Position(63,15)
+PRINT, Type 1 at Position (63,13)
+PRINT, Type 2 at Position (63,14)
+PRINT, Type 3 at Position (63,15)
+PRINT, 
+SHOOT, D, 1351, 1354, 0
+SHOOT, D, 1357, 1360, 2
+SHOOT, D, 1363, 1366, 4
+SHOOT, D, 1364, 1367, 0
+SHOOT, D, 1369, 1372, 6
+SHOOT, D, 1370, 1373, 1
+SHOOT, D, 1375, 1378, 8
+SHOOT, D, 1376, 1379, 3
+SHOOT, D, 1381, 1384, 10
+SHOOT, D, 1382, 1385, 5
+SHOOT, D, 1387, 1390, 12
+SHOOT, D, 1388, 1391, 7
+SHOOT, D, 1392, 1395, 0
+SHOOT, D, 1393, 1396, 14
+SHOOT, D, 1394, 1397, 9
+SHOOT, D, 1398, 1401, 2
+SHOOT, D, 1399, 1402, 16
+SHOOT, D, 1400, 1403, 11
+SHOOT, D, 1404, 1407, 6
+SHOOT, D, 1405, 1408, 18
+SHOOT, D, 1406, 1409, 13
+SHOOT, A, 1354, 1351, 0
+SHOOT, A, 1360, 1357, 2
+SHOOT, A, 1366, 1363, 4
+SHOOT, A, 1367, 1364, 0
+SHOOT, A, 1372, 1369, 6
+SHOOT, A, 1373, 1370, 1
+SHOOT, A, 1378, 1375, 8
+SHOOT, A, 1379, 1376, 3
+SHOOT, A, 1384, 1381, 10
+SHOOT, A, 1385, 1382, 5
+SHOOT, A, 1390, 1387, 12
+SHOOT, A, 1391, 1388, 7
+SHOOT, A, 1395, 1392, 0
+SHOOT, A, 1396, 1393, 14
+SHOOT, A, 1397, 1394, 9
+SHOOT, A, 1401, 1398, 2
+SHOOT, A, 1402, 1399, 16
+SHOOT, A, 1403, 1400, 11
+SHOOT, A, 1407, 1404, 6
+SHOOT, A, 1408, 1405, 18
+SHOOT, A, 1409, 1406, 13
+DEAD, A, 1351
+DEAD, A, 1364
+DEAD, A, 1392
+DEAD, D, 1354
+DEAD, D, 1367
+DEAD, D, 1395
+SPAWN, A, 1410, 1, 63, 13
+SPAWN, A, 1411, 2, 63, 14
+SPAWN, A, 1412, 3, 63, 15
+SPAWN, D, 1413, 1, 63, 13
+SPAWN, D, 1414, 2, 63, 14
+SPAWN, D, 1415, 3, 63, 15
+TURN, 236
+PRINT, TURN 236 LOGS:To be spawned at Position(63,16)
+PRINT, To be spawned at Position(63,17)
+PRINT, To be spawned at Position(63,18)
+PRINT, Type 1 at Position (63,16)
+PRINT, Type 2 at Position (63,17)
+PRINT, Type 3 at Position (63,18)
+PRINT, 
+SHOOT, D, 1357, 1360, 0
+SHOOT, D, 1363, 1366, 2
+SHOOT, D, 1369, 1372, 4
+SHOOT, D, 1370, 1373, 0
+SHOOT, D, 1375, 1378, 6
+SHOOT, D, 1376, 1379, 1
+SHOOT, D, 1381, 1384, 8
+SHOOT, D, 1382, 1385, 3
+SHOOT, D, 1387, 1390, 10
+SHOOT, D, 1388, 1391, 5
+SHOOT, D, 1393, 1396, 12
+SHOOT, D, 1394, 1397, 7
+SHOOT, D, 1398, 1401, 0
+SHOOT, D, 1399, 1402, 14
+SHOOT, D, 1400, 1403, 9
+SHOOT, D, 1404, 1407, 2
+SHOOT, D, 1405, 1408, 16
+SHOOT, D, 1406, 1409, 11
+SHOOT, D, 1410, 1413, 6
+SHOOT, D, 1411, 1414, 18
+SHOOT, D, 1412, 1415, 13
+SHOOT, A, 1360, 1357, 0
+SHOOT, A, 1366, 1363, 2
+SHOOT, A, 1372, 1369, 4
+SHOOT, A, 1373, 1370, 0
+SHOOT, A, 1378, 1375, 6
+SHOOT, A, 1379, 1376, 1
+SHOOT, A, 1384, 1381, 8
+SHOOT, A, 1385, 1382, 3
+SHOOT, A, 1390, 1387, 10
+SHOOT, A, 1391, 1388, 5
+SHOOT, A, 1396, 1393, 12
+SHOOT, A, 1397, 1394, 7
+SHOOT, A, 1401, 1398, 0
+SHOOT, A, 1402, 1399, 14
+SHOOT, A, 1403, 1400, 9
+SHOOT, A, 1407, 1404, 2
+SHOOT, A, 1408, 1405, 16
+SHOOT, A, 1409, 1406, 11
+SHOOT, A, 1413, 1410, 6
+SHOOT, A, 1414, 1411, 18
+SHOOT, A, 1415, 1412, 13
+DEAD, A, 1357
+DEAD, A, 1370
+DEAD, A, 1398
+DEAD, D, 1360
+DEAD, D, 1373
+DEAD, D, 1401
+SPAWN, A, 1416, 1, 63, 16
+SPAWN, A, 1417, 2, 63, 17
+SPAWN, A, 1418, 3, 63, 18
+SPAWN, D, 1419, 1, 63, 16
+SPAWN, D, 1420, 2, 63, 17
+SPAWN, D, 1421, 3, 63, 18
+TURN, 237
+PRINT, TURN 237 LOGS:To be spawned at Position(63,19)
+PRINT, To be spawned at Position(63,20)
+PRINT, To be spawned at Position(63,21)
+PRINT, Type 1 at Position (63,19)
+PRINT, Type 2 at Position (63,20)
+PRINT, Type 3 at Position (63,21)
+PRINT, 
+SHOOT, D, 1363, 1366, 0
+SHOOT, D, 1369, 1372, 2
+SHOOT, D, 1375, 1378, 4
+SHOOT, D, 1376, 1379, 0
+SHOOT, D, 1381, 1384, 6
+SHOOT, D, 1382, 1385, 1
+SHOOT, D, 1387, 1390, 8
+SHOOT, D, 1388, 1391, 3
+SHOOT, D, 1393, 1396, 10
+SHOOT, D, 1394, 1397, 5
+SHOOT, D, 1399, 1402, 12
+SHOOT, D, 1400, 1403, 7
+SHOOT, D, 1404, 1407, 0
+SHOOT, D, 1405, 1408, 14
+SHOOT, D, 1406, 1409, 9
+SHOOT, D, 1410, 1413, 2
+SHOOT, D, 1411, 1414, 16
+SHOOT, D, 1412, 1415, 11
+SHOOT, D, 1416, 1419, 6
+SHOOT, D, 1417, 1420, 18
+SHOOT, D, 1418, 1421, 13
+SHOOT, A, 1366, 1363, 0
+SHOOT, A, 1372, 1369, 2
+SHOOT, A, 1378, 1375, 4
+SHOOT, A, 1379, 1376, 0
+SHOOT, A, 1384, 1381, 6
+SHOOT, A, 1385, 1382, 1
+SHOOT, A, 1390, 1387, 8
+SHOOT, A, 1391, 1388, 3
+SHOOT, A, 1396, 1393, 10
+SHOOT, A, 1397, 1394, 5
+SHOOT, A, 1402, 1399, 12
+SHOOT, A, 1403, 1400, 7
+SHOOT, A, 1407, 1404, 0
+SHOOT, A, 1408, 1405, 14
+SHOOT, A, 1409, 1406, 9
+SHOOT, A, 1413, 1410, 2
+SHOOT, A, 1414, 1411, 16
+SHOOT, A, 1415, 1412, 11
+SHOOT, A, 1419, 1416, 6
+SHOOT, A, 1420, 1417, 18
+SHOOT, A, 1421, 1418, 13
+DEAD, A, 1363
+DEAD, A, 1376
+DEAD, A, 1404
+DEAD, D, 1366
+DEAD, D, 1379
+DEAD, D, 1407
+SPAWN, A, 1422, 1, 63, 19
+SPAWN, A, 1423, 2, 63, 20
+SPAWN, A, 1424, 3, 63, 21
+SPAWN, D, 1425, 1, 63, 19
+SPAWN, D, 1426, 2, 63, 20
+SPAWN, D, 1427, 3, 63, 21
+TURN, 238
+PRINT, TURN 238 LOGS:To be spawned at Position(63,22)
+PRINT, To be spawned at Position(63,23)
+PRINT, To be spawned at Position(63,24)
+PRINT, Type 1 at Position (63,22)
+PRINT, Type 2 at Position (63,23)
+PRINT, Type 3 at Position (63,24)
+PRINT, 
+SHOOT, D, 1369, 1372, 0
+SHOOT, D, 1375, 1378, 2
+SHOOT, D, 1381, 1384, 4
+SHOOT, D, 1382, 1385, 0
+SHOOT, D, 1387, 1390, 6
+SHOOT, D, 1388, 1391, 1
+SHOOT, D, 1393, 1396, 8
+SHOOT, D, 1394, 1397, 3
+SHOOT, D, 1399, 1402, 10
+SHOOT, D, 1400, 1403, 5
+SHOOT, D, 1405, 1408, 12
+SHOOT, D, 1406, 1409, 7
+SHOOT, D, 1410, 1413, 0
+SHOOT, D, 1411, 1414, 14
+SHOOT, D, 1412, 1415, 9
+SHOOT, D, 1416, 1419, 2
+SHOOT, D, 1417, 1420, 16
+SHOOT, D, 1418, 1421, 11
+SHOOT, D, 1422, 1425, 6
+SHOOT, D, 1423, 1426, 18
+SHOOT, D, 1424, 1427, 13
+SHOOT, A, 1372, 1369, 0
+SHOOT, A, 1378, 1375, 2
+SHOOT, A, 1384, 1381, 4
+SHOOT, A, 1385, 1382, 0
+SHOOT, A, 1390, 1387, 6
+SHOOT, A, 1391, 1388, 1
+SHOOT, A, 1396, 1393, 8
+SHOOT, A, 1397, 1394, 3
+SHOOT, A, 1402, 1399, 10
+SHOOT, A, 1403, 1400, 5
+SHOOT, A, 1408, 1405, 12
+SHOOT, A, 1409, 1406, 7
+SHOOT, A, 1413, 1410, 0
+SHOOT, A, 1414, 1411, 14
+SHOOT, A, 1415, 1412, 9
+SHOOT, A, 1419, 1416, 2
+SHOOT, A, 1420, 1417, 16
+SHOOT, A, 1421, 1418, 11
+SHOOT, A, 1425, 1422, 6
+SHOOT, A, 1426, 1423, 18
+SHOOT, A, 1427, 1424, 13
+DEAD, A, 1369
+DEAD, A, 1382
+DEAD, A, 1410
+DEAD, D, 1372
+DEAD, D, 1385
+DEAD, D, 1413
+SPAWN, A, 1428, 1, 63, 22
+SPAWN, A, 1429, 2, 63, 23
+SPAWN, A, 1430, 3, 63, 24
+SPAWN, D, 1431, 1, 63, 22
+SPAWN, D, 1432, 2, 63, 23
+SPAWN, D, 1433, 3, 63, 24
+TURN, 239
+PRINT, TURN 239 LOGS:To be spawned at Position(63,25)
+PRINT, To be spawned at Position(63,26)
+PRINT, To be spawned at Position(63,27)
+PRINT, Type 1 at Position (63,25)
+PRINT, Type 2 at Position (63,26)
+PRINT, Type 3 at Position (63,27)
+PRINT, 
+SHOOT, D, 1375, 1378, 0
+SHOOT, D, 1381, 1384, 2
+SHOOT, D, 1387, 1390, 4
+SHOOT, D, 1388, 1391, 0
+SHOOT, D, 1393, 1396, 6
+SHOOT, D, 1394, 1397, 1
+SHOOT, D, 1399, 1402, 8
+SHOOT, D, 1400, 1403, 3
+SHOOT, D, 1405, 1408, 10
+SHOOT, D, 1406, 1409, 5
+SHOOT, D, 1411, 1414, 12
+SHOOT, D, 1412, 1415, 7
+SHOOT, D, 1416, 1419, 0
+SHOOT, D, 1417, 1420, 14
+SHOOT, D, 1418, 1421, 9
+SHOOT, D, 1422, 1425, 2
+SHOOT, D, 1423, 1426, 16
+SHOOT, D, 1424, 1427, 11
+SHOOT, D, 1428, 1431, 6
+SHOOT, D, 1429, 1432, 18
+SHOOT, D, 1430, 1433, 13
+SHOOT, A, 1378, 1375, 0
+SHOOT, A, 1384, 1381, 2
+SHOOT, A, 1390, 1387, 4
+SHOOT, A, 1391, 1388, 0
+SHOOT, A, 1396, 1393, 6
+SHOOT, A, 1397, 1394, 1
+SHOOT, A, 1402, 1399, 8
+SHOOT, A, 1403, 1400, 3
+SHOOT, A, 1408, 1405, 10
+SHOOT, A, 1409, 1406, 5
+SHOOT, A, 1414, 1411, 12
+SHOOT, A, 1415, 1412, 7
+SHOOT, A, 1419, 1416, 0
+SHOOT, A, 1420, 1417, 14
+SHOOT, A, 1421, 1418, 9
+SHOOT, A, 1425, 1422, 2
+SHOOT, A, 1426, 1423, 16
+SHOOT, A, 1427, 1424, 11
+SHOOT, A, 1431, 1428, 6
+SHOOT, A, 1432, 1429, 18
+SHOOT, A, 1433, 1430, 13
+DEAD, A, 1375
+DEAD, A, 1388
+DEAD, A, 1416
+DEAD, D, 1378
+DEAD, D, 1391
+DEAD, D, 1419
+SPAWN, A, 1434, 1, 63, 25
+SPAWN, A, 1435, 2, 63, 26
+SPAWN, A, 1436, 3, 63, 27
+SPAWN, D, 1437, 1, 63, 25
+SPAWN, D, 1438, 2, 63, 26
+SPAWN, D, 1439, 3, 63, 27
+TURN, 240
+PRINT, TURN 240 LOGS:To be spawned at Position(63,28)
+PRINT, To be spawned at Position(63,29)
+PRINT, To be spawned at Position(63,30)
+PRINT, Type 1 at Position (63,28)
+PRINT, Type 2 at Position (63,29)
+PRINT, Type 3 at Position (63,30)
+PRINT, 
+SHOOT, D, 1381, 1384, 0
+SHOOT, D, 1387, 1390, 2
+SHOOT, D, 1393, 1396, 4
+SHOOT, D, 1394, 1397, 0
+SHOOT, D, 1399, 1402, 6
+SHOOT, D, 1400, 1403, 1
+SHOOT, D, 1405, 1408, 8
+SHOOT, D, 1406, 1409, 3
+SHOOT, D, 1411, 1414, 10
+SHOOT, D, 1412, 1415, 5
+SHOOT, D, 1417, 1420, 12
+SHOOT, D, 1418, 1421, 7
+SHOOT, D, 1422, 1425, 0
+SHOOT, D, 1423, 1426, 14
+SHOOT, D, 1424, 1427, 9
+SHOOT, D, 1428, 1431, 2
+SHOOT, D, 1429, 1432, 16
+SHOOT, D, 1430, 1433, 11
+SHOOT, D, 1434, 1437, 6
+SHOOT, D, 1435, 1438, 18
+SHOOT, D, 1436, 1439, 13
+SHOOT, A, 1384, 1381, 0
+SHOOT, A, 1390, 1387, 2
+SHOOT, A, 1396, 1393, 4
+SHOOT, A, 1397, 1394, 0
+SHOOT, A, 1402, 1399, 6
+SHOOT, A, 1403, 1400, 1
+SHOOT, A, 1408, 1405, 8
+SHOOT, A, 1409, 1406, 3
+SHOOT, A, 1414, 1411, 10
+SHOOT, A, 1415, 1412, 5
+SHOOT, A, 1420, 1417, 12
+SHOOT, A, 1421, 1418, 7
+SHOOT, A, 1425, 1422, 0
+SHOOT, A, 1426, 1423, 14
+SHOOT, A, 1427, 1424, 9
+SHOOT, A, 1431, 1428, 2
+SHOOT, A, 1432, 1429, 16
+SHOOT, A, 1433, 1430, 11
+SHOOT, A, 1437, 1434, 6
+SHOOT, A, 1438, 1435, 18
+SHOOT, A, 1439, 1436, 13
+DEAD, A, 1381
+DEAD, A, 1394
+DEAD, A, 1422
+DEAD, D, 1384
+DEAD, D, 1397
+DEAD, D, 1425
+SPAWN, A, 1440, 1, 63, 28
+SPAWN, A, 1441, 2, 63, 29
+SPAWN, A, 1442, 3, 63, 30
+SPAWN, D, 1443, 1, 63, 28
+SPAWN, D, 1444, 2, 63, 29
+SPAWN, D, 1445, 3, 63, 30
+TURN, 241
+PRINT, TURN 241 LOGS:To be spawned at Position(63,31)
+PRINT, To be spawned at Position(63,32)
+PRINT, To be spawned at Position(63,33)
+PRINT, Type 1 at Position (63,31)
+PRINT, Type 2 at Position (63,32)
+PRINT, Type 3 at Position (63,33)
+PRINT, 
+SHOOT, D, 1387, 1390, 0
+SHOOT, D, 1393, 1396, 2
+SHOOT, D, 1399, 1402, 4
+SHOOT, D, 1400, 1403, 0
+SHOOT, D, 1405, 1408, 6
+SHOOT, D, 1406, 1409, 1
+SHOOT, D, 1411, 1414, 8
+SHOOT, D, 1412, 1415, 3
+SHOOT, D, 1417, 1420, 10
+SHOOT, D, 1418, 1421, 5
+SHOOT, D, 1423, 1426, 12
+SHOOT, D, 1424, 1427, 7
+SHOOT, D, 1428, 1431, 0
+SHOOT, D, 1429, 1432, 14
+SHOOT, D, 1430, 1433, 9
+SHOOT, D, 1434, 1437, 2
+SHOOT, D, 1435, 1438, 16
+SHOOT, D, 1436, 1439, 11
+SHOOT, D, 1440, 1443, 6
+SHOOT, D, 1441, 1444, 18
+SHOOT, D, 1442, 1445, 13
+SHOOT, A, 1390, 1387, 0
+SHOOT, A, 1396, 1393, 2
+SHOOT, A, 1402, 1399, 4
+SHOOT, A, 1403, 1400, 0
+SHOOT, A, 1408, 1405, 6
+SHOOT, A, 1409, 1406, 1
+SHOOT, A, 1414, 1411, 8
+SHOOT, A, 1415, 1412, 3
+SHOOT, A, 1420, 1417, 10
+SHOOT, A, 1421, 1418, 5
+SHOOT, A, 1426, 1423, 12
+SHOOT, A, 1427, 1424, 7
+SHOOT, A, 1431, 1428, 0
+SHOOT, A, 1432, 1429, 14
+SHOOT, A, 1433, 1430, 9
+SHOOT, A, 1437, 1434, 2
+SHOOT, A, 1438, 1435, 16
+SHOOT, A, 1439, 1436, 11
+SHOOT, A, 1443, 1440, 6
+SHOOT, A, 1444, 1441, 18
+SHOOT, A, 1445, 1442, 13
+DEAD, A, 1387
+DEAD, A, 1400
+DEAD, A, 1428
+DEAD, D, 1390
+DEAD, D, 1403
+DEAD, D, 1431
+SPAWN, A, 1446, 1, 63, 31
+SPAWN, A, 1447, 2, 63, 32
+SPAWN, A, 1448, 3, 63, 33
+SPAWN, D, 1449, 1, 63, 31
+SPAWN, D, 1450, 2, 63, 32
+SPAWN, D, 1451, 3, 63, 33
+TURN, 242
+PRINT, TURN 242 LOGS:To be spawned at Position(63,34)
+PRINT, To be spawned at Position(63,35)
+PRINT, To be spawned at Position(63,36)
+PRINT, Type 1 at Position (63,34)
+PRINT, Type 2 at Position (63,35)
+PRINT, Type 3 at Position (63,36)
+PRINT, 
+SHOOT, D, 1393, 1396, 0
+SHOOT, D, 1399, 1402, 2
+SHOOT, D, 1405, 1408, 4
+SHOOT, D, 1406, 1409, 0
+SHOOT, D, 1411, 1414, 6
+SHOOT, D, 1412, 1415, 1
+SHOOT, D, 1417, 1420, 8
+SHOOT, D, 1418, 1421, 3
+SHOOT, D, 1423, 1426, 10
+SHOOT, D, 1424, 1427, 5
+SHOOT, D, 1429, 1432, 12
+SHOOT, D, 1430, 1433, 7
+SHOOT, D, 1434, 1437, 0
+SHOOT, D, 1435, 1438, 14
+SHOOT, D, 1436, 1439, 9
+SHOOT, D, 1440, 1443, 2
+SHOOT, D, 1441, 1444, 16
+SHOOT, D, 1442, 1445, 11
+SHOOT, D, 1446, 1449, 6
+SHOOT, D, 1447, 1450, 18
+SHOOT, D, 1448, 1451, 13
+SHOOT, A, 1396, 1393, 0
+SHOOT, A, 1402, 1399, 2
+SHOOT, A, 1408, 1405, 4
+SHOOT, A, 1409, 1406, 0
+SHOOT, A, 1414, 1411, 6
+SHOOT, A, 1415, 1412, 1
+SHOOT, A, 1420, 1417, 8
+SHOOT, A, 1421, 1418, 3
+SHOOT, A, 1426, 1423, 10
+SHOOT, A, 1427, 1424, 5
+SHOOT, A, 1432, 1429, 12
+SHOOT, A, 1433, 1430, 7
+SHOOT, A, 1437, 1434, 0
+SHOOT, A, 1438, 1435, 14
+SHOOT, A, 1439, 1436, 9
+SHOOT, A, 1443, 1440, 2
+SHOOT, A, 1444, 1441, 16
+SHOOT, A, 1445, 1442, 11
+SHOOT, A, 1449, 1446, 6
+SHOOT, A, 1450, 1447, 18
+SHOOT, A, 1451, 1448, 13
+DEAD, A, 1393
+DEAD, A, 1406
+DEAD, A, 1434
+DEAD, D, 1396
+DEAD, D, 1409
+DEAD, D, 1437
+SPAWN, A, 1452, 1, 63, 34
+SPAWN, A, 1453, 2, 63, 35
+SPAWN, A, 1454, 3, 63, 36
+SPAWN, D, 1455, 1, 63, 34
+SPAWN, D, 1456, 2, 63, 35
+SPAWN, D, 1457, 3, 63, 36
+TURN, 243
+PRINT, TURN 243 LOGS:To be spawned at Position(63,37)
+PRINT, To be spawned at Position(63,38)
+PRINT, To be spawned at Position(63,39)
+PRINT, Type 1 at Position (63,37)
+PRINT, Type 2 at Position (63,38)
+PRINT, Type 3 at Position (63,39)
+PRINT, 
+SHOOT, D, 1399, 1402, 0
+SHOOT, D, 1405, 1408, 2
+SHOOT, D, 1411, 1414, 4
+SHOOT, D, 1412, 1415, 0
+SHOOT, D, 1417, 1420, 6
+SHOOT, D, 1418, 1421, 1
+SHOOT, D, 1423, 1426, 8
+SHOOT, D, 1424, 1427, 3
+SHOOT, D, 1429, 1432, 10
+SHOOT, D, 1430, 1433, 5
+SHOOT, D, 1435, 1438, 12
+SHOOT, D, 1436, 1439, 7
+SHOOT, D, 1440, 1443, 0
+SHOOT, D, 1441, 1444, 14
+SHOOT, D, 1442, 1445, 9
+SHOOT, D, 1446, 1449, 2
+SHOOT, D, 1447, 1450, 16
+SHOOT, D, 1448, 1451, 11
+SHOOT, D, 1452, 1455, 6
+SHOOT, D, 1453, 1456, 18
+SHOOT, D, 1454, 1457, 13
+SHOOT, A, 1402, 1399, 0
+SHOOT, A, 1408, 1405, 2
+SHOOT, A, 1414, 1411, 4
+SHOOT, A, 1415, 1412, 0
+SHOOT, A, 1420, 1417, 6
+SHOOT, A, 1421, 1418, 1
+SHOOT, A, 1426, 1423, 8
+SHOOT, A, 1427, 1424, 3
+SHOOT, A, 1432, 1429, 10
+SHOOT, A, 1433, 1430, 5
+SHOOT, A, 1438, 1435, 12
+SHOOT, A, 1439, 1436, 7
+SHOOT, A, 1443, 1440, 0
+SHOOT, A, 1444, 1441, 14
+SHOOT, A, 1445, 1442, 9
+SHOOT, A, 1449, 1446, 2
+SHOOT, A, 1450, 1447, 16
+SHOOT, A, 1451, 1448, 11
+SHOOT, A, 1455, 1452, 6
+SHOOT, A, 1456, 1453, 18
+SHOOT, A, 1457, 1454, 13
+DEAD, A, 1399
+DEAD, A, 1412
+DEAD, A, 1440
+DEAD, D, 1402
+DEAD, D, 1415
+DEAD, D, 1443
+SPAWN, A, 1458, 1, 63, 37
+SPAWN, A, 1459, 2, 63, 38
+SPAWN, A, 1460, 3, 63, 39
+SPAWN, D, 1461, 1, 63, 37
+SPAWN, D, 1462, 2, 63, 38
+SPAWN, D, 1463, 3, 63, 39
+TURN, 244
+PRINT, TURN 244 LOGS:To be spawned at Position(63,40)
+PRINT, To be spawned at Position(63,41)
+PRINT, To be spawned at Position(63,42)
+PRINT, Type 1 at Position (63,40)
+PRINT, Type 2 at Position (63,41)
+PRINT, Type 3 at Position (63,42)
+PRINT, 
+SHOOT, D, 1405, 1408, 0
+SHOOT, D, 1411, 1414, 2
+SHOOT, D, 1417, 1420, 4
+SHOOT, D, 1418, 1421, 0
+SHOOT, D, 1423, 1426, 6
+SHOOT, D, 1424, 1427, 1
+SHOOT, D, 1429, 1432, 8
+SHOOT, D, 1430, 1433, 3
+SHOOT, D, 1435, 1438, 10
+SHOOT, D, 1436, 1439, 5
+SHOOT, D, 1441, 1444, 12
+SHOOT, D, 1442, 1445, 7
+SHOOT, D, 1446, 1449, 0
+SHOOT, D, 1447, 1450, 14
+SHOOT, D, 1448, 1451, 9
+SHOOT, D, 1452, 1455, 2
+SHOOT, D, 1453, 1456, 16
+SHOOT, D, 1454, 1457, 11
+SHOOT, D, 1458, 1461, 6
+SHOOT, D, 1459, 1462, 18
+SHOOT, D, 1460, 1463, 13
+SHOOT, A, 1408, 1405, 0
+SHOOT, A, 1414, 1411, 2
+SHOOT, A, 1420, 1417, 4
+SHOOT, A, 1421, 1418, 0
+SHOOT, A, 1426, 1423, 6
+SHOOT, A, 1427, 1424, 1
+SHOOT, A, 1432, 1429, 8
+SHOOT, A, 1433, 1430, 3
+SHOOT, A, 1438, 1435, 10
+SHOOT, A, 1439, 1436, 5
+SHOOT, A, 1444, 1441, 12
+SHOOT, A, 1445, 1442, 7
+SHOOT, A, 1449, 1446, 0
+SHOOT, A, 1450, 1447, 14
+SHOOT, A, 1451, 1448, 9
+SHOOT, A, 1455, 1452, 2
+SHOOT, A, 1456, 1453, 16
+SHOOT, A, 1457, 1454, 11
+SHOOT, A, 1461, 1458, 6
+SHOOT, A, 1462, 1459, 18
+SHOOT, A, 1463, 1460, 13
+DEAD, A, 1405
+DEAD, A, 1418
+DEAD, A, 1446
+DEAD, D, 1408
+DEAD, D, 1421
+DEAD, D, 1449
+SPAWN, A, 1464, 1, 63, 40
+SPAWN, A, 1465, 2, 63, 41
+SPAWN, A, 1466, 3, 63, 42
+SPAWN, D, 1467, 1, 63, 40
+SPAWN, D, 1468, 2, 63, 41
+SPAWN, D, 1469, 3, 63, 42
+TURN, 245
+PRINT, TURN 245 LOGS:To be spawned at Position(63,43)
+PRINT, To be spawned at Position(63,44)
+PRINT, To be spawned at Position(63,45)
+PRINT, Type 1 at Position (63,43)
+PRINT, Type 2 at Position (63,44)
+PRINT, Type 3 at Position (63,45)
+PRINT, 
+SHOOT, D, 1411, 1414, 0
+SHOOT, D, 1417, 1420, 2
+SHOOT, D, 1423, 1426, 4
+SHOOT, D, 1424, 1427, 0
+SHOOT, D, 1429, 1432, 6
+SHOOT, D, 1430, 1433, 1
+SHOOT, D, 1435, 1438, 8
+SHOOT, D, 1436, 1439, 3
+SHOOT, D, 1441, 1444, 10
+SHOOT, D, 1442, 1445, 5
+SHOOT, D, 1447, 1450, 12
+SHOOT, D, 1448, 1451, 7
+SHOOT, D, 1452, 1455, 0
+SHOOT, D, 1453, 1456, 14
+SHOOT, D, 1454, 1457, 9
+SHOOT, D, 1458, 1461, 2
+SHOOT, D, 1459, 1462, 16
+SHOOT, D, 1460, 1463, 11
+SHOOT, D, 1464, 1467, 6
+SHOOT, D, 1465, 1468, 18
+SHOOT, D, 1466, 1469, 13
+SHOOT, A, 1414, 1411, 0
+SHOOT, A, 1420, 1417, 2
+SHOOT, A, 1426, 1423, 4
+SHOOT, A, 1427, 1424, 0
+SHOOT, A, 1432, 1429, 6
+SHOOT, A, 1433, 1430, 1
+SHOOT, A, 1438, 1435, 8
+SHOOT, A, 1439, 1436, 3
+SHOOT, A, 1444, 1441, 10
+SHOOT, A, 1445, 1442, 5
+SHOOT, A, 1450, 1447, 12
+SHOOT, A, 1451, 1448, 7
+SHOOT, A, 1455, 1452, 0
+SHOOT, A, 1456, 1453, 14
+SHOOT, A, 1457, 1454, 9
+SHOOT, A, 1461, 1458, 2
+SHOOT, A, 1462, 1459, 16
+SHOOT, A, 1463, 1460, 11
+SHOOT, A, 1467, 1464, 6
+SHOOT, A, 1468, 1465, 18
+SHOOT, A, 1469, 1466, 13
+DEAD, A, 1411
+DEAD, A, 1424
+DEAD, A, 1452
+DEAD, D, 1414
+DEAD, D, 1427
+DEAD, D, 1455
+SPAWN, A, 1470, 1, 63, 43
+SPAWN, A, 1471, 2, 63, 44
+SPAWN, A, 1472, 3, 63, 45
+SPAWN, D, 1473, 1, 63, 43
+SPAWN, D, 1474, 2, 63, 44
+SPAWN, D, 1475, 3, 63, 45
+TURN, 246
+PRINT, TURN 246 LOGS:To be spawned at Position(63,46)
+PRINT, To be spawned at Position(63,47)
+PRINT, To be spawned at Position(63,48)
+PRINT, Type 1 at Position (63,46)
+PRINT, Type 2 at Position (63,47)
+PRINT, Type 3 at Position (63,48)
+PRINT, 
+SHOOT, D, 1417, 1420, 0
+SHOOT, D, 1423, 1426, 2
+SHOOT, D, 1429, 1432, 4
+SHOOT, D, 1430, 1433, 0
+SHOOT, D, 1435, 1438, 6
+SHOOT, D, 1436, 1439, 1
+SHOOT, D, 1441, 1444, 8
+SHOOT, D, 1442, 1445, 3
+SHOOT, D, 1447, 1450, 10
+SHOOT, D, 1448, 1451, 5
+SHOOT, D, 1453, 1456, 12
+SHOOT, D, 1454, 1457, 7
+SHOOT, D, 1458, 1461, 0
+SHOOT, D, 1459, 1462, 14
+SHOOT, D, 1460, 1463, 9
+SHOOT, D, 1464, 1467, 2
+SHOOT, D, 1465, 1468, 16
+SHOOT, D, 1466, 1469, 11
+SHOOT, D, 1470, 1473, 6
+SHOOT, D, 1471, 1474, 18
+SHOOT, D, 1472, 1475, 13
+SHOOT, A, 1420, 1417, 0
+SHOOT, A, 1426, 1423, 2
+SHOOT, A, 1432, 1429, 4
+SHOOT, A, 1433, 1430, 0
+SHOOT, A, 1438, 1435, 6
+SHOOT, A, 1439, 1436, 1
+SHOOT, A, 1444, 1441, 8
+SHOOT, A, 1445, 1442, 3
+SHOOT, A, 1450, 1447, 10
+SHOOT, A, 1451, 1448, 5
+SHOOT, A, 1456, 1453, 12
+SHOOT, A, 1457, 1454, 7
+SHOOT, A, 1461, 1458, 0
+SHOOT, A, 1462, 1459, 14
+SHOOT, A, 1463, 1460, 9
+SHOOT, A, 1467, 1464, 2
+SHOOT, A, 1468, 1465, 16
+SHOOT, A, 1469, 1466, 11
+SHOOT, A, 1473, 1470, 6
+SHOOT, A, 1474, 1471, 18
+SHOOT, A, 1475, 1472, 13
+DEAD, A, 1417
+DEAD, A, 1430
+DEAD, A, 1458
+DEAD, D, 1420
+DEAD, D, 1433
+DEAD, D, 1461
+SPAWN, A, 1476, 1, 63, 46
+SPAWN, A, 1477, 2, 63, 47
+SPAWN, A, 1478, 3, 63, 48
+SPAWN, D, 1479, 1, 63, 46
+SPAWN, D, 1480, 2, 63, 47
+SPAWN, D, 1481, 3, 63, 48
+TURN, 247
+PRINT, TURN 247 LOGS:To be spawned at Position(63,49)
+PRINT, To be spawned at Position(63,50)
+PRINT, To be spawned at Position(63,51)
+PRINT, Type 1 at Position (63,49)
+PRINT, Type 2 at Position (63,50)
+PRINT, Type 3 at Position (63,51)
+PRINT, 
+SHOOT, D, 1423, 1426, 0
+SHOOT, D, 1429, 1432, 2
+SHOOT, D, 1435, 1438, 4
+SHOOT, D, 1436, 1439, 0
+SHOOT, D, 1441, 1444, 6
+SHOOT, D, 1442, 1445, 1
+SHOOT, D, 1447, 1450, 8
+SHOOT, D, 1448, 1451, 3
+SHOOT, D, 1453, 1456, 10
+SHOOT, D, 1454, 1457, 5
+SHOOT, D, 1459, 1462, 12
+SHOOT, D, 1460, 1463, 7
+SHOOT, D, 1464, 1467, 0
+SHOOT, D, 1465, 1468, 14
+SHOOT, D, 1466, 1469, 9
+SHOOT, D, 1470, 1473, 2
+SHOOT, D, 1471, 1474, 16
+SHOOT, D, 1472, 1475, 11
+SHOOT, D, 1476, 1479, 6
+SHOOT, D, 1477, 1480, 18
+SHOOT, D, 1478, 1481, 13
+SHOOT, A, 1426, 1423, 0
+SHOOT, A, 1432, 1429, 2
+SHOOT, A, 1438, 1435, 4
+SHOOT, A, 1439, 1436, 0
+SHOOT, A, 1444, 1441, 6
+SHOOT, A, 1445, 1442, 1
+SHOOT, A, 1450, 1447, 8
+SHOOT, A, 1451, 1448, 3
+SHOOT, A, 1456, 1453, 10
+SHOOT, A, 1457, 1454, 5
+SHOOT, A, 1462, 1459, 12
+SHOOT, A, 1463, 1460, 7
+SHOOT, A, 1467, 1464, 0
+SHOOT, A, 1468, 1465, 14
+SHOOT, A, 1469, 1466, 9
+SHOOT, A, 1473, 1470, 2
+SHOOT, A, 1474, 1471, 16
+SHOOT, A, 1475, 1472, 11
+SHOOT, A, 1479, 1476, 6
+SHOOT, A, 1480, 1477, 18
+SHOOT, A, 1481, 1478, 13
+DEAD, A, 1423
+DEAD, A, 1436
+DEAD, A, 1464
+DEAD, D, 1426
+DEAD, D, 1439
+DEAD, D, 1467
+SPAWN, A, 1482, 1, 63, 49
+SPAWN, A, 1483, 2, 63, 50
+SPAWN, A, 1484, 3, 63, 51
+SPAWN, D, 1485, 1, 63, 49
+SPAWN, D, 1486, 2, 63, 50
+SPAWN, D, 1487, 3, 63, 51
+TURN, 248
+PRINT, TURN 248 LOGS:To be spawned at Position(63,52)
+PRINT, To be spawned at Position(63,53)
+PRINT, To be spawned at Position(63,54)
+PRINT, Type 1 at Position (63,52)
+PRINT, Type 2 at Position (63,53)
+PRINT, Type 3 at Position (63,54)
+PRINT, 
+SHOOT, D, 1429, 1432, 0
+SHOOT, D, 1435, 1438, 2
+SHOOT, D, 1441, 1444, 4
+SHOOT, D, 1442, 1445, 0
+SHOOT, D, 1447, 1450, 6
+SHOOT, D, 1448, 1451, 1
+SHOOT, D, 1453, 1456, 8
+SHOOT, D, 1454, 1457, 3
+SHOOT, D, 1459, 1462, 10
+SHOOT, D, 1460, 1463, 5
+SHOOT, D, 1465, 1468, 12
+SHOOT, D, 1466, 1469, 7
+SHOOT, D, 1470, 1473, 0
+SHOOT, D, 1471, 1474, 14
+SHOOT, D, 1472, 1475, 9
+SHOOT, D, 1476, 1479, 2
+SHOOT, D, 1477, 1480, 16
+SHOOT, D, 1478, 1481, 11
+SHOOT, D, 1482, 1485, 6
+SHOOT, D, 1483, 1486, 18
+SHOOT, D, 1484, 1487, 13
+SHOOT, A, 1432, 1429, 0
+SHOOT, A, 1438, 1435, 2
+SHOOT, A, 1444, 1441, 4
+SHOOT, A, 1445, 1442, 0
+SHOOT, A, 1450, 1447, 6
+SHOOT, A, 1451, 1448, 1
+SHOOT, A, 1456, 1453, 8
+SHOOT, A, 1457, 1454, 3
+SHOOT, A, 1462, 1459, 10
+SHOOT, A, 1463, 1460, 5
+SHOOT, A, 1468, 1465, 12
+SHOOT, A, 1469, 1466, 7
+SHOOT, A, 1473, 1470, 0
+SHOOT, A, 1474, 1471, 14
+SHOOT, A, 1475, 1472, 9
+SHOOT, A, 1479, 1476, 2
+SHOOT, A, 1480, 1477, 16
+SHOOT, A, 1481, 1478, 11
+SHOOT, A, 1485, 1482, 6
+SHOOT, A, 1486, 1483, 18
+SHOOT, A, 1487, 1484, 13
+DEAD, A, 1429
+DEAD, A, 1442
+DEAD, A, 1470
+DEAD, D, 1432
+DEAD, D, 1445
+DEAD, D, 1473
+SPAWN, A, 1488, 1, 63, 52
+SPAWN, A, 1489, 2, 63, 53
+SPAWN, A, 1490, 3, 63, 54
+SPAWN, D, 1491, 1, 63, 52
+SPAWN, D, 1492, 2, 63, 53
+SPAWN, D, 1493, 3, 63, 54
+TURN, 249
+PRINT, TURN 249 LOGS:To be spawned at Position(63,55)
+PRINT, To be spawned at Position(63,56)
+PRINT, To be spawned at Position(63,57)
+PRINT, Type 1 at Position (63,55)
+PRINT, Type 2 at Position (63,56)
+PRINT, Type 3 at Position (63,57)
+PRINT, 
+SHOOT, D, 1435, 1438, 0
+SHOOT, D, 1441, 1444, 2
+SHOOT, D, 1447, 1450, 4
+SHOOT, D, 1448, 1451, 0
+SHOOT, D, 1453, 1456, 6
+SHOOT, D, 1454, 1457, 1
+SHOOT, D, 1459, 1462, 8
+SHOOT, D, 1460, 1463, 3
+SHOOT, D, 1465, 1468, 10
+SHOOT, D, 1466, 1469, 5
+SHOOT, D, 1471, 1474, 12
+SHOOT, D, 1472, 1475, 7
+SHOOT, D, 1476, 1479, 0
+SHOOT, D, 1477, 1480, 14
+SHOOT, D, 1478, 1481, 9
+SHOOT, D, 1482, 1485, 2
+SHOOT, D, 1483, 1486, 16
+SHOOT, D, 1484, 1487, 11
+SHOOT, D, 1488, 1491, 6
+SHOOT, D, 1489, 1492, 18
+SHOOT, D, 1490, 1493, 13
+SHOOT, A, 1438, 1435, 0
+SHOOT, A, 1444, 1441, 2
+SHOOT, A, 1450, 1447, 4
+SHOOT, A, 1451, 1448, 0
+SHOOT, A, 1456, 1453, 6
+SHOOT, A, 1457, 1454, 1
+SHOOT, A, 1462, 1459, 8
+SHOOT, A, 1463, 1460, 3
+SHOOT, A, 1468, 1465, 10
+SHOOT, A, 1469, 1466, 5
+SHOOT, A, 1474, 1471, 12
+SHOOT, A, 1475, 1472, 7
+SHOOT, A, 1479, 1476, 0
+SHOOT, A, 1480, 1477, 14
+SHOOT, A, 1481, 1478, 9
+SHOOT, A, 1485, 1482, 2
+SHOOT, A, 1486, 1483, 16
+SHOOT, A, 1487, 1484, 11
+SHOOT, A, 1491, 1488, 6
+SHOOT, A, 1492, 1489, 18
+SHOOT, A, 1493, 1490, 13
+DEAD, A, 1435
+DEAD, A, 1448
+DEAD, A, 1476
+DEAD, D, 1438
+DEAD, D, 1451
+DEAD, D, 1479
+SPAWN, A, 1494, 1, 63, 55
+SPAWN, A, 1495, 2, 63, 56
+SPAWN, A, 1496, 3, 63, 57
+SPAWN, D, 1497, 1, 63, 55
+SPAWN, D, 1498, 2, 63, 56
+SPAWN, D, 1499, 3, 63, 57
+TURN, 250
+PRINT, TURN 250 LOGS:To be spawned at Position(63,58)
+PRINT, To be spawned at Position(63,59)
+PRINT, To be spawned at Position(63,60)
+PRINT, Type 1 at Position (63,58)
+PRINT, Type 2 at Position (63,59)
+PRINT, Type 3 at Position (63,60)
+PRINT, 
+SHOOT, D, 1441, 1444, 0
+SHOOT, D, 1447, 1450, 2
+SHOOT, D, 1453, 1456, 4
+SHOOT, D, 1454, 1457, 0
+SHOOT, D, 1459, 1462, 6
+SHOOT, D, 1460, 1463, 1
+SHOOT, D, 1465, 1468, 8
+SHOOT, D, 1466, 1469, 3
+SHOOT, D, 1471, 1474, 10
+SHOOT, D, 1472, 1475, 5
+SHOOT, D, 1477, 1480, 12
+SHOOT, D, 1478, 1481, 7
+SHOOT, D, 1482, 1485, 0
+SHOOT, D, 1483, 1486, 14
+SHOOT, D, 1484, 1487, 9
+SHOOT, D, 1488, 1491, 2
+SHOOT, D, 1489, 1492, 16
+SHOOT, D, 1490, 1493, 11
+SHOOT, D, 1494, 1497, 6
+SHOOT, D, 1495, 1498, 18
+SHOOT, D, 1496, 1499, 13
+SHOOT, A, 1444, 1441, 0
+SHOOT, A, 1450, 1447, 2
+SHOOT, A, 1456, 1453, 4
+SHOOT, A, 1457, 1454, 0
+SHOOT, A, 1462, 1459, 6
+SHOOT, A, 1463, 1460, 1
+SHOOT, A, 1468, 1465, 8
+SHOOT, A, 1469, 1466, 3
+SHOOT, A, 1474, 1471, 10
+SHOOT, A, 1475, 1472, 5
+SHOOT, A, 1480, 1477, 12
+SHOOT, A, 1481, 1478, 7
+SHOOT, A, 1485, 1482, 0
+SHOOT, A, 1486, 1483, 14
+SHOOT, A, 1487, 1484, 9
+SHOOT, A, 1491, 1488, 2
+SHOOT, A, 1492, 1489, 16
+SHOOT, A, 1493, 1490, 11
+SHOOT, A, 1497, 1494, 6
+SHOOT, A, 1498, 1495, 18
+SHOOT, A, 1499, 1496, 13
+DEAD, A, 1441
+DEAD, A, 1454
+DEAD, A, 1482
+DEAD, D, 1444
+DEAD, D, 1457
+DEAD, D, 1485
+SPAWN, A, 1500, 1, 63, 58
+SPAWN, A, 1501, 2, 63, 59
+SPAWN, A, 1502, 3, 63, 60
+SPAWN, D, 1503, 1, 63, 58
+SPAWN, D, 1504, 2, 63, 59
+SPAWN, D, 1505, 3, 63, 60
+TURN, 251
+PRINT, TURN 251 LOGS:To be spawned at Position(63,61)
+PRINT, To be spawned at Position(63,62)
+PRINT, To be spawned at Position(63,63)
+PRINT, Type 1 at Position (63,61)
+PRINT, Type 2 at Position (63,62)
+PRINT, Type 3 at Position (63,63)
+PRINT, 
+SHOOT, D, 1447, 1450, 0
+SHOOT, D, 1453, 1456, 2
+SHOOT, D, 1459, 1462, 4
+SHOOT, D, 1460, 1463, 0
+SHOOT, D, 1465, 1468, 6
+SHOOT, D, 1466, 1469, 1
+SHOOT, D, 1471, 1474, 8
+SHOOT, D, 1472, 1475, 3
+SHOOT, D, 1477, 1480, 10
+SHOOT, D, 1478, 1481, 5
+SHOOT, D, 1483, 1486, 12
+SHOOT, D, 1484, 1487, 7
+SHOOT, D, 1488, 1491, 0
+SHOOT, D, 1489, 1492, 14
+SHOOT, D, 1490, 1493, 9
+SHOOT, D, 1494, 1497, 2
+SHOOT, D, 1495, 1498, 16
+SHOOT, D, 1496, 1499, 11
+SHOOT, D, 1500, 1503, 6
+SHOOT, D, 1501, 1504, 18
+SHOOT, D, 1502, 1505, 13
+SHOOT, A, 1450, 1447, 0
+SHOOT, A, 1456, 1453, 2
+SHOOT, A, 1462, 1459, 4
+SHOOT, A, 1463, 1460, 0
+SHOOT, A, 1468, 1465, 6
+SHOOT, A, 1469, 1466, 1
+SHOOT, A, 1474, 1471, 8
+SHOOT, A, 1475, 1472, 3
+SHOOT, A, 1480, 1477, 10
+SHOOT, A, 1481, 1478, 5
+SHOOT, A, 1486, 1483, 12
+SHOOT, A, 1487, 1484, 7
+SHOOT, A, 1491, 1488, 0
+SHOOT, A, 1492, 1489, 14
+SHOOT, A, 1493, 1490, 9
+SHOOT, A, 1497, 1494, 2
+SHOOT, A, 1498, 1495, 16
+SHOOT, A, 1499, 1496, 11
+SHOOT, A, 1503, 1500, 6
+SHOOT, A, 1504, 1501, 18
+SHOOT, A, 1505, 1502, 13
+DEAD, A, 1447
+DEAD, A, 1460
+DEAD, A, 1488
+DEAD, D, 1450
+DEAD, D, 1463
+DEAD, D, 1491
+SPAWN, A, 1506, 1, 63, 61
+SPAWN, A, 1507, 2, 63, 62
+SPAWN, A, 1508, 3, 63, 63
+SPAWN, D, 1509, 1, 63, 61
+SPAWN, D, 1510, 2, 63, 62
+SPAWN, D, 1511, 3, 63, 63
+TURN, 252
+PRINT, TURN 252 LOGS:To be spawned at Position(0,0)
+PRINT, To be spawned at Position(0,1)
+PRINT, To be spawned at Position(0,2)
+PRINT, Type 1 at Position (0,0)
+PRINT, Type 2 at Position (0,1)
+PRINT, Type 3 at Position (0,2)
+PRINT, 
+SHOOT, D, 1453, 1456, 0
+SHOOT, D, 1459, 1462, 2
+SHOOT, D, 1465, 1468, 4
+SHOOT, D, 1466, 1469, 0
+SHOOT, D, 1471, 1474, 6
+SHOOT, D, 1472, 1475, 1
+SHOOT, D, 1477, 1480, 8
+SHOOT, D, 1478, 1481, 3
+SHOOT, D, 1483, 1486, 10
+SHOOT, D, 1484, 1487, 5
+SHOOT, D, 1489, 1492, 12
+SHOOT, D, 1490, 1493, 7
+SHOOT, D, 1494, 1497, 0
+SHOOT, D, 1495, 1498, 14
+SHOOT, D, 1496, 1499, 9
+SHOOT, D, 1500, 1503, 2
+SHOOT, D, 1501, 1504, 16
+SHOOT, D, 1502, 1505, 11
+SHOOT, D, 1506, 1509, 6
+SHOOT, D, 1507, 1510, 18
+SHOOT, D, 1508, 1511, 13
+SHOOT, A, 1456, 1453, 0
+SHOOT, A, 1462, 1459, 2
+SHOOT, A, 1468, 1465, 4
+SHOOT, A, 1469, 1466, 0
+SHOOT, A, 1474, 1471, 6
+SHOOT, A, 1475, 1472, 1
+SHOOT, A, 1480, 1477, 8
+SHOOT, A, 1481, 1478, 3
+SHOOT, A, 1486, 1483, 10
+SHOOT, A, 1487, 1484, 5
+SHOOT, A, 1492, 1489, 12
+SHOOT, A, 1493, 1490, 7
+SHOOT, A, 1497, 1494, 0
+SHOOT, A, 1498, 1495, 14
+SHOOT, A, 1499, 1496, 9
+SHOOT, A, 1503, 1500, 2
+SHOOT, A, 1504, 1501, 16
+SHOOT, A, 1505, 1502, 11
+SHOOT, A, 1509, 1506, 6
+SHOOT, A, 1510, 1507, 18
+SHOOT, A, 1511, 1508, 13
+DEAD, A, 1453
+DEAD, A, 1466
+DEAD, A, 1494
+DEAD, D, 1456
+DEAD, D, 1469
+DEAD, D, 1497
+SPAWN, A, 1512, 1, 0, 0
+SPAWN, A, 1513, 2, 0, 1
+SPAWN, A, 1514, 3, 0, 2
+SPAWN, D, 1515, 1, 0, 0
+SPAWN, D, 1516, 2, 0, 1
+SPAWN, D, 1517, 3, 0, 2
+TURN, 253
+PRINT, TURN 253 LOGS:To be spawned at Position(0,3)
+PRINT, To be spawned at Position(0,4)
+PRINT, To be spawned at Position(0,5)
+PRINT, Type 1 at Position (0,3)
+PRINT, Type 2 at Position (0,4)
+PRINT, Type 3 at Position (0,5)
+PRINT, 
+SHOOT, D, 1459, 1462, 0
+SHOOT, D, 1465, 1468, 2
+SHOOT, D, 1471, 1474, 4
+SHOOT, D, 1472, 1475, 0
+SHOOT, D, 1477, 1480, 6
+SHOOT, D, 1478, 1481, 1
+SHOOT, D, 1483, 1486, 8
+SHOOT, D, 1484, 1487, 3
+SHOOT, D, 1489, 1492, 10
+SHOOT, D, 1490, 1493, 5
+SHOOT, D, 1495, 1498, 12
+SHOOT, D, 1496, 1499, 7
+SHOOT, D, 1500, 1503, 0
+SHOOT, D, 1501, 1504, 14
+SHOOT, D, 1502, 1505, 9
+SHOOT, D, 1506, 1509, 2
+SHOOT, D, 1507, 1510, 16
+SHOOT, D, 1508, 1511, 11
+SHOOT, D, 1512, 1515, 6
+SHOOT, D, 1513, 1516, 18
+SHOOT, D, 1514, 1517, 13
+SHOOT, A, 1462, 1459, 0
+SHOOT, A, 1468, 1465, 2
+SHOOT, A, 1474, 1471, 4
+SHOOT, A, 1475, 1472, 0
+SHOOT, A, 1480, 1477, 6
+SHOOT, A, 1481, 1478, 1
+SHOOT, A, 1486, 1483, 8
+SHOOT, A, 1487, 1484, 3
+SHOOT, A, 1492, 1489, 10
+SHOOT, A, 1493, 1490, 5
+SHOOT, A, 1498, 1495, 12
+SHOOT, A, 1499, 1496, 7
+SHOOT, A, 1503, 1500, 0
+SHOOT, A, 1504, 1501, 14
+SHOOT, A, 1505, 1502, 9
+SHOOT, A, 1509, 1506, 2
+SHOOT, A, 1510, 1507, 16
+SHOOT, A, 1511, 1508, 11
+SHOOT, A, 1515, 1512, 6
+SHOOT, A, 1516, 1513, 18
+SHOOT, A, 1517, 1514, 13
+DEAD, A, 1459
+DEAD, A, 1472
+DEAD, A, 1500
+DEAD, D, 1462
+DEAD, D, 1475
+DEAD, D, 1503
+SPAWN, A, 1518, 1, 0, 3
+SPAWN, A, 1519, 2, 0, 4
+SPAWN, A, 1520, 3, 0, 5
+SPAWN, D, 1521, 1, 0, 3
+SPAWN, D, 1522, 2, 0, 4
+SPAWN, D, 1523, 3, 0, 5
+TURN, 254
+PRINT, TURN 254 LOGS:To be spawned at Position(0,6)
+PRINT, To be spawned at Position(0,7)
+PRINT, To be spawned at Position(0,8)
+PRINT, Type 1 at Position (0,6)
+PRINT, Type 2 at Position (0,7)
+PRINT, Type 3 at Position (0,8)
+PRINT, 
+SHOOT, D, 1465, 1468, 0
+SHOOT, D, 1471, 1474, 2
+SHOOT, D, 1477, 1480, 4
+SHOOT, D, 1478, 1481, 0
+SHOOT, D, 1483, 1486, 6
+SHOOT, D, 1484, 1487, 1
+SHOOT, D, 1489, 1492, 8
+SHOOT, D, 1490, 1493, 3
+SHOOT, D, 1495, 1498, 10
+SHOOT, D, 1496, 1499, 5
+SHOOT, D, 1501, 1504, 12
+SHOOT, D, 1502, 1505, 7
+SHOOT, D, 1506, 1509, 0
+SHOOT, D, 1507, 1510, 14
+SHOOT, D, 1508, 1511, 9
+SHOOT, D, 1512, 1515, 2
+SHOOT, D, 1513, 1516, 16
+SHOOT, D, 1514, 1517, 11
+SHOOT, D, 1518, 1521, 6
+SHOOT, D, 1519, 1522, 18
+SHOOT, D, 1520, 1523, 13
+SHOOT, A, 1468, 1465, 0
+SHOOT, A, 1474, 1471, 2
+SHOOT, A, 1480, 1477, 4
+SHOOT, A, 1481, 1478, 0
+SHOOT, A, 1486, 1483, 6
+SHOOT, A, 1487, 1484, 1
+SHOOT, A, 1492, 1489, 8
+SHOOT, A, 1493, 1490, 3
+SHOOT, A, 1498, 1495, 10
+SHOOT, A, 1499, 1496, 5
+SHOOT, A, 1504, 1501, 12
+SHOOT, A, 1505, 1502, 7
+SHOOT, A, 1509, 1506, 0
+SHOOT, A, 1510, 1507, 14
+SHOOT, A, 1511, 1508, 9
+SHOOT, A, 1515, 1512, 2
+SHOOT, A, 1516, 1513, 16
+SHOOT, A, 1517, 1514, 11
+SHOOT, A, 1521, 1518, 6
+SHOOT, A, 1522, 1519, 18
+SHOOT, A, 1523, 1520, 13
+DEAD, A, 1465
+DEAD, A, 1478
+DEAD, A, 1506
+DEAD, D, 1468
+DEAD, D, 1481
+DEAD, D, 1509
+SPAWN, A, 1524, 1, 0, 6
+SPAWN, A, 1525, 2, 0, 7
+SPAWN, A, 1526, 3, 0, 8
+SPAWN, D, 1527, 1, 0, 6
+SPAWN, D, 1528, 2, 0, 7
+SPAWN, D, 1529, 3, 0, 8
+TURN, 255
+PRINT, TURN 255 LOGS:To be spawned at Position(0,9)
+PRINT, To be spawned at Position(0,10)
+PRINT, To be spawned at Position(0,11)
+PRINT, Type 1 at Position (0,9)
+PRINT, Type 2 at Position (0,10)
+PRINT, Type 3 at Position (0,11)
+PRINT, 
+SHOOT, D, 1471, 1474, 0
+SHOOT, D, 1477, 1480, 2
+SHOOT, D, 1483, 1486, 4
+SHOOT, D, 1484, 1487, 0
+SHOOT, D, 1489, 1492, 6
+SHOOT, D, 1490, 1493, 1
+SHOOT, D, 1495, 1498, 8
+SHOOT, D, 1496, 1499, 3
+SHOOT, D, 1501, 1504, 10
+SHOOT, D, 1502, 1505, 5
+SHOOT, D, 1507, 1510, 12
+SHOOT, D, 1508, 1511, 7
+SHOOT, D, 1512, 1515, 0
+SHOOT, D, 1513, 1516, 14
+SHOOT, D, 1514, 1517, 9
+SHOOT, D, 1518, 1521, 2
+SHOOT, D, 1519, 1522, 16
+SHOOT, D, 1520, 1523, 11
+SHOOT, D, 1524, 1527, 6
+SHOOT, D, 1525, 1528, 18
+SHOOT, D, 1526, 1529, 13
+SHOOT, A, 1474, 1471, 0
+SHOOT, A, 1480, 1477, 2
+SHOOT, A, 1486, 1483, 4
+SHOOT, A, 1487, 1484, 0
+SHOOT, A, 1492, 1489, 6
+SHOOT, A, 1493, 1490, 1
+SHOOT, A, 1498, 1495, 8
+SHOOT, A, 1499, 1496, 3
+SHOOT, A, 1504, 1501, 10
+SHOOT, A, 1505, 1502, 5
+SHOOT, A, 1510, 1507, 12
+SHOOT, A, 1511, 1508, 7
+SHOOT, A, 1515, 1512, 0
+SHOOT, A, 1516, 1513, 14
+SHOOT, A, 1517, 1514, 9
+SHOOT, A, 1521, 1518, 2
+SHOOT, A, 1522, 1519, 16
+SHOOT, A, 1523, 1520, 11
+SHOOT, A, 1527, 1524, 6
+SHOOT, A, 1528, 1525, 18
+SHOOT, A, 1529, 1526, 13
+DEAD, A, 1471
+DEAD, A, 1484
+DEAD, A, 1512
+DEAD, D, 1474
+DEAD, D, 1487
+DEAD, D, 1515
+SPAWN, A, 1530, 1, 0, 9
+SPAWN, A, 1531, 2, 0, 10
+SPAWN, A, 1532, 3, 0, 11
+SPAWN, D, 1533, 1, 0, 9
+SPAWN, D, 1534, 2, 0, 10
+SPAWN, D, 1535, 3, 0, 11
+TURN, 256
+PRINT, TURN 256 LOGS:To be spawned at Position(0,12)
+PRINT, To be spawned at Position(0,13)
+PRINT, To be spawned at Position(0,14)
+PRINT, Type 1 at Position (0,12)
+PRINT, Type 2 at Position (0,13)
+PRINT, Type 3 at Position (0,14)
+PRINT, 
+SHOOT, D, 1477, 1480, 0
+SHOOT, D, 1483, 1486, 2
+SHOOT, D, 1489, 1492, 4
+SHOOT, D, 1490, 1493, 0
+SHOOT, D, 1495, 1498, 6
+SHOOT, D, 1496, 1499, 1
+SHOOT, D, 1501, 1504, 8
+SHOOT, D, 1502, 1505, 3
+SHOOT, D, 1507, 1510, 10
+SHOOT, D, 1508, 1511, 5
+SHOOT, D, 1513, 1516, 12
+SHOOT, D, 1514, 1517, 7
+SHOOT, D, 1518, 1521, 0
+SHOOT, D, 1519, 1522, 14
+SHOOT, D, 1520, 1523, 9
+SHOOT, D, 1524, 1527, 2
+SHOOT, D, 1525, 1528, 16
+SHOOT, D, 1526, 1529, 11
+SHOOT, D, 1530, 1533, 6
+SHOOT, D, 1531, 1534, 18
+SHOOT, D, 1532, 1535, 13
+SHOOT, A, 1480, 1477, 0
+SHOOT, A, 1486, 1483, 2
+SHOOT, A, 1492, 1489, 4
+SHOOT, A, 1493, 1490, 0
+SHOOT, A, 1498, 1495, 6
+SHOOT, A, 1499, 1496, 1
+SHOOT, A, 1504, 1501, 8
+SHOOT, A, 1505, 1502, 3
+SHOOT, A, 1510, 1507, 10
+SHOOT, A, 1511, 1508, 5
+SHOOT, A, 1516, 1513, 12
+SHOOT, A, 1517, 1514, 7
+SHOOT, A, 1521, 1518, 0
+SHOOT, A, 1522, 1519, 14
+SHOOT, A, 1523, 1520, 9
+SHOOT, A, 1527, 1524, 2
+SHOOT, A, 1528, 1525, 16
+SHOOT, A, 1529, 1526, 11
+SHOOT, A, 1533, 1530, 6
+SHOOT, A, 1534, 1531, 18
+SHOOT, A, 1535, 1532, 13
+DEAD, A, 1477
+DEAD, A, 1490
+DEAD, A, 1518
+DEAD, D, 1480
+DEAD, D, 1493
+DEAD, D, 1521
+SPAWN, A, 1536, 1, 0, 12
+SPAWN, A, 1537, 2, 0, 13
+SPAWN, A, 1538, 3, 0, 14
+SPAWN, D, 1539, 1, 0, 12
+SPAWN, D, 1540, 2, 0, 13
+SPAWN, D, 1541, 3, 0, 14
+TURN, 257
+PRINT, TURN 257 LOGS:To be spawned at Position(0,15)
+PRINT, To be spawned at Position(0,16)
+PRINT, To be spawned at Position(0,17)
+PRINT, Type 1 at Position (0,15)
+PRINT, Type 2 at Position (0,16)
+PRINT, Type 3 at Position (0,17)
+PRINT, 
+SHOOT, D, 1483, 1486, 0
+SHOOT, D, 1489, 1492, 2
+SHOOT, D, 1495, 1498, 4
+SHOOT, D, 1496, 1499, 0
+SHOOT, D, 1501, 1504, 6
+SHOOT, D, 1502, 1505, 1
+SHOOT, D, 1507, 1510, 8
+SHOOT, D, 1508, 1511, 3
+SHOOT, D, 1513, 1516, 10
+SHOOT, D, 1514, 1517, 5
+SHOOT, D, 1519, 1522, 12
+SHOOT, D, 1520, 1523, 7
+SHOOT, D, 1524, 1527, 0
+SHOOT, D, 1525, 1528, 14
+SHOOT, D, 1526, 1529, 9
+SHOOT, D, 1530, 1533, 2
+SHOOT, D, 1531, 1534, 16
+SHOOT, D, 1532, 1535, 11
+SHOOT, D, 1536, 1539, 6
+SHOOT, D, 1537, 1540, 18
+SHOOT, D, 1538, 1541, 13
+SHOOT, A, 1486, 1483, 0
+SHOOT, A, 1492, 1489, 2
+SHOOT, A, 1498, 1495, 4
+SHOOT, A, 1499, 1496, 0
+SHOOT, A, 1504, 1501, 6
+SHOOT, A, 1505, 1502, 1
+SHOOT, A, 1510, 1507, 8
+SHOOT, A, 1511, 1508, 3
+SHOOT, A, 1516, 1513, 10
+SHOOT, A, 1517, 1514, 5
+SHOOT, A, 1522, 1519, 12
+SHOOT, A, 1523, 1520, 7
+SHOOT, A, 1527, 1524, 0
+SHOOT, A, 1528, 1525, 14
+SHOOT, A, 1529, 1526, 9
+SHOOT, A, 1533, 1530, 2
+SHOOT, A, 1534, 1531, 16
+SHOOT, A, 1535, 1532, 11
+SHOOT, A, 1539, 1536, 6
+SHOOT, A, 1540, 1537, 18
+SHOOT, A, 1541, 1538, 13
+DEAD, A, 1483
+DEAD, A, 1496
+DEAD, A, 1524
+DEAD, D, 1486
+DEAD, D, 1499
+DEAD, D, 1527
+SPAWN, A, 1542, 1, 0, 15
+SPAWN, A, 1543, 2, 0, 16
+SPAWN, A, 1544, 3, 0, 17
+SPAWN, D, 1545, 1, 0, 15
+SPAWN, D, 1546, 2, 0, 16
+SPAWN, D, 1547, 3, 0, 17
+TURN, 258
+PRINT, TURN 258 LOGS:To be spawned at Position(0,18)
+PRINT, To be spawned at Position(0,19)
+PRINT, To be spawned at Position(0,20)
+PRINT, Type 1 at Position (0,18)
+PRINT, Type 2 at Position (0,19)
+PRINT, Type 3 at Position (0,20)
+PRINT, 
+SHOOT, D, 1489, 1492, 0
+SHOOT, D, 1495, 1498, 2
+SHOOT, D, 1501, 1504, 4
+SHOOT, D, 1502, 1505, 0
+SHOOT, D, 1507, 1510, 6
+SHOOT, D, 1508, 1511, 1
+SHOOT, D, 1513, 1516, 8
+SHOOT, D, 1514, 1517, 3
+SHOOT, D, 1519, 1522, 10
+SHOOT, D, 1520, 1523, 5
+SHOOT, D, 1525, 1528, 12
+SHOOT, D, 1526, 1529, 7
+SHOOT, D, 1530, 1533, 0
+SHOOT, D, 1531, 1534, 14
+SHOOT, D, 1532, 1535, 9
+SHOOT, D, 1536, 1539, 2
+SHOOT, D, 1537, 1540, 16
+SHOOT, D, 1538, 1541, 11
+SHOOT, D, 1542, 1545, 6
+SHOOT, D, 1543, 1546, 18
+SHOOT, D, 1544, 1547, 13
+SHOOT, A, 1492, 1489, 0
+SHOOT, A, 1498, 1495, 2
+SHOOT, A, 1504, 1501, 4
+SHOOT, A, 1505, 1502, 0
+SHOOT, A, 1510, 1507, 6
+SHOOT, A, 1511, 1508, 1
+SHOOT, A, 1516, 1513, 8
+SHOOT, A, 1517, 1514, 3
+SHOOT, A, 1522, 1519, 10
+SHOOT, A, 1523, 1520, 5
+SHOOT, A, 1528, 1525, 12
+SHOOT, A, 1529, 1526, 7
+SHOOT, A, 1533, 1530, 0
+SHOOT, A, 1534, 1531, 14
+SHOOT, A, 1535, 1532, 9
+SHOOT, A, 1539, 1536, 2
+SHOOT, A, 1540, 1537, 16
+SHOOT, A, 1541, 1538, 11
+SHOOT, A, 1545, 1542, 6
+SHOOT, A, 1546, 1543, 18
+SHOOT, A, 1547, 1544, 13
+DEAD, A, 1489
+DEAD, A, 1502
+DEAD, A, 1530
+DEAD, D, 1492
+DEAD, D, 1505
+DEAD, D, 1533
+SPAWN, A, 1548, 1, 0, 18
+SPAWN, A, 1549, 2, 0, 19
+SPAWN, A, 1550, 3, 0, 20
+SPAWN, D, 1551, 1, 0, 18
+SPAWN, D, 1552, 2, 0, 19
+SPAWN, D, 1553, 3, 0, 20
+TURN, 259
+PRINT, TURN 259 LOGS:To be spawned at Position(0,21)
+PRINT, To be spawned at Position(0,22)
+PRINT, To be spawned at Position(0,23)
+PRINT, Type 1 at Position (0,21)
+PRINT, Type 2 at Position (0,22)
+PRINT, Type 3 at Position (0,23)
+PRINT, 
+SHOOT, D, 1495, 1498, 0
+SHOOT, D, 1501, 1504, 2
+SHOOT, D, 1507, 1510, 4
+SHOOT, D, 1508, 1511, 0
+SHOOT, D, 1513, 1516, 6
+SHOOT, D, 1514, 1517, 1
+SHOOT, D, 1519, 1522, 8
+SHOOT, D, 1520, 1523, 3
+SHOOT, D, 1525, 1528, 10
+SHOOT, D, 1526, 1529, 5
+SHOOT, D, 1531, 1534, 12
+SHOOT, D, 1532, 1535, 7
+SHOOT, D, 1536, 1539, 0
+SHOOT, D, 1537, 1540, 14
+SHOOT, D, 1538, 1541, 9
+SHOOT, D, 1542, 1545, 2
+SHOOT, D, 1543, 1546, 16
+SHOOT, D, 1544, 1547, 11
+SHOOT, D, 1548, 1551, 6
+SHOOT, D, 1549, 1552, 18
+SHOOT, D, 1550, 1553, 13
+SHOOT, A, 1498, 1495, 0
+SHOOT, A, 1504, 1501, 2
+SHOOT, A, 1510, 1507, 4
+SHOOT, A, 1511, 1508, 0
+SHOOT, A, 1516, 1513, 6
+SHOOT, A, 1517, 1514, 1
+SHOOT, A, 1522, 1519, 8
+SHOOT, A, 1523, 1520, 3
+SHOOT, A, 1528, 1525, 10
+SHOOT, A, 1529, 1526, 5
+SHOOT, A, 1534, 1531, 12
+SHOOT, A, 1535, 1532, 7
+SHOOT, A, 1539, 1536, 0
+SHOOT, A, 1540, 1537, 14
+SHOOT, A, 1541, 1538, 9
+SHOOT, A, 1545, 1542, 2
+SHOOT, A, 1546, 1543, 16
+SHOOT, A, 1547, 1544, 11
+SHOOT, A, 1551, 1548, 6
+SHOOT, A, 1552, 1549, 18
+SHOOT, A, 1553, 1550, 13
+DEAD, A, 1495
+DEAD, A, 1508
+DEAD, A, 1536
+DEAD, D, 1498
+DEAD, D, 1511
+DEAD, D, 1539
+SPAWN, A, 1554, 1, 0, 21
+SPAWN, A, 1555, 2, 0, 22
+SPAWN, A, 1556, 3, 0, 23
+SPAWN, D, 1557, 1, 0, 21
+SPAWN, D, 1558, 2, 0, 22
+SPAWN, D, 1559, 3, 0, 23
+TURN, 260
+PRINT, TURN 260 LOGS:To be spawned at Position(0,24)
+PRINT, To be spawned at Position(0,25)
+PRINT, To be spawned at Position(0,26)
+PRINT, Type 1 at Position (0,24)
+PRINT, Type 2 at Position (0,25)
+PRINT, Type 3 at Position (0,26)
+PRINT, 
+SHOOT, D, 1501, 1504, 0
+SHOOT, D, 1507, 1510, 2
+SHOOT, D, 1513, 1516, 4
+SHOOT, D, 1514, 1517, 0
+SHOOT, D, 1519, 1522, 6
+SHOOT, D, 1520, 1523, 1
+SHOOT, D, 1525, 1528, 8
+SHOOT, D, 1526, 1529, 3
+SHOOT, D, 1531, 1534, 10
+SHOOT, D, 1532, 1535, 5
+SHOOT, D, 1537, 1540, 12
+SHOOT, D, 1538, 1541, 7
+SHOOT, D, 1542, 1545, 0
+SHOOT, D, 1543, 1546, 14
+SHOOT, D, 1544, 1547, 9
+SHOOT, D, 1548, 1551, 2
+SHOOT, D, 1549, 1552, 16
+SHOOT, D, 1550, 1553, 11
+SHOOT, D, 1554, 1557, 6
+SHOOT, D, 1555, 1558, 18
+SHOOT, D, 1556, 1559, 13
+SHOOT, A, 1504, 1501, 0
+SHOOT, A, 1510, 1507, 2
+SHOOT, A, 1516, 1513, 4
+SHOOT, A, 1517, 1514, 0
+SHOOT, A, 1522, 1519, 6
+SHOOT, A, 1523, 1520, 1
+SHOOT, A, 1528, 1525, 8
+SHOOT, A, 1529, 1526, 3
+SHOOT, A, 1534, 1531, 10
+SHOOT, A, 1535, 1532, 5
+SHOOT, A, 1540, 1537, 12
+SHOOT, A, 1541, 1538, 7
+SHOOT, A, 1545, 1542, 0
+SHOOT, A, 1546, 1543, 14
+SHOOT, A, 1547, 1544, 9
+SHOOT, A, 1551, 1548, 2
+SHOOT, A, 1552, 1549, 16
+SHOOT, A, 1553, 1550, 11
+SHOOT, A, 1557, 1554, 6
+SHOOT, A, 1558, 1555, 18
+SHOOT, A, 1559, 1556, 13
+DEAD, A, 1501
+DEAD, A, 1514
+DEAD, A, 1542
+DEAD, D, 1504
+DEAD, D, 1517
+DEAD, D, 1545
+SPAWN, A, 1560, 1, 0, 24
+SPAWN, A, 1561, 2, 0, 25
+SPAWN, A, 1562, 3, 0, 26
+SPAWN, D, 1563, 1, 0, 24
+SPAWN, D, 1564, 2, 0, 25
+SPAWN, D, 1565, 3, 0, 26
+TURN, 261
+PRINT, TURN 261 LOGS:To be spawned at Position(0,27)
+PRINT, To be spawned at Position(0,28)
+PRINT, To be spawned at Position(0,29)
+PRINT, Type 1 at Position (0,27)
+PRINT, Type 2 at Position (0,28)
+PRINT, Type 3 at Position (0,29)
+PRINT, 
+SHOOT, D, 1507, 1510, 0
+SHOOT, D, 1513, 1516, 2
+SHOOT, D, 1519, 1522, 4
+SHOOT, D, 1520, 1523, 0
+SHOOT, D, 1525, 1528, 6
+SHOOT, D, 1526, 1529, 1
+SHOOT, D, 1531, 1534, 8
+SHOOT, D, 1532, 1535, 3
+SHOOT, D, 1537, 1540, 10
+SHOOT, D, 1538, 1541, 5
+SHOOT, D, 1543, 1546, 12
+SHOOT, D, 1544, 1547, 7
+SHOOT, D, 1548, 1551, 0
+SHOOT, D, 1549, 1552, 14
+SHOOT, D, 1550, 1553, 9
+SHOOT, D, 1554, 1557, 2
+SHOOT, D, 1555, 1558, 16
+SHOOT, D, 1556, 1559, 11
+SHOOT, D, 1560, 1563, 6
+SHOOT, D, 1561, 1564, 18
+SHOOT, D, 1562, 1565, 13
+SHOOT, A, 1510, 1507, 0
+SHOOT, A, 1516, 1513, 2
+SHOOT, A, 1522, 1519, 4
+SHOOT, A, 1523, 1520, 0
+SHOOT, A, 1528, 1525, 6
+SHOOT, A, 1529, 1526, 1
+SHOOT, A, 1534, 1531, 8
+SHOOT, A, 1535, 1532, 3
+SHOOT, A, 1540, 1537, 10
+SHOOT, A, 1541, 1538, 5
+SHOOT, A, 1546, 1543, 12
+SHOOT, A, 1547, 1544, 7
+SHOOT, A, 1551, 1548, 0
+SHOOT, A, 1552, 1549, 14
+SHOOT, A, 1553, 1550, 9
+SHOOT, A, 1557, 1554, 2
+SHOOT, A, 1558, 1555, 16
+SHOOT, A, 1559, 1556, 11
+SHOOT, A, 1563, 1560, 6
+SHOOT, A, 1564, 1561, 18
+SHOOT, A, 1565, 1562, 13
+DEAD, A, 1507
+DEAD, A, 1520
+DEAD, A, 1548
+DEAD, D, 1510
+DEAD, D, 1523
+DEAD, D, 1551
+SPAWN, A, 1566, 1, 0, 27
+SPAWN, A, 1567, 2, 0, 28
+SPAWN, A, 1568, 3, 0, 29
+SPAWN, D, 1569, 1, 0, 27
+SPAWN, D, 1570, 2, 0, 28
+SPAWN, D, 1571, 3, 0, 29
+TURN, 262
+PRINT, TURN 262 LOGS:To be spawned at Position(0,30)
+PRINT, To be spawned at Position(0,31)
+PRINT, To be spawned at Position(0,32)
+PRINT, Type 1 at Position (0,30)
+PRINT, Type 2 at Position (0,31)
+PRINT, Type 3 at Position (0,32)
+PRINT, 
+SHOOT, D, 1513, 1516, 0
+SHOOT, D, 1519, 1522, 2
+SHOOT, D, 1525, 1528, 4
+SHOOT, D, 1526, 1529, 0
+SHOOT, D, 1531, 1534, 6
+SHOOT, D, 1532, 1535, 1
+SHOOT, D, 1537, 1540, 8
+SHOOT, D, 1538, 1541, 3
+SHOOT, D, 1543, 1546, 10
+SHOOT, D, 1544, 1547, 5
+SHOOT, D, 1549, 1552, 12
+SHOOT, D, 1550, 1553, 7
+SHOOT, D, 1554, 1557, 0
+SHOOT, D, 1555, 1558, 14
+SHOOT, D, 1556, 1559, 9
+SHOOT, D, 1560, 1563, 2
+SHOOT, D, 1561, 1564, 16
+SHOOT, D, 1562, 1565, 11
+SHOOT, D, 1566, 1569, 6
+SHOOT, D, 1567, 1570, 18
+SHOOT, D, 1568, 1571, 13
+SHOOT, A, 1516, 1513, 0
+SHOOT, A, 1522, 1519, 2
+SHOOT, A, 1528, 1525, 4
+SHOOT, A, 1529, 1526, 0
+SHOOT, A, 1534, 1531, 6
+SHOOT, A, 1535, 1532, 1
+SHOOT, A, 1540, 1537, 8
+SHOOT, A, 1541, 1538, 3
+SHOOT, A, 1546, 1543, 10
+SHOOT, A, 1547, 1544, 5
+SHOOT, A, 1552, 1549, 12
+SHOOT, A, 1553, 1550, 7
+SHOOT, A, 1557, 1554, 0
+SHOOT, A, 1558, 1555, 14
+SHOOT, A, 1559, 1556, 9
+SHOOT, A, 1563, 1560, 2
+SHOOT, A, 1564, 1561, 16
+SHOOT, A, 1565, 1562, 11
+SHOOT, A, 1569, 1566, 6
+SHOOT, A, 1570, 1567, 18
+SHOOT, A, 1571, 1568, 13
+DEAD, A, 1513
+DEAD, A, 1526
+DEAD, A, 1554
+DEAD, D, 1516
+DEAD, D, 1529
+DEAD, D, 1557
+SPAWN, A, 1572, 1, 0, 30
+SPAWN, A, 1573, 2, 0, 31
+SPAWN, A, 1574, 3, 0, 32
+SPAWN, D, 1575, 1, 0, 30
+SPAWN, D, 1576, 2, 0, 31
+SPAWN, D, 1577, 3, 0, 32
+TURN, 263
+PRINT, TURN 263 LOGS:To be spawned at Position(0,33)
+PRINT, To be spawned at Position(0,34)
+PRINT, To be spawned at Position(0,35)
+PRINT, Type 1 at Position (0,33)
+PRINT, Type 2 at Position (0,34)
+PRINT, Type 3 at Position (0,35)
+PRINT, 
+SHOOT, D, 1519, 1522, 0
+SHOOT, D, 1525, 1528, 2
+SHOOT, D, 1531, 1534, 4
+SHOOT, D, 1532, 1535, 0
+SHOOT, D, 1537, 1540, 6
+SHOOT, D, 1538, 1541, 1
+SHOOT, D, 1543, 1546, 8
+SHOOT, D, 1544, 1547, 3
+SHOOT, D, 1549, 1552, 10
+SHOOT, D, 1550, 1553, 5
+SHOOT, D, 1555, 1558, 12
+SHOOT, D, 1556, 1559, 7
+SHOOT, D, 1560, 1563, 0
+SHOOT, D, 1561, 1564, 14
+SHOOT, D, 1562, 1565, 9
+SHOOT, D, 1566, 1569, 2
+SHOOT, D, 1567, 1570, 16
+SHOOT, D, 1568, 1571, 11
+SHOOT, D, 1572, 1575, 6
+SHOOT, D, 1573, 1576, 18
+SHOOT, D, 1574, 1577, 13
+SHOOT, A, 1522, 1519, 0
+SHOOT, A, 1528, 1525, 2
+SHOOT, A, 1534, 1531, 4
+SHOOT, A, 1535, 1532, 0
+SHOOT, A, 1540, 1537, 6
+SHOOT, A, 1541, 1538, 1
+SHOOT, A, 1546, 1543, 8
+SHOOT, A, 1547, 1544, 3
+SHOOT, A, 1552, 1549, 10
+SHOOT, A, 1553, 1550, 5
+SHOOT, A, 1558, 1555, 12
+SHOOT, A, 1559, 1556, 7
+SHOOT, A, 1563, 1560, 0
+SHOOT, A, 1564, 1561, 14
+SHOOT, A, 1565, 1562, 9
+SHOOT, A, 1569, 1566, 2
+SHOOT, A, 1570, 1567, 16
+SHOOT, A, 1571, 1568, 11
+SHOOT, A, 1575, 1572, 6
+SHOOT, A, 1576, 1573, 18
+SHOOT, A, 1577, 1574, 13
+DEAD, A, 1519
+DEAD, A, 1532
+DEAD, A, 1560
+DEAD, D, 1522
+DEAD, D, 1535
+DEAD, D, 1563
+SPAWN, A, 1578, 1, 0, 33
+SPAWN, A, 1579, 2, 0, 34
+SPAWN, A, 1580, 3, 0, 35
+SPAWN, D, 1581, 1, 0, 33
+SPAWN, D, 1582, 2, 0, 34
+SPAWN, D, 1583, 3, 0, 35
+TURN, 264
+PRINT, TURN 264 LOGS:To be spawned at Position(0,36)
+PRINT, To be spawned at Position(0,37)
+PRINT, To be spawned at Position(0,38)
+PRINT, Type 1 at Position (0,36)
+PRINT, Type 2 at Position (0,37)
+PRINT, Type 3 at Position (0,38)
+PRINT, 
+SHOOT, D, 1525, 1528, 0
+SHOOT, D, 1531, 1534, 2
+SHOOT, D, 1537, 1540, 4
+SHOOT, D, 1538, 1541, 0
+SHOOT, D, 1543, 1546, 6
+SHOOT, D, 1544, 1547, 1
+SHOOT, D, 1549, 1552, 8
+SHOOT, D, 1550, 1553, 3
+SHOOT, D, 1555, 1558, 10
+SHOOT, D, 1556, 1559, 5
+SHOOT, D, 1561, 1564, 12
+SHOOT, D, 1562, 1565, 7
+SHOOT, D, 1566, 1569, 0
+SHOOT, D, 1567, 1570, 14
+SHOOT, D, 1568, 1571, 9
+SHOOT, D, 1572, 1575, 2
+SHOOT, D, 1573, 1576, 16
+SHOOT, D, 1574, 1577, 11
+SHOOT, D, 1578, 1581, 6
+SHOOT, D, 1579, 1582, 18
+SHOOT, D, 1580, 1583, 13
+SHOOT, A, 1528, 1525, 0
+SHOOT, A, 1534, 1531, 2
+SHOOT, A, 1540, 1537, 4
+SHOOT, A, 1541, 1538, 0
+SHOOT, A, 1546, 1543, 6
+SHOOT, A, 1547, 1544, 1
+SHOOT, A, 1552, 1549, 8
+SHOOT, A, 1553, 1550, 3
+SHOOT, A, 1558, 1555, 10
+SHOOT, A, 1559, 1556, 5
+SHOOT, A, 1564, 1561, 12
+SHOOT, A, 1565, 1562, 7
+SHOOT, A, 1569, 1566, 0
+SHOOT, A, 1570, 1567, 14
+SHOOT, A, 1571, 1568, 9
+SHOOT, A, 1575, 1572, 2
+SHOOT, A, 1576, 1573, 16
+SHOOT, A, 1577, 1574, 11
+SHOOT, A, 1581, 1578, 6
+SHOOT, A, 1582, 1579, 18
+SHOOT, A, 1583, 1580, 13
+DEAD, A, 1525
+DEAD, A, 1538
+DEAD, A, 1566
+DEAD, D, 1528
+DEAD, D, 1541
+DEAD, D, 1569
+SPAWN, A, 1584, 1, 0, 36
+SPAWN, A, 1585, 2, 0, 37
+SPAWN, A, 1586, 3, 0, 38
+SPAWN, D, 1587, 1, 0, 36
+SPAWN, D, 1588, 2, 0, 37
+SPAWN, D, 1589, 3, 0, 38
+TURN, 265
+PRINT, TURN 265 LOGS:To be spawned at Position(0,39)
+PRINT, To be spawned at Position(0,40)
+PRINT, To be spawned at Position(0,41)
+PRINT, Type 1 at Position (0,39)
+PRINT, Type 2 at Position (0,40)
+PRINT, Type 3 at Position (0,41)
+PRINT, 
+SHOOT, D, 1531, 1534, 0
+SHOOT, D, 1537, 1540, 2
+SHOOT, D, 1543, 1546, 4
+SHOOT, D, 1544, 1547, 0
+SHOOT, D, 1549, 1552, 6
+SHOOT, D, 1550, 1553, 1
+SHOOT, D, 1555, 1558, 8
+SHOOT, D, 1556, 1559, 3
+SHOOT, D, 1561, 1564, 10
+SHOOT, D, 1562, 1565, 5
+SHOOT, D, 1567, 1570, 12
+SHOOT, D, 1568, 1571, 7
+SHOOT, D, 1572, 1575, 0
+SHOOT, D, 1573, 1576, 14
+SHOOT, D, 1574, 1577, 9
+SHOOT, D, 1578, 1581, 2
+SHOOT, D, 1579, 1582, 16
+SHOOT, D, 1580, 1583, 11
+SHOOT, D, 1584, 1587, 6
+SHOOT, D, 1585, 1588, 18
+SHOOT, D, 1586, 1589, 13
+SHOOT, A, 1534, 1531, 0
+SHOOT, A, 1540, 1537, 2
+SHOOT, A, 1546, 1543, 4
+SHOOT, A, 1547, 1544, 0
+SHOOT, A, 1552, 1549, 6
+SHOOT, A, 1553, 1550, 1
+SHOOT, A, 1558, 1555, 8
+SHOOT, A, 1559, 1556, 3
+SHOOT, A, 1564, 1561, 10
+SHOOT, A, 1565, 1562, 5
+SHOOT, A, 1570, 1567, 12
+SHOOT, A, 1571, 1568, 7
+SHOOT, A, 1575, 1572, 0
+SHOOT, A, 1576, 1573, 14
+SHOOT, A, 1577, 1574, 9
+SHOOT, A, 1581, 1578, 2
+SHOOT, A, 1582, 1579, 16
+SHOOT, A, 1583, 1580, 11
+SHOOT, A, 1587, 1584, 6
+SHOOT, A, 1588, 1585, 18
+SHOOT, A, 1589, 1586, 13
+DEAD, A, 1531
+DEAD, A, 1544
+DEAD, A, 1572
+DEAD, D, 1534
+DEAD, D, 1547
+DEAD, D, 1575
+SPAWN, A, 1590, 1, 0, 39
+SPAWN, A, 1591, 2, 0, 40
+SPAWN, A, 1592, 3, 0, 41
+SPAWN, D, 1593, 1, 0, 39
+SPAWN, D, 1594, 2, 0, 40
+SPAWN, D, 1595, 3, 0, 41
+TURN, 266
+PRINT, TURN 266 LOGS:To be spawned at Position(0,42)
+PRINT, To be spawned at Position(0,43)
+PRINT, To be spawned at Position(0,44)
+PRINT, Type 1 at Position (0,42)
+PRINT, Type 2 at Position (0,43)
+PRINT, Type 3 at Position (0,44)
+PRINT, 
+SHOOT, D, 1537, 1540, 0
+SHOOT, D, 1543, 1546, 2
+SHOOT, D, 1549, 1552, 4
+SHOOT, D, 1550, 1553, 0
+SHOOT, D, 1555, 1558, 6
+SHOOT, D, 1556, 1559, 1
+SHOOT, D, 1561, 1564, 8
+SHOOT, D, 1562, 1565, 3
+SHOOT, D, 1567, 1570, 10
+SHOOT, D, 1568, 1571, 5
+SHOOT, D, 1573, 1576, 12
+SHOOT, D, 1574, 1577, 7
+SHOOT, D, 1578, 1581, 0
+SHOOT, D, 1579, 1582, 14
+SHOOT, D, 1580, 1583, 9
+SHOOT, D, 1584, 1587, 2
+SHOOT, D, 1585, 1588, 16
+SHOOT, D, 1586, 1589, 11
+SHOOT, D, 1590, 1593, 6
+SHOOT, D, 1591, 1594, 18
+SHOOT, D, 1592, 1595, 13
+SHOOT, A, 1540, 1537, 0
+SHOOT, A, 1546, 1543, 2
+SHOOT, A, 1552, 1549, 4
+SHOOT, A, 1553, 1550, 0
+SHOOT, A, 1558, 1555, 6
+SHOOT, A, 1559, 1556, 1
+SHOOT, A, 1564, 1561, 8
+SHOOT, A, 1565, 1562, 3
+SHOOT, A, 1570, 1567, 10
+SHOOT, A, 1571, 1568, 5
+SHOOT, A, 1576, 1573, 12
+SHOOT, A, 1577, 1574, 7
+SHOOT, A, 1581, 1578, 0
+SHOOT, A, 1582, 1579, 14
+SHOOT, A, 1583, 1580, 9
+SHOOT, A, 1587, 1584, 2
+SHOOT, A, 1588, 1585, 16
+SHOOT, A, 1589, 1586, 11
+SHOOT, A, 1593, 1590, 6
+SHOOT, A, 1594, 1591, 18
+SHOOT, A, 1595, 1592, 13
+DEAD, A, 1537
+DEAD, A, 1550
+DEAD, A, 1578
+DEAD, D, 1540
+DEAD, D, 1553
+DEAD, D, 1581
+SPAWN, A, 1596, 1, 0, 42
+SPAWN, A, 1597, 2, 0, 43
+SPAWN, A, 1598, 3, 0, 44
+SPAWN, D, 1599, 1, 0, 42
+SPAWN, D, 1600, 2, 0, 43
+SPAWN, D, 1601, 3, 0, 44
+TURN, 267
+PRINT, TURN 267 LOGS:To be spawned at Position(0,45)
+PRINT, To be spawned at Position(0,46)
+PRINT, To be spawned at Position(0,47)
+PRINT, Type 1 at Position (0,45)
+PRINT, Type 2 at Position (0,46)
+PRINT, Type 3 at Position (0,47)
+PRINT, 
+SHOOT, D, 1543, 1546, 0
+SHOOT, D, 1549, 1552, 2
+SHOOT, D, 1555, 1558, 4
+SHOOT, D, 1556, 1559, 0
+SHOOT, D, 1561, 1564, 6
+SHOOT, D, 1562, 1565, 1
+SHOOT, D, 1567, 1570, 8
+SHOOT, D, 1568, 1571, 3
+SHOOT, D, 1573, 1576, 10
+SHOOT, D, 1574, 1577, 5
+SHOOT, D, 1579, 1582, 12
+SHOOT, D, 1580, 1583, 7
+SHOOT, D, 1584, 1587, 0
+SHOOT, D, 1585, 1588, 14
+SHOOT, D, 1586, 1589, 9
+SHOOT, D, 1590, 1593, 2
+SHOOT, D, 1591, 1594, 16
+SHOOT, D, 1592, 1595, 11
+SHOOT, D, 1596, 1599, 6
+SHOOT, D, 1597, 1600, 18
+SHOOT, D, 1598, 1601, 13
+SHOOT, A, 1546, 1543, 0
+SHOOT, A, 1552, 1549, 2
+SHOOT, A, 1558, 1555, 4
+SHOOT, A, 1559, 1556, 0
+SHOOT, A, 1564, 1561, 6
+SHOOT, A, 1565, 1562, 1
+SHOOT, A, 1570, 1567, 8
+SHOOT, A, 1571, 1568, 3
+SHOOT, A, 1576, 1573, 10
+SHOOT, A, 1577, 1574, 5
+SHOOT, A, 1582, 1579, 12
+SHOOT, A, 1583, 1580, 7
+SHOOT, A, 1587, 1584, 0
+SHOOT, A, 1588, 1585, 14
+SHOOT, A, 1589, 1586, 9
+SHOOT, A, 1593, 1590, 2
+SHOOT, A, 1594, 1591, 16
+SHOOT, A, 1595, 1592, 11
+SHOOT, A, 1599, 1596, 6
+SHOOT, A, 1600, 1597, 18
+SHOOT, A, 1601, 1598, 13
+DEAD, A, 1543
+DEAD, A, 1556
+DEAD, A, 1584
+DEAD, D, 1546
+DEAD, D, 1559
+DEAD, D, 1587
+SPAWN, A, 1602, 1, 0, 45
+SPAWN, A, 1603, 2, 0, 46
+SPAWN, A, 1604, 3, 0, 47
+SPAWN, D, 1605, 1, 0, 45
+SPAWN, D, 1606, 2, 0, 46
+SPAWN, D, 1607, 3, 0, 47
+TURN, 268
+PRINT, TURN 268 LOGS:To be spawned at Position(0,48)
+PRINT, To be spawned at Position(0,49)
+PRINT, To be spawned at Position(0,50)
+PRINT, Type 1 at Position (0,48)
+PRINT, Type 2 at Position (0,49)
+PRINT, Type 3 at Position (0,50)
+PRINT, 
+SHOOT, D, 1549, 1552, 0
+SHOOT, D, 1555, 1558, 2
+SHOOT, D, 1561, 1564, 4
+SHOOT, D, 1562, 1565, 0
+SHOOT, D, 1567, 1570, 6
+SHOOT, D, 1568, 1571, 1
+SHOOT, D, 1573, 1576, 8
+SHOOT, D, 1574, 1577, 3
+SHOOT, D, 1579, 1582, 10
+SHOOT, D, 1580, 1583, 5
+SHOOT, D, 1585, 1588, 12
+SHOOT, D, 1586, 1589, 7
+SHOOT, D, 1590, 1593, 0
+SHOOT, D, 1591, 1594, 14
+SHOOT, D, 1592, 1595, 9
+SHOOT, D, 1596, 1599, 2
+SHOOT, D, 1597, 1600, 16
+SHOOT, D, 1598, 1601, 11
+SHOOT, D, 1602, 1605, 6
+SHOOT, D, 1603, 1606, 18
+SHOOT, D, 1604, 1607, 13
+SHOOT, A, 1552, 1549, 0
+SHOOT, A, 1558, 1555, 2
+SHOOT, A, 1564, 1561, 4
+SHOOT, A, 1565, 1562, 0
+SHOOT, A, 1570, 1567, 6
+SHOOT, A, 1571, 1568, 1
+SHOOT, A, 1576, 1573, 8
+SHOOT, A, 1577, 1574, 3
+SHOOT, A, 1582, 1579, 10
+SHOOT, A, 1583, 1580, 5
+SHOOT, A, 1588, 1585, 12
+SHOOT, A, 1589, 1586, 7
+SHOOT, A, 1593, 1590, 0
+SHOOT, A, 1594, 1591, 14
+SHOOT, A, 1595, 1592, 9
+SHOOT, A, 1599, 1596, 2
+SHOOT, A, 1600, 1597, 16
+SHOOT, A, 1601, 1598, 11
+SHOOT, A, 1605, 1602, 6
+SHOOT, A, 1606, 1603, 18
+SHOOT, A, 1607, 1604, 13
+DEAD, A, 1549
+DEAD, A, 1562
+DEAD, A, 1590
+DEAD, D, 1552
+DEAD, D, 1565
+DEAD, D, 1593
+SPAWN, A, 1608, 1, 0, 48
+SPAWN, A, 1609, 2, 0, 49
+SPAWN, A, 1610, 3, 0, 50
+SPAWN, D, 1611, 1, 0, 48
+SPAWN, D, 1612, 2, 0, 49
+SPAWN, D, 1613, 3, 0, 50
+TURN, 269
+PRINT, TURN 269 LOGS:To be spawned at Position(0,51)
+PRINT, To be spawned at Position(0,52)
+PRINT, To be spawned at Position(0,53)
+PRINT, Type 1 at Position (0,51)
+PRINT, Type 2 at Position (0,52)
+PRINT, Type 3 at Position (0,53)
+PRINT, 
+SHOOT, D, 1555, 1558, 0
+SHOOT, D, 1561, 1564, 2
+SHOOT, D, 1567, 1570, 4
+SHOOT, D, 1568, 1571, 0
+SHOOT, D, 1573, 1576, 6
+SHOOT, D, 1574, 1577, 1
+SHOOT, D, 1579, 1582, 8
+SHOOT, D, 1580, 1583, 3
+SHOOT, D, 1585, 1588, 10
+SHOOT, D, 1586, 1589, 5
+SHOOT, D, 1591, 1594, 12
+SHOOT, D, 1592, 1595, 7
+SHOOT, D, 1596, 1599, 0
+SHOOT, D, 1597, 1600, 14
+SHOOT, D, 1598, 1601, 9
+SHOOT, D, 1602, 1605, 2
+SHOOT, D, 1603, 1606, 16
+SHOOT, D, 1604, 1607, 11
+SHOOT, D, 1608, 1611, 6
+SHOOT, D, 1609, 1612, 18
+SHOOT, D, 1610, 1613, 13
+SHOOT, A, 1558, 1555, 0
+SHOOT, A, 1564, 1561, 2
+SHOOT, A, 1570, 1567, 4
+SHOOT, A, 1571, 1568, 0
+SHOOT, A, 1576, 1573, 6
+SHOOT, A, 1577, 1574, 1
+SHOOT, A, 1582, 1579, 8
+SHOOT, A, 1583, 1580, 3
+SHOOT, A, 1588, 1585, 10
+SHOOT, A, 1589, 1586, 5
+SHOOT, A, 1594, 1591, 12
+SHOOT, A, 1595, 1592, 7
+SHOOT, A, 1599, 1596, 0
+SHOOT, A, 1600, 1597, 14
+SHOOT, A, 1601, 1598, 9
+SHOOT, A, 1605, 1602, 2
+SHOOT, A, 1606, 1603, 16
+SHOOT, A, 1607, 1604, 11
+SHOOT, A, 1611, 1608, 6
+SHOOT, A, 1612, 1609, 18
+SHOOT, A, 1613, 1610, 13
+DEAD, A, 1555
+DEAD, A, 1568
+DEAD, A, 1596
+DEAD, D, 1558
+DEAD, D, 1571
+DEAD, D, 1599
+SPAWN, A, 1614, 1, 0, 51
+SPAWN, A, 1615, 2, 0, 52
+SPAWN, A, 1616, 3, 0, 53
+SPAWN, D, 1617, 1, 0, 51
+SPAWN, D, 1618, 2, 0, 52
+SPAWN, D, 1619, 3, 0, 53
+TURN, 270
+PRINT, TURN 270 LOGS:To be spawned at Position(0,54)
+PRINT, To be spawned at Position(0,55)
+PRINT, To be spawned at Position(0,56)
+PRINT, Type 1 at Position (0,54)
+PRINT, Type 2 at Position (0,55)
+PRINT, Type 3 at Position (0,56)
+PRINT, 
+SHOOT, D, 1561, 1564, 0
+SHOOT, D, 1567, 1570, 2
+SHOOT, D, 1573, 1576, 4
+SHOOT, D, 1574, 1577, 0
+SHOOT, D, 1579, 1582, 6
+SHOOT, D, 1580, 1583, 1
+SHOOT, D, 1585, 1588, 8
+SHOOT, D, 1586, 1589, 3
+SHOOT, D, 1591, 1594, 10
+SHOOT, D, 1592, 1595, 5
+SHOOT, D, 1597, 1600, 12
+SHOOT, D, 1598, 1601, 7
+SHOOT, D, 1602, 1605, 0
+SHOOT, D, 1603, 1606, 14
+SHOOT, D, 1604, 1607, 9
+SHOOT, D, 1608, 1611, 2
+SHOOT, D, 1609, 1612, 16
+SHOOT, D, 1610, 1613, 11
+SHOOT, D, 1614, 1617, 6
+SHOOT, D, 1615, 1618, 18
+SHOOT, D, 1616, 1619, 13
+SHOOT, A, 1564, 1561, 0
+SHOOT, A, 1570, 1567, 2
+SHOOT, A, 1576, 1573, 4
+SHOOT, A, 1577, 1574, 0
+SHOOT, A, 1582, 1579, 6
+SHOOT, A, 1583, 1580, 1
+SHOOT, A, 1588, 1585, 8
+SHOOT, A, 1589, 1586, 3
+SHOOT, A, 1594, 1591, 10
+SHOOT, A, 1595, 1592, 5
+SHOOT, A, 1600, 1597, 12
+SHOOT, A, 1601, 1598, 7
+SHOOT, A, 1605, 1602, 0
+SHOOT, A, 1606, 1603, 14
+SHOOT, A, 1607, 1604, 9
+SHOOT, A, 1611, 1608, 2
+SHOOT, A, 1612, 1609, 16
+SHOOT, A, 1613, 1610, 11
+SHOOT, A, 1617, 1614, 6
+SHOOT, A, 1618, 1615, 18
+SHOOT, A, 1619, 1616, 13
+DEAD, A, 1561
+DEAD, A, 1574
+DEAD, A, 1602
+DEAD, D, 1564
+DEAD, D, 1577
+DEAD, D, 1605
+SPAWN, A, 1620, 1, 0, 54
+SPAWN, A, 1621, 2, 0, 55
+SPAWN, A, 1622, 3, 0, 56
+SPAWN, D, 1623, 1, 0, 54
+SPAWN, D, 1624, 2, 0, 55
+SPAWN, D, 1625, 3, 0, 56
+TURN, 271
+PRINT, TURN 271 LOGS:To be spawned at Position(0,57)
+PRINT, To be spawned at Position(0,58)
+PRINT, To be spawned at Position(0,59)
+PRINT, Type 1 at Position (0,57)
+PRINT, Type 2 at Position (0,58)
+PRINT, Type 3 at Position (0,59)
+PRINT, 
+SHOOT, D, 1567, 1570, 0
+SHOOT, D, 1573, 1576, 2
+SHOOT, D, 1579, 1582, 4
+SHOOT, D, 1580, 1583, 0
+SHOOT, D, 1585, 1588, 6
+SHOOT, D, 1586, 1589, 1
+SHOOT, D, 1591, 1594, 8
+SHOOT, D, 1592, 1595, 3
+SHOOT, D, 1597, 1600, 10
+SHOOT, D, 1598, 1601, 5
+SHOOT, D, 1603, 1606, 12
+SHOOT, D, 1604, 1607, 7
+SHOOT, D, 1608, 1611, 0
+SHOOT, D, 1609, 1612, 14
+SHOOT, D, 1610, 1613, 9
+SHOOT, D, 1614, 1617, 2
+SHOOT, D, 1615, 1618, 16
+SHOOT, D, 1616, 1619, 11
+SHOOT, D, 1620, 1623, 6
+SHOOT, D, 1621, 1624, 18
+SHOOT, D, 1622, 1625, 13
+SHOOT, A, 1570, 1567, 0
+SHOOT, A, 1576, 1573, 2
+SHOOT, A, 1582, 1579, 4
+SHOOT, A, 1583, 1580, 0
+SHOOT, A, 1588, 1585, 6
+SHOOT, A, 1589, 1586, 1
+SHOOT, A, 1594, 1591, 8
+SHOOT, A, 1595, 1592, 3
+SHOOT, A, 1600, 1597, 10
+SHOOT, A, 1601, 1598, 5
+SHOOT, A, 1606, 1603, 12
+SHOOT, A, 1607, 1604, 7
+SHOOT, A, 1611, 1608, 0
+SHOOT, A, 1612, 1609, 14
+SHOOT, A, 1613, 1610, 9
+SHOOT, A, 1617, 1614, 2
+SHOOT, A, 1618, 1615, 16
+SHOOT, A, 1619, 1616, 11
+SHOOT, A, 1623, 1620, 6
+SHOOT, A, 1624, 1621, 18
+SHOOT, A, 1625, 1622, 13
+DEAD, A, 1567
+DEAD, A, 1580
+DEAD, A, 1608
+DEAD, D, 1570
+DEAD, D, 1583
+DEAD, D, 1611
+SPAWN, A, 1626, 1, 0, 57
+SPAWN, A, 1627, 2, 0, 58
+SPAWN, A, 1628, 3, 0, 59
+SPAWN, D, 1629, 1, 0, 57
+SPAWN, D, 1630, 2, 0, 58
+SPAWN, D, 1631, 3, 0, 59
+TURN, 272
+PRINT, TURN 272 LOGS:To be spawned at Position(0,60)
+PRINT, To be spawned at Position(0,61)
+PRINT, To be spawned at Position(0,62)
+PRINT, Type 1 at Position (0,60)
+PRINT, Type 2 at Position (0,61)
+PRINT, Type 3 at Position (0,62)
+PRINT, 
+SHOOT, D, 1573, 1576, 0
+SHOOT, D, 1579, 1582, 2
+SHOOT, D, 1585, 1588, 4
+SHOOT, D, 1586, 1589, 0
+SHOOT, D, 1591, 1594, 6
+SHOOT, D, 1592, 1595, 1
+SHOOT, D, 1597, 1600, 8
+SHOOT, D, 1598, 1601, 3
+SHOOT, D, 1603, 1606, 10
+SHOOT, D, 1604, 1607, 5
+SHOOT, D, 1609, 1612, 12
+SHOOT, D, 1610, 1613, 7
+SHOOT, D, 1614, 1617, 0
+SHOOT, D, 1615, 1618, 14
+SHOOT, D, 1616, 1619, 9
+SHOOT, D, 1620, 1623, 2
+SHOOT, D, 1621, 1624, 16
+SHOOT, D, 1622, 1625, 11
+SHOOT, D, 1626, 1629, 6
+SHOOT, D, 1627, 1630, 18
+SHOOT, D, 1628, 1631, 13
+SHOOT, A, 1576, 1573, 0
+SHOOT, A, 1582, 1579, 2
+SHOOT, A, 1588, 1585, 4
+SHOOT, A, 1589, 1586, 0
+SHOOT, A, 1594, 1591, 6
+SHOOT, A, 1595, 1592, 1
+SHOOT, A, 1600, 1597, 8
+SHOOT, A, 1601, 1598, 3
+SHOOT, A, 1606, 1603, 10
+SHOOT, A, 1607, 1604, 5
+SHOOT, A, 1612, 1609, 12
+SHOOT, A, 1613, 1610, 7
+SHOOT, A, 1617, 1614, 0
+SHOOT, A, 1618, 1615, 14
+SHOOT, A, 1619, 1616, 9
+SHOOT, A, 1623, 1620, 2
+SHOOT, A, 1624, 1621, 16
+SHOOT, A, 1625, 1622, 11
+SHOOT, A, 1629, 1626, 6
+SHOOT, A, 1630, 1627, 18
+SHOOT, A, 1631, 1628, 13
+DEAD, A, 1573
+DEAD, A, 1586
+DEAD, A, 1614
+DEAD, D, 1576
+DEAD, D, 1589
+DEAD, D, 1617
+SPAWN, A, 1632, 1, 0, 60
+SPAWN, A, 1633, 2, 0, 61
+SPAWN, A, 1634, 3, 0, 62
+SPAWN, D, 1635, 1, 0, 60
+SPAWN, D, 1636, 2, 0, 61
+SPAWN, D, 1637, 3, 0, 62
+TURN, 273
+PRINT, TURN 273 LOGS:To be spawned at Position(0,63)
+PRINT, To be spawned at Position(1,0)
+PRINT, To be spawned at Position(1,63)
+PRINT, Type 1 at Position (0,63)
+PRINT, Type 2 at Position (1,0)
+PRINT, Type 3 at Position (1,63)
+PRINT, 
+SHOOT, D, 1579, 1582, 0
+SHOOT, D, 1585, 1588, 2
+SHOOT, D, 1591, 1594, 4
+SHOOT, D, 1592, 1595, 0
+SHOOT, D, 1597, 1600, 6
+SHOOT, D, 1598, 1601, 1
+SHOOT, D, 1603, 1606, 8
+SHOOT, D, 1604, 1607, 3
+SHOOT, D, 1609, 1612, 10
+SHOOT, D, 1610, 1613, 5
+SHOOT, D, 1615, 1618, 12
+SHOOT, D, 1616, 1619, 7
+SHOOT, D, 1620, 1623, 0
+SHOOT, D, 1621, 1624, 14
+SHOOT, D, 1622, 1625, 9
+SHOOT, D, 1626, 1629, 2
+SHOOT, D, 1627, 1630, 16
+SHOOT, D, 1628, 1631, 11
+SHOOT, D, 1632, 1635, 6
+SHOOT, D, 1633, 1636, 18
+SHOOT, D, 1634, 1637, 13
+SHOOT, A, 1582, 1579, 0
+SHOOT, A, 1588, 1585, 2
+SHOOT, A, 1594, 1591, 4
+SHOOT, A, 1595, 1592, 0
+SHOOT, A, 1600, 1597, 6
+SHOOT, A, 1601, 1598, 1
+SHOOT, A, 1606, 1603, 8
+SHOOT, A, 1607, 1604, 3
+SHOOT, A, 1612, 1609, 10
+SHOOT, A, 1613, 1610, 5
+SHOOT, A, 1618, 1615, 12
+SHOOT, A, 1619, 1616, 7
+SHOOT, A, 1623, 1620, 0
+SHOOT, A, 1624, 1621, 14
+SHOOT, A, 1625, 1622, 9
+SHOOT, A, 1629, 1626, 2
+SHOOT, A, 1630, 1627, 16
+SHOOT, A, 1631, 1628, 11
+SHOOT, A, 1635, 1632, 6
+SHOOT, A, 1636, 1633, 18
+SHOOT, A, 1637, 1634, 13
+DEAD, A, 1579
+DEAD, A, 1592
+DEAD, A, 1620
+DEAD, D, 1582
+DEAD, D, 1595
+DEAD, D, 1623
+SPAWN, A, 1638, 1, 0, 63
+SPAWN, A, 1639, 2, 1, 0
+SPAWN, A, 1640, 3, 1, 63
+SPAWN, D, 1641, 1, 0, 63
+SPAWN, D, 1642, 2, 1, 0
+SPAWN, D, 1643, 3, 1, 63
+TURN, 274
+PRINT, TURN 274 LOGS:To be spawned at Position(2,0)
+PRINT, To be spawned at Position(2,63)
+PRINT, To be spawned at Position(3,0)
+PRINT, Type 1 at Position (2,0)
+PRINT, Type 2 at Position (2,63)
+PRINT, Type 3 at Position (3,0)
+PRINT, 
+SHOOT, D, 1585, 1588, 0
+SHOOT, D, 1591, 1594, 2
+SHOOT, D, 1597, 1600, 4
+SHOOT, D, 1598, 1601, 0
+SHOOT, D, 1603, 1606, 6
+SHOOT, D, 1604, 1607, 1
+SHOOT, D, 1609, 1612, 8
+SHOOT, D, 1610, 1613, 3
+SHOOT, D, 1615, 1618, 10
+SHOOT, D, 1616, 1619, 5
+SHOOT, D, 1621, 1624, 12
+SHOOT, D, 1622, 1625, 7
+SHOOT, D, 1626, 1629, 0
+SHOOT, D, 1627, 1630, 14
+SHOOT, D, 1628, 1631, 9
+SHOOT, D, 1632, 1635, 2
+SHOOT, D, 1633, 1636, 16
+SHOOT, D, 1634, 1637, 11
+SHOOT, D, 1638, 1641, 6
+SHOOT, D, 1639, 1642, 18
+SHOOT, D, 1640, 1643, 13
+SHOOT, A, 1588, 1585, 0
+SHOOT, A, 1594, 1591, 2
+SHOOT, A, 1600, 1597, 4
+SHOOT, A, 1601, 1598, 0
+SHOOT, A, 1606, 1603, 6
+SHOOT, A, 1607, 1604, 1
+SHOOT, A, 1612, 1609, 8
+SHOOT, A, 1613, 1610, 3
+SHOOT, A, 1618, 1615, 10
+SHOOT, A, 1619, 1616, 5
+SHOOT, A, 1624, 1621, 12
+SHOOT, A, 1625, 1622, 7
+SHOOT, A, 1629, 1626, 0
+SHOOT, A, 1630, 1627, 14
+SHOOT, A, 1631, 1628, 9
+SHOOT, A, 1635, 1632, 2
+SHOOT, A, 1636, 1633, 16
+SHOOT, A, 1637, 1634, 11
+SHOOT, A, 1641, 1638, 6
+SHOOT, A, 1642, 1639, 18
+SHOOT, A, 1643, 1640, 13
+DEAD, A, 1585
+DEAD, A, 1598
+DEAD, A, 1626
+DEAD, D, 1588
+DEAD, D, 1601
+DEAD, D, 1629
+SPAWN, A, 1644, 1, 2, 0
+SPAWN, A, 1645, 2, 2, 63
+SPAWN, A, 1646, 3, 3, 0
+SPAWN, D, 1647, 1, 2, 0
+SPAWN, D, 1648, 2, 2, 63
+SPAWN, D, 1649, 3, 3, 0
+TURN, 275
+PRINT, TURN 275 LOGS:To be spawned at Position(3,63)
+PRINT, To be spawned at Position(4,0)
+PRINT, To be spawned at Position(4,63)
+PRINT, Type 1 at Position (3,63)
+PRINT, Type 2 at Position (4,0)
+PRINT, Type 3 at Position (4,63)
+PRINT, 
+SHOOT, D, 1591, 1594, 0
+SHOOT, D, 1597, 1600, 2
+SHOOT, D, 1603, 1606, 4
+SHOOT, D, 1604, 1607, 0
+SHOOT, D, 1609, 1612, 6
+SHOOT, D, 1610, 1613, 1
+SHOOT, D, 1615, 1618, 8
+SHOOT, D, 1616, 1619, 3
+SHOOT, D, 1621, 1624, 10
+SHOOT, D, 1622, 1625, 5
+SHOOT, D, 1627, 1630, 12
+SHOOT, D, 1628, 1631, 7
+SHOOT, D, 1632, 1635, 0
+SHOOT, D, 1633, 1636, 14
+SHOOT, D, 1634, 1637, 9
+SHOOT, D, 1638, 1641, 2
+SHOOT, D, 1639, 1642, 16
+SHOOT, D, 1640, 1643, 11
+SHOOT, D, 1644, 1647, 6
+SHOOT, D, 1645, 1648, 18
+SHOOT, D, 1646, 1649, 13
+SHOOT, A, 1594, 1591, 0
+SHOOT, A, 1600, 1597, 2
+SHOOT, A, 1606, 1603, 4
+SHOOT, A, 1607, 1604, 0
+SHOOT, A, 1612, 1609, 6
+SHOOT, A, 1613, 1610, 1
+SHOOT, A, 1618, 1615, 8
+SHOOT, A, 1619, 1616, 3
+SHOOT, A, 1624, 1621, 10
+SHOOT, A, 1625, 1622, 5
+SHOOT, A, 1630, 1627, 12
+SHOOT, A, 1631, 1628, 7
+SHOOT, A, 1635, 1632, 0
+SHOOT, A, 1636, 1633, 14
+SHOOT, A, 1637, 1634, 9
+SHOOT, A, 1641, 1638, 2
+SHOOT, A, 1642, 1639, 16
+SHOOT, A, 1643, 1640, 11
+SHOOT, A, 1647, 1644, 6
+SHOOT, A, 1648, 1645, 18
+SHOOT, A, 1649, 1646, 13
+DEAD, A, 1591
+DEAD, A, 1604
+DEAD, A, 1632
+DEAD, D, 1594
+DEAD, D, 1607
+DEAD, D, 1635
+SPAWN, A, 1650, 1, 3, 63
+SPAWN, A, 1651, 2, 4, 0
+SPAWN, A, 1652, 3, 4, 63
+SPAWN, D, 1653, 1, 3, 63
+SPAWN, D, 1654, 2, 4, 0
+SPAWN, D, 1655, 3, 4, 63
+TURN, 276
+PRINT, TURN 276 LOGS:To be spawned at Position(5,0)
+PRINT, To be spawned at Position(5,63)
+PRINT, To be spawned at Position(6,0)
+PRINT, Type 1 at Position (5,0)
+PRINT, Type 2 at Position (5,63)
+PRINT, Type 3 at Position (6,0)
+PRINT, 
+SHOOT, D, 1597, 1600, 0
+SHOOT, D, 1603, 1606, 2
+SHOOT, D, 1609, 1612, 4
+SHOOT, D, 1610, 1613, 0
+SHOOT, D, 1615, 1618, 6
+SHOOT, D, 1616, 1619, 1
+SHOOT, D, 1621, 1624, 8
+SHOOT, D, 1622, 1625, 3
+SHOOT, D, 1627, 1630, 10
+SHOOT, D, 1628, 1631, 5
+SHOOT, D, 1633, 1636, 12
+SHOOT, D, 1634, 1637, 7
+SHOOT, D, 1638, 1641, 0
+SHOOT, D, 1639, 1642, 14
+SHOOT, D, 1640, 1643, 9
+SHOOT, D, 1644, 1647, 2
+SHOOT, D, 1645, 1648, 16
+SHOOT, D, 1646, 1649, 11
+SHOOT, D, 1650, 1653, 6
+SHOOT, D, 1651, 1654, 18
+SHOOT, D, 1652, 1655, 13
+SHOOT, A, 1600, 1597, 0
+SHOOT, A, 1606, 1603, 2
+SHOOT, A, 1612, 1609, 4
+SHOOT, A, 1613, 1610, 0
+SHOOT, A, 1618, 1615, 6
+SHOOT, A, 1619, 1616, 1
+SHOOT, A, 1624, 1621, 8
+SHOOT, A, 1625, 1622, 3
+SHOOT, A, 1630, 1627, 10
+SHOOT, A, 1631, 1628, 5
+SHOOT, A, 1636, 1633, 12
+SHOOT, A, 1637, 1634, 7
+SHOOT, A, 1641, 1638, 0
+SHOOT, A, 1642, 1639, 14
+SHOOT, A, 1643, 1640, 9
+SHOOT, A, 1647, 1644, 2
+SHOOT, A, 1648, 1645, 16
+SHOOT, A, 1649, 1646, 11
+SHOOT, A, 1653, 1650, 6
+SHOOT, A, 1654, 1651, 18
+SHOOT, A, 1655, 1652, 13
+DEAD, A, 1597
+DEAD, A, 1610
+DEAD, A, 1638
+DEAD, D, 1600
+DEAD, D, 1613
+DEAD, D, 1641
+SPAWN, A, 1656, 1, 5, 0
+SPAWN, A, 1657, 2, 5, 63
+SPAWN, A, 1658, 3, 6, 0
+SPAWN, D, 1659, 1, 5, 0
+SPAWN, D, 1660, 2, 5, 63
+SPAWN, D, 1661, 3, 6, 0
+TURN, 277
+PRINT, TURN 277 LOGS:To be spawned at Position(6,63)
+PRINT, To be spawned at Position(7,0)
+PRINT, To be spawned at Position(7,63)
+PRINT, Type 1 at Position (6,63)
+PRINT, Type 2 at Position (7,0)
+PRINT, Type 3 at Position (7,63)
+PRINT, 
+SHOOT, D, 1603, 1606, 0
+SHOOT, D, 1609, 1612, 2
+SHOOT, D, 1615, 1618, 4
+SHOOT, D, 1616, 1619, 0
+SHOOT, D, 1621, 1624, 6
+SHOOT, D, 1622, 1625, 1
+SHOOT, D, 1627, 1630, 8
+SHOOT, D, 1628, 1631, 3
+SHOOT, D, 1633, 1636, 10
+SHOOT, D, 1634, 1637, 5
+SHOOT, D, 1639, 1642, 12
+SHOOT, D, 1640, 1643, 7
+SHOOT, D, 1644, 1647, 0
+SHOOT, D, 1645, 1648, 14
+SHOOT, D, 1646, 1649, 9
+SHOOT, D, 1650, 1653, 2
+SHOOT, D, 1651, 1654, 16
+SHOOT, D, 1652, 1655, 11
+SHOOT, D, 1656, 1659, 6
+SHOOT, D, 1657, 1660, 18
+SHOOT, D, 1658, 1661, 13
+SHOOT, A, 1606, 1603, 0
+SHOOT, A, 1612, 1609, 2
+SHOOT, A, 1618, 1615, 4
+SHOOT, A, 1619, 1616, 0
+SHOOT, A, 1624, 1621, 6
+SHOOT, A, 1625, 1622, 1
+SHOOT, A, 1630, 1627, 8
+SHOOT, A, 1631, 1628, 3
+SHOOT, A, 1636, 1633, 10
+SHOOT, A, 1637, 1634, 5
+SHOOT, A, 1642, 1639, 12
+SHOOT, A, 1643, 1640, 7
+SHOOT, A, 1647, 1644, 0
+SHOOT, A, 1648, 1645, 14
+SHOOT, A, 1649, 1646, 9
+SHOOT, A, 1653, 1650, 2
+SHOOT, A, 1654, 1651, 16
+SHOOT, A, 1655, 1652, 11
+SHOOT, A, 1659, 1656, 6
+SHOOT, A, 1660, 1657, 18
+SHOOT, A, 1661, 1658, 13
+DEAD, A, 1603
+DEAD, A, 1616
+DEAD, A, 1644
+DEAD, D, 1606
+DEAD, D, 1619
+DEAD, D, 1647
+SPAWN, A, 1662, 1, 6, 63
+SPAWN, A, 1663, 2, 7, 0
+SPAWN, A, 1664, 3, 7, 63
+SPAWN, D, 1665, 1, 6, 63
+SPAWN, D, 1666, 2, 7, 0
+SPAWN, D, 1667, 3, 7, 63
+TURN, 278
+PRINT, TURN 278 LOGS:To be spawned at Position(8,0)
+PRINT, To be spawned at Position(8,63)
+PRINT, To be spawned at Position(9,0)
+PRINT, Type 1 at Position (8,0)
+PRINT, Type 2 at Position (8,63)
+PRINT, Type 3 at Position (9,0)
+PRINT, 
+SHOOT, D, 1609, 1612, 0
+SHOOT, D, 1615, 1618, 2
+SHOOT, D, 1621, 1624, 4
+SHOOT, D, 1622, 1625, 0
+SHOOT, D, 1627, 1630, 6
+SHOOT, D, 1628, 1631, 1
+SHOOT, D, 1633, 1636, 8
+SHOOT, D, 1634, 1637, 3
+SHOOT, D, 1639, 1642, 10
+SHOOT, D, 1640, 1643, 5
+SHOOT, D, 1645, 1648, 12
+SHOOT, D, 1646, 1649, 7
+SHOOT, D, 1650, 1653, 0
+SHOOT, D, 1651, 1654, 14
+SHOOT, D, 1652, 1655, 9
+SHOOT, D, 1656, 1659, 2
+SHOOT, D, 1657, 1660, 16
+SHOOT, D, 1658, 1661, 11
+SHOOT, D, 1662, 1665, 6
+SHOOT, D, 1663, 1666, 18
+SHOOT, D, 1664, 1667, 13
+SHOOT, A, 1612, 1609, 0
+SHOOT, A, 1618, 1615, 2
+SHOOT, A, 1624, 1621, 4
+SHOOT, A, 1625, 1622, 0
+SHOOT, A, 1630, 1627, 6
+SHOOT, A, 1631, 1628, 1
+SHOOT, A, 1636, 1633, 8
+SHOOT, A, 1637, 1634, 3
+SHOOT, A, 1642, 1639, 10
+SHOOT, A, 1643, 1640, 5
+SHOOT, A, 1648, 1645, 12
+SHOOT, A, 1649, 1646, 7
+SHOOT, A, 1653, 1650, 0
+SHOOT, A, 1654, 1651, 14
+SHOOT, A, 1655, 1652, 9
+SHOOT, A, 1659, 1656, 2
+SHOOT, A, 1660, 1657, 16
+SHOOT, A, 1661, 1658, 11
+SHOOT, A, 1665, 1662, 6
+SHOOT, A, 1666, 1663, 18
+SHOOT, A, 1667, 1664, 13
+DEAD, A, 1609
+DEAD, A, 1622
+DEAD, A, 1650
+DEAD, D, 1612
+DEAD, D, 1625
+DEAD, D, 1653
+SPAWN, A, 1668, 1, 8, 0
+SPAWN, A, 1669, 2, 8, 63
+SPAWN, A, 1670, 3, 9, 0
+SPAWN, D, 1671, 1, 8, 0
+SPAWN, D, 1672, 2, 8, 63
+SPAWN, D, 1673, 3, 9, 0
+TURN, 279
+PRINT, TURN 279 LOGS:To be spawned at Position(9,63)
+PRINT, To be spawned at Position(10,0)
+PRINT, To be spawned at Position(10,63)
+PRINT, Type 1 at Position (9,63)
+PRINT, Type 2 at Position (10,0)
+PRINT, Type 3 at Position (10,63)
+PRINT, 
+SHOOT, D, 1615, 1618, 0
+SHOOT, D, 1621, 1624, 2
+SHOOT, D, 1627, 1630, 4
+SHOOT, D, 1628, 1631, 0
+SHOOT, D, 1633, 1636, 6
+SHOOT, D, 1634, 1637, 1
+SHOOT, D, 1639, 1642, 8
+SHOOT, D, 1640, 1643, 3
+SHOOT, D, 1645, 1648, 10
+SHOOT, D, 1646, 1649, 5
+SHOOT, D, 1651, 1654, 12
+SHOOT, D, 1652, 1655, 7
+SHOOT, D, 1656, 1659, 0
+SHOOT, D, 1657, 1660, 14
+SHOOT, D, 1658, 1661, 9
+SHOOT, D, 1662, 1665, 2
+SHOOT, D, 1663, 1666, 16
+SHOOT, D, 1664, 1667, 11
+SHOOT, D, 1668, 1671, 6
+SHOOT, D, 1669, 1672, 18
+SHOOT, D, 1670, 1673, 13
+SHOOT, A, 1618, 1615, 0
+SHOOT, A, 1624, 1621, 2
+SHOOT, A, 1630, 1627, 4
+SHOOT, A, 1631, 1628, 0
+SHOOT, A, 1636, 1633, 6
+SHOOT, A, 1637, 1634, 1
+SHOOT, A, 1642, 1639, 8
+SHOOT, A, 1643, 1640, 3
+SHOOT, A, 1648, 1645, 10
+SHOOT, A, 1649, 1646, 5
+SHOOT, A, 1654, 1651, 12
+SHOOT, A, 1655, 1652, 7
+SHOOT, A, 1659, 1656, 0
+SHOOT, A, 1660, 1657, 14
+SHOOT, A, 1661, 1658, 9
+SHOOT, A, 1665, 1662, 2
+SHOOT, A, 1666, 1663, 16
+SHOOT, A, 1667, 1664, 11
+SHOOT, A, 1671, 1668, 6
+SHOOT, A, 1672, 1669, 18
+SHOOT, A, 1673, 1670, 13
+DEAD, A, 1615
+DEAD, A, 1628
+DEAD, A, 1656
+DEAD, D, 1618
+DEAD, D, 1631
+DEAD, D, 1659
+SPAWN, A, 1674, 1, 9, 63
+SPAWN, A, 1675, 2, 10, 0
+SPAWN, A, 1676, 3, 10, 63
+SPAWN, D, 1677, 1, 9, 63
+SPAWN, D, 1678, 2, 10, 0
+SPAWN, D, 1679, 3, 10, 63
+TURN, 280
+PRINT, TURN 280 LOGS:To be spawned at Position(11,0)
+PRINT, To be spawned at Position(11,63)
+PRINT, To be spawned at Position(12,0)
+PRINT, Type 1 at Position (11,0)
+PRINT, Type 2 at Position (11,63)
+PRINT, Type 3 at Position (12,0)
+PRINT, 
+SHOOT, D, 1621, 1624, 0
+SHOOT, D, 1627, 1630, 2
+SHOOT, D, 1633, 1636, 4
+SHOOT, D, 1634, 1637, 0
+SHOOT, D, 1639, 1642, 6
+SHOOT, D, 1640, 1643, 1
+SHOOT, D, 1645, 1648, 8
+SHOOT, D, 1646, 1649, 3
+SHOOT, D, 1651, 1654, 10
+SHOOT, D, 1652, 1655, 5
+SHOOT, D, 1657, 1660, 12
+SHOOT, D, 1658, 1661, 7
+SHOOT, D, 1662, 1665, 0
+SHOOT, D, 1663, 1666, 14
+SHOOT, D, 1664, 1667, 9
+SHOOT, D, 1668, 1671, 2
+SHOOT, D, 1669, 1672, 16
+SHOOT, D, 1670, 1673, 11
+SHOOT, D, 1674, 1677, 6
+SHOOT, D, 1675, 1678, 18
+SHOOT, D, 1676, 1679, 13
+SHOOT, A, 1624, 1621, 0
+SHOOT, A, 1630, 1627, 2
+SHOOT, A, 1636, 1633, 4
+SHOOT, A, 1637, 1634, 0
+SHOOT, A, 1642, 1639, 6
+SHOOT, A, 1643, 1640, 1
+SHOOT, A, 1648, 1645, 8
+SHOOT, A, 1649, 1646, 3
+SHOOT, A, 1654, 1651, 10
+SHOOT, A, 1655, 1652, 5
+SHOOT, A, 1660, 1657, 12
+SHOOT, A, 1661, 1658, 7
+SHOOT, A, 1665, 1662, 0
+SHOOT, A, 1666, 1663, 14
+SHOOT, A, 1667, 1664, 9
+SHOOT, A, 1671, 1668, 2
+SHOOT, A, 1672, 1669, 16
+SHOOT, A, 1673, 1670, 11
+SHOOT, A, 1677, 1674, 6
+SHOOT, A, 1678, 1675, 18
+SHOOT, A, 1679, 1676, 13
+DEAD, A, 1621
+DEAD, A, 1634
+DEAD, A, 1662
+DEAD, D, 1624
+DEAD, D, 1637
+DEAD, D, 1665
+SPAWN, A, 1680, 1, 11, 0
+SPAWN, A, 1681, 2, 11, 63
+SPAWN, A, 1682, 3, 12, 0
+SPAWN, D, 1683, 1, 11, 0
+SPAWN, D, 1684, 2, 11, 63
+SPAWN, D, 1685, 3, 12, 0
+TURN, 281
+PRINT, TURN 281 LOGS:To be spawned at Position(12,63)
+PRINT, To be spawned at Position(13,0)
+PRINT, To be spawned at Position(13,63)
+PRINT, Type 1 at Position (12,63)
+PRINT, Type 2 at Position (13,0)
+PRINT, Type 3 at Position (13,63)
+PRINT, 
+SHOOT, D, 1627, 1630, 0
+SHOOT, D, 1633, 1636, 2
+SHOOT, D, 1639, 1642, 4
+SHOOT, D, 1640, 1643, 0
+SHOOT, D, 1645, 1648, 6
+SHOOT, D, 1646, 1649, 1
+SHOOT, D, 1651, 1654, 8
+SHOOT, D, 1652, 1655, 3
+SHOOT, D, 1657, 1660, 10
+SHOOT, D, 1658, 1661, 5
+SHOOT, D, 1663, 1666, 12
+SHOOT, D, 1664, 1667, 7
+SHOOT, D, 1668, 1671, 0
+SHOOT, D, 1669, 1672, 14
+SHOOT, D, 1670, 1673, 9
+SHOOT, D, 1674, 1677, 2
+SHOOT, D, 1675, 1678, 16
+SHOOT, D, 1676, 1679, 11
+SHOOT, D, 1680, 1683, 6
+SHOOT, D, 1681, 1684, 18
+SHOOT, D, 1682, 1685, 13
+SHOOT, A, 1630, 1627, 0
+SHOOT, A, 1636, 1633, 2
+SHOOT, A, 1642, 1639, 4
+SHOOT, A, 1643, 1640, 0
+SHOOT, A, 1648, 1645, 6
+SHOOT, A, 1649, 1646, 1
+SHOOT, A, 1654, 1651, 8
+SHOOT, A, 1655, 1652, 3
+SHOOT, A, 1660, 1657, 10
+SHOOT, A, 1661, 1658, 5
+SHOOT, A, 1666, 1663, 12
+SHOOT, A, 1667, 1664, 7
+SHOOT, A, 1671, 1668, 0
+SHOOT, A, 1672, 1669, 14
+SHOOT, A, 1673, 1670, 9
+SHOOT, A, 1677, 1674, 2
+SHOOT, A, 1678, 1675, 16
+SHOOT, A, 1679, 1676, 11
+SHOOT, A, 1683, 1680, 6
+SHOOT, A, 1684, 1681, 18
+SHOOT, A, 1685, 1682, 13
+DEAD, A, 1627
+DEAD, A, 1640
+DEAD, A, 1668
+DEAD, D, 1630
+DEAD, D, 1643
+DEAD, D, 1671
+SPAWN, A, 1686, 1, 12, 63
+SPAWN, A, 1687, 2, 13, 0
+SPAWN, A, 1688, 3, 13, 63
+SPAWN, D, 1689, 1, 12, 63
+SPAWN, D, 1690, 2, 13, 0
+SPAWN, D, 1691, 3, 13, 63
+TURN, 282
+PRINT, TURN 282 LOGS:To be spawned at Position(14,0)
+PRINT, To be spawned at Position(14,63)
+PRINT, To be spawned at Position(15,0)
+PRINT, Type 1 at Position (14,0)
+PRINT, Type 2 at Position (14,63)
+PRINT, Type 3 at Position (15,0)
+PRINT, 
+SHOOT, D, 1633, 1636, 0
+SHOOT, D, 1639, 1642, 2
+SHOOT, D, 1645, 1648, 4
+SHOOT, D, 1646, 1649, 0
+SHOOT, D, 1651, 1654, 6
+SHOOT, D, 1652, 1655, 1
+SHOOT, D, 1657, 1660, 8
+SHOOT, D, 1658, 1661, 3
+SHOOT, D, 1663, 1666, 10
+SHOOT, D, 1664, 1667, 5
+SHOOT, D, 1669, 1672, 12
+SHOOT, D, 1670, 1673, 7
+SHOOT, D, 1674, 1677, 0
+SHOOT, D, 1675, 1678, 14
+SHOOT, D, 1676, 1679, 9
+SHOOT, D, 1680, 1683, 2
+SHOOT, D, 1681, 1684, 16
+SHOOT, D, 1682, 1685, 11
+SHOOT, D, 1686, 1689, 6
+SHOOT, D, 1687, 1690, 18
+SHOOT, D, 1688, 1691, 13
+SHOOT, A, 1636, 1633, 0
+SHOOT, A, 1642, 1639, 2
+SHOOT, A, 1648, 1645, 4
+SHOOT, A, 1649, 1646, 0
+SHOOT, A, 1654, 1651, 6
+SHOOT, A, 1655, 1652, 1
+SHOOT, A, 1660, 1657, 8
+SHOOT, A, 1661, 1658, 3
+SHOOT, A, 1666, 1663, 10
+SHOOT, A, 1667, 1664, 5
+SHOOT, A, 1672, 1669, 12
+SHOOT, A, 1673, 1670, 7
+SHOOT, A, 1677, 1674, 0
+SHOOT, A, 1678, 1675, 14
+SHOOT, A, 1679, 1676, 9
+SHOOT, A, 1683, 1680, 2
+SHOOT, A, 1684, 1681, 16
+SHOOT, A, 1685, 1682, 11
+SHOOT, A, 1689, 1686, 6
+SHOOT, A, 1690, 1687, 18
+SHOOT, A, 1691, 1688, 13
+DEAD, A, 1633
+DEAD, A, 1646
+DEAD, A, 1674
+DEAD, D, 1636
+DEAD, D, 1649
+DEAD, D, 1677
+SPAWN, A, 1692, 1, 14, 0
+SPAWN, A, 1693, 2, 14, 63
+SPAWN, A, 1694, 3, 15, 0
+SPAWN, D, 1695, 1, 14, 0
+SPAWN, D, 1696, 2, 14, 63
+SPAWN, D, 1697, 3, 15, 0
+TURN, 283
+PRINT, TURN 283 LOGS:To be spawned at Position(15,63)
+PRINT, To be spawned at Position(16,0)
+PRINT, To be spawned at Position(16,63)
+PRINT, Type 1 at Position (15,63)
+PRINT, Type 2 at Position (16,0)
+PRINT, Type 3 at Position (16,63)
+PRINT, 
+SHOOT, D, 1639, 1642, 0
+SHOOT, D, 1645, 1648, 2
+SHOOT, D, 1651, 1654, 4
+SHOOT, D, 1652, 1655, 0
+SHOOT, D, 1657, 1660, 6
+SHOOT, D, 1658, 1661, 1
+SHOOT, D, 1663, 1666, 8
+SHOOT, D, 1664, 1667, 3
+SHOOT, D, 1669, 1672, 10
+SHOOT, D, 1670, 1673, 5
+SHOOT, D, 1675, 1678, 12
+SHOOT, D, 1676, 1679, 7
+SHOOT, D, 1680, 1683, 0
+SHOOT, D, 1681, 1684, 14
+SHOOT, D, 1682, 1685, 9
+SHOOT, D, 1686, 1689, 2
+SHOOT, D, 1687, 1690, 16
+SHOOT, D, 1688, 1691, 11
+SHOOT, D, 1692, 1695, 6
+SHOOT, D, 1693, 1696, 18
+SHOOT, D, 1694, 1697, 13
+SHOOT, A, 1642, 1639, 0
+SHOOT, A, 1648, 1645, 2
+SHOOT, A, 1654, 1651, 4
+SHOOT, A, 1655, 1652, 0
+SHOOT, A, 1660, 1657, 6
+SHOOT, A, 1661, 1658, 1
+SHOOT, A, 1666, 1663, 8
+SHOOT, A, 1667, 1664, 3
+SHOOT, A, 1672, 1669, 10
+SHOOT, A, 1673, 1670, 5
+SHOOT, A, 1678, 1675, 12
+SHOOT, A, 1679, 1676, 7
+SHOOT, A, 1683, 1680, 0
+SHOOT, A, 1684, 1681, 14
+SHOOT, A, 1685, 1682, 9
+SHOOT, A, 1689, 1686, 2
+SHOOT, A, 1690, 1687, 16
+SHOOT, A, 1691, 1688, 11
+SHOOT, A, 1695, 1692, 6
+SHOOT, A, 1696, 1693, 18
+SHOOT, A, 1697, 1694, 13
+DEAD, A, 1639
+DEAD, A, 1652
+DEAD, A, 1680
+DEAD, D, 1642
+DEAD, D, 1655
+DEAD, D, 1683
+SPAWN, A, 1698, 1, 15, 63
+SPAWN, A, 1699, 2, 16, 0
+SPAWN, A, 1700, 3, 16, 63
+SPAWN, D, 1701, 1, 15, 63
+SPAWN, D, 1702, 2, 16, 0
+SPAWN, D, 1703, 3, 16, 63
+TURN, 284
+PRINT, TURN 284 LOGS:To be spawned at Position(17,0)
+PRINT, To be spawned at Position(17,63)
+PRINT, To be spawned at Position(18,0)
+PRINT, Type 1 at Position (17,0)
+PRINT, Type 2 at Position (17,63)
+PRINT, Type 3 at Position (18,0)
+PRINT, 
+SHOOT, D, 1645, 1648, 0
+SHOOT, D, 1651, 1654, 2
+SHOOT, D, 1657, 1660, 4
+SHOOT, D, 1658, 1661, 0
+SHOOT, D, 1663, 1666, 6
+SHOOT, D, 1664, 1667, 1
+SHOOT, D, 1669, 1672, 8
+SHOOT, D, 1670, 1673, 3
+SHOOT, D, 1675, 1678, 10
+SHOOT, D, 1676, 1679, 5
+SHOOT, D, 1681, 1684, 12
+SHOOT, D, 1682, 1685, 7
+SHOOT, D, 1686, 1689, 0
+SHOOT, D, 1687, 1690, 14
+SHOOT, D, 1688, 1691, 9
+SHOOT, D, 1692, 1695, 2
+SHOOT, D, 1693, 1696, 16
+SHOOT, D, 1694, 1697, 11
+SHOOT, D, 1698, 1701, 6
+SHOOT, D, 1699, 1702, 18
+SHOOT, D, 1700, 1703, 13
+SHOOT, A, 1648, 1645, 0
+SHOOT, A, 1654, 1651, 2
+SHOOT, A, 1660, 1657, 4
+SHOOT, A, 1661, 1658, 0
+SHOOT, A, 1666, 1663, 6
+SHOOT, A, 1667, 1664, 1
+SHOOT, A, 1672, 1669, 8
+SHOOT, A, 1673, 1670, 3
+SHOOT, A, 1678, 1675, 10
+SHOOT, A, 1679, 1676, 5
+SHOOT, A, 1684, 1681, 12
+SHOOT, A, 1685, 1682, 7
+SHOOT, A, 1689, 1686, 0
+SHOOT, A, 1690, 1687, 14
+SHOOT, A, 1691, 1688, 9
+SHOOT, A, 1695, 1692, 2
+SHOOT, A, 1696, 1693, 16
+SHOOT, A, 1697, 1694, 11
+SHOOT, A, 1701, 1698, 6
+SHOOT, A, 1702, 1699, 18
+SHOOT, A, 1703, 1700, 13
+DEAD, A, 1645
+DEAD, A, 1658
+DEAD, A, 1686
+DEAD, D, 1648
+DEAD, D, 1661
+DEAD, D, 1689
+SPAWN, A, 1704, 1, 17, 0
+SPAWN, A, 1705, 2, 17, 63
+SPAWN, A, 1706, 3, 18, 0
+SPAWN, D, 1707, 1, 17, 0
+SPAWN, D, 1708, 2, 17, 63
+SPAWN, D, 1709, 3, 18, 0
+TURN, 285
+PRINT, TURN 285 LOGS:To be spawned at Position(18,63)
+PRINT, To be spawned at Position(19,0)
+PRINT, To be spawned at Position(19,63)
+PRINT, Type 1 at Position (18,63)
+PRINT, Type 2 at Position (19,0)
+PRINT, Type 3 at Position (19,63)
+PRINT, 
+SHOOT, D, 1651, 1654, 0
+SHOOT, D, 1657, 1660, 2
+SHOOT, D, 1663, 1666, 4
+SHOOT, D, 1664, 1667, 0
+SHOOT, D, 1669, 1672, 6
+SHOOT, D, 1670, 1673, 1
+SHOOT, D, 1675, 1678, 8
+SHOOT, D, 1676, 1679, 3
+SHOOT, D, 1681, 1684, 10
+SHOOT, D, 1682, 1685, 5
+SHOOT, D, 1687, 1690, 12
+SHOOT, D, 1688, 1691, 7
+SHOOT, D, 1692, 1695, 0
+SHOOT, D, 1693, 1696, 14
+SHOOT, D, 1694, 1697, 9
+SHOOT, D, 1698, 1701, 2
+SHOOT, D, 1699, 1702, 16
+SHOOT, D, 1700, 1703, 11
+SHOOT, D, 1704, 1707, 6
+SHOOT, D, 1705, 1708, 18
+SHOOT, D, 1706, 1709, 13
+SHOOT, A, 1654, 1651, 0
+SHOOT, A, 1660, 1657, 2
+SHOOT, A, 1666, 1663, 4
+SHOOT, A, 1667, 1664, 0
+SHOOT, A, 1672, 1669, 6
+SHOOT, A, 1673, 1670, 1
+SHOOT, A, 1678, 1675, 8
+SHOOT, A, 1679, 1676, 3
+SHOOT, A, 1684, 1681, 10
+SHOOT, A, 1685, 1682, 5
+SHOOT, A, 1690, 1687, 12
+SHOOT, A, 1691, 1688, 7
+SHOOT, A, 1695, 1692, 0
+SHOOT, A, 1696, 1693, 14
+SHOOT, A, 1697, 1694, 9
+SHOOT, A, 1701, 1698, 2
+SHOOT, A, 1702, 1699, 16
+SHOOT, A, 1703, 1700, 11
+SHOOT, A, 1707, 1704, 6
+SHOOT, A, 1708, 1705, 18
+SHOOT, A, 1709, 1706, 13
+DEAD, A, 1651
+DEAD, A, 1664
+DEAD, A, 1692
+DEAD, D, 1654
+DEAD, D, 1667
+DEAD, D, 1695
+SPAWN, A, 1710, 1, 18, 63
+SPAWN, A, 1711, 2, 19, 0
+SPAWN, A, 1712, 3, 19, 63
+SPAWN, D, 1713, 1, 18, 63
+SPAWN, D, 1714, 2, 19, 0
+SPAWN, D, 1715, 3, 19, 63
+TURN, 286
+PRINT, TURN 286 LOGS:To be spawned at Position(20,0)
+PRINT, To be spawned at Position(20,63)
+PRINT, To be spawned at Position(21,0)
+PRINT, Type 1 at Position (20,0)
+PRINT, Type 2 at Position (20,63)
+PRINT, Type 3 at Position (21,0)
+PRINT, 
+SHOOT, D, 1657, 1660, 0
+SHOOT, D, 1663, 1666, 2
+SHOOT, D, 1669, 1672, 4
+SHOOT, D, 1670, 1673, 0
+SHOOT, D, 1675, 1678, 6
+SHOOT, D, 1676, 1679, 1
+SHOOT, D, 1681, 1684, 8
+SHOOT, D, 1682, 1685, 3
+SHOOT, D, 1687, 1690, 10
+SHOOT, D, 1688, 1691, 5
+SHOOT, D, 1693, 1696, 12
+SHOOT, D, 1694, 1697, 7
+SHOOT, D, 1698, 1701, 0
+SHOOT, D, 1699, 1702, 14
+SHOOT, D, 1700, 1703, 9
+SHOOT, D, 1704, 1707, 2
+SHOOT, D, 1705, 1708, 16
+SHOOT, D, 1706, 1709, 11
+SHOOT, D, 1710, 1713, 6
+SHOOT, D, 1711, 1714, 18
+SHOOT, D, 1712, 1715, 13
+SHOOT, A, 1660, 1657, 0
+SHOOT, A, 1666, 1663, 2
+SHOOT, A, 1672, 1669, 4
+SHOOT, A, 1673, 1670, 0
+SHOOT, A, 1678, 1675, 6
+SHOOT, A, 1679, 1676, 1
+SHOOT, A, 1684, 1681, 8
+SHOOT, A, 1685, 1682, 3
+SHOOT, A, 1690, 1687, 10
+SHOOT, A, 1691, 1688, 5
+SHOOT, A, 1696, 1693, 12
+SHOOT, A, 1697, 1694, 7
+SHOOT, A, 1701, 1698, 0
+SHOOT, A, 1702, 1699, 14
+SHOOT, A, 1703, 1700, 9
+SHOOT, A, 1707, 1704, 2
+SHOOT, A, 1708, 1705, 16
+SHOOT, A, 1709, 1706, 11
+SHOOT, A, 1713, 1710, 6
+SHOOT, A, 1714, 1711, 18
+SHOOT, A, 1715, 1712, 13
+DEAD, A, 1657
+DEAD, A, 1670
+DEAD, A, 1698
+DEAD, D, 1660
+DEAD, D, 1673
+DEAD, D, 1701
+SPAWN, A, 1716, 1, 20, 0
+SPAWN, A, 1717, 2, 20, 63
+SPAWN, A, 1718, 3, 21, 0
+SPAWN, D, 1719, 1, 20, 0
+SPAWN, D, 1720, 2, 20, 63
+SPAWN, D, 1721, 3, 21, 0
+TURN, 287
+PRINT, TURN 287 LOGS:To be spawned at Position(21,63)
+PRINT, To be spawned at Position(22,0)
+PRINT, To be spawned at Position(22,63)
+PRINT, Type 1 at Position (21,63)
+PRINT, Type 2 at Position (22,0)
+PRINT, Type 3 at Position (22,63)
+PRINT, 
+SHOOT, D, 1663, 1666, 0
+SHOOT, D, 1669, 1672, 2
+SHOOT, D, 1675, 1678, 4
+SHOOT, D, 1676, 1679, 0
+SHOOT, D, 1681, 1684, 6
+SHOOT, D, 1682, 1685, 1
+SHOOT, D, 1687, 1690, 8
+SHOOT, D, 1688, 1691, 3
+SHOOT, D, 1693, 1696, 10
+SHOOT, D, 1694, 1697, 5
+SHOOT, D, 1699, 1702, 12
+SHOOT, D, 1700, 1703, 7
+SHOOT, D, 1704, 1707, 0
+SHOOT, D, 1705, 1708, 14
+SHOOT, D, 1706, 1709, 9
+SHOOT, D, 1710, 1713, 2
+SHOOT, D, 1711, 1714, 16
+SHOOT, D, 1712, 1715, 11
+SHOOT, D, 1716, 1719, 6
+SHOOT, D, 1717, 1720, 18
+SHOOT, D, 1718, 1721, 13
+SHOOT, A, 1666, 1663, 0
+SHOOT, A, 1672, 1669, 2
+SHOOT, A, 1678, 1675, 4
+SHOOT, A, 1679, 1676, 0
+SHOOT, A, 1684, 1681, 6
+SHOOT, A, 1685, 1682, 1
+SHOOT, A, 1690, 1687, 8
+SHOOT, A, 1691, 1688, 3
+SHOOT, A, 1696, 1693, 10
+SHOOT, A, 1697, 1694, 5
+SHOOT, A, 1702, 1699, 12
+SHOOT, A, 1703, 1700, 7
+SHOOT, A, 1707, 1704, 0
+SHOOT, A, 1708, 1705, 14
+SHOOT, A, 1709, 1706, 9
+SHOOT, A, 1713, 1710, 2
+SHOOT, A, 1714, 1711, 16
+SHOOT, A, 1715, 1712, 11
+SHOOT, A, 1719, 1716, 6
+SHOOT, A, 1720, 1717, 18
+SHOOT, A, 1721, 1718, 13
+DEAD, A, 1663
+DEAD, A, 1676
+DEAD, A, 1704
+DEAD, D, 1666
+DEAD, D, 1679
+DEAD, D, 1707
+SPAWN, A, 1722, 1, 21, 63
+SPAWN, A, 1723, 2, 22, 0
+SPAWN, A, 1724, 3, 22, 63
+SPAWN, D, 1725, 1, 21, 63
+SPAWN, D, 1726, 2, 22, 0
+SPAWN, D, 1727, 3, 22, 63
+TURN, 288
+PRINT, TURN 288 LOGS:To be spawned at Position(23,0)
+PRINT, To be spawned at Position(23,63)
+PRINT, To be spawned at Position(24,0)
+PRINT, Type 1 at Position (23,0)
+PRINT, Type 2 at Position (23,63)
+PRINT, Type 3 at Position (24,0)
+PRINT, 
+SHOOT, D, 1669, 1672, 0
+SHOOT, D, 1675, 1678, 2
+SHOOT, D, 1681, 1684, 4
+SHOOT, D, 1682, 1685, 0
+SHOOT, D, 1687, 1690, 6
+SHOOT, D, 1688, 1691, 1
+SHOOT, D, 1693, 1696, 8
+SHOOT, D, 1694, 1697, 3
+SHOOT, D, 1699, 1702, 10
+SHOOT, D, 1700, 1703, 5
+SHOOT, D, 1705, 1708, 12
+SHOOT, D, 1706, 1709, 7
+SHOOT, D, 1710, 1713, 0
+SHOOT, D, 1711, 1714, 14
+SHOOT, D, 1712, 1715, 9
+SHOOT, D, 1716, 1719, 2
+SHOOT, D, 1717, 1720, 16
+SHOOT, D, 1718, 1721, 11
+SHOOT, D, 1722, 1725, 6
+SHOOT, D, 1723, 1726, 18
+SHOOT, D, 1724, 1727, 13
+SHOOT, A, 1672, 1669, 0
+SHOOT, A, 1678, 1675, 2
+SHOOT, A, 1684, 1681, 4
+SHOOT, A, 1685, 1682, 0
+SHOOT, A, 1690, 1687, 6
+SHOOT, A, 1691, 1688, 1
+SHOOT, A, 1696, 1693, 8
+SHOOT, A, 1697, 1694, 3
+SHOOT, A, 1702, 1699, 10
+SHOOT, A, 1703, 1700, 5
+SHOOT, A, 1708, 1705, 12
+SHOOT, A, 1709, 1706, 7
+SHOOT, A, 1713, 1710, 0
+SHOOT, A, 1714, 1711, 14
+SHOOT, A, 1715, 1712, 9
+SHOOT, A, 1719, 1716, 2
+SHOOT, A, 1720, 1717, 16
+SHOOT, A, 1721, 1718, 11
+SHOOT, A, 1725, 1722, 6
+SHOOT, A, 1726, 1723, 18
+SHOOT, A, 1727, 1724, 13
+DEAD, A, 1669
+DEAD, A, 1682
+DEAD, A, 1710
+DEAD, D, 1672
+DEAD, D, 1685
+DEAD, D, 1713
+SPAWN, A, 1728, 1, 23, 0
+SPAWN, A, 1729, 2, 23, 63
+SPAWN, A, 1730, 3, 24, 0
+SPAWN, D, 1731, 1, 23, 0
+SPAWN, D, 1732, 2, 23, 63
+SPAWN, D, 1733, 3, 24, 0
+TURN, 289
+PRINT, TURN 289 LOGS:To be spawned at Position(24,63)
+PRINT, To be spawned at Position(25,0)
+PRINT, To be spawned at Position(25,63)
+PRINT, Type 1 at Position (24,63)
+PRINT, Type 2 at Position (25,0)
+PRINT, Type 3 at Position (25,63)
+PRINT, 
+SHOOT, D, 1675, 1678, 0
+SHOOT, D, 1681, 1684, 2
+SHOOT, D, 1687, 1690, 4
+SHOOT, D, 1688, 1691, 0
+SHOOT, D, 1693, 1696, 6
+SHOOT, D, 1694, 1697, 1
+SHOOT, D, 1699, 1702, 8
+SHOOT, D, 1700, 1703, 3
+SHOOT, D, 1705, 1708, 10
+SHOOT, D, 1706, 1709, 5
+SHOOT, D, 1711, 1714, 12
+SHOOT, D, 1712, 1715, 7
+SHOOT, D, 1716, 1719, 0
+SHOOT, D, 1717, 1720, 14
+SHOOT, D, 1718, 1721, 9
+SHOOT, D, 1722, 1725, 2
+SHOOT, D, 1723, 1726, 16
+SHOOT, D, 1724, 1727, 11
+SHOOT, D, 1728, 1731, 6
+SHOOT, D, 1729, 1732, 18
+SHOOT, D, 1730, 1733, 13
+SHOOT, A, 1678, 1675, 0
+SHOOT, A, 1684, 1681, 2
+SHOOT, A, 1690, 1687, 4
+SHOOT, A, 1691, 1688, 0
+SHOOT, A, 1696, 1693, 6
+SHOOT, A, 1697, 1694, 1
+SHOOT, A, 1702, 1699, 8
+SHOOT, A, 1703, 1700, 3
+SHOOT, A, 1708, 1705, 10
+SHOOT, A, 1709, 1706, 5
+SHOOT, A, 1714, 1711, 12
+SHOOT, A, 1715, 1712, 7
+SHOOT, A, 1719, 1716, 0
+SHOOT, A, 1720, 1717, 14
+SHOOT, A, 1721, 1718, 9
+SHOOT, A, 1725, 1722, 2
+SHOOT, A, 1726, 1723, 16
+SHOOT, A, 1727, 1724, 11
+SHOOT, A, 1731, 1728, 6
+SHOOT, A, 1732, 1729, 18
+SHOOT, A, 1733, 1730, 13
+DEAD, A, 1675
+DEAD, A, 1688
+DEAD, A, 1716
+DEAD, D, 1678
+DEAD, D, 1691
+DEAD, D, 1719
+SPAWN, A, 1734, 1, 24, 63
+SPAWN, A, 1735, 2, 25, 0
+SPAWN, A, 1736, 3, 25, 63
+SPAWN, D, 1737, 1, 24, 63
+SPAWN, D, 1738, 2, 25, 0
+SPAWN, D, 1739, 3, 25, 63
+TURN, 290
+PRINT, TURN 290 LOGS:To be spawned at Position(26,0)
+PRINT, To be spawned at Position(26,63)
+PRINT, To be spawned at Position(27,0)
+PRINT, Type 1 at Position (26,0)
+PRINT, Type 2 at Position (26,63)
+PRINT, Type 3 at Position (27,0)
+PRINT, 
+SHOOT, D, 1681, 1684, 0
+SHOOT, D, 1687, 1690, 2
+SHOOT, D, 1693, 1696, 4
+SHOOT, D, 1694, 1697, 0
+SHOOT, D, 1699, 1702, 6
+SHOOT, D, 1700, 1703, 1
+SHOOT, D, 1705, 1708, 8
+SHOOT, D, 1706, 1709, 3
+SHOOT, D, 1711, 1714, 10
+SHOOT, D, 1712, 1715, 5
+SHOOT, D, 1717, 1720, 12
+SHOOT, D, 1718, 1721, 7
+SHOOT, D, 1722, 1725, 0
+SHOOT, D, 1723, 1726, 14
+SHOOT, D, 1724, 1727, 9
+SHOOT, D, 1728, 1731, 2
+SHOOT, D, 1729, 1732, 16
+SHOOT, D, 1730, 1733, 11
+SHOOT, D, 1734, 1737, 6
+SHOOT, D, 1735, 1738, 18
+SHOOT, D, 1736, 1739, 13
+SHOOT, A, 1684, 1681, 0
+SHOOT, A, 1690, 1687, 2
+SHOOT, A, 1696, 1693, 4
+SHOOT, A, 1697, 1694, 0
+SHOOT, A, 1702, 1699, 6
+SHOOT, A, 1703, 1700, 1
+SHOOT, A, 1708, 1705, 8
+SHOOT, A, 1709, 1706, 3
+SHOOT, A, 1714, 1711, 10
+SHOOT, A, 1715, 1712, 5
+SHOOT, A, 1720, 1717, 12
+SHOOT, A, 1721, 1718, 7
+SHOOT, A, 1725, 1722, 0
+SHOOT, A, 1726, 1723, 14
+SHOOT, A, 1727, 1724, 9
+SHOOT, A, 1731, 1728, 2
+SHOOT, A, 1732, 1729, 16
+SHOOT, A, 1733, 1730, 11
+SHOOT, A, 1737, 1734, 6
+SHOOT, A, 1738, 1735, 18
+SHOOT, A, 1739, 1736, 13
+DEAD, A, 1681
+DEAD, A, 1694
+DEAD, A, 1722
+DEAD, D, 1684
+DEAD, D, 1697
+DEAD, D, 1725
+SPAWN, A, 1740, 1, 26, 0
+SPAWN, A, 1741, 2, 26, 63
+SPAWN, A, 1742, 3, 27, 0
+SPAWN, D, 1743, 1, 26, 0
+SPAWN, D, 1744, 2, 26, 63
+SPAWN, D, 1745, 3, 27, 0
+TURN, 291
+PRINT, TURN 291 LOGS:To be spawned at Position(27,63)
+PRINT, To be spawned at Position(28,0)
+PRINT, To be spawned at Position(28,63)
+PRINT, Type 1 at Position (27,63)
+PRINT, Type 2 at Position (28,0)
+PRINT, Type 3 at Position (28,63)
+PRINT, 
+SHOOT, D, 1687, 1690, 0
+SHOOT, D, 1693, 1696, 2
+SHOOT, D, 1699, 1702, 4
+SHOOT, D, 1700, 1703, 0
+SHOOT, D, 1705, 1708, 6
+SHOOT, D, 1706, 1709, 1
+SHOOT, D, 1711, 1714, 8
+SHOOT, D, 1712, 1715, 3
+SHOOT, D, 1717, 1720, 10
+SHOOT, D, 1718, 1721, 5
+SHOOT, D, 1723, 1726, 12
+SHOOT, D, 1724, 1727, 7
+SHOOT, D, 1728, 1731, 0
+SHOOT, D, 1729, 1732, 14
+SHOOT, D, 1730, 1733, 9
+SHOOT, D, 1734, 1737, 2
+SHOOT, D, 1735, 1738, 16
+SHOOT, D, 1736, 1739, 11
+SHOOT, D, 1740, 1743, 6
+SHOOT, D, 1741, 1744, 18
+SHOOT, D, 1742, 1745, 13
+SHOOT, A, 1690, 1687, 0
+SHOOT, A, 1696, 1693, 2
+SHOOT, A, 1702, 1699, 4
+SHOOT, A, 1703, 1700, 0
+SHOOT, A, 1708, 1705, 6
+SHOOT, A, 1709, 1706, 1
+SHOOT, A, 1714, 1711, 8
+SHOOT, A, 1715, 1712, 3
+SHOOT, A, 1720, 1717, 10
+SHOOT, A, 1721, 1718, 5
+SHOOT, A, 1726, 1723, 12
+SHOOT, A, 1727, 1724, 7
+SHOOT, A, 1731, 1728, 0
+SHOOT, A, 1732, 1729, 14
+SHOOT, A, 1733, 1730, 9
+SHOOT, A, 1737, 1734, 2
+SHOOT, A, 1738, 1735, 16
+SHOOT, A, 1739, 1736, 11
+SHOOT, A, 1743, 1740, 6
+SHOOT, A, 1744, 1741, 18
+SHOOT, A, 1745, 1742, 13
+DEAD, A, 1687
+DEAD, A, 1700
+DEAD, A, 1728
+DEAD, D, 1690
+DEAD, D, 1703
+DEAD, D, 1731
+SPAWN, A, 1746, 1, 27, 63
+SPAWN, A, 1747, 2, 28, 0
+SPAWN, A, 1748, 3, 28, 63
+SPAWN, D, 1749, 1, 27, 63
+SPAWN, D, 1750, 2, 28, 0
+SPAWN, D, 1751, 3, 28, 63
+TURN, 292
+PRINT, TURN 292 LOGS:To be spawned at Position(29,0)
+PRINT, To be spawned at Position(29,63)
+PRINT, To be spawned at Position(30,0)
+PRINT, Type 1 at Position (29,0)
+PRINT, Type 2 at Position (29,63)
+PRINT, Type 3 at Position (30,0)
+PRINT, 
+SHOOT, D, 1693, 1696, 0
+SHOOT, D, 1699, 1702, 2
+SHOOT, D, 1705, 1708, 4
+SHOOT, D, 1706, 1709, 0
+SHOOT, D, 1711, 1714, 6
+SHOOT, D, 1712, 1715, 1
+SHOOT, D, 1717, 1720, 8
+SHOOT, D, 1718, 1721, 3
+SHOOT, D, 1723, 1726, 10
+SHOOT, D, 1724, 1727, 5
+SHOOT, D, 1729, 1732, 12
+SHOOT, D, 1730, 1733, 7
+SHOOT, D, 1734, 1737, 0
+SHOOT, D, 1735, 1738, 14
+SHOOT, D, 1736, 1739, 9
+SHOOT, D, 1740, 1743, 2
+SHOOT, D, 1741, 1744, 16
+SHOOT, D, 1742, 1745, 11
+SHOOT, D, 1746, 1749, 6
+SHOOT, D, 1747, 1750, 18
+SHOOT, D, 1748, 1751, 13
+SHOOT, A, 1696, 1693, 0
+SHOOT, A, 1702, 1699, 2
+SHOOT, A, 1708, 1705, 4
+SHOOT, A, 1709, 1706, 0
+SHOOT, A, 1714, 1711, 6
+SHOOT, A, 1715, 1712, 1
+SHOOT, A, 1720, 1717, 8
+SHOOT, A, 1721, 1718, 3
+SHOOT, A, 1726, 1723, 10
+SHOOT, A, 1727, 1724, 5
+SHOOT, A, 1732, 1729, 12
+SHOOT, A, 1733, 1730, 7
+SHOOT, A, 1737, 1734, 0
+SHOOT, A, 1738, 1735, 14
+SHOOT, A, 1739, 1736, 9
+SHOOT, A, 1743, 1740, 2
+SHOOT, A, 1744, 1741, 16
+SHOOT, A, 1745, 1742, 11
+SHOOT, A, 1749, 1746, 6
+SHOOT, A, 1750, 1747, 18
+SHOOT, A, 1751, 1748, 13
+DEAD, A, 1693
+DEAD, A, 1706
+DEAD, A, 1734
+DEAD, D, 1696
+DEAD, D, 1709
+DEAD, D, 1737
+SPAWN, A, 1752, 1, 29, 0
+SPAWN, A, 1753, 2, 29, 63
+SPAWN, A, 1754, 3, 30, 0
+SPAWN, D, 1755, 1, 29, 0
+SPAWN, D, 1756, 2, 29, 63
+SPAWN, D, 1757, 3, 30, 0
+TURN, 293
+PRINT, TURN 293 LOGS:To be spawned at Position(30,63)
+PRINT, To be spawned at Position(31,0)
+PRINT, To be spawned at Position(31,63)
+PRINT, Type 1 at Position (30,63)
+PRINT, Type 2 at Position (31,0)
+PRINT, Type 3 at Position (31,63)
+PRINT, 
+SHOOT, D, 1699, 1702, 0
+SHOOT, D, 1705, 1708, 2
+SHOOT, D, 1711, 1714, 4
+SHOOT, D, 1712, 1715, 0
+SHOOT, D, 1717, 1720, 6
+SHOOT, D, 1718, 1721, 1
+SHOOT, D, 1723, 1726, 8
+SHOOT, D, 1724, 1727, 3
+SHOOT, D, 1729, 1732, 10
+SHOOT, D, 1730, 1733, 5
+SHOOT, D, 1735, 1738, 12
+SHOOT, D, 1736, 1739, 7
+SHOOT, D, 1740, 1743, 0
+SHOOT, D, 1741, 1744, 14
+SHOOT, D, 1742, 1745, 9
+SHOOT, D, 1746, 1749, 2
+SHOOT, D, 1747, 1750, 16
+SHOOT, D, 1748, 1751, 11
+SHOOT, D, 1752, 1755, 6
+SHOOT, D, 1753, 1756, 18
+SHOOT, D, 1754, 1757, 13
+SHOOT, A, 1702, 1699, 0
+SHOOT, A, 1708, 1705, 2
+SHOOT, A, 1714, 1711, 4
+SHOOT, A, 1715, 1712, 0
+SHOOT, A, 1720, 1717, 6
+SHOOT, A, 1721, 1718, 1
+SHOOT, A, 1726, 1723, 8
+SHOOT, A, 1727, 1724, 3
+SHOOT, A, 1732, 1729, 10
+SHOOT, A, 1733, 1730, 5
+SHOOT, A, 1738, 1735, 12
+SHOOT, A, 1739, 1736, 7
+SHOOT, A, 1743, 1740, 0
+SHOOT, A, 1744, 1741, 14
+SHOOT, A, 1745, 1742, 9
+SHOOT, A, 1749, 1746, 2
+SHOOT, A, 1750, 1747, 16
+SHOOT, A, 1751, 1748, 11
+SHOOT, A, 1755, 1752, 6
+SHOOT, A, 1756, 1753, 18
+SHOOT, A, 1757, 1754, 13
+DEAD, A, 1699
+DEAD, A, 1712
+DEAD, A, 1740
+DEAD, D, 1702
+DEAD, D, 1715
+DEAD, D, 1743
+SPAWN, A, 1758, 1, 30, 63
+SPAWN, A, 1759, 2, 31, 0
+SPAWN, A, 1760, 3, 31, 63
+SPAWN, D, 1761, 1, 30, 63
+SPAWN, D, 1762, 2, 31, 0
+SPAWN, D, 1763, 3, 31, 63
+TURN, 294
+PRINT, TURN 294 LOGS:To be spawned at Position(32,0)
+PRINT, To be spawned at Position(32,63)
+PRINT, To be spawned at Position(33,0)
+PRINT, Type 1 at Position (32,0)
+PRINT, Type 2 at Position (32,63)
+PRINT, Type 3 at Position (33,0)
+PRINT, 
+SHOOT, D, 1705, 1708, 0
+SHOOT, D, 1711, 1714, 2
+SHOOT, D, 1717, 1720, 4
+SHOOT, D, 1718, 1721, 0
+SHOOT, D, 1723, 1726, 6
+SHOOT, D, 1724, 1727, 1
+SHOOT, D, 1729, 1732, 8
+SHOOT, D, 1730, 1733, 3
+SHOOT, D, 1735, 1738, 10
+SHOOT, D, 1736, 1739, 5
+SHOOT, D, 1741, 1744, 12
+SHOOT, D, 1742, 1745, 7
+SHOOT, D, 1746, 1749, 0
+SHOOT, D, 1747, 1750, 14
+SHOOT, D, 1748, 1751, 9
+SHOOT, D, 1752, 1755, 2
+SHOOT, D, 1753, 1756, 16
+SHOOT, D, 1754, 1757, 11
+SHOOT, D, 1758, 1761, 6
+SHOOT, D, 1759, 1762, 18
+SHOOT, D, 1760, 1763, 13
+SHOOT, A, 1708, 1705, 0
+SHOOT, A, 1714, 1711, 2
+SHOOT, A, 1720, 1717, 4
+SHOOT, A, 1721, 1718, 0
+SHOOT, A, 1726, 1723, 6
+SHOOT, A, 1727, 1724, 1
+SHOOT, A, 1732, 1729, 8
+SHOOT, A, 1733, 1730, 3
+SHOOT, A, 1738, 1735, 10
+SHOOT, A, 1739, 1736, 5
+SHOOT, A, 1744, 1741, 12
+SHOOT, A, 1745, 1742, 7
+SHOOT, A, 1749, 1746, 0
+SHOOT, A, 1750, 1747, 14
+SHOOT, A, 1751, 1748, 9
+SHOOT, A, 1755, 1752, 2
+SHOOT, A, 1756, 1753, 16
+SHOOT, A, 1757, 1754, 11
+SHOOT, A, 1761, 1758, 6
+SHOOT, A, 1762, 1759, 18
+SHOOT, A, 1763, 1760, 13
+DEAD, A, 1705
+DEAD, A, 1718
+DEAD, A, 1746
+DEAD, D, 1708
+DEAD, D, 1721
+DEAD, D, 1749
+SPAWN, A, 1764, 1, 32, 0
+SPAWN, A, 1765, 2, 32, 63
+SPAWN, A, 1766, 3, 33, 0
+SPAWN, D, 1767, 1, 32, 0
+SPAWN, D, 1768, 2, 32, 63
+SPAWN, D, 1769, 3, 33, 0
+TURN, 295
+PRINT, TURN 295 LOGS:To be spawned at Position(33,63)
+PRINT, To be spawned at Position(34,0)
+PRINT, To be spawned at Position(34,63)
+PRINT, Type 1 at Position (33,63)
+PRINT, Type 2 at Position (34,0)
+PRINT, Type 3 at Position (34,63)
+PRINT, 
+SHOOT, D, 1711, 1714, 0
+SHOOT, D, 1717, 1720, 2
+SHOOT, D, 1723, 1726, 4
+SHOOT, D, 1724, 1727, 0
+SHOOT, D, 1729, 1732, 6
+SHOOT, D, 1730, 1733, 1
+SHOOT, D, 1735, 1738, 8
+SHOOT, D, 1736, 1739, 3
+SHOOT, D, 1741, 1744, 10
+SHOOT, D, 1742, 1745, 5
+SHOOT, D, 1747, 1750, 12
+SHOOT, D, 1748, 1751, 7
+SHOOT, D, 1752, 1755, 0
+SHOOT, D, 1753, 1756, 14
+SHOOT, D, 1754, 1757, 9
+SHOOT, D, 1758, 1761, 2
+SHOOT, D, 1759, 1762, 16
+SHOOT, D, 1760, 1763, 11
+SHOOT, D, 1764, 1767, 6
+SHOOT, D, 1765, 1768, 18
+SHOOT, D, 1766, 1769, 13
+SHOOT, A, 1714, 1711, 0
+SHOOT, A, 1720, 1717, 2
+SHOOT, A, 1726, 1723, 4
+SHOOT, A, 1727, 1724, 0
+SHOOT, A, 1732, 1729, 6
+SHOOT, A, 1733, 1730, 1
+SHOOT, A, 1738, 1735, 8
+SHOOT, A, 1739, 1736, 3
+SHOOT, A, 1744, 1741, 10
+SHOOT, A, 1745, 1742, 5
+SHOOT, A, 1750, 1747, 12
+SHOOT, A, 1751, 1748, 7
+SHOOT, A, 1755, 1752, 0
+SHOOT, A, 1756, 1753, 14
+SHOOT, A, 1757, 1754, 9
+SHOOT, A, 1761, 1758, 2
+SHOOT, A, 1762, 1759, 16
+SHOOT, A, 1763, 1760, 11
+SHOOT, A, 1767, 1764, 6
+SHOOT, A, 1768, 1765, 18
+SHOOT, A, 1769, 1766, 13
+DEAD, A, 1711
+DEAD, A, 1724
+DEAD, A, 1752
+DEAD, D, 1714
+DEAD, D, 1727
+DEAD, D, 1755
+SPAWN, A, 1770, 1, 33, 63
+SPAWN, A, 1771, 2, 34, 0
+SPAWN, A, 1772, 3, 34, 63
+SPAWN, D, 1773, 1, 33, 63
+SPAWN, D, 1774, 2, 34, 0
+SPAWN, D, 1775, 3, 34, 63
+TURN, 296
+PRINT, TURN 296 LOGS:To be spawned at Position(35,0)
+PRINT, To be spawned at Position(35,63)
+PRINT, To be spawned at Position(36,0)
+PRINT, Type 1 at Position (35,0)
+PRINT, Type 2 at Position (35,63)
+PRINT, Type 3 at Position (36,0)
+PRINT, 
+SHOOT, D, 1717, 1720, 0
+SHOOT, D, 1723, 1726, 2
+SHOOT, D, 1729, 1732, 4
+SHOOT, D, 1730, 1733, 0
+SHOOT, D, 1735, 1738, 6
+SHOOT, D, 1736, 1739, 1
+SHOOT, D, 1741, 1744, 8
+SHOOT, D, 1742, 1745, 3
+SHOOT, D, 1747, 1750, 10
+SHOOT, D, 1748, 1751, 5
+SHOOT, D, 1753, 1756, 12
+SHOOT, D, 1754, 1757, 7
+SHOOT, D, 1758, 1761, 0
+SHOOT, D, 1759, 1762, 14
+SHOOT, D, 1760, 1763, 9
+SHOOT, D, 1764, 1767, 2
+SHOOT, D, 1765, 1768, 16
+SHOOT, D, 1766, 1769, 11
+SHOOT, D, 1770, 1773, 6
+SHOOT, D, 1771, 1774, 18
+SHOOT, D, 1772, 1775, 13
+SHOOT, A, 1720, 1717, 0
+SHOOT, A, 1726, 1723, 2
+SHOOT, A, 1732, 1729, 4
+SHOOT, A, 1733, 1730, 0
+SHOOT, A, 1738, 1735, 6
+SHOOT, A, 1739, 1736, 1
+SHOOT, A, 1744, 1741, 8
+SHOOT, A, 1745, 1742, 3
+SHOOT, A, 1750, 1747, 10
+SHOOT, A, 1751, 1748, 5
+SHOOT, A, 1756, 1753, 12
+SHOOT, A, 1757, 1754, 7
+SHOOT, A, 1761, 1758, 0
+SHOOT, A, 1762, 1759, 14
+SHOOT, A, 1763, 1760, 9
+SHOOT, A, 1767, 1764, 2
+SHOOT, A, 1768, 1765, 16
+SHOOT, A, 1769, 1766, 11
+SHOOT, A, 1773, 1770, 6
+SHOOT, A, 1774, 1771, 18
+SHOOT, A, 1775, 1772, 13
+DEAD, A, 1717
+DEAD, A, 1730
+DEAD, A, 1758
+DEAD, D, 1720
+DEAD, D, 1733
+DEAD, D, 1761
+SPAWN, A, 1776, 1, 35, 0
+SPAWN, A, 1777, 2, 35, 63
+SPAWN, A, 1778, 3, 36, 0
+SPAWN, D, 1779, 1, 35, 0
+SPAWN, D, 1780, 2, 35, 63
+SPAWN, D, 1781, 3, 36, 0
+TURN, 297
+PRINT, TURN 297 LOGS:To be spawned at Position(36,63)
+PRINT, To be spawned at Position(37,0)
+PRINT, To be spawned at Position(37,63)
+PRINT, Type 1 at Position (36,63)
+PRINT, Type 2 at Position (37,0)
+PRINT, Type 3 at Position (37,63)
+PRINT, 
+SHOOT, D, 1723, 1726, 0
+SHOOT, D, 1729, 1732, 2
+SHOOT, D, 1735, 1738, 4
+SHOOT, D, 1736, 1739, 0
+SHOOT, D, 1741, 1744, 6
+SHOOT, D, 1742, 1745, 1
+SHOOT, D, 1747, 1750, 8
+SHOOT, D, 1748, 1751, 3
+SHOOT, D, 1753, 1756, 10
+SHOOT, D, 1754, 1757, 5
+SHOOT, D, 1759, 1762, 12
+SHOOT, D, 1760, 1763, 7
+SHOOT, D, 1764, 1767, 0
+SHOOT, D, 1765, 1768, 14
+SHOOT, D, 1766, 1769, 9
+SHOOT, D, 1770, 1773, 2
+SHOOT, D, 1771, 1774, 16
+SHOOT, D, 1772, 1775, 11
+SHOOT, D, 1776, 1779, 6
+SHOOT, D, 1777, 1780, 18
+SHOOT, D, 1778, 1781, 13
+SHOOT, A, 1726, 1723, 0
+SHOOT, A, 1732, 1729, 2
+SHOOT, A, 1738, 1735, 4
+SHOOT, A, 1739, 1736, 0
+SHOOT, A, 1744, 1741, 6
+SHOOT, A, 1745, 1742, 1
+SHOOT, A, 1750, 1747, 8
+SHOOT, A, 1751, 1748, 3
+SHOOT, A, 1756, 1753, 10
+SHOOT, A, 1757, 1754, 5
+SHOOT, A, 1762, 1759, 12
+SHOOT, A, 1763, 1760, 7
+SHOOT, A, 1767, 1764, 0
+SHOOT, A, 1768, 1765, 14
+SHOOT, A, 1769, 1766, 9
+SHOOT, A, 1773, 1770, 2
+SHOOT, A, 1774, 1771, 16
+SHOOT, A, 1775, 1772, 11
+SHOOT, A, 1779, 1776, 6
+SHOOT, A, 1780, 1777, 18
+SHOOT, A, 1781, 1778, 13
+DEAD, A, 1723
+DEAD, A, 1736
+DEAD, A, 1764
+DEAD, D, 1726
+DEAD, D, 1739
+DEAD, D, 1767
+SPAWN, A, 1782, 1, 36, 63
+SPAWN, A, 1783, 2, 37, 0
+SPAWN, A, 1784, 3, 37, 63
+SPAWN, D, 1785, 1, 36, 63
+SPAWN, D, 1786, 2, 37, 0
+SPAWN, D, 1787, 3, 37, 63
+TURN, 298
+PRINT, TURN 298 LOGS:To be spawned at Position(38,0)
+PRINT, To be spawned at Position(38,63)
+PRINT, To be spawned at Position(39,0)
+PRINT, Type 1 at Position (38,0)
+PRINT, Type 2 at Position (38,63)
+PRINT, Type 3 at Position (39,0)
+PRINT, 
+SHOOT, D, 1729, 1732, 0
+SHOOT, D, 1735, 1738, 2
+SHOOT, D, 1741, 1744, 4
+SHOOT, D, 1742, 1745, 0
+SHOOT, D, 1747, 1750, 6
+SHOOT, D, 1748, 1751, 1
+SHOOT, D, 1753, 1756, 8
+SHOOT, D, 1754, 1757, 3
+SHOOT, D, 1759, 1762, 10
+SHOOT, D, 1760, 1763, 5
+SHOOT, D, 1765, 1768, 12
+SHOOT, D, 1766, 1769, 7
+SHOOT, D, 1770, 1773, 0
+SHOOT, D, 1771, 1774, 14
+SHOOT, D, 1772, 1775, 9
+SHOOT, D, 1776, 1779, 2
+SHOOT, D, 1777, 1780, 16
+SHOOT, D, 1778, 1781, 11
+SHOOT, D, 1782, 1785, 6
+SHOOT, D, 1783, 1786, 18
+SHOOT, D, 1784, 1787, 13
+SHOOT, A, 1732, 1729, 0
+SHOOT, A, 1738, 1735, 2
+SHOOT, A, 1744, 1741, 4
+SHOOT, A, 1745, 1742, 0
+SHOOT, A, 1750, 1747, 6
+SHOOT, A, 1751, 1748, 1
+SHOOT, A, 1756, 1753, 8
+SHOOT, A, 1757, 1754, 3
+SHOOT, A, 1762, 1759, 10
+SHOOT, A, 1763, 1760, 5
+SHOOT, A, 1768, 1765, 12
+SHOOT, A, 1769, 1766, 7
+SHOOT, A, 1773, 1770, 0
+SHOOT, A, 1774, 1771, 14
+SHOOT, A, 1775, 1772, 9
+SHOOT, A, 1779, 1776, 2
+SHOOT, A, 1780, 1777, 16
+SHOOT, A, 1781, 1778, 11
+SHOOT, A, 1785, 1782, 6
+SHOOT, A, 1786, 1783, 18
+SHOOT, A, 1787, 1784, 13
+DEAD, A, 1729
+DEAD, A, 1742
+DEAD, A, 1770
+DEAD, D, 1732
+DEAD, D, 1745
+DEAD, D, 1773
+SPAWN, A, 1788, 1, 38, 0
+SPAWN, A, 1789, 2, 38, 63
+SPAWN, A, 1790, 3, 39, 0
+SPAWN, D, 1791, 1, 38, 0
+SPAWN, D, 1792, 2, 38, 63
+SPAWN, D, 1793, 3, 39, 0
+TURN, 299
+PRINT, TURN 299 LOGS:To be spawned at Position(39,63)
+PRINT, To be spawned at Position(40,0)
+PRINT, To be spawned at Position(40,63)
+PRINT, Type 1 at Position (39,63)
+PRINT, Type 2 at Position (40,0)
+PRINT, Type 3 at Position (40,63)
+PRINT, 
+SHOOT, D, 1735, 1738, 0
+SHOOT, D, 1741, 1744, 2
+SHOOT, D, 1747, 1750, 4
+SHOOT, D, 1748, 1751, 0
+SHOOT, D, 1753, 1756, 6
+SHOOT, D, 1754, 1757, 1
+SHOOT, D, 1759, 1762, 8
+SHOOT, D, 1760, 1763, 3
+SHOOT, D, 1765, 1768, 10
+SHOOT, D, 1766, 1769, 5
+SHOOT, D, 1771, 1774, 12
+SHOOT, D, 1772, 1775, 7
+SHOOT, D, 1776, 1779, 0
+SHOOT, D, 1777, 1780, 14
+SHOOT, D, 1778, 1781, 9
+SHOOT, D, 1782, 1785, 2
+SHOOT, D, 1783, 1786, 16
+SHOOT, D, 1784, 1787, 11
+SHOOT, D, 1788, 1791, 6
+SHOOT, D, 1789, 1792, 18
+SHOOT, D, 1790, 1793, 13
+SHOOT, A, 1738, 1735, 0
+SHOOT, A, 1744, 1741, 2
+SHOOT, A, 1750, 1747, 4
+SHOOT, A, 1751, 1748, 0
+SHOOT, A, 1756, 1753, 6
+SHOOT, A, 1757, 1754, 1
+SHOOT, A, 1762, 1759, 8
+SHOOT, A, 1763, 1760, 3
+SHOOT, A, 1768, 1765, 10
+SHOOT, A, 1769, 1766, 5
+SHOOT, A, 1774, 1771, 12
+SHOOT, A, 1775, 1772, 7
+SHOOT, A, 1779, 1776, 0
+SHOOT, A, 1780, 1777, 14
+SHOOT, A, 1781, 1778, 9
+SHOOT, A, 1785, 1782, 2
+SHOOT, A, 1786, 1783, 16
+SHOOT, A, 1787, 1784, 11
+SHOOT, A, 1791, 1788, 6
+SHOOT, A, 1792, 1789, 18
+SHOOT, A, 1793, 1790, 13
+DEAD, A, 1735
+DEAD, A, 1748
+DEAD, A, 1776
+DEAD, D, 1738
+DEAD, D, 1751
+DEAD, D, 1779
+SPAWN, A, 1794, 1, 39, 63
+SPAWN, A, 1795, 2, 40, 0
+SPAWN, A, 1796, 3, 40, 63
+SPAWN, D, 1797, 1, 39, 63
+SPAWN, D, 1798, 2, 40, 0
+SPAWN, D, 1799, 3, 40, 63
+TURN, 300
+PRINT, TURN 300 LOGS:To be spawned at Position(41,0)
+PRINT, To be spawned at Position(41,63)
+PRINT, To be spawned at Position(42,0)
+PRINT, Type 1 at Position (41,0)
+PRINT, Type 2 at Position (41,63)
+PRINT, Type 3 at Position (42,0)
+PRINT, 
+SHOOT, D, 1741, 1744, 0
+SHOOT, D, 1747, 1750, 2
+SHOOT, D, 1753, 1756, 4
+SHOOT, D, 1754, 1757, 0
+SHOOT, D, 1759, 1762, 6
+SHOOT, D, 1760, 1763, 1
+SHOOT, D, 1765, 1768, 8
+SHOOT, D, 1766, 1769, 3
+SHOOT, D, 1771, 1774, 10
+SHOOT, D, 1772, 1775, 5
+SHOOT, D, 1777, 1780, 12
+SHOOT, D, 1778, 1781, 7
+SHOOT, D, 1782, 1785, 0
+SHOOT, D, 1783, 1786, 14
+SHOOT, D, 1784, 1787, 9
+SHOOT, D, 1788, 1791, 2
+SHOOT, D, 1789, 1792, 16
+SHOOT, D, 1790, 1793, 11
+SHOOT, D, 1794, 1797, 6
+SHOOT, D, 1795, 1798, 18
+SHOOT, D, 1796, 1799, 13
+SHOOT, A, 1744, 1741, 0
+SHOOT, A, 1750, 1747, 2
+SHOOT, A, 1756, 1753, 4
+SHOOT, A, 1757, 1754, 0
+SHOOT, A, 1762, 1759, 6
+SHOOT, A, 1763, 1760, 1
+SHOOT, A, 1768, 1765, 8
+SHOOT, A, 1769, 1766, 3
+SHOOT, A, 1774, 1771, 10
+SHOOT, A, 1775, 1772, 5
+SHOOT, A, 1780, 1777, 12
+SHOOT, A, 1781, 1778, 7
+SHOOT, A, 1785, 1782, 0
+SHOOT, A, 1786, 1783, 14
+SHOOT, A, 1787, 1784, 9
+SHOOT, A, 1791, 1788, 2
+SHOOT, A, 1792, 1789, 16
+SHOOT, A, 1793, 1790, 11
+SHOOT, A, 1797, 1794, 6
+SHOOT, A, 1798, 1795, 18
+SHOOT, A, 1799, 1796, 13
+DEAD, A, 1741
+DEAD, A, 1754
+DEAD, A, 1782
+DEAD, D, 1744
+DEAD, D, 1757
+DEAD, D, 1785
+SPAWN, A, 1800, 1, 41, 0
+SPAWN, A, 1801, 2, 41, 63
+SPAWN, A, 1802, 3, 42, 0
+SPAWN, D, 1803, 1, 41, 0
+SPAWN, D, 1804, 2, 41, 63
+SPAWN, D, 1805, 3, 42, 0
+TURN, 301
+PRINT, TURN 301 LOGS:To be spawned at Position(42,63)
+PRINT, To be spawned at Position(43,0)
+PRINT, To be spawned at Position(43,63)
+PRINT, Type 1 at Position (42,63)
+PRINT, Type 2 at Position (43,0)
+PRINT, Type 3 at Position (43,63)
+PRINT, 
+SHOOT, D, 1747, 1750, 0
+SHOOT, D, 1753, 1756, 2
+SHOOT, D, 1759, 1762, 4
+SHOOT, D, 1760, 1763, 0
+SHOOT, D, 1765, 1768, 6
+SHOOT, D, 1766, 1769, 1
+SHOOT, D, 1771, 1774, 8
+SHOOT, D, 1772, 1775, 3
+SHOOT, D, 1777, 1780, 10
+SHOOT, D, 1778, 1781, 5
+SHOOT, D, 1783, 1786, 12
+SHOOT, D, 1784, 1787, 7
+SHOOT, D, 1788, 1791, 0
+SHOOT, D, 1789, 1792, 14
+SHOOT, D, 1790, 1793, 9
+SHOOT, D, 1794, 1797, 2
+SHOOT, D, 1795, 1798, 16
+SHOOT, D, 1796, 1799, 11
+SHOOT, D, 1800, 1803, 6
+SHOOT, D, 1801, 1804, 18
+SHOOT, D, 1802, 1805, 13
+SHOOT, A, 1750, 1747, 0
+SHOOT, A, 1756, 1753, 2
+SHOOT, A, 1762, 1759, 4
+SHOOT, A, 1763, 1760, 0
+SHOOT, A, 1768, 1765, 6
+SHOOT, A, 1769, 1766, 1
+SHOOT, A, 1774, 1771, 8
+SHOOT, A, 1775, 1772, 3
+SHOOT, A, 1780, 1777, 10
+SHOOT, A, 1781, 1778, 5
+SHOOT, A, 1786, 1783, 12
+SHOOT, A, 1787, 1784, 7
+SHOOT, A, 1791, 1788, 0
+SHOOT, A, 1792, 1789, 14
+SHOOT, A, 1793, 1790, 9
+SHOOT, A, 1797, 1794, 2
+SHOOT, A, 1798, 1795, 16
+SHOOT, A, 1799, 1796, 11
+SHOOT, A, 1803, 1800, 6
+SHOOT, A, 1804, 1801, 18
+SHOOT, A, 1805, 1802, 13
+DEAD, A, 1747
+DEAD, A, 1760
+DEAD, A, 1788
+DEAD, D, 1750
+DEAD, D, 1763
+DEAD, D, 1791
+SPAWN, A, 1806, 1, 42, 63
+SPAWN, A, 1807, 2, 43, 0
+SPAWN, A, 1808, 3, 43, 63
+SPAWN, D, 1809, 1, 42, 63
+SPAWN, D, 1810, 2, 43, 0
+SPAWN, D, 1811, 3, 43, 63
+TURN, 302
+PRINT, TURN 302 LOGS:To be spawned at Position(44,0)
+PRINT, To be spawned at Position(44,63)
+PRINT, To be spawned at Position(45,0)
+PRINT, Type 1 at Position (44,0)
+PRINT, Type 2 at Position (44,63)
+PRINT, Type 3 at Position (45,0)
+PRINT, 
+SHOOT, D, 1753, 1756, 0
+SHOOT, D, 1759, 1762, 2
+SHOOT, D, 1765, 1768, 4
+SHOOT, D, 1766, 1769, 0
+SHOOT, D, 1771, 1774, 6
+SHOOT, D, 1772, 1775, 1
+SHOOT, D, 1777, 1780, 8
+SHOOT, D, 1778, 1781, 3
+SHOOT, D, 1783, 1786, 10
+SHOOT, D, 1784, 1787, 5
+SHOOT, D, 1789, 1792, 12
+SHOOT, D, 1790, 1793, 7
+SHOOT, D, 1794, 1797, 0
+SHOOT, D, 1795, 1798, 14
+SHOOT, D, 1796, 1799, 9
+SHOOT, D, 1800, 1803, 2
+SHOOT, D, 1801, 1804, 16
+SHOOT, D, 1802, 1805, 11
+SHOOT, D, 1806, 1809, 6
+SHOOT, D, 1807, 1810, 18
+SHOOT, D, 1808, 1811, 13
+SHOOT, A, 1756, 1753, 0
+SHOOT, A, 1762, 1759, 2
+SHOOT, A, 1768, 1765, 4
+SHOOT, A, 1769, 1766, 0
+SHOOT, A, 1774, 1771, 6
+SHOOT, A, 1775, 1772, 1
+SHOOT, A, 1780, 1777, 8
+SHOOT, A, 1781, 1778, 3
+SHOOT, A, 1786, 1783, 10
+SHOOT, A, 1787, 1784, 5
+SHOOT, A, 1792, 1789, 12
+SHOOT, A, 1793, 1790, 7
+SHOOT, A, 1797, 1794, 0
+SHOOT, A, 1798, 1795, 14
+SHOOT, A, 1799, 1796, 9
+SHOOT, A, 1803, 1800, 2
+SHOOT, A, 1804, 1801, 16
+SHOOT, A, 1805, 1802, 11
+SHOOT, A, 1809, 1806, 6
+SHOOT, A, 1810, 1807, 18
+SHOOT, A, 1811, 1808, 13
+DEAD, A, 1753
+DEAD, A, 1766
+DEAD, A, 1794
+DEAD, D, 1756
+DEAD, D, 1769
+DEAD, D, 1797
+SPAWN, A, 1812, 1, 44, 0
+SPAWN, A, 1813, 2, 44, 63
+SPAWN, A, 1814, 3, 45, 0
+SPAWN, D, 1815, 1, 44, 0
+SPAWN, D, 1816, 2, 44, 63
+SPAWN, D, 1817, 3, 45, 0
+TURN, 303
+PRINT, TURN 303 LOGS:To be spawned at Position(45,63)
+PRINT, To be spawned at Position(46,0)
+PRINT, To be spawned at Position(46,63)
+PRINT, Type 1 at Position (45,63)
+PRINT, Type 2 at Position (46,0)
+PRINT, Type 3 at Position (46,63)
+PRINT, 
+SHOOT, D, 1759, 1762, 0
+SHOOT, D, 1765, 1768, 2
+SHOOT, D, 1771, 1774, 4
+SHOOT, D, 1772, 1775, 0
+SHOOT, D, 1777, 1780, 6
+SHOOT, D, 1778, 1781, 1
+SHOOT, D, 1783, 1786, 8
+SHOOT, D, 1784, 1787, 3
+SHOOT, D, 1789, 1792, 10
+SHOOT, D, 1790, 1793, 5
+SHOOT, D, 1795, 1798, 12
+SHOOT, D, 1796, 1799, 7
+SHOOT, D, 1800, 1803, 0
+SHOOT, D, 1801, 1804, 14
+SHOOT, D, 1802, 1805, 9
+SHOOT, D, 1806, 1809, 2
+SHOOT, D, 1807, 1810, 16
+SHOOT, D, 1808, 1811, 11
+SHOOT, D, 1812, 1815, 6
+SHOOT, D, 1813, 1816, 18
+SHOOT, D, 1814, 1817, 13
+SHOOT, A, 1762, 1759, 0
+SHOOT, A, 1768, 1765, 2
+SHOOT, A, 1774, 1771, 4
+SHOOT, A, 1775, 1772, 0
+SHOOT, A, 1780, 1777, 6
+SHOOT, A, 1781, 1778, 1
+SHOOT, A, 1786, 1783, 8
+SHOOT, A, 1787, 1784, 3
+SHOOT, A, 1792, 1789, 10
+SHOOT, A, 1793, 1790, 5
+SHOOT, A, 1798, 1795, 12
+SHOOT, A, 1799, 1796, 7
+SHOOT, A, 1803, 1800, 0
+SHOOT, A, 1804, 1801, 14
+SHOOT, A, 1805, 1802, 9
+SHOOT, A, 1809, 1806, 2
+SHOOT, A, 1810, 1807, 16
+SHOOT, A, 1811, 1808, 11
+SHOOT, A, 1815, 1812, 6
+SHOOT, A, 1816, 1813, 18
+SHOOT, A, 1817, 1814, 13
+DEAD, A, 1759
+DEAD, A, 1772
+DEAD, A, 1800
+DEAD, D, 1762
+DEAD, D, 1775
+DEAD, D, 1803
+SPAWN, A, 1818, 1, 45, 63
+SPAWN, A, 1819, 2, 46, 0
+SPAWN, A, 1820, 3, 46, 63
+SPAWN, D, 1821, 1, 45, 63
+SPAWN, D, 1822, 2, 46, 0
+SPAWN, D, 1823, 3, 46, 63
+TURN, 304
+PRINT, TURN 304 LOGS:To be spawned at Position(47,0)
+PRINT, To be spawned at Position(47,63)
+PRINT, To be spawned at Position(48,0)
+PRINT, Type 1 at Position (47,0)
+PRINT, Type 2 at Position (47,63)
+PRINT, Type 3 at Position (48,0)
+PRINT, 
+SHOOT, D, 1765, 1768, 0
+SHOOT, D, 1771, 1774, 2
+SHOOT, D, 1777, 1780, 4
+SHOOT, D, 1778, 1781, 0
+SHOOT, D, 1783, 1786, 6
+SHOOT, D, 1784, 1787, 1
+SHOOT, D, 1789, 1792, 8
+SHOOT, D, 1790, 1793, 3
+SHOOT, D, 1795, 1798, 10
+SHOOT, D, 1796, 1799, 5
+SHOOT, D, 1801, 1804, 12
+SHOOT, D, 1802, 1805, 7
+SHOOT, D, 1806, 1809, 0
+SHOOT, D, 1807, 1810, 14
+SHOOT, D, 1808, 1811, 9
+SHOOT, D, 1812, 1815, 2
+SHOOT, D, 1813, 1816, 16
+SHOOT, D, 1814, 1817, 11
+SHOOT, D, 1818, 1821, 6
+SHOOT, D, 1819, 1822, 18
+SHOOT, D, 1820, 1823, 13
+SHOOT, A, 1768, 1765, 0
+SHOOT, A, 1774, 1771, 2
+SHOOT, A, 1780, 1777, 4
+SHOOT, A, 1781, 1778, 0
+SHOOT, A, 1786, 1783, 6
+SHOOT, A, 1787, 1784, 1
+SHOOT, A, 1792, 1789, 8
+SHOOT, A, 1793, 1790, 3
+SHOOT, A, 1798, 1795, 10
+SHOOT, A, 1799, 1796, 5
+SHOOT, A, 1804, 1801, 12
+SHOOT, A, 1805, 1802, 7
+SHOOT, A, 1809, 1806, 0
+SHOOT, A, 1810, 1807, 14
+SHOOT, A, 1811, 1808, 9
+SHOOT, A, 1815, 1812, 2
+SHOOT, A, 1816, 1813, 16
+SHOOT, A, 1817, 1814, 11
+SHOOT, A, 1821, 1818, 6
+SHOOT, A, 1822, 1819, 18
+SHOOT, A, 1823, 1820, 13
+DEAD, A, 1765
+DEAD, A, 1778
+DEAD, A, 1806
+DEAD, D, 1768
+DEAD, D, 1781
+DEAD, D, 1809
+SPAWN, A, 1824, 1, 47, 0
+SPAWN, A, 1825, 2, 47, 63
+SPAWN, A, 1826, 3, 48, 0
+SPAWN, D, 1827, 1, 47, 0
+SPAWN, D, 1828, 2, 47, 63
+SPAWN, D, 1829, 3, 48, 0
+TURN, 305
+PRINT, TURN 305 LOGS:To be spawned at Position(48,63)
+PRINT, To be spawned at Position(49,0)
+PRINT, To be spawned at Position(49,63)
+PRINT, Type 1 at Position (48,63)
+PRINT, Type 2 at Position (49,0)
+PRINT, Type 3 at Position (49,63)
+PRINT, 
+SHOOT, D, 1771, 1774, 0
+SHOOT, D, 1777, 1780, 2
+SHOOT, D, 1783, 1786, 4
+SHOOT, D, 1784, 1787, 0
+SHOOT, D, 1789, 1792, 6
+SHOOT, D, 1790, 1793, 1
+SHOOT, D, 1795, 1798, 8
+SHOOT, D, 1796, 1799, 3
+SHOOT, D, 1801, 1804, 10
+SHOOT, D, 1802, 1805, 5
+SHOOT, D, 1807, 1810, 12
+SHOOT, D, 1808, 1811, 7
+SHOOT, D, 1812, 1815, 0
+SHOOT, D, 1813, 1816, 14
+SHOOT, D, 1814, 1817, 9
+SHOOT, D, 1818, 1821, 2
+SHOOT, D, 1819, 1822, 16
+SHOOT, D, 1820, 1823, 11
+SHOOT, D, 1824, 1827, 6
+SHOOT, D, 1825, 1828, 18
+SHOOT, D, 1826, 1829, 13
+SHOOT, A, 1774, 1771, 0
+SHOOT, A, 1780, 1777, 2
+SHOOT, A, 1786, 1783, 4
+SHOOT, A, 1787, 1784, 0
+SHOOT, A, 1792, 1789, 6
+SHOOT, A, 1793, 1790, 1
+SHOOT, A, 1798, 1795, 8
+SHOOT, A, 1799, 1796, 3
+SHOOT, A, 1804, 1801, 10
+SHOOT, A, 1805, 1802, 5
+SHOOT, A, 1810, 1807, 12
+SHOOT, A, 1811, 1808, 7
+SHOOT, A, 1815, 1812, 0
+SHOOT, A, 1816, 1813, 14
+SHOOT, A, 1817, 1814, 9
+SHOOT, A, 1821, 1818, 2
+SHOOT, A, 1822, 1819, 16
+SHOOT, A, 1823, 1820, 11
+SHOOT, A, 1827, 1824, 6
+SHOOT, A, 1828, 1825, 18
+SHOOT, A, 1829, 1826, 13
+DEAD, A, 1771
+DEAD, A, 1784
+DEAD, A, 1812
+DEAD, D, 1774
+DEAD, D, 1787
+DEAD, D, 1815
+SPAWN, A, 1830, 1, 48, 63
+SPAWN, A, 1831, 2, 49, 0
+SPAWN, A, 1832, 3, 49, 63
+SPAWN, D, 1833, 1, 48, 63
+SPAWN, D, 1834, 2, 49, 0
+SPAWN, D, 1835, 3, 49, 63
+TURN, 306
+PRINT, TURN 306 LOGS:To be spawned at Position(50,0)
+PRINT, To be spawned at Position(50,63)
+PRINT, To be spawned at Position(51,0)
+PRINT, Type 1 at Position (50,0)
+PRINT, Type 2 at Position (50,63)
+PRINT, Type 3 at Position (51,0)
+PRINT, 
+SHOOT, D, 1777, 1780, 0
+SHOOT, D, 1783, 1786, 2
+SHOOT, D, 1789, 1792, 4
+SHOOT, D, 1790, 1793, 0
+SHOOT, D, 1795, 1798, 6
+SHOOT, D, 1796, 1799, 1
+SHOOT, D, 1801, 1804, 8
+SHOOT, D, 1802, 1805, 3
+SHOOT, D, 1807, 1810, 10
+SHOOT, D, 1808, 1811, 5
+SHOOT, D, 1813, 1816, 12
+SHOOT, D, 1814, 1817, 7
+SHOOT, D, 1818, 1821, 0
+SHOOT, D, 1819, 1822, 14
+SHOOT, D, 1820, 1823, 9
+SHOOT, D, 1824, 1827, 2
+SHOOT, D, 1825, 1828, 16
+SHOOT, D, 1826, 1829, 11
+SHOOT, D, 1830, 1833, 6
+SHOOT, D, 1831, 1834, 18
+SHOOT, D, 1832, 1835, 13
+SHOOT, A, 1780, 1777, 0
+SHOOT, A, 1786, 1783, 2
+SHOOT, A, 1792, 1789, 4
+SHOOT, A, 1793, 1790, 0
+SHOOT, A, 1798, 1795, 6
+SHOOT, A, 1799, 1796, 1
+SHOOT, A, 1804, 1801, 8
+SHOOT, A, 1805, 1802, 3
+SHOOT, A, 1810, 1807, 10
+SHOOT, A, 1811, 1808, 5
+SHOOT, A, 1816, 1813, 12
+SHOOT, A, 1817, 1814, 7
+SHOOT, A, 1821, 1818, 0
+SHOOT, A, 1822, 1819, 14
+SHOOT, A, 1823, 1820, 9
+SHOOT, A, 1827, 1824, 2
+SHOOT, A, 1828, 1825, 16
+SHOOT, A, 1829, 1826, 11
+SHOOT, A, 1833, 1830, 6
+SHOOT, A, 1834, 1831, 18
+SHOOT, A, 1835, 1832, 13
+DEAD, A, 1777
+DEAD, A, 1790
+DEAD, A, 1818
+DEAD, D, 1780
+DEAD, D, 1793
+DEAD, D, 1821
+SPAWN, A, 1836, 1, 50, 0
+SPAWN, A, 1837, 2, 50, 63
+SPAWN, A, 1838, 3, 51, 0
+SPAWN, D, 1839, 1, 50, 0
+SPAWN, D, 1840, 2, 50, 63
+SPAWN, D, 1841, 3, 51, 0
+TURN, 307
+PRINT, TURN 307 LOGS:To be spawned at Position(51,63)
+PRINT, To be spawned at Position(52,0)
+PRINT, To be spawned at Position(52,63)
+PRINT, Type 1 at Position (51,63)
+PRINT, Type 2 at Position (52,0)
+PRINT, Type 3 at Position (52,63)
+PRINT, 
+SHOOT, D, 1783, 1786, 0
+SHOOT, D, 1789, 1792, 2
+SHOOT, D, 1795, 1798, 4
+SHOOT, D, 1796, 1799, 0
+SHOOT, D, 1801, 1804, 6
+SHOOT, D, 1802, 1805, 1
+SHOOT, D, 1807, 1810, 8
+SHOOT, D, 1808, 1811, 3
+SHOOT, D, 1813, 1816, 10
+SHOOT, D, 1814, 1817, 5
+SHOOT, D, 1819, 1822, 12
+SHOOT, D, 1820, 1823, 7
+SHOOT, D, 1824, 1827, 0
+SHOOT, D, 1825, 1828, 14
+SHOOT, D, 1826, 1829, 9
+SHOOT, D, 1830, 1833, 2
+SHOOT, D, 1831, 1834, 16
+SHOOT, D, 1832, 1835, 11
+SHOOT, D, 1836, 1839, 6
+SHOOT, D, 1837, 1840, 18
+SHOOT, D, 1838, 1841, 13
+SHOOT, A, 1786, 1783, 0
+SHOOT, A, 1792, 1789, 2
+SHOOT, A, 1798, 1795, 4
+SHOOT, A, 1799, 1796, 0
+SHOOT, A, 1804, 1801, 6
+SHOOT, A, 1805, 1802, 1
+SHOOT, A, 1810, 1807, 8
+SHOOT, A, 1811, 1808, 3
+SHOOT, A, 1816, 1813, 10
+SHOOT, A, 1817, 1814, 5
+SHOOT, A, 1822, 1819, 12
+SHOOT, A, 1823, 1820, 7
+SHOOT, A, 1827, 1824, 0
+SHOOT, A, 1828, 1825, 14
+SHOOT, A, 1829, 1826, 9
+SHOOT, A, 1833, 1830, 2
+SHOOT, A, 1834, 1831, 16
+SHOOT, A, 1835, 1832, 11
+SHOOT, A, 1839, 1836, 6
+SHOOT, A, 1840, 1837, 18
+SHOOT, A, 1841, 1838, 13
+DEAD, A, 1783
+DEAD, A, 1796
+DEAD, A, 1824
+DEAD, D, 1786
+DEAD, D, 1799
+DEAD, D, 1827
+SPAWN, A, 1842, 1, 51, 63
+SPAWN, A, 1843, 2, 52, 0
+SPAWN, A, 1844, 3, 52, 63
+SPAWN, D, 1845, 1, 51, 63
+SPAWN, D, 1846, 2, 52, 0
+SPAWN, D, 1847, 3, 52, 63
+TURN, 308
+PRINT, TURN 308 LOGS:To be spawned at Position(53,0)
+PRINT, To be spawned at Position(53,63)
+PRINT, To be spawned at Position(54,0)
+PRINT, Type 1 at Position (53,0)
+PRINT, Type 2 at Position (53,63)
+PRINT, Type 3 at Position (54,0)
+PRINT, 
+SHOOT, D, 1789, 1792, 0
+SHOOT, D, 1795, 1798, 2
+SHOOT, D, 1801, 1804, 4
+SHOOT, D, 1802, 1805, 0
+SHOOT, D, 1807, 1810, 6
+SHOOT, D, 1808, 1811, 1
+SHOOT, D, 1813, 1816, 8
+SHOOT, D, 1814, 1817, 3
+SHOOT, D, 1819, 1822, 10
+SHOOT, D, 1820, 1823, 5
+SHOOT, D, 1825, 1828, 12
+SHOOT, D, 1826, 1829, 7
+SHOOT, D, 1830, 1833, 0
+SHOOT, D, 1831, 1834, 14
+SHOOT, D, 1832, 1835, 9
+SHOOT, D, 1836, 1839, 2
+SHOOT, D, 1837, 1840, 16
+SHOOT, D, 1838, 1841, 11
+SHOOT, D, 1842, 1845, 6
+SHOOT, D, 1843, 1846, 18
+SHOOT, D, 1844, 1847, 13
+SHOOT, A, 1792, 1789, 0
+SHOOT, A, 1798, 1795, 2
+SHOOT, A, 1804, 1801, 4
+SHOOT, A, 1805, 1802, 0
+SHOOT, A, 1810, 1807, 6
+SHOOT, A, 1811, 1808, 1
+SHOOT, A, 1816, 1813, 8
+SHOOT, A, 1817, 1814, 3
+SHOOT, A, 1822, 1819, 10
+SHOOT, A, 1823, 1820, 5
+SHOOT, A, 1828, 1825, 12
+SHOOT, A, 1829, 1826, 7
+SHOOT, A, 1833, 1830, 0
+SHOOT, A, 1834, 1831, 14
+SHOOT, A, 1835, 1832, 9
+SHOOT, A, 1839, 1836, 2
+SHOOT, A, 1840, 1837, 16
+SHOOT, A, 1841, 1838, 11
+SHOOT, A, 1845, 1842, 6
+SHOOT, A, 1846, 1843, 18
+SHOOT, A, 1847, 1844, 13
+DEAD, A, 1789
+DEAD, A, 1802
+DEAD, A, 1830
+DEAD, D, 1792
+DEAD, D, 1805
+DEAD, D, 1833
+SPAWN, A, 1848, 1, 53, 0
+SPAWN, A, 1849, 2, 53, 63
+SPAWN, A, 1850, 3, 54, 0
+SPAWN, D, 1851, 1, 53, 0
+SPAWN, D, 1852, 2, 53, 63
+SPAWN, D, 1853, 3, 54, 0
+TURN, 309
+PRINT, TURN 309 LOGS:To be spawned at Position(54,63)
+PRINT, To be spawned at Position(55,0)
+PRINT, To be spawned at Position(55,63)
+PRINT, Type 1 at Position (54,63)
+PRINT, Type 2 at Position (55,0)
+PRINT, Type 3 at Position (55,63)
+PRINT, 
+SHOOT, D, 1795, 1798, 0
+SHOOT, D, 1801, 1804, 2
+SHOOT, D, 1807, 1810, 4
+SHOOT, D, 1808, 1811, 0
+SHOOT, D, 1813, 1816, 6
+SHOOT, D, 1814, 1817, 1
+SHOOT, D, 1819, 1822, 8
+SHOOT, D, 1820, 1823, 3
+SHOOT, D, 1825, 1828, 10
+SHOOT, D, 1826, 1829, 5
+SHOOT, D, 1831, 1834, 12
+SHOOT, D, 1832, 1835, 7
+SHOOT, D, 1836, 1839, 0
+SHOOT, D, 1837, 1840, 14
+SHOOT, D, 1838, 1841, 9
+SHOOT, D, 1842, 1845, 2
+SHOOT, D, 1843, 1846, 16
+SHOOT, D, 1844, 1847, 11
+SHOOT, D, 1848, 1851, 6
+SHOOT, D, 1849, 1852, 18
+SHOOT, D, 1850, 1853, 13
+SHOOT, A, 1798, 1795, 0
+SHOOT, A, 1804, 1801, 2
+SHOOT, A, 1810, 1807, 4
+SHOOT, A, 1811, 1808, 0
+SHOOT, A, 1816, 1813, 6
+SHOOT, A, 1817, 1814, 1
+SHOOT, A, 1822, 1819, 8
+SHOOT, A, 1823, 1820, 3
+SHOOT, A, 1828, 1825, 10
+SHOOT, A, 1829, 1826, 5
+SHOOT, A, 1834, 1831, 12
+SHOOT, A, 1835, 1832, 7
+SHOOT, A, 1839, 1836, 0
+SHOOT, A, 1840, 1837, 14
+SHOOT, A, 1841, 1838, 9
+SHOOT, A, 1845, 1842, 2
+SHOOT, A, 1846, 1843, 16
+SHOOT, A, 1847, 1844, 11
+SHOOT, A, 1851, 1848, 6
+SHOOT, A, 1852, 1849, 18
+SHOOT, A, 1853, 1850, 13
+DEAD, A, 1795
+DEAD, A, 1808
+DEAD, A, 1836
+DEAD, D, 1798
+DEAD, D, 1811
+DEAD, D, 1839
+SPAWN, A, 1854, 1, 54, 63
+SPAWN, A, 1855, 2, 55, 0
+SPAWN, A, 1856, 3, 55, 63
+SPAWN, D, 1857, 1, 54, 63
+SPAWN, D, 1858, 2, 55, 0
+SPAWN, D, 1859, 3, 55, 63
+TURN, 310
+PRINT, TURN 310 LOGS:To be spawned at Position(56,0)
+PRINT, To be spawned at Position(56,63)
+PRINT, To be spawned at Position(57,0)
+PRINT, Type 1 at Position (56,0)
+PRINT, Type 2 at Position (56,63)
+PRINT, Type 3 at Position (57,0)
+PRINT, 
+SHOOT, D, 1801, 1804, 0
+SHOOT, D, 1807, 1810, 2
+SHOOT, D, 1813, 1816, 4
+SHOOT, D, 1814, 1817, 0
+SHOOT, D, 1819, 1822, 6
+SHOOT, D, 1820, 1823, 1
+SHOOT, D, 1825, 1828, 8
+SHOOT, D, 1826, 1829, 3
+SHOOT, D, 1831, 1834, 10
+SHOOT, D, 1832, 1835, 5
+SHOOT, D, 1837, 1840, 12
+SHOOT, D, 1838, 1841, 7
+SHOOT, D, 1842, 1845, 0
+SHOOT, D, 1843, 1846, 14
+SHOOT, D, 1844, 1847, 9
+SHOOT, D, 1848, 1851, 2
+SHOOT, D, 1849, 1852, 16
+SHOOT, D, 1850, 1853, 11
+SHOOT, D, 1854, 1857, 6
+SHOOT, D, 1855, 1858, 18
+SHOOT, D, 1856, 1859, 13
+SHOOT, A, 1804, 1801, 0
+SHOOT, A, 1810, 1807, 2
+SHOOT, A, 1816, 1813, 4
+SHOOT, A, 1817, 1814, 0
+SHOOT, A, 1822, 1819, 6
+SHOOT, A, 1823, 1820, 1
+SHOOT, A, 1828, 1825, 8
+SHOOT, A, 1829, 1826, 3
+SHOOT, A, 1834, 1831, 10
+SHOOT, A, 1835, 1832, 5
+SHOOT, A, 1840, 1837, 12
+SHOOT, A, 1841, 1838, 7
+SHOOT, A, 1845, 1842, 0
+SHOOT, A, 1846, 1843, 14
+SHOOT, A, 1847, 1844, 9
+SHOOT, A, 1851, 1848, 2
+SHOOT, A, 1852, 1849, 16
+SHOOT, A, 1853, 1850, 11
+SHOOT, A, 1857, 1854, 6
+SHOOT, A, 1858, 1855, 18
+SHOOT, A, 1859, 1856, 13
+DEAD, A, 1801
+DEAD, A, 1814
+DEAD, A, 1842
+DEAD, D, 1804
+DEAD, D, 1817
+DEAD, D, 1845
+SPAWN, A, 1860, 1, 56, 0
+SPAWN, A, 1861, 2, 56, 63
+SPAWN, A, 1862, 3, 57, 0
+SPAWN, D, 1863, 1, 56, 0
+SPAWN, D, 1864, 2, 56, 63
+SPAWN, D, 1865, 3, 57, 0
+TURN, 311
+PRINT, TURN 311 LOGS:To be spawned at Position(57,63)
+PRINT, To be spawned at Position(58,0)
+PRINT, To be spawned at Position(58,63)
+PRINT, Type 1 at Position (57,63)
+PRINT, Type 2 at Position (58,0)
+PRINT, Type 3 at Position (58,63)
+PRINT, 
+SHOOT, D, 1807, 1810, 0
+SHOOT, D, 1813, 1816, 2
+SHOOT, D, 1819, 1822, 4
+SHOOT, D, 1820, 1823, 0
+SHOOT, D, 1825, 1828, 6
+SHOOT, D, 1826, 1829, 1
+SHOOT, D, 1831, 1834, 8
+SHOOT, D, 1832, 1835, 3
+SHOOT, D, 1837, 1840, 10
+SHOOT, D, 1838, 1841, 5
+SHOOT, D, 1843, 1846, 12
+SHOOT, D, 1844, 1847, 7
+SHOOT, D, 1848, 1851, 0
+SHOOT, D, 1849, 1852, 14
+SHOOT, D, 1850, 1853, 9
+SHOOT, D, 1854, 1857, 2
+SHOOT, D, 1855, 1858, 16
+SHOOT, D, 1856, 1859, 11
+SHOOT, D, 1860, 1863, 6
+SHOOT, D, 1861, 1864, 18
+SHOOT, D, 1862, 1865, 13
+SHOOT, A, 1810, 1807, 0
+SHOOT, A, 1816, 1813, 2
+SHOOT, A, 1822, 1819, 4
+SHOOT, A, 1823, 1820, 0
+SHOOT, A, 1828, 1825, 6
+SHOOT, A, 1829, 1826, 1
+SHOOT, A, 1834, 1831, 8
+SHOOT, A, 1835, 1832, 3
+SHOOT, A, 1840, 1837, 10
+SHOOT, A, 1841, 1838, 5
+SHOOT, A, 1846, 1843, 12
+SHOOT, A, 1847, 1844, 7
+SHOOT, A, 1851, 1848, 0
+SHOOT, A, 1852, 1849, 14
+SHOOT, A, 1853, 1850, 9
+SHOOT, A, 1857, 1854, 2
+SHOOT, A, 1858, 1855, 16
+SHOOT, A, 1859, 1856, 11
+SHOOT, A, 1863, 1860, 6
+SHOOT, A, 1864, 1861, 18
+SHOOT, A, 1865, 1862, 13
+DEAD, A, 1807
+DEAD, A, 1820
+DEAD, A, 1848
+DEAD, D, 1810
+DEAD, D, 1823
+DEAD, D, 1851
+SPAWN, A, 1866, 1, 57, 63
+SPAWN, A, 1867, 2, 58, 0
+SPAWN, A, 1868, 3, 58, 63
+SPAWN, D, 1869, 1, 57, 63
+SPAWN, D, 1870, 2, 58, 0
+SPAWN, D, 1871, 3, 58, 63
+TURN, 312
+PRINT, TURN 312 LOGS:To be spawned at Position(59,0)
+PRINT, To be spawned at Position(59,63)
+PRINT, To be spawned at Position(60,0)
+PRINT, Type 1 at Position (59,0)
+PRINT, Type 2 at Position (59,63)
+PRINT, Type 3 at Position (60,0)
+PRINT, 
+SHOOT, D, 1813, 1816, 0
+SHOOT, D, 1819, 1822, 2
+SHOOT, D, 1825, 1828, 4
+SHOOT, D, 1826, 1829, 0
+SHOOT, D, 1831, 1834, 6
+SHOOT, D, 1832, 1835, 1
+SHOOT, D, 1837, 1840, 8
+SHOOT, D, 1838, 1841, 3
+SHOOT, D, 1843, 1846, 10
+SHOOT, D, 1844, 1847, 5
+SHOOT, D, 1849, 1852, 12
+SHOOT, D, 1850, 1853, 7
+SHOOT, D, 1854, 1857, 0
+SHOOT, D, 1855, 1858, 14
+SHOOT, D, 1856, 1859, 9
+SHOOT, D, 1860, 1863, 2
+SHOOT, D, 1861, 1864, 16
+SHOOT, D, 1862, 1865, 11
+SHOOT, D, 1866, 1869, 6
+SHOOT, D, 1867, 1870, 18
+SHOOT, D, 1868, 1871, 13
+SHOOT, A, 1816, 1813, 0
+SHOOT, A, 1822, 1819, 2
+SHOOT, A, 1828, 1825, 4
+SHOOT, A, 1829, 1826, 0
+SHOOT, A, 1834, 1831, 6
+SHOOT, A, 1835, 1832, 1
+SHOOT, A, 1840, 1837, 8
+SHOOT, A, 1841, 1838, 3
+SHOOT, A, 1846, 1843, 10
+SHOOT, A, 1847, 1844, 5
+SHOOT, A, 1852, 1849, 12
+SHOOT, A, 1853, 1850, 7
+SHOOT, A, 1857, 1854, 0
+SHOOT, A, 1858, 1855, 14
+SHOOT, A, 1859, 1856, 9
+SHOOT, A, 1863, 1860, 2
+SHOOT, A, 1864, 1861, 16
+SHOOT, A, 1865, 1862, 11
+SHOOT, A, 1869, 1866, 6
+SHOOT, A, 1870, 1867, 18
+SHOOT, A, 1871, 1868, 13
+DEAD, A, 1813
+DEAD, A, 1826
+DEAD, A, 1854
+DEAD, D, 1816
+DEAD, D, 1829
+DEAD, D, 1857
+SPAWN, A, 1872, 1, 59, 0
+SPAWN, A, 1873, 2, 59, 63
+SPAWN, A, 1874, 3, 60, 0
+SPAWN, D, 1875, 1, 59, 0
+SPAWN, D, 1876, 2, 59, 63
+SPAWN, D, 1877, 3, 60, 0
+TURN, 313
+PRINT, TURN 313 LOGS:To be spawned at Position(60,63)
+PRINT, To be spawned at Position(61,0)
+PRINT, To be spawned at Position(61,63)
+PRINT, Type 1 at Position (60,63)
+PRINT, Type 2 at Position (61,0)
+PRINT, Type 3 at Position (61,63)
+PRINT, 
+SHOOT, D, 1819, 1822, 0
+SHOOT, D, 1825, 1828, 2
+SHOOT, D, 1831, 1834, 4
+SHOOT, D, 1832, 1835, 0
+SHOOT, D, 1837, 1840, 6
+SHOOT, D, 1838, 1841, 1
+SHOOT, D, 1843, 1846, 8
+SHOOT, D, 1844, 1847, 3
+SHOOT, D, 1849, 1852, 10
+SHOOT, D, 1850, 1853, 5
+SHOOT, D, 1855, 1858, 12
+SHOOT, D, 1856, 1859, 7
+SHOOT, D, 1860, 1863, 0
+SHOOT, D, 1861, 1864, 14
+SHOOT, D, 1862, 1865, 9
+SHOOT, D, 1866, 1869, 2
+SHOOT, D, 1867, 1870, 16
+SHOOT, D, 1868, 1871, 11
+SHOOT, D, 1872, 1875, 6
+SHOOT, D, 1873, 1876, 18
+SHOOT, D, 1874, 1877, 13
+SHOOT, A, 1822, 1819, 0
+SHOOT, A, 1828, 1825, 2
+SHOOT, A, 1834, 1831, 4
+SHOOT, A, 1835, 1832, 0
+SHOOT, A, 1840, 1837, 6
+SHOOT, A, 1841, 1838, 1
+SHOOT, A, 1846, 1843, 8
+SHOOT, A, 1847, 1844, 3
+SHOOT, A, 1852, 1849, 10
+SHOOT, A, 1853, 1850, 5
+SHOOT, A, 1858, 1855, 12
+SHOOT, A, 1859, 1856, 7
+SHOOT, A, 1863, 1860, 0
+SHOOT, A, 1864, 1861, 14
+SHOOT, A, 1865, 1862, 9
+SHOOT, A, 1869, 1866, 2
+SHOOT, A, 1870, 1867, 16
+SHOOT, A, 1871, 1868, 11
+SHOOT, A, 1875, 1872, 6
+SHOOT, A, 1876, 1873, 18
+SHOOT, A, 1877, 1874, 13
+DEAD, A, 1819
+DEAD, A, 1832
+DEAD, A, 1860
+DEAD, D, 1822
+DEAD, D, 1835
+DEAD, D, 1863
+SPAWN, A, 1878, 1, 60, 63
+SPAWN, A, 1879, 2, 61, 0
+SPAWN, A, 1880, 3, 61, 63
+SPAWN, D, 1881, 1, 60, 63
+SPAWN, D, 1882, 2, 61, 0
+SPAWN, D, 1883, 3, 61, 63
+TURN, 314
+PRINT, TURN 314 LOGS:To be spawned at Position(62,0)
+PRINT, To be spawned at Position(62,63)
+PRINT, To be spawned at Position(63,0)
+PRINT, Type 1 at Position (62,0)
+PRINT, Type 2 at Position (62,63)
+PRINT, Type 3 at Position (63,0)
+PRINT, 
+SHOOT, D, 1825, 1828, 0
+SHOOT, D, 1831, 1834, 2
+SHOOT, D, 1837, 1840, 4
+SHOOT, D, 1838, 1841, 0
+SHOOT, D, 1843, 1846, 6
+SHOOT, D, 1844, 1847, 1
+SHOOT, D, 1849, 1852, 8
+SHOOT, D, 1850, 1853, 3
+SHOOT, D, 1855, 1858, 10
+SHOOT, D, 1856, 1859, 5
+SHOOT, D, 1861, 1864, 12
+SHOOT, D, 1862, 1865, 7
+SHOOT, D, 1866, 1869, 0
+SHOOT, D, 1867, 1870, 14
+SHOOT, D, 1868, 1871, 9
+SHOOT, D, 1872, 1875, 2
+SHOOT, D, 1873, 1876, 16
+SHOOT, D, 1874, 1877, 11
+SHOOT, D, 1878, 1881, 6
+SHOOT, D, 1879, 1882, 18
+SHOOT, D, 1880, 1883, 13
+SHOOT, A, 1828, 1825, 0
+SHOOT, A, 1834, 1831, 2
+SHOOT, A, 1840, 1837, 4
+SHOOT, A, 1841, 1838, 0
+SHOOT, A, 1846, 1843, 6
+SHOOT, A, 1847, 1844, 1
+SHOOT, A, 1852, 1849, 8
+SHOOT, A, 1853, 1850, 3
+SHOOT, A, 1858, 1855, 10
+SHOOT, A, 1859, 1856, 5
+SHOOT, A, 1864, 1861, 12
+SHOOT, A, 1865, 1862, 7
+SHOOT, A, 1869, 1866, 0
+SHOOT, A, 1870, 1867, 14
+SHOOT, A, 1871, 1868, 9
+SHOOT, A, 1875, 1872, 2
+SHOOT, A, 1876, 1873, 16
+SHOOT, A, 1877, 1874, 11
+SHOOT, A, 1881, 1878, 6
+SHOOT, A, 1882, 1879, 18
+SHOOT, A, 1883, 1880, 13
+DEAD, A, 1825
+DEAD, A, 1838
+DEAD, A, 1866
+DEAD, D, 1828
+DEAD, D, 1841
+DEAD, D, 1869
+SPAWN, A, 1884, 1, 62, 0
+SPAWN, A, 1885, 2, 62, 63
+SPAWN, A, 1886, 3, 63, 0
+SPAWN, D, 1887, 1, 62, 0
+SPAWN, D, 1888, 2, 62, 63
+SPAWN, D, 1889, 3, 63, 0
+TURN, 315
+PRINT, TURN 315 LOGS:To be spawned at Position(63,1)
+PRINT, To be spawned at Position(63,2)
+PRINT, To be spawned at Position(63,3)
+PRINT, Type 1 at Position (63,1)
+PRINT, Type 2 at Position (63,2)
+PRINT, Type 3 at Position (63,3)
+PRINT, 
+SHOOT, D, 1831, 1834, 0
+SHOOT, D, 1837, 1840, 2
+SHOOT, D, 1843, 1846, 4
+SHOOT, D, 1844, 1847, 0
+SHOOT, D, 1849, 1852, 6
+SHOOT, D, 1850, 1853, 1
+SHOOT, D, 1855, 1858, 8
+SHOOT, D, 1856, 1859, 3
+SHOOT, D, 1861, 1864, 10
+SHOOT, D, 1862, 1865, 5
+SHOOT, D, 1867, 1870, 12
+SHOOT, D, 1868, 1871, 7
+SHOOT, D, 1872, 1875, 0
+SHOOT, D, 1873, 1876, 14
+SHOOT, D, 1874, 1877, 9
+SHOOT, D, 1878, 1881, 2
+SHOOT, D, 1879, 1882, 16
+SHOOT, D, 1880, 1883, 11
+SHOOT, D, 1884, 1887, 6
+SHOOT, D, 1885, 1888, 18
+SHOOT, D, 1886, 1889, 13
+SHOOT, A, 1834, 1831, 0
+SHOOT, A, 1840, 1837, 2
+SHOOT, A, 1846, 1843, 4
+SHOOT, A, 1847, 1844, 0
+SHOOT, A, 1852, 1849, 6
+SHOOT, A, 1853, 1850, 1
+SHOOT, A, 1858, 1855, 8
+SHOOT, A, 1859, 1856, 3
+SHOOT, A, 1864, 1861, 10
+SHOOT, A, 1865, 1862, 5
+SHOOT, A, 1870, 1867, 12
+SHOOT, A, 1871, 1868, 7
+SHOOT, A, 1875, 1872, 0
+SHOOT, A, 1876, 1873, 14
+SHOOT, A, 1877, 1874, 9
+SHOOT, A, 1881, 1878, 2
+SHOOT, A, 1882, 1879, 16
+SHOOT, A, 1883, 1880, 11
+SHOOT, A, 1887, 1884, 6
+SHOOT, A, 1888, 1885, 18
+SHOOT, A, 1889, 1886, 13
+DEAD, A, 1831
+DEAD, A, 1844
+DEAD, A, 1872
+DEAD, D, 1834
+DEAD, D, 1847
+DEAD, D, 1875
+SPAWN, A, 1890, 1, 63, 1
+SPAWN, A, 1891, 2, 63, 2
+SPAWN, A, 1892, 3, 63, 3
+SPAWN, D, 1893, 1, 63, 1
+SPAWN, D, 1894, 2, 63, 2
+SPAWN, D, 1895, 3, 63, 3
+TURN, 316
+PRINT, TURN 316 LOGS:To be spawned at Position(63,4)
+PRINT, To be spawned at Position(63,5)
+PRINT, To be spawned at Position(63,6)
+PRINT, Type 1 at Position (63,4)
+PRINT, Type 2 at Position (63,5)
+PRINT, Type 3 at Position (63,6)
+PRINT, 
+SHOOT, D, 1837, 1840, 0
+SHOOT, D, 1843, 1846, 2
+SHOOT, D, 1849, 1852, 4
+SHOOT, D, 1850, 1853, 0
+SHOOT, D, 1855, 1858, 6
+SHOOT, D, 1856, 1859, 1
+SHOOT, D, 1861, 1864, 8
+SHOOT, D, 1862, 1865, 3
+SHOOT, D, 1867, 1870, 10
+SHOOT, D, 1868, 1871, 5
+SHOOT, D, 1873, 1876, 12
+SHOOT, D, 1874, 1877, 7
+SHOOT, D, 1878, 1881, 0
+SHOOT, D, 1879, 1882, 14
+SHOOT, D, 1880, 1883, 9
+SHOOT, D, 1884, 1887, 2
+SHOOT, D, 1885, 1888, 16
+SHOOT, D, 1886, 1889, 11
+SHOOT, D, 1890, 1893, 6
+SHOOT, D, 1891, 1894, 18
+SHOOT, D, 1892, 1895, 13
+SHOOT, A, 1840, 1837, 0
+SHOOT, A, 1846, 1843, 2
+SHOOT, A, 1852, 1849, 4
+SHOOT, A, 1853, 1850, 0
+SHOOT, A, 1858, 1855, 6
+SHOOT, A, 1859, 1856, 1
+SHOOT, A, 1864, 1861, 8
+SHOOT, A, 1865, 1862, 3
+SHOOT, A, 1870, 1867, 10
+SHOOT, A, 1871, 1868, 5
+SHOOT, A, 1876, 1873, 12
+SHOOT, A, 1877, 1874, 7
+SHOOT, A, 1881, 1878, 0
+SHOOT, A, 1882, 1879, 14
+SHOOT, A, 1883, 1880, 9
+SHOOT, A, 1887, 1884, 2
+SHOOT, A, 1888, 1885, 16
+SHOOT, A, 1889, 1886, 11
+SHOOT, A, 1893, 1890, 6
+SHOOT, A, 1894, 1891, 18
+SHOOT, A, 1895, 1892, 13
+DEAD, A, 1837
+DEAD, A, 1850
+DEAD, A, 1878
+DEAD, D, 1840
+DEAD, D, 1853
+DEAD, D, 1881
+SPAWN, A, 1896, 1, 63, 4
+SPAWN, A, 1897, 2, 63, 5
+SPAWN, A, 1898, 3, 63, 6
+SPAWN, D, 1899, 1, 63, 4
+SPAWN, D, 1900, 2, 63, 5
+SPAWN, D, 1901, 3, 63, 6
+TURN, 317
+PRINT, TURN 317 LOGS:To be spawned at Position(63,7)
+PRINT, To be spawned at Position(63,8)
+PRINT, To be spawned at Position(63,9)
+PRINT, Type 1 at Position (63,7)
+PRINT, Type 2 at Position (63,8)
+PRINT, Type 3 at Position (63,9)
+PRINT, 
+SHOOT, D, 1843, 1846, 0
+SHOOT, D, 1849, 1852, 2
+SHOOT, D, 1855, 1858, 4
+SHOOT, D, 1856, 1859, 0
+SHOOT, D, 1861, 1864, 6
+SHOOT, D, 1862, 1865, 1
+SHOOT, D, 1867, 1870, 8
+SHOOT, D, 1868, 1871, 3
+SHOOT, D, 1873, 1876, 10
+SHOOT, D, 1874, 1877, 5
+SHOOT, D, 1879, 1882, 12
+SHOOT, D, 1880, 1883, 7
+SHOOT, D, 1884, 1887, 0
+SHOOT, D, 1885, 1888, 14
+SHOOT, D, 1886, 1889, 9
+SHOOT, D, 1890, 1893, 2
+SHOOT, D, 1891, 1894, 16
+SHOOT, D, 1892, 1895, 11
+SHOOT, D, 1896, 1899, 6
+SHOOT, D, 1897, 1900, 18
+SHOOT, D, 1898, 1901, 13
+SHOOT, A, 1846, 1843, 0
+SHOOT, A, 1852, 1849, 2
+SHOOT, A, 1858, 1855, 4
+SHOOT, A, 1859, 1856, 0
+SHOOT, A, 1864, 1861, 6
+SHOOT, A, 1865, 1862, 1
+SHOOT, A, 1870, 1867, 8
+SHOOT, A, 1871, 1868, 3
+SHOOT, A, 1876, 1873, 10
+SHOOT, A, 1877, 1874, 5
+SHOOT, A, 1882, 1879, 12
+SHOOT, A, 1883, 1880, 7
+SHOOT, A, 1887, 1884, 0
+SHOOT, A, 1888, 1885, 14
+SHOOT, A, 1889, 1886, 9
+SHOOT, A, 1893, 1890, 2
+SHOOT, A, 1894, 1891, 16
+SHOOT, A, 1895, 1892, 11
+SHOOT, A, 1899, 1896, 6
+SHOOT, A, 1900, 1897, 18
+SHOOT, A, 1901, 1898, 13
+DEAD, A, 1843
+DEAD, A, 1856
+DEAD, A, 1884
+DEAD, D, 1846
+DEAD, D, 1859
+DEAD, D, 1887
+SPAWN, A, 1902, 1, 63, 7
+SPAWN, A, 1903, 2, 63, 8
+SPAWN, A, 1904, 3, 63, 9
+SPAWN, D, 1905, 1, 63, 7
+SPAWN, D, 1906, 2, 63, 8
+SPAWN, D, 1907, 3, 63, 9
+TURN, 318
+PRINT, TURN 318 LOGS:To be spawned at Position(63,10)
+PRINT, To be spawned at Position(63,11)
+PRINT, To be spawned at Position(63,12)
+PRINT, Type 1 at Position (63,10)
+PRINT, Type 2 at Position (63,11)
+PRINT, Type 3 at Position (63,12)
+PRINT, 
+SHOOT, D, 1849, 1852, 0
+SHOOT, D, 1855, 1858, 2
+SHOOT, D, 1861, 1864, 4
+SHOOT, D, 1862, 1865, 0
+SHOOT, D, 1867, 1870, 6
+SHOOT, D, 1868, 1871, 1
+SHOOT, D, 1873, 1876, 8
+SHOOT, D, 1874, 1877, 3
+SHOOT, D, 1879, 1882, 10
+SHOOT, D, 1880, 1883, 5
+SHOOT, D, 1885, 1888, 12
+SHOOT, D, 1886, 1889, 7
+SHOOT, D, 1890, 1893, 0
+SHOOT, D, 1891, 1894, 14
+SHOOT, D, 1892, 1895, 9
+SHOOT, D, 1896, 1899, 2
+SHOOT, D, 1897, 1900, 16
+SHOOT, D, 1898, 1901, 11
+SHOOT, D, 1902, 1905, 6
+SHOOT, D, 1903, 1906, 18
+SHOOT, D, 1904, 1907, 13
+SHOOT, A, 1852, 1849, 0
+SHOOT, A, 1858, 1855, 2
+SHOOT, A, 1864, 1861, 4
+SHOOT, A, 1865, 1862, 0
+SHOOT, A, 1870, 1867, 6
+SHOOT, A, 1871, 1868, 1
+SHOOT, A, 1876, 1873, 8
+SHOOT, A, 1877, 1874, 3
+SHOOT, A, 1882, 1879, 10
+SHOOT, A, 1883, 1880, 5
+SHOOT, A, 1888, 1885, 12
+SHOOT, A, 1889, 1886, 7
+SHOOT, A, 1893, 1890, 0
+SHOOT, A, 1894, 1891, 14
+SHOOT, A, 1895, 1892, 9
+SHOOT, A, 1899, 1896, 2
+SHOOT, A, 1900, 1897, 16
+SHOOT, A, 1901, 1898, 11
+SHOOT, A, 1905, 1902, 6
+SHOOT, A, 1906, 1903, 18
+SHOOT, A, 1907, 1904, 13
+DEAD, A, 1849
+DEAD, A, 1862
+DEAD, A, 1890
+DEAD, D, 1852
+DEAD, D, 1865
+DEAD, D, 1893
+SPAWN, A, 1908, 1, 63, 10
+SPAWN, A, 1909, 2, 63, 11
+SPAWN, A, 1910, 3, 63, 12
+SPAWN, D, 1911, 1, 63, 10
+SPAWN, D, 1912, 2, 63, 11
+SPAWN, D, 1913, 3, 63, 12
+TURN, 319
+PRINT, TURN 319 LOGS:To be spawned at Position(63,13)
+PRINT, To be spawned at Position(63,14)
+PRINT, To be spawned at Position(63,15)
+PRINT, Type 1 at Position (63,13)
+PRINT, Type 2 at Position (63,14)
+PRINT, Type 3 at Position (63,15)
+PRINT, 
+SHOOT, D, 1855, 1858, 0
+SHOOT, D, 1861, 1864, 2
+SHOOT, D, 1867, 1870, 4
+SHOOT, D, 1868, 1871, 0
+SHOOT, D, 1873, 1876, 6
+SHOOT, D, 1874, 1877, 1
+SHOOT, D, 1879, 1882, 8
+SHOOT, D, 1880, 1883, 3
+SHOOT, D, 1885, 1888, 10
+SHOOT, D, 1886, 1889, 5
+SHOOT, D, 1891, 1894, 12
+SHOOT, D, 1892, 1895, 7
+SHOOT, D, 1896, 1899, 0
+SHOOT, D, 1897, 1900, 14
+SHOOT, D, 1898, 1901, 9
+SHOOT, D, 1902, 1905, 2
+SHOOT, D, 1903, 1906, 16
+SHOOT, D, 1904, 1907, 11
+SHOOT, D, 1908, 1911, 6
+SHOOT, D, 1909, 1912, 18
+SHOOT, D, 1910, 1913, 13
+SHOOT, A, 1858, 1855, 0
+SHOOT, A, 1864, 1861, 2
+SHOOT, A, 1870, 1867, 4
+SHOOT, A, 1871, 1868, 0
+SHOOT, A, 1876, 1873, 6
+SHOOT, A, 1877, 1874, 1
+SHOOT, A, 1882, 1879, 8
+SHOOT, A, 1883, 1880, 3
+SHOOT, A, 1888, 1885, 10
+SHOOT, A, 1889, 1886, 5
+SHOOT, A, 1894, 1891, 12
+SHOOT, A, 1895, 1892, 7
+SHOOT, A, 1899, 1896, 0
+SHOOT, A, 1900, 1897, 14
+SHOOT, A, 1901, 1898, 9
+SHOOT, A, 1905, 1902, 2
+SHOOT, A, 1906, 1903, 16
+SHOOT, A, 1907, 1904, 11
+SHOOT, A, 1911, 1908, 6
+SHOOT, A, 1912, 1909, 18
+SHOOT, A, 1913, 1910, 13
+DEAD, A, 1855
+DEAD, A, 1868
+DEAD, A, 1896
+DEAD, D, 1858
+DEAD, D, 1871
+DEAD, D, 1899
+SPAWN, A, 1914, 1, 63, 13
+SPAWN, A, 1915, 2, 63, 14
+SPAWN, A, 1916, 3, 63, 15
+SPAWN, D, 1917, 1, 63, 13
+SPAWN, D, 1918, 2, 63, 14
+SPAWN, D, 1919, 3, 63, 15
+TURN, 320
+PRINT, TURN 320 LOGS:To be spawned at Position(63,16)
+PRINT, To be spawned at Position(63,17)
+PRINT, To be spawned at Position(63,18)
+PRINT, Type 1 at Position (63,16)
+PRINT, Type 2 at Position (63,17)
+PRINT, Type 3 at Position (63,18)
+PRINT, 
+SHOOT, D, 1861, 1864, 0
+SHOOT, D, 1867, 1870, 2
+SHOOT, D, 1873, 1876, 4
+SHOOT, D, 1874, 1877, 0
+SHOOT, D, 1879, 1882, 6
+SHOOT, D, 1880, 1883, 1
+SHOOT, D, 1885, 1888, 8
+SHOOT, D, 1886, 1889, 3
+SHOOT, D, 1891, 1894, 10
+SHOOT, D, 1892, 1895, 5
+SHOOT, D, 1897, 1900, 12
+SHOOT, D, 1898, 1901, 7
+SHOOT, D, 1902, 1905, 0
+SHOOT, D, 1903, 1906, 14
+SHOOT, D, 1904, 1907, 9
+SHOOT, D, 1908, 1911, 2
+SHOOT, D, 1909, 1912, 16
+SHOOT, D, 1910, 1913, 11
+SHOOT, D, 1914, 1917, 6
+SHOOT, D, 1915, 1918, 18
+SHOOT, D, 1916, 1919, 13
+SHOOT, A, 1864, 1861, 0
+SHOOT, A, 1870, 1867, 2
+SHOOT, A, 1876, 1873, 4
+SHOOT, A, 1877, 1874, 0
+SHOOT, A, 1882, 1879, 6
+SHOOT, A, 1883, 1880, 1
+SHOOT, A, 1888, 1885, 8
+SHOOT, A, 1889, 1886, 3
+SHOOT, A, 1894, 1891, 10
+SHOOT, A, 1895, 1892, 5
+SHOOT, A, 1900, 1897, 12
+SHOOT, A, 1901, 1898, 7
+SHOOT, A, 1905, 1902, 0
+SHOOT, A, 1906, 1903, 14
+SHOOT, A, 1907, 1904, 9
+SHOOT, A, 1911, 1908, 2
+SHOOT, A, 1912, 1909, 16
+SHOOT, A, 1913, 1910, 11
+SHOOT, A, 1917, 1914, 6
+SHOOT, A, 1918, 1915, 18
+SHOOT, A, 1919, 1916, 13
+DEAD, A, 1861
+DEAD, A, 1874
+DEAD, A, 1902
+DEAD, D, 1864
+DEAD, D, 1877
+DEAD, D, 1905
+SPAWN, A, 1920, 1, 63, 16
+SPAWN, A, 1921, 2, 63, 17
+SPAWN, A, 1922, 3, 63, 18
+SPAWN, D, 1923, 1, 63, 16
+SPAWN, D, 1924, 2, 63, 17
+SPAWN, D, 1925, 3, 63, 18
+TURN, 321
+PRINT, TURN 321 LOGS:To be spawned at Position(63,19)
+PRINT, To be spawned at Position(63,20)
+PRINT, To be spawned at Position(63,21)
+PRINT, Type 1 at Position (63,19)
+PRINT, Type 2 at Position (63,20)
+PRINT, Type 3 at Position (63,21)
+PRINT, 
+SHOOT, D, 1867, 1870, 0
+SHOOT, D, 1873, 1876, 2
+SHOOT, D, 1879, 1882, 4
+SHOOT, D, 1880, 1883, 0
+SHOOT, D, 1885, 1888, 6
+SHOOT, D, 1886, 1889, 1
+SHOOT, D, 1891, 1894, 8
+SHOOT, D, 1892, 1895, 3
+SHOOT, D, 1897, 1900, 10
+SHOOT, D, 1898, 1901, 5
+SHOOT, D, 1903, 1906, 12
+SHOOT, D, 1904, 1907, 7
+SHOOT, D, 1908, 1911, 0
+SHOOT, D, 1909, 1912, 14
+SHOOT, D, 1910, 1913, 9
+SHOOT, D, 1914, 1917, 2
+SHOOT, D, 1915, 1918, 16
+SHOOT, D, 1916, 1919, 11
+SHOOT, D, 1920, 1923, 6
+SHOOT, D, 1921, 1924, 18
+SHOOT, D, 1922, 1925, 13
+SHOOT, A, 1870, 1867, 0
+SHOOT, A, 1876, 1873, 2
+SHOOT, A, 1882, 1879, 4
+SHOOT, A, 1883, 1880, 0
+SHOOT, A, 1888, 1885, 6
+SHOOT, A, 1889, 1886, 1
+SHOOT, A, 1894, 1891, 8
+SHOOT, A, 1895, 1892, 3
+SHOOT, A, 1900, 1897, 10
+SHOOT, A, 1901, 1898, 5
+SHOOT, A, 1906, 1903, 12
+SHOOT, A, 1907, 1904, 7
+SHOOT, A, 1911, 1908, 0
+SHOOT, A, 1912, 1909, 14
+SHOOT, A, 1913, 1910, 9
+SHOOT, A, 1917, 1914, 2
+SHOOT, A, 1918, 1915, 16
+SHOOT, A, 1919, 1916, 11
+SHOOT, A, 1923, 1920, 6
+SHOOT, A, 1924, 1921, 18
+SHOOT, A, 1925, 1922, 13
+DEAD, A, 1867
+DEAD, A, 1880
+DEAD, A, 1908
+DEAD, D, 1870
+DEAD, D, 1883
+DEAD, D, 1911
+SPAWN, A, 1926, 1, 63, 19
+SPAWN, A, 1927, 2, 63, 20
+SPAWN, A, 1928, 3, 63, 21
+SPAWN, D, 1929, 1, 63, 19
+SPAWN, D, 1930, 2, 63, 20
+SPAWN, D, 1931, 3, 63, 21
+TURN, 322
+PRINT, TURN 322 LOGS:To be spawned at Position(63,22)
+PRINT, To be spawned at Position(63,23)
+PRINT, To be spawned at Position(63,24)
+PRINT, Type 1 at Position (63,22)
+PRINT, Type 2 at Position (63,23)
+PRINT, Type 3 at Position (63,24)
+PRINT, 
+SHOOT, D, 1873, 1876, 0
+SHOOT, D, 1879, 1882, 2
+SHOOT, D, 1885, 1888, 4
+SHOOT, D, 1886, 1889, 0
+SHOOT, D, 1891, 1894, 6
+SHOOT, D, 1892, 1895, 1
+SHOOT, D, 1897, 1900, 8
+SHOOT, D, 1898, 1901, 3
+SHOOT, D, 1903, 1906, 10
+SHOOT, D, 1904, 1907, 5
+SHOOT, D, 1909, 1912, 12
+SHOOT, D, 1910, 1913, 7
+SHOOT, D, 1914, 1917, 0
+SHOOT, D, 1915, 1918, 14
+SHOOT, D, 1916, 1919, 9
+SHOOT, D, 1920, 1923, 2
+SHOOT, D, 1921, 1924, 16
+SHOOT, D, 1922, 1925, 11
+SHOOT, D, 1926, 1929, 6
+SHOOT, D, 1927, 1930, 18
+SHOOT, D, 1928, 1931, 13
+SHOOT, A, 1876, 1873, 0
+SHOOT, A, 1882, 1879, 2
+SHOOT, A, 1888, 1885, 4
+SHOOT, A, 1889, 1886, 0
+SHOOT, A, 1894, 1891, 6
+SHOOT, A, 1895, 1892, 1
+SHOOT, A, 1900, 1897, 8
+SHOOT, A, 1901, 1898, 3
+SHOOT, A, 1906, 1903, 10
+SHOOT, A, 1907, 1904, 5
+SHOOT, A, 1912, 1909, 12
+SHOOT, A, 1913, 1910, 7
+SHOOT, A, 1917, 1914, 0
+SHOOT, A, 1918, 1915, 14
+SHOOT, A, 1919, 1916, 9
+SHOOT, A, 1923, 1920, 2
+SHOOT, A, 1924, 1921, 16
+SHOOT, A, 1925, 1922, 11
+SHOOT, A, 1929, 1926, 6
+SHOOT, A, 1930, 1927, 18
+SHOOT, A, 1931, 1928, 13
+DEAD, A, 1873
+DEAD, A, 1886
+DEAD, A, 1914
+DEAD, D, 1876
+DEAD, D, 1889
+DEAD, D, 1917
+SPAWN, A, 1932, 1, 63, 22
+SPAWN, A, 1933, 2, 63, 23
+SPAWN, A, 1934, 3, 63, 24
+SPAWN, D, 1935, 1, 63, 22
+SPAWN, D, 1936, 2, 63, 23
+SPAWN, D, 1937, 3, 63, 24
+TURN, 323
+PRINT, TURN 323 LOGS:To be spawned at Position(63,25)
+PRINT, To be spawned at Position(63,26)
+PRINT, To be spawned at Position(63,27)
+PRINT, Type 1 at Position (63,25)
+PRINT, Type 2 at Position (63,26)
+PRINT, Type 3 at Position (63,27)
+PRINT, 
+SHOOT, D, 1879, 1882, 0
+SHOOT, D, 1885, 1888, 2
+SHOOT, D, 1891, 1894, 4
+SHOOT, D, 1892, 1895, 0
+SHOOT, D, 1897, 1900, 6
+SHOOT, D, 1898, 1901, 1
+SHOOT, D, 1903, 1906, 8
+SHOOT, D, 1904, 1907, 3
+SHOOT, D, 1909, 1912, 10
+SHOOT, D, 1910, 1913, 5
+SHOOT, D, 1915, 1918, 12
+SHOOT, D, 1916, 1919, 7
+SHOOT, D, 1920, 1923, 0
+SHOOT, D, 1921, 1924, 14
+SHOOT, D, 1922, 1925, 9
+SHOOT, D, 1926, 1929, 2
+SHOOT, D, 1927, 1930, 16
+SHOOT, D, 1928, 1931, 11
+SHOOT, D, 1932, 1935, 6
+SHOOT, D, 1933, 1936, 18
+SHOOT, D, 1934, 1937, 13
+SHOOT, A, 1882, 1879, 0
+SHOOT, A, 1888, 1885, 2
+SHOOT, A, 1894, 1891, 4
+SHOOT, A, 1895, 1892, 0
+SHOOT, A, 1900, 1897, 6
+SHOOT, A, 1901, 1898, 1
+SHOOT, A, 1906, 1903, 8
+SHOOT, A, 1907, 1904, 3
+SHOOT, A, 1912, 1909, 10
+SHOOT, A, 1913, 1910, 5
+SHOOT, A, 1918, 1915, 12
+SHOOT, A, 1919, 1916, 7
+SHOOT, A, 1923, 1920, 0
+SHOOT, A, 1924, 1921, 14
+SHOOT, A, 1925, 1922, 9
+SHOOT, A, 1929, 1926, 2
+SHOOT, A, 1930, 1927, 16
+SHOOT, A, 1931, 1928, 11
+SHOOT, A, 1935, 1932, 6
+SHOOT, A, 1936, 1933, 18
+SHOOT, A, 1937, 1934, 13
+DEAD, A, 1879
+DEAD, A, 1892
+DEAD, A, 1920
+DEAD, D, 1882
+DEAD, D, 1895
+DEAD, D, 1923
+SPAWN, A, 1938, 1, 63, 25
+SPAWN, A, 1939, 2, 63, 26
+SPAWN, A, 1940, 3, 63, 27
+SPAWN, D, 1941, 1, 63, 25
+SPAWN, D, 1942, 2, 63, 26
+SPAWN, D, 1943, 3, 63, 27
+TURN, 324
+PRINT, TURN 324 LOGS:To be spawned at Position(63,28)
+PRINT, To be spawned at Position(63,29)
+PRINT, To be spawned at Position(63,30)
+PRINT, Type 1 at Position (63,28)
+PRINT, Type 2 at Position (63,29)
+PRINT, Type 3 at Position (63,30)
+PRINT, 
+SHOOT, D, 1885, 1888, 0
+SHOOT, D, 1891, 1894, 2
+SHOOT, D, 1897, 1900, 4
+SHOOT, D, 1898, 1901, 0
+SHOOT, D, 1903, 1906, 6
+SHOOT, D, 1904, 1907, 1
+SHOOT, D, 1909, 1912, 8
+SHOOT, D, 1910, 1913, 3
+SHOOT, D, 1915, 1918, 10
+SHOOT, D, 1916, 1919, 5
+SHOOT, D, 1921, 1924, 12
+SHOOT, D, 1922, 1925, 7
+SHOOT, D, 1926, 1929, 0
+SHOOT, D, 1927, 1930, 14
+SHOOT, D, 1928, 1931, 9
+SHOOT, D, 1932, 1935, 2
+SHOOT, D, 1933, 1936, 16
+SHOOT, D, 1934, 1937, 11
+SHOOT, D, 1938, 1941, 6
+SHOOT, D, 1939, 1942, 18
+SHOOT, D, 1940, 1943, 13
+SHOOT, A, 1888, 1885, 0
+SHOOT, A, 1894, 1891, 2
+SHOOT, A, 1900, 1897, 4
+SHOOT, A, 1901, 1898, 0
+SHOOT, A, 1906, 1903, 6
+SHOOT, A, 1907, 1904, 1
+SHOOT, A, 1912, 1909, 8
+SHOOT, A, 1913, 1910, 3
+SHOOT, A, 1918, 1915, 10
+SHOOT, A, 1919, 1916, 5
+SHOOT, A, 1924, 1921, 12
+SHOOT, A, 1925, 1922, 7
+SHOOT, A, 1929, 1926, 0
+SHOOT, A, 1930, 1927, 14
+SHOOT, A, 1931, 1928, 9
+SHOOT, A, 1935, 1932, 2
+SHOOT, A, 1936, 1933, 16
+SHOOT, A, 1937, 1934, 11
+SHOOT, A, 1941, 1938, 6
+SHOOT, A, 1942, 1939, 18
+SHOOT, A, 1943, 1940, 13
+DEAD, A, 1885
+DEAD, A, 1898
+DEAD, A, 1926
+DEAD, D, 1888
+DEAD, D, 1901
+DEAD, D, 1929
+SPAWN, A, 1944, 1, 63, 28
+SPAWN, A, 1945, 2, 63, 29
+SPAWN, A, 1946, 3, 63, 30
+SPAWN, D, 1947, 1, 63, 28
+SPAWN, D, 1948, 2, 63, 29
+SPAWN, D, 1949, 3, 63, 30
+TURN, 325
+PRINT, TURN 325 LOGS:To be spawned at Position(63,31)
+PRINT, To be spawned at Position(63,32)
+PRINT, To be spawned at Position(63,33)
+PRINT, Type 1 at Position (63,31)
+PRINT, Type 2 at Position (63,32)
+PRINT, Type 3 at Position (63,33)
+PRINT, 
+SHOOT, D, 1891, 1894, 0
+SHOOT, D, 1897, 1900, 2
+SHOOT, D, 1903, 1906, 4
+SHOOT, D, 1904, 1907, 0
+SHOOT, D, 1909, 1912, 6
+SHOOT, D, 1910, 1913, 1
+SHOOT, D, 1915, 1918, 8
+SHOOT, D, 1916, 1919, 3
+SHOOT, D, 1921, 1924, 10
+SHOOT, D, 1922, 1925, 5
+SHOOT, D, 1927, 1930, 12
+SHOOT, D, 1928, 1931, 7
+SHOOT, D, 1932, 1935, 0
+SHOOT, D, 1933, 1936, 14
+SHOOT, D, 1934, 1937, 9
+SHOOT, D, 1938, 1941, 2
+SHOOT, D, 1939, 1942, 16
+SHOOT, D, 1940, 1943, 11
+SHOOT, D, 1944, 1947, 6
+SHOOT, D, 1945, 1948, 18
+SHOOT, D, 1946, 1949, 13
+SHOOT, A, 1894, 1891, 0
+SHOOT, A, 1900, 1897, 2
+SHOOT, A, 1906, 1903, 4
+SHOOT, A, 1907, 1904, 0
+SHOOT, A, 1912, 1909, 6
+SHOOT, A, 1913, 1910, 1
+SHOOT, A, 1918, 1915, 8
+SHOOT, A, 1919, 1916, 3
+SHOOT, A, 1924, 1921, 10
+SHOOT, A, 1925, 1922, 5
+SHOOT, A, 1930, 1927, 12
+SHOOT, A, 1931, 1928, 7
+SHOOT, A, 1935, 1932, 0
+SHOOT, A, 1936, 1933, 14
+SHOOT, A, 1937, 1934, 9
+SHOOT, A, 1941, 1938, 2
+SHOOT, A, 1942, 1939, 16
+SHOOT, A, 1943, 1940, 11
+SHOOT, A, 1947, 1944, 6
+SHOOT, A, 1948, 1945, 18
+SHOOT, A, 1949, 1946, 13
+DEAD, A, 1891
+DEAD, A, 1904
+DEAD, A, 1932
+DEAD, D, 1894
+DEAD, D, 1907
+DEAD, D, 1935
+SPAWN, A, 1950, 1, 63, 31
+SPAWN, A, 1951, 2, 63, 32
+SPAWN, A, 1952, 3, 63, 33
+SPAWN, D, 1953, 1, 63, 31
+SPAWN, D, 1954, 2, 63, 32
+SPAWN, D, 1955, 3, 63, 33
+TURN, 326
+PRINT, TURN 326 LOGS:To be spawned at Position(63,34)
+PRINT, To be spawned at Position(63,35)
+PRINT, To be spawned at Position(63,36)
+PRINT, Type 1 at Position (63,34)
+PRINT, Type 2 at Position (63,35)
+PRINT, Type 3 at Position (63,36)
+PRINT, 
+SHOOT, D, 1897, 1900, 0
+SHOOT, D, 1903, 1906, 2
+SHOOT, D, 1909, 1912, 4
+SHOOT, D, 1910, 1913, 0
+SHOOT, D, 1915, 1918, 6
+SHOOT, D, 1916, 1919, 1
+SHOOT, D, 1921, 1924, 8
+SHOOT, D, 1922, 1925, 3
+SHOOT, D, 1927, 1930, 10
+SHOOT, D, 1928, 1931, 5
+SHOOT, D, 1933, 1936, 12
+SHOOT, D, 1934, 1937, 7
+SHOOT, D, 1938, 1941, 0
+SHOOT, D, 1939, 1942, 14
+SHOOT, D, 1940, 1943, 9
+SHOOT, D, 1944, 1947, 2
+SHOOT, D, 1945, 1948, 16
+SHOOT, D, 1946, 1949, 11
+SHOOT, D, 1950, 1953, 6
+SHOOT, D, 1951, 1954, 18
+SHOOT, D, 1952, 1955, 13
+SHOOT, A, 1900, 1897, 0
+SHOOT, A, 1906, 1903, 2
+SHOOT, A, 1912, 1909, 4
+SHOOT, A, 1913, 1910, 0
+SHOOT, A, 1918, 1915, 6
+SHOOT, A, 1919, 1916, 1
+SHOOT, A, 1924, 1921, 8
+SHOOT, A, 1925, 1922, 3
+SHOOT, A, 1930, 1927, 10
+SHOOT, A, 1931, 1928, 5
+SHOOT, A, 1936, 1933, 12
+SHOOT, A, 1937, 1934, 7
+SHOOT, A, 1941, 1938, 0
+SHOOT, A, 1942, 1939, 14
+SHOOT, A, 1943, 1940, 9
+SHOOT, A, 1947, 1944, 2
+SHOOT, A, 1948, 1945, 16
+SHOOT, A, 1949, 1946, 11
+SHOOT, A, 1953, 1950, 6
+SHOOT, A, 1954, 1951, 18
+SHOOT, A, 1955, 1952, 13
+DEAD, A, 1897
+DEAD, A, 1910
+DEAD, A, 1938
+DEAD, D, 1900
+DEAD, D, 1913
+DEAD, D, 1941
+SPAWN, A, 1956, 1, 63, 34
+SPAWN, A, 1957, 2, 63, 35
+SPAWN, A, 1958, 3, 63, 36
+SPAWN, D, 1959, 1, 63, 34
+SPAWN, D, 1960, 2, 63, 35
+SPAWN, D, 1961, 3, 63, 36
+TURN, 327
+PRINT, TURN 327 LOGS:To be spawned at Position(63,37)
+PRINT, To be spawned at Position(63,38)
+PRINT, To be spawned at Position(63,39)
+PRINT, Type 1 at Position (63,37)
+PRINT, Type 2 at Position (63,38)
+PRINT, Type 3 at Position (63,39)
+PRINT, 
+SHOOT, D, 1903, 1906, 0
+SHOOT, D, 1909, 1912, 2
+SHOOT, D, 1915, 1918, 4
+SHOOT, D, 1916, 1919, 0
+SHOOT, D, 1921, 1924, 6
+SHOOT, D, 1922, 1925, 1
+SHOOT, D, 1927, 1930, 8
+SHOOT, D, 1928, 1931, 3
+SHOOT, D, 1933, 1936, 10
+SHOOT, D, 1934, 1937, 5
+SHOOT, D, 1939, 1942, 12
+SHOOT, D, 1940, 1943, 7
+SHOOT, D, 1944, 1947, 0
+SHOOT, D, 1945, 1948, 14
+SHOOT, D, 1946, 1949, 9
+SHOOT, D, 1950, 1953, 2
+SHOOT, D, 1951, 1954, 16
+SHOOT, D, 1952, 1955, 11
+SHOOT, D, 1956, 1959, 6
+SHOOT, D, 1957, 1960, 18
+SHOOT, D, 1958, 1961, 13
+SHOOT, A, 1906, 1903, 0
+SHOOT, A, 1912, 1909, 2
+SHOOT, A, 1918, 1915, 4
+SHOOT, A, 1919, 1916, 0
+SHOOT, A, 1924, 1921, 6
+SHOOT, A, 1925, 1922, 1
+SHOOT, A, 1930, 1927, 8
+SHOOT, A, 1931, 1928, 3
+SHOOT, A, 1936, 1933, 10
+SHOOT, A, 1937, 1934, 5
+SHOOT, A, 1942, 1939, 12
+SHOOT, A, 1943, 1940, 7
+SHOOT, A, 1947, 1944, 0
+SHOOT, A, 1948, 1945, 14
+SHOOT, A, 1949, 1946, 9
+SHOOT, A, 1953, 1950, 2
+SHOOT, A, 1954, 1951, 16
+SHOOT, A, 1955, 1952, 11
+SHOOT, A, 1959, 1956, 6
+SHOOT, A, 1960, 1957, 18
+SHOOT, A, 1961, 1958, 13
+DEAD, A, 1903
+DEAD, A, 1916
+DEAD, A, 1944
+DEAD, D, 1906
+DEAD, D, 1919
+DEAD, D, 1947
+SPAWN, A, 1962, 1, 63, 37
+SPAWN, A, 1963, 2, 63, 38
+SPAWN, A, 1964, 3, 63, 39
+SPAWN, D, 1965, 1, 63, 37
+SPAWN, D, 1966, 2, 63, 38
+SPAWN, D, 1967, 3, 63, 39
+TURN, 328
+PRINT, TURN 328 LOGS:To be spawned at Position(63,40)
+PRINT, To be spawned at Position(63,41)
+PRINT, To be spawned at Position(63,42)
+PRINT, Type 1 at Position (63,40)
+PRINT, Type 2 at Position (63,41)
+PRINT, Type 3 at Position (63,42)
+PRINT, 
+SHOOT, D, 1909, 1912, 0
+SHOOT, D, 1915, 1918, 2
+SHOOT, D, 1921, 1924, 4
+SHOOT, D, 1922, 1925, 0
+SHOOT, D, 1927, 1930, 6
+SHOOT, D, 1928, 1931, 1
+SHOOT, D, 1933, 1936, 8
+SHOOT, D, 1934, 1937, 3
+SHOOT, D, 1939, 1942, 10
+SHOOT, D, 1940, 1943, 5
+SHOOT, D, 1945, 1948, 12
+SHOOT, D, 1946, 1949, 7
+SHOOT, D, 1950, 1953, 0
+SHOOT, D, 1951, 1954, 14
+SHOOT, D, 1952, 1955, 9
+SHOOT, D, 1956, 1959, 2
+SHOOT, D, 1957, 1960, 16
+SHOOT, D, 1958, 1961, 11
+SHOOT, D, 1962, 1965, 6
+SHOOT, D, 1963, 1966, 18
+SHOOT, D, 1964, 1967, 13
+SHOOT, A, 1912, 1909, 0
+SHOOT, A, 1918, 1915, 2
+SHOOT, A, 1924, 1921, 4
+SHOOT, A, 1925, 1922, 0
+SHOOT, A, 1930, 1927, 6
+SHOOT, A, 1931, 1928, 1
+SHOOT, A, 1936, 1933, 8
+SHOOT, A, 1937, 1934, 3
+SHOOT, A, 1942, 1939, 10
+SHOOT, A, 1943, 1940, 5
+SHOOT, A, 1948, 1945, 12
+SHOOT, A, 1949, 1946, 7
+SHOOT, A, 1953, 1950, 0
+SHOOT, A, 1954, 1951, 14
+SHOOT, A, 1955, 1952, 9
+SHOOT, A, 1959, 1956, 2
+SHOOT, A, 1960, 1957, 16
+SHOOT, A, 1961, 1958, 11
+SHOOT, A, 1965, 1962, 6
+SHOOT, A, 1966, 1963, 18
+SHOOT, A, 1967, 1964, 13
+DEAD, A, 1909
+DEAD, A, 1922
+DEAD, A, 1950
+DEAD, D, 1912
+DEAD, D, 1925
+DEAD, D, 1953
+SPAWN, A, 1968, 1, 63, 40
+SPAWN, A, 1969, 2, 63, 41
+SPAWN, A, 1970, 3, 63, 42
+SPAWN, D, 1971, 1, 63, 40
+SPAWN, D, 1972, 2, 63, 41
+SPAWN, D, 1973, 3, 63, 42
+TURN, 329
+PRINT, TURN 329 LOGS:To be spawned at Position(63,43)
+PRINT, To be spawned at Position(63,44)
+PRINT, To be spawned at Position(63,45)
+PRINT, Type 1 at Position (63,43)
+PRINT, Type 2 at Position (63,44)
+PRINT, Type 3 at Position (63,45)
+PRINT, 
+SHOOT, D, 1915, 1918, 0
+SHOOT, D, 1921, 1924, 2
+SHOOT, D, 1927, 1930, 4
+SHOOT, D, 1928, 1931, 0
+SHOOT, D, 1933, 1936, 6
+SHOOT, D, 1934, 1937, 1
+SHOOT, D, 1939, 1942, 8
+SHOOT, D, 1940, 1943, 3
+SHOOT, D, 1945, 1948, 10
+SHOOT, D, 1946, 1949, 5
+SHOOT, D, 1951, 1954, 12
+SHOOT, D, 1952, 1955, 7
+SHOOT, D, 1956, 1959, 0
+SHOOT, D, 1957, 1960, 14
+SHOOT, D, 1958, 1961, 9
+SHOOT, D, 1962, 1965, 2
+SHOOT, D, 1963, 1966, 16
+SHOOT, D, 1964, 1967, 11
+SHOOT, D, 1968, 1971, 6
+SHOOT, D, 1969, 1972, 18
+SHOOT, D, 1970, 1973, 13
+SHOOT, A, 1918, 1915, 0
+SHOOT, A, 1924, 1921, 2
+SHOOT, A, 1930, 1927, 4
+SHOOT, A, 1931, 1928, 0
+SHOOT, A, 1936, 1933, 6
+SHOOT, A, 1937, 1934, 1
+SHOOT, A, 1942, 1939, 8
+SHOOT, A, 1943, 1940, 3
+SHOOT, A, 1948, 1945, 10
+SHOOT, A, 1949, 1946, 5
+SHOOT, A, 1954, 1951, 12
+SHOOT, A, 1955, 1952, 7
+SHOOT, A, 1959, 1956, 0
+SHOOT, A, 1960, 1957, 14
+SHOOT, A, 1961, 1958, 9
+SHOOT, A, 1965, 1962, 2
+SHOOT, A, 1966, 1963, 16
+SHOOT, A, 1967, 1964, 11
+SHOOT, A, 1971, 1968, 6
+SHOOT, A, 1972, 1969, 18
+SHOOT, A, 1973, 1970, 13
+DEAD, A, 1915
+DEAD, A, 1928
+DEAD, A, 1956
+DEAD, D, 1918
+DEAD, D, 1931
+DEAD, D, 1959
+SPAWN, A, 1974, 1, 63, 43
+SPAWN, A, 1975, 2, 63, 44
+SPAWN, A, 1976, 3, 63, 45
+SPAWN, D, 1977, 1, 63, 43
+SPAWN, D, 1978, 2, 63, 44
+SPAWN, D, 1979, 3, 63, 45
+TURN, 330
+PRINT, TURN 330 LOGS:To be spawned at Position(63,46)
+PRINT, To be spawned at Position(63,47)
+PRINT, To be spawned at Position(63,48)
+PRINT, Type 1 at Position (63,46)
+PRINT, Type 2 at Position (63,47)
+PRINT, Type 3 at Position (63,48)
+PRINT, 
+SHOOT, D, 1921, 1924, 0
+SHOOT, D, 1927, 1930, 2
+SHOOT, D, 1933, 1936, 4
+SHOOT, D, 1934, 1937, 0
+SHOOT, D, 1939, 1942, 6
+SHOOT, D, 1940, 1943, 1
+SHOOT, D, 1945, 1948, 8
+SHOOT, D, 1946, 1949, 3
+SHOOT, D, 1951, 1954, 10
+SHOOT, D, 1952, 1955, 5
+SHOOT, D, 1957, 1960, 12
+SHOOT, D, 1958, 1961, 7
+SHOOT, D, 1962, 1965, 0
+SHOOT, D, 1963, 1966, 14
+SHOOT, D, 1964, 1967, 9
+SHOOT, D, 1968, 1971, 2
+SHOOT, D, 1969, 1972, 16
+SHOOT, D, 1970, 1973, 11
+SHOOT, D, 1974, 1977, 6
+SHOOT, D, 1975, 1978, 18
+SHOOT, D, 1976, 1979, 13
+SHOOT, A, 1924, 1921, 0
+SHOOT, A, 1930, 1927, 2
+SHOOT, A, 1936, 1933, 4
+SHOOT, A, 1937, 1934, 0
+SHOOT, A, 1942, 1939, 6
+SHOOT, A, 1943, 1940, 1
+SHOOT, A, 1948, 1945, 8
+SHOOT, A, 1949, 1946, 3
+SHOOT, A, 1954, 1951, 10
+SHOOT, A, 1955, 1952, 5
+SHOOT, A, 1960, 1957, 12
+SHOOT, A, 1961, 1958, 7
+SHOOT, A, 1965, 1962, 0
+SHOOT, A, 1966, 1963, 14
+SHOOT, A, 1967, 1964, 9
+SHOOT, A, 1971, 1968, 2
+SHOOT, A, 1972, 1969, 16
+SHOOT, A, 1973, 1970, 11
+SHOOT, A, 1977, 1974, 6
+SHOOT, A, 1978, 1975, 18
+SHOOT, A, 1979, 1976, 13
+DEAD, A, 1921
+DEAD, A, 1934
+DEAD, A, 1962
+DEAD, D, 1924
+DEAD, D, 1937
+DEAD, D, 1965
+SPAWN, A, 1980, 1, 63, 46
+SPAWN, A, 1981, 2, 63, 47
+SPAWN, A, 1982, 3, 63, 48
+SPAWN, D, 1983, 1, 63, 46
+SPAWN, D, 1984, 2, 63, 47
+SPAWN, D, 1985, 3, 63, 48
+TURN, 331
+PRINT, TURN 331 LOGS:To be spawned at Position(63,49)
+PRINT, To be spawned at Position(63,50)
+PRINT, To be spawned at Position(63,51)
+PRINT, Type 1 at Position (63,49)
+PRINT, Type 2 at Position (63,50)
+PRINT, Type 3 at Position (63,51)
+PRINT, 
+SHOOT, D, 1927, 1930, 0
+SHOOT, D, 1933, 1936, 2
+SHOOT, D, 1939, 1942, 4
+SHOOT, D, 1940, 1943, 0
+SHOOT, D, 1945, 1948, 6
+SHOOT, D, 1946, 1949, 1
+SHOOT, D, 1951, 1954, 8
+SHOOT, D, 1952, 1955, 3
+SHOOT, D, 1957, 1960, 10
+SHOOT, D, 1958, 1961, 5
+SHOOT, D, 1963, 1966, 12
+SHOOT, D, 1964, 1967, 7
+SHOOT, D, 1968, 1971, 0
+SHOOT, D, 1969, 1972, 14
+SHOOT, D, 1970, 1973, 9
+SHOOT, D, 1974, 1977, 2
+SHOOT, D, 1975, 1978, 16
+SHOOT, D, 1976, 1979, 11
+SHOOT, D, 1980, 1983, 6
+SHOOT, D, 1981, 1984, 18
+SHOOT, D, 1982, 1985, 13
+SHOOT, A, 1930, 1927, 0
+SHOOT, A, 1936, 1933, 2
+SHOOT, A, 1942, 1939, 4
+SHOOT, A, 1943, 1940, 0
+SHOOT, A, 1948, 1945, 6
+SHOOT, A, 1949, 1946, 1
+SHOOT, A, 1954, 1951, 8
+SHOOT, A, 1955, 1952, 3
+SHOOT, A, 1960, 1957, 10
+SHOOT, A, 1961, 1958, 5
+SHOOT, A, 1966, 1963, 12
+SHOOT, A, 1967, 1964, 7
+SHOOT, A, 1971, 1968, 0
+SHOOT, A, 1972, 1969, 14
+SHOOT, A, 1973, 1970, 9
+SHOOT, A, 1977, 1974, 2
+SHOOT, A, 1978, 1975, 16
+SHOOT, A, 1979, 1976, 11
+SHOOT, A, 1983, 1980, 6
+SHOOT, A, 1984, 1981, 18
+SHOOT, A, 1985, 1982, 13
+DEAD, A, 1927
+DEAD, A, 1940
+DEAD, A, 1968
+DEAD, D, 1930
+DEAD, D, 1943
+DEAD, D, 1971
+SPAWN, A, 1986, 1, 63, 49
+SPAWN, A, 1987, 2, 63, 50
+SPAWN, A, 1988, 3, 63, 51
+SPAWN, D, 1989, 1, 63, 49
+SPAWN, D, 1990, 2, 63, 50
+SPAWN, D, 1991, 3, 63, 51
+TURN, 332
+PRINT, TURN 332 LOGS:To be spawned at Position(63,52)
+PRINT, To be spawned at Position(63,53)
+PRINT, To be spawned at Position(63,54)
+PRINT, Type 1 at Position (63,52)
+PRINT, Type 2 at Position (63,53)
+PRINT, Type 3 at Position (63,54)
+PRINT, 
+SHOOT, D, 1933, 1936, 0
+SHOOT, D, 1939, 1942, 2
+SHOOT, D, 1945, 1948, 4
+SHOOT, D, 1946, 1949, 0
+SHOOT, D, 1951, 1954, 6
+SHOOT, D, 1952, 1955, 1
+SHOOT, D, 1957, 1960, 8
+SHOOT, D, 1958, 1961, 3
+SHOOT, D, 1963, 1966, 10
+SHOOT, D, 1964, 1967, 5
+SHOOT, D, 1969, 1972, 12
+SHOOT, D, 1970, 1973, 7
+SHOOT, D, 1974, 1977, 0
+SHOOT, D, 1975, 1978, 14
+SHOOT, D, 1976, 1979, 9
+SHOOT, D, 1980, 1983, 2
+SHOOT, D, 1981, 1984, 16
+SHOOT, D, 1982, 1985, 11
+SHOOT, D, 1986, 1989, 6
+SHOOT, D, 1987, 1990, 18
+SHOOT, D, 1988, 1991, 13
+SHOOT, A, 1936, 1933, 0
+SHOOT, A, 1942, 1939, 2
+SHOOT, A, 1948, 1945, 4
+SHOOT, A, 1949, 1946, 0
+SHOOT, A, 1954, 1951, 6
+SHOOT, A, 1955, 1952, 1
+SHOOT, A, 1960, 1957, 8
+SHOOT, A, 1961, 1958, 3
+SHOOT, A, 1966, 1963, 10
+SHOOT, A, 1967, 1964, 5
+SHOOT, A, 1972, 1969, 12
+SHOOT, A, 1973, 1970, 7
+SHOOT, A, 1977, 1974, 0
+SHOOT, A, 1978, 1975, 14
+SHOOT, A, 1979, 1976, 9
+SHOOT, A, 1983, 1980, 2
+SHOOT, A, 1984, 1981, 16
+SHOOT, A, 1985, 1982, 11
+SHOOT, A, 1989, 1986, 6
+SHOOT, A, 1990, 1987, 18
+SHOOT, A, 1991, 1988, 13
+DEAD, A, 1933
+DEAD, A, 1946
+DEAD, A, 1974
+DEAD, D, 1936
+DEAD, D, 1949
+DEAD, D, 1977
+SPAWN, A, 1992, 1, 63, 52
+SPAWN, A, 1993, 2, 63, 53
+SPAWN, A, 1994, 3, 63, 54
+SPAWN, D, 1995, 1, 63, 52
+SPAWN, D, 1996, 2, 63, 53
+SPAWN, D, 1997, 3, 63, 54
+TURN, 333
+PRINT, TURN 333 LOGS:To be spawned at Position(63,55)
+PRINT, To be spawned at Position(63,56)
+PRINT, To be spawned at Position(63,57)
+PRINT, Type 1 at Position (63,55)
+PRINT, Type 2 at Position (63,56)
+PRINT, Type 3 at Position (63,57)
+PRINT, 
+SHOOT, D, 1939, 1942, 0
+SHOOT, D, 1945, 1948, 2
+SHOOT, D, 1951, 1954, 4
+SHOOT, D, 1952, 1955, 0
+SHOOT, D, 1957, 1960, 6
+SHOOT, D, 1958, 1961, 1
+SHOOT, D, 1963, 1966, 8
+SHOOT, D, 1964, 1967, 3
+SHOOT, D, 1969, 1972, 10
+SHOOT, D, 1970, 1973, 5
+SHOOT, D, 1975, 1978, 12
+SHOOT, D, 1976, 1979, 7
+SHOOT, D, 1980, 1983, 0
+SHOOT, D, 1981, 1984, 14
+SHOOT, D, 1982, 1985, 9
+SHOOT, D, 1986, 1989, 2
+SHOOT, D, 1987, 1990, 16
+SHOOT, D, 1988, 1991, 11
+SHOOT, D, 1992, 1995, 6
+SHOOT, D, 1993, 1996, 18
+SHOOT, D, 1994, 1997, 13
+SHOOT, A, 1942, 1939, 0
+SHOOT, A, 1948, 1945, 2
+SHOOT, A, 1954, 1951, 4
+SHOOT, A, 1955, 1952, 0
+SHOOT, A, 1960, 1957, 6
+SHOOT, A, 1961, 1958, 1
+SHOOT, A, 1966, 1963, 8
+SHOOT, A, 1967, 1964, 3
+SHOOT, A, 1972, 1969, 10
+SHOOT, A, 1973, 1970, 5
+SHOOT, A, 1978, 1975, 12
+SHOOT, A, 1979, 1976, 7
+SHOOT, A, 1983, 1980, 0
+SHOOT, A, 1984, 1981, 14
+SHOOT, A, 1985, 1982, 9
+SHOOT, A, 1989, 1986, 2
+SHOOT, A, 1990, 1987, 16
+SHOOT, A, 1991, 1988, 11
+SHOOT, A, 1995, 1992, 6
+SHOOT, A, 1996, 1993, 18
+SHOOT, A, 1997, 1994, 13
+DEAD, A, 1939
+DEAD, A, 1952
+DEAD, A, 1980
+DEAD, D, 1942
+DEAD, D, 1955
+DEAD, D, 1983
+SPAWN, A, 1998, 1, 63, 55
+SPAWN, A, 1999, 2, 63, 56
+SPAWN, A, 2000, 3, 63, 57
+SPAWN, D, 2001, 1, 63, 55
+SPAWN, D, 2002, 2, 63, 56
+SPAWN, D, 2003, 3, 63, 57
+TURN, 334
+PRINT, TURN 334 LOGS:To be spawned at Position(63,58)
+PRINT, To be spawned at Position(63,59)
+PRINT, To be spawned at Position(63,60)
+PRINT, Type 1 at Position (63,58)
+PRINT, Type 2 at Position (63,59)
+PRINT, Type 3 at Position (63,60)
+PRINT, 
+SHOOT, D, 1945, 1948, 0
+SHOOT, D, 1951, 1954, 2
+SHOOT, D, 1957, 1960, 4
+SHOOT, D, 1958, 1961, 0
+SHOOT, D, 1963, 1966, 6
+SHOOT, D, 1964, 1967, 1
+SHOOT, D, 1969, 1972, 8
+SHOOT, D, 1970, 1973, 3
+SHOOT, D, 1975, 1978, 10
+SHOOT, D, 1976, 1979, 5
+SHOOT, D, 1981, 1984, 12
+SHOOT, D, 1982, 1985, 7
+SHOOT, D, 1986, 1989, 0
+SHOOT, D, 1987, 1990, 14
+SHOOT, D, 1988, 1991, 9
+SHOOT, D, 1992, 1995, 2
+SHOOT, D, 1993, 1996, 16
+SHOOT, D, 1994, 1997, 11
+SHOOT, D, 1998, 2001, 6
+SHOOT, D, 1999, 2002, 18
+SHOOT, D, 2000, 2003, 13
+SHOOT, A, 1948, 1945, 0
+SHOOT, A, 1954, 1951, 2
+SHOOT, A, 1960, 1957, 4
+SHOOT, A, 1961, 1958, 0
+SHOOT, A, 1966, 1963, 6
+SHOOT, A, 1967, 1964, 1
+SHOOT, A, 1972, 1969, 8
+SHOOT, A, 1973, 1970, 3
+SHOOT, A, 1978, 1975, 10
+SHOOT, A, 1979, 1976, 5
+SHOOT, A, 1984, 1981, 12
+SHOOT, A, 1985, 1982, 7
+SHOOT, A, 1989, 1986, 0
+SHOOT, A, 1990, 1987, 14
+SHOOT, A, 1991, 1988, 9
+SHOOT, A, 1995, 1992, 2
+SHOOT, A, 1996, 1993, 16
+SHOOT, A, 1997, 1994, 11
+SHOOT, A, 2001, 1998, 6
+SHOOT, A, 2002, 1999, 18
+SHOOT, A, 2003, 2000, 13
+DEAD, A, 1945
+DEAD, A, 1958
+DEAD, A, 1986
+DEAD, D, 1948
+DEAD, D, 1961
+DEAD, D, 1989
+SPAWN, A, 2004, 1, 63, 58
+SPAWN, A, 2005, 2, 63, 59
+SPAWN, A, 2006, 3, 63, 60
+SPAWN, D, 2007, 1, 63, 58
+SPAWN, D, 2008, 2, 63, 59
+SPAWN, D, 2009, 3, 63, 60
+TURN, 335
+PRINT, TURN 335 LOGS:To be spawned at Position(63,61)
+PRINT, To be spawned at Position(63,62)
+PRINT, To be spawned at Position(63,63)
+PRINT, Type 1 at Position (63,61)
+PRINT, Type 2 at Position (63,62)
+PRINT, Type 3 at Position (63,63)
+PRINT, 
+SHOOT, D, 1951, 1954, 0
+SHOOT, D, 1957, 1960, 2
+SHOOT, D, 1963, 1966, 4
+SHOOT, D, 1964, 1967, 0
+SHOOT, D, 1969, 1972, 6
+SHOOT, D, 1970, 1973, 1
+SHOOT, D, 1975, 1978, 8
+SHOOT, D, 1976, 1979, 3
+SHOOT, D, 1981, 1984, 10
+SHOOT, D, 1982, 1985, 5
+SHOOT, D, 1987, 1990, 12
+SHOOT, D, 1988, 1991, 7
+SHOOT, D, 1992, 1995, 0
+SHOOT, D, 1993, 1996, 14
+SHOOT, D, 1994, 1997, 9
+SHOOT, D, 1998, 2001, 2
+SHOOT, D, 1999, 2002, 16
+SHOOT, D, 2000, 2003, 11
+SHOOT, D, 2004, 2007, 6
+SHOOT, D, 2005, 2008, 18
+SHOOT, D, 2006, 2009, 13
+SHOOT, A, 1954, 1951, 0
+SHOOT, A, 1960, 1957, 2
+SHOOT, A, 1966, 1963, 4
+SHOOT, A, 1967, 1964, 0
+SHOOT, A, 1972, 1969, 6
+SHOOT, A, 1973, 1970, 1
+SHOOT, A, 1978, 1975, 8
+SHOOT, A, 1979, 1976, 3
+SHOOT, A, 1984, 1981, 10
+SHOOT, A, 1985, 1982, 5
+SHOOT, A, 1990, 1987, 12
+SHOOT, A, 1991, 1988, 7
+SHOOT, A, 1995, 1992, 0
+SHOOT, A, 1996, 1993, 14
+SHOOT, A, 1997, 1994, 9
+SHOOT, A, 2001, 1998, 2
+SHOOT, A, 2002, 1999, 16
+SHOOT, A, 2003, 2000, 11
+SHOOT, A, 2007, 2004, 6
+SHOOT, A, 2008, 2005, 18
+SHOOT, A, 2009, 2006, 13
+DEAD, A, 1951
+DEAD, A, 1964
+DEAD, A, 1992
+DEAD, D, 1954
+DEAD, D, 1967
+DEAD, D, 1995
+SPAWN, A, 2010, 1, 63, 61
+SPAWN, A, 2011, 2, 63, 62
+SPAWN, A, 2012, 3, 63, 63
+SPAWN, D, 2013, 1, 63, 61
+SPAWN, D, 2014, 2, 63, 62
+SPAWN, D, 2015, 3, 63, 63
+TURN, 336
+PRINT, TURN 336 LOGS:To be spawned at Position(0,0)
+PRINT, To be spawned at Position(0,1)
+PRINT, To be spawned at Position(0,2)
+PRINT, Type 1 at Position (0,0)
+PRINT, Type 2 at Position (0,1)
+PRINT, Type 3 at Position (0,2)
+PRINT, 
+SHOOT, D, 1957, 1960, 0
+SHOOT, D, 1963, 1966, 2
+SHOOT, D, 1969, 1972, 4
+SHOOT, D, 1970, 1973, 0
+SHOOT, D, 1975, 1978, 6
+SHOOT, D, 1976, 1979, 1
+SHOOT, D, 1981, 1984, 8
+SHOOT, D, 1982, 1985, 3
+SHOOT, D, 1987, 1990, 10
+SHOOT, D, 1988, 1991, 5
+SHOOT, D, 1993, 1996, 12
+SHOOT, D, 1994, 1997, 7
+SHOOT, D, 1998, 2001, 0
+SHOOT, D, 1999, 2002, 14
+SHOOT, D, 2000, 2003, 9
+SHOOT, D, 2004, 2007, 2
+SHOOT, D, 2005, 2008, 16
+SHOOT, D, 2006, 2009, 11
+SHOOT, D, 2010, 2013, 6
+SHOOT, D, 2011, 2014, 18
+SHOOT, D, 2012, 2015, 13
+SHOOT, A, 1960, 1957, 0
+SHOOT, A, 1966, 1963, 2
+SHOOT, A, 1972, 1969, 4
+SHOOT, A, 1973, 1970, 0
+SHOOT, A, 1978, 1975, 6
+SHOOT, A, 1979, 1976, 1
+SHOOT, A, 1984, 1981, 8
+SHOOT, A, 1985, 1982, 3
+SHOOT, A, 1990, 1987, 10
+SHOOT, A, 1991, 1988, 5
+SHOOT, A, 1996, 1993, 12
+SHOOT, A, 1997, 1994, 7
+SHOOT, A, 2001, 1998, 0
+SHOOT, A, 2002, 1999, 14
+SHOOT, A, 2003, 2000, 9
+SHOOT, A, 2007, 2004, 2
+SHOOT, A, 2008, 2005, 16
+SHOOT, A, 2009, 2006, 11
+SHOOT, A, 2013, 2010, 6
+SHOOT, A, 2014, 2011, 18
+SHOOT, A, 2015, 2012, 13
+DEAD, A, 1957
+DEAD, A, 1970
+DEAD, A, 1998
+DEAD, D, 1960
+DEAD, D, 1973
+DEAD, D, 2001
+SPAWN, A, 2016, 1, 0, 0
+SPAWN, A, 2017, 2, 0, 1
+SPAWN, A, 2018, 3, 0, 2
+SPAWN, D, 2019, 1, 0, 0
+SPAWN, D, 2020, 2, 0, 1
+SPAWN, D, 2021, 3, 0, 2
+TURN, 337
+PRINT, TURN 337 LOGS:To be spawned at Position(0,3)
+PRINT, To be spawned at Position(0,4)
+PRINT, To be spawned at Position(0,5)
+PRINT, Type 1 at Position (0,3)
+PRINT, Type 2 at Position (0,4)
+PRINT, Type 3 at Position (0,5)
+PRINT, 
+SHOOT, D, 1963, 1966, 0
+SHOOT, D, 1969, 1972, 2
+SHOOT, D, 1975, 1978, 4
+SHOOT, D, 1976, 1979, 0
+SHOOT, D, 1981, 1984, 6
+SHOOT, D, 1982, 1985, 1
+SHOOT, D, 1987, 1990, 8
+SHOOT, D, 1988, 1991, 3
+SHOOT, D, 1993, 1996, 10
+SHOOT, D, 1994, 1997, 5
+SHOOT, D, 1999, 2002, 12
+SHOOT, D, 2000, 2003, 7
+SHOOT, D, 2004, 2007, 0
+SHOOT, D, 2005, 2008, 14
+SHOOT, D, 2006, 2009, 9
+SHOOT, D, 2010, 2013, 2
+SHOOT, D, 2011, 2014, 16
+SHOOT, D, 2012, 2015, 11
+SHOOT, D, 2016, 2019, 6
+SHOOT, D, 2017, 2020, 18
+SHOOT, D, 2018, 2021, 13
+SHOOT, A, 1966, 1963, 0
+SHOOT, A, 1972, 1969, 2
+SHOOT, A, 1978, 1975, 4
+SHOOT, A, 1979, 1976, 0
+SHOOT, A, 1984, 1981, 6
+SHOOT, A, 1985, 1982, 1
+SHOOT, A, 1990, 1987, 8
+SHOOT, A, 1991, 1988, 3
+SHOOT, A, 1996, 1993, 10
+SHOOT, A, 1997, 1994, 5
+SHOOT, A, 2002, 1999, 12
+SHOOT, A, 2003, 2000, 7
+SHOOT, A, 2007, 2004, 0
+SHOOT, A, 2008, 2005, 14
+SHOOT, A, 2009, 2006, 9
+SHOOT, A, 2013, 2010, 2
+SHOOT, A, 2014, 2011, 16
+SHOOT, A, 2015, 2012, 11
+SHOOT, A, 2019, 2016, 6
+SHOOT, A, 2020, 2017, 18
+SHOOT, A, 2021, 2018, 13
+DEAD, A, 1963
+DEAD, A, 1976
+DEAD, A, 2004
+DEAD, D, 1966
+DEAD, D, 1979
+DEAD, D, 2007
+SPAWN, A, 2022, 1, 0, 3
+SPAWN, A, 2023, 2, 0, 4
+SPAWN, A, 2024, 3, 0, 5
+SPAWN, D, 2025, 1, 0, 3
+SPAWN, D, 2026, 2, 0, 4
+SPAWN, D, 2027, 3, 0, 5
+TURN, 338
+PRINT, TURN 338 LOGS:To be spawned at Position(0,6)
+PRINT, To be spawned at Position(0,7)
+PRINT, To be spawned at Position(0,8)
+PRINT, Type 1 at Position (0,6)
+PRINT, Type 2 at Position (0,7)
+PRINT, Type 3 at Position (0,8)
+PRINT, 
+SHOOT, D, 1969, 1972, 0
+SHOOT, D, 1975, 1978, 2
+SHOOT, D, 1981, 1984, 4
+SHOOT, D, 1982, 1985, 0
+SHOOT, D, 1987, 1990, 6
+SHOOT, D, 1988, 1991, 1
+SHOOT, D, 1993, 1996, 8
+SHOOT, D, 1994, 1997, 3
+SHOOT, D, 1999, 2002, 10
+SHOOT, D, 2000, 2003, 5
+SHOOT, D, 2005, 2008, 12
+SHOOT, D, 2006, 2009, 7
+SHOOT, D, 2010, 2013, 0
+SHOOT, D, 2011, 2014, 14
+SHOOT, D, 2012, 2015, 9
+SHOOT, D, 2016, 2019, 2
+SHOOT, D, 2017, 2020, 16
+SHOOT, D, 2018, 2021, 11
+SHOOT, D, 2022, 2025, 6
+SHOOT, D, 2023, 2026, 18
+SHOOT, D, 2024, 2027, 13
+SHOOT, A, 1972, 1969, 0
+SHOOT, A, 1978, 1975, 2
+SHOOT, A, 1984, 1981, 4
+SHOOT, A, 1985, 1982, 0
+SHOOT, A, 1990, 1987, 6
+SHOOT, A, 1991, 1988, 1
+SHOOT, A, 1996, 1993, 8
+SHOOT, A, 1997, 1994, 3
+SHOOT, A, 2002, 1999, 10
+SHOOT, A, 2003, 2000, 5
+SHOOT, A, 2008, 2005, 12
+SHOOT, A, 2009, 2006, 7
+SHOOT, A, 2013, 2010, 0
+SHOOT, A, 2014, 2011, 14
+SHOOT, A, 2015, 2012, 9
+SHOOT, A, 2019, 2016, 2
+SHOOT, A, 2020, 2017, 16
+SHOOT, A, 2021, 2018, 11
+SHOOT, A, 2025, 2022, 6
+SHOOT, A, 2026, 2023, 18
+SHOOT, A, 2027, 2024, 13
+DEAD, A, 1969
+DEAD, A, 1982
+DEAD, A, 2010
+DEAD, D, 1972
+DEAD, D, 1985
+DEAD, D, 2013
+SPAWN, A, 2028, 1, 0, 6
+SPAWN, A, 2029, 2, 0, 7
+SPAWN, A, 2030, 3, 0, 8
+SPAWN, D, 2031, 1, 0, 6
+SPAWN, D, 2032, 2, 0, 7
+SPAWN, D, 2033, 3, 0, 8
+TURN, 339
+PRINT, TURN 339 LOGS:To be spawned at Position(0,9)
+PRINT, To be spawned at Position(0,10)
+PRINT, To be spawned at Position(0,11)
+PRINT, Type 1 at Position (0,9)
+PRINT, Type 2 at Position (0,10)
+PRINT, Type 3 at Position (0,11)
+PRINT, 
+SHOOT, D, 1975, 1978, 0
+SHOOT, D, 1981, 1984, 2
+SHOOT, D, 1987, 1990, 4
+SHOOT, D, 1988, 1991, 0
+SHOOT, D, 1993, 1996, 6
+SHOOT, D, 1994, 1997, 1
+SHOOT, D, 1999, 2002, 8
+SHOOT, D, 2000, 2003, 3
+SHOOT, D, 2005, 2008, 10
+SHOOT, D, 2006, 2009, 5
+SHOOT, D, 2011, 2014, 12
+SHOOT, D, 2012, 2015, 7
+SHOOT, D, 2016, 2019, 0
+SHOOT, D, 2017, 2020, 14
+SHOOT, D, 2018, 2021, 9
+SHOOT, D, 2022, 2025, 2
+SHOOT, D, 2023, 2026, 16
+SHOOT, D, 2024, 2027, 11
+SHOOT, D, 2028, 2031, 6
+SHOOT, D, 2029, 2032, 18
+SHOOT, D, 2030, 2033, 13
+SHOOT, A, 1978, 1975, 0
+SHOOT, A, 1984, 1981, 2
+SHOOT, A, 1990, 1987, 4
+SHOOT, A, 1991, 1988, 0
+SHOOT, A, 1996, 1993, 6
+SHOOT, A, 1997, 1994, 1
+SHOOT, A, 2002, 1999, 8
+SHOOT, A, 2003, 2000, 3
+SHOOT, A, 2008, 2005, 10
+SHOOT, A, 2009, 2006, 5
+SHOOT, A, 2014, 2011, 12
+SHOOT, A, 2015, 2012, 7
+SHOOT, A, 2019, 2016, 0
+SHOOT, A, 2020, 2017, 14
+SHOOT, A, 2021, 2018, 9
+SHOOT, A, 2025, 2022, 2
+SHOOT, A, 2026, 2023, 16
+SHOOT, A, 2027, 2024, 11
+SHOOT, A, 2031, 2028, 6
+SHOOT, A, 2032, 2029, 18
+SHOOT, A, 2033, 2030, 13
+DEAD, A, 1975
+DEAD, A, 1988
+DEAD, A, 2016
+DEAD, D, 1978
+DEAD, D, 1991
+DEAD, D, 2019
+SPAWN, A, 2034, 1, 0, 9
+SPAWN, A, 2035, 2, 0, 10
+SPAWN, A, 2036, 3, 0, 11
+SPAWN, D, 2037, 1, 0, 9
+SPAWN, D, 2038, 2, 0, 10
+SPAWN, D, 2039, 3, 0, 11
+TURN, 340
+PRINT, TURN 340 LOGS:To be spawned at Position(0,12)
+PRINT, To be spawned at Position(0,13)
+PRINT, To be spawned at Position(0,14)
+PRINT, Type 1 at Position (0,12)
+PRINT, Type 2 at Position (0,13)
+PRINT, Type 3 at Position (0,14)
+PRINT, 
+SHOOT, D, 1981, 1984, 0
+SHOOT, D, 1987, 1990, 2
+SHOOT, D, 1993, 1996, 4
+SHOOT, D, 1994, 1997, 0
+SHOOT, D, 1999, 2002, 6
+SHOOT, D, 2000, 2003, 1
+SHOOT, D, 2005, 2008, 8
+SHOOT, D, 2006, 2009, 3
+SHOOT, D, 2011, 2014, 10
+SHOOT, D, 2012, 2015, 5
+SHOOT, D, 2017, 2020, 12
+SHOOT, D, 2018, 2021, 7
+SHOOT, D, 2022, 2025, 0
+SHOOT, D, 2023, 2026, 14
+SHOOT, D, 2024, 2027, 9
+SHOOT, D, 2028, 2031, 2
+SHOOT, D, 2029, 2032, 16
+SHOOT, D, 2030, 2033, 11
+SHOOT, D, 2034, 2037, 6
+SHOOT, D, 2035, 2038, 18
+SHOOT, D, 2036, 2039, 13
+SHOOT, A, 1984, 1981, 0
+SHOOT, A, 1990, 1987, 2
+SHOOT, A, 1996, 1993, 4
+SHOOT, A, 1997, 1994, 0
+SHOOT, A, 2002, 1999, 6
+SHOOT, A, 2003, 2000, 1
+SHOOT, A, 2008, 2005, 8
+SHOOT, A, 2009, 2006, 3
+SHOOT, A, 2014, 2011, 10
+SHOOT, A, 2015, 2012, 5
+SHOOT, A, 2020, 2017, 12
+SHOOT, A, 2021, 2018, 7
+SHOOT, A, 2025, 2022, 0
+SHOOT, A, 2026, 2023, 14
+SHOOT, A, 2027, 2024, 9
+SHOOT, A, 2031, 2028, 2
+SHOOT, A, 2032, 2029, 16
+SHOOT, A, 2033, 2030, 11
+SHOOT, A, 2037, 2034, 6
+SHOOT, A, 2038, 2035, 18
+SHOOT, A, 2039, 2036, 13
+DEAD, A, 1981
+DEAD, A, 1994
+DEAD, A, 2022
+DEAD, D, 1984
+DEAD, D, 1997
+DEAD, D, 2025
+SPAWN, A, 2040, 1, 0, 12
+SPAWN, A, 2041, 2, 0, 13
+SPAWN, A, 2042, 3, 0, 14
+SPAWN, D, 2043, 1, 0, 12
+SPAWN, D, 2044, 2, 0, 13
+SPAWN, D, 2045, 3, 0, 14
+TURN, 341
+PRINT, TURN 341 LOGS:To be spawned at Position(0,15)
+PRINT, To be spawned at Position(0,16)
+PRINT, To be spawned at Position(0,17)
+PRINT, Type 1 at Position (0,15)
+PRINT, Type 2 at Position (0,16)
+PRINT, Type 3 at Position (0,17)
+PRINT, 
+SHOOT, D, 1987, 1990, 0
+SHOOT, D, 1993, 1996, 2
+SHOOT, D, 1999, 2002, 4
+SHOOT, D, 2000, 2003, 0
+SHOOT, D, 2005, 2008, 6
+SHOOT, D, 2006, 2009, 1
+SHOOT, D, 2011, 2014, 8
+SHOOT, D, 2012, 2015, 3
+SHOOT, D, 2017, 2020, 10
+SHOOT, D, 2018, 2021, 5
+SHOOT, D, 2023, 2026, 12
+SHOOT, D, 2024, 2027, 7
+SHOOT, D, 2028, 2031, 0
+SHOOT, D, 2029, 2032, 14
+SHOOT, D, 2030, 2033, 9
+SHOOT, D, 2034, 2037, 2
+SHOOT, D, 2035, 2038, 16
+SHOOT, D, 2036, 2039, 11
+SHOOT, D, 2040, 2043, 6
+SHOOT, D, 2041, 2044, 18
+SHOOT, D, 2042, 2045, 13
+SHOOT, A, 1990, 1987, 0
+SHOOT, A, 1996, 1993, 2
+SHOOT, A, 2002, 1999, 4
+SHOOT, A, 2003, 2000, 0
+SHOOT, A, 2008, 2005, 6
+SHOOT, A, 2009, 2006, 1
+SHOOT, A, 2014, 2011, 8
+SHOOT, A, 2015, 2012, 3
+SHOOT, A, 2020, 2017, 10
+SHOOT, A, 2021, 2018, 5
+SHOOT, A, 2026, 2023, 12
+SHOOT, A, 2027, 2024, 7
+SHOOT, A, 2031, 2028, 0
+SHOOT, A, 2032, 2029, 14
+SHOOT, A, 2033, 2030, 9
+SHOOT, A, 2037, 2034, 2
+SHOOT, A, 2038, 2035, 16
+SHOOT, A, 2039, 2036, 11
+SHOOT, A, 2043, 2040, 6
+SHOOT, A, 2044, 2041, 18
+SHOOT, A, 2045, 2042, 13
+DEAD, A, 1987
+DEAD, A, 2000
+DEAD, A, 2028
+DEAD, D, 1990
+DEAD, D, 2003
+DEAD, D, 2031
+SPAWN, A, 2046, 1, 0, 15
+SPAWN, A, 2047, 2, 0, 16
+SPAWN, A, 2048, 3, 0, 17
+SPAWN, D, 2049, 1, 0, 15
+SPAWN, D, 2050, 2, 0, 16
+SPAWN, D, 2051, 3, 0, 17
+TURN, 342
+PRINT, TURN 342 LOGS:To be spawned at Position(0,18)
+PRINT, To be spawned at Position(0,19)
+PRINT, To be spawned at Position(0,20)
+PRINT, Type 1 at Position (0,18)
+PRINT, Type 2 at Position (0,19)
+PRINT, Type 3 at Position (0,20)
+PRINT, 
+SHOOT, D, 1993, 1996, 0
+SHOOT, D, 1999, 2002, 2
+SHOOT, D, 2005, 2008, 4
+SHOOT, D, 2006, 2009, 0
+SHOOT, D, 2011, 2014, 6
+SHOOT, D, 2012, 2015, 1
+SHOOT, D, 2017, 2020, 8
+SHOOT, D, 2018, 2021, 3
+SHOOT, D, 2023, 2026, 10
+SHOOT, D, 2024, 2027, 5
+SHOOT, D, 2029, 2032, 12
+SHOOT, D, 2030, 2033, 7
+SHOOT, D, 2034, 2037, 0
+SHOOT, D, 2035, 2038, 14
+SHOOT, D, 2036, 2039, 9
+SHOOT, D, 2040, 2043, 2
+SHOOT, D, 2041, 2044, 16
+SHOOT, D, 2042, 2045, 11
+SHOOT, D, 2046, 2049, 6
+SHOOT, D, 2047, 2050, 18
+SHOOT, D, 2048, 2051, 13
+SHOOT, A, 1996, 1993, 0
+SHOOT, A, 2002, 1999, 2
+SHOOT, A, 2008, 2005, 4
+SHOOT, A, 2009, 2006, 0
+SHOOT, A, 2014, 2011, 6
+SHOOT, A, 2015, 2012, 1
+SHOOT, A, 2020, 2017, 8
+SHOOT, A, 2021, 2018, 3
+SHOOT, A, 2026, 2023, 10
+SHOOT, A, 2027, 2024, 5
+SHOOT, A, 2032, 2029, 12
+SHOOT, A, 2033, 2030, 7
+SHOOT, A, 2037, 2034, 0
+SHOOT, A, 2038, 2035, 14
+SHOOT, A, 2039, 2036, 9
+SHOOT, A, 2043, 2040, 2
+SHOOT, A, 2044, 2041, 16
+SHOOT, A, 2045, 2042, 11
+SHOOT, A, 2049, 2046, 6
+SHOOT, A, 2050, 2047, 18
+SHOOT, A, 2051, 2048, 13
+DEAD, A, 1993
+DEAD, A, 2006
+DEAD, A, 2034
+DEAD, D, 1996
+DEAD, D, 2009
+DEAD, D, 2037
+SPAWN, A, 2052, 1, 0, 18
+SPAWN, A, 2053, 2, 0, 19
+SPAWN, A, 2054, 3, 0, 20
+SPAWN, D, 2055, 1, 0, 18
+SPAWN, D, 2056, 2, 0, 19
+SPAWN, D, 2057, 3, 0, 20
+TURN, 343
+PRINT, TURN 343 LOGS:To be spawned at Position(0,21)
+PRINT, To be spawned at Position(0,22)
+PRINT, To be spawned at Position(0,23)
+PRINT, Type 1 at Position (0,21)
+PRINT, Type 2 at Position (0,22)
+PRINT, Type 3 at Position (0,23)
+PRINT, 
+SHOOT, D, 1999, 2002, 0
+SHOOT, D, 2005, 2008, 2
+SHOOT, D, 2011, 2014, 4
+SHOOT, D, 2012, 2015, 0
+SHOOT, D, 2017, 2020, 6
+SHOOT, D, 2018, 2021, 1
+SHOOT, D, 2023, 2026, 8
+SHOOT, D, 2024, 2027, 3
+SHOOT, D, 2029, 2032, 10
+SHOOT, D, 2030, 2033, 5
+SHOOT, D, 2035, 2038, 12
+SHOOT, D, 2036, 2039, 7
+SHOOT, D, 2040, 2043, 0
+SHOOT, D, 2041, 2044, 14
+SHOOT, D, 2042, 2045, 9
+SHOOT, D, 2046, 2049, 2
+SHOOT, D, 2047, 2050, 16
+SHOOT, D, 2048, 2051, 11
+SHOOT, D, 2052, 2055, 6
+SHOOT, D, 2053, 2056, 18
+SHOOT, D, 2054, 2057, 13
+SHOOT, A, 2002, 1999, 0
+SHOOT, A, 2008, 2005, 2
+SHOOT, A, 2014, 2011, 4
+SHOOT, A, 2015, 2012, 0
+SHOOT, A, 2020, 2017, 6
+SHOOT, A, 2021, 2018, 1
+SHOOT, A, 2026, 2023, 8
+SHOOT, A, 2027, 2024, 3
+SHOOT, A, 2032, 2029, 10
+SHOOT, A, 2033, 2030, 5
+SHOOT, A, 2038, 2035, 12
+SHOOT, A, 2039, 2036, 7
+SHOOT, A, 2043, 2040, 0
+SHOOT, A, 2044, 2041, 14
+SHOOT, A, 2045, 2042, 9
+SHOOT, A, 2049, 2046, 2
+SHOOT, A, 2050, 2047, 16
+SHOOT, A, 2051, 2048, 11
+SHOOT, A, 2055, 2052, 6
+SHOOT, A, 2056, 2053, 18
+SHOOT, A, 2057, 2054, 13
+DEAD, A, 1999
+DEAD, A, 2012
+DEAD, A, 2040
+DEAD, D, 2002
+DEAD, D, 2015
+DEAD, D, 2043
+SPAWN, A, 2058, 1, 0, 21
+SPAWN, A, 2059, 2, 0, 22
+SPAWN, A, 2060, 3, 0, 23
+SPAWN, D, 2061, 1, 0, 21
+SPAWN, D, 2062, 2, 0, 22
+SPAWN, D, 2063, 3, 0, 23
+TURN, 344
+PRINT, TURN 344 LOGS:To be spawned at Position(0,24)
+PRINT, To be spawned at Position(0,25)
+PRINT, To be spawned at Position(0,26)
+PRINT, Type 1 at Position (0,24)
+PRINT, Type 2 at Position (0,25)
+PRINT, Type 3 at Position (0,26)
+PRINT, 
+SHOOT, D, 2005, 2008, 0
+SHOOT, D, 2011, 2014, 2
+SHOOT, D, 2017, 2020, 4
+SHOOT, D, 2018, 2021, 0
+SHOOT, D, 2023, 2026, 6
+SHOOT, D, 2024, 2027, 1
+SHOOT, D, 2029, 2032, 8
+SHOOT, D, 2030, 2033, 3
+SHOOT, D, 2035, 2038, 10
+SHOOT, D, 2036, 2039, 5
+SHOOT, D, 2041, 2044, 12
+SHOOT, D, 2042, 2045, 7
+SHOOT, D, 2046, 2049, 0
+SHOOT, D, 2047, 2050, 14
+SHOOT, D, 2048, 2051, 9
+SHOOT, D, 2052, 2055, 2
+SHOOT, D, 2053, 2056, 16
+SHOOT, D, 2054, 2057, 11
+SHOOT, D, 2058, 2061, 6
+SHOOT, D, 2059, 2062, 18
+SHOOT, D, 2060, 2063, 13
+SHOOT, A, 2008, 2005, 0
+SHOOT, A, 2014, 2011, 2
+SHOOT, A, 2020, 2017, 4
+SHOOT, A, 2021, 2018, 0
+SHOOT, A, 2026, 2023, 6
+SHOOT, A, 2027, 2024, 1
+SHOOT, A, 2032, 2029, 8
+SHOOT, A, 2033, 2030, 3
+SHOOT, A, 2038, 2035, 10
+SHOOT, A, 2039, 2036, 5
+SHOOT, A, 2044, 2041, 12
+SHOOT, A, 2045, 2042, 7
+SHOOT, A, 2049, 2046, 0
+SHOOT, A, 2050, 2047, 14
+SHOOT, A, 2051, 2048, 9
+SHOOT, A, 2055, 2052, 2
+SHOOT, A, 2056, 2053, 16
+SHOOT, A, 2057, 2054, 11
+SHOOT, A, 2061, 2058, 6
+SHOOT, A, 2062, 2059, 18
+SHOOT, A, 2063, 2060, 13
+DEAD, A, 2005
+DEAD, A, 2018
+DEAD, A, 2046
+DEAD, D, 2008
+DEAD, D, 2021
+DEAD, D, 2049
+SPAWN, A, 2064, 1, 0, 24
+SPAWN, A, 2065, 2, 0, 25
+SPAWN, A, 2066, 3, 0, 26
+SPAWN, D, 2067, 1, 0, 24
+SPAWN, D, 2068, 2, 0, 25
+SPAWN, D, 2069, 3, 0, 26
+TURN, 345
+PRINT, TURN 345 LOGS:To be spawned at Position(0,27)
+PRINT, To be spawned at Position(0,28)
+PRINT, To be spawned at Position(0,29)
+PRINT, Type 1 at Position (0,27)
+PRINT, Type 2 at Position (0,28)
+PRINT, Type 3 at Position (0,29)
+PRINT, 
+SHOOT, D, 2011, 2014, 0
+SHOOT, D, 2017, 2020, 2
+SHOOT, D, 2023, 2026, 4
+SHOOT, D, 2024, 2027, 0
+SHOOT, D, 2029, 2032, 6
+SHOOT, D, 2030, 2033, 1
+SHOOT, D, 2035, 2038, 8
+SHOOT, D, 2036, 2039, 3
+SHOOT, D, 2041, 2044, 10
+SHOOT, D, 2042, 2045, 5
+SHOOT, D, 2047, 2050, 12
+SHOOT, D, 2048, 2051, 7
+SHOOT, D, 2052, 2055, 0
+SHOOT, D, 2053, 2056, 14
+SHOOT, D, 2054, 2057, 9
+SHOOT, D, 2058, 2061, 2
+SHOOT, D, 2059, 2062, 16
+SHOOT, D, 2060, 2063, 11
+SHOOT, D, 2064, 2067, 6
+SHOOT, D, 2065, 2068, 18
+SHOOT, D, 2066, 2069, 13
+SHOOT, A, 2014, 2011, 0
+SHOOT, A, 2020, 2017, 2
+SHOOT, A, 2026, 2023, 4
+SHOOT, A, 2027, 2024, 0
+SHOOT, A, 2032, 2029, 6
+SHOOT, A, 2033, 2030, 1
+SHOOT, A, 2038, 2035, 8
+SHOOT, A, 2039, 2036, 3
+SHOOT, A, 2044, 2041, 10
+SHOOT, A, 2045, 2042, 5
+SHOOT, A, 2050, 2047, 12
+SHOOT, A, 2051, 2048, 7
+SHOOT, A, 2055, 2052, 0
+SHOOT, A, 2056, 2053, 14
+SHOOT, A, 2057, 2054, 9
+SHOOT, A, 2061, 2058, 2
+SHOOT, A, 2062, 2059, 16
+SHOOT, A, 2063, 2060, 11
+SHOOT, A, 2067, 2064, 6
+SHOOT, A, 2068, 2065, 18
+SHOOT, A, 2069, 2066, 13
+DEAD, A, 2011
+DEAD, A, 2024
+DEAD, A, 2052
+DEAD, D, 2014
+DEAD, D, 2027
+DEAD, D, 2055
+SPAWN, A, 2070, 1, 0, 27
+SPAWN, A, 2071, 2, 0, 28
+SPAWN, A, 2072, 3, 0, 29
+SPAWN, D, 2073, 1, 0, 27
+SPAWN, D, 2074, 2, 0, 28
+SPAWN, D, 2075, 3, 0, 29
+TURN, 346
+PRINT, TURN 346 LOGS:To be spawned at Position(0,30)
+PRINT, To be spawned at Position(0,31)
+PRINT, To be spawned at Position(0,32)
+PRINT, Type 1 at Position (0,30)
+PRINT, Type 2 at Position (0,31)
+PRINT, Type 3 at Position (0,32)
+PRINT, 
+SHOOT, D, 2017, 2020, 0
+SHOOT, D, 2023, 2026, 2
+SHOOT, D, 2029, 2032, 4
+SHOOT, D, 2030, 2033, 0
+SHOOT, D, 2035, 2038, 6
+SHOOT, D, 2036, 2039, 1
+SHOOT, D, 2041, 2044, 8
+SHOOT, D, 2042, 2045, 3
+SHOOT, D, 2047, 2050, 10
+SHOOT, D, 2048, 2051, 5
+SHOOT, D, 2053, 2056, 12
+SHOOT, D, 2054, 2057, 7
+SHOOT, D, 2058, 2061, 0
+SHOOT, D, 2059, 2062, 14
+SHOOT, D, 2060, 2063, 9
+SHOOT, D, 2064, 2067, 2
+SHOOT, D, 2065, 2068, 16
+SHOOT, D, 2066, 2069, 11
+SHOOT, D, 2070, 2073, 6
+SHOOT, D, 2071, 2074, 18
+SHOOT, D, 2072, 2075, 13
+SHOOT, A, 2020, 2017, 0
+SHOOT, A, 2026, 2023, 2
+SHOOT, A, 2032, 2029, 4
+SHOOT, A, 2033, 2030, 0
+SHOOT, A, 2038, 2035, 6
+SHOOT, A, 2039, 2036, 1
+SHOOT, A, 2044, 2041, 8
+SHOOT, A, 2045, 2042, 3
+SHOOT, A, 2050, 2047, 10
+SHOOT, A, 2051, 2048, 5
+SHOOT, A, 2056, 2053, 12
+SHOOT, A, 2057, 2054, 7
+SHOOT, A, 2061, 2058, 0
+SHOOT, A, 2062, 2059, 14
+SHOOT, A, 2063, 2060, 9
+SHOOT, A, 2067, 2064, 2
+SHOOT, A, 2068, 2065, 16
+SHOOT, A, 2069, 2066, 11
+SHOOT, A, 2073, 2070, 6
+SHOOT, A, 2074, 2071, 18
+SHOOT, A, 2075, 2072, 13
+DEAD, A, 2017
+DEAD, A, 2030
+DEAD, A, 2058
+DEAD, D, 2020
+DEAD, D, 2033
+DEAD, D, 2061
+SPAWN, A, 2076, 1, 0, 30
+SPAWN, A, 2077, 2, 0, 31
+SPAWN, A, 2078, 3, 0, 32
+SPAWN, D, 2079, 1, 0, 30
+SPAWN, D, 2080, 2, 0, 31
+SPAWN, D, 2081, 3, 0, 32
+TURN, 347
+PRINT, TURN 347 LOGS:To be spawned at Position(0,33)
+PRINT, To be spawned at Position(0,34)
+PRINT, To be spawned at Position(0,35)
+PRINT, Type 1 at Position (0,33)
+PRINT, Type 2 at Position (0,34)
+PRINT, Type 3 at Position (0,35)
+PRINT, 
+SHOOT, D, 2023, 2026, 0
+SHOOT, D, 2029, 2032, 2
+SHOOT, D, 2035, 2038, 4
+SHOOT, D, 2036, 2039, 0
+SHOOT, D, 2041, 2044, 6
+SHOOT, D, 2042, 2045, 1
+SHOOT, D, 2047, 2050, 8
+SHOOT, D, 2048, 2051, 3
+SHOOT, D, 2053, 2056, 10
+SHOOT, D, 2054, 2057, 5
+SHOOT, D, 2059, 2062, 12
+SHOOT, D, 2060, 2063, 7
+SHOOT, D, 2064, 2067, 0
+SHOOT, D, 2065, 2068, 14
+SHOOT, D, 2066, 2069, 9
+SHOOT, D, 2070, 2073, 2
+SHOOT, D, 2071, 2074, 16
+SHOOT, D, 2072, 2075, 11
+SHOOT, D, 2076, 2079, 6
+SHOOT, D, 2077, 2080, 18
+SHOOT, D, 2078, 2081, 13
+SHOOT, A, 2026, 2023, 0
+SHOOT, A, 2032, 2029, 2
+SHOOT, A, 2038, 2035, 4
+SHOOT, A, 2039, 2036, 0
+SHOOT, A, 2044, 2041, 6
+SHOOT, A, 2045, 2042, 1
+SHOOT, A, 2050, 2047, 8
+SHOOT, A, 2051, 2048, 3
+SHOOT, A, 2056, 2053, 10
+SHOOT, A, 2057, 2054, 5
+SHOOT, A, 2062, 2059, 12
+SHOOT, A, 2063, 2060, 7
+SHOOT, A, 2067, 2064, 0
+SHOOT, A, 2068, 2065, 14
+SHOOT, A, 2069, 2066, 9
+SHOOT, A, 2073, 2070, 2
+SHOOT, A, 2074, 2071, 16
+SHOOT, A, 2075, 2072, 11
+SHOOT, A, 2079, 2076, 6
+SHOOT, A, 2080, 2077, 18
+SHOOT, A, 2081, 2078, 13
+DEAD, A, 2023
+DEAD, A, 2036
+DEAD, A, 2064
+DEAD, D, 2026
+DEAD, D, 2039
+DEAD, D, 2067
+SPAWN, A, 2082, 1, 0, 33
+SPAWN, A, 2083, 2, 0, 34
+SPAWN, A, 2084, 3, 0, 35
+SPAWN, D, 2085, 1, 0, 33
+SPAWN, D, 2086, 2, 0, 34
+SPAWN, D, 2087, 3, 0, 35
+TURN, 348
+PRINT, TURN 348 LOGS:To be spawned at Position(0,36)
+PRINT, To be spawned at Position(0,37)
+PRINT, To be spawned at Position(0,38)
+PRINT, Type 1 at Position (0,36)
+PRINT, Type 2 at Position (0,37)
+PRINT, Type 3 at Position (0,38)
+PRINT, 
+SHOOT, D, 2029, 2032, 0
+SHOOT, D, 2035, 2038, 2
+SHOOT, D, 2041, 2044, 4
+SHOOT, D, 2042, 2045, 0
+SHOOT, D, 2047, 2050, 6
+SHOOT, D, 2048, 2051, 1
+SHOOT, D, 2053, 2056, 8
+SHOOT, D, 2054, 2057, 3
+SHOOT, D, 2059, 2062, 10
+SHOOT, D, 2060, 2063, 5
+SHOOT, D, 2065, 2068, 12
+SHOOT, D, 2066, 2069, 7
+SHOOT, D, 2070, 2073, 0
+SHOOT, D, 2071, 2074, 14
+SHOOT, D, 2072, 2075, 9
+SHOOT, D, 2076, 2079, 2
+SHOOT, D, 2077, 2080, 16
+SHOOT, D, 2078, 2081, 11
+SHOOT, D, 2082, 2085, 6
+SHOOT, D, 2083, 2086, 18
+SHOOT, D, 2084, 2087, 13
+SHOOT, A, 2032, 2029, 0
+SHOOT, A, 2038, 2035, 2
+SHOOT, A, 2044, 2041, 4
+SHOOT, A, 2045, 2042, 0
+SHOOT, A, 2050, 2047, 6
+SHOOT, A, 2051, 2048, 1
+SHOOT, A, 2056, 2053, 8
+SHOOT, A, 2057, 2054, 3
+SHOOT, A, 2062, 2059, 10
+SHOOT, A, 2063, 2060, 5
+SHOOT, A, 2068, 2065, 12
+SHOOT, A, 2069, 2066, 7
+SHOOT, A, 2073, 2070, 0
+SHOOT, A, 2074, 2071, 14
+SHOOT, A, 2075, 2072, 9
+SHOOT, A, 2079, 2076, 2
+SHOOT, A, 2080, 2077, 16
+SHOOT, A, 2081, 2078, 11
+SHOOT, A, 2085, 2082, 6
+SHOOT, A, 2086, 2083, 18
+SHOOT, A, 2087, 2084, 13
+DEAD, A, 2029
+DEAD, A, 2042
+DEAD, A, 2070
+DEAD, D, 2032
+DEAD, D, 2045
+DEAD, D, 2073
+SPAWN, A, 2088, 1, 0, 36
+SPAWN, A, 2089, 2, 0, 37
+SPAWN, A, 2090, 3, 0, 38
+SPAWN, D, 2091, 1, 0, 36
+SPAWN, D, 2092, 2, 0, 37
+SPAWN, D, 2093, 3, 0, 38
+TURN, 349
+PRINT, TURN 349 LOGS:To be spawned at Position(0,39)
+PRINT, To be spawned at Position(0,40)
+PRINT, To be spawned at Position(0,41)
+PRINT, Type 1 at Position (0,39)
+PRINT, Type 2 at Position (0,40)
+PRINT, Type 3 at Position (0,41)
+PRINT, 
+SHOOT, D, 2035, 2038, 0
+SHOOT, D, 2041, 2044, 2
+SHOOT, D, 2047, 2050, 4
+SHOOT, D, 2048, 2051, 0
+SHOOT, D, 2053, 2056, 6
+SHOOT, D, 2054, 2057, 1
+SHOOT, D, 2059, 2062, 8
+SHOOT, D, 2060, 2063, 3
+SHOOT, D, 2065, 2068, 10
+SHOOT, D, 2066, 2069, 5
+SHOOT, D, 2071, 2074, 12
+SHOOT, D, 2072, 2075, 7
+SHOOT, D, 2076, 2079, 0
+SHOOT, D, 2077, 2080, 14
+SHOOT, D, 2078, 2081, 9
+SHOOT, D, 2082, 2085, 2
+SHOOT, D, 2083, 2086, 16
+SHOOT, D, 2084, 2087, 11
+SHOOT, D, 2088, 2091, 6
+SHOOT, D, 2089, 2092, 18
+SHOOT, D, 2090, 2093, 13
+SHOOT, A, 2038, 2035, 0
+SHOOT, A, 2044, 2041, 2
+SHOOT, A, 2050, 2047, 4
+SHOOT, A, 2051, 2048, 0
+SHOOT, A, 2056, 2053, 6
+SHOOT, A, 2057, 2054, 1
+SHOOT, A, 2062, 2059, 8
+SHOOT, A, 2063, 2060, 3
+SHOOT, A, 2068, 2065, 10
+SHOOT, A, 2069, 2066, 5
+SHOOT, A, 2074, 2071, 12
+SHOOT, A, 2075, 2072, 7
+SHOOT, A, 2079, 2076, 0
+SHOOT, A, 2080, 2077, 14
+SHOOT, A, 2081, 2078, 9
+SHOOT, A, 2085, 2082, 2
+SHOOT, A, 2086, 2083, 16
+SHOOT, A, 2087, 2084, 11
+SHOOT, A, 2091, 2088, 6
+SHOOT, A, 2092, 2089, 18
+SHOOT, A, 2093, 2090, 13
+DEAD, A, 2035
+DEAD, A, 2048
+DEAD, A, 2076
+DEAD, D, 2038
+DEAD, D, 2051
+DEAD, D, 2079
+SPAWN, A, 2094, 1, 0, 39
+SPAWN, A, 2095, 2, 0, 40
+SPAWN, A, 2096, 3, 0, 41
+SPAWN, D, 2097, 1, 0, 39
+SPAWN, D, 2098, 2, 0, 40
+SPAWN, D, 2099, 3, 0, 41
+TURN, 350
+PRINT, TURN 350 LOGS:To be spawned at Position(0,42)
+PRINT, To be spawned at Position(0,43)
+PRINT, To be spawned at Position(0,44)
+PRINT, Type 1 at Position (0,42)
+PRINT, Type 2 at Position (0,43)
+PRINT, Type 3 at Position (0,44)
+PRINT, 
+SHOOT, D, 2041, 2044, 0
+SHOOT, D, 2047, 2050, 2
+SHOOT, D, 2053, 2056, 4
+SHOOT, D, 2054, 2057, 0
+SHOOT, D, 2059, 2062, 6
+SHOOT, D, 2060, 2063, 1
+SHOOT, D, 2065, 2068, 8
+SHOOT, D, 2066, 2069, 3
+SHOOT, D, 2071, 2074, 10
+SHOOT, D, 2072, 2075, 5
+SHOOT, D, 2077, 2080, 12
+SHOOT, D, 2078, 2081, 7
+SHOOT, D, 2082, 2085, 0
+SHOOT, D, 2083, 2086, 14
+SHOOT, D, 2084, 2087, 9
+SHOOT, D, 2088, 2091, 2
+SHOOT, D, 2089, 2092, 16
+SHOOT, D, 2090, 2093, 11
+SHOOT, D, 2094, 2097, 6
+SHOOT, D, 2095, 2098, 18
+SHOOT, D, 2096, 2099, 13
+SHOOT, A, 2044, 2041, 0
+SHOOT, A, 2050, 2047, 2
+SHOOT, A, 2056, 2053, 4
+SHOOT, A, 2057, 2054, 0
+SHOOT, A, 2062, 2059, 6
+SHOOT, A, 2063, 2060, 1
+SHOOT, A, 2068, 2065, 8
+SHOOT, A, 2069, 2066, 3
+SHOOT, A, 2074, 2071, 10
+SHOOT, A, 2075, 2072, 5
+SHOOT, A, 2080, 2077, 12
+SHOOT, A, 2081, 2078, 7
+SHOOT, A, 2085, 2082, 0
+SHOOT, A, 2086, 2083, 14
+SHOOT, A, 2087, 2084, 9
+SHOOT, A, 2091, 2088, 2
+SHOOT, A, 2092, 2089, 16
+SHOOT, A, 2093, 2090, 11
+SHOOT, A, 2097, 2094, 6
+SHOOT, A, 2098, 2095, 18
+SHOOT, A, 2099, 2096, 13
+DEAD, A, 2041
+DEAD, A, 2054
+DEAD, A, 2082
+DEAD, D, 2044
+DEAD, D, 2057
+DEAD, D, 2085
+SPAWN, A, 2100, 1, 0, 42
+SPAWN, A, 2101, 2, 0, 43
+SPAWN, A, 2102, 3, 0, 44
+SPAWN, D, 2103, 1, 0, 42
+SPAWN, D, 2104, 2, 0, 43
+SPAWN, D, 2105, 3, 0, 44
+TURN, 351
+PRINT, TURN 351 LOGS:To be spawned at Position(0,45)
+PRINT, To be spawned at Position(0,46)
+PRINT, To be spawned at Position(0,47)
+PRINT, Type 1 at Position (0,45)
+PRINT, Type 2 at Position (0,46)
+PRINT, Type 3 at Position (0,47)
+PRINT, 
+SHOOT, D, 2047, 2050, 0
+SHOOT, D, 2053, 2056, 2
+SHOOT, D, 2059, 2062, 4
+SHOOT, D, 2060, 2063, 0
+SHOOT, D, 2065, 2068, 6
+SHOOT, D, 2066, 2069, 1
+SHOOT, D, 2071, 2074, 8
+SHOOT, D, 2072, 2075, 3
+SHOOT, D, 2077, 2080, 10
+SHOOT, D, 2078, 2081, 5
+SHOOT, D, 2083, 2086, 12
+SHOOT, D, 2084, 2087, 7
+SHOOT, D, 2088, 2091, 0
+SHOOT, D, 2089, 2092, 14
+SHOOT, D, 2090, 2093, 9
+SHOOT, D, 2094, 2097, 2
+SHOOT, D, 2095, 2098, 16
+SHOOT, D, 2096, 2099, 11
+SHOOT, D, 2100, 2103, 6
+SHOOT, D, 2101, 2104, 18
+SHOOT, D, 2102, 2105, 13
+SHOOT, A, 2050, 2047, 0
+SHOOT, A, 2056, 2053, 2
+SHOOT, A, 2062, 2059, 4
+SHOOT, A, 2063, 2060, 0
+SHOOT, A, 2068, 2065, 6
+SHOOT, A, 2069, 2066, 1
+SHOOT, A, 2074, 2071, 8
+SHOOT, A, 2075, 2072, 3
+SHOOT, A, 2080, 2077, 10
+SHOOT, A, 2081, 2078, 5
+SHOOT, A, 2086, 2083, 12
+SHOOT, A, 2087, 2084, 7
+SHOOT, A, 2091, 2088, 0
+SHOOT, A, 2092, 2089, 14
+SHOOT, A, 2093, 2090, 9
+SHOOT, A, 2097, 2094, 2
+SHOOT, A, 2098, 2095, 16
+SHOOT, A, 2099, 2096, 11
+SHOOT, A, 2103, 2100, 6
+SHOOT, A, 2104, 2101, 18
+SHOOT, A, 2105, 2102, 13
+DEAD, A, 2047
+DEAD, A, 2060
+DEAD, A, 2088
+DEAD, D, 2050
+DEAD, D, 2063
+DEAD, D, 2091
+SPAWN, A, 2106, 1, 0, 45
+SPAWN, A, 2107, 2, 0, 46
+SPAWN, A, 2108, 3, 0, 47
+SPAWN, D, 2109, 1, 0, 45
+SPAWN, D, 2110, 2, 0, 46
+SPAWN, D, 2111, 3, 0, 47
+TURN, 352
+PRINT, TURN 352 LOGS:To be spawned at Position(0,48)
+PRINT, To be spawned at Position(0,49)
+PRINT, To be spawned at Position(0,50)
+PRINT, Type 1 at Position (0,48)
+PRINT, Type 2 at Position (0,49)
+PRINT, Type 3 at Position (0,50)
+PRINT, 
+SHOOT, D, 2053, 2056, 0
+SHOOT, D, 2059, 2062, 2
+SHOOT, D, 2065, 2068, 4
+SHOOT, D, 2066, 2069, 0
+SHOOT, D, 2071, 2074, 6
+SHOOT, D, 2072, 2075, 1
+SHOOT, D, 2077, 2080, 8
+SHOOT, D, 2078, 2081, 3
+SHOOT, D, 2083, 2086, 10
+SHOOT, D, 2084, 2087, 5
+SHOOT, D, 2089, 2092, 12
+SHOOT, D, 2090, 2093, 7
+SHOOT, D, 2094, 2097, 0
+SHOOT, D, 2095, 2098, 14
+SHOOT, D, 2096, 2099, 9
+SHOOT, D, 2100, 2103, 2
+SHOOT, D, 2101, 2104, 16
+SHOOT, D, 2102, 2105, 11
+SHOOT, D, 2106, 2109, 6
+SHOOT, D, 2107, 2110, 18
+SHOOT, D, 2108, 2111, 13
+SHOOT, A, 2056, 2053, 0
+SHOOT, A, 2062, 2059, 2
+SHOOT, A, 2068, 2065, 4
+SHOOT, A, 2069, 2066, 0
+SHOOT, A, 2074, 2071, 6
+SHOOT, A, 2075, 2072, 1
+SHOOT, A, 2080, 2077, 8
+SHOOT, A, 2081, 2078, 3
+SHOOT, A, 2086, 2083, 10
+SHOOT, A, 2087, 2084, 5
+SHOOT, A, 2092, 2089, 12
+SHOOT, A, 2093, 2090, 7
+SHOOT, A, 2097, 2094, 0
+SHOOT, A, 2098, 2095, 14
+SHOOT, A, 2099, 2096, 9
+SHOOT, A, 2103, 2100, 2
+SHOOT, A, 2104, 2101, 16
+SHOOT, A, 2105, 2102, 11
+SHOOT, A, 2109, 2106, 6
+SHOOT, A, 2110, 2107, 18
+SHOOT, A, 2111, 2108, 13
+DEAD, A, 2053
+DEAD, A, 2066
+DEAD, A, 2094
+DEAD, D, 2056
+DEAD, D, 2069
+DEAD, D, 2097
+SPAWN, A, 2112, 1, 0, 48
+SPAWN, A, 2113, 2, 0, 49
+SPAWN, A, 2114, 3, 0, 50
+SPAWN, D, 2115, 1, 0, 48
+SPAWN, D, 2116, 2, 0, 49
+SPAWN, D, 2117, 3, 0, 50
+TURN, 353
+PRINT, TURN 353 LOGS:To be spawned at Position(0,51)
+PRINT, To be spawned at Position(0,52)
+PRINT, To be spawned at Position(0,53)
+PRINT, Type 1 at Position (0,51)
+PRINT, Type 2 at Position (0,52)
+PRINT, Type 3 at Position (0,53)
+PRINT, 
+SHOOT, D, 2059, 2062, 0
+SHOOT, D, 2065, 2068, 2
+SHOOT, D, 2071, 2074, 4
+SHOOT, D, 2072, 2075, 0
+SHOOT, D, 2077, 2080, 6
+SHOOT, D, 2078, 2081, 1
+SHOOT, D, 2083, 2086, 8
+SHOOT, D, 2084, 2087, 3
+SHOOT, D, 2089, 2092, 10
+SHOOT, D, 2090, 2093, 5
+SHOOT, D, 2095, 2098, 12
+SHOOT, D, 2096, 2099, 7
+SHOOT, D, 2100, 2103, 0
+SHOOT, D, 2101, 2104, 14
+SHOOT, D, 2102, 2105, 9
+SHOOT, D, 2106, 2109, 2
+SHOOT, D, 2107, 2110, 16
+SHOOT, D, 2108, 2111, 11
+SHOOT, D, 2112, 2115, 6
+SHOOT, D, 2113, 2116, 18
+SHOOT, D, 2114, 2117, 13
+SHOOT, A, 2062, 2059, 0
+SHOOT, A, 2068, 2065, 2
+SHOOT, A, 2074, 2071, 4
+SHOOT, A, 2075, 2072, 0
+SHOOT, A, 2080, 2077, 6
+SHOOT, A, 2081, 2078, 1
+SHOOT, A, 2086, 2083, 8
+SHOOT, A, 2087, 2084, 3
+SHOOT, A, 2092, 2089, 10
+SHOOT, A, 2093, 2090, 5
+SHOOT, A, 2098, 2095, 12
+SHOOT, A, 2099, 2096, 7
+SHOOT, A, 2103, 2100, 0
+SHOOT, A, 2104, 2101, 14
+SHOOT, A, 2105, 2102, 9
+SHOOT, A, 2109, 2106, 2
+SHOOT, A, 2110, 2107, 16
+SHOOT, A, 2111, 2108, 11
+SHOOT, A, 2115, 2112, 6
+SHOOT, A, 2116, 2113, 18
+SHOOT, A, 2117, 2114, 13
+DEAD, A, 2059
+DEAD, A, 2072
+DEAD, A, 2100
+DEAD, D, 2062
+DEAD, D, 2075
+DEAD, D, 2103
+SPAWN, A, 2118, 1, 0, 51
+SPAWN, A, 2119, 2, 0, 52
+SPAWN, A, 2120, 3, 0, 53
+SPAWN, D, 2121, 1, 0, 51
+SPAWN, D, 2122, 2, 0, 52
+SPAWN, D, 2123, 3, 0, 53
+TURN, 354
+PRINT, TURN 354 LOGS:To be spawned at Position(0,54)
+PRINT, To be spawned at Position(0,55)
+PRINT, To be spawned at Position(0,56)
+PRINT, Type 1 at Position (0,54)
+PRINT, Type 2 at Position (0,55)
+PRINT, Type 3 at Position (0,56)
+PRINT, 
+SHOOT, D, 2065, 2068, 0
+SHOOT, D, 2071, 2074, 2
+SHOOT, D, 2077, 2080, 4
+SHOOT, D, 2078, 2081, 0
+SHOOT, D, 2083, 2086, 6
+SHOOT, D, 2084, 2087, 1
+SHOOT, D, 2089, 2092, 8
+SHOOT, D, 2090, 2093, 3
+SHOOT, D, 2095, 2098, 10
+SHOOT, D, 2096, 2099, 5
+SHOOT, D, 2101, 2104, 12
+SHOOT, D, 2102, 2105, 7
+SHOOT, D, 2106, 2109, 0
+SHOOT, D, 2107, 2110, 14
+SHOOT, D, 2108, 2111, 9
+SHOOT, D, 2112, 2115, 2
+SHOOT, D, 2113, 2116, 16
+SHOOT, D, 2114, 2117, 11
+SHOOT, D, 2118, 2121, 6
+SHOOT, D, 2119, 2122, 18
+SHOOT, D, 2120, 2123, 13
+SHOOT, A, 2068, 2065, 0
+SHOOT, A, 2074, 2071, 2
+SHOOT, A, 2080, 2077, 4
+SHOOT, A, 2081, 2078, 0
+SHOOT, A, 2086, 2083, 6
+SHOOT, A, 2087, 2084, 1
+SHOOT, A, 2092, 2089, 8
+SHOOT, A, 2093, 2090, 3
+SHOOT, A, 2098, 2095, 10
+SHOOT, A, 2099, 2096, 5
+SHOOT, A, 2104, 2101, 12
+SHOOT, A, 2105, 2102, 7
+SHOOT, A, 2109, 2106, 0
+SHOOT, A, 2110, 2107, 14
+SHOOT, A, 2111, 2108, 9
+SHOOT, A, 2115, 2112, 2
+SHOOT, A, 2116, 2113, 16
+SHOOT, A, 2117, 2114, 11
+SHOOT, A, 2121, 2118, 6
+SHOOT, A, 2122, 2119, 18
+SHOOT, A, 2123, 2120, 13
+DEAD, A, 2065
+DEAD, A, 2078
+DEAD, A, 2106
+DEAD, D, 2068
+DEAD, D, 2081
+DEAD, D, 2109
+SPAWN, A, 2124, 1, 0, 54
+SPAWN, A, 2125, 2, 0, 55
+SPAWN, A, 2126, 3, 0, 56
+SPAWN, D, 2127, 1, 0, 54
+SPAWN, D, 2128, 2, 0, 55
+SPAWN, D, 2129, 3, 0, 56
+TURN, 355
+PRINT, TURN 355 LOGS:To be spawned at Position(0,57)
+PRINT, To be spawned at Position(0,58)
+PRINT, To be spawned at Position(0,59)
+PRINT, Type 1 at Position (0,57)
+PRINT, Type 2 at Position (0,58)
+PRINT, Type 3 at Position (0,59)
+PRINT, 
+SHOOT, D, 2071, 2074, 0
+SHOOT, D, 2077, 2080, 2
+SHOOT, D, 2083, 2086, 4
+SHOOT, D, 2084, 2087, 0
+SHOOT, D, 2089, 2092, 6
+SHOOT, D, 2090, 2093, 1
+SHOOT, D, 2095, 2098, 8
+SHOOT, D, 2096, 2099, 3
+SHOOT, D, 2101, 2104, 10
+SHOOT, D, 2102, 2105, 5
+SHOOT, D, 2107, 2110, 12
+SHOOT, D, 2108, 2111, 7
+SHOOT, D, 2112, 2115, 0
+SHOOT, D, 2113, 2116, 14
+SHOOT, D, 2114, 2117, 9
+SHOOT, D, 2118, 2121, 2
+SHOOT, D, 2119, 2122, 16
+SHOOT, D, 2120, 2123, 11
+SHOOT, D, 2124, 2127, 6
+SHOOT, D, 2125, 2128, 18
+SHOOT, D, 2126, 2129, 13
+SHOOT, A, 2074, 2071, 0
+SHOOT, A, 2080, 2077, 2
+SHOOT, A, 2086, 2083, 4
+SHOOT, A, 2087, 2084, 0
+SHOOT, A, 2092, 2089, 6
+SHOOT, A, 2093, 2090, 1
+SHOOT, A, 2098, 2095, 8
+SHOOT, A, 2099, 2096, 3
+SHOOT, A, 2104, 2101, 10
+SHOOT, A, 2105, 2102, 5
+SHOOT, A, 2110, 2107, 12
+SHOOT, A, 2111, 2108, 7
+SHOOT, A, 2115, 2112, 0
+SHOOT, A, 2116, 2113, 14
+SHOOT, A, 2117, 2114, 9
+SHOOT, A, 2121, 2118, 2
+SHOOT, A, 2122, 2119, 16
+SHOOT, A, 2123, 2120, 11
+SHOOT, A, 2127, 2124, 6
+SHOOT, A, 2128, 2125, 18
+SHOOT, A, 2129, 2126, 13
+DEAD, A, 2071
+DEAD, A, 2084
+DEAD, A, 2112
+DEAD, D, 2074
+DEAD, D, 2087
+DEAD, D, 2115
+SPAWN, A, 2130, 1, 0, 57
+SPAWN, A, 2131, 2, 0, 58
+SPAWN, A, 2132, 3, 0, 59
+SPAWN, D, 2133, 1, 0, 57
+SPAWN, D, 2134, 2, 0, 58
+SPAWN, D, 2135, 3, 0, 59
+TURN, 356
+PRINT, TURN 356 LOGS:To be spawned at Position(0,60)
+PRINT, To be spawned at Position(0,61)
+PRINT, To be spawned at Position(0,62)
+PRINT, Type 1 at Position (0,60)
+PRINT, Type 2 at Position (0,61)
+PRINT, Type 3 at Position (0,62)
+PRINT, 
+SHOOT, D, 2077, 2080, 0
+SHOOT, D, 2083, 2086, 2
+SHOOT, D, 2089, 2092, 4
+SHOOT, D, 2090, 2093, 0
+SHOOT, D, 2095, 2098, 6
+SHOOT, D, 2096, 2099, 1
+SHOOT, D, 2101, 2104, 8
+SHOOT, D, 2102, 2105, 3
+SHOOT, D, 2107, 2110, 10
+SHOOT, D, 2108, 2111, 5
+SHOOT, D, 2113, 2116, 12
+SHOOT, D, 2114, 2117, 7
+SHOOT, D, 2118, 2121, 0
+SHOOT, D, 2119, 2122, 14
+SHOOT, D, 2120, 2123, 9
+SHOOT, D, 2124, 2127, 2
+SHOOT, D, 2125, 2128, 16
+SHOOT, D, 2126, 2129, 11
+SHOOT, D, 2130, 2133, 6
+SHOOT, D, 2131, 2134, 18
+SHOOT, D, 2132, 2135, 13
+SHOOT, A, 2080, 2077, 0
+SHOOT, A, 2086, 2083, 2
+SHOOT, A, 2092, 2089, 4
+SHOOT, A, 2093, 2090, 0
+SHOOT, A, 2098, 2095, 6
+SHOOT, A, 2099, 2096, 1
+SHOOT, A, 2104, 2101, 8
+SHOOT, A, 2105, 2102, 3
+SHOOT, A, 2110, 2107, 10
+SHOOT, A, 2111, 2108, 5
+SHOOT, A, 2116, 2113, 12
+SHOOT, A, 2117, 2114, 7
+SHOOT, A, 2121, 2118, 0
+SHOOT, A, 2122, 2119, 14
+SHOOT, A, 2123, 2120, 9
+SHOOT, A, 2127, 2124, 2
+SHOOT, A, 2128, 2125, 16
+SHOOT, A, 2129, 2126, 11
+SHOOT, A, 2133, 2130, 6
+SHOOT, A, 2134, 2131, 18
+SHOOT, A, 2135, 2132, 13
+DEAD, A, 2077
+DEAD, A, 2090
+DEAD, A, 2118
+DEAD, D, 2080
+DEAD, D, 2093
+DEAD, D, 2121
+SPAWN, A, 2136, 1, 0, 60
+SPAWN, A, 2137, 2, 0, 61
+SPAWN, A, 2138, 3, 0, 62
+SPAWN, D, 2139, 1, 0, 60
+SPAWN, D, 2140, 2, 0, 61
+SPAWN, D, 2141, 3, 0, 62
+TURN, 357
+PRINT, TURN 357 LOGS:To be spawned at Position(0,63)
+PRINT, To be spawned at Position(1,0)
+PRINT, To be spawned at Position(1,63)
+PRINT, Type 1 at Position (0,63)
+PRINT, Type 2 at Position (1,0)
+PRINT, Type 3 at Position (1,63)
+PRINT, 
+SHOOT, D, 2083, 2086, 0
+SHOOT, D, 2089, 2092, 2
+SHOOT, D, 2095, 2098, 4
+SHOOT, D, 2096, 2099, 0
+SHOOT, D, 2101, 2104, 6
+SHOOT, D, 2102, 2105, 1
+SHOOT, D, 2107, 2110, 8
+SHOOT, D, 2108, 2111, 3
+SHOOT, D, 2113, 2116, 10
+SHOOT, D, 2114, 2117, 5
+SHOOT, D, 2119, 2122, 12
+SHOOT, D, 2120, 2123, 7
+SHOOT, D, 2124, 2127, 0
+SHOOT, D, 2125, 2128, 14
+SHOOT, D, 2126, 2129, 9
+SHOOT, D, 2130, 2133, 2
+SHOOT, D, 2131, 2134, 16
+SHOOT, D, 2132, 2135, 11
+SHOOT, D, 2136, 2139, 6
+SHOOT, D, 2137, 2140, 18
+SHOOT, D, 2138, 2141, 13
+SHOOT, A, 2086, 2083, 0
+SHOOT, A, 2092, 2089, 2
+SHOOT, A, 2098, 2095, 4
+SHOOT, A, 2099, 2096, 0
+SHOOT, A, 2104, 2101, 6
+SHOOT, A, 2105, 2102, 1
+SHOOT, A, 2110, 2107, 8
+SHOOT, A, 2111, 2108, 3
+SHOOT, A, 2116, 2113, 10
+SHOOT, A, 2117, 2114, 5
+SHOOT, A, 2122, 2119, 12
+SHOOT, A, 2123, 2120, 7
+SHOOT, A, 2127, 2124, 0
+SHOOT, A, 2128, 2125, 14
+SHOOT, A, 2129, 2126, 9
+SHOOT, A, 2133, 2130, 2
+SHOOT, A, 2134, 2131, 16
+SHOOT, A, 2135, 2132, 11
+SHOOT, A, 2139, 2136, 6
+SHOOT, A, 2140, 2137, 18
+SHOOT, A, 2141, 2138, 13
+DEAD, A, 2083
+DEAD, A, 2096
+DEAD, A, 2124
+DEAD, D, 2086
+DEAD, D, 2099
+DEAD, D, 2127
+SPAWN, A, 2142, 1, 0, 63
+SPAWN, A, 2143, 2, 1, 0
+SPAWN, A, 2144, 3, 1, 63
+SPAWN, D, 2145, 1, 0, 63
+SPAWN, D, 2146, 2, 1, 0
+SPAWN, D, 2147, 3, 1, 63
+TURN, 358
+PRINT, TURN 358 LOGS:To be spawned at Position(2,0)
+PRINT, To be spawned at Position(2,63)
+PRINT, To be spawned at Position(3,0)
+PRINT, Type 1 at Position (2,0)
+PRINT, Type 2 at Position (2,63)
+PRINT, Type 3 at Position (3,0)
+PRINT, 
+SHOOT, D, 2089, 2092, 0
+SHOOT, D, 2095, 2098, 2
+SHOOT, D, 2101, 2104, 4
+SHOOT, D, 2102, 2105, 0
+SHOOT, D, 2107, 2110, 6
+SHOOT, D, 2108, 2111, 1
+SHOOT, D, 2113, 2116, 8
+SHOOT, D, 2114, 2117, 3
+SHOOT, D, 2119, 2122, 10
+SHOOT, D, 2120, 2123, 5
+SHOOT, D, 2125, 2128, 12
+SHOOT, D, 2126, 2129, 7
+SHOOT, D, 2130, 2133, 0
+SHOOT, D, 2131, 2134, 14
+SHOOT, D, 2132, 2135, 9
+SHOOT, D, 2136, 2139, 2
+SHOOT, D, 2137, 2140, 16
+SHOOT, D, 2138, 2141, 11
+SHOOT, D, 2142, 2145, 6
+SHOOT, D, 2143, 2146, 18
+SHOOT, D, 2144, 2147, 13
+SHOOT, A, 2092, 2089, 0
+SHOOT, A, 2098, 2095, 2
+SHOOT, A, 2104, 2101, 4
+SHOOT, A, 2105, 2102, 0
+SHOOT, A, 2110, 2107, 6
+SHOOT, A, 2111, 2108, 1
+SHOOT, A, 2116, 2113, 8
+SHOOT, A, 2117, 2114, 3
+SHOOT, A, 2122, 2119, 10
+SHOOT, A, 2123, 2120, 5
+SHOOT, A, 2128, 2125, 12
+SHOOT, A, 2129, 2126, 7
+SHOOT, A, 2133, 2130, 0
+SHOOT, A, 2134, 2131, 14
+SHOOT, A, 2135, 2132, 9
+SHOOT, A, 2139, 2136, 2
+SHOOT, A, 2140, 2137, 16
+SHOOT, A, 2141, 2138, 11
+SHOOT, A, 2145, 2142, 6
+SHOOT, A, 2146, 2143, 18
+SHOOT, A, 2147, 2144, 13
+DEAD, A, 2089
+DEAD, A, 2102
+DEAD, A, 2130
+DEAD, D, 2092
+DEAD, D, 2105
+DEAD, D, 2133
+SPAWN, A, 2148, 1, 2, 0
+SPAWN, A, 2149, 2, 2, 63
+SPAWN, A, 2150, 3, 3, 0
+SPAWN, D, 2151, 1, 2, 0
+SPAWN, D, 2152, 2, 2, 63
+SPAWN, D, 2153, 3, 3, 0
+TURN, 359
+PRINT, TURN 359 LOGS:To be spawned at Position(3,63)
+PRINT, To be spawned at Position(4,0)
+PRINT, To be spawned at Position(4,63)
+PRINT, Type 1 at Position (3,63)
+PRINT, Type 2 at Position (4,0)
+PRINT, Type 3 at Position (4,63)
+PRINT, 
+SHOOT, D, 2095, 2098, 0
+SHOOT, D, 2101, 2104, 2
+SHOOT, D, 2107, 2110, 4
+SHOOT, D, 2108, 2111, 0
+SHOOT, D, 2113, 2116, 6
+SHOOT, D, 2114, 2117, 1
+SHOOT, D, 2119, 2122, 8
+SHOOT, D, 2120, 2123, 3
+SHOOT, D, 2125, 2128, 10
+SHOOT, D, 2126, 2129, 5
+SHOOT, D, 2131, 2134, 12
+SHOOT, D, 2132, 2135, 7
+SHOOT, D, 2136, 2139, 0
+SHOOT, D, 2137, 2140, 14
+SHOOT, D, 2138, 2141, 9
+SHOOT, D, 2142, 2145, 2
+SHOOT, D, 2143, 2146, 16
+SHOOT, D, 2144, 2147, 11
+SHOOT, D, 2148, 2151, 6
+SHOOT, D, 2149, 2152, 18
+SHOOT, D, 2150, 2153, 13
+SHOOT, A, 2098, 2095, 0
+SHOOT, A, 2104, 2101, 2
+SHOOT, A, 2110, 2107, 4
+SHOOT, A, 2111, 2108, 0
+SHOOT, A, 2116, 2113, 6
+SHOOT, A, 2117, 2114, 1
+SHOOT, A, 2122, 2119, 8
+SHOOT, A, 2123, 2120, 3
+SHOOT, A, 2128, 2125, 10
+SHOOT, A, 2129, 2126, 5
+SHOOT, A, 2134, 2131, 12
+SHOOT, A, 2135, 2132, 7
+SHOOT, A, 2139, 2136, 0
+SHOOT, A, 2140, 2137, 14
+SHOOT, A, 2141, 2138, 9
+SHOOT, A, 2145, 2142, 2
+SHOOT, A, 2146, 2143, 16
+SHOOT, A, 2147, 2144, 11
+SHOOT, A, 2151, 2148, 6
+SHOOT, A, 2152, 2149, 18
+SHOOT, A, 2153, 2150, 13
+DEAD, A, 2095
+DEAD, A, 2108
+DEAD, A, 2136
+DEAD, D, 2098
+DEAD, D, 2111
+DEAD, D, 2139
+SPAWN, A, 2154, 1, 3, 63
+SPAWN, A, 2155, 2, 4, 0
+SPAWN, A, 2156, 3, 4, 63
+SPAWN, D, 2157, 1, 3, 63
+SPAWN, D, 2158, 2, 4, 0
+SPAWN, D, 2159, 3, 4, 63
+TURN, 360
+PRINT, TURN 360 LOGS:To be spawned at Position(5,0)
+PRINT, To be spawned at Position(5,63)
+PRINT, To be spawned at Position(6,0)
+PRINT, Type 1 at Position (5,0)
+PRINT, Type 2 at Position (5,63)
+PRINT, Type 3 at Position (6,0)
+PRINT, 
+SHOOT, D, 2101, 2104, 0
+SHOOT, D, 2107, 2110, 2
+SHOOT, D, 2113, 2116, 4
+SHOOT, D, 2114, 2117, 0
+SHOOT, D, 2119, 2122, 6
+SHOOT, D, 2120, 2123, 1
+SHOOT, D, 2125, 2128, 8
+SHOOT, D, 2126, 2129, 3
+SHOOT, D, 2131, 2134, 10
+SHOOT, D, 2132, 2135, 5
+SHOOT, D, 2137, 2140, 12
+SHOOT, D, 2138, 2141, 7
+SHOOT, D, 2142, 2145, 0
+SHOOT, D, 2143, 2146, 14
+SHOOT, D, 2144, 2147, 9
+SHOOT, D, 2148, 2151, 2
+SHOOT, D, 2149, 2152, 16
+SHOOT, D, 2150, 2153, 11
+SHOOT, D, 2154, 2157, 6
+SHOOT, D, 2155, 2158, 18
+SHOOT, D, 2156, 2159, 13
+SHOOT, A, 2104, 2101, 0
+SHOOT, A, 2110, 2107, 2
+SHOOT, A, 2116, 2113, 4
+SHOOT, A, 2117, 2114, 0
+SHOOT, A, 2122, 2119, 6
+SHOOT, A, 2123, 2120, 1
+SHOOT, A, 2128, 2125, 8
+SHOOT, A, 2129, 2126, 3
+SHOOT, A, 2134, 2131, 10
+SHOOT, A, 2135, 2132, 5
+SHOOT, A, 2140, 2137, 12
+SHOOT, A, 2141, 2138, 7
+SHOOT, A, 2145, 2142, 0
+SHOOT, A, 2146, 2143, 14
+SHOOT, A, 2147, 2144, 9
+SHOOT, A, 2151, 2148, 2
+SHOOT, A, 2152, 2149, 16
+SHOOT, A, 2153, 2150, 11
+SHOOT, A, 2157, 2154, 6
+SHOOT, A, 2158, 2155, 18
+SHOOT, A, 2159, 2156, 13
+DEAD, A, 2101
+DEAD, A, 2114
+DEAD, A, 2142
+DEAD, D, 2104
+DEAD, D, 2117
+DEAD, D, 2145
+SPAWN, A, 2160, 1, 5, 0
+SPAWN, A, 2161, 2, 5, 63
+SPAWN, A, 2162, 3, 6, 0
+SPAWN, D, 2163, 1, 5, 0
+SPAWN, D, 2164, 2, 5, 63
+SPAWN, D, 2165, 3, 6, 0
+TURN, 361
+PRINT, TURN 361 LOGS:To be spawned at Position(6,63)
+PRINT, To be spawned at Position(7,0)
+PRINT, To be spawned at Position(7,63)
+PRINT, Type 1 at Position (6,63)
+PRINT, Type 2 at Position (7,0)
+PRINT, Type 3 at Position (7,63)
+PRINT, 
+SHOOT, D, 2107, 2110, 0
+SHOOT, D, 2113, 2116, 2
+SHOOT, D, 2119, 2122, 4
+SHOOT, D, 2120, 2123, 0
+SHOOT, D, 2125, 2128, 6
+SHOOT, D, 2126, 2129, 1
+SHOOT, D, 2131, 2134, 8
+SHOOT, D, 2132, 2135, 3
+SHOOT, D, 2137, 2140, 10
+SHOOT, D, 2138, 2141, 5
+SHOOT, D, 2143, 2146, 12
+SHOOT, D, 2144, 2147, 7
+SHOOT, D, 2148, 2151, 0
+SHOOT, D, 2149, 2152, 14
+SHOOT, D, 2150, 2153, 9
+SHOOT, D, 2154, 2157, 2
+SHOOT, D, 2155, 2158, 16
+SHOOT, D, 2156, 2159, 11
+SHOOT, D, 2160, 2163, 6
+SHOOT, D, 2161, 2164, 18
+SHOOT, D, 2162, 2165, 13
+SHOOT, A, 2110, 2107, 0
+SHOOT, A, 2116, 2113, 2
+SHOOT, A, 2122, 2119, 4
+SHOOT, A, 2123, 2120, 0
+SHOOT, A, 2128, 2125, 6
+SHOOT, A, 2129, 2126, 1
+SHOOT, A, 2134, 2131, 8
+SHOOT, A, 2135, 2132, 3
+SHOOT, A, 2140, 2137, 10
+SHOOT, A, 2141, 2138, 5
+SHOOT, A, 2146, 2143, 12
+SHOOT, A, 2147, 2144, 7
+SHOOT, A, 2151, 2148, 0
+SHOOT, A, 2152, 2149, 14
+SHOOT, A, 2153, 2150, 9
+SHOOT, A, 2157, 2154, 2
+SHOOT, A, 2158, 2155, 16
+SHOOT, A, 2159, 2156, 11
+SHOOT, A, 2163, 2160, 6
+SHOOT, A, 2164, 2161, 18
+SHOOT, A, 2165, 2162, 13
+DEAD, A, 2107
+DEAD, A, 2120
+DEAD, A, 2148
+DEAD, D, 2110
+DEAD, D, 2123
+DEAD, D, 2151
+SPAWN, A, 2166, 1, 6, 63
+SPAWN, A, 2167, 2, 7, 0
+SPAWN, A, 2168, 3, 7, 63
+SPAWN, D, 2169, 1, 6, 63
+SPAWN, D, 2170, 2, 7, 0
+SPAWN, D, 2171, 3, 7, 63
+TURN, 362
+PRINT, TURN 362 LOGS:To be spawned at Position(8,0)
+PRINT, To be spawned at Position(8,63)
+PRINT, To be spawned at Position(9,0)
+PRINT, Type 1 at Position (8,0)
+PRINT, Type 2 at Position (8,63)
+PRINT, Type 3 at Position (9,0)
+PRINT, 
+SHOOT, D, 2113, 2116, 0
+SHOOT, D, 2119, 2122, 2
+SHOOT, D, 2125, 2128, 4
+SHOOT, D, 2126, 2129, 0
+SHOOT, D, 2131, 2134, 6
+SHOOT, D, 2132, 2135, 1
+SHOOT, D, 2137, 2140, 8
+SHOOT, D, 2138, 2141, 3
+SHOOT, D, 2143, 2146, 10
+SHOOT, D, 2144, 2147, 5
+SHOOT, D, 2149, 2152, 12
+SHOOT, D, 2150, 2153, 7
+SHOOT, D, 2154, 2157, 0
+SHOOT, D, 2155, 2158, 14
+SHOOT, D, 2156, 2159, 9
+SHOOT, D, 2160, 2163, 2
+SHOOT, D, 2161, 2164, 16
+SHOOT, D, 2162, 2165, 11
+SHOOT, D, 2166, 2169, 6
+SHOOT, D, 2167, 2170, 18
+SHOOT, D, 2168, 2171, 13
+SHOOT, A, 2116, 2113, 0
+SHOOT, A, 2122, 2119, 2
+SHOOT, A, 2128, 2125, 4
+SHOOT, A, 2129, 2126, 0
+SHOOT, A, 2134, 2131, 6
+SHOOT, A, 2135, 2132, 1
+SHOOT, A, 2140, 2137, 8
+SHOOT, A, 2141, 2138, 3
+SHOOT, A, 2146, 2143, 10
+SHOOT, A, 2147, 2144, 5
+SHOOT, A, 2152, 2149, 12
+SHOOT, A, 2153, 2150, 7
+SHOOT, A, 2157, 2154, 0
+SHOOT, A, 2158, 2155, 14
+SHOOT, A, 2159, 2156, 9
+SHOOT, A, 2163, 2160, 2
+SHOOT, A, 2164, 2161, 16
+SHOOT, A, 2165, 2162, 11
+SHOOT, A, 2169, 2166, 6
+SHOOT, A, 2170, 2167, 18
+SHOOT, A, 2171, 2168, 13
+DEAD, A, 2113
+DEAD, A, 2126
+DEAD, A, 2154
+DEAD, D, 2116
+DEAD, D, 2129
+DEAD, D, 2157
+SPAWN, A, 2172, 1, 8, 0
+SPAWN, A, 2173, 2, 8, 63
+SPAWN, A, 2174, 3, 9, 0
+SPAWN, D, 2175, 1, 8, 0
+SPAWN, D, 2176, 2, 8, 63
+SPAWN, D, 2177, 3, 9, 0
+TURN, 363
+PRINT, TURN 363 LOGS:To be spawned at Position(9,63)
+PRINT, To be spawned at Position(10,0)
+PRINT, To be spawned at Position(10,63)
+PRINT, Type 1 at Position (9,63)
+PRINT, Type 2 at Position (10,0)
+PRINT, Type 3 at Position (10,63)
+PRINT, 
+SHOOT, D, 2119, 2122, 0
+SHOOT, D, 2125, 2128, 2
+SHOOT, D, 2131, 2134, 4
+SHOOT, D, 2132, 2135, 0
+SHOOT, D, 2137, 2140, 6
+SHOOT, D, 2138, 2141, 1
+SHOOT, D, 2143, 2146, 8
+SHOOT, D, 2144, 2147, 3
+SHOOT, D, 2149, 2152, 10
+SHOOT, D, 2150, 2153, 5
+SHOOT, D, 2155, 2158, 12
+SHOOT, D, 2156, 2159, 7
+SHOOT, D, 2160, 2163, 0
+SHOOT, D, 2161, 2164, 14
+SHOOT, D, 2162, 2165, 9
+SHOOT, D, 2166, 2169, 2
+SHOOT, D, 2167, 2170, 16
+SHOOT, D, 2168, 2171, 11
+SHOOT, D, 2172, 2175, 6
+SHOOT, D, 2173, 2176, 18
+SHOOT, D, 2174, 2177, 13
+SHOOT, A, 2122, 2119, 0
+SHOOT, A, 2128, 2125, 2
+SHOOT, A, 2134, 2131, 4
+SHOOT, A, 2135, 2132, 0
+SHOOT, A, 2140, 2137, 6
+SHOOT, A, 2141, 2138, 1
+SHOOT, A, 2146, 2143, 8
+SHOOT, A, 2147, 2144, 3
+SHOOT, A, 2152, 2149, 10
+SHOOT, A, 2153, 2150, 5
+SHOOT, A, 2158, 2155, 12
+SHOOT, A, 2159, 2156, 7
+SHOOT, A, 2163, 2160, 0
+SHOOT, A, 2164, 2161, 14
+SHOOT, A, 2165, 2162, 9
+SHOOT, A, 2169, 2166, 2
+SHOOT, A, 2170, 2167, 16
+SHOOT, A, 2171, 2168, 11
+SHOOT, A, 2175, 2172, 6
+SHOOT, A, 2176, 2173, 18
+SHOOT, A, 2177, 2174, 13
+DEAD, A, 2119
+DEAD, A, 2132
+DEAD, A, 2160
+DEAD, D, 2122
+DEAD, D, 2135
+DEAD, D, 2163
+SPAWN, A, 2178, 1, 9, 63
+SPAWN, A, 2179, 2, 10, 0
+SPAWN, A, 2180, 3, 10, 63
+SPAWN, D, 2181, 1, 9, 63
+SPAWN, D, 2182, 2, 10, 0
+SPAWN, D, 2183, 3, 10, 63
+TURN, 364
+PRINT, TURN 364 LOGS:To be spawned at Position(11,0)
+PRINT, To be spawned at Position(11,63)
+PRINT, To be spawned at Position(12,0)
+PRINT, Type 1 at Position (11,0)
+PRINT, Type 2 at Position (11,63)
+PRINT, Type 3 at Position (12,0)
+PRINT, 
+SHOOT, D, 2125, 2128, 0
+SHOOT, D, 2131, 2134, 2
+SHOOT, D, 2137, 2140, 4
+SHOOT, D, 2138, 2141, 0
+SHOOT, D, 2143, 2146, 6
+SHOOT, D, 2144, 2147, 1
+SHOOT, D, 2149, 2152, 8
+SHOOT, D, 2150, 2153, 3
+SHOOT, D, 2155, 2158, 10
+SHOOT, D, 2156, 2159, 5
+SHOOT, D, 2161, 2164, 12
+SHOOT, D, 2162, 2165, 7
+SHOOT, D, 2166, 2169, 0
+SHOOT, D, 2167, 2170, 14
+SHOOT, D, 2168, 2171, 9
+SHOOT, D, 2172, 2175, 2
+SHOOT, D, 2173, 2176, 16
+SHOOT, D, 2174, 2177, 11
+SHOOT, D, 2178, 2181, 6
+SHOOT, D, 2179, 2182, 18
+SHOOT, D, 2180, 2183, 13
+SHOOT, A, 2128, 2125, 0
+SHOOT, A, 2134, 2131, 2
+SHOOT, A, 2140, 2137, 4
+SHOOT, A, 2141, 2138, 0
+SHOOT, A, 2146, 2143, 6
+SHOOT, A, 2147, 2144, 1
+SHOOT, A, 2152, 2149, 8
+SHOOT, A, 2153, 2150, 3
+SHOOT, A, 2158, 2155, 10
+SHOOT, A, 2159, 2156, 5
+SHOOT, A, 2164, 2161, 12
+SHOOT, A, 2165, 2162, 7
+SHOOT, A, 2169, 2166, 0
+SHOOT, A, 2170, 2167, 14
+SHOOT, A, 2171, 2168, 9
+SHOOT, A, 2175, 2172, 2
+SHOOT, A, 2176, 2173, 16
+SHOOT, A, 2177, 2174, 11
+SHOOT, A, 2181, 2178, 6
+SHOOT, A, 2182, 2179, 18
+SHOOT, A, 2183, 2180, 13
+DEAD, A, 2125
+DEAD, A, 2138
+DEAD, A, 2166
+DEAD, D, 2128
+DEAD, D, 2141
+DEAD, D, 2169
+SPAWN, A, 2184, 1, 11, 0
+SPAWN, A, 2185, 2, 11, 63
+SPAWN, A, 2186, 3, 12, 0
+SPAWN, D, 2187, 1, 11, 0
+SPAWN, D, 2188, 2, 11, 63
+SPAWN, D, 2189, 3, 12, 0
+TURN, 365
+PRINT, TURN 365 LOGS:To be spawned at Position(12,63)
+PRINT, To be spawned at Position(13,0)
+PRINT, To be spawned at Position(13,63)
+PRINT, Type 1 at Position (12,63)
+PRINT, Type 2 at Position (13,0)
+PRINT, Type 3 at Position (13,63)
+PRINT, 
+SHOOT, D, 2131, 2134, 0
+SHOOT, D, 2137, 2140, 2
+SHOOT, D, 2143, 2146, 4
+SHOOT, D, 2144, 2147, 0
+SHOOT, D, 2149, 2152, 6
+SHOOT, D, 2150, 2153, 1
+SHOOT, D, 2155, 2158, 8
+SHOOT, D, 2156, 2159, 3
+SHOOT, D, 2161, 2164, 10
+SHOOT, D, 2162, 2165, 5
+SHOOT, D, 2167, 2170, 12
+SHOOT, D, 2168, 2171, 7
+SHOOT, D, 2172, 2175, 0
+SHOOT, D, 2173, 2176, 14
+SHOOT, D, 2174, 2177, 9
+SHOOT, D, 2178, 2181, 2
+SHOOT, D, 2179, 2182, 16
+SHOOT, D, 2180, 2183, 11
+SHOOT, D, 2184, 2187, 6
+SHOOT, D, 2185, 2188, 18
+SHOOT, D, 2186, 2189, 13
+SHOOT, A, 2134, 2131, 0
+SHOOT, A, 2140, 2137, 2
+SHOOT, A, 2146, 2143, 4
+SHOOT, A, 2147, 2144, 0
+SHOOT, A, 2152, 2149, 6
+SHOOT, A, 2153, 2150, 1
+SHOOT, A, 2158, 2155, 8
+SHOOT, A, 2159, 2156, 3
+SHOOT, A, 2164, 2161, 10
+SHOOT, A, 2165, 2162, 5
+SHOOT, A, 2170, 2167, 12
+SHOOT, A, 2171, 2168, 7
+SHOOT, A, 2175, 2172, 0
+SHOOT, A, 2176, 2173, 14
+SHOOT, A, 2177, 2174, 9
+SHOOT, A, 2181, 2178, 2
+SHOOT, A, 2182, 2179, 16
+SHOOT, A, 2183, 2180, 11
+SHOOT, A, 2187, 2184, 6
+SHOOT, A, 2188, 2185, 18
+SHOOT, A, 2189, 2186, 13
+DEAD, A, 2131
+DEAD, A, 2144
+DEAD, A, 2172
+DEAD, D, 2134
+DEAD, D, 2147
+DEAD, D, 2175
+SPAWN, A, 2190, 1, 12, 63
+SPAWN, A, 2191, 2, 13, 0
+SPAWN, A, 2192, 3, 13, 63
+SPAWN, D, 2193, 1, 12, 63
+SPAWN, D, 2194, 2, 13, 0
+SPAWN, D, 2195, 3, 13, 63
+TURN, 366
+PRINT, TURN 366 LOGS:To be spawned at Position(14,0)
+PRINT, To be spawned at Position(14,63)
+PRINT, To be spawned at Position(15,0)
+PRINT, Type 1 at Position (14,0)
+PRINT, Type 2 at Position (14,63)
+PRINT, Type 3 at Position (15,0)
+PRINT, 
+SHOOT, D, 2137, 2140, 0
+SHOOT, D, 2143, 2146, 2
+SHOOT, D, 2149, 2152, 4
+SHOOT, D, 2150, 2153, 0
+SHOOT, D, 2155, 2158, 6
+SHOOT, D, 2156, 2159, 1
+SHOOT, D, 2161, 2164, 8
+SHOOT, D, 2162, 2165, 3
+SHOOT, D, 2167, 2170, 10
+SHOOT, D, 2168, 2171, 5
+SHOOT, D, 2173, 2176, 12
+SHOOT, D, 2174, 2177, 7
+SHOOT, D, 2178, 2181, 0
+SHOOT, D, 2179, 2182, 14
+SHOOT, D, 2180, 2183, 9
+SHOOT, D, 2184, 2187, 2
+SHOOT, D, 2185, 2188, 16
+SHOOT, D, 2186, 2189, 11
+SHOOT, D, 2190, 2193, 6
+SHOOT, D, 2191, 2194, 18
+SHOOT, D, 2192, 2195, 13
+SHOOT, A, 2140, 2137, 0
+SHOOT, A, 2146, 2143, 2
+SHOOT, A, 2152, 2149, 4
+SHOOT, A, 2153, 2150, 0
+SHOOT, A, 2158, 2155, 6
+SHOOT, A, 2159, 2156, 1
+SHOOT, A, 2164, 2161, 8
+SHOOT, A, 2165, 2162, 3
+SHOOT, A, 2170, 2167, 10
+SHOOT, A, 2171, 2168, 5
+SHOOT, A, 2176, 2173, 12
+SHOOT, A, 2177, 2174, 7
+SHOOT, A, 2181, 2178, 0
+SHOOT, A, 2182, 2179, 14
+SHOOT, A, 2183, 2180, 9
+SHOOT, A, 2187, 2184, 2
+SHOOT, A, 2188, 2185, 16
+SHOOT, A, 2189, 2186, 11
+SHOOT, A, 2193, 2190, 6
+SHOOT, A, 2194, 2191, 18
+SHOOT, A, 2195, 2192, 13
+DEAD, A, 2137
+DEAD, A, 2150
+DEAD, A, 2178
+DEAD, D, 2140
+DEAD, D, 2153
+DEAD, D, 2181
+SPAWN, A, 2196, 1, 14, 0
+SPAWN, A, 2197, 2, 14, 63
+SPAWN, A, 2198, 3, 15, 0
+SPAWN, D, 2199, 1, 14, 0
+SPAWN, D, 2200, 2, 14, 63
+SPAWN, D, 2201, 3, 15, 0
+TURN, 367
+PRINT, TURN 367 LOGS:To be spawned at Position(15,63)
+PRINT, To be spawned at Position(16,0)
+PRINT, To be spawned at Position(16,63)
+PRINT, Type 1 at Position (15,63)
+PRINT, Type 2 at Position (16,0)
+PRINT, Type 3 at Position (16,63)
+PRINT, 
+SHOOT, D, 2143, 2146, 0
+SHOOT, D, 2149, 2152, 2
+SHOOT, D, 2155, 2158, 4
+SHOOT, D, 2156, 2159, 0
+SHOOT, D, 2161, 2164, 6
+SHOOT, D, 2162, 2165, 1
+SHOOT, D, 2167, 2170, 8
+SHOOT, D, 2168, 2171, 3
+SHOOT, D, 2173, 2176, 10
+SHOOT, D, 2174, 2177, 5
+SHOOT, D, 2179, 2182, 12
+SHOOT, D, 2180, 2183, 7
+SHOOT, D, 2184, 2187, 0
+SHOOT, D, 2185, 2188, 14
+SHOOT, D, 2186, 2189, 9
+SHOOT, D, 2190, 2193, 2
+SHOOT, D, 2191, 2194, 16
+SHOOT, D, 2192, 2195, 11
+SHOOT, D, 2196, 2199, 6
+SHOOT, D, 2197, 2200, 18
+SHOOT, D, 2198, 2201, 13
+SHOOT, A, 2146, 2143, 0
+SHOOT, A, 2152, 2149, 2
+SHOOT, A, 2158, 2155, 4
+SHOOT, A, 2159, 2156, 0
+SHOOT, A, 2164, 2161, 6
+SHOOT, A, 2165, 2162, 1
+SHOOT, A, 2170, 2167, 8
+SHOOT, A, 2171, 2168, 3
+SHOOT, A, 2176, 2173, 10
+SHOOT, A, 2177, 2174, 5
+SHOOT, A, 2182, 2179, 12
+SHOOT, A, 2183, 2180, 7
+SHOOT, A, 2187, 2184, 0
+SHOOT, A, 2188, 2185, 14
+SHOOT, A, 2189, 2186, 9
+SHOOT, A, 2193, 2190, 2
+SHOOT, A, 2194, 2191, 16
+SHOOT, A, 2195, 2192, 11
+SHOOT, A, 2199, 2196, 6
+SHOOT, A, 2200, 2197, 18
+SHOOT, A, 2201, 2198, 13
+DEAD, A, 2143
+DEAD, A, 2156
+DEAD, A, 2184
+DEAD, D, 2146
+DEAD, D, 2159
+DEAD, D, 2187
+SPAWN, A, 2202, 1, 15, 63
+SPAWN, A, 2203, 2, 16, 0
+SPAWN, A, 2204, 3, 16, 63
+SPAWN, D, 2205, 1, 15, 63
+SPAWN, D, 2206, 2, 16, 0
+SPAWN, D, 2207, 3, 16, 63
+TURN, 368
+PRINT, TURN 368 LOGS:To be spawned at Position(17,0)
+PRINT, To be spawned at Position(17,63)
+PRINT, To be spawned at Position(18,0)
+PRINT, Type 1 at Position (17,0)
+PRINT, Type 2 at Position (17,63)
+PRINT, Type 3 at Position (18,0)
+PRINT, 
+SHOOT, D, 2149, 2152, 0
+SHOOT, D, 2155, 2158, 2
+SHOOT, D, 2161, 2164, 4
+SHOOT, D, 2162, 2165, 0
+SHOOT, D, 2167, 2170, 6
+SHOOT, D, 2168, 2171, 1
+SHOOT, D, 2173, 2176, 8
+SHOOT, D, 2174, 2177, 3
+SHOOT, D, 2179, 2182, 10
+SHOOT, D, 2180, 2183, 5
+SHOOT, D, 2185, 2188, 12
+SHOOT, D, 2186, 2189, 7
+SHOOT, D, 2190, 2193, 0
+SHOOT, D, 2191, 2194, 14
+SHOOT, D, 2192, 2195, 9
+SHOOT, D, 2196, 2199, 2
+SHOOT, D, 2197, 2200, 16
+SHOOT, D, 2198, 2201, 11
+SHOOT, D, 2202, 2205, 6
+SHOOT, D, 2203, 2206, 18
+SHOOT, D, 2204, 2207, 13
+SHOOT, A, 2152, 2149, 0
+SHOOT, A, 2158, 2155, 2
+SHOOT, A, 2164, 2161, 4
+SHOOT, A, 2165, 2162, 0
+SHOOT, A, 2170, 2167, 6
+SHOOT, A, 2171, 2168, 1
+SHOOT, A, 2176, 2173, 8
+SHOOT, A, 2177, 2174, 3
+SHOOT, A, 2182, 2179, 10
+SHOOT, A, 2183, 2180, 5
+SHOOT, A, 2188, 2185, 12
+SHOOT, A, 2189, 2186, 7
+SHOOT, A, 2193, 2190, 0
+SHOOT, A, 2194, 2191, 14
+SHOOT, A, 2195, 2192, 9
+SHOOT, A, 2199, 2196, 2
+SHOOT, A, 2200, 2197, 16
+SHOOT, A, 2201, 2198, 11
+SHOOT, A, 2205, 2202, 6
+SHOOT, A, 2206, 2203, 18
+SHOOT, A, 2207, 2204, 13
+DEAD, A, 2149
+DEAD, A, 2162
+DEAD, A, 2190
+DEAD, D, 2152
+DEAD, D, 2165
+DEAD, D, 2193
+SPAWN, A, 2208, 1, 17, 0
+SPAWN, A, 2209, 2, 17, 63
+SPAWN, A, 2210, 3, 18, 0
+SPAWN, D, 2211, 1, 17, 0
+SPAWN, D, 2212, 2, 17, 63
+SPAWN, D, 2213, 3, 18, 0
+TURN, 369
+PRINT, TURN 369 LOGS:To be spawned at Position(18,63)
+PRINT, To be spawned at Position(19,0)
+PRINT, To be spawned at Position(19,63)
+PRINT, Type 1 at Position (18,63)
+PRINT, Type 2 at Position (19,0)
+PRINT, Type 3 at Position (19,63)
+PRINT, 
+SHOOT, D, 2155, 2158, 0
+SHOOT, D, 2161, 2164, 2
+SHOOT, D, 2167, 2170, 4
+SHOOT, D, 2168, 2171, 0
+SHOOT, D, 2173, 2176, 6
+SHOOT, D, 2174, 2177, 1
+SHOOT, D, 2179, 2182, 8
+SHOOT, D, 2180, 2183, 3
+SHOOT, D, 2185, 2188, 10
+SHOOT, D, 2186, 2189, 5
+SHOOT, D, 2191, 2194, 12
+SHOOT, D, 2192, 2195, 7
+SHOOT, D, 2196, 2199, 0
+SHOOT, D, 2197, 2200, 14
+SHOOT, D, 2198, 2201, 9
+SHOOT, D, 2202, 2205, 2
+SHOOT, D, 2203, 2206, 16
+SHOOT, D, 2204, 2207, 11
+SHOOT, D, 2208, 2211, 6
+SHOOT, D, 2209, 2212, 18
+SHOOT, D, 2210, 2213, 13
+SHOOT, A, 2158, 2155, 0
+SHOOT, A, 2164, 2161, 2
+SHOOT, A, 2170, 2167, 4
+SHOOT, A, 2171, 2168, 0
+SHOOT, A, 2176, 2173, 6
+SHOOT, A, 2177, 2174, 1
+SHOOT, A, 2182, 2179, 8
+SHOOT, A, 2183, 2180, 3
+SHOOT, A, 2188, 2185, 10
+SHOOT, A, 2189, 2186, 5
+SHOOT, A, 2194, 2191, 12
+SHOOT, A, 2195, 2192, 7
+SHOOT, A, 2199, 2196, 0
+SHOOT, A, 2200, 2197, 14
+SHOOT, A, 2201, 2198, 9
+SHOOT, A, 2205, 2202, 2
+SHOOT, A, 2206, 2203, 16
+SHOOT, A, 2207, 2204, 11
+SHOOT, A, 2211, 2208, 6
+SHOOT, A, 2212, 2209, 18
+SHOOT, A, 2213, 2210, 13
+DEAD, A, 2155
+DEAD, A, 2168
+DEAD, A, 2196
+DEAD, D, 2158
+DEAD, D, 2171
+DEAD, D, 2199
+SPAWN, A, 2214, 1, 18, 63
+SPAWN, A, 2215, 2, 19, 0
+SPAWN, A, 2216, 3, 19, 63
+SPAWN, D, 2217, 1, 18, 63
+SPAWN, D, 2218, 2, 19, 0
+SPAWN, D, 2219, 3, 19, 63
+TURN, 370
+PRINT, TURN 370 LOGS:To be spawned at Position(20,0)
+PRINT, To be spawned at Position(20,63)
+PRINT, To be spawned at Position(21,0)
+PRINT, Type 1 at Position (20,0)
+PRINT, Type 2 at Position (20,63)
+PRINT, Type 3 at Position (21,0)
+PRINT, 
+SHOOT, D, 2161, 2164, 0
+SHOOT, D, 2167, 2170, 2
+SHOOT, D, 2173, 2176, 4
+SHOOT, D, 2174, 2177, 0
+SHOOT, D, 2179, 2182, 6
+SHOOT, D, 2180, 2183, 1
+SHOOT, D, 2185, 2188, 8
+SHOOT, D, 2186, 2189, 3
+SHOOT, D, 2191, 2194, 10
+SHOOT, D, 2192, 2195, 5
+SHOOT, D, 2197, 2200, 12
+SHOOT, D, 2198, 2201, 7
+SHOOT, D, 2202, 2205, 0
+SHOOT, D, 2203, 2206, 14
+SHOOT, D, 2204, 2207, 9
+SHOOT, D, 2208, 2211, 2
+SHOOT, D, 2209, 2212, 16
+SHOOT, D, 2210, 2213, 11
+SHOOT, D, 2214, 2217, 6
+SHOOT, D, 2215, 2218, 18
+SHOOT, D, 2216, 2219, 13
+SHOOT, A, 2164, 2161, 0
+SHOOT, A, 2170, 2167, 2
+SHOOT, A, 2176, 2173, 4
+SHOOT, A, 2177, 2174, 0
+SHOOT, A, 2182, 2179, 6
+SHOOT, A, 2183, 2180, 1
+SHOOT, A, 2188, 2185, 8
+SHOOT, A, 2189, 2186, 3
+SHOOT, A, 2194, 2191, 10
+SHOOT, A, 2195, 2192, 5
+SHOOT, A, 2200, 2197, 12
+SHOOT, A, 2201, 2198, 7
+SHOOT, A, 2205, 2202, 0
+SHOOT, A, 2206, 2203, 14
+SHOOT, A, 2207, 2204, 9
+SHOOT, A, 2211, 2208, 2
+SHOOT, A, 2212, 2209, 16
+SHOOT, A, 2213, 2210, 11
+SHOOT, A, 2217, 2214, 6
+SHOOT, A, 2218, 2215, 18
+SHOOT, A, 2219, 2216, 13
+DEAD, A, 2161
+DEAD, A, 2174
+DEAD, A, 2202
+DEAD, D, 2164
+DEAD, D, 2177
+DEAD, D, 2205
+SPAWN, A, 2220, 1, 20, 0
+SPAWN, A, 2221, 2, 20, 63
+SPAWN, A, 2222, 3, 21, 0
+SPAWN, D, 2223, 1, 20, 0
+SPAWN, D, 2224, 2, 20, 63
+SPAWN, D, 2225, 3, 21, 0
+TURN, 371
+PRINT, TURN 371 LOGS:To be spawned at Position(21,63)
+PRINT, To be spawned at Position(22,0)
+PRINT, To be spawned at Position(22,63)
+PRINT, Type 1 at Position (21,63)
+PRINT, Type 2 at Position (22,0)
+PRINT, Type 3 at Position (22,63)
+PRINT, 
+SHOOT, D, 2167, 2170, 0
+SHOOT, D, 2173, 2176, 2
+SHOOT, D, 2179, 2182, 4
+SHOOT, D, 2180, 2183, 0
+SHOOT, D, 2185, 2188, 6
+SHOOT, D, 2186, 2189, 1
+SHOOT, D, 2191, 2194, 8
+SHOOT, D, 2192, 2195, 3
+SHOOT, D, 2197, 2200, 10
+SHOOT, D, 2198, 2201, 5
+SHOOT, D, 2203, 2206, 12
+SHOOT, D, 2204, 2207, 7
+SHOOT, D, 2208, 2211, 0
+SHOOT, D, 2209, 2212, 14
+SHOOT, D, 2210, 2213, 9
+SHOOT, D, 2214, 2217, 2
+SHOOT, D, 2215, 2218, 16
+SHOOT, D, 2216, 2219, 11
+SHOOT, D, 2220, 2223, 6
+SHOOT, D, 2221, 2224, 18
+SHOOT, D, 2222, 2225, 13
+SHOOT, A, 2170, 2167, 0
+SHOOT, A, 2176, 2173, 2
+SHOOT, A, 2182, 2179, 4
+SHOOT, A, 2183, 2180, 0
+SHOOT, A, 2188, 2185, 6
+SHOOT, A, 2189, 2186, 1
+SHOOT, A, 2194, 2191, 8
+SHOOT, A, 2195, 2192, 3
+SHOOT, A, 2200, 2197, 10
+SHOOT, A, 2201, 2198, 5
+SHOOT, A, 2206, 2203, 12
+SHOOT, A, 2207, 2204, 7
+SHOOT, A, 2211, 2208, 0
+SHOOT, A, 2212, 2209, 14
+SHOOT, A, 2213, 2210, 9
+SHOOT, A, 2217, 2214, 2
+SHOOT, A, 2218, 2215, 16
+SHOOT, A, 2219, 2216, 11
+SHOOT, A, 2223, 2220, 6
+SHOOT, A, 2224, 2221, 18
+SHOOT, A, 2225, 2222, 13
+DEAD, A, 2167
+DEAD, A, 2180
+DEAD, A, 2208
+DEAD, D, 2170
+DEAD, D, 2183
+DEAD, D, 2211
+SPAWN, A, 2226, 1, 21, 63
+SPAWN, A, 2227, 2, 22, 0
+SPAWN, A, 2228, 3, 22, 63
+SPAWN, D, 2229, 1, 21, 63
+SPAWN, D, 2230, 2, 22, 0
+SPAWN, D, 2231, 3, 22, 63
+TURN, 372
+PRINT, TURN 372 LOGS:To be spawned at Position(23,0)
+PRINT, To be spawned at Position(23,63)
+PRINT, To be spawned at Position(24,0)
+PRINT, Type 1 at Position (23,0)
+PRINT, Type 2 at Position (23,63)
+PRINT, Type 3 at Position (24,0)
+PRINT, 
+SHOOT, D, 2173, 2176, 0
+SHOOT, D, 2179, 2182, 2
+SHOOT, D, 2185, 2188, 4
+SHOOT, D, 2186, 2189, 0
+SHOOT, D, 2191, 2194, 6
+SHOOT, D, 2192, 2195, 1
+SHOOT, D, 2197, 2200, 8
+SHOOT, D, 2198, 2201, 3
+SHOOT, D, 2203, 2206, 10
+SHOOT, D, 2204, 2207, 5
+SHOOT, D, 2209, 2212, 12
+SHOOT, D, 2210, 2213, 7
+SHOOT, D, 2214, 2217, 0
+SHOOT, D, 2215, 2218, 14
+SHOOT, D, 2216, 2219, 9
+SHOOT, D, 2220, 2223, 2
+SHOOT, D, 2221, 2224, 16
+SHOOT, D, 2222, 2225, 11
+SHOOT, D, 2226, 2229, 6
+SHOOT, D, 2227, 2230, 18
+SHOOT, D, 2228, 2231, 13
+SHOOT, A, 2176, 2173, 0
+SHOOT, A, 2182, 2179, 2
+SHOOT, A, 2188, 2185, 4
+SHOOT, A, 2189, 2186, 0
+SHOOT, A, 2194, 2191, 6
+SHOOT, A, 2195, 2192, 1
+SHOOT, A, 2200, 2197, 8
+SHOOT, A, 2201, 2198, 3
+SHOOT, A, 2206, 2203, 10
+SHOOT, A, 2207, 2204, 5
+SHOOT, A, 2212, 2209, 12
+SHOOT, A, 2213, 2210, 7
+SHOOT, A, 2217, 2214, 0
+SHOOT, A, 2218, 2215, 14
+SHOOT, A, 2219, 2216, 9
+SHOOT, A, 2223, 2220, 2
+SHOOT, A, 2224, 2221, 16
+SHOOT, A, 2225, 2222, 11
+SHOOT, A, 2229, 2226, 6
+SHOOT, A, 2230, 2227, 18
+SHOOT, A, 2231, 2228, 13
+DEAD, A, 2173
+DEAD, A, 2186
+DEAD, A, 2214
+DEAD, D, 2176
+DEAD, D, 2189
+DEAD, D, 2217
+SPAWN, A, 2232, 1, 23, 0
+SPAWN, A, 2233, 2, 23, 63
+SPAWN, A, 2234, 3, 24, 0
+SPAWN, D, 2235, 1, 23, 0
+SPAWN, D, 2236, 2, 23, 63
+SPAWN, D, 2237, 3, 24, 0
+TURN, 373
+PRINT, TURN 373 LOGS:To be spawned at Position(24,63)
+PRINT, To be spawned at Position(25,0)
+PRINT, To be spawned at Position(25,63)
+PRINT, Type 1 at Position (24,63)
+PRINT, Type 2 at Position (25,0)
+PRINT, Type 3 at Position (25,63)
+PRINT, 
+SHOOT, D, 2179, 2182, 0
+SHOOT, D, 2185, 2188, 2
+SHOOT, D, 2191, 2194, 4
+SHOOT, D, 2192, 2195, 0
+SHOOT, D, 2197, 2200, 6
+SHOOT, D, 2198, 2201, 1
+SHOOT, D, 2203, 2206, 8
+SHOOT, D, 2204, 2207, 3
+SHOOT, D, 2209, 2212, 10
+SHOOT, D, 2210, 2213, 5
+SHOOT, D, 2215, 2218, 12
+SHOOT, D, 2216, 2219, 7
+SHOOT, D, 2220, 2223, 0
+SHOOT, D, 2221, 2224, 14
+SHOOT, D, 2222, 2225, 9
+SHOOT, D, 2226, 2229, 2
+SHOOT, D, 2227, 2230, 16
+SHOOT, D, 2228, 2231, 11
+SHOOT, D, 2232, 2235, 6
+SHOOT, D, 2233, 2236, 18
+SHOOT, D, 2234, 2237, 13
+SHOOT, A, 2182, 2179, 0
+SHOOT, A, 2188, 2185, 2
+SHOOT, A, 2194, 2191, 4
+SHOOT, A, 2195, 2192, 0
+SHOOT, A, 2200, 2197, 6
+SHOOT, A, 2201, 2198, 1
+SHOOT, A, 2206, 2203, 8
+SHOOT, A, 2207, 2204, 3
+SHOOT, A, 2212, 2209, 10
+SHOOT, A, 2213, 2210, 5
+SHOOT, A, 2218, 2215, 12
+SHOOT, A, 2219, 2216, 7
+SHOOT, A, 2223, 2220, 0
+SHOOT, A, 2224, 2221, 14
+SHOOT, A, 2225, 2222, 9
+SHOOT, A, 2229, 2226, 2
+SHOOT, A, 2230, 2227, 16
+SHOOT, A, 2231, 2228, 11
+SHOOT, A, 2235, 2232, 6
+SHOOT, A, 2236, 2233, 18
+SHOOT, A, 2237, 2234, 13
+DEAD, A, 2179
+DEAD, A, 2192
+DEAD, A, 2220
+DEAD, D, 2182
+DEAD, D, 2195
+DEAD, D, 2223
+SPAWN, A, 2238, 1, 24, 63
+SPAWN, A, 2239, 2, 25, 0
+SPAWN, A, 2240, 3, 25, 63
+SPAWN, D, 2241, 1, 24, 63
+SPAWN, D, 2242, 2, 25, 0
+SPAWN, D, 2243, 3, 25, 63
+TURN, 374
+PRINT, TURN 374 LOGS:To be spawned at Position(26,0)
+PRINT, To be spawned at Position(26,63)
+PRINT, To be spawned at Position(27,0)
+PRINT, Type 1 at Position (26,0)
+PRINT, Type 2 at Position (26,63)
+PRINT, Type 3 at Position (27,0)
+PRINT, 
+SHOOT, D, 2185, 2188, 0
+SHOOT, D, 2191, 2194, 2
+SHOOT, D, 2197, 2200, 4
+SHOOT, D, 2198, 2201, 0
+SHOOT, D, 2203, 2206, 6
+SHOOT, D, 2204, 2207, 1
+SHOOT, D, 2209, 2212, 8
+SHOOT, D, 2210, 2213, 3
+SHOOT, D, 2215, 2218, 10
+SHOOT, D, 2216, 2219, 5
+SHOOT, D, 2221, 2224, 12
+SHOOT, D, 2222, 2225, 7
+SHOOT, D, 2226, 2229, 0
+SHOOT, D, 2227, 2230, 14
+SHOOT, D, 2228, 2231, 9
+SHOOT, D, 2232, 2235, 2
+SHOOT, D, 2233, 2236, 16
+SHOOT, D, 2234, 2237, 11
+SHOOT, D, 2238, 2241, 6
+SHOOT, D, 2239, 2242, 18
+SHOOT, D, 2240, 2243, 13
+SHOOT, A, 2188, 2185, 0
+SHOOT, A, 2194, 2191, 2
+SHOOT, A, 2200, 2197, 4
+SHOOT, A, 2201, 2198, 0
+SHOOT, A, 2206, 2203, 6
+SHOOT, A, 2207, 2204, 1
+SHOOT, A, 2212, 2209, 8
+SHOOT, A, 2213, 2210, 3
+SHOOT, A, 2218, 2215, 10
+SHOOT, A, 2219, 2216, 5
+SHOOT, A, 2224, 2221, 12
+SHOOT, A, 2225, 2222, 7
+SHOOT, A, 2229, 2226, 0
+SHOOT, A, 2230, 2227, 14
+SHOOT, A, 2231, 2228, 9
+SHOOT, A, 2235, 2232, 2
+SHOOT, A, 2236, 2233, 16
+SHOOT, A, 2237, 2234, 11
+SHOOT, A, 2241, 2238, 6
+SHOOT, A, 2242, 2239, 18
+SHOOT, A, 2243, 2240, 13
+DEAD, A, 2185
+DEAD, A, 2198
+DEAD, A, 2226
+DEAD, D, 2188
+DEAD, D, 2201
+DEAD, D, 2229
+SPAWN, A, 2244, 1, 26, 0
+SPAWN, A, 2245, 2, 26, 63
+SPAWN, A, 2246, 3, 27, 0
+SPAWN, D, 2247, 1, 26, 0
+SPAWN, D, 2248, 2, 26, 63
+SPAWN, D, 2249, 3, 27, 0
+TURN, 375
+PRINT, TURN 375 LOGS:To be spawned at Position(27,63)
+PRINT, To be spawned at Position(28,0)
+PRINT, To be spawned at Position(28,63)
+PRINT, Type 1 at Position (27,63)
+PRINT, Type 2 at Position (28,0)
+PRINT, Type 3 at Position (28,63)
+PRINT, 
+SHOOT, D, 2191, 2194, 0
+SHOOT, D, 2197, 2200, 2
+SHOOT, D, 2203, 2206, 4
+SHOOT, D, 2204, 2207, 0
+SHOOT, D, 2209, 2212, 6
+SHOOT, D, 2210, 2213, 1
+SHOOT, D, 2215, 2218, 8
+SHOOT, D, 2216, 2219, 3
+SHOOT, D, 2221, 2224, 10
+SHOOT, D, 2222, 2225, 5
+SHOOT, D, 2227, 2230, 12
+SHOOT, D, 2228, 2231, 7
+SHOOT, D, 2232, 2235, 0
+SHOOT, D, 2233, 2236, 14
+SHOOT, D, 2234, 2237, 9
+SHOOT, D, 2238, 2241, 2
+SHOOT, D, 2239, 2242, 16
+SHOOT, D, 2240, 2243, 11
+SHOOT, D, 2244, 2247, 6
+SHOOT, D, 2245, 2248, 18
+SHOOT, D, 2246, 2249, 13
+SHOOT, A, 2194, 2191, 0
+SHOOT, A, 2200, 2197, 2
+SHOOT, A, 2206, 2203, 4
+SHOOT, A, 2207, 2204, 0
+SHOOT, A, 2212, 2209, 6
+SHOOT, A, 2213, 2210, 1
+SHOOT, A, 2218, 2215, 8
+SHOOT, A, 2219, 2216, 3
+SHOOT, A, 2224, 2221, 10
+SHOOT, A, 2225, 2222, 5
+SHOOT, A, 2230, 2227, 12
+SHOOT, A, 2231, 2228, 7
+SHOOT, A, 2235, 2232, 0
+SHOOT, A, 2236, 2233, 14
+SHOOT, A, 2237, 2234, 9
+SHOOT, A, 2241, 2238, 2
+SHOOT, A, 2242, 2239, 16
+SHOOT, A, 2243, 2240, 11
+SHOOT, A, 2247, 2244, 6
+SHOOT, A, 2248, 2245, 18
+SHOOT, A, 2249, 2246, 13
+DEAD, A, 2191
+DEAD, A, 2204
+DEAD, A, 2232
+DEAD, D, 2194
+DEAD, D, 2207
+DEAD, D, 2235
+SPAWN, A, 2250, 1, 27, 63
+SPAWN, A, 2251, 2, 28, 0
+SPAWN, A, 2252, 3, 28, 63
+SPAWN, D, 2253, 1, 27, 63
+SPAWN, D, 2254, 2, 28, 0
+SPAWN, D, 2255, 3, 28, 63
+TURN, 376
+PRINT, TURN 376 LOGS:To be spawned at Position(29,0)
+PRINT, To be spawned at Position(29,63)
+PRINT, To be spawned at Position(30,0)
+PRINT, Type 1 at Position (29,0)
+PRINT, Type 2 at Position (29,63)
+PRINT, Type 3 at Position (30,0)
+PRINT, 
+SHOOT, D, 2197, 2200, 0
+SHOOT, D, 2203, 2206, 2
+SHOOT, D, 2209, 2212, 4
+SHOOT, D, 2210, 2213, 0
+SHOOT, D, 2215, 2218, 6
+SHOOT, D, 2216, 2219, 1
+SHOOT, D, 2221, 2224, 8
+SHOOT, D, 2222, 2225, 3
+SHOOT, D, 2227, 2230, 10
+SHOOT, D, 2228, 2231, 5
+SHOOT, D, 2233, 2236, 12
+SHOOT, D, 2234, 2237, 7
+SHOOT, D, 2238, 2241, 0
+SHOOT, D, 2239, 2242, 14
+SHOOT, D, 2240, 2243, 9
+SHOOT, D, 2244, 2247, 2
+SHOOT, D, 2245, 2248, 16
+SHOOT, D, 2246, 2249, 11
+SHOOT, D, 2250, 2253, 6
+SHOOT, D, 2251, 2254, 18
+SHOOT, D, 2252, 2255, 13
+SHOOT, A, 2200, 2197, 0
+SHOOT, A, 2206, 2203, 2
+SHOOT, A, 2212, 2209, 4
+SHOOT, A, 2213, 2210, 0
+SHOOT, A, 2218, 2215, 6
+SHOOT, A, 2219, 2216, 1
+SHOOT, A, 2224, 2221, 8
+SHOOT, A, 2225, 2222, 3
+SHOOT, A, 2230, 2227, 10
+SHOOT, A, 2231, 2228, 5
+SHOOT, A, 2236, 2233, 12
+SHOOT, A, 2237, 2234, 7
+SHOOT, A, 2241, 2238, 0
+SHOOT, A, 2242, 2239, 14
+SHOOT, A, 2243, 2240, 9
+SHOOT, A, 2247, 2244, 2
+SHOOT, A, 2248, 2245, 16
+SHOOT, A, 2249, 2246, 11
+SHOOT, A, 2253, 2250, 6
+SHOOT, A, 2254, 2251, 18
+SHOOT, A, 2255, 2252, 13
+DEAD, A, 2197
+DEAD, A, 2210
+DEAD, A, 2238
+DEAD, D, 2200
+DEAD, D, 2213
+DEAD, D, 2241
+SPAWN, A, 2256, 1, 29, 0
+SPAWN, A, 2257, 2, 29, 63
+SPAWN, A, 2258, 3, 30, 0
+SPAWN, D, 2259, 1, 29, 0
+SPAWN, D, 2260, 2, 29, 63
+SPAWN, D, 2261, 3, 30, 0
+TURN, 377
+PRINT, TURN 377 LOGS:To be spawned at Position(30,63)
+PRINT, To be spawned at Position(31,0)
+PRINT, To be spawned at Position(31,63)
+PRINT, Type 1 at Position (30,63)
+PRINT, Type 2 at Position (31,0)
+PRINT, Type 3 at Position (31,63)
+PRINT, 
+SHOOT, D, 2203, 2206, 0
+SHOOT, D, 2209, 2212, 2
+SHOOT, D, 2215, 2218, 4
+SHOOT, D, 2216, 2219, 0
+SHOOT, D, 2221, 2224, 6
+SHOOT, D, 2222, 2225, 1
+SHOOT, D, 2227, 2230, 8
+SHOOT, D, 2228, 2231, 3
+SHOOT, D, 2233, 2236, 10
+SHOOT, D, 2234, 2237, 5
+SHOOT, D, 2239, 2242, 12
+SHOOT, D, 2240, 2243, 7
+SHOOT, D, 2244, 2247, 0
+SHOOT, D, 2245, 2248, 14
+SHOOT, D, 2246, 2249, 9
+SHOOT, D, 2250, 2253, 2
+SHOOT, D, 2251, 2254, 16
+SHOOT, D, 2252, 2255, 11
+SHOOT, D, 2256, 2259, 6
+SHOOT, D, 2257, 2260, 18
+SHOOT, D, 2258, 2261, 13
+SHOOT, A, 2206, 2203, 0
+SHOOT, A, 2212, 2209, 2
+SHOOT, A, 2218, 2215, 4
+SHOOT, A, 2219, 2216, 0
+SHOOT, A, 2224, 2221, 6
+SHOOT, A, 2225, 2222, 1
+SHOOT, A, 2230, 2227, 8
+SHOOT, A, 2231, 2228, 3
+SHOOT, A, 2236, 2233, 10
+SHOOT, A, 2237, 2234, 5
+SHOOT, A, 2242, 2239, 12
+SHOOT, A, 2243, 2240, 7
+SHOOT, A, 2247, 2244, 0
+SHOOT, A, 2248, 2245, 14
+SHOOT, A, 2249, 2246, 9
+SHOOT, A, 2253, 2250, 2
+SHOOT, A, 2254, 2251, 16
+SHOOT, A, 2255, 2252, 11
+SHOOT, A, 2259, 2256, 6
+SHOOT, A, 2260, 2257, 18
+SHOOT, A, 2261, 2258, 13
+DEAD, A, 2203
+DEAD, A, 2216
+DEAD, A, 2244
+DEAD, D, 2206
+DEAD, D, 2219
+DEAD, D, 2247
+SPAWN, A, 2262, 1, 30, 63
+SPAWN, A, 2263, 2, 31, 0
+SPAWN, A, 2264, 3, 31, 63
+SPAWN, D, 2265, 1, 30, 63
+SPAWN, D, 2266, 2, 31, 0
+SPAWN, D, 2267, 3, 31, 63
+TURN, 378
+PRINT, TURN 378 LOGS:To be spawned at Position(32,0)
+PRINT, To be spawned at Position(32,63)
+PRINT, To be spawned at Position(33,0)
+PRINT, Type 1 at Position (32,0)
+PRINT, Type 2 at Position (32,63)
+PRINT, Type 3 at Position (33,0)
+PRINT, 
+SHOOT, D, 2209, 2212, 0
+SHOOT, D, 2215, 2218, 2
+SHOOT, D, 2221, 2224, 4
+SHOOT, D, 2222, 2225, 0
+SHOOT, D, 2227, 2230, 6
+SHOOT, D, 2228, 2231, 1
+SHOOT, D, 2233, 2236, 8
+SHOOT, D, 2234, 2237, 3
+SHOOT, D, 2239, 2242, 10
+SHOOT, D, 2240, 2243, 5
+SHOOT, D, 2245, 2248, 12
+SHOOT, D, 2246, 2249, 7
+SHOOT, D, 2250, 2253, 0
+SHOOT, D, 2251, 2254, 14
+SHOOT, D, 2252, 2255, 9
+SHOOT, D, 2256, 2259, 2
+SHOOT, D, 2257, 2260, 16
+SHOOT, D, 2258, 2261, 11
+SHOOT, D, 2262, 2265, 6
+SHOOT, D, 2263, 2266, 18
+SHOOT, D, 2264, 2267, 13
+SHOOT, A, 2212, 2209, 0
+SHOOT, A, 2218, 2215, 2
+SHOOT, A, 2224, 2221, 4
+SHOOT, A, 2225, 2222, 0
+SHOOT, A, 2230, 2227, 6
+SHOOT, A, 2231, 2228, 1
+SHOOT, A, 2236, 2233, 8
+SHOOT, A, 2237, 2234, 3
+SHOOT, A, 2242, 2239, 10
+SHOOT, A, 2243, 2240, 5
+SHOOT, A, 2248, 2245, 12
+SHOOT, A, 2249, 2246, 7
+SHOOT, A, 2253, 2250, 0
+SHOOT, A, 2254, 2251, 14
+SHOOT, A, 2255, 2252, 9
+SHOOT, A, 2259, 2256, 2
+SHOOT, A, 2260, 2257, 16
+SHOOT, A, 2261, 2258, 11
+SHOOT, A, 2265, 2262, 6
+SHOOT, A, 2266, 2263, 18
+SHOOT, A, 2267, 2264, 13
+DEAD, A, 2209
+DEAD, A, 2222
+DEAD, A, 2250
+DEAD, D, 2212
+DEAD, D, 2225
+DEAD, D, 2253
+SPAWN, A, 2268, 1, 32, 0
+SPAWN, A, 2269, 2, 32, 63
+SPAWN, A, 2270, 3, 33, 0
+SPAWN, D, 2271, 1, 32, 0
+SPAWN, D, 2272, 2, 32, 63
+SPAWN, D, 2273, 3, 33, 0
+TURN, 379
+PRINT, TURN 379 LOGS:To be spawned at Position(33,63)
+PRINT, To be spawned at Position(34,0)
+PRINT, To be spawned at Position(34,63)
+PRINT, Type 1 at Position (33,63)
+PRINT, Type 2 at Position (34,0)
+PRINT, Type 3 at Position (34,63)
+PRINT, 
+SHOOT, D, 2215, 2218, 0
+SHOOT, D, 2221, 2224, 2
+SHOOT, D, 2227, 2230, 4
+SHOOT, D, 2228, 2231, 0
+SHOOT, D, 2233, 2236, 6
+SHOOT, D, 2234, 2237, 1
+SHOOT, D, 2239, 2242, 8
+SHOOT, D, 2240, 2243, 3
+SHOOT, D, 2245, 2248, 10
+SHOOT, D, 2246, 2249, 5
+SHOOT, D, 2251, 2254, 12
+SHOOT, D, 2252, 2255, 7
+SHOOT, D, 2256, 2259, 0
+SHOOT, D, 2257, 2260, 14
+SHOOT, D, 2258, 2261, 9
+SHOOT, D, 2262, 2265, 2
+SHOOT, D, 2263, 2266, 16
+SHOOT, D, 2264, 2267, 11
+SHOOT, D, 2268, 2271, 6
+SHOOT, D, 2269, 2272, 18
+SHOOT, D, 2270, 2273, 13
+SHOOT, A, 2218, 2215, 0
+SHOOT, A, 2224, 2221, 2
+SHOOT, A, 2230, 2227, 4
+SHOOT, A, 2231, 2228, 0
+SHOOT, A, 2236, 2233, 6
+SHOOT, A, 2237, 2234, 1
+SHOOT, A, 2242, 2239, 8
+SHOOT, A, 2243, 2240, 3
+SHOOT, A, 2248, 2245, 10
+SHOOT, A, 2249, 2246, 5
+SHOOT, A, 2254, 2251, 12
+SHOOT, A, 2255, 2252, 7
+SHOOT, A, 2259, 2256, 0
+SHOOT, A, 2260, 2257, 14
+SHOOT, A, 2261, 2258, 9
+SHOOT, A, 2265, 2262, 2
+SHOOT, A, 2266, 2263, 16
+SHOOT, A, 2267, 2264, 11
+SHOOT, A, 2271, 2268, 6
+SHOOT, A, 2272, 2269, 18
+SHOOT, A, 2273, 2270, 13
+DEAD, A, 2215
+DEAD, A, 2228
+DEAD, A, 2256
+DEAD, D, 2218
+DEAD, D, 2231
+DEAD, D, 2259
+SPAWN, A, 2274, 1, 33, 63
+SPAWN, A, 2275, 2, 34, 0
+SPAWN, A, 2276, 3, 34, 63
+SPAWN, D, 2277, 1, 33, 63
+SPAWN, D, 2278, 2, 34, 0
+SPAWN, D, 2279, 3, 34, 63
+TURN, 380
+PRINT, TURN 380 LOGS:To be spawned at Position(35,0)
+PRINT, To be spawned at Position(35,63)
+PRINT, To be spawned at Position(36,0)
+PRINT, Type 1 at Position (35,0)
+PRINT, Type 2 at Position (35,63)
+PRINT, Type 3 at Position (36,0)
+PRINT, 
+SHOOT, D, 2221, 2224, 0
+SHOOT, D, 2227, 2230, 2
+SHOOT, D, 2233, 2236, 4
+SHOOT, D, 2234, 2237, 0
+SHOOT, D, 2239, 2242, 6
+SHOOT, D, 2240, 2243, 1
+SHOOT, D, 2245, 2248, 8
+SHOOT, D, 2246, 2249, 3
+SHOOT, D, 2251, 2254, 10
+SHOOT, D, 2252, 2255, 5
+SHOOT, D, 2257, 2260, 12
+SHOOT, D, 2258, 2261, 7
+SHOOT, D, 2262, 2265, 0
+SHOOT, D, 2263, 2266, 14
+SHOOT, D, 2264, 2267, 9
+SHOOT, D, 2268, 2271, 2
+SHOOT, D, 2269, 2272, 16
+SHOOT, D, 2270, 2273, 11
+SHOOT, D, 2274, 2277, 6
+SHOOT, D, 2275, 2278, 18
+SHOOT, D, 2276, 2279, 13
+SHOOT, A, 2224, 2221, 0
+SHOOT, A, 2230, 2227, 2
+SHOOT, A, 2236, 2233, 4
+SHOOT, A, 2237, 2234, 0
+SHOOT, A, 2242, 2239, 6
+SHOOT, A, 2243, 2240, 1
+SHOOT, A, 2248, 2245, 8
+SHOOT, A, 2249, 2246, 3
+SHOOT, A, 2254, 2251, 10
+SHOOT, A, 2255, 2252, 5
+SHOOT, A, 2260, 2257, 12
+SHOOT, A, 2261, 2258, 7
+SHOOT, A, 2265, 2262, 0
+SHOOT, A, 2266, 2263, 14
+SHOOT, A, 2267, 2264, 9
+SHOOT, A, 2271, 2268, 2
+SHOOT, A, 2272, 2269, 16
+SHOOT, A, 2273, 2270, 11
+SHOOT, A, 2277, 2274, 6
+SHOOT, A, 2278, 2275, 18
+SHOOT, A, 2279, 2276, 13
+DEAD, A, 2221
+DEAD, A, 2234
+DEAD, A, 2262
+DEAD, D, 2224
+DEAD, D, 2237
+DEAD, D, 2265
+SPAWN, A, 2280, 1, 35, 0
+SPAWN, A, 2281, 2, 35, 63
+SPAWN, A, 2282, 3, 36, 0
+SPAWN, D, 2283, 1, 35, 0
+SPAWN, D, 2284, 2, 35, 63
+SPAWN, D, 2285, 3, 36, 0
+TURN, 381
+PRINT, TURN 381 LOGS:To be spawned at Position(36,63)
+PRINT, To be spawned at Position(37,0)
+PRINT, To be spawned at Position(37,63)
+PRINT, Type 1 at Position (36,63)
+PRINT, Type 2 at Position (37,0)
+PRINT, Type 3 at Position (37,63)
+PRINT, 
+SHOOT, D, 2227, 2230, 0
+SHOOT, D, 2233, 2236, 2
+SHOOT, D, 2239, 2242, 4
+SHOOT, D, 2240, 2243, 0
+SHOOT, D, 2245, 2248, 6
+SHOOT, D, 2246, 2249, 1
+SHOOT, D, 2251, 2254, 8
+SHOOT, D, 2252, 2255, 3
+SHOOT, D, 2257, 2260, 10
+SHOOT, D, 2258, 2261, 5
+SHOOT, D, 2263, 2266, 12
+SHOOT, D, 2264, 2267, 7
+SHOOT, D, 2268, 2271, 0
+SHOOT, D, 2269, 2272, 14
+SHOOT, D, 2270, 2273, 9
+SHOOT, D, 2274, 2277, 2
+SHOOT, D, 2275, 2278, 16
+SHOOT, D, 2276, 2279, 11
+SHOOT, D, 2280, 2283, 6
+SHOOT, D, 2281, 2284, 18
+SHOOT, D, 2282, 2285, 13
+SHOOT, A, 2230, 2227, 0
+SHOOT, A, 2236, 2233, 2
+SHOOT, A, 2242, 2239, 4
+SHOOT, A, 2243, 2240, 0
+SHOOT, A, 2248, 2245, 6
+SHOOT, A, 2249, 2246, 1
+SHOOT, A, 2254, 2251, 8
+SHOOT, A, 2255, 2252, 3
+SHOOT, A, 2260, 2257, 10
+SHOOT, A, 2261, 2258, 5
+SHOOT, A, 2266, 2263, 12
+SHOOT, A, 2267, 2264, 7
+SHOOT, A, 2271, 2268, 0
+SHOOT, A, 2272, 2269, 14
+SHOOT, A, 2273, 2270, 9
+SHOOT, A, 2277, 2274, 2
+SHOOT, A, 2278, 2275, 16
+SHOOT, A, 2279, 2276, 11
+SHOOT, A, 2283, 2280, 6
+SHOOT, A, 2284, 2281, 18
+SHOOT, A, 2285, 2282, 13
+DEAD, A, 2227
+DEAD, A, 2240
+DEAD, A, 2268
+DEAD, D, 2230
+DEAD, D, 2243
+DEAD, D, 2271
+SPAWN, A, 2286, 1, 36, 63
+SPAWN, A, 2287, 2, 37, 0
+SPAWN, A, 2288, 3, 37, 63
+SPAWN, D, 2289, 1, 36, 63
+SPAWN, D, 2290, 2, 37, 0
+SPAWN, D, 2291, 3, 37, 63
+TURN, 382
+PRINT, TURN 382 LOGS:To be spawned at Position(38,0)
+PRINT, To be spawned at Position(38,63)
+PRINT, To be spawned at Position(39,0)
+PRINT, Type 1 at Position (38,0)
+PRINT, Type 2 at Position (38,63)
+PRINT, Type 3 at Position (39,0)
+PRINT, 
+SHOOT, D, 2233, 2236, 0
+SHOOT, D, 2239, 2242, 2
+SHOOT, D, 2245, 2248, 4
+SHOOT, D, 2246, 2249, 0
+SHOOT, D, 2251, 2254, 6
+SHOOT, D, 2252, 2255, 1
+SHOOT, D, 2257, 2260, 8
+SHOOT, D, 2258, 2261, 3
+SHOOT, D, 2263, 2266, 10
+SHOOT, D, 2264, 2267, 5
+SHOOT, D, 2269, 2272, 12
+SHOOT, D, 2270, 2273, 7
+SHOOT, D, 2274, 2277, 0
+SHOOT, D, 2275, 2278, 14
+SHOOT, D, 2276, 2279, 9
+SHOOT, D, 2280, 2283, 2
+SHOOT, D, 2281, 2284, 16
+SHOOT, D, 2282, 2285, 11
+SHOOT, D, 2286, 2289, 6
+SHOOT, D, 2287, 2290, 18
+SHOOT, D, 2288, 2291, 13
+SHOOT, A, 2236, 2233, 0
+SHOOT, A, 2242, 2239, 2
+SHOOT, A, 2248, 2245, 4
+SHOOT, A, 2249, 2246, 0
+SHOOT, A, 2254, 2251, 6
+SHOOT, A, 2255, 2252, 1
+SHOOT, A, 2260, 2257, 8
+SHOOT, A, 2261, 2258, 3
+SHOOT, A, 2266, 2263, 10
+SHOOT, A, 2267, 2264, 5
+SHOOT, A, 2272, 2269, 12
+SHOOT, A, 2273, 2270, 7
+SHOOT, A, 2277, 2274, 0
+SHOOT, A, 2278, 2275, 14
+SHOOT, A, 2279, 2276, 9
+SHOOT, A, 2283, 2280, 2
+SHOOT, A, 2284, 2281, 16
+SHOOT, A, 2285, 2282, 11
+SHOOT, A, 2289, 2286, 6
+SHOOT, A, 2290, 2287, 18
+SHOOT, A, 2291, 2288, 13
+DEAD, A, 2233
+DEAD, A, 2246
+DEAD, A, 2274
+DEAD, D, 2236
+DEAD, D, 2249
+DEAD, D, 2277
+SPAWN, A, 2292, 1, 38, 0
+SPAWN, A, 2293, 2, 38, 63
+SPAWN, A, 2294, 3, 39, 0
+SPAWN, D, 2295, 1, 38, 0
+SPAWN, D, 2296, 2, 38, 63
+SPAWN, D, 2297, 3, 39, 0
+TURN, 383
+PRINT, TURN 383 LOGS:To be spawned at Position(39,63)
+PRINT, To be spawned at Position(40,0)
+PRINT, To be spawned at Position(40,63)
+PRINT, Type 1 at Position (39,63)
+PRINT, Type 2 at Position (40,0)
+PRINT, Type 3 at Position (40,63)
+PRINT, 
+SHOOT, D, 2239, 2242, 0
+SHOOT, D, 2245, 2248, 2
+SHOOT, D, 2251, 2254, 4
+SHOOT, D, 2252, 2255, 0
+SHOOT, D, 2257, 2260, 6
+SHOOT, D, 2258, 2261, 1
+SHOOT, D, 2263, 2266, 8
+SHOOT, D, 2264, 2267, 3
+SHOOT, D, 2269, 2272, 10
+SHOOT, D, 2270, 2273, 5
+SHOOT, D, 2275, 2278, 12
+SHOOT, D, 2276, 2279, 7
+SHOOT, D, 2280, 2283, 0
+SHOOT, D, 2281, 2284, 14
+SHOOT, D, 2282, 2285, 9
+SHOOT, D, 2286, 2289, 2
+SHOOT, D, 2287, 2290, 16
+SHOOT, D, 2288, 2291, 11
+SHOOT, D, 2292, 2295, 6
+SHOOT, D, 2293, 2296, 18
+SHOOT, D, 2294, 2297, 13
+SHOOT, A, 2242, 2239, 0
+SHOOT, A, 2248, 2245, 2
+SHOOT, A, 2254, 2251, 4
+SHOOT, A, 2255, 2252, 0
+SHOOT, A, 2260, 2257, 6
+SHOOT, A, 2261, 2258, 1
+SHOOT, A, 2266, 2263, 8
+SHOOT, A, 2267, 2264, 3
+SHOOT, A, 2272, 2269, 10
+SHOOT, A, 2273, 2270, 5
+SHOOT, A, 2278, 2275, 12
+SHOOT, A, 2279, 2276, 7
+SHOOT, A, 2283, 2280, 0
+SHOOT, A, 2284, 2281, 14
+SHOOT, A, 2285, 2282, 9
+SHOOT, A, 2289, 2286, 2
+SHOOT, A, 2290, 2287, 16
+SHOOT, A, 2291, 2288, 11
+SHOOT, A, 2295, 2292, 6
+SHOOT, A, 2296, 2293, 18
+SHOOT, A, 2297, 2294, 13
+DEAD, A, 2239
+DEAD, A, 2252
+DEAD, A, 2280
+DEAD, D, 2242
+DEAD, D, 2255
+DEAD, D, 2283
+SPAWN, A, 2298, 1, 39, 63
+SPAWN, A, 2299, 2, 40, 0
+SPAWN, A, 2300, 3, 40, 63
+SPAWN, D, 2301, 1, 39, 63
+SPAWN, D, 2302, 2, 40, 0
+SPAWN, D, 2303, 3, 40, 63
+TURN, 384
+PRINT, TURN 384 LOGS:To be spawned at Position(41,0)
+PRINT, To be spawned at Position(41,63)
+PRINT, To be spawned at Position(42,0)
+PRINT, Type 1 at Position (41,0)
+PRINT, Type 2 at Position (41,63)
+PRINT, Type 3 at Position (42,0)
+PRINT, 
+SHOOT, D, 2245, 2248, 0
+SHOOT, D, 2251, 2254, 2
+SHOOT, D, 2257, 2260, 4
+SHOOT, D, 2258, 2261, 0
+SHOOT, D, 2263, 2266, 6
+SHOOT, D, 2264, 2267, 1
+SHOOT, D, 2269, 2272, 8
+SHOOT, D, 2270, 2273, 3
+SHOOT, D, 2275, 2278, 10
+SHOOT, D, 2276, 2279, 5
+SHOOT, D, 2281, 2284, 12
+SHOOT, D, 2282, 2285, 7
+SHOOT, D, 2286, 2289, 0
+SHOOT, D, 2287, 2290, 14
+SHOOT, D, 2288, 2291, 9
+SHOOT, D, 2292, 2295, 2
+SHOOT, D, 2293, 2296, 16
+SHOOT, D, 2294, 2297, 11
+SHOOT, D, 2298, 2301, 6
+SHOOT, D, 2299, 2302, 18
+SHOOT, D, 2300, 2303, 13
+SHOOT, A, 2248, 2245, 0
+SHOOT, A, 2254, 2251, 2
+SHOOT, A, 2260, 2257, 4
+SHOOT, A, 2261, 2258, 0
+SHOOT, A, 2266, 2263, 6
+SHOOT, A, 2267, 2264, 1
+SHOOT, A, 2272, 2269, 8
+SHOOT, A, 2273, 2270, 3
+SHOOT, A, 2278, 2275, 10
+SHOOT, A, 2279, 2276, 5
+SHOOT, A, 2284, 2281, 12
+SHOOT, A, 2285, 2282, 7
+SHOOT, A, 2289, 2286, 0
+SHOOT, A, 2290, 2287, 14
+SHOOT, A, 2291, 2288, 9
+SHOOT, A, 2295, 2292, 2
+SHOOT, A, 2296, 2293, 16
+SHOOT, A, 2297, 2294, 11
+SHOOT, A, 2301, 2298, 6
+SHOOT, A, 2302, 2299, 18
+SHOOT, A, 2303, 2300, 13
+DEAD, A, 2245
+DEAD, A, 2258
+DEAD, A, 2286
+DEAD, D, 2248
+DEAD, D, 2261
+DEAD, D, 2289
+SPAWN, A, 2304, 1, 41, 0
+SPAWN, A, 2305, 2, 41, 63
+SPAWN, A, 2306, 3, 42, 0
+SPAWN, D, 2307, 1, 41, 0
+SPAWN, D, 2308, 2, 41, 63
+SPAWN, D, 2309, 3, 42, 0
+TURN, 385
+PRINT, TURN 385 LOGS:To be spawned at Position(42,63)
+PRINT, To be spawned at Position(43,0)
+PRINT, To be spawned at Position(43,63)
+PRINT, Type 1 at Position (42,63)
+PRINT, Type 2 at Position (43,0)
+PRINT, Type 3 at Position (43,63)
+PRINT, 
+SHOOT, D, 2251, 2254, 0
+SHOOT, D, 2257, 2260, 2
+SHOOT, D, 2263, 2266, 4
+SHOOT, D, 2264, 2267, 0
+SHOOT, D, 2269, 2272, 6
+SHOOT, D, 2270, 2273, 1
+SHOOT, D, 2275, 2278, 8
+SHOOT, D, 2276, 2279, 3
+SHOOT, D, 2281, 2284, 10
+SHOOT, D, 2282, 2285, 5
+SHOOT, D, 2287, 2290, 12
+SHOOT, D, 2288, 2291, 7
+SHOOT, D, 2292, 2295, 0
+SHOOT, D, 2293, 2296, 14
+SHOOT, D, 2294, 2297, 9
+SHOOT, D, 2298, 2301, 2
+SHOOT, D, 2299, 2302, 16
+SHOOT, D, 2300, 2303, 11
+SHOOT, D, 2304, 2307, 6
+SHOOT, D, 2305, 2308, 18
+SHOOT, D, 2306, 2309, 13
+SHOOT, A, 2254, 2251, 0
+SHOOT, A, 2260, 2257, 2
+SHOOT, A, 2266, 2263, 4
+SHOOT, A, 2267, 2264, 0
+SHOOT, A, 2272, 2269, 6
+SHOOT, A, 2273, 2270, 1
+SHOOT, A, 2278, 2275, 8
+SHOOT, A, 2279, 2276, 3
+SHOOT, A, 2284, 2281, 10
+SHOOT, A, 2285, 2282, 5
+SHOOT, A, 2290, 2287, 12
+SHOOT, A, 2291, 2288, 7
+SHOOT, A, 2295, 2292, 0
+SHOOT, A, 2296, 2293, 14
+SHOOT, A, 2297, 2294, 9
+SHOOT, A, 2301, 2298, 2
+SHOOT, A, 2302, 2299, 16
+SHOOT, A, 2303, 2300, 11
+SHOOT, A, 2307, 2304, 6
+SHOOT, A, 2308, 2305, 18
+SHOOT, A, 2309, 2306, 13
+DEAD, A, 2251
+DEAD, A, 2264
+DEAD, A, 2292
+DEAD, D, 2254
+DEAD, D, 2267
+DEAD, D, 2295
+SPAWN, A, 2310, 1, 42, 63
+SPAWN, A, 2311, 2, 43, 0
+SPAWN, A, 2312, 3, 43, 63
+SPAWN, D, 2313, 1, 42, 63
+SPAWN, D, 2314, 2, 43, 0
+SPAWN, D, 2315, 3, 43, 63
+TURN, 386
+PRINT, TURN 386 LOGS:To be spawned at Position(44,0)
+PRINT, To be spawned at Position(44,63)
+PRINT, To be spawned at Position(45,0)
+PRINT, Type 1 at Position (44,0)
+PRINT, Type 2 at Position (44,63)
+PRINT, Type 3 at Position (45,0)
+PRINT, 
+SHOOT, D, 2257, 2260, 0
+SHOOT, D, 2263, 2266, 2
+SHOOT, D, 2269, 2272, 4
+SHOOT, D, 2270, 2273, 0
+SHOOT, D, 2275, 2278, 6
+SHOOT, D, 2276, 2279, 1
+SHOOT, D, 2281, 2284, 8
+SHOOT, D, 2282, 2285, 3
+SHOOT, D, 2287, 2290, 10
+SHOOT, D, 2288, 2291, 5
+SHOOT, D, 2293, 2296, 12
+SHOOT, D, 2294, 2297, 7
+SHOOT, D, 2298, 2301, 0
+SHOOT, D, 2299, 2302, 14
+SHOOT, D, 2300, 2303, 9
+SHOOT, D, 2304, 2307, 2
+SHOOT, D, 2305, 2308, 16
+SHOOT, D, 2306, 2309, 11
+SHOOT, D, 2310, 2313, 6
+SHOOT, D, 2311, 2314, 18
+SHOOT, D, 2312, 2315, 13
+SHOOT, A, 2260, 2257, 0
+SHOOT, A, 2266, 2263, 2
+SHOOT, A, 2272, 2269, 4
+SHOOT, A, 2273, 2270, 0
+SHOOT, A, 2278, 2275, 6
+SHOOT, A, 2279, 2276, 1
+SHOOT, A, 2284, 2281, 8
+SHOOT, A, 2285, 2282, 3
+SHOOT, A, 2290, 2287, 10
+SHOOT, A, 2291, 2288, 5
+SHOOT, A, 2296, 2293, 12
+SHOOT, A, 2297, 2294, 7
+SHOOT, A, 2301, 2298, 0
+SHOOT, A, 2302, 2299, 14
+SHOOT, A, 2303, 2300, 9
+SHOOT, A, 2307, 2304, 2
+SHOOT, A, 2308, 2305, 16
+SHOOT, A, 2309, 2306, 11
+SHOOT, A, 2313, 2310, 6
+SHOOT, A, 2314, 2311, 18
+SHOOT, A, 2315, 2312, 13
+DEAD, A, 2257
+DEAD, A, 2270
+DEAD, A, 2298
+DEAD, D, 2260
+DEAD, D, 2273
+DEAD, D, 2301
+SPAWN, A, 2316, 1, 44, 0
+SPAWN, A, 2317, 2, 44, 63
+SPAWN, A, 2318, 3, 45, 0
+SPAWN, D, 2319, 1, 44, 0
+SPAWN, D, 2320, 2, 44, 63
+SPAWN, D, 2321, 3, 45, 0
+TURN, 387
+PRINT, TURN 387 LOGS:To be spawned at Position(45,63)
+PRINT, To be spawned at Position(46,0)
+PRINT, To be spawned at Position(46,63)
+PRINT, Type 1 at Position (45,63)
+PRINT, Type 2 at Position (46,0)
+PRINT, Type 3 at Position (46,63)
+PRINT, 
+SHOOT, D, 2263, 2266, 0
+SHOOT, D, 2269, 2272, 2
+SHOOT, D, 2275, 2278, 4
+SHOOT, D, 2276, 2279, 0
+SHOOT, D, 2281, 2284, 6
+SHOOT, D, 2282, 2285, 1
+SHOOT, D, 2287, 2290, 8
+SHOOT, D, 2288, 2291, 3
+SHOOT, D, 2293, 2296, 10
+SHOOT, D, 2294, 2297, 5
+SHOOT, D, 2299, 2302, 12
+SHOOT, D, 2300, 2303, 7
+SHOOT, D, 2304, 2307, 0
+SHOOT, D, 2305, 2308, 14
+SHOOT, D, 2306, 2309, 9
+SHOOT, D, 2310, 2313, 2
+SHOOT, D, 2311, 2314, 16
+SHOOT, D, 2312, 2315, 11
+SHOOT, D, 2316, 2319, 6
+SHOOT, D, 2317, 2320, 18
+SHOOT, D, 2318, 2321, 13
+SHOOT, A, 2266, 2263, 0
+SHOOT, A, 2272, 2269, 2
+SHOOT, A, 2278, 2275, 4
+SHOOT, A, 2279, 2276, 0
+SHOOT, A, 2284, 2281, 6
+SHOOT, A, 2285, 2282, 1
+SHOOT, A, 2290, 2287, 8
+SHOOT, A, 2291, 2288, 3
+SHOOT, A, 2296, 2293, 10
+SHOOT, A, 2297, 2294, 5
+SHOOT, A, 2302, 2299, 12
+SHOOT, A, 2303, 2300, 7
+SHOOT, A, 2307, 2304, 0
+SHOOT, A, 2308, 2305, 14
+SHOOT, A, 2309, 2306, 9
+SHOOT, A, 2313, 2310, 2
+SHOOT, A, 2314, 2311, 16
+SHOOT, A, 2315, 2312, 11
+SHOOT, A, 2319, 2316, 6
+SHOOT, A, 2320, 2317, 18
+SHOOT, A, 2321, 2318, 13
+DEAD, A, 2263
+DEAD, A, 2276
+DEAD, A, 2304
+DEAD, D, 2266
+DEAD, D, 2279
+DEAD, D, 2307
+SPAWN, A, 2322, 1, 45, 63
+SPAWN, A, 2323, 2, 46, 0
+SPAWN, A, 2324, 3, 46, 63
+SPAWN, D, 2325, 1, 45, 63
+SPAWN, D, 2326, 2, 46, 0
+SPAWN, D, 2327, 3, 46, 63
+TURN, 388
+PRINT, TURN 388 LOGS:To be spawned at Position(47,0)
+PRINT, To be spawned at Position(47,63)
+PRINT, To be spawned at Position(48,0)
+PRINT, Type 1 at Position (47,0)
+PRINT, Type 2 at Position (47,63)
+PRINT, Type 3 at Position (48,0)
+PRINT, 
+SHOOT, D, 2269, 2272, 0
+SHOOT, D, 2275, 2278, 2
+SHOOT, D, 2281, 2284, 4
+SHOOT, D, 2282, 2285, 0
+SHOOT, D, 2287, 2290, 6
+SHOOT, D, 2288, 2291, 1
+SHOOT, D, 2293, 2296, 8
+SHOOT, D, 2294, 2297, 3
+SHOOT, D, 2299, 2302, 10
+SHOOT, D, 2300, 2303, 5
+SHOOT, D, 2305, 2308, 12
+SHOOT, D, 2306, 2309, 7
+SHOOT, D, 2310, 2313, 0
+SHOOT, D, 2311, 2314, 14
+SHOOT, D, 2312, 2315, 9
+SHOOT, D, 2316, 2319, 2
+SHOOT, D, 2317, 2320, 16
+SHOOT, D, 2318, 2321, 11
+SHOOT, D, 2322, 2325, 6
+SHOOT, D, 2323, 2326, 18
+SHOOT, D, 2324, 2327, 13
+SHOOT, A, 2272, 2269, 0
+SHOOT, A, 2278, 2275, 2
+SHOOT, A, 2284, 2281, 4
+SHOOT, A, 2285, 2282, 0
+SHOOT, A, 2290, 2287, 6
+SHOOT, A, 2291, 2288, 1
+SHOOT, A, 2296, 2293, 8
+SHOOT, A, 2297, 2294, 3
+SHOOT, A, 2302, 2299, 10
+SHOOT, A, 2303, 2300, 5
+SHOOT, A, 2308, 2305, 12
+SHOOT, A, 2309, 2306, 7
+SHOOT, A, 2313, 2310, 0
+SHOOT, A, 2314, 2311, 14
+SHOOT, A, 2315, 2312, 9
+SHOOT, A, 2319, 2316, 2
+SHOOT, A, 2320, 2317, 16
+SHOOT, A, 2321, 2318, 11
+SHOOT, A, 2325, 2322, 6
+SHOOT, A, 2326, 2323, 18
+SHOOT, A, 2327, 2324, 13
+DEAD, A, 2269
+DEAD, A, 2282
+DEAD, A, 2310
+DEAD, D, 2272
+DEAD, D, 2285
+DEAD, D, 2313
+SPAWN, A, 2328, 1, 47, 0
+SPAWN, A, 2329, 2, 47, 63
+SPAWN, A, 2330, 3, 48, 0
+SPAWN, D, 2331, 1, 47, 0
+SPAWN, D, 2332, 2, 47, 63
+SPAWN, D, 2333, 3, 48, 0
+TURN, 389
+PRINT, TURN 389 LOGS:To be spawned at Position(48,63)
+PRINT, To be spawned at Position(49,0)
+PRINT, To be spawned at Position(49,63)
+PRINT, Type 1 at Position (48,63)
+PRINT, Type 2 at Position (49,0)
+PRINT, Type 3 at Position (49,63)
+PRINT, 
+SHOOT, D, 2275, 2278, 0
+SHOOT, D, 2281, 2284, 2
+SHOOT, D, 2287, 2290, 4
+SHOOT, D, 2288, 2291, 0
+SHOOT, D, 2293, 2296, 6
+SHOOT, D, 2294, 2297, 1
+SHOOT, D, 2299, 2302, 8
+SHOOT, D, 2300, 2303, 3
+SHOOT, D, 2305, 2308, 10
+SHOOT, D, 2306, 2309, 5
+SHOOT, D, 2311, 2314, 12
+SHOOT, D, 2312, 2315, 7
+SHOOT, D, 2316, 2319, 0
+SHOOT, D, 2317, 2320, 14
+SHOOT, D, 2318, 2321, 9
+SHOOT, D, 2322, 2325, 2
+SHOOT, D, 2323, 2326, 16
+SHOOT, D, 2324, 2327, 11
+SHOOT, D, 2328, 2331, 6
+SHOOT, D, 2329, 2332, 18
+SHOOT, D, 2330, 2333, 13
+SHOOT, A, 2278, 2275, 0
+SHOOT, A, 2284, 2281, 2
+SHOOT, A, 2290, 2287, 4
+SHOOT, A, 2291, 2288, 0
+SHOOT, A, 2296, 2293, 6
+SHOOT, A, 2297, 2294, 1
+SHOOT, A, 2302, 2299, 8
+SHOOT, A, 2303, 2300, 3
+SHOOT, A, 2308, 2305, 10
+SHOOT, A, 2309, 2306, 5
+SHOOT, A, 2314, 2311, 12
+SHOOT, A, 2315, 2312, 7
+SHOOT, A, 2319, 2316, 0
+SHOOT, A, 2320, 2317, 14
+SHOOT, A, 2321, 2318, 9
+SHOOT, A, 2325, 2322, 2
+SHOOT, A, 2326, 2323, 16
+SHOOT, A, 2327, 2324, 11
+SHOOT, A, 2331, 2328, 6
+SHOOT, A, 2332, 2329, 18
+SHOOT, A, 2333, 2330, 13
+DEAD, A, 2275
+DEAD, A, 2288
+DEAD, A, 2316
+DEAD, D, 2278
+DEAD, D, 2291
+DEAD, D, 2319
+SPAWN, A, 2334, 1, 48, 63
+SPAWN, A, 2335, 2, 49, 0
+SPAWN, A, 2336, 3, 49, 63
+SPAWN, D, 2337, 1, 48, 63
+SPAWN, D, 2338, 2, 49, 0
+SPAWN, D, 2339, 3, 49, 63
+TURN, 390
+PRINT, TURN 390 LOGS:To be spawned at Position(50,0)
+PRINT, To be spawned at Position(50,63)
+PRINT, To be spawned at Position(51,0)
+PRINT, Type 1 at Position (50,0)
+PRINT, Type 2 at Position (50,63)
+PRINT, Type 3 at Position (51,0)
+PRINT, 
+SHOOT, D, 2281, 2284, 0
+SHOOT, D, 2287, 2290, 2
+SHOOT, D, 2293, 2296, 4
+SHOOT, D, 2294, 2297, 0
+SHOOT, D, 2299, 2302, 6
+SHOOT, D, 2300, 2303, 1
+SHOOT, D, 2305, 2308, 8
+SHOOT, D, 2306, 2309, 3
+SHOOT, D, 2311, 2314, 10
+SHOOT, D, 2312, 2315, 5
+SHOOT, D, 2317, 2320, 12
+SHOOT, D, 2318, 2321, 7
+SHOOT, D, 2322, 2325, 0
+SHOOT, D, 2323, 2326, 14
+SHOOT, D, 2324, 2327, 9
+SHOOT, D, 2328, 2331, 2
+SHOOT, D, 2329, 2332, 16
+SHOOT, D, 2330, 2333, 11
+SHOOT, D, 2334, 2337, 6
+SHOOT, D, 2335, 2338, 18
+SHOOT, D, 2336, 2339, 13
+SHOOT, A, 2284, 2281, 0
+SHOOT, A, 2290, 2287, 2
+SHOOT, A, 2296, 2293, 4
+SHOOT, A, 2297, 2294, 0
+SHOOT, A, 2302, 2299, 6
+SHOOT, A, 2303, 2300, 1
+SHOOT, A, 2308, 2305, 8
+SHOOT, A, 2309, 2306, 3
+SHOOT, A, 2314, 2311, 10
+SHOOT, A, 2315, 2312, 5
+SHOOT, A, 2320, 2317, 12
+SHOOT, A, 2321, 2318, 7
+SHOOT, A, 2325, 2322, 0
+SHOOT, A, 2326, 2323, 14
+SHOOT, A, 2327, 2324, 9
+SHOOT, A, 2331, 2328, 2
+SHOOT, A, 2332, 2329, 16
+SHOOT, A, 2333, 2330, 11
+SHOOT, A, 2337, 2334, 6
+SHOOT, A, 2338, 2335, 18
+SHOOT, A, 2339, 2336, 13
+DEAD, A, 2281
+DEAD, A, 2294
+DEAD, A, 2322
+DEAD, D, 2284
+DEAD, D, 2297
+DEAD, D, 2325
+SPAWN, A, 2340, 1, 50, 0
+SPAWN, A, 2341, 2, 50, 63
+SPAWN, A, 2342, 3, 51, 0
+SPAWN, D, 2343, 1, 50, 0
+SPAWN, D, 2344, 2, 50, 63
+SPAWN, D, 2345, 3, 51, 0
+TURN, 391
+PRINT, TURN 391 LOGS:To be spawned at Position(51,63)
+PRINT, To be spawned at Position(52,0)
+PRINT, To be spawned at Position(52,63)
+PRINT, Type 1 at Position (51,63)
+PRINT, Type 2 at Position (52,0)
+PRINT, Type 3 at Position (52,63)
+PRINT, 
+SHOOT, D, 2287, 2290, 0
+SHOOT, D, 2293, 2296, 2
+SHOOT, D, 2299, 2302, 4
+SHOOT, D, 2300, 2303, 0
+SHOOT, D, 2305, 2308, 6
+SHOOT, D, 2306, 2309, 1
+SHOOT, D, 2311, 2314, 8
+SHOOT, D, 2312, 2315, 3
+SHOOT, D, 2317, 2320, 10
+SHOOT, D, 2318, 2321, 5
+SHOOT, D, 2323, 2326, 12
+SHOOT, D, 2324, 2327, 7
+SHOOT, D, 2328, 2331, 0
+SHOOT, D, 2329, 2332, 14
+SHOOT, D, 2330, 2333, 9
+SHOOT, D, 2334, 2337, 2
+SHOOT, D, 2335, 2338, 16
+SHOOT, D, 2336, 2339, 11
+SHOOT, D, 2340, 2343, 6
+SHOOT, D, 2341, 2344, 18
+SHOOT, D, 2342, 2345, 13
+SHOOT, A, 2290, 2287, 0
+SHOOT, A, 2296, 2293, 2
+SHOOT, A, 2302, 2299, 4
+SHOOT, A, 2303, 2300, 0
+SHOOT, A, 2308, 2305, 6
+SHOOT, A, 2309, 2306, 1
+SHOOT, A, 2314, 2311, 8
+SHOOT, A, 2315, 2312, 3
+SHOOT, A, 2320, 2317, 10
+SHOOT, A, 2321, 2318, 5
+SHOOT, A, 2326, 2323, 12
+SHOOT, A, 2327, 2324, 7
+SHOOT, A, 2331, 2328, 0
+SHOOT, A, 2332, 2329, 14
+SHOOT, A, 2333, 2330, 9
+SHOOT, A, 2337, 2334, 2
+SHOOT, A, 2338, 2335, 16
+SHOOT, A, 2339, 2336, 11
+SHOOT, A, 2343, 2340, 6
+SHOOT, A, 2344, 2341, 18
+SHOOT, A, 2345, 2342, 13
+DEAD, A, 2287
+DEAD, A, 2300
+DEAD, A, 2328
+DEAD, D, 2290
+DEAD, D, 2303
+DEAD, D, 2331
+SPAWN, A, 2346, 1, 51, 63
+SPAWN, A, 2347, 2, 52, 0
+SPAWN, A, 2348, 3, 52, 63
+SPAWN, D, 2349, 1, 51, 63
+SPAWN, D, 2350, 2, 52, 0
+SPAWN, D, 2351, 3, 52, 63
+TURN, 392
+PRINT, TURN 392 LOGS:To be spawned at Position(53,0)
+PRINT, To be spawned at Position(53,63)
+PRINT, To be spawned at Position(54,0)
+PRINT, Type 1 at Position (53,0)
+PRINT, Type 2 at Position (53,63)
+PRINT, Type 3 at Position (54,0)
+PRINT, 
+SHOOT, D, 2293, 2296, 0
+SHOOT, D, 2299, 2302, 2
+SHOOT, D, 2305, 2308, 4
+SHOOT, D, 2306, 2309, 0
+SHOOT, D, 2311, 2314, 6
+SHOOT, D, 2312, 2315, 1
+SHOOT, D, 2317, 2320, 8
+SHOOT, D, 2318, 2321, 3
+SHOOT, D, 2323, 2326, 10
+SHOOT, D, 2324, 2327, 5
+SHOOT, D, 2329, 2332, 12
+SHOOT, D, 2330, 2333, 7
+SHOOT, D, 2334, 2337, 0
+SHOOT, D, 2335, 2338, 14
+SHOOT, D, 2336, 2339, 9
+SHOOT, D, 2340, 2343, 2
+SHOOT, D, 2341, 2344, 16
+SHOOT, D, 2342, 2345, 11
+SHOOT, D, 2346, 2349, 6
+SHOOT, D, 2347, 2350, 18
+SHOOT, D, 2348, 2351, 13
+SHOOT, A, 2296, 2293, 0
+SHOOT, A, 2302, 2299, 2
+SHOOT, A, 2308, 2305, 4
+SHOOT, A, 2309, 2306, 0
+SHOOT, A, 2314, 2311, 6
+SHOOT, A, 2315, 2312, 1
+SHOOT, A, 2320, 2317, 8
+SHOOT, A, 2321, 2318, 3
+SHOOT, A, 2326, 2323, 10
+SHOOT, A, 2327, 2324, 5
+SHOOT, A, 2332, 2329, 12
+SHOOT, A, 2333, 2330, 7
+SHOOT, A, 2337, 2334, 0
+SHOOT, A, 2338, 2335, 14
+SHOOT, A, 2339, 2336, 9
+SHOOT, A, 2343, 2340, 2
+SHOOT, A, 2344, 2341, 16
+SHOOT, A, 2345, 2342, 11
+SHOOT, A, 2349, 2346, 6
+SHOOT, A, 2350, 2347, 18
+SHOOT, A, 2351, 2348, 13
+DEAD, A, 2293
+DEAD, A, 2306
+DEAD, A, 2334
+DEAD, D, 2296
+DEAD, D, 2309
+DEAD, D, 2337
+SPAWN, A, 2352, 1, 53, 0
+SPAWN, A, 2353, 2, 53, 63
+SPAWN, A, 2354, 3, 54, 0
+SPAWN, D, 2355, 1, 53, 0
+SPAWN, D, 2356, 2, 53, 63
+SPAWN, D, 2357, 3, 54, 0
+TURN, 393
+PRINT, TURN 393 LOGS:To be spawned at Position(54,63)
+PRINT, To be spawned at Position(55,0)
+PRINT, To be spawned at Position(55,63)
+PRINT, Type 1 at Position (54,63)
+PRINT, Type 2 at Position (55,0)
+PRINT, Type 3 at Position (55,63)
+PRINT, 
+SHOOT, D, 2299, 2302, 0
+SHOOT, D, 2305, 2308, 2
+SHOOT, D, 2311, 2314, 4
+SHOOT, D, 2312, 2315, 0
+SHOOT, D, 2317, 2320, 6
+SHOOT, D, 2318, 2321, 1
+SHOOT, D, 2323, 2326, 8
+SHOOT, D, 2324, 2327, 3
+SHOOT, D, 2329, 2332, 10
+SHOOT, D, 2330, 2333, 5
+SHOOT, D, 2335, 2338, 12
+SHOOT, D, 2336, 2339, 7
+SHOOT, D, 2340, 2343, 0
+SHOOT, D, 2341, 2344, 14
+SHOOT, D, 2342, 2345, 9
+SHOOT, D, 2346, 2349, 2
+SHOOT, D, 2347, 2350, 16
+SHOOT, D, 2348, 2351, 11
+SHOOT, D, 2352, 2355, 6
+SHOOT, D, 2353, 2356, 18
+SHOOT, D, 2354, 2357, 13
+SHOOT, A, 2302, 2299, 0
+SHOOT, A, 2308, 2305, 2
+SHOOT, A, 2314, 2311, 4
+SHOOT, A, 2315, 2312, 0
+SHOOT, A, 2320, 2317, 6
+SHOOT, A, 2321, 2318, 1
+SHOOT, A, 2326, 2323, 8
+SHOOT, A, 2327, 2324, 3
+SHOOT, A, 2332, 2329, 10
+SHOOT, A, 2333, 2330, 5
+SHOOT, A, 2338, 2335, 12
+SHOOT, A, 2339, 2336, 7
+SHOOT, A, 2343, 2340, 0
+SHOOT, A, 2344, 2341, 14
+SHOOT, A, 2345, 2342, 9
+SHOOT, A, 2349, 2346, 2
+SHOOT, A, 2350, 2347, 16
+SHOOT, A, 2351, 2348, 11
+SHOOT, A, 2355, 2352, 6
+SHOOT, A, 2356, 2353, 18
+SHOOT, A, 2357, 2354, 13
+DEAD, A, 2299
+DEAD, A, 2312
+DEAD, A, 2340
+DEAD, D, 2302
+DEAD, D, 2315
+DEAD, D, 2343
+SPAWN, A, 2358, 1, 54, 63
+SPAWN, A, 2359, 2, 55, 0
+SPAWN, A, 2360, 3, 55, 63
+SPAWN, D, 2361, 1, 54, 63
+SPAWN, D, 2362, 2, 55, 0
+SPAWN, D, 2363, 3, 55, 63
+TURN, 394
+PRINT, TURN 394 LOGS:To be spawned at Position(56,0)
+PRINT, To be spawned at Position(56,63)
+PRINT, To be spawned at Position(57,0)
+PRINT, Type 1 at Position (56,0)
+PRINT, Type 2 at Position (56,63)
+PRINT, Type 3 at Position (57,0)
+PRINT, 
+SHOOT, D, 2305, 2308, 0
+SHOOT, D, 2311, 2314, 2
+SHOOT, D, 2317, 2320, 4
+SHOOT, D, 2318, 2321, 0
+SHOOT, D, 2323, 2326, 6
+SHOOT, D, 2324, 2327, 1
+SHOOT, D, 2329, 2332, 8
+SHOOT, D, 2330, 2333, 3
+SHOOT, D, 2335, 2338, 10
+SHOOT, D, 2336, 2339, 5
+SHOOT, D, 2341, 2344, 12
+SHOOT, D, 2342, 2345, 7
+SHOOT, D, 2346, 2349, 0
+SHOOT, D, 2347, 2350, 14
+SHOOT, D, 2348, 2351, 9
+SHOOT, D, 2352, 2355, 2
+SHOOT, D, 2353, 2356, 16
+SHOOT, D, 2354, 2357, 11
+SHOOT, D, 2358, 2361, 6
+SHOOT, D, 2359, 2362, 18
+SHOOT, D, 2360, 2363, 13
+SHOOT, A, 2308, 2305, 0
+SHOOT, A, 2314, 2311, 2
+SHOOT, A, 2320, 2317, 4
+SHOOT, A, 2321, 2318, 0
+SHOOT, A, 2326, 2323, 6
+SHOOT, A, 2327, 2324, 1
+SHOOT, A, 2332, 2329, 8
+SHOOT, A, 2333, 2330, 3
+SHOOT, A, 2338, 2335, 10
+SHOOT, A, 2339, 2336, 5
+SHOOT, A, 2344, 2341, 12
+SHOOT, A, 2345, 2342, 7
+SHOOT, A, 2349, 2346, 0
+SHOOT, A, 2350, 2347, 14
+SHOOT, A, 2351, 2348, 9
+SHOOT, A, 2355, 2352, 2
+SHOOT, A, 2356, 2353, 16
+SHOOT, A, 2357, 2354, 11
+SHOOT, A, 2361, 2358, 6
+SHOOT, A, 2362, 2359, 18
+SHOOT, A, 2363, 2360, 13
+DEAD, A, 2305
+DEAD, A, 2318
+DEAD, A, 2346
+DEAD, D, 2308
+DEAD, D, 2321
+DEAD, D, 2349
+SPAWN, A, 2364, 1, 56, 0
+SPAWN, A, 2365, 2, 56, 63
+SPAWN, A, 2366, 3, 57, 0
+SPAWN, D, 2367, 1, 56, 0
+SPAWN, D, 2368, 2, 56, 63
+SPAWN, D, 2369, 3, 57, 0
+TURN, 395
+PRINT, TURN 395 LOGS:To be spawned at Position(57,63)
+PRINT, To be spawned at Position(58,0)
+PRINT, To be spawned at Position(58,63)
+PRINT, Type 1 at Position (57,63)
+PRINT, Type 2 at Position (58,0)
+PRINT, Type 3 at Position (58,63)
+PRINT, 
+SHOOT, D, 2311, 2314, 0
+SHOOT, D, 2317, 2320, 2
+SHOOT, D, 2323, 2326, 4
+SHOOT, D, 2324, 2327, 0
+SHOOT, D, 2329, 2332, 6
+SHOOT, D, 2330, 2333, 1
+SHOOT, D, 2335, 2338, 8
+SHOOT, D, 2336, 2339, 3
+SHOOT, D, 2341, 2344, 10
+SHOOT, D, 2342, 2345, 5
+SHOOT, D, 2347, 2350, 12
+SHOOT, D, 2348, 2351, 7
+SHOOT, D, 2352, 2355, 0
+SHOOT, D, 2353, 2356, 14
+SHOOT, D, 2354, 2357, 9
+SHOOT, D, 2358, 2361, 2
+SHOOT, D, 2359, 2362, 16
+SHOOT, D, 2360, 2363, 11
+SHOOT, D, 2364, 2367, 6
+SHOOT, D, 2365, 2368, 18
+SHOOT, D, 2366, 2369, 13
+SHOOT, A, 2314, 2311, 0
+SHOOT, A, 2320, 2317, 2
+SHOOT, A, 2326, 2323, 4
+SHOOT, A, 2327, 2324, 0
+SHOOT, A, 2332, 2329, 6
+SHOOT, A, 2333, 2330, 1
+SHOOT, A, 2338, 2335, 8
+SHOOT, A, 2339, 2336, 3
+SHOOT, A, 2344, 2341, 10
+SHOOT, A, 2345, 2342, 5
+SHOOT, A, 2350, 2347, 12
+SHOOT, A, 2351, 2348, 7
+SHOOT, A, 2355, 2352, 0
+SHOOT, A, 2356, 2353, 14
+SHOOT, A, 2357, 2354, 9
+SHOOT, A, 2361, 2358, 2
+SHOOT, A, 2362, 2359, 16
+SHOOT, A, 2363, 2360, 11
+SHOOT, A, 2367, 2364, 6
+SHOOT, A, 2368, 2365, 18
+SHOOT, A, 2369, 2366, 13
+DEAD, A, 2311
+DEAD, A, 2324
+DEAD, A, 2352
+DEAD, D, 2314
+DEAD, D, 2327
+DEAD, D, 2355
+SPAWN, A, 2370, 1, 57, 63
+SPAWN, A, 2371, 2, 58, 0
+SPAWN, A, 2372, 3, 58, 63
+SPAWN, D, 2373, 1, 57, 63
+SPAWN, D, 2374, 2, 58, 0
+SPAWN, D, 2375, 3, 58, 63
+TURN, 396
+PRINT, TURN 396 LOGS:To be spawned at Position(59,0)
+PRINT, To be spawned at Position(59,63)
+PRINT, To be spawned at Position(60,0)
+PRINT, Type 1 at Position (59,0)
+PRINT, Type 2 at Position (59,63)
+PRINT, Type 3 at Position (60,0)
+PRINT, 
+SHOOT, D, 2317, 2320, 0
+SHOOT, D, 2323, 2326, 2
+SHOOT, D, 2329, 2332, 4
+SHOOT, D, 2330, 2333, 0
+SHOOT, D, 2335, 2338, 6
+SHOOT, D, 2336, 2339, 1
+SHOOT, D, 2341, 2344, 8
+SHOOT, D, 2342, 2345, 3
+SHOOT, D, 2347, 2350, 10
+SHOOT, D, 2348, 2351, 5
+SHOOT, D, 2353, 2356, 12
+SHOOT, D, 2354, 2357, 7
+SHOOT, D, 2358, 2361, 0
+SHOOT, D, 2359, 2362, 14
+SHOOT, D, 2360, 2363, 9
+SHOOT, D, 2364, 2367, 2
+SHOOT, D, 2365, 2368, 16
+SHOOT, D, 2366, 2369, 11
+SHOOT, D, 2370, 2373, 6
+SHOOT, D, 2371, 2374, 18
+SHOOT, D, 2372, 2375, 13
+SHOOT, A, 2320, 2317, 0
+SHOOT, A, 2326, 2323, 2
+SHOOT, A, 2332, 2329, 4
+SHOOT, A, 2333, 2330, 0
+SHOOT, A, 2338, 2335, 6
+SHOOT, A, 2339, 2336, 1
+SHOOT, A, 2344, 2341, 8
+SHOOT, A, 2345, 2342, 3
+SHOOT, A, 2350, 2347, 10
+SHOOT, A, 2351, 2348, 5
+SHOOT, A, 2356, 2353, 12
+SHOOT, A, 2357, 2354, 7
+SHOOT, A, 2361, 2358, 0
+SHOOT, A, 2362, 2359, 14
+SHOOT, A, 2363, 2360, 9
+SHOOT, A, 2367, 2364, 2
+SHOOT, A, 2368, 2365, 16
+SHOOT, A, 2369, 2366, 11
+SHOOT, A, 2373, 2370, 6
+SHOOT, A, 2374, 2371, 18
+SHOOT, A, 2375, 2372, 13
+DEAD, A, 2317
+DEAD, A, 2330
+DEAD, A, 2358
+DEAD, D, 2320
+DEAD, D, 2333
+DEAD, D, 2361
+SPAWN, A, 2376, 1, 59, 0
+SPAWN, A, 2377, 2, 59, 63
+SPAWN, A, 2378, 3, 60, 0
+SPAWN, D, 2379, 1, 59, 0
+SPAWN, D, 2380, 2, 59, 63
+SPAWN, D, 2381, 3, 60, 0
+TURN, 397
+PRINT, TURN 397 LOGS:To be spawned at Position(60,63)
+PRINT, To be spawned at Position(61,0)
+PRINT, To be spawned at Position(61,63)
+PRINT, Type 1 at Position (60,63)
+PRINT, Type 2 at Position (61,0)
+PRINT, Type 3 at Position (61,63)
+PRINT, 
+SHOOT, D, 2323, 2326, 0
+SHOOT, D, 2329, 2332, 2
+SHOOT, D, 2335, 2338, 4
+SHOOT, D, 2336, 2339, 0
+SHOOT, D, 2341, 2344, 6
+SHOOT, D, 2342, 2345, 1
+SHOOT, D, 2347, 2350, 8
+SHOOT, D, 2348, 2351, 3
+SHOOT, D, 2353, 2356, 10
+SHOOT, D, 2354, 2357, 5
+SHOOT, D, 2359, 2362, 12
+SHOOT, D, 2360, 2363, 7
+SHOOT, D, 2364, 2367, 0
+SHOOT, D, 2365, 2368, 14
+SHOOT, D, 2366, 2369, 9
+SHOOT, D, 2370, 2373, 2
+SHOOT, D, 2371, 2374, 16
+SHOOT, D, 2372, 2375, 11
+SHOOT, D, 2376, 2379, 6
+SHOOT, D, 2377, 2380, 18
+SHOOT, D, 2378, 2381, 13
+SHOOT, A, 2326, 2323, 0
+SHOOT, A, 2332, 2329, 2
+SHOOT, A, 2338, 2335, 4
+SHOOT, A, 2339, 2336, 0
+SHOOT, A, 2344, 2341, 6
+SHOOT, A, 2345, 2342, 1
+SHOOT, A, 2350, 2347, 8
+SHOOT, A, 2351, 2348, 3
+SHOOT, A, 2356, 2353, 10
+SHOOT, A, 2357, 2354, 5
+SHOOT, A, 2362, 2359, 12
+SHOOT, A, 2363, 2360, 7
+SHOOT, A, 2367, 2364, 0
+SHOOT, A, 2368, 2365, 14
+SHOOT, A, 2369, 2366, 9
+SHOOT, A, 2373, 2370, 2
+SHOOT, A, 2374, 2371, 16
+SHOOT, A, 2375, 2372, 11
+SHOOT, A, 2379, 2376, 6
+SHOOT, A, 2380, 2377, 18
+SHOOT, A, 2381, 2378, 13
+DEAD, A, 2323
+DEAD, A, 2336
+DEAD, A, 2364
+DEAD, D, 2326
+DEAD, D, 2339
+DEAD, D, 2367
+SPAWN, A, 2382, 1, 60, 63
+SPAWN, A, 2383, 2, 61, 0
+SPAWN, A, 2384, 3, 61, 63
+SPAWN, D, 2385, 1, 60, 63
+SPAWN, D, 2386, 2, 61, 0
+SPAWN, D, 2387, 3, 61, 63
+TURN, 398
+PRINT, TURN 398 LOGS:To be spawned at Position(62,0)
+PRINT, To be spawned at Position(62,63)
+PRINT, To be spawned at Position(63,0)
+PRINT, Type 1 at Position (62,0)
+PRINT, Type 2 at Position (62,63)
+PRINT, Type 3 at Position (63,0)
+PRINT, 
+SHOOT, D, 2329, 2332, 0
+SHOOT, D, 2335, 2338, 2
+SHOOT, D, 2341, 2344, 4
+SHOOT, D, 2342, 2345, 0
+SHOOT, D, 2347, 2350, 6
+SHOOT, D, 2348, 2351, 1
+SHOOT, D, 2353, 2356, 8
+SHOOT, D, 2354, 2357, 3
+SHOOT, D, 2359, 2362, 10
+SHOOT, D, 2360, 2363, 5
+SHOOT, D, 2365, 2368, 12
+SHOOT, D, 2366, 2369, 7
+SHOOT, D, 2370, 2373, 0
+SHOOT, D, 2371, 2374, 14
+SHOOT, D, 2372, 2375, 9
+SHOOT, D, 2376, 2379, 2
+SHOOT, D, 2377, 2380, 16
+SHOOT, D, 2378, 2381, 11
+SHOOT, D, 2382, 2385, 6
+SHOOT, D, 2383, 2386, 18
+SHOOT, D, 2384, 2387, 13
+SHOOT, A, 2332, 2329, 0
+SHOOT, A, 2338, 2335, 2
+SHOOT, A, 2344, 2341, 4
+SHOOT, A, 2345, 2342, 0
+SHOOT, A, 2350, 2347, 6
+SHOOT, A, 2351, 2348, 1
+SHOOT, A, 2356, 2353, 8
+SHOOT, A, 2357, 2354, 3
+SHOOT, A, 2362, 2359, 10
+SHOOT, A, 2363, 2360, 5
+SHOOT, A, 2368, 2365, 12
+SHOOT, A, 2369, 2366, 7
+SHOOT, A, 2373, 2370, 0
+SHOOT, A, 2374, 2371, 14
+SHOOT, A, 2375, 2372, 9
+SHOOT, A, 2379, 2376, 2
+SHOOT, A, 2380, 2377, 16
+SHOOT, A, 2381, 2378, 11
+SHOOT, A, 2385, 2382, 6
+SHOOT, A, 2386, 2383, 18
+SHOOT, A, 2387, 2384, 13
+DEAD, A, 2329
+DEAD, A, 2342
+DEAD, A, 2370
+DEAD, D, 2332
+DEAD, D, 2345
+DEAD, D, 2373
+SPAWN, A, 2388, 1, 62, 0
+SPAWN, A, 2389, 2, 62, 63
+SPAWN, A, 2390, 3, 63, 0
+SPAWN, D, 2391, 1, 62, 0
+SPAWN, D, 2392, 2, 62, 63
+SPAWN, D, 2393, 3, 63, 0
+TURN, 399
+PRINT, TURN 399 LOGS:To be spawned at Position(63,1)
+PRINT, To be spawned at Position(63,2)
+PRINT, To be spawned at Position(63,3)
+PRINT, Type 1 at Position (63,1)
+PRINT, Type 2 at Position (63,2)
+PRINT, Type 3 at Position (63,3)
+PRINT, 
+SHOOT, D, 2335, 2338, 0
+SHOOT, D, 2341, 2344, 2
+SHOOT, D, 2347, 2350, 4
+SHOOT, D, 2348, 2351, 0
+SHOOT, D, 2353, 2356, 6
+SHOOT, D, 2354, 2357, 1
+SHOOT, D, 2359, 2362, 8
+SHOOT, D, 2360, 2363, 3
+SHOOT, D, 2365, 2368, 10
+SHOOT, D, 2366, 2369, 5
+SHOOT, D, 2371, 2374, 12
+SHOOT, D, 2372, 2375, 7
+SHOOT, D, 2376, 2379, 0
+SHOOT, D, 2377, 2380, 14
+SHOOT, D, 2378, 2381, 9
+SHOOT, D, 2382, 2385, 2
+SHOOT, D, 2383, 2386, 16
+SHOOT, D, 2384, 2387, 11
+SHOOT, D, 2388, 2391, 6
+SHOOT, D, 2389, 2392, 18
+SHOOT, D, 2390, 2393, 13
+SHOOT, A, 2338, 2335, 0
+SHOOT, A, 2344, 2341, 2
+SHOOT, A, 2350, 2347, 4
+SHOOT, A, 2351, 2348, 0
+SHOOT, A, 2356, 2353, 6
+SHOOT, A, 2357, 2354, 1
+SHOOT, A, 2362, 2359, 8
+SHOOT, A, 2363, 2360, 3
+SHOOT, A, 2368, 2365, 10
+SHOOT, A, 2369, 2366, 5
+SHOOT, A, 2374, 2371, 12
+SHOOT, A, 2375, 2372, 7
+SHOOT, A, 2379, 2376, 0
+SHOOT, A, 2380, 2377, 14
+SHOOT, A, 2381, 2378, 9
+SHOOT, A, 2385, 2382, 2
+SHOOT, A, 2386, 2383, 16
+SHOOT, A, 2387, 2384, 11
+SHOOT, A, 2391, 2388, 6
+SHOOT, A, 2392, 2389, 18
+SHOOT, A, 2393, 2390, 13
+DEAD, A, 2335
+DEAD, A, 2348
+DEAD, A, 2376
+DEAD, D, 2338
+DEAD, D, 2351
+DEAD, D, 2379
+SPAWN, A, 2394, 1, 63, 1
+SPAWN, A, 2395, 2, 63, 2
+SPAWN, A, 2396, 3, 63, 3
+SPAWN, D, 2397, 1, 63, 1
+SPAWN, D, 2398, 2, 63, 2
+SPAWN, D, 2399, 3, 63, 3
+TURN, 400
+PRINT, TURN 400 LOGS:To be spawned at Position(63,4)
+PRINT, To be spawned at Position(63,5)
+PRINT, To be spawned at Position(63,6)
+PRINT, Type 1 at Position (63,4)
+PRINT, Type 2 at Position (63,5)
+PRINT, Type 3 at Position (63,6)
+PRINT, 
+SHOOT, D, 2341, 2344, 0
+SHOOT, D, 2347, 2350, 2
+SHOOT, D, 2353, 2356, 4
+SHOOT, D, 2354, 2357, 0
+SHOOT, D, 2359, 2362, 6
+SHOOT, D, 2360, 2363, 1
+SHOOT, D, 2365, 2368, 8
+SHOOT, D, 2366, 2369, 3
+SHOOT, D, 2371, 2374, 10
+SHOOT, D, 2372, 2375, 5
+SHOOT, D, 2377, 2380, 12
+SHOOT, D, 2378, 2381, 7
+SHOOT, D, 2382, 2385, 0
+SHOOT, D, 2383, 2386, 14
+SHOOT, D, 2384, 2387, 9
+SHOOT, D, 2388, 2391, 2
+SHOOT, D, 2389, 2392, 16
+SHOOT, D, 2390, 2393, 11
+SHOOT, D, 2394, 2397, 6
+SHOOT, D, 2395, 2398, 18
+SHOOT, D, 2396, 2399, 13
+SHOOT, A, 2344, 2341, 0
+SHOOT, A, 2350, 2347, 2
+SHOOT, A, 2356, 2353, 4
+SHOOT, A, 2357, 2354, 0
+SHOOT, A, 2362, 2359, 6
+SHOOT, A, 2363, 2360, 1
+SHOOT, A, 2368, 2365, 8
+SHOOT, A, 2369, 2366, 3
+SHOOT, A, 2374, 2371, 10
+SHOOT, A, 2375, 2372, 5
+SHOOT, A, 2380, 2377, 12
+SHOOT, A, 2381, 2378, 7
+SHOOT, A, 2385, 2382, 0
+SHOOT, A, 2386, 2383, 14
+SHOOT, A, 2387, 2384, 9
+SHOOT, A, 2391, 2388, 2
+SHOOT, A, 2392, 2389, 16
+SHOOT, A, 2393, 2390, 11
+SHOOT, A, 2397, 2394, 6
+SHOOT, A, 2398, 2395, 18
+SHOOT, A, 2399, 2396, 13
+DEAD, A, 2341
+DEAD, A, 2354
+DEAD, A, 2382
+DEAD, D, 2344
+DEAD, D, 2357
+DEAD, D, 2385
+SPAWN, A, 2400, 1, 63, 4
+SPAWN, A, 2401, 2, 63, 5
+SPAWN, A, 2402, 3, 63, 6
+SPAWN, D, 2403, 1, 63, 4
+SPAWN, D, 2404, 2, 63, 5
+SPAWN, D, 2405, 3, 63, 6
+TURN, 401
+PRINT, TURN 401 LOGS:To be spawned at Position(63,7)
+PRINT, To be spawned at Position(63,8)
+PRINT, To be spawned at Position(63,9)
+PRINT, Type 1 at Position (63,7)
+PRINT, Type 2 at Position (63,8)
+PRINT, Type 3 at Position (63,9)
+PRINT, 
+SHOOT, D, 2347, 2350, 0
+SHOOT, D, 2353, 2356, 2
+SHOOT, D, 2359, 2362, 4
+SHOOT, D, 2360, 2363, 0
+SHOOT, D, 2365, 2368, 6
+SHOOT, D, 2366, 2369, 1
+SHOOT, D, 2371, 2374, 8
+SHOOT, D, 2372, 2375, 3
+SHOOT, D, 2377, 2380, 10
+SHOOT, D, 2378, 2381, 5
+SHOOT, D, 2383, 2386, 12
+SHOOT, D, 2384, 2387, 7
+SHOOT, D, 2388, 2391, 0
+SHOOT, D, 2389, 2392, 14
+SHOOT, D, 2390, 2393, 9
+SHOOT, D, 2394, 2397, 2
+SHOOT, D, 2395, 2398, 16
+SHOOT, D, 2396, 2399, 11
+SHOOT, D, 2400, 2403, 6
+SHOOT, D, 2401, 2404, 18
+SHOOT, D, 2402, 2405, 13
+SHOOT, A, 2350, 2347, 0
+SHOOT, A, 2356, 2353, 2
+SHOOT, A, 2362, 2359, 4
+SHOOT, A, 2363, 2360, 0
+SHOOT, A, 2368, 2365, 6
+SHOOT, A, 2369, 2366, 1
+SHOOT, A, 2374, 2371, 8
+SHOOT, A, 2375, 2372, 3
+SHOOT, A, 2380, 2377, 10
+SHOOT, A, 2381, 2378, 5
+SHOOT, A, 2386, 2383, 12
+SHOOT, A, 2387, 2384, 7
+SHOOT, A, 2391, 2388, 0
+SHOOT, A, 2392, 2389, 14
+SHOOT, A, 2393, 2390, 9
+SHOOT, A, 2397, 2394, 2
+SHOOT, A, 2398, 2395, 16
+SHOOT, A, 2399, 2396, 11
+SHOOT, A, 2403, 2400, 6
+SHOOT, A, 2404, 2401, 18
+SHOOT, A, 2405, 2402, 13
+DEAD, A, 2347
+DEAD, A, 2360
+DEAD, A, 2388
+DEAD, D, 2350
+DEAD, D, 2363
+DEAD, D, 2391
+SPAWN, A, 2406, 1, 63, 7
+SPAWN, A, 2407, 2, 63, 8
+SPAWN, A, 2408, 3, 63, 9
+SPAWN, D, 2409, 1, 63, 7
+SPAWN, D, 2410, 2, 63, 8
+SPAWN, D, 2411, 3, 63, 9
+TURN, 402
+PRINT, TURN 402 LOGS:To be spawned at Position(63,10)
+PRINT, To be spawned at Position(63,11)
+PRINT, To be spawned at Position(63,12)
+PRINT, Type 1 at Position (63,10)
+PRINT, Type 2 at Position (63,11)
+PRINT, Type 3 at Position (63,12)
+PRINT, 
+SHOOT, D, 2353, 2356, 0
+SHOOT, D, 2359, 2362, 2
+SHOOT, D, 2365, 2368, 4
+SHOOT, D, 2366, 2369, 0
+SHOOT, D, 2371, 2374, 6
+SHOOT, D, 2372, 2375, 1
+SHOOT, D, 2377, 2380, 8
+SHOOT, D, 2378, 2381, 3
+SHOOT, D, 2383, 2386, 10
+SHOOT, D, 2384, 2387, 5
+SHOOT, D, 2389, 2392, 12
+SHOOT, D, 2390, 2393, 7
+SHOOT, D, 2394, 2397, 0
+SHOOT, D, 2395, 2398, 14
+SHOOT, D, 2396, 2399, 9
+SHOOT, D, 2400, 2403, 2
+SHOOT, D, 2401, 2404, 16
+SHOOT, D, 2402, 2405, 11
+SHOOT, D, 2406, 2409, 6
+SHOOT, D, 2407, 2410, 18
+SHOOT, D, 2408, 2411, 13
+SHOOT, A, 2356, 2353, 0
+SHOOT, A, 2362, 2359, 2
+SHOOT, A, 2368, 2365, 4
+SHOOT, A, 2369, 2366, 0
+SHOOT, A, 2374, 2371, 6
+SHOOT, A, 2375, 2372, 1
+SHOOT, A, 2380, 2377, 8
+SHOOT, A, 2381, 2378, 3
+SHOOT, A, 2386, 2383, 10
+SHOOT, A, 2387, 2384, 5
+SHOOT, A, 2392, 2389, 12
+SHOOT, A, 2393, 2390, 7
+SHOOT, A, 2397, 2394, 0
+SHOOT, A, 2398, 2395, 14
+SHOOT, A, 2399, 2396, 9
+SHOOT, A, 2403, 2400, 2
+SHOOT, A, 2404, 2401, 16
+SHOOT, A, 2405, 2402, 11
+SHOOT, A, 2409, 2406, 6
+SHOOT, A, 2410, 2407, 18
+SHOOT, A, 2411, 2408, 13
+DEAD, A, 2353
+DEAD, A, 2366
+DEAD, A, 2394
+DEAD, D, 2356
+DEAD, D, 2369
+DEAD, D, 2397
+SPAWN, A, 2412, 1, 63, 10
+SPAWN, A, 2413, 2, 63, 11
+SPAWN, A, 2414, 3, 63, 12
+SPAWN, D, 2415, 1, 63, 10
+SPAWN, D, 2416, 2, 63, 11
+SPAWN, D, 2417, 3, 63, 12
+TURN, 403
+PRINT, TURN 403 LOGS:To be spawned at Position(63,13)
+PRINT, To be spawned at Position(63,14)
+PRINT, To be spawned at Position(63,15)
+PRINT, Type 1 at Position (63,13)
+PRINT, Type 2 at Position (63,14)
+PRINT, Type 3 at Position (63,15)
+PRINT, 
+SHOOT, D, 2359, 2362, 0
+SHOOT, D, 2365, 2368, 2
+SHOOT, D, 2371, 2374, 4
+SHOOT, D, 2372, 2375, 0
+SHOOT, D, 2377, 2380, 6
+SHOOT, D, 2378, 2381, 1
+SHOOT, D, 2383, 2386, 8
+SHOOT, D, 2384, 2387, 3
+SHOOT, D, 2389, 2392, 10
+SHOOT, D, 2390, 2393, 5
+SHOOT, D, 2395, 2398, 12
+SHOOT, D, 2396, 2399, 7
+SHOOT, D, 2400, 2403, 0
+SHOOT, D, 2401, 2404, 14
+SHOOT, D, 2402, 2405, 9
+SHOOT, D, 2406, 2409, 2
+SHOOT, D, 2407, 2410, 16
+SHOOT, D, 2408, 2411, 11
+SHOOT, D, 2412, 2415, 6
+SHOOT, D, 2413, 2416, 18
+SHOOT, D, 2414, 2417, 13
+SHOOT, A, 2362, 2359, 0
+SHOOT, A, 2368, 2365, 2
+SHOOT, A, 2374, 2371, 4
+SHOOT, A, 2375, 2372, 0
+SHOOT, A, 2380, 2377, 6
+SHOOT, A, 2381, 2378, 1
+SHOOT, A, 2386, 2383, 8
+SHOOT, A, 2387, 2384, 3
+SHOOT, A, 2392, 2389, 10
+SHOOT, A, 2393, 2390, 5
+SHOOT, A, 2398, 2395, 12
+SHOOT, A, 2399, 2396, 7
+SHOOT, A, 2403, 2400, 0
+SHOOT, A, 2404, 2401, 14
+SHOOT, A, 2405, 2402, 9
+SHOOT, A, 2409, 2406, 2
+SHOOT, A, 2410, 2407, 16
+SHOOT, A, 2411, 2408, 11
+SHOOT, A, 2415, 2412, 6
+SHOOT, A, 2416, 2413, 18
+SHOOT, A, 2417, 2414, 13
+DEAD, A, 2359
+DEAD, A, 2372
+DEAD, A, 2400
+DEAD, D, 2362
+DEAD, D, 2375
+DEAD, D, 2403
+SPAWN, A, 2418, 1, 63, 13
+SPAWN, A, 2419, 2, 63, 14
+SPAWN, A, 2420, 3, 63, 15
+SPAWN, D, 2421, 1, 63, 13
+SPAWN, D, 2422, 2, 63, 14
+SPAWN, D, 2423, 3, 63, 15
+TURN, 404
+PRINT, TURN 404 LOGS:To be spawned at Position(63,16)
+PRINT, To be spawned at Position(63,17)
+PRINT, To be spawned at Position(63,18)
+PRINT, Type 1 at Position (63,16)
+PRINT, Type 2 at Position (63,17)
+PRINT, Type 3 at Position (63,18)
+PRINT, 
+SHOOT, D, 2365, 2368, 0
+SHOOT, D, 2371, 2374, 2
+SHOOT, D, 2377, 2380, 4
+SHOOT, D, 2378, 2381, 0
+SHOOT, D, 2383, 2386, 6
+SHOOT, D, 2384, 2387, 1
+SHOOT, D, 2389, 2392, 8
+SHOOT, D, 2390, 2393, 3
+SHOOT, D, 2395, 2398, 10
+SHOOT, D, 2396, 2399, 5
+SHOOT, D, 2401, 2404, 12
+SHOOT, D, 2402, 2405, 7
+SHOOT, D, 2406, 2409, 0
+SHOOT, D, 2407, 2410, 14
+SHOOT, D, 2408, 2411, 9
+SHOOT, D, 2412, 2415, 2
+SHOOT, D, 2413, 2416, 16
+SHOOT, D, 2414, 2417, 11
+SHOOT, D, 2418, 2421, 6
+SHOOT, D, 2419, 2422, 18
+SHOOT, D, 2420, 2423, 13
+SHOOT, A, 2368, 2365, 0
+SHOOT, A, 2374, 2371, 2
+SHOOT, A, 2380, 2377, 4
+SHOOT, A, 2381, 2378, 0
+SHOOT, A, 2386, 2383, 6
+SHOOT, A, 2387, 2384, 1
+SHOOT, A, 2392, 2389, 8
+SHOOT, A, 2393, 2390, 3
+SHOOT, A, 2398, 2395, 10
+SHOOT, A, 2399, 2396, 5
+SHOOT, A, 2404, 2401, 12
+SHOOT, A, 2405, 2402, 7
+SHOOT, A, 2409, 2406, 0
+SHOOT, A, 2410, 2407, 14
+SHOOT, A, 2411, 2408, 9
+SHOOT, A, 2415, 2412, 2
+SHOOT, A, 2416, 2413, 16
+SHOOT, A, 2417, 2414, 11
+SHOOT, A, 2421, 2418, 6
+SHOOT, A, 2422, 2419, 18
+SHOOT, A, 2423, 2420, 13
+DEAD, A, 2365
+DEAD, A, 2378
+DEAD, A, 2406
+DEAD, D, 2368
+DEAD, D, 2381
+DEAD, D, 2409
+SPAWN, A, 2424, 1, 63, 16
+SPAWN, A, 2425, 2, 63, 17
+SPAWN, A, 2426, 3, 63, 18
+SPAWN, D, 2427, 1, 63, 16
+SPAWN, D, 2428, 2, 63, 17
+SPAWN, D, 2429, 3, 63, 18
+TURN, 405
+PRINT, TURN 405 LOGS:To be spawned at Position(63,19)
+PRINT, To be spawned at Position(63,20)
+PRINT, To be spawned at Position(63,21)
+PRINT, Type 1 at Position (63,19)
+PRINT, Type 2 at Position (63,20)
+PRINT, Type 3 at Position (63,21)
+PRINT, 
+SHOOT, D, 2371, 2374, 0
+SHOOT, D, 2377, 2380, 2
+SHOOT, D, 2383, 2386, 4
+SHOOT, D, 2384, 2387, 0
+SHOOT, D, 2389, 2392, 6
+SHOOT, D, 2390, 2393, 1
+SHOOT, D, 2395, 2398, 8
+SHOOT, D, 2396, 2399, 3
+SHOOT, D, 2401, 2404, 10
+SHOOT, D, 2402, 2405, 5
+SHOOT, D, 2407, 2410, 12
+SHOOT, D, 2408, 2411, 7
+SHOOT, D, 2412, 2415, 0
+SHOOT, D, 2413, 2416, 14
+SHOOT, D, 2414, 2417, 9
+SHOOT, D, 2418, 2421, 2
+SHOOT, D, 2419, 2422, 16
+SHOOT, D, 2420, 2423, 11
+SHOOT, D, 2424, 2427, 6
+SHOOT, D, 2425, 2428, 18
+SHOOT, D, 2426, 2429, 13
+SHOOT, A, 2374, 2371, 0
+SHOOT, A, 2380, 2377, 2
+SHOOT, A, 2386, 2383, 4
+SHOOT, A, 2387, 2384, 0
+SHOOT, A, 2392, 2389, 6
+SHOOT, A, 2393, 2390, 1
+SHOOT, A, 2398, 2395, 8
+SHOOT, A, 2399, 2396, 3
+SHOOT, A, 2404, 2401, 10
+SHOOT, A, 2405, 2402, 5
+SHOOT, A, 2410, 2407, 12
+SHOOT, A, 2411, 2408, 7
+SHOOT, A, 2415, 2412, 0
+SHOOT, A, 2416, 2413, 14
+SHOOT, A, 2417, 2414, 9
+SHOOT, A, 2421, 2418, 2
+SHOOT, A, 2422, 2419, 16
+SHOOT, A, 2423, 2420, 11
+SHOOT, A, 2427, 2424, 6
+SHOOT, A, 2428, 2425, 18
+SHOOT, A, 2429, 2426, 13
+DEAD, A, 2371
+DEAD, A, 2384
+DEAD, A, 2412
+DEAD, D, 2374
+DEAD, D, 2387
+DEAD, D, 2415
+SPAWN, A, 2430, 1, 63, 19
+SPAWN, A, 2431, 2, 63, 20
+SPAWN, A, 2432, 3, 63, 21
+SPAWN, D, 2433, 1, 63, 19
+SPAWN, D, 2434, 2, 63, 20
+SPAWN, D, 2435, 3, 63, 21
+TURN, 406
+PRINT, TURN 406 LOGS:To be spawned at Position(63,22)
+PRINT, To be spawned at Position(63,23)
+PRINT, To be spawned at Position(63,24)
+PRINT, Type 1 at Position (63,22)
+PRINT, Type 2 at Position (63,23)
+PRINT, Type 3 at Position (63,24)
+PRINT, 
+SHOOT, D, 2377, 2380, 0
+SHOOT, D, 2383, 2386, 2
+SHOOT, D, 2389, 2392, 4
+SHOOT, D, 2390, 2393, 0
+SHOOT, D, 2395, 2398, 6
+SHOOT, D, 2396, 2399, 1
+SHOOT, D, 2401, 2404, 8
+SHOOT, D, 2402, 2405, 3
+SHOOT, D, 2407, 2410, 10
+SHOOT, D, 2408, 2411, 5
+SHOOT, D, 2413, 2416, 12
+SHOOT, D, 2414, 2417, 7
+SHOOT, D, 2418, 2421, 0
+SHOOT, D, 2419, 2422, 14
+SHOOT, D, 2420, 2423, 9
+SHOOT, D, 2424, 2427, 2
+SHOOT, D, 2425, 2428, 16
+SHOOT, D, 2426, 2429, 11
+SHOOT, D, 2430, 2433, 6
+SHOOT, D, 2431, 2434, 18
+SHOOT, D, 2432, 2435, 13
+SHOOT, A, 2380, 2377, 0
+SHOOT, A, 2386, 2383, 2
+SHOOT, A, 2392, 2389, 4
+SHOOT, A, 2393, 2390, 0
+SHOOT, A, 2398, 2395, 6
+SHOOT, A, 2399, 2396, 1
+SHOOT, A, 2404, 2401, 8
+SHOOT, A, 2405, 2402, 3
+SHOOT, A, 2410, 2407, 10
+SHOOT, A, 2411, 2408, 5
+SHOOT, A, 2416, 2413, 12
+SHOOT, A, 2417, 2414, 7
+SHOOT, A, 2421, 2418, 0
+SHOOT, A, 2422, 2419, 14
+SHOOT, A, 2423, 2420, 9
+SHOOT, A, 2427, 2424, 2
+SHOOT, A, 2428, 2425, 16
+SHOOT, A, 2429, 2426, 11
+SHOOT, A, 2433, 2430, 6
+SHOOT, A, 2434, 2431, 18
+SHOOT, A, 2435, 2432, 13
+DEAD, A, 2377
+DEAD, A, 2390
+DEAD, A, 2418
+DEAD, D, 2380
+DEAD, D, 2393
+DEAD, D, 2421
+SPAWN, A, 2436, 1, 63, 22
+SPAWN, A, 2437, 2, 63, 23
+SPAWN, A, 2438, 3, 63, 24
+SPAWN, D, 2439, 1, 63, 22
+SPAWN, D, 2440, 2, 63, 23
+SPAWN, D, 2441, 3, 63, 24
+TURN, 407
+PRINT, TURN 407 LOGS:To be spawned at Position(63,25)
+PRINT, To be spawned at Position(63,26)
+PRINT, To be spawned at Position(63,27)
+PRINT, Type 1 at Position (63,25)
+PRINT, Type 2 at Position (63,26)
+PRINT, Type 3 at Position (63,27)
+PRINT, 
+SHOOT, D, 2383, 2386, 0
+SHOOT, D, 2389, 2392, 2
+SHOOT, D, 2395, 2398, 4
+SHOOT, D, 2396, 2399, 0
+SHOOT, D, 2401, 2404, 6
+SHOOT, D, 2402, 2405, 1
+SHOOT, D, 2407, 2410, 8
+SHOOT, D, 2408, 2411, 3
+SHOOT, D, 2413, 2416, 10
+SHOOT, D, 2414, 2417, 5
+SHOOT, D, 2419, 2422, 12
+SHOOT, D, 2420, 2423, 7
+SHOOT, D, 2424, 2427, 0
+SHOOT, D, 2425, 2428, 14
+SHOOT, D, 2426, 2429, 9
+SHOOT, D, 2430, 2433, 2
+SHOOT, D, 2431, 2434, 16
+SHOOT, D, 2432, 2435, 11
+SHOOT, D, 2436, 2439, 6
+SHOOT, D, 2437, 2440, 18
+SHOOT, D, 2438, 2441, 13
+SHOOT, A, 2386, 2383, 0
+SHOOT, A, 2392, 2389, 2
+SHOOT, A, 2398, 2395, 4
+SHOOT, A, 2399, 2396, 0
+SHOOT, A, 2404, 2401, 6
+SHOOT, A, 2405, 2402, 1
+SHOOT, A, 2410, 2407, 8
+SHOOT, A, 2411, 2408, 3
+SHOOT, A, 2416, 2413, 10
+SHOOT, A, 2417, 2414, 5
+SHOOT, A, 2422, 2419, 12
+SHOOT, A, 2423, 2420, 7
+SHOOT, A, 2427, 2424, 0
+SHOOT, A, 2428, 2425, 14
+SHOOT, A, 2429, 2426, 9
+SHOOT, A, 2433, 2430, 2
+SHOOT, A, 2434, 2431, 16
+SHOOT, A, 2435, 2432, 11
+SHOOT, A, 2439, 2436, 6
+SHOOT, A, 2440, 2437, 18
+SHOOT, A, 2441, 2438, 13
+DEAD, A, 2383
+DEAD, A, 2396
+DEAD, A, 2424
+DEAD, D, 2386
+DEAD, D, 2399
+DEAD, D, 2427
+SPAWN, A, 2442, 1, 63, 25
+SPAWN, A, 2443, 2, 63, 26
+SPAWN, A, 2444, 3, 63, 27
+SPAWN, D, 2445, 1, 63, 25
+SPAWN, D, 2446, 2, 63, 26
+SPAWN, D, 2447, 3, 63, 27
+TURN, 408
+PRINT, TURN 408 LOGS:To be spawned at Position(63,28)
+PRINT, To be spawned at Position(63,29)
+PRINT, To be spawned at Position(63,30)
+PRINT, Type 1 at Position (63,28)
+PRINT, Type 2 at Position (63,29)
+PRINT, Type 3 at Position (63,30)
+PRINT, 
+SHOOT, D, 2389, 2392, 0
+SHOOT, D, 2395, 2398, 2
+SHOOT, D, 2401, 2404, 4
+SHOOT, D, 2402, 2405, 0
+SHOOT, D, 2407, 2410, 6
+SHOOT, D, 2408, 2411, 1
+SHOOT, D, 2413, 2416, 8
+SHOOT, D, 2414, 2417, 3
+SHOOT, D, 2419, 2422, 10
+SHOOT, D, 2420, 2423, 5
+SHOOT, D, 2425, 2428, 12
+SHOOT, D, 2426, 2429, 7
+SHOOT, D, 2430, 2433, 0
+SHOOT, D, 2431, 2434, 14
+SHOOT, D, 2432, 2435, 9
+SHOOT, D, 2436, 2439, 2
+SHOOT, D, 2437, 2440, 16
+SHOOT, D, 2438, 2441, 11
+SHOOT, D, 2442, 2445, 6
+SHOOT, D, 2443, 2446, 18
+SHOOT, D, 2444, 2447, 13
+SHOOT, A, 2392, 2389, 0
+SHOOT, A, 2398, 2395, 2
+SHOOT, A, 2404, 2401, 4
+SHOOT, A, 2405, 2402, 0
+SHOOT, A, 2410, 2407, 6
+SHOOT, A, 2411, 2408, 1
+SHOOT, A, 2416, 2413, 8
+SHOOT, A, 2417, 2414, 3
+SHOOT, A, 2422, 2419, 10
+SHOOT, A, 2423, 2420, 5
+SHOOT, A, 2428, 2425, 12
+SHOOT, A, 2429, 2426, 7
+SHOOT, A, 2433, 2430, 0
+SHOOT, A, 2434, 2431, 14
+SHOOT, A, 2435, 2432, 9
+SHOOT, A, 2439, 2436, 2
+SHOOT, A, 2440, 2437, 16
+SHOOT, A, 2441, 2438, 11
+SHOOT, A, 2445, 2442, 6
+SHOOT, A, 2446, 2443, 18
+SHOOT, A, 2447, 2444, 13
+DEAD, A, 2389
+DEAD, A, 2402
+DEAD, A, 2430
+DEAD, D, 2392
+DEAD, D, 2405
+DEAD, D, 2433
+SPAWN, A, 2448, 1, 63, 28
+SPAWN, A, 2449, 2, 63, 29
+SPAWN, A, 2450, 3, 63, 30
+SPAWN, D, 2451, 1, 63, 28
+SPAWN, D, 2452, 2, 63, 29
+SPAWN, D, 2453, 3, 63, 30
+TURN, 409
+PRINT, TURN 409 LOGS:To be spawned at Position(63,31)
+PRINT, To be spawned at Position(63,32)
+PRINT, To be spawned at Position(63,33)
+PRINT, Type 1 at Position (63,31)
+PRINT, Type 2 at Position (63,32)
+PRINT, Type 3 at Position (63,33)
+PRINT, 
+SHOOT, D, 2395, 2398, 0
+SHOOT, D, 2401, 2404, 2
+SHOOT, D, 2407, 2410, 4
+SHOOT, D, 2408, 2411, 0
+SHOOT, D, 2413, 2416, 6
+SHOOT, D, 2414, 2417, 1
+SHOOT, D, 2419, 2422, 8
+SHOOT, D, 2420, 2423, 3
+SHOOT, D, 2425, 2428, 10
+SHOOT, D, 2426, 2429, 5
+SHOOT, D, 2431, 2434, 12
+SHOOT, D, 2432, 2435, 7
+SHOOT, D, 2436, 2439, 0
+SHOOT, D, 2437, 2440, 14
+SHOOT, D, 2438, 2441, 9
+SHOOT, D, 2442, 2445, 2
+SHOOT, D, 2443, 2446, 16
+SHOOT, D, 2444, 2447, 11
+SHOOT, D, 2448, 2451, 6
+SHOOT, D, 2449, 2452, 18
+SHOOT, D, 2450, 2453, 13
+SHOOT, A, 2398, 2395, 0
+SHOOT, A, 2404, 2401, 2
+SHOOT, A, 2410, 2407, 4
+SHOOT, A, 2411, 2408, 0
+SHOOT, A, 2416, 2413, 6
+SHOOT, A, 2417, 2414, 1
+SHOOT, A, 2422, 2419, 8
+SHOOT, A, 2423, 2420, 3
+SHOOT, A, 2428, 2425, 10
+SHOOT, A, 2429, 2426, 5
+SHOOT, A, 2434, 2431, 12
+SHOOT, A, 2435, 2432, 7
+SHOOT, A, 2439, 2436, 0
+SHOOT, A, 2440, 2437, 14
+SHOOT, A, 2441, 2438, 9
+SHOOT, A, 2445, 2442, 2
+SHOOT, A, 2446, 2443, 16
+SHOOT, A, 2447, 2444, 11
+SHOOT, A, 2451, 2448, 6
+SHOOT, A, 2452, 2449, 18
+SHOOT, A, 2453, 2450, 13
+DEAD, A, 2395
+DEAD, A, 2408
+DEAD, A, 2436
+DEAD, D, 2398
+DEAD, D, 2411
+DEAD, D, 2439
+SPAWN, A, 2454, 1, 63, 31
+SPAWN, A, 2455, 2, 63, 32
+SPAWN, A, 2456, 3, 63, 33
+SPAWN, D, 2457, 1, 63, 31
+SPAWN, D, 2458, 2, 63, 32
+SPAWN, D, 2459, 3, 63, 33
+TURN, 410
+PRINT, TURN 410 LOGS:To be spawned at Position(63,34)
+PRINT, To be spawned at Position(63,35)
+PRINT, To be spawned at Position(63,36)
+PRINT, Type 1 at Position (63,34)
+PRINT, Type 2 at Position (63,35)
+PRINT, Type 3 at Position (63,36)
+PRINT, 
+SHOOT, D, 2401, 2404, 0
+SHOOT, D, 2407, 2410, 2
+SHOOT, D, 2413, 2416, 4
+SHOOT, D, 2414, 2417, 0
+SHOOT, D, 2419, 2422, 6
+SHOOT, D, 2420, 2423, 1
+SHOOT, D, 2425, 2428, 8
+SHOOT, D, 2426, 2429, 3
+SHOOT, D, 2431, 2434, 10
+SHOOT, D, 2432, 2435, 5
+SHOOT, D, 2437, 2440, 12
+SHOOT, D, 2438, 2441, 7
+SHOOT, D, 2442, 2445, 0
+SHOOT, D, 2443, 2446, 14
+SHOOT, D, 2444, 2447, 9
+SHOOT, D, 2448, 2451, 2
+SHOOT, D, 2449, 2452, 16
+SHOOT, D, 2450, 2453, 11
+SHOOT, D, 2454, 2457, 6
+SHOOT, D, 2455, 2458, 18
+SHOOT, D, 2456, 2459, 13
+SHOOT, A, 2404, 2401, 0
+SHOOT, A, 2410, 2407, 2
+SHOOT, A, 2416, 2413, 4
+SHOOT, A, 2417, 2414, 0
+SHOOT, A, 2422, 2419, 6
+SHOOT, A, 2423, 2420, 1
+SHOOT, A, 2428, 2425, 8
+SHOOT, A, 2429, 2426, 3
+SHOOT, A, 2434, 2431, 10
+SHOOT, A, 2435, 2432, 5
+SHOOT, A, 2440, 2437, 12
+SHOOT, A, 2441, 2438, 7
+SHOOT, A, 2445, 2442, 0
+SHOOT, A, 2446, 2443, 14
+SHOOT, A, 2447, 2444, 9
+SHOOT, A, 2451, 2448, 2
+SHOOT, A, 2452, 2449, 16
+SHOOT, A, 2453, 2450, 11
+SHOOT, A, 2457, 2454, 6
+SHOOT, A, 2458, 2455, 18
+SHOOT, A, 2459, 2456, 13
+DEAD, A, 2401
+DEAD, A, 2414
+DEAD, A, 2442
+DEAD, D, 2404
+DEAD, D, 2417
+DEAD, D, 2445
+SPAWN, A, 2460, 1, 63, 34
+SPAWN, A, 2461, 2, 63, 35
+SPAWN, A, 2462, 3, 63, 36
+SPAWN, D, 2463, 1, 63, 34
+SPAWN, D, 2464, 2, 63, 35
+SPAWN, D, 2465, 3, 63, 36
+TURN, 411
+PRINT, TURN 411 LOGS:To be spawned at Position(63,37)
+PRINT, To be spawned at Position(63,38)
+PRINT, To be spawned at Position(63,39)
+PRINT, Type 1 at Position (63,37)
+PRINT, Type 2 at Position (63,38)
+PRINT, Type 3 at Position (63,39)
+PRINT, 
+SHOOT, D, 2407, 2410, 0
+SHOOT, D, 2413, 2416, 2
+SHOOT, D, 2419, 2422, 4
+SHOOT, D, 2420, 2423, 0
+SHOOT, D, 2425, 2428, 6
+SHOOT, D, 2426, 2429, 1
+SHOOT, D, 2431, 2434, 8
+SHOOT, D, 2432, 2435, 3
+SHOOT, D, 2437, 2440, 10
+SHOOT, D, 2438, 2441, 5
+SHOOT, D, 2443, 2446, 12
+SHOOT, D, 2444, 2447, 7
+SHOOT, D, 2448, 2451, 0
+SHOOT, D, 2449, 2452, 14
+SHOOT, D, 2450, 2453, 9
+SHOOT, D, 2454, 2457, 2
+SHOOT, D, 2455, 2458, 16
+SHOOT, D, 2456, 2459, 11
+SHOOT, D, 2460, 2463, 6
+SHOOT, D, 2461, 2464, 18
+SHOOT, D, 2462, 2465, 13
+SHOOT, A, 2410, 2407, 0
+SHOOT, A, 2416, 2413, 2
+SHOOT, A, 2422, 2419, 4
+SHOOT, A, 2423, 2420, 0
+SHOOT, A, 2428, 2425, 6
+SHOOT, A, 2429, 2426, 1
+SHOOT, A, 2434, 2431, 8
+SHOOT, A, 2435, 2432, 3
+SHOOT, A, 2440, 2437, 10
+SHOOT, A, 2441, 2438, 5
+SHOOT, A, 2446, 2443, 12
+SHOOT, A, 2447, 2444, 7
+SHOOT, A, 2451, 2448, 0
+SHOOT, A, 2452, 2449, 14
+SHOOT, A, 2453, 2450, 9
+SHOOT, A, 2457, 2454, 2
+SHOOT, A, 2458, 2455, 16
+SHOOT, A, 2459, 2456, 11
+SHOOT, A, 2463, 2460, 6
+SHOOT, A, 2464, 2461, 18
+SHOOT, A, 2465, 2462, 13
+DEAD, A, 2407
+DEAD, A, 2420
+DEAD, A, 2448
+DEAD, D, 2410
+DEAD, D, 2423
+DEAD, D, 2451
+SPAWN, A, 2466, 1, 63, 37
+SPAWN, A, 2467, 2, 63, 38
+SPAWN, A, 2468, 3, 63, 39
+SPAWN, D, 2469, 1, 63, 37
+SPAWN, D, 2470, 2, 63, 38
+SPAWN, D, 2471, 3, 63, 39
+TURN, 412
+PRINT, TURN 412 LOGS:To be spawned at Position(63,40)
+PRINT, To be spawned at Position(63,41)
+PRINT, To be spawned at Position(63,42)
+PRINT, Type 1 at Position (63,40)
+PRINT, Type 2 at Position (63,41)
+PRINT, Type 3 at Position (63,42)
+PRINT, 
+SHOOT, D, 2413, 2416, 0
+SHOOT, D, 2419, 2422, 2
+SHOOT, D, 2425, 2428, 4
+SHOOT, D, 2426, 2429, 0
+SHOOT, D, 2431, 2434, 6
+SHOOT, D, 2432, 2435, 1
+SHOOT, D, 2437, 2440, 8
+SHOOT, D, 2438, 2441, 3
+SHOOT, D, 2443, 2446, 10
+SHOOT, D, 2444, 2447, 5
+SHOOT, D, 2449, 2452, 12
+SHOOT, D, 2450, 2453, 7
+SHOOT, D, 2454, 2457, 0
+SHOOT, D, 2455, 2458, 14
+SHOOT, D, 2456, 2459, 9
+SHOOT, D, 2460, 2463, 2
+SHOOT, D, 2461, 2464, 16
+SHOOT, D, 2462, 2465, 11
+SHOOT, D, 2466, 2469, 6
+SHOOT, D, 2467, 2470, 18
+SHOOT, D, 2468, 2471, 13
+SHOOT, A, 2416, 2413, 0
+SHOOT, A, 2422, 2419, 2
+SHOOT, A, 2428, 2425, 4
+SHOOT, A, 2429, 2426, 0
+SHOOT, A, 2434, 2431, 6
+SHOOT, A, 2435, 2432, 1
+SHOOT, A, 2440, 2437, 8
+SHOOT, A, 2441, 2438, 3
+SHOOT, A, 2446, 2443, 10
+SHOOT, A, 2447, 2444, 5
+SHOOT, A, 2452, 2449, 12
+SHOOT, A, 2453, 2450, 7
+SHOOT, A, 2457, 2454, 0
+SHOOT, A, 2458, 2455, 14
+SHOOT, A, 2459, 2456, 9
+SHOOT, A, 2463, 2460, 2
+SHOOT, A, 2464, 2461, 16
+SHOOT, A, 2465, 2462, 11
+SHOOT, A, 2469, 2466, 6
+SHOOT, A, 2470, 2467, 18
+SHOOT, A, 2471, 2468, 13
+DEAD, A, 2413
+DEAD, A, 2426
+DEAD, A, 2454
+DEAD, D, 2416
+DEAD, D, 2429
+DEAD, D, 2457
+SPAWN, A, 2472, 1, 63, 40
+SPAWN, A, 2473, 2, 63, 41
+SPAWN, A, 2474, 3, 63, 42
+SPAWN, D, 2475, 1, 63, 40
+SPAWN, D, 2476, 2, 63, 41
+SPAWN, D, 2477, 3, 63, 42
+TURN, 413
+PRINT, TURN 413 LOGS:To be spawned at Position(63,43)
+PRINT, To be spawned at Position(63,44)
+PRINT, To be spawned at Position(63,45)
+PRINT, Type 1 at Position (63,43)
+PRINT, Type 2 at Position (63,44)
+PRINT, Type 3 at Position (63,45)
+PRINT, 
+SHOOT, D, 2419, 2422, 0
+SHOOT, D, 2425, 2428, 2
+SHOOT, D, 2431, 2434, 4
+SHOOT, D, 2432, 2435, 0
+SHOOT, D, 2437, 2440, 6
+SHOOT, D, 2438, 2441, 1
+SHOOT, D, 2443, 2446, 8
+SHOOT, D, 2444, 2447, 3
+SHOOT, D, 2449, 2452, 10
+SHOOT, D, 2450, 2453, 5
+SHOOT, D, 2455, 2458, 12
+SHOOT, D, 2456, 2459, 7
+SHOOT, D, 2460, 2463, 0
+SHOOT, D, 2461, 2464, 14
+SHOOT, D, 2462, 2465, 9
+SHOOT, D, 2466, 2469, 2
+SHOOT, D, 2467, 2470, 16
+SHOOT, D, 2468, 2471, 11
+SHOOT, D, 2472, 2475, 6
+SHOOT, D, 2473, 2476, 18
+SHOOT, D, 2474, 2477, 13
+SHOOT, A, 2422, 2419, 0
+SHOOT, A, 2428, 2425, 2
+SHOOT, A, 2434, 2431, 4
+SHOOT, A, 2435, 2432, 0
+SHOOT, A, 2440, 2437, 6
+SHOOT, A, 2441, 2438, 1
+SHOOT, A, 2446, 2443, 8
+SHOOT, A, 2447, 2444, 3
+SHOOT, A, 2452, 2449, 10
+SHOOT, A, 2453, 2450, 5
+SHOOT, A, 2458, 2455, 12
+SHOOT, A, 2459, 2456, 7
+SHOOT, A, 2463, 2460, 0
+SHOOT, A, 2464, 2461, 14
+SHOOT, A, 2465, 2462, 9
+SHOOT, A, 2469, 2466, 2
+SHOOT, A, 2470, 2467, 16
+SHOOT, A, 2471, 2468, 11
+SHOOT, A, 2475, 2472, 6
+SHOOT, A, 2476, 2473, 18
+SHOOT, A, 2477, 2474, 13
+DEAD, A, 2419
+DEAD, A, 2432
+DEAD, A, 2460
+DEAD, D, 2422
+DEAD, D, 2435
+DEAD, D, 2463
+SPAWN, A, 2478, 1, 63, 43
+SPAWN, A, 2479, 2, 63, 44
+SPAWN, A, 2480, 3, 63, 45
+SPAWN, D, 2481, 1, 63, 43
+SPAWN, D, 2482, 2, 63, 44
+SPAWN, D, 2483, 3, 63, 45
+TURN, 414
+PRINT, TURN 414 LOGS:To be spawned at Position(63,46)
+PRINT, To be spawned at Position(63,47)
+PRINT, To be spawned at Position(63,48)
+PRINT, Type 1 at Position (63,46)
+PRINT, Type 2 at Position (63,47)
+PRINT, Type 3 at Position (63,48)
+PRINT, 
+SHOOT, D, 2425, 2428, 0
+SHOOT, D, 2431, 2434, 2
+SHOOT, D, 2437, 2440, 4
+SHOOT, D, 2438, 2441, 0
+SHOOT, D, 2443, 2446, 6
+SHOOT, D, 2444, 2447, 1
+SHOOT, D, 2449, 2452, 8
+SHOOT, D, 2450, 2453, 3
+SHOOT, D, 2455, 2458, 10
+SHOOT, D, 2456, 2459, 5
+SHOOT, D, 2461, 2464, 12
+SHOOT, D, 2462, 2465, 7
+SHOOT, D, 2466, 2469, 0
+SHOOT, D, 2467, 2470, 14
+SHOOT, D, 2468, 2471, 9
+SHOOT, D, 2472, 2475, 2
+SHOOT, D, 2473, 2476, 16
+SHOOT, D, 2474, 2477, 11
+SHOOT, D, 2478, 2481, 6
+SHOOT, D, 2479, 2482, 18
+SHOOT, D, 2480, 2483, 13
+SHOOT, A, 2428, 2425, 0
+SHOOT, A, 2434, 2431, 2
+SHOOT, A, 2440, 2437, 4
+SHOOT, A, 2441, 2438, 0
+SHOOT, A, 2446, 2443, 6
+SHOOT, A, 2447, 2444, 1
+SHOOT, A, 2452, 2449, 8
+SHOOT, A, 2453, 2450, 3
+SHOOT, A, 2458, 2455, 10
+SHOOT, A, 2459, 2456, 5
+SHOOT, A, 2464, 2461, 12
+SHOOT, A, 2465, 2462, 7
+SHOOT, A, 2469, 2466, 0
+SHOOT, A, 2470, 2467, 14
+SHOOT, A, 2471, 2468, 9
+SHOOT, A, 2475, 2472, 2
+SHOOT, A, 2476, 2473, 16
+SHOOT, A, 2477, 2474, 11
+SHOOT, A, 2481, 2478, 6
+SHOOT, A, 2482, 2479, 18
+SHOOT, A, 2483, 2480, 13
+DEAD, A, 2425
+DEAD, A, 2438
+DEAD, A, 2466
+DEAD, D, 2428
+DEAD, D, 2441
+DEAD, D, 2469
+SPAWN, A, 2484, 1, 63, 46
+SPAWN, A, 2485, 2, 63, 47
+SPAWN, A, 2486, 3, 63, 48
+SPAWN, D, 2487, 1, 63, 46
+SPAWN, D, 2488, 2, 63, 47
+SPAWN, D, 2489, 3, 63, 48
+TURN, 415
+PRINT, TURN 415 LOGS:To be spawned at Position(63,49)
+PRINT, To be spawned at Position(63,50)
+PRINT, To be spawned at Position(63,51)
+PRINT, Type 1 at Position (63,49)
+PRINT, Type 2 at Position (63,50)
+PRINT, Type 3 at Position (63,51)
+PRINT, 
+SHOOT, D, 2431, 2434, 0
+SHOOT, D, 2437, 2440, 2
+SHOOT, D, 2443, 2446, 4
+SHOOT, D, 2444, 2447, 0
+SHOOT, D, 2449, 2452, 6
+SHOOT, D, 2450, 2453, 1
+SHOOT, D, 2455, 2458, 8
+SHOOT, D, 2456, 2459, 3
+SHOOT, D, 2461, 2464, 10
+SHOOT, D, 2462, 2465, 5
+SHOOT, D, 2467, 2470, 12
+SHOOT, D, 2468, 2471, 7
+SHOOT, D, 2472, 2475, 0
+SHOOT, D, 2473, 2476, 14
+SHOOT, D, 2474, 2477, 9
+SHOOT, D, 2478, 2481, 2
+SHOOT, D, 2479, 2482, 16
+SHOOT, D, 2480, 2483, 11
+SHOOT, D, 2484, 2487, 6
+SHOOT, D, 2485, 2488, 18
+SHOOT, D, 2486, 2489, 13
+SHOOT, A, 2434, 2431, 0
+SHOOT, A, 2440, 2437, 2
+SHOOT, A, 2446, 2443, 4
+SHOOT, A, 2447, 2444, 0
+SHOOT, A, 2452, 2449, 6
+SHOOT, A, 2453, 2450, 1
+SHOOT, A, 2458, 2455, 8
+SHOOT, A, 2459, 2456, 3
+SHOOT, A, 2464, 2461, 10
+SHOOT, A, 2465, 2462, 5
+SHOOT, A, 2470, 2467, 12
+SHOOT, A, 2471, 2468, 7
+SHOOT, A, 2475, 2472, 0
+SHOOT, A, 2476, 2473, 14
+SHOOT, A, 2477, 2474, 9
+SHOOT, A, 2481, 2478, 2
+SHOOT, A, 2482, 2479, 16
+SHOOT, A, 2483, 2480, 11
+SHOOT, A, 2487, 2484, 6
+SHOOT, A, 2488, 2485, 18
+SHOOT, A, 2489, 2486, 13
+DEAD, A, 2431
+DEAD, A, 2444
+DEAD, A, 2472
+DEAD, D, 2434
+DEAD, D, 2447
+DEAD, D, 2475
+SPAWN, A, 2490, 1, 63, 49
+SPAWN, A, 2491, 2, 63, 50
+SPAWN, A, 2492, 3, 63, 51
+SPAWN, D, 2493, 1, 63, 49
+SPAWN, D, 2494, 2, 63, 50
+SPAWN, D, 2495, 3, 63, 51
+TURN, 416
+PRINT, TURN 416 LOGS:To be spawned at Position(63,52)
+PRINT, To be spawned at Position(63,53)
+PRINT, To be spawned at Position(63,54)
+PRINT, Type 1 at Position (63,52)
+PRINT, Type 2 at Position (63,53)
+PRINT, Type 3 at Position (63,54)
+PRINT, 
+SHOOT, D, 2437, 2440, 0
+SHOOT, D, 2443, 2446, 2
+SHOOT, D, 2449, 2452, 4
+SHOOT, D, 2450, 2453, 0
+SHOOT, D, 2455, 2458, 6
+SHOOT, D, 2456, 2459, 1
+SHOOT, D, 2461, 2464, 8
+SHOOT, D, 2462, 2465, 3
+SHOOT, D, 2467, 2470, 10
+SHOOT, D, 2468, 2471, 5
+SHOOT, D, 2473, 2476, 12
+SHOOT, D, 2474, 2477, 7
+SHOOT, D, 2478, 2481, 0
+SHOOT, D, 2479, 2482, 14
+SHOOT, D, 2480, 2483, 9
+SHOOT, D, 2484, 2487, 2
+SHOOT, D, 2485, 2488, 16
+SHOOT, D, 2486, 2489, 11
+SHOOT, D, 2490, 2493, 6
+SHOOT, D, 2491, 2494, 18
+SHOOT, D, 2492, 2495, 13
+SHOOT, A, 2440, 2437, 0
+SHOOT, A, 2446, 2443, 2
+SHOOT, A, 2452, 2449, 4
+SHOOT, A, 2453, 2450, 0
+SHOOT, A, 2458, 2455, 6
+SHOOT, A, 2459, 2456, 1
+SHOOT, A, 2464, 2461, 8
+SHOOT, A, 2465, 2462, 3
+SHOOT, A, 2470, 2467, 10
+SHOOT, A, 2471, 2468, 5
+SHOOT, A, 2476, 2473, 12
+SHOOT, A, 2477, 2474, 7
+SHOOT, A, 2481, 2478, 0
+SHOOT, A, 2482, 2479, 14
+SHOOT, A, 2483, 2480, 9
+SHOOT, A, 2487, 2484, 2
+SHOOT, A, 2488, 2485, 16
+SHOOT, A, 2489, 2486, 11
+SHOOT, A, 2493, 2490, 6
+SHOOT, A, 2494, 2491, 18
+SHOOT, A, 2495, 2492, 13
+DEAD, A, 2437
+DEAD, A, 2450
+DEAD, A, 2478
+DEAD, D, 2440
+DEAD, D, 2453
+DEAD, D, 2481
+SPAWN, A, 2496, 1, 63, 52
+SPAWN, A, 2497, 2, 63, 53
+SPAWN, A, 2498, 3, 63, 54
+SPAWN, D, 2499, 1, 63, 52
+SPAWN, D, 2500, 2, 63, 53
+SPAWN, D, 2501, 3, 63, 54
+TURN, 417
+PRINT, TURN 417 LOGS:To be spawned at Position(63,55)
+PRINT, To be spawned at Position(63,56)
+PRINT, To be spawned at Position(63,57)
+PRINT, Type 1 at Position (63,55)
+PRINT, Type 2 at Position (63,56)
+PRINT, Type 3 at Position (63,57)
+PRINT, 
+SHOOT, D, 2443, 2446, 0
+SHOOT, D, 2449, 2452, 2
+SHOOT, D, 2455, 2458, 4
+SHOOT, D, 2456, 2459, 0
+SHOOT, D, 2461, 2464, 6
+SHOOT, D, 2462, 2465, 1
+SHOOT, D, 2467, 2470, 8
+SHOOT, D, 2468, 2471, 3
+SHOOT, D, 2473, 2476, 10
+SHOOT, D, 2474, 2477, 5
+SHOOT, D, 2479, 2482, 12
+SHOOT, D, 2480, 2483, 7
+SHOOT, D, 2484, 2487, 0
+SHOOT, D, 2485, 2488, 14
+SHOOT, D, 2486, 2489, 9
+SHOOT, D, 2490, 2493, 2
+SHOOT, D, 2491, 2494, 16
+SHOOT, D, 2492, 2495, 11
+SHOOT, D, 2496, 2499, 6
+SHOOT, D, 2497, 2500, 18
+SHOOT, D, 2498, 2501, 13
+SHOOT, A, 2446, 2443, 0
+SHOOT, A, 2452, 2449, 2
+SHOOT, A, 2458, 2455, 4
+SHOOT, A, 2459, 2456, 0
+SHOOT, A, 2464, 2461, 6
+SHOOT, A, 2465, 2462, 1
+SHOOT, A, 2470, 2467, 8
+SHOOT, A, 2471, 2468, 3
+SHOOT, A, 2476, 2473, 10
+SHOOT, A, 2477, 2474, 5
+SHOOT, A, 2482, 2479, 12
+SHOOT, A, 2483, 2480, 7
+SHOOT, A, 2487, 2484, 0
+SHOOT, A, 2488, 2485, 14
+SHOOT, A, 2489, 2486, 9
+SHOOT, A, 2493, 2490, 2
+SHOOT, A, 2494, 2491, 16
+SHOOT, A, 2495, 2492, 11
+SHOOT, A, 2499, 2496, 6
+SHOOT, A, 2500, 2497, 18
+SHOOT, A, 2501, 2498, 13
+DEAD, A, 2443
+DEAD, A, 2456
+DEAD, A, 2484
+DEAD, D, 2446
+DEAD, D, 2459
+DEAD, D, 2487
+SPAWN, A, 2502, 1, 63, 55
+SPAWN, A, 2503, 2, 63, 56
+SPAWN, A, 2504, 3, 63, 57
+SPAWN, D, 2505, 1, 63, 55
+SPAWN, D, 2506, 2, 63, 56
+SPAWN, D, 2507, 3, 63, 57
+TURN, 418
+PRINT, TURN 418 LOGS:To be spawned at Position(63,58)
+PRINT, To be spawned at Position(63,59)
+PRINT, To be spawned at Position(63,60)
+PRINT, Type 1 at Position (63,58)
+PRINT, Type 2 at Position (63,59)
+PRINT, Type 3 at Position (63,60)
+PRINT, 
+SHOOT, D, 2449, 2452, 0
+SHOOT, D, 2455, 2458, 2
+SHOOT, D, 2461, 2464, 4
+SHOOT, D, 2462, 2465, 0
+SHOOT, D, 2467, 2470, 6
+SHOOT, D, 2468, 2471, 1
+SHOOT, D, 2473, 2476, 8
+SHOOT, D, 2474, 2477, 3
+SHOOT, D, 2479, 2482, 10
+SHOOT, D, 2480, 2483, 5
+SHOOT, D, 2485, 2488, 12
+SHOOT, D, 2486, 2489, 7
+SHOOT, D, 2490, 2493, 0
+SHOOT, D, 2491, 2494, 14
+SHOOT, D, 2492, 2495, 9
+SHOOT, D, 2496, 2499, 2
+SHOOT, D, 2497, 2500, 16
+SHOOT, D, 2498, 2501, 11
+SHOOT, D, 2502, 2505, 6
+SHOOT, D, 2503, 2506, 18
+SHOOT, D, 2504, 2507, 13
+SHOOT, A, 2452, 2449, 0
+SHOOT, A, 2458, 2455, 2
+SHOOT, A, 2464, 2461, 4
+SHOOT, A, 2465, 2462, 0
+SHOOT, A, 2470, 2467, 6
+SHOOT, A, 2471, 2468, 1
+SHOOT, A, 2476, 2473, 8
+SHOOT, A, 2477, 2474, 3
+SHOOT, A, 2482, 2479, 10
+SHOOT, A, 2483, 2480, 5
+SHOOT, A, 2488, 2485, 12
+SHOOT, A, 2489, 2486, 7
+SHOOT, A, 2493, 2490, 0
+SHOOT, A, 2494, 2491, 14
+SHOOT, A, 2495, 2492, 9
+SHOOT, A, 2499, 2496, 2
+SHOOT, A, 2500, 2497, 16
+SHOOT, A, 2501, 2498, 11
+SHOOT, A, 2505, 2502, 6
+SHOOT, A, 2506, 2503, 18
+SHOOT, A, 2507, 2504, 13
+DEAD, A, 2449
+DEAD, A, 2462
+DEAD, A, 2490
+DEAD, D, 2452
+DEAD, D, 2465
+DEAD, D, 2493
+SPAWN, A, 2508, 1, 63, 58
+SPAWN, A, 2509, 2, 63, 59
+SPAWN, A, 2510, 3, 63, 60
+SPAWN, D, 2511, 1, 63, 58
+SPAWN, D, 2512, 2, 63, 59
+SPAWN, D, 2513, 3, 63, 60
+TURN, 419
+PRINT, TURN 419 LOGS:To be spawned at Position(63,61)
+PRINT, To be spawned at Position(63,62)
+PRINT, To be spawned at Position(63,63)
+PRINT, Type 1 at Position (63,61)
+PRINT, Type 2 at Position (63,62)
+PRINT, Type 3 at Position (63,63)
+PRINT, 
+SHOOT, D, 2455, 2458, 0
+SHOOT, D, 2461, 2464, 2
+SHOOT, D, 2467, 2470, 4
+SHOOT, D, 2468, 2471, 0
+SHOOT, D, 2473, 2476, 6
+SHOOT, D, 2474, 2477, 1
+SHOOT, D, 2479, 2482, 8
+SHOOT, D, 2480, 2483, 3
+SHOOT, D, 2485, 2488, 10
+SHOOT, D, 2486, 2489, 5
+SHOOT, D, 2491, 2494, 12
+SHOOT, D, 2492, 2495, 7
+SHOOT, D, 2496, 2499, 0
+SHOOT, D, 2497, 2500, 14
+SHOOT, D, 2498, 2501, 9
+SHOOT, D, 2502, 2505, 2
+SHOOT, D, 2503, 2506, 16
+SHOOT, D, 2504, 2507, 11
+SHOOT, D, 2508, 2511, 6
+SHOOT, D, 2509, 2512, 18
+SHOOT, D, 2510, 2513, 13
+SHOOT, A, 2458, 2455, 0
+SHOOT, A, 2464, 2461, 2
+SHOOT, A, 2470, 2467, 4
+SHOOT, A, 2471, 2468, 0
+SHOOT, A, 2476, 2473, 6
+SHOOT, A, 2477, 2474, 1
+SHOOT, A, 2482, 2479, 8
+SHOOT, A, 2483, 2480, 3
+SHOOT, A, 2488, 2485, 10
+SHOOT, A, 2489, 2486, 5
+SHOOT, A, 2494, 2491, 12
+SHOOT, A, 2495, 2492, 7
+SHOOT, A, 2499, 2496, 0
+SHOOT, A, 2500, 2497, 14
+SHOOT, A, 2501, 2498, 9
+SHOOT, A, 2505, 2502, 2
+SHOOT, A, 2506, 2503, 16
+SHOOT, A, 2507, 2504, 11
+SHOOT, A, 2511, 2508, 6
+SHOOT, A, 2512, 2509, 18
+SHOOT, A, 2513, 2510, 13
+DEAD, A, 2455
+DEAD, A, 2468
+DEAD, A, 2496
+DEAD, D, 2458
+DEAD, D, 2471
+DEAD, D, 2499
+SPAWN, A, 2514, 1, 63, 61
+SPAWN, A, 2515, 2, 63, 62
+SPAWN, A, 2516, 3, 63, 63
+SPAWN, D, 2517, 1, 63, 61
+SPAWN, D, 2518, 2, 63, 62
+SPAWN, D, 2519, 3, 63, 63
+TURN, 420
+PRINT, TURN 420 LOGS:To be spawned at Position(0,0)
+PRINT, To be spawned at Position(0,1)
+PRINT, To be spawned at Position(0,2)
+PRINT, Type 1 at Position (0,0)
+PRINT, Type 2 at Position (0,1)
+PRINT, Type 3 at Position (0,2)
+PRINT, 
+SHOOT, D, 2461, 2464, 0
+SHOOT, D, 2467, 2470, 2
+SHOOT, D, 2473, 2476, 4
+SHOOT, D, 2474, 2477, 0
+SHOOT, D, 2479, 2482, 6
+SHOOT, D, 2480, 2483, 1
+SHOOT, D, 2485, 2488, 8
+SHOOT, D, 2486, 2489, 3
+SHOOT, D, 2491, 2494, 10
+SHOOT, D, 2492, 2495, 5
+SHOOT, D, 2497, 2500, 12
+SHOOT, D, 2498, 2501, 7
+SHOOT, D, 2502, 2505, 0
+SHOOT, D, 2503, 2506, 14
+SHOOT, D, 2504, 2507, 9
+SHOOT, D, 2508, 2511, 2
+SHOOT, D, 2509, 2512, 16
+SHOOT, D, 2510, 2513, 11
+SHOOT, D, 2514, 2517, 6
+SHOOT, D, 2515, 2518, 18
+SHOOT, D, 2516, 2519, 13
+SHOOT, A, 2464, 2461, 0
+SHOOT, A, 2470, 2467, 2
+SHOOT, A, 2476, 2473, 4
+SHOOT, A, 2477, 2474, 0
+SHOOT, A, 2482, 2479, 6
+SHOOT, A, 2483, 2480, 1
+SHOOT, A, 2488, 2485, 8
+SHOOT, A, 2489, 2486, 3
+SHOOT, A, 2494, 2491, 10
+SHOOT, A, 2495, 2492, 5
+SHOOT, A, 2500, 2497, 12
+SHOOT, A, 2501, 2498, 7
+SHOOT, A, 2505, 2502, 0
+SHOOT, A, 2506, 2503, 14
+SHOOT, A, 2507, 2504, 9
+SHOOT, A, 2511, 2508, 2
+SHOOT, A, 2512, 2509, 16
+SHOOT, A, 2513, 2510, 11
+SHOOT, A, 2517, 2514, 6
+SHOOT, A, 2518, 2515, 18
+SHOOT, A, 2519, 2516, 13
+DEAD, A, 2461
+DEAD, A, 2474
+DEAD, A, 2502
+DEAD, D, 2464
+DEAD, D, 2477
+DEAD, D, 2505
+SPAWN, A, 2520, 1, 0, 0
+SPAWN, A, 2521, 2, 0, 1
+SPAWN, A, 2522, 3, 0, 2
+SPAWN, D, 2523, 1, 0, 0
+SPAWN, D, 2524, 2, 0, 1
+SPAWN, D, 2525, 3, 0, 2
+TURN, 421
+PRINT, TURN 421 LOGS:To be spawned at Position(0,3)
+PRINT, To be spawned at Position(0,4)
+PRINT, To be spawned at Position(0,5)
+PRINT, Type 1 at Position (0,3)
+PRINT, Type 2 at Position (0,4)
+PRINT, Type 3 at Position (0,5)
+PRINT, 
+SHOOT, D, 2467, 2470, 0
+SHOOT, D, 2473, 2476, 2
+SHOOT, D, 2479, 2482, 4
+SHOOT, D, 2480, 2483, 0
+SHOOT, D, 2485, 2488, 6
+SHOOT, D, 2486, 2489, 1
+SHOOT, D, 2491, 2494, 8
+SHOOT, D, 2492, 2495, 3
+SHOOT, D, 2497, 2500, 10
+SHOOT, D, 2498, 2501, 5
+SHOOT, D, 2503, 2506, 12
+SHOOT, D, 2504, 2507, 7
+SHOOT, D, 2508, 2511, 0
+SHOOT, D, 2509, 2512, 14
+SHOOT, D, 2510, 2513, 9
+SHOOT, D, 2514, 2517, 2
+SHOOT, D, 2515, 2518, 16
+SHOOT, D, 2516, 2519, 11
+SHOOT, D, 2520, 2523, 6
+SHOOT, D, 2521, 2524, 18
+SHOOT, D, 2522, 2525, 13
+SHOOT, A, 2470, 2467, 0
+SHOOT, A, 2476, 2473, 2
+SHOOT, A, 2482, 2479, 4
+SHOOT, A, 2483, 2480, 0
+SHOOT, A, 2488, 2485, 6
+SHOOT, A, 2489, 2486, 1
+SHOOT, A, 2494, 2491, 8
+SHOOT, A, 2495, 2492, 3
+SHOOT, A, 2500, 2497, 10
+SHOOT, A, 2501, 2498, 5
+SHOOT, A, 2506, 2503, 12
+SHOOT, A, 2507, 2504, 7
+SHOOT, A, 2511, 2508, 0
+SHOOT, A, 2512, 2509, 14
+SHOOT, A, 2513, 2510, 9
+SHOOT, A, 2517, 2514, 2
+SHOOT, A, 2518, 2515, 16
+SHOOT, A, 2519, 2516, 11
+SHOOT, A, 2523, 2520, 6
+SHOOT, A, 2524, 2521, 18
+SHOOT, A, 2525, 2522, 13
+DEAD, A, 2467
+DEAD, A, 2480
+DEAD, A, 2508
+DEAD, D, 2470
+DEAD, D, 2483
+DEAD, D, 2511
+SPAWN, A, 2526, 1, 0, 3
+SPAWN, A, 2527, 2, 0, 4
+SPAWN, A, 2528, 3, 0, 5
+SPAWN, D, 2529, 1, 0, 3
+SPAWN, D, 2530, 2, 0, 4
+SPAWN, D, 2531, 3, 0, 5
+TURN, 422
+PRINT, TURN 422 LOGS:To be spawned at Position(0,6)
+PRINT, To be spawned at Position(0,7)
+PRINT, To be spawned at Position(0,8)
+PRINT, Type 1 at Position (0,6)
+PRINT, Type 2 at Position (0,7)
+PRINT, Type 3 at Position (0,8)
+PRINT, 
+SHOOT, D, 2473, 2476, 0
+SHOOT, D, 2479, 2482, 2
+SHOOT, D, 2485, 2488, 4
+SHOOT, D, 2486, 2489, 0
+SHOOT, D, 2491, 2494, 6
+SHOOT, D, 2492, 2495, 1
+SHOOT, D, 2497, 2500, 8
+SHOOT, D, 2498, 2501, 3
+SHOOT, D, 2503, 2506, 10
+SHOOT, D, 2504, 2507, 5
+SHOOT, D, 2509, 2512, 12
+SHOOT, D, 2510, 2513, 7
+SHOOT, D, 2514, 2517, 0
+SHOOT, D, 2515, 2518, 14
+SHOOT, D, 2516, 2519, 9
+SHOOT, D, 2520, 2523, 2
+SHOOT, D, 2521, 2524, 16
+SHOOT, D, 2522, 2525, 11
+SHOOT, D, 2526, 2529, 6
+SHOOT, D, 2527, 2530, 18
+SHOOT, D, 2528, 2531, 13
+SHOOT, A, 2476, 2473, 0
+SHOOT, A, 2482, 2479, 2
+SHOOT, A, 2488, 2485, 4
+SHOOT, A, 2489, 2486, 0
+SHOOT, A, 2494, 2491, 6
+SHOOT, A, 2495, 2492, 1
+SHOOT, A, 2500, 2497, 8
+SHOOT, A, 2501, 2498, 3
+SHOOT, A, 2506, 2503, 10
+SHOOT, A, 2507, 2504, 5
+SHOOT, A, 2512, 2509, 12
+SHOOT, A, 2513, 2510, 7
+SHOOT, A, 2517, 2514, 0
+SHOOT, A, 2518, 2515, 14
+SHOOT, A, 2519, 2516, 9
+SHOOT, A, 2523, 2520, 2
+SHOOT, A, 2524, 2521, 16
+SHOOT, A, 2525, 2522, 11
+SHOOT, A, 2529, 2526, 6
+SHOOT, A, 2530, 2527, 18
+SHOOT, A, 2531, 2528, 13
+DEAD, A, 2473
+DEAD, A, 2486
+DEAD, A, 2514
+DEAD, D, 2476
+DEAD, D, 2489
+DEAD, D, 2517
+SPAWN, A, 2532, 1, 0, 6
+SPAWN, A, 2533, 2, 0, 7
+SPAWN, A, 2534, 3, 0, 8
+SPAWN, D, 2535, 1, 0, 6
+SPAWN, D, 2536, 2, 0, 7
+SPAWN, D, 2537, 3, 0, 8
+TURN, 423
+PRINT, TURN 423 LOGS:To be spawned at Position(0,9)
+PRINT, To be spawned at Position(0,10)
+PRINT, To be spawned at Position(0,11)
+PRINT, Type 1 at Position (0,9)
+PRINT, Type 2 at Position (0,10)
+PRINT, Type 3 at Position (0,11)
+PRINT, 
+SHOOT, D, 2479, 2482, 0
+SHOOT, D, 2485, 2488, 2
+SHOOT, D, 2491, 2494, 4
+SHOOT, D, 2492, 2495, 0
+SHOOT, D, 2497, 2500, 6
+SHOOT, D, 2498, 2501, 1
+SHOOT, D, 2503, 2506, 8
+SHOOT, D, 2504, 2507, 3
+SHOOT, D, 2509, 2512, 10
+SHOOT, D, 2510, 2513, 5
+SHOOT, D, 2515, 2518, 12
+SHOOT, D, 2516, 2519, 7
+SHOOT, D, 2520, 2523, 0
+SHOOT, D, 2521, 2524, 14
+SHOOT, D, 2522, 2525, 9
+SHOOT, D, 2526, 2529, 2
+SHOOT, D, 2527, 2530, 16
+SHOOT, D, 2528, 2531, 11
+SHOOT, D, 2532, 2535, 6
+SHOOT, D, 2533, 2536, 18
+SHOOT, D, 2534, 2537, 13
+SHOOT, A, 2482, 2479, 0
+SHOOT, A, 2488, 2485, 2
+SHOOT, A, 2494, 2491, 4
+SHOOT, A, 2495, 2492, 0
+SHOOT, A, 2500, 2497, 6
+SHOOT, A, 2501, 2498, 1
+SHOOT, A, 2506, 2503, 8
+SHOOT, A, 2507, 2504, 3
+SHOOT, A, 2512, 2509, 10
+SHOOT, A, 2513, 2510, 5
+SHOOT, A, 2518, 2515, 12
+SHOOT, A, 2519, 2516, 7
+SHOOT, A, 2523, 2520, 0
+SHOOT, A, 2524, 2521, 14
+SHOOT, A, 2525, 2522, 9
+SHOOT, A, 2529, 2526, 2
+SHOOT, A, 2530, 2527, 16
+SHOOT, A, 2531, 2528, 11
+SHOOT, A, 2535, 2532, 6
+SHOOT, A, 2536, 2533, 18
+SHOOT, A, 2537, 2534, 13
+DEAD, A, 2479
+DEAD, A, 2492
+DEAD, A, 2520
+DEAD, D, 2482
+DEAD, D, 2495
+DEAD, D, 2523
+SPAWN, A, 2538, 1, 0, 9
+SPAWN, A, 2539, 2, 0, 10
+SPAWN, A, 2540, 3, 0, 11
+SPAWN, D, 2541, 1, 0, 9
+SPAWN, D, 2542, 2, 0, 10
+SPAWN, D, 2543, 3, 0, 11
+TURN, 424
+PRINT, TURN 424 LOGS:To be spawned at Position(0,12)
+PRINT, To be spawned at Position(0,13)
+PRINT, To be spawned at Position(0,14)
+PRINT, Type 1 at Position (0,12)
+PRINT, Type 2 at Position (0,13)
+PRINT, Type 3 at Position (0,14)
+PRINT, 
+SHOOT, D, 2485, 2488, 0
+SHOOT, D, 2491, 2494, 2
+SHOOT, D, 2497, 2500, 4
+SHOOT, D, 2498, 2501, 0
+SHOOT, D, 2503, 2506, 6
+SHOOT, D, 2504, 2507, 1
+SHOOT, D, 2509, 2512, 8
+SHOOT, D, 2510, 2513, 3
+SHOOT, D, 2515, 2518, 10
+SHOOT, D, 2516, 2519, 5
+SHOOT, D, 2521, 2524, 12
+SHOOT, D, 2522, 2525, 7
+SHOOT, D, 2526, 2529, 0
+SHOOT, D, 2527, 2530, 14
+SHOOT, D, 2528, 2531, 9
+SHOOT, D, 2532, 2535, 2
+SHOOT, D, 2533, 2536, 16
+SHOOT, D, 2534, 2537, 11
+SHOOT, D, 2538, 2541, 6
+SHOOT, D, 2539, 2542, 18
+SHOOT, D, 2540, 2543, 13
+SHOOT, A, 2488, 2485, 0
+SHOOT, A, 2494, 2491, 2
+SHOOT, A, 2500, 2497, 4
+SHOOT, A, 2501, 2498, 0
+SHOOT, A, 2506, 2503, 6
+SHOOT, A, 2507, 2504, 1
+SHOOT, A, 2512, 2509, 8
+SHOOT, A, 2513, 2510, 3
+SHOOT, A, 2518, 2515, 10
+SHOOT, A, 2519, 2516, 5
+SHOOT, A, 2524, 2521, 12
+SHOOT, A, 2525, 2522, 7
+SHOOT, A, 2529, 2526, 0
+SHOOT, A, 2530, 2527, 14
+SHOOT, A, 2531, 2528, 9
+SHOOT, A, 2535, 2532, 2
+SHOOT, A, 2536, 2533, 16
+SHOOT, A, 2537, 2534, 11
+SHOOT, A, 2541, 2538, 6
+SHOOT, A, 2542, 2539, 18
+SHOOT, A, 2543, 2540, 13
+DEAD, A, 2485
+DEAD, A, 2498
+DEAD, A, 2526
+DEAD, D, 2488
+DEAD, D, 2501
+DEAD, D, 2529
+SPAWN, A, 2544, 1, 0, 12
+SPAWN, A, 2545, 2, 0, 13
+SPAWN, A, 2546, 3, 0, 14
+SPAWN, D, 2547, 1, 0, 12
+SPAWN, D, 2548, 2, 0, 13
+SPAWN, D, 2549, 3, 0, 14
+TURN, 425
+PRINT, TURN 425 LOGS:To be spawned at Position(0,15)
+PRINT, To be spawned at Position(0,16)
+PRINT, To be spawned at Position(0,17)
+PRINT, Type 1 at Position (0,15)
+PRINT, Type 2 at Position (0,16)
+PRINT, Type 3 at Position (0,17)
+PRINT, 
+SHOOT, D, 2491, 2494, 0
+SHOOT, D, 2497, 2500, 2
+SHOOT, D, 2503, 2506, 4
+SHOOT, D, 2504, 2507, 0
+SHOOT, D, 2509, 2512, 6
+SHOOT, D, 2510, 2513, 1
+SHOOT, D, 2515, 2518, 8
+SHOOT, D, 2516, 2519, 3
+SHOOT, D, 2521, 2524, 10
+SHOOT, D, 2522, 2525, 5
+SHOOT, D, 2527, 2530, 12
+SHOOT, D, 2528, 2531, 7
+SHOOT, D, 2532, 2535, 0
+SHOOT, D, 2533, 2536, 14
+SHOOT, D, 2534, 2537, 9
+SHOOT, D, 2538, 2541, 2
+SHOOT, D, 2539, 2542, 16
+SHOOT, D, 2540, 2543, 11
+SHOOT, D, 2544, 2547, 6
+SHOOT, D, 2545, 2548, 18
+SHOOT, D, 2546, 2549, 13
+SHOOT, A, 2494, 2491, 0
+SHOOT, A, 2500, 2497, 2
+SHOOT, A, 2506, 2503, 4
+SHOOT, A, 2507, 2504, 0
+SHOOT, A, 2512, 2509, 6
+SHOOT, A, 2513, 2510, 1
+SHOOT, A, 2518, 2515, 8
+SHOOT, A, 2519, 2516, 3
+SHOOT, A, 2524, 2521, 10
+SHOOT, A, 2525, 2522, 5
+SHOOT, A, 2530, 2527, 12
+SHOOT, A, 2531, 2528, 7
+SHOOT, A, 2535, 2532, 0
+SHOOT, A, 2536, 2533, 14
+SHOOT, A, 2537, 2534, 9
+SHOOT, A, 2541, 2538, 2
+SHOOT, A, 2542, 2539, 16
+SHOOT, A, 2543, 2540, 11
+SHOOT, A, 2547, 2544, 6
+SHOOT, A, 2548, 2545, 18
+SHOOT, A, 2549, 2546, 13
+DEAD, A, 2491
+DEAD, A, 2504
+DEAD, A, 2532
+DEAD, D, 2494
+DEAD, D, 2507
+DEAD, D, 2535
+SPAWN, A, 2550, 1, 0, 15
+SPAWN, A, 2551, 2, 0, 16
+SPAWN, A, 2552, 3, 0, 17
+SPAWN, D, 2553, 1, 0, 15
+SPAWN, D, 2554, 2, 0, 16
+SPAWN, D, 2555, 3, 0, 17
+TURN, 426
+PRINT, TURN 426 LOGS:To be spawned at Position(0,18)
+PRINT, To be spawned at Position(0,19)
+PRINT, To be spawned at Position(0,20)
+PRINT, Type 1 at Position (0,18)
+PRINT, Type 2 at Position (0,19)
+PRINT, Type 3 at Position (0,20)
+PRINT, 
+SHOOT, D, 2497, 2500, 0
+SHOOT, D, 2503, 2506, 2
+SHOOT, D, 2509, 2512, 4
+SHOOT, D, 2510, 2513, 0
+SHOOT, D, 2515, 2518, 6
+SHOOT, D, 2516, 2519, 1
+SHOOT, D, 2521, 2524, 8
+SHOOT, D, 2522, 2525, 3
+SHOOT, D, 2527, 2530, 10
+SHOOT, D, 2528, 2531, 5
+SHOOT, D, 2533, 2536, 12
+SHOOT, D, 2534, 2537, 7
+SHOOT, D, 2538, 2541, 0
+SHOOT, D, 2539, 2542, 14
+SHOOT, D, 2540, 2543, 9
+SHOOT, D, 2544, 2547, 2
+SHOOT, D, 2545, 2548, 16
+SHOOT, D, 2546, 2549, 11
+SHOOT, D, 2550, 2553, 6
+SHOOT, D, 2551, 2554, 18
+SHOOT, D, 2552, 2555, 13
+SHOOT, A, 2500, 2497, 0
+SHOOT, A, 2506, 2503, 2
+SHOOT, A, 2512, 2509, 4
+SHOOT, A, 2513, 2510, 0
+SHOOT, A, 2518, 2515, 6
+SHOOT, A, 2519, 2516, 1
+SHOOT, A, 2524, 2521, 8
+SHOOT, A, 2525, 2522, 3
+SHOOT, A, 2530, 2527, 10
+SHOOT, A, 2531, 2528, 5
+SHOOT, A, 2536, 2533, 12
+SHOOT, A, 2537, 2534, 7
+SHOOT, A, 2541, 2538, 0
+SHOOT, A, 2542, 2539, 14
+SHOOT, A, 2543, 2540, 9
+SHOOT, A, 2547, 2544, 2
+SHOOT, A, 2548, 2545, 16
+SHOOT, A, 2549, 2546, 11
+SHOOT, A, 2553, 2550, 6
+SHOOT, A, 2554, 2551, 18
+SHOOT, A, 2555, 2552, 13
+DEAD, A, 2497
+DEAD, A, 2510
+DEAD, A, 2538
+DEAD, D, 2500
+DEAD, D, 2513
+DEAD, D, 2541
+SPAWN, A, 2556, 1, 0, 18
+SPAWN, A, 2557, 2, 0, 19
+SPAWN, A, 2558, 3, 0, 20
+SPAWN, D, 2559, 1, 0, 18
+SPAWN, D, 2560, 2, 0, 19
+SPAWN, D, 2561, 3, 0, 20
+TURN, 427
+PRINT, TURN 427 LOGS:To be spawned at Position(0,21)
+PRINT, To be spawned at Position(0,22)
+PRINT, To be spawned at Position(0,23)
+PRINT, Type 1 at Position (0,21)
+PRINT, Type 2 at Position (0,22)
+PRINT, Type 3 at Position (0,23)
+PRINT, 
+SHOOT, D, 2503, 2506, 0
+SHOOT, D, 2509, 2512, 2
+SHOOT, D, 2515, 2518, 4
+SHOOT, D, 2516, 2519, 0
+SHOOT, D, 2521, 2524, 6
+SHOOT, D, 2522, 2525, 1
+SHOOT, D, 2527, 2530, 8
+SHOOT, D, 2528, 2531, 3
+SHOOT, D, 2533, 2536, 10
+SHOOT, D, 2534, 2537, 5
+SHOOT, D, 2539, 2542, 12
+SHOOT, D, 2540, 2543, 7
+SHOOT, D, 2544, 2547, 0
+SHOOT, D, 2545, 2548, 14
+SHOOT, D, 2546, 2549, 9
+SHOOT, D, 2550, 2553, 2
+SHOOT, D, 2551, 2554, 16
+SHOOT, D, 2552, 2555, 11
+SHOOT, D, 2556, 2559, 6
+SHOOT, D, 2557, 2560, 18
+SHOOT, D, 2558, 2561, 13
+SHOOT, A, 2506, 2503, 0
+SHOOT, A, 2512, 2509, 2
+SHOOT, A, 2518, 2515, 4
+SHOOT, A, 2519, 2516, 0
+SHOOT, A, 2524, 2521, 6
+SHOOT, A, 2525, 2522, 1
+SHOOT, A, 2530, 2527, 8
+SHOOT, A, 2531, 2528, 3
+SHOOT, A, 2536, 2533, 10
+SHOOT, A, 2537, 2534, 5
+SHOOT, A, 2542, 2539, 12
+SHOOT, A, 2543, 2540, 7
+SHOOT, A, 2547, 2544, 0
+SHOOT, A, 2548, 2545, 14
+SHOOT, A, 2549, 2546, 9
+SHOOT, A, 2553, 2550, 2
+SHOOT, A, 2554, 2551, 16
+SHOOT, A, 2555, 2552, 11
+SHOOT, A, 2559, 2556, 6
+SHOOT, A, 2560, 2557, 18
+SHOOT, A, 2561, 2558, 13
+DEAD, A, 2503
+DEAD, A, 2516
+DEAD, A, 2544
+DEAD, D, 2506
+DEAD, D, 2519
+DEAD, D, 2547
+SPAWN, A, 2562, 1, 0, 21
+SPAWN, A, 2563, 2, 0, 22
+SPAWN, A, 2564, 3, 0, 23
+SPAWN, D, 2565, 1, 0, 21
+SPAWN, D, 2566, 2, 0, 22
+SPAWN, D, 2567, 3, 0, 23
+TURN, 428
+PRINT, TURN 428 LOGS:To be spawned at Position(0,24)
+PRINT, To be spawned at Position(0,25)
+PRINT, To be spawned at Position(0,26)
+PRINT, Type 1 at Position (0,24)
+PRINT, Type 2 at Position (0,25)
+PRINT, Type 3 at Position (0,26)
+PRINT, 
+SHOOT, D, 2509, 2512, 0
+SHOOT, D, 2515, 2518, 2
+SHOOT, D, 2521, 2524, 4
+SHOOT, D, 2522, 2525, 0
+SHOOT, D, 2527, 2530, 6
+SHOOT, D, 2528, 2531, 1
+SHOOT, D, 2533, 2536, 8
+SHOOT, D, 2534, 2537, 3
+SHOOT, D, 2539, 2542, 10
+SHOOT, D, 2540, 2543, 5
+SHOOT, D, 2545, 2548, 12
+SHOOT, D, 2546, 2549, 7
+SHOOT, D, 2550, 2553, 0
+SHOOT, D, 2551, 2554, 14
+SHOOT, D, 2552, 2555, 9
+SHOOT, D, 2556, 2559, 2
+SHOOT, D, 2557, 2560, 16
+SHOOT, D, 2558, 2561, 11
+SHOOT, D, 2562, 2565, 6
+SHOOT, D, 2563, 2566, 18
+SHOOT, D, 2564, 2567, 13
+SHOOT, A, 2512, 2509, 0
+SHOOT, A, 2518, 2515, 2
+SHOOT, A, 2524, 2521, 4
+SHOOT, A, 2525, 2522, 0
+SHOOT, A, 2530, 2527, 6
+SHOOT, A, 2531, 2528, 1
+SHOOT, A, 2536, 2533, 8
+SHOOT, A, 2537, 2534, 3
+SHOOT, A, 2542, 2539, 10
+SHOOT, A, 2543, 2540, 5
+SHOOT, A, 2548, 2545, 12
+SHOOT, A, 2549, 2546, 7
+SHOOT, A, 2553, 2550, 0
+SHOOT, A, 2554, 2551, 14
+SHOOT, A, 2555, 2552, 9
+SHOOT, A, 2559, 2556, 2
+SHOOT, A, 2560, 2557, 16
+SHOOT, A, 2561, 2558, 11
+SHOOT, A, 2565, 2562, 6
+SHOOT, A, 2566, 2563, 18
+SHOOT, A, 2567, 2564, 13
+DEAD, A, 2509
+DEAD, A, 2522
+DEAD, A, 2550
+DEAD, D, 2512
+DEAD, D, 2525
+DEAD, D, 2553
+SPAWN, A, 2568, 1, 0, 24
+SPAWN, A, 2569, 2, 0, 25
+SPAWN, A, 2570, 3, 0, 26
+SPAWN, D, 2571, 1, 0, 24
+SPAWN, D, 2572, 2, 0, 25
+SPAWN, D, 2573, 3, 0, 26
+TURN, 429
+PRINT, TURN 429 LOGS:To be spawned at Position(0,27)
+PRINT, To be spawned at Position(0,28)
+PRINT, To be spawned at Position(0,29)
+PRINT, Type 1 at Position (0,27)
+PRINT, Type 2 at Position (0,28)
+PRINT, Type 3 at Position (0,29)
+PRINT, 
+SHOOT, D, 2515, 2518, 0
+SHOOT, D, 2521, 2524, 2
+SHOOT, D, 2527, 2530, 4
+SHOOT, D, 2528, 2531, 0
+SHOOT, D, 2533, 2536, 6
+SHOOT, D, 2534, 2537, 1
+SHOOT, D, 2539, 2542, 8
+SHOOT, D, 2540, 2543, 3
+SHOOT, D, 2545, 2548, 10
+SHOOT, D, 2546, 2549, 5
+SHOOT, D, 2551, 2554, 12
+SHOOT, D, 2552, 2555, 7
+SHOOT, D, 2556, 2559, 0
+SHOOT, D, 2557, 2560, 14
+SHOOT, D, 2558, 2561, 9
+SHOOT, D, 2562, 2565, 2
+SHOOT, D, 2563, 2566, 16
+SHOOT, D, 2564, 2567, 11
+SHOOT, D, 2568, 2571, 6
+SHOOT, D, 2569, 2572, 18
+SHOOT, D, 2570, 2573, 13
+SHOOT, A, 2518, 2515, 0
+SHOOT, A, 2524, 2521, 2
+SHOOT, A, 2530, 2527, 4
+SHOOT, A, 2531, 2528, 0
+SHOOT, A, 2536, 2533, 6
+SHOOT, A, 2537, 2534, 1
+SHOOT, A, 2542, 2539, 8
+SHOOT, A, 2543, 2540, 3
+SHOOT, A, 2548, 2545, 10
+SHOOT, A, 2549, 2546, 5
+SHOOT, A, 2554, 2551, 12
+SHOOT, A, 2555, 2552, 7
+SHOOT, A, 2559, 2556, 0
+SHOOT, A, 2560, 2557, 14
+SHOOT, A, 2561, 2558, 9
+SHOOT, A, 2565, 2562, 2
+SHOOT, A, 2566, 2563, 16
+SHOOT, A, 2567, 2564, 11
+SHOOT, A, 2571, 2568, 6
+SHOOT, A, 2572, 2569, 18
+SHOOT, A, 2573, 2570, 13
+DEAD, A, 2515
+DEAD, A, 2528
+DEAD, A, 2556
+DEAD, D, 2518
+DEAD, D, 2531
+DEAD, D, 2559
+SPAWN, A, 2574, 1, 0, 27
+SPAWN, A, 2575, 2, 0, 28
+SPAWN, A, 2576, 3, 0, 29
+SPAWN, D, 2577, 1, 0, 27
+SPAWN, D, 2578, 2, 0, 28
+SPAWN, D, 2579, 3, 0, 29
+TURN, 430
+PRINT, TURN 430 LOGS:To be spawned at Position(0,30)
+PRINT, To be spawned at Position(0,31)
+PRINT, To be spawned at Position(0,32)
+PRINT, Type 1 at Position (0,30)
+PRINT, Type 2 at Position (0,31)
+PRINT, Type 3 at Position (0,32)
+PRINT, 
+SHOOT, D, 2521, 2524, 0
+SHOOT, D, 2527, 2530, 2
+SHOOT, D, 2533, 2536, 4
+SHOOT, D, 2534, 2537, 0
+SHOOT, D, 2539, 2542, 6
+SHOOT, D, 2540, 2543, 1
+SHOOT, D, 2545, 2548, 8
+SHOOT, D, 2546, 2549, 3
+SHOOT, D, 2551, 2554, 10
+SHOOT, D, 2552, 2555, 5
+SHOOT, D, 2557, 2560, 12
+SHOOT, D, 2558, 2561, 7
+SHOOT, D, 2562, 2565, 0
+SHOOT, D, 2563, 2566, 14
+SHOOT, D, 2564, 2567, 9
+SHOOT, D, 2568, 2571, 2
+SHOOT, D, 2569, 2572, 16
+SHOOT, D, 2570, 2573, 11
+SHOOT, D, 2574, 2577, 6
+SHOOT, D, 2575, 2578, 18
+SHOOT, D, 2576, 2579, 13
+SHOOT, A, 2524, 2521, 0
+SHOOT, A, 2530, 2527, 2
+SHOOT, A, 2536, 2533, 4
+SHOOT, A, 2537, 2534, 0
+SHOOT, A, 2542, 2539, 6
+SHOOT, A, 2543, 2540, 1
+SHOOT, A, 2548, 2545, 8
+SHOOT, A, 2549, 2546, 3
+SHOOT, A, 2554, 2551, 10
+SHOOT, A, 2555, 2552, 5
+SHOOT, A, 2560, 2557, 12
+SHOOT, A, 2561, 2558, 7
+SHOOT, A, 2565, 2562, 0
+SHOOT, A, 2566, 2563, 14
+SHOOT, A, 2567, 2564, 9
+SHOOT, A, 2571, 2568, 2
+SHOOT, A, 2572, 2569, 16
+SHOOT, A, 2573, 2570, 11
+SHOOT, A, 2577, 2574, 6
+SHOOT, A, 2578, 2575, 18
+SHOOT, A, 2579, 2576, 13
+DEAD, A, 2521
+DEAD, A, 2534
+DEAD, A, 2562
+DEAD, D, 2524
+DEAD, D, 2537
+DEAD, D, 2565
+SPAWN, A, 2580, 1, 0, 30
+SPAWN, A, 2581, 2, 0, 31
+SPAWN, A, 2582, 3, 0, 32
+SPAWN, D, 2583, 1, 0, 30
+SPAWN, D, 2584, 2, 0, 31
+SPAWN, D, 2585, 3, 0, 32
+TURN, 431
+PRINT, TURN 431 LOGS:To be spawned at Position(0,33)
+PRINT, To be spawned at Position(0,34)
+PRINT, To be spawned at Position(0,35)
+PRINT, Type 1 at Position (0,33)
+PRINT, Type 2 at Position (0,34)
+PRINT, Type 3 at Position (0,35)
+PRINT, 
+SHOOT, D, 2527, 2530, 0
+SHOOT, D, 2533, 2536, 2
+SHOOT, D, 2539, 2542, 4
+SHOOT, D, 2540, 2543, 0
+SHOOT, D, 2545, 2548, 6
+SHOOT, D, 2546, 2549, 1
+SHOOT, D, 2551, 2554, 8
+SHOOT, D, 2552, 2555, 3
+SHOOT, D, 2557, 2560, 10
+SHOOT, D, 2558, 2561, 5
+SHOOT, D, 2563, 2566, 12
+SHOOT, D, 2564, 2567, 7
+SHOOT, D, 2568, 2571, 0
+SHOOT, D, 2569, 2572, 14
+SHOOT, D, 2570, 2573, 9
+SHOOT, D, 2574, 2577, 2
+SHOOT, D, 2575, 2578, 16
+SHOOT, D, 2576, 2579, 11
+SHOOT, D, 2580, 2583, 6
+SHOOT, D, 2581, 2584, 18
+SHOOT, D, 2582, 2585, 13
+SHOOT, A, 2530, 2527, 0
+SHOOT, A, 2536, 2533, 2
+SHOOT, A, 2542, 2539, 4
+SHOOT, A, 2543, 2540, 0
+SHOOT, A, 2548, 2545, 6
+SHOOT, A, 2549, 2546, 1
+SHOOT, A, 2554, 2551, 8
+SHOOT, A, 2555, 2552, 3
+SHOOT, A, 2560, 2557, 10
+SHOOT, A, 2561, 2558, 5
+SHOOT, A, 2566, 2563, 12
+SHOOT, A, 2567, 2564, 7
+SHOOT, A, 2571, 2568, 0
+SHOOT, A, 2572, 2569, 14
+SHOOT, A, 2573, 2570, 9
+SHOOT, A, 2577, 2574, 2
+SHOOT, A, 2578, 2575, 16
+SHOOT, A, 2579, 2576, 11
+SHOOT, A, 2583, 2580, 6
+SHOOT, A, 2584, 2581, 18
+SHOOT, A, 2585, 2582, 13
+DEAD, A, 2527
+DEAD, A, 2540
+DEAD, A, 2568
+DEAD, D, 2530
+DEAD, D, 2543
+DEAD, D, 2571
+SPAWN, A, 2586, 1, 0, 33
+SPAWN, A, 2587, 2, 0, 34
+SPAWN, A, 2588, 3, 0, 35
+SPAWN, D, 2589, 1, 0, 33
+SPAWN, D, 2590, 2, 0, 34
+SPAWN, D, 2591, 3, 0, 35
+TURN, 432
+PRINT, TURN 432 LOGS:To be spawned at Position(0,36)
+PRINT, To be spawned at Position(0,37)
+PRINT, To be spawned at Position(0,38)
+PRINT, Type 1 at Position (0,36)
+PRINT, Type 2 at Position (0,37)
+PRINT, Type 3 at Position (0,38)
+PRINT, 
+SHOOT, D, 2533, 2536, 0
+SHOOT, D, 2539, 2542, 2
+SHOOT, D, 2545, 2548, 4
+SHOOT, D, 2546, 2549, 0
+SHOOT, D, 2551, 2554, 6
+SHOOT, D, 2552, 2555, 1
+SHOOT, D, 2557, 2560, 8
+SHOOT, D, 2558, 2561, 3
+SHOOT, D, 2563, 2566, 10
+SHOOT, D, 2564, 2567, 5
+SHOOT, D, 2569, 2572, 12
+SHOOT, D, 2570, 2573, 7
+SHOOT, D, 2574, 2577, 0
+SHOOT, D, 2575, 2578, 14
+SHOOT, D, 2576, 2579, 9
+SHOOT, D, 2580, 2583, 2
+SHOOT, D, 2581, 2584, 16
+SHOOT, D, 2582, 2585, 11
+SHOOT, D, 2586, 2589, 6
+SHOOT, D, 2587, 2590, 18
+SHOOT, D, 2588, 2591, 13
+SHOOT, A, 2536, 2533, 0
+SHOOT, A, 2542, 2539, 2
+SHOOT, A, 2548, 2545, 4
+SHOOT, A, 2549, 2546, 0
+SHOOT, A, 2554, 2551, 6
+SHOOT, A, 2555, 2552, 1
+SHOOT, A, 2560, 2557, 8
+SHOOT, A, 2561, 2558, 3
+SHOOT, A, 2566, 2563, 10
+SHOOT, A, 2567, 2564, 5
+SHOOT, A, 2572, 2569, 12
+SHOOT, A, 2573, 2570, 7
+SHOOT, A, 2577, 2574, 0
+SHOOT, A, 2578, 2575, 14
+SHOOT, A, 2579, 2576, 9
+SHOOT, A, 2583, 2580, 2
+SHOOT, A, 2584, 2581, 16
+SHOOT, A, 2585, 2582, 11
+SHOOT, A, 2589, 2586, 6
+SHOOT, A, 2590, 2587, 18
+SHOOT, A, 2591, 2588, 13
+DEAD, A, 2533
+DEAD, A, 2546
+DEAD, A, 2574
+DEAD, D, 2536
+DEAD, D, 2549
+DEAD, D, 2577
+SPAWN, A, 2592, 1, 0, 36
+SPAWN, A, 2593, 2, 0, 37
+SPAWN, A, 2594, 3, 0, 38
+SPAWN, D, 2595, 1, 0, 36
+SPAWN, D, 2596, 2, 0, 37
+SPAWN, D, 2597, 3, 0, 38
+TURN, 433
+PRINT, TURN 433 LOGS:To be spawned at Position(0,39)
+PRINT, To be spawned at Position(0,40)
+PRINT, To be spawned at Position(0,41)
+PRINT, Type 1 at Position (0,39)
+PRINT, Type 2 at Position (0,40)
+PRINT, Type 3 at Position (0,41)
+PRINT, 
+SHOOT, D, 2539, 2542, 0
+SHOOT, D, 2545, 2548, 2
+SHOOT, D, 2551, 2554, 4
+SHOOT, D, 2552, 2555, 0
+SHOOT, D, 2557, 2560, 6
+SHOOT, D, 2558, 2561, 1
+SHOOT, D, 2563, 2566, 8
+SHOOT, D, 2564, 2567, 3
+SHOOT, D, 2569, 2572, 10
+SHOOT, D, 2570, 2573, 5
+SHOOT, D, 2575, 2578, 12
+SHOOT, D, 2576, 2579, 7
+SHOOT, D, 2580, 2583, 0
+SHOOT, D, 2581, 2584, 14
+SHOOT, D, 2582, 2585, 9
+SHOOT, D, 2586, 2589, 2
+SHOOT, D, 2587, 2590, 16
+SHOOT, D, 2588, 2591, 11
+SHOOT, D, 2592, 2595, 6
+SHOOT, D, 2593, 2596, 18
+SHOOT, D, 2594, 2597, 13
+SHOOT, A, 2542, 2539, 0
+SHOOT, A, 2548, 2545, 2
+SHOOT, A, 2554, 2551, 4
+SHOOT, A, 2555, 2552, 0
+SHOOT, A, 2560, 2557, 6
+SHOOT, A, 2561, 2558, 1
+SHOOT, A, 2566, 2563, 8
+SHOOT, A, 2567, 2564, 3
+SHOOT, A, 2572, 2569, 10
+SHOOT, A, 2573, 2570, 5
+SHOOT, A, 2578, 2575, 12
+SHOOT, A, 2579, 2576, 7
+SHOOT, A, 2583, 2580, 0
+SHOOT, A, 2584, 2581, 14
+SHOOT, A, 2585, 2582, 9
+SHOOT, A, 2589, 2586, 2
+SHOOT, A, 2590, 2587, 16
+SHOOT, A, 2591, 2588, 11
+SHOOT, A, 2595, 2592, 6
+SHOOT, A, 2596, 2593, 18
+SHOOT, A, 2597, 2594, 13
+DEAD, A, 2539
+DEAD, A, 2552
+DEAD, A, 2580
+DEAD, D, 2542
+DEAD, D, 2555
+DEAD, D, 2583
+SPAWN, A, 2598, 1, 0, 39
+SPAWN, A, 2599, 2, 0, 40
+SPAWN, A, 2600, 3, 0, 41
+SPAWN, D, 2601, 1, 0, 39
+SPAWN, D, 2602, 2, 0, 40
+SPAWN, D, 2603, 3, 0, 41
+TURN, 434
+PRINT, TURN 434 LOGS:To be spawned at Position(0,42)
+PRINT, To be spawned at Position(0,43)
+PRINT, To be spawned at Position(0,44)
+PRINT, Type 1 at Position (0,42)
+PRINT, Type 2 at Position (0,43)
+PRINT, Type 3 at Position (0,44)
+PRINT, 
+SHOOT, D, 2545, 2548, 0
+SHOOT, D, 2551, 2554, 2
+SHOOT, D, 2557, 2560, 4
+SHOOT, D, 2558, 2561, 0
+SHOOT, D, 2563, 2566, 6
+SHOOT, D, 2564, 2567, 1
+SHOOT, D, 2569, 2572, 8
+SHOOT, D, 2570, 2573, 3
+SHOOT, D, 2575, 2578, 10
+SHOOT, D, 2576, 2579, 5
+SHOOT, D, 2581, 2584, 12
+SHOOT, D, 2582, 2585, 7
+SHOOT, D, 2586, 2589, 0
+SHOOT, D, 2587, 2590, 14
+SHOOT, D, 2588, 2591, 9
+SHOOT, D, 2592, 2595, 2
+SHOOT, D, 2593, 2596, 16
+SHOOT, D, 2594, 2597, 11
+SHOOT, D, 2598, 2601, 6
+SHOOT, D, 2599, 2602, 18
+SHOOT, D, 2600, 2603, 13
+SHOOT, A, 2548, 2545, 0
+SHOOT, A, 2554, 2551, 2
+SHOOT, A, 2560, 2557, 4
+SHOOT, A, 2561, 2558, 0
+SHOOT, A, 2566, 2563, 6
+SHOOT, A, 2567, 2564, 1
+SHOOT, A, 2572, 2569, 8
+SHOOT, A, 2573, 2570, 3
+SHOOT, A, 2578, 2575, 10
+SHOOT, A, 2579, 2576, 5
+SHOOT, A, 2584, 2581, 12
+SHOOT, A, 2585, 2582, 7
+SHOOT, A, 2589, 2586, 0
+SHOOT, A, 2590, 2587, 14
+SHOOT, A, 2591, 2588, 9
+SHOOT, A, 2595, 2592, 2
+SHOOT, A, 2596, 2593, 16
+SHOOT, A, 2597, 2594, 11
+SHOOT, A, 2601, 2598, 6
+SHOOT, A, 2602, 2599, 18
+SHOOT, A, 2603, 2600, 13
+DEAD, A, 2545
+DEAD, A, 2558
+DEAD, A, 2586
+DEAD, D, 2548
+DEAD, D, 2561
+DEAD, D, 2589
+SPAWN, A, 2604, 1, 0, 42
+SPAWN, A, 2605, 2, 0, 43
+SPAWN, A, 2606, 3, 0, 44
+SPAWN, D, 2607, 1, 0, 42
+SPAWN, D, 2608, 2, 0, 43
+SPAWN, D, 2609, 3, 0, 44
+TURN, 435
+PRINT, TURN 435 LOGS:To be spawned at Position(0,45)
+PRINT, To be spawned at Position(0,46)
+PRINT, To be spawned at Position(0,47)
+PRINT, Type 1 at Position (0,45)
+PRINT, Type 2 at Position (0,46)
+PRINT, Type 3 at Position (0,47)
+PRINT, 
+SHOOT, D, 2551, 2554, 0
+SHOOT, D, 2557, 2560, 2
+SHOOT, D, 2563, 2566, 4
+SHOOT, D, 2564, 2567, 0
+SHOOT, D, 2569, 2572, 6
+SHOOT, D, 2570, 2573, 1
+SHOOT, D, 2575, 2578, 8
+SHOOT, D, 2576, 2579, 3
+SHOOT, D, 2581, 2584, 10
+SHOOT, D, 2582, 2585, 5
+SHOOT, D, 2587, 2590, 12
+SHOOT, D, 2588, 2591, 7
+SHOOT, D, 2592, 2595, 0
+SHOOT, D, 2593, 2596, 14
+SHOOT, D, 2594, 2597, 9
+SHOOT, D, 2598, 2601, 2
+SHOOT, D, 2599, 2602, 16
+SHOOT, D, 2600, 2603, 11
+SHOOT, D, 2604, 2607, 6
+SHOOT, D, 2605, 2608, 18
+SHOOT, D, 2606, 2609, 13
+SHOOT, A, 2554, 2551, 0
+SHOOT, A, 2560, 2557, 2
+SHOOT, A, 2566, 2563, 4
+SHOOT, A, 2567, 2564, 0
+SHOOT, A, 2572, 2569, 6
+SHOOT, A, 2573, 2570, 1
+SHOOT, A, 2578, 2575, 8
+SHOOT, A, 2579, 2576, 3
+SHOOT, A, 2584, 2581, 10
+SHOOT, A, 2585, 2582, 5
+SHOOT, A, 2590, 2587, 12
+SHOOT, A, 2591, 2588, 7
+SHOOT, A, 2595, 2592, 0
+SHOOT, A, 2596, 2593, 14
+SHOOT, A, 2597, 2594, 9
+SHOOT, A, 2601, 2598, 2
+SHOOT, A, 2602, 2599, 16
+SHOOT, A, 2603, 2600, 11
+SHOOT, A, 2607, 2604, 6
+SHOOT, A, 2608, 2605, 18
+SHOOT, A, 2609, 2606, 13
+DEAD, A, 2551
+DEAD, A, 2564
+DEAD, A, 2592
+DEAD, D, 2554
+DEAD, D, 2567
+DEAD, D, 2595
+SPAWN, A, 2610, 1, 0, 45
+SPAWN, A, 2611, 2, 0, 46
+SPAWN, A, 2612, 3, 0, 47
+SPAWN, D, 2613, 1, 0, 45
+SPAWN, D, 2614, 2, 0, 46
+SPAWN, D, 2615, 3, 0, 47
+TURN, 436
+PRINT, TURN 436 LOGS:To be spawned at Position(0,48)
+PRINT, To be spawned at Position(0,49)
+PRINT, To be spawned at Position(0,50)
+PRINT, Type 1 at Position (0,48)
+PRINT, Type 2 at Position (0,49)
+PRINT, Type 3 at Position (0,50)
+PRINT, 
+SHOOT, D, 2557, 2560, 0
+SHOOT, D, 2563, 2566, 2
+SHOOT, D, 2569, 2572, 4
+SHOOT, D, 2570, 2573, 0
+SHOOT, D, 2575, 2578, 6
+SHOOT, D, 2576, 2579, 1
+SHOOT, D, 2581, 2584, 8
+SHOOT, D, 2582, 2585, 3
+SHOOT, D, 2587, 2590, 10
+SHOOT, D, 2588, 2591, 5
+SHOOT, D, 2593, 2596, 12
+SHOOT, D, 2594, 2597, 7
+SHOOT, D, 2598, 2601, 0
+SHOOT, D, 2599, 2602, 14
+SHOOT, D, 2600, 2603, 9
+SHOOT, D, 2604, 2607, 2
+SHOOT, D, 2605, 2608, 16
+SHOOT, D, 2606, 2609, 11
+SHOOT, D, 2610, 2613, 6
+SHOOT, D, 2611, 2614, 18
+SHOOT, D, 2612, 2615, 13
+SHOOT, A, 2560, 2557, 0
+SHOOT, A, 2566, 2563, 2
+SHOOT, A, 2572, 2569, 4
+SHOOT, A, 2573, 2570, 0
+SHOOT, A, 2578, 2575, 6
+SHOOT, A, 2579, 2576, 1
+SHOOT, A, 2584, 2581, 8
+SHOOT, A, 2585, 2582, 3
+SHOOT, A, 2590, 2587, 10
+SHOOT, A, 2591, 2588, 5
+SHOOT, A, 2596, 2593, 12
+SHOOT, A, 2597, 2594, 7
+SHOOT, A, 2601, 2598, 0
+SHOOT, A, 2602, 2599, 14
+SHOOT, A, 2603, 2600, 9
+SHOOT, A, 2607, 2604, 2
+SHOOT, A, 2608, 2605, 16
+SHOOT, A, 2609, 2606, 11
+SHOOT, A, 2613, 2610, 6
+SHOOT, A, 2614, 2611, 18
+SHOOT, A, 2615, 2612, 13
+DEAD, A, 2557
+DEAD, A, 2570
+DEAD, A, 2598
+DEAD, D, 2560
+DEAD, D, 2573
+DEAD, D, 2601
+SPAWN, A, 2616, 1, 0, 48
+SPAWN, A, 2617, 2, 0, 49
+SPAWN, A, 2618, 3, 0, 50
+SPAWN, D, 2619, 1, 0, 48
+SPAWN, D, 2620, 2, 0, 49
+SPAWN, D, 2621, 3, 0, 50
+TURN, 437
+PRINT, TURN 437 LOGS:To be spawned at Position(0,51)
+PRINT, To be spawned at Position(0,52)
+PRINT, To be spawned at Position(0,53)
+PRINT, Type 1 at Position (0,51)
+PRINT, Type 2 at Position (0,52)
+PRINT, Type 3 at Position (0,53)
+PRINT, 
+SHOOT, D, 2563, 2566, 0
+SHOOT, D, 2569, 2572, 2
+SHOOT, D, 2575, 2578, 4
+SHOOT, D, 2576, 2579, 0
+SHOOT, D, 2581, 2584, 6
+SHOOT, D, 2582, 2585, 1
+SHOOT, D, 2587, 2590, 8
+SHOOT, D, 2588, 2591, 3
+SHOOT, D, 2593, 2596, 10
+SHOOT, D, 2594, 2597, 5
+SHOOT, D, 2599, 2602, 12
+SHOOT, D, 2600, 2603, 7
+SHOOT, D, 2604, 2607, 0
+SHOOT, D, 2605, 2608, 14
+SHOOT, D, 2606, 2609, 9
+SHOOT, D, 2610, 2613, 2
+SHOOT, D, 2611, 2614, 16
+SHOOT, D, 2612, 2615, 11
+SHOOT, D, 2616, 2619, 6
+SHOOT, D, 2617, 2620, 18
+SHOOT, D, 2618, 2621, 13
+SHOOT, A, 2566, 2563, 0
+SHOOT, A, 2572, 2569, 2
+SHOOT, A, 2578, 2575, 4
+SHOOT, A, 2579, 2576, 0
+SHOOT, A, 2584, 2581, 6
+SHOOT, A, 2585, 2582, 1
+SHOOT, A, 2590, 2587, 8
+SHOOT, A, 2591, 2588, 3
+SHOOT, A, 2596, 2593, 10
+SHOOT, A, 2597, 2594, 5
+SHOOT, A, 2602, 2599, 12
+SHOOT, A, 2603, 2600, 7
+SHOOT, A, 2607, 2604, 0
+SHOOT, A, 2608, 2605, 14
+SHOOT, A, 2609, 2606, 9
+SHOOT, A, 2613, 2610, 2
+SHOOT, A, 2614, 2611, 16
+SHOOT, A, 2615, 2612, 11
+SHOOT, A, 2619, 2616, 6
+SHOOT, A, 2620, 2617, 18
+SHOOT, A, 2621, 2618, 13
+DEAD, A, 2563
+DEAD, A, 2576
+DEAD, A, 2604
+DEAD, D, 2566
+DEAD, D, 2579
+DEAD, D, 2607
+SPAWN, A, 2622, 1, 0, 51
+SPAWN, A, 2623, 2, 0, 52
+SPAWN, A, 2624, 3, 0, 53
+SPAWN, D, 2625, 1, 0, 51
+SPAWN, D, 2626, 2, 0, 52
+SPAWN, D, 2627, 3, 0, 53
+TURN, 438
+PRINT, TURN 438 LOGS:To be spawned at Position(0,54)
+PRINT, To be spawned at Position(0,55)
+PRINT, To be spawned at Position(0,56)
+PRINT, Type 1 at Position (0,54)
+PRINT, Type 2 at Position (0,55)
+PRINT, Type 3 at Position (0,56)
+PRINT, 
+SHOOT, D, 2569, 2572, 0
+SHOOT, D, 2575, 2578, 2
+SHOOT, D, 2581, 2584, 4
+SHOOT, D, 2582, 2585, 0
+SHOOT, D, 2587, 2590, 6
+SHOOT, D, 2588, 2591, 1
+SHOOT, D, 2593, 2596, 8
+SHOOT, D, 2594, 2597, 3
+SHOOT, D, 2599, 2602, 10
+SHOOT, D, 2600, 2603, 5
+SHOOT, D, 2605, 2608, 12
+SHOOT, D, 2606, 2609, 7
+SHOOT, D, 2610, 2613, 0
+SHOOT, D, 2611, 2614, 14
+SHOOT, D, 2612, 2615, 9
+SHOOT, D, 2616, 2619, 2
+SHOOT, D, 2617, 2620, 16
+SHOOT, D, 2618, 2621, 11
+SHOOT, D, 2622, 2625, 6
+SHOOT, D, 2623, 2626, 18
+SHOOT, D, 2624, 2627, 13
+SHOOT, A, 2572, 2569, 0
+SHOOT, A, 2578, 2575, 2
+SHOOT, A, 2584, 2581, 4
+SHOOT, A, 2585, 2582, 0
+SHOOT, A, 2590, 2587, 6
+SHOOT, A, 2591, 2588, 1
+SHOOT, A, 2596, 2593, 8
+SHOOT, A, 2597, 2594, 3
+SHOOT, A, 2602, 2599, 10
+SHOOT, A, 2603, 2600, 5
+SHOOT, A, 2608, 2605, 12
+SHOOT, A, 2609, 2606, 7
+SHOOT, A, 2613, 2610, 0
+SHOOT, A, 2614, 2611, 14
+SHOOT, A, 2615, 2612, 9
+SHOOT, A, 2619, 2616, 2
+SHOOT, A, 2620, 2617, 16
+SHOOT, A, 2621, 2618, 11
+SHOOT, A, 2625, 2622, 6
+SHOOT, A, 2626, 2623, 18
+SHOOT, A, 2627, 2624, 13
+DEAD, A, 2569
+DEAD, A, 2582
+DEAD, A, 2610
+DEAD, D, 2572
+DEAD, D, 2585
+DEAD, D, 2613
+SPAWN, A, 2628, 1, 0, 54
+SPAWN, A, 2629, 2, 0, 55
+SPAWN, A, 2630, 3, 0, 56
+SPAWN, D, 2631, 1, 0, 54
+SPAWN, D, 2632, 2, 0, 55
+SPAWN, D, 2633, 3, 0, 56
+TURN, 439
+PRINT, TURN 439 LOGS:To be spawned at Position(0,57)
+PRINT, To be spawned at Position(0,58)
+PRINT, To be spawned at Position(0,59)
+PRINT, Type 1 at Position (0,57)
+PRINT, Type 2 at Position (0,58)
+PRINT, Type 3 at Position (0,59)
+PRINT, 
+SHOOT, D, 2575, 2578, 0
+SHOOT, D, 2581, 2584, 2
+SHOOT, D, 2587, 2590, 4
+SHOOT, D, 2588, 2591, 0
+SHOOT, D, 2593, 2596, 6
+SHOOT, D, 2594, 2597, 1
+SHOOT, D, 2599, 2602, 8
+SHOOT, D, 2600, 2603, 3
+SHOOT, D, 2605, 2608, 10
+SHOOT, D, 2606, 2609, 5
+SHOOT, D, 2611, 2614, 12
+SHOOT, D, 2612, 2615, 7
+SHOOT, D, 2616, 2619, 0
+SHOOT, D, 2617, 2620, 14
+SHOOT, D, 2618, 2621, 9
+SHOOT, D, 2622, 2625, 2
+SHOOT, D, 2623, 2626, 16
+SHOOT, D, 2624, 2627, 11
+SHOOT, D, 2628, 2631, 6
+SHOOT, D, 2629, 2632, 18
+SHOOT, D, 2630, 2633, 13
+SHOOT, A, 2578, 2575, 0
+SHOOT, A, 2584, 2581, 2
+SHOOT, A, 2590, 2587, 4
+SHOOT, A, 2591, 2588, 0
+SHOOT, A, 2596, 2593, 6
+SHOOT, A, 2597, 2594, 1
+SHOOT, A, 2602, 2599, 8
+SHOOT, A, 2603, 2600, 3
+SHOOT, A, 2608, 2605, 10
+SHOOT, A, 2609, 2606, 5
+SHOOT, A, 2614, 2611, 12
+SHOOT, A, 2615, 2612, 7
+SHOOT, A, 2619, 2616, 0
+SHOOT, A, 2620, 2617, 14
+SHOOT, A, 2621, 2618, 9
+SHOOT, A, 2625, 2622, 2
+SHOOT, A, 2626, 2623, 16
+SHOOT, A, 2627, 2624, 11
+SHOOT, A, 2631, 2628, 6
+SHOOT, A, 2632, 2629, 18
+SHOOT, A, 2633, 2630, 13
+DEAD, A, 2575
+DEAD, A, 2588
+DEAD, A, 2616
+DEAD, D, 2578
+DEAD, D, 2591
+DEAD, D, 2619
+SPAWN, A, 2634, 1, 0, 57
+SPAWN, A, 2635, 2, 0, 58
+SPAWN, A, 2636, 3, 0, 59
+SPAWN, D, 2637, 1, 0, 57
+SPAWN, D, 2638, 2, 0, 58
+SPAWN, D, 2639, 3, 0, 59
+TURN, 440
+PRINT, TURN 440 LOGS:To be spawned at Position(0,60)
+PRINT, To be spawned at Position(0,61)
+PRINT, To be spawned at Position(0,62)
+PRINT, Type 1 at Position (0,60)
+PRINT, Type 2 at Position (0,61)
+PRINT, Type 3 at Position (0,62)
+PRINT, 
+SHOOT, D, 2581, 2584, 0
+SHOOT, D, 2587, 2590, 2
+SHOOT, D, 2593, 2596, 4
+SHOOT, D, 2594, 2597, 0
+SHOOT, D, 2599, 2602, 6
+SHOOT, D, 2600, 2603, 1
+SHOOT, D, 2605, 2608, 8
+SHOOT, D, 2606, 2609, 3
+SHOOT, D, 2611, 2614, 10
+SHOOT, D, 2612, 2615, 5
+SHOOT, D, 2617, 2620, 12
+SHOOT, D, 2618, 2621, 7
+SHOOT, D, 2622, 2625, 0
+SHOOT, D, 2623, 2626, 14
+SHOOT, D, 2624, 2627, 9
+SHOOT, D, 2628, 2631, 2
+SHOOT, D, 2629, 2632, 16
+SHOOT, D, 2630, 2633, 11
+SHOOT, D, 2634, 2637, 6
+SHOOT, D, 2635, 2638, 18
+SHOOT, D, 2636, 2639, 13
+SHOOT, A, 2584, 2581, 0
+SHOOT, A, 2590, 2587, 2
+SHOOT, A, 2596, 2593, 4
+SHOOT, A, 2597, 2594, 0
+SHOOT, A, 2602, 2599, 6
+SHOOT, A, 2603, 2600, 1
+SHOOT, A, 2608, 2605, 8
+SHOOT, A, 2609, 2606, 3
+SHOOT, A, 2614, 2611, 10
+SHOOT, A, 2615, 2612, 5
+SHOOT, A, 2620, 2617, 12
+SHOOT, A, 2621, 2618, 7
+SHOOT, A, 2625, 2622, 0
+SHOOT, A, 2626, 2623, 14
+SHOOT, A, 2627, 2624, 9
+SHOOT, A, 2631, 2628, 2
+SHOOT, A, 2632, 2629, 16
+SHOOT, A, 2633, 2630, 11
+SHOOT, A, 2637, 2634, 6
+SHOOT, A, 2638, 2635, 18
+SHOOT, A, 2639, 2636, 13
+DEAD, A, 2581
+DEAD, A, 2594
+DEAD, A, 2622
+DEAD, D, 2584
+DEAD, D, 2597
+DEAD, D, 2625
+SPAWN, A, 2640, 1, 0, 60
+SPAWN, A, 2641, 2, 0, 61
+SPAWN, A, 2642, 3, 0, 62
+SPAWN, D, 2643, 1, 0, 60
+SPAWN, D, 2644, 2, 0, 61
+SPAWN, D, 2645, 3, 0, 62
+TURN, 441
+PRINT, TURN 441 LOGS:To be spawned at Position(0,63)
+PRINT, To be spawned at Position(1,0)
+PRINT, To be spawned at Position(1,63)
+PRINT, Type 1 at Position (0,63)
+PRINT, Type 2 at Position (1,0)
+PRINT, Type 3 at Position (1,63)
+PRINT, 
+SHOOT, D, 2587, 2590, 0
+SHOOT, D, 2593, 2596, 2
+SHOOT, D, 2599, 2602, 4
+SHOOT, D, 2600, 2603, 0
+SHOOT, D, 2605, 2608, 6
+SHOOT, D, 2606, 2609, 1
+SHOOT, D, 2611, 2614, 8
+SHOOT, D, 2612, 2615, 3
+SHOOT, D, 2617, 2620, 10
+SHOOT, D, 2618, 2621, 5
+SHOOT, D, 2623, 2626, 12
+SHOOT, D, 2624, 2627, 7
+SHOOT, D, 2628, 2631, 0
+SHOOT, D, 2629, 2632, 14
+SHOOT, D, 2630, 2633, 9
+SHOOT, D, 2634, 2637, 2
+SHOOT, D, 2635, 2638, 16
+SHOOT, D, 2636, 2639, 11
+SHOOT, D, 2640, 2643, 6
+SHOOT, D, 2641, 2644, 18
+SHOOT, D, 2642, 2645, 13
+SHOOT, A, 2590, 2587, 0
+SHOOT, A, 2596, 2593, 2
+SHOOT, A, 2602, 2599, 4
+SHOOT, A, 2603, 2600, 0
+SHOOT, A, 2608, 2605, 6
+SHOOT, A, 2609, 2606, 1
+SHOOT, A, 2614, 2611, 8
+SHOOT, A, 2615, 2612, 3
+SHOOT, A, 2620, 2617, 10
+SHOOT, A, 2621, 2618, 5
+SHOOT, A, 2626, 2623, 12
+SHOOT, A, 2627, 2624, 7
+SHOOT, A, 2631, 2628, 0
+SHOOT, A, 2632, 2629, 14
+SHOOT, A, 2633, 2630, 9
+SHOOT, A, 2637, 2634, 2
+SHOOT, A, 2638, 2635, 16
+SHOOT, A, 2639, 2636, 11
+SHOOT, A, 2643, 2640, 6
+SHOOT, A, 2644, 2641, 18
+SHOOT, A, 2645, 2642, 13
+DEAD, A, 2587
+DEAD, A, 2600
+DEAD, A, 2628
+DEAD, D, 2590
+DEAD, D, 2603
+DEAD, D, 2631
+SPAWN, A, 2646, 1, 0, 63
+SPAWN, A, 2647, 2, 1, 0
+SPAWN, A, 2648, 3, 1, 63
+SPAWN, D, 2649, 1, 0, 63
+SPAWN, D, 2650, 2, 1, 0
+SPAWN, D, 2651, 3, 1, 63
+TURN, 442
+PRINT, TURN 442 LOGS:To be spawned at Position(2,0)
+PRINT, To be spawned at Position(2,63)
+PRINT, To be spawned at Position(3,0)
+PRINT, Type 1 at Position (2,0)
+PRINT, Type 2 at Position (2,63)
+PRINT, Type 3 at Position (3,0)
+PRINT, 
+SHOOT, D, 2593, 2596, 0
+SHOOT, D, 2599, 2602, 2
+SHOOT, D, 2605, 2608, 4
+SHOOT, D, 2606, 2609, 0
+SHOOT, D, 2611, 2614, 6
+SHOOT, D, 2612, 2615, 1
+SHOOT, D, 2617, 2620, 8
+SHOOT, D, 2618, 2621, 3
+SHOOT, D, 2623, 2626, 10
+SHOOT, D, 2624, 2627, 5
+SHOOT, D, 2629, 2632, 12
+SHOOT, D, 2630, 2633, 7
+SHOOT, D, 2634, 2637, 0
+SHOOT, D, 2635, 2638, 14
+SHOOT, D, 2636, 2639, 9
+SHOOT, D, 2640, 2643, 2
+SHOOT, D, 2641, 2644, 16
+SHOOT, D, 2642, 2645, 11
+SHOOT, D, 2646, 2649, 6
+SHOOT, D, 2647, 2650, 18
+SHOOT, D, 2648, 2651, 13
+SHOOT, A, 2596, 2593, 0
+SHOOT, A, 2602, 2599, 2
+SHOOT, A, 2608, 2605, 4
+SHOOT, A, 2609, 2606, 0
+SHOOT, A, 2614, 2611, 6
+SHOOT, A, 2615, 2612, 1
+SHOOT, A, 2620, 2617, 8
+SHOOT, A, 2621, 2618, 3
+SHOOT, A, 2626, 2623, 10
+SHOOT, A, 2627, 2624, 5
+SHOOT, A, 2632, 2629, 12
+SHOOT, A, 2633, 2630, 7
+SHOOT, A, 2637, 2634, 0
+SHOOT, A, 2638, 2635, 14
+SHOOT, A, 2639, 2636, 9
+SHOOT, A, 2643, 2640, 2
+SHOOT, A, 2644, 2641, 16
+SHOOT, A, 2645, 2642, 11
+SHOOT, A, 2649, 2646, 6
+SHOOT, A, 2650, 2647, 18
+SHOOT, A, 2651, 2648, 13
+DEAD, A, 2593
+DEAD, A, 2606
+DEAD, A, 2634
+DEAD, D, 2596
+DEAD, D, 2609
+DEAD, D, 2637
+SPAWN, A, 2652, 1, 2, 0
+SPAWN, A, 2653, 2, 2, 63
+SPAWN, A, 2654, 3, 3, 0
+SPAWN, D, 2655, 1, 2, 0
+SPAWN, D, 2656, 2, 2, 63
+SPAWN, D, 2657, 3, 3, 0
+TURN, 443
+PRINT, TURN 443 LOGS:To be spawned at Position(3,63)
+PRINT, To be spawned at Position(4,0)
+PRINT, To be spawned at Position(4,63)
+PRINT, Type 1 at Position (3,63)
+PRINT, Type 2 at Position (4,0)
+PRINT, Type 3 at Position (4,63)
+PRINT, 
+SHOOT, D, 2599, 2602, 0
+SHOOT, D, 2605, 2608, 2
+SHOOT, D, 2611, 2614, 4
+SHOOT, D, 2612, 2615, 0
+SHOOT, D, 2617, 2620, 6
+SHOOT, D, 2618, 2621, 1
+SHOOT, D, 2623, 2626, 8
+SHOOT, D, 2624, 2627, 3
+SHOOT, D, 2629, 2632, 10
+SHOOT, D, 2630, 2633, 5
+SHOOT, D, 2635, 2638, 12
+SHOOT, D, 2636, 2639, 7
+SHOOT, D, 2640, 2643, 0
+SHOOT, D, 2641, 2644, 14
+SHOOT, D, 2642, 2645, 9
+SHOOT, D, 2646, 2649, 2
+SHOOT, D, 2647, 2650, 16
+SHOOT, D, 2648, 2651, 11
+SHOOT, D, 2652, 2655, 6
+SHOOT, D, 2653, 2656, 18
+SHOOT, D, 2654, 2657, 13
+SHOOT, A, 2602, 2599, 0
+SHOOT, A, 2608, 2605, 2
+SHOOT, A, 2614, 2611, 4
+SHOOT, A, 2615, 2612, 0
+SHOOT, A, 2620, 2617, 6
+SHOOT, A, 2621, 2618, 1
+SHOOT, A, 2626, 2623, 8
+SHOOT, A, 2627, 2624, 3
+SHOOT, A, 2632, 2629, 10
+SHOOT, A, 2633, 2630, 5
+SHOOT, A, 2638, 2635, 12
+SHOOT, A, 2639, 2636, 7
+SHOOT, A, 2643, 2640, 0
+SHOOT, A, 2644, 2641, 14
+SHOOT, A, 2645, 2642, 9
+SHOOT, A, 2649, 2646, 2
+SHOOT, A, 2650, 2647, 16
+SHOOT, A, 2651, 2648, 11
+SHOOT, A, 2655, 2652, 6
+SHOOT, A, 2656, 2653, 18
+SHOOT, A, 2657, 2654, 13
+DEAD, A, 2599
+DEAD, A, 2612
+DEAD, A, 2640
+DEAD, D, 2602
+DEAD, D, 2615
+DEAD, D, 2643
+SPAWN, A, 2658, 1, 3, 63
+SPAWN, A, 2659, 2, 4, 0
+SPAWN, A, 2660, 3, 4, 63
+SPAWN, D, 2661, 1, 3, 63
+SPAWN, D, 2662, 2, 4, 0
+SPAWN, D, 2663, 3, 4, 63
+TURN, 444
+PRINT, TURN 444 LOGS:To be spawned at Position(5,0)
+PRINT, To be spawned at Position(5,63)
+PRINT, To be spawned at Position(6,0)
+PRINT, Type 1 at Position (5,0)
+PRINT, Type 2 at Position (5,63)
+PRINT, Type 3 at Position (6,0)
+PRINT, 
+SHOOT, D, 2605, 2608, 0
+SHOOT, D, 2611, 2614, 2
+SHOOT, D, 2617, 2620, 4
+SHOOT, D, 2618, 2621, 0
+SHOOT, D, 2623, 2626, 6
+SHOOT, D, 2624, 2627, 1
+SHOOT, D, 2629, 2632, 8
+SHOOT, D, 2630, 2633, 3
+SHOOT, D, 2635, 2638, 10
+SHOOT, D, 2636, 2639, 5
+SHOOT, D, 2641, 2644, 12
+SHOOT, D, 2642, 2645, 7
+SHOOT, D, 2646, 2649, 0
+SHOOT, D, 2647, 2650, 14
+SHOOT, D, 2648, 2651, 9
+SHOOT, D, 2652, 2655, 2
+SHOOT, D, 2653, 2656, 16
+SHOOT, D, 2654, 2657, 11
+SHOOT, D, 2658, 2661, 6
+SHOOT, D, 2659, 2662, 18
+SHOOT, D, 2660, 2663, 13
+SHOOT, A, 2608, 2605, 0
+SHOOT, A, 2614, 2611, 2
+SHOOT, A, 2620, 2617, 4
+SHOOT, A, 2621, 2618, 0
+SHOOT, A, 2626, 2623, 6
+SHOOT, A, 2627, 2624, 1
+SHOOT, A, 2632, 2629, 8
+SHOOT, A, 2633, 2630, 3
+SHOOT, A, 2638, 2635, 10
+SHOOT, A, 2639, 2636, 5
+SHOOT, A, 2644, 2641, 12
+SHOOT, A, 2645, 2642, 7
+SHOOT, A, 2649, 2646, 0
+SHOOT, A, 2650, 2647, 14
+SHOOT, A, 2651, 2648, 9
+SHOOT, A, 2655, 2652, 2
+SHOOT, A, 2656, 2653, 16
+SHOOT, A, 2657, 2654, 11
+SHOOT, A, 2661, 2658, 6
+SHOOT, A, 2662, 2659, 18
+SHOOT, A, 2663, 2660, 13
+DEAD, A, 2605
+DEAD, A, 2618
+DEAD, A, 2646
+DEAD, D, 2608
+DEAD, D, 2621
+DEAD, D, 2649
+SPAWN, A, 2664, 1, 5, 0
+SPAWN, A, 2665, 2, 5, 63
+SPAWN, A, 2666, 3, 6, 0
+SPAWN, D, 2667, 1, 5, 0
+SPAWN, D, 2668, 2, 5, 63
+SPAWN, D, 2669, 3, 6, 0
+TURN, 445
+PRINT, TURN 445 LOGS:To be spawned at Position(6,63)
+PRINT, To be spawned at Position(7,0)
+PRINT, To be spawned at Position(7,63)
+PRINT, Type 1 at Position (6,63)
+PRINT, Type 2 at Position (7,0)
+PRINT, Type 3 at Position (7,63)
+PRINT, 
+SHOOT, D, 2611, 2614, 0
+SHOOT, D, 2617, 2620, 2
+SHOOT, D, 2623, 2626, 4
+SHOOT, D, 2624, 2627, 0
+SHOOT, D, 2629, 2632, 6
+SHOOT, D, 2630, 2633, 1
+SHOOT, D, 2635, 2638, 8
+SHOOT, D, 2636, 2639, 3
+SHOOT, D, 2641, 2644, 10
+SHOOT, D, 2642, 2645, 5
+SHOOT, D, 2647, 2650, 12
+SHOOT, D, 2648, 2651, 7
+SHOOT, D, 2652, 2655, 0
+SHOOT, D, 2653, 2656, 14
+SHOOT, D, 2654, 2657, 9
+SHOOT, D, 2658, 2661, 2
+SHOOT, D, 2659, 2662, 16
+SHOOT, D, 2660, 2663, 11
+SHOOT, D, 2664, 2667, 6
+SHOOT, D, 2665, 2668, 18
+SHOOT, D, 2666, 2669, 13
+SHOOT, A, 2614, 2611, 0
+SHOOT, A, 2620, 2617, 2
+SHOOT, A, 2626, 2623, 4
+SHOOT, A, 2627, 2624, 0
+SHOOT, A, 2632, 2629, 6
+SHOOT, A, 2633, 2630, 1
+SHOOT, A, 2638, 2635, 8
+SHOOT, A, 2639, 2636, 3
+SHOOT, A, 2644, 2641, 10
+SHOOT, A, 2645, 2642, 5
+SHOOT, A, 2650, 2647, 12
+SHOOT, A, 2651, 2648, 7
+SHOOT, A, 2655, 2652, 0
+SHOOT, A, 2656, 2653, 14
+SHOOT, A, 2657, 2654, 9
+SHOOT, A, 2661, 2658, 2
+SHOOT, A, 2662, 2659, 16
+SHOOT, A, 2663, 2660, 11
+SHOOT, A, 2667, 2664, 6
+SHOOT, A, 2668, 2665, 18
+SHOOT, A, 2669, 2666, 13
+DEAD, A, 2611
+DEAD, A, 2624
+DEAD, A, 2652
+DEAD, D, 2614
+DEAD, D, 2627
+DEAD, D, 2655
+SPAWN, A, 2670, 1, 6, 63
+SPAWN, A, 2671, 2, 7, 0
+SPAWN, A, 2672, 3, 7, 63
+SPAWN, D, 2673, 1, 6, 63
+SPAWN, D, 2674, 2, 7, 0
+SPAWN, D, 2675, 3, 7, 63
+TURN, 446
+PRINT, TURN 446 LOGS:To be spawned at Position(8,0)
+PRINT, To be spawned at Position(8,63)
+PRINT, To be spawned at Position(9,0)
+PRINT, Type 1 at Position (8,0)
+PRINT, Type 2 at Position (8,63)
+PRINT, Type 3 at Position (9,0)
+PRINT, 
+SHOOT, D, 2617, 2620, 0
+SHOOT, D, 2623, 2626, 2
+SHOOT, D, 2629, 2632, 4
+SHOOT, D, 2630, 2633, 0
+SHOOT, D, 2635, 2638, 6
+SHOOT, D, 2636, 2639, 1
+SHOOT, D, 2641, 2644, 8
+SHOOT, D, 2642, 2645, 3
+SHOOT, D, 2647, 2650, 10
+SHOOT, D, 2648, 2651, 5
+SHOOT, D, 2653, 2656, 12
+SHOOT, D, 2654, 2657, 7
+SHOOT, D, 2658, 2661, 0
+SHOOT, D, 2659, 2662, 14
+SHOOT, D, 2660, 2663, 9
+SHOOT, D, 2664, 2667, 2
+SHOOT, D, 2665, 2668, 16
+SHOOT, D, 2666, 2669, 11
+SHOOT, D, 2670, 2673, 6
+SHOOT, D, 2671, 2674, 18
+SHOOT, D, 2672, 2675, 13
+SHOOT, A, 2620, 2617, 0
+SHOOT, A, 2626, 2623, 2
+SHOOT, A, 2632, 2629, 4
+SHOOT, A, 2633, 2630, 0
+SHOOT, A, 2638, 2635, 6
+SHOOT, A, 2639, 2636, 1
+SHOOT, A, 2644, 2641, 8
+SHOOT, A, 2645, 2642, 3
+SHOOT, A, 2650, 2647, 10
+SHOOT, A, 2651, 2648, 5
+SHOOT, A, 2656, 2653, 12
+SHOOT, A, 2657, 2654, 7
+SHOOT, A, 2661, 2658, 0
+SHOOT, A, 2662, 2659, 14
+SHOOT, A, 2663, 2660, 9
+SHOOT, A, 2667, 2664, 2
+SHOOT, A, 2668, 2665, 16
+SHOOT, A, 2669, 2666, 11
+SHOOT, A, 2673, 2670, 6
+SHOOT, A, 2674, 2671, 18
+SHOOT, A, 2675, 2672, 13
+DEAD, A, 2617
+DEAD, A, 2630
+DEAD, A, 2658
+DEAD, D, 2620
+DEAD, D, 2633
+DEAD, D, 2661
+SPAWN, A, 2676, 1, 8, 0
+SPAWN, A, 2677, 2, 8, 63
+SPAWN, A, 2678, 3, 9, 0
+SPAWN, D, 2679, 1, 8, 0
+SPAWN, D, 2680, 2, 8, 63
+SPAWN, D, 2681, 3, 9, 0
+TURN, 447
+PRINT, TURN 447 LOGS:To be spawned at Position(9,63)
+PRINT, To be spawned at Position(10,0)
+PRINT, To be spawned at Position(10,63)
+PRINT, Type 1 at Position (9,63)
+PRINT, Type 2 at Position (10,0)
+PRINT, Type 3 at Position (10,63)
+PRINT, 
+SHOOT, D, 2623, 2626, 0
+SHOOT, D, 2629, 2632, 2
+SHOOT, D, 2635, 2638, 4
+SHOOT, D, 2636, 2639, 0
+SHOOT, D, 2641, 2644, 6
+SHOOT, D, 2642, 2645, 1
+SHOOT, D, 2647, 2650, 8
+SHOOT, D, 2648, 2651, 3
+SHOOT, D, 2653, 2656, 10
+SHOOT, D, 2654, 2657, 5
+SHOOT, D, 2659, 2662, 12
+SHOOT, D, 2660, 2663, 7
+SHOOT, D, 2664, 2667, 0
+SHOOT, D, 2665, 2668, 14
+SHOOT, D, 2666, 2669, 9
+SHOOT, D, 2670, 2673, 2
+SHOOT, D, 2671, 2674, 16
+SHOOT, D, 2672, 2675, 11
+SHOOT, D, 2676, 2679, 6
+SHOOT, D, 2677, 2680, 18
+SHOOT, D, 2678, 2681, 13
+SHOOT, A, 2626, 2623, 0
+SHOOT, A, 2632, 2629, 2
+SHOOT, A, 2638, 2635, 4
+SHOOT, A, 2639, 2636, 0
+SHOOT, A, 2644, 2641, 6
+SHOOT, A, 2645, 2642, 1
+SHOOT, A, 2650, 2647, 8
+SHOOT, A, 2651, 2648, 3
+SHOOT, A, 2656, 2653, 10
+SHOOT, A, 2657, 2654, 5
+SHOOT, A, 2662, 2659, 12
+SHOOT, A, 2663, 2660, 7
+SHOOT, A, 2667, 2664, 0
+SHOOT, A, 2668, 2665, 14
+SHOOT, A, 2669, 2666, 9
+SHOOT, A, 2673, 2670, 2
+SHOOT, A, 2674, 2671, 16
+SHOOT, A, 2675, 2672, 11
+SHOOT, A, 2679, 2676, 6
+SHOOT, A, 2680, 2677, 18
+SHOOT, A, 2681, 2678, 13
+DEAD, A, 2623
+DEAD, A, 2636
+DEAD, A, 2664
+DEAD, D, 2626
+DEAD, D, 2639
+DEAD, D, 2667
+SPAWN, A, 2682, 1, 9, 63
+SPAWN, A, 2683, 2, 10, 0
+SPAWN, A, 2684, 3, 10, 63
+SPAWN, D, 2685, 1, 9, 63
+SPAWN, D, 2686, 2, 10, 0
+SPAWN, D, 2687, 3, 10, 63
+TURN, 448
+PRINT, TURN 448 LOGS:To be spawned at Position(11,0)
+PRINT, To be spawned at Position(11,63)
+PRINT, To be spawned at Position(12,0)
+PRINT, Type 1 at Position (11,0)
+PRINT, Type 2 at Position (11,63)
+PRINT, Type 3 at Position (12,0)
+PRINT, 
+SHOOT, D, 2629, 2632, 0
+SHOOT, D, 2635, 2638, 2
+SHOOT, D, 2641, 2644, 4
+SHOOT, D, 2642, 2645, 0
+SHOOT, D, 2647, 2650, 6
+SHOOT, D, 2648, 2651, 1
+SHOOT, D, 2653, 2656, 8
+SHOOT, D, 2654, 2657, 3
+SHOOT, D, 2659, 2662, 10
+SHOOT, D, 2660, 2663, 5
+SHOOT, D, 2665, 2668, 12
+SHOOT, D, 2666, 2669, 7
+SHOOT, D, 2670, 2673, 0
+SHOOT, D, 2671, 2674, 14
+SHOOT, D, 2672, 2675, 9
+SHOOT, D, 2676, 2679, 2
+SHOOT, D, 2677, 2680, 16
+SHOOT, D, 2678, 2681, 11
+SHOOT, D, 2682, 2685, 6
+SHOOT, D, 2683, 2686, 18
+SHOOT, D, 2684, 2687, 13
+SHOOT, A, 2632, 2629, 0
+SHOOT, A, 2638, 2635, 2
+SHOOT, A, 2644, 2641, 4
+SHOOT, A, 2645, 2642, 0
+SHOOT, A, 2650, 2647, 6
+SHOOT, A, 2651, 2648, 1
+SHOOT, A, 2656, 2653, 8
+SHOOT, A, 2657, 2654, 3
+SHOOT, A, 2662, 2659, 10
+SHOOT, A, 2663, 2660, 5
+SHOOT, A, 2668, 2665, 12
+SHOOT, A, 2669, 2666, 7
+SHOOT, A, 2673, 2670, 0
+SHOOT, A, 2674, 2671, 14
+SHOOT, A, 2675, 2672, 9
+SHOOT, A, 2679, 2676, 2
+SHOOT, A, 2680, 2677, 16
+SHOOT, A, 2681, 2678, 11
+SHOOT, A, 2685, 2682, 6
+SHOOT, A, 2686, 2683, 18
+SHOOT, A, 2687, 2684, 13
+DEAD, A, 2629
+DEAD, A, 2642
+DEAD, A, 2670
+DEAD, D, 2632
+DEAD, D, 2645
+DEAD, D, 2673
+SPAWN, A, 2688, 1, 11, 0
+SPAWN, A, 2689, 2, 11, 63
+SPAWN, A, 2690, 3, 12, 0
+SPAWN, D, 2691, 1, 11, 0
+SPAWN, D, 2692, 2, 11, 63
+SPAWN, D, 2693, 3, 12, 0
+TURN, 449
+PRINT, TURN 449 LOGS:To be spawned at Position(12,63)
+PRINT, To be spawned at Position(13,0)
+PRINT, To be spawned at Position(13,63)
+PRINT, Type 1 at Position (12,63)
+PRINT, Type 2 at Position (13,0)
+PRINT, Type 3 at Position (13,63)
+PRINT, 
+SHOOT, D, 2635, 2638, 0
+SHOOT, D, 2641, 2644, 2
+SHOOT, D, 2647, 2650, 4
+SHOOT, D, 2648, 2651, 0
+SHOOT, D, 2653, 2656, 6
+SHOOT, D, 2654, 2657, 1
+SHOOT, D, 2659, 2662, 8
+SHOOT, D, 2660, 2663, 3
+SHOOT, D, 2665, 2668, 10
+SHOOT, D, 2666, 2669, 5
+SHOOT, D, 2671, 2674, 12
+SHOOT, D, 2672, 2675, 7
+SHOOT, D, 2676, 2679, 0
+SHOOT, D, 2677, 2680, 14
+SHOOT, D, 2678, 2681, 9
+SHOOT, D, 2682, 2685, 2
+SHOOT, D, 2683, 2686, 16
+SHOOT, D, 2684, 2687, 11
+SHOOT, D, 2688, 2691, 6
+SHOOT, D, 2689, 2692, 18
+SHOOT, D, 2690, 2693, 13
+SHOOT, A, 2638, 2635, 0
+SHOOT, A, 2644, 2641, 2
+SHOOT, A, 2650, 2647, 4
+SHOOT, A, 2651, 2648, 0
+SHOOT, A, 2656, 2653, 6
+SHOOT, A, 2657, 2654, 1
+SHOOT, A, 2662, 2659, 8
+SHOOT, A, 2663, 2660, 3
+SHOOT, A, 2668, 2665, 10
+SHOOT, A, 2669, 2666, 5
+SHOOT, A, 2674, 2671, 12
+SHOOT, A, 2675, 2672, 7
+SHOOT, A, 2679, 2676, 0
+SHOOT, A, 2680, 2677, 14
+SHOOT, A, 2681, 2678, 9
+SHOOT, A, 2685, 2682, 2
+SHOOT, A, 2686, 2683, 16
+SHOOT, A, 2687, 2684, 11
+SHOOT, A, 2691, 2688, 6
+SHOOT, A, 2692, 2689, 18
+SHOOT, A, 2693, 2690, 13
+DEAD, A, 2635
+DEAD, A, 2648
+DEAD, A, 2676
+DEAD, D, 2638
+DEAD, D, 2651
+DEAD, D, 2679
+SPAWN, A, 2694, 1, 12, 63
+SPAWN, A, 2695, 2, 13, 0
+SPAWN, A, 2696, 3, 13, 63
+SPAWN, D, 2697, 1, 12, 63
+SPAWN, D, 2698, 2, 13, 0
+SPAWN, D, 2699, 3, 13, 63
+TURN, 450
+PRINT, TURN 450 LOGS:To be spawned at Position(14,0)
+PRINT, To be spawned at Position(14,63)
+PRINT, To be spawned at Position(15,0)
+PRINT, Type 1 at Position (14,0)
+PRINT, Type 2 at Position (14,63)
+PRINT, Type 3 at Position (15,0)
+PRINT, 
+SHOOT, D, 2641, 2644, 0
+SHOOT, D, 2647, 2650, 2
+SHOOT, D, 2653, 2656, 4
+SHOOT, D, 2654, 2657, 0
+SHOOT, D, 2659, 2662, 6
+SHOOT, D, 2660, 2663, 1
+SHOOT, D, 2665, 2668, 8
+SHOOT, D, 2666, 2669, 3
+SHOOT, D, 2671, 2674, 10
+SHOOT, D, 2672, 2675, 5
+SHOOT, D, 2677, 2680, 12
+SHOOT, D, 2678, 2681, 7
+SHOOT, D, 2682, 2685, 0
+SHOOT, D, 2683, 2686, 14
+SHOOT, D, 2684, 2687, 9
+SHOOT, D, 2688, 2691, 2
+SHOOT, D, 2689, 2692, 16
+SHOOT, D, 2690, 2693, 11
+SHOOT, D, 2694, 2697, 6
+SHOOT, D, 2695, 2698, 18
+SHOOT, D, 2696, 2699, 13
+SHOOT, A, 2644, 2641, 0
+SHOOT, A, 2650, 2647, 2
+SHOOT, A, 2656, 2653, 4
+SHOOT, A, 2657, 2654, 0
+SHOOT, A, 2662, 2659, 6
+SHOOT, A, 2663, 2660, 1
+SHOOT, A, 2668, 2665, 8
+SHOOT, A, 2669, 2666, 3
+SHOOT, A, 2674, 2671, 10
+SHOOT, A, 2675, 2672, 5
+SHOOT, A, 2680, 2677, 12
+SHOOT, A, 2681, 2678, 7
+SHOOT, A, 2685, 2682, 0
+SHOOT, A, 2686, 2683, 14
+SHOOT, A, 2687, 2684, 9
+SHOOT, A, 2691, 2688, 2
+SHOOT, A, 2692, 2689, 16
+SHOOT, A, 2693, 2690, 11
+SHOOT, A, 2697, 2694, 6
+SHOOT, A, 2698, 2695, 18
+SHOOT, A, 2699, 2696, 13
+DEAD, A, 2641
+DEAD, A, 2654
+DEAD, A, 2682
+DEAD, D, 2644
+DEAD, D, 2657
+DEAD, D, 2685
+SPAWN, A, 2700, 1, 14, 0
+SPAWN, A, 2701, 2, 14, 63
+SPAWN, A, 2702, 3, 15, 0
+SPAWN, D, 2703, 1, 14, 0
+SPAWN, D, 2704, 2, 14, 63
+SPAWN, D, 2705, 3, 15, 0
+TURN, 451
+PRINT, TURN 451 LOGS:To be spawned at Position(15,63)
+PRINT, To be spawned at Position(16,0)
+PRINT, To be spawned at Position(16,63)
+PRINT, Type 1 at Position (15,63)
+PRINT, Type 2 at Position (16,0)
+PRINT, Type 3 at Position (16,63)
+PRINT, 
+SHOOT, D, 2647, 2650, 0
+SHOOT, D, 2653, 2656, 2
+SHOOT, D, 2659, 2662, 4
+SHOOT, D, 2660, 2663, 0
+SHOOT, D, 2665, 2668, 6
+SHOOT, D, 2666, 2669, 1
+SHOOT, D, 2671, 2674, 8
+SHOOT, D, 2672, 2675, 3
+SHOOT, D, 2677, 2680, 10
+SHOOT, D, 2678, 2681, 5
+SHOOT, D, 2683, 2686, 12
+SHOOT, D, 2684, 2687, 7
+SHOOT, D, 2688, 2691, 0
+SHOOT, D, 2689, 2692, 14
+SHOOT, D, 2690, 2693, 9
+SHOOT, D, 2694, 2697, 2
+SHOOT, D, 2695, 2698, 16
+SHOOT, D, 2696, 2699, 11
+SHOOT, D, 2700, 2703, 6
+SHOOT, D, 2701, 2704, 18
+SHOOT, D, 2702, 2705, 13
+SHOOT, A, 2650, 2647, 0
+SHOOT, A, 2656, 2653, 2
+SHOOT, A, 2662, 2659, 4
+SHOOT, A, 2663, 2660, 0
+SHOOT, A, 2668, 2665, 6
+SHOOT, A, 2669, 2666, 1
+SHOOT, A, 2674, 2671, 8
+SHOOT, A, 2675, 2672, 3
+SHOOT, A, 2680, 2677, 10
+SHOOT, A, 2681, 2678, 5
+SHOOT, A, 2686, 2683, 12
+SHOOT, A, 2687, 2684, 7
+SHOOT, A, 2691, 2688, 0
+SHOOT, A, 2692, 2689, 14
+SHOOT, A, 2693, 2690, 9
+SHOOT, A, 2697, 2694, 2
+SHOOT, A, 2698, 2695, 16
+SHOOT, A, 2699, 2696, 11
+SHOOT, A, 2703, 2700, 6
+SHOOT, A, 2704, 2701, 18
+SHOOT, A, 2705, 2702, 13
+DEAD, A, 2647
+DEAD, A, 2660
+DEAD, A, 2688
+DEAD, D, 2650
+DEAD, D, 2663
+DEAD, D, 2691
+SPAWN, A, 2706, 1, 15, 63
+SPAWN, A, 2707, 2, 16, 0
+SPAWN, A, 2708, 3, 16, 63
+SPAWN, D, 2709, 1, 15, 63
+SPAWN, D, 2710, 2, 16, 0
+SPAWN, D, 2711, 3, 16, 63
+TURN, 452
+PRINT, TURN 452 LOGS:To be spawned at Position(17,0)
+PRINT, To be spawned at Position(17,63)
+PRINT, To be spawned at Position(18,0)
+PRINT, Type 1 at Position (17,0)
+PRINT, Type 2 at Position (17,63)
+PRINT, Type 3 at Position (18,0)
+PRINT, 
+SHOOT, D, 2653, 2656, 0
+SHOOT, D, 2659, 2662, 2
+SHOOT, D, 2665, 2668, 4
+SHOOT, D, 2666, 2669, 0
+SHOOT, D, 2671, 2674, 6
+SHOOT, D, 2672, 2675, 1
+SHOOT, D, 2677, 2680, 8
+SHOOT, D, 2678, 2681, 3
+SHOOT, D, 2683, 2686, 10
+SHOOT, D, 2684, 2687, 5
+SHOOT, D, 2689, 2692, 12
+SHOOT, D, 2690, 2693, 7
+SHOOT, D, 2694, 2697, 0
+SHOOT, D, 2695, 2698, 14
+SHOOT, D, 2696, 2699, 9
+SHOOT, D, 2700, 2703, 2
+SHOOT, D, 2701, 2704, 16
+SHOOT, D, 2702, 2705, 11
+SHOOT, D, 2706, 2709, 6
+SHOOT, D, 2707, 2710, 18
+SHOOT, D, 2708, 2711, 13
+SHOOT, A, 2656, 2653, 0
+SHOOT, A, 2662, 2659, 2
+SHOOT, A, 2668, 2665, 4
+SHOOT, A, 2669, 2666, 0
+SHOOT, A, 2674, 2671, 6
+SHOOT, A, 2675, 2672, 1
+SHOOT, A, 2680, 2677, 8
+SHOOT, A, 2681, 2678, 3
+SHOOT, A, 2686, 2683, 10
+SHOOT, A, 2687, 2684, 5
+SHOOT, A, 2692, 2689, 12
+SHOOT, A, 2693, 2690, 7
+SHOOT, A, 2697, 2694, 0
+SHOOT, A, 2698, 2695, 14
+SHOOT, A, 2699, 2696, 9
+SHOOT, A, 2703, 2700, 2
+SHOOT, A, 2704, 2701, 16
+SHOOT, A, 2705, 2702, 11
+SHOOT, A, 2709, 2706, 6
+SHOOT, A, 2710, 2707, 18
+SHOOT, A, 2711, 2708, 13
+DEAD, A, 2653
+DEAD, A, 2666
+DEAD, A, 2694
+DEAD, D, 2656
+DEAD, D, 2669
+DEAD, D, 2697
+SPAWN, A, 2712, 1, 17, 0
+SPAWN, A, 2713, 2, 17, 63
+SPAWN, A, 2714, 3, 18, 0
+SPAWN, D, 2715, 1, 17, 0
+SPAWN, D, 2716, 2, 17, 63
+SPAWN, D, 2717, 3, 18, 0
+TURN, 453
+PRINT, TURN 453 LOGS:To be spawned at Position(18,63)
+PRINT, To be spawned at Position(19,0)
+PRINT, To be spawned at Position(19,63)
+PRINT, Type 1 at Position (18,63)
+PRINT, Type 2 at Position (19,0)
+PRINT, Type 3 at Position (19,63)
+PRINT, 
+SHOOT, D, 2659, 2662, 0
+SHOOT, D, 2665, 2668, 2
+SHOOT, D, 2671, 2674, 4
+SHOOT, D, 2672, 2675, 0
+SHOOT, D, 2677, 2680, 6
+SHOOT, D, 2678, 2681, 1
+SHOOT, D, 2683, 2686, 8
+SHOOT, D, 2684, 2687, 3
+SHOOT, D, 2689, 2692, 10
+SHOOT, D, 2690, 2693, 5
+SHOOT, D, 2695, 2698, 12
+SHOOT, D, 2696, 2699, 7
+SHOOT, D, 2700, 2703, 0
+SHOOT, D, 2701, 2704, 14
+SHOOT, D, 2702, 2705, 9
+SHOOT, D, 2706, 2709, 2
+SHOOT, D, 2707, 2710, 16
+SHOOT, D, 2708, 2711, 11
+SHOOT, D, 2712, 2715, 6
+SHOOT, D, 2713, 2716, 18
+SHOOT, D, 2714, 2717, 13
+SHOOT, A, 2662, 2659, 0
+SHOOT, A, 2668, 2665, 2
+SHOOT, A, 2674, 2671, 4
+SHOOT, A, 2675, 2672, 0
+SHOOT, A, 2680, 2677, 6
+SHOOT, A, 2681, 2678, 1
+SHOOT, A, 2686, 2683, 8
+SHOOT, A, 2687, 2684, 3
+SHOOT, A, 2692, 2689, 10
+SHOOT, A, 2693, 2690, 5
+SHOOT, A, 2698, 2695, 12
+SHOOT, A, 2699, 2696, 7
+SHOOT, A, 2703, 2700, 0
+SHOOT, A, 2704, 2701, 14
+SHOOT, A, 2705, 2702, 9
+SHOOT, A, 2709, 2706, 2
+SHOOT, A, 2710, 2707, 16
+SHOOT, A, 2711, 2708, 11
+SHOOT, A, 2715, 2712, 6
+SHOOT, A, 2716, 2713, 18
+SHOOT, A, 2717, 2714, 13
+DEAD, A, 2659
+DEAD, A, 2672
+DEAD, A, 2700
+DEAD, D, 2662
+DEAD, D, 2675
+DEAD, D, 2703
+SPAWN, A, 2718, 1, 18, 63
+SPAWN, A, 2719, 2, 19, 0
+SPAWN, A, 2720, 3, 19, 63
+SPAWN, D, 2721, 1, 18, 63
+SPAWN, D, 2722, 2, 19, 0
+SPAWN, D, 2723, 3, 19, 63
+TURN, 454
+PRINT, TURN 454 LOGS:To be spawned at Position(20,0)
+PRINT, To be spawned at Position(20,63)
+PRINT, To be spawned at Position(21,0)
+PRINT, Type 1 at Position (20,0)
+PRINT, Type 2 at Position (20,63)
+PRINT, Type 3 at Position (21,0)
+PRINT, 
+SHOOT, D, 2665, 2668, 0
+SHOOT, D, 2671, 2674, 2
+SHOOT, D, 2677, 2680, 4
+SHOOT, D, 2678, 2681, 0
+SHOOT, D, 2683, 2686, 6
+SHOOT, D, 2684, 2687, 1
+SHOOT, D, 2689, 2692, 8
+SHOOT, D, 2690, 2693, 3
+SHOOT, D, 2695, 2698, 10
+SHOOT, D, 2696, 2699, 5
+SHOOT, D, 2701, 2704, 12
+SHOOT, D, 2702, 2705, 7
+SHOOT, D, 2706, 2709, 0
+SHOOT, D, 2707, 2710, 14
+SHOOT, D, 2708, 2711, 9
+SHOOT, D, 2712, 2715, 2
+SHOOT, D, 2713, 2716, 16
+SHOOT, D, 2714, 2717, 11
+SHOOT, D, 2718, 2721, 6
+SHOOT, D, 2719, 2722, 18
+SHOOT, D, 2720, 2723, 13
+SHOOT, A, 2668, 2665, 0
+SHOOT, A, 2674, 2671, 2
+SHOOT, A, 2680, 2677, 4
+SHOOT, A, 2681, 2678, 0
+SHOOT, A, 2686, 2683, 6
+SHOOT, A, 2687, 2684, 1
+SHOOT, A, 2692, 2689, 8
+SHOOT, A, 2693, 2690, 3
+SHOOT, A, 2698, 2695, 10
+SHOOT, A, 2699, 2696, 5
+SHOOT, A, 2704, 2701, 12
+SHOOT, A, 2705, 2702, 7
+SHOOT, A, 2709, 2706, 0
+SHOOT, A, 2710, 2707, 14
+SHOOT, A, 2711, 2708, 9
+SHOOT, A, 2715, 2712, 2
+SHOOT, A, 2716, 2713, 16
+SHOOT, A, 2717, 2714, 11
+SHOOT, A, 2721, 2718, 6
+SHOOT, A, 2722, 2719, 18
+SHOOT, A, 2723, 2720, 13
+DEAD, A, 2665
+DEAD, A, 2678
+DEAD, A, 2706
+DEAD, D, 2668
+DEAD, D, 2681
+DEAD, D, 2709
+SPAWN, A, 2724, 1, 20, 0
+SPAWN, A, 2725, 2, 20, 63
+SPAWN, A, 2726, 3, 21, 0
+SPAWN, D, 2727, 1, 20, 0
+SPAWN, D, 2728, 2, 20, 63
+SPAWN, D, 2729, 3, 21, 0
+TURN, 455
+PRINT, TURN 455 LOGS:To be spawned at Position(21,63)
+PRINT, To be spawned at Position(22,0)
+PRINT, To be spawned at Position(22,63)
+PRINT, Type 1 at Position (21,63)
+PRINT, Type 2 at Position (22,0)
+PRINT, Type 3 at Position (22,63)
+PRINT, 
+SHOOT, D, 2671, 2674, 0
+SHOOT, D, 2677, 2680, 2
+SHOOT, D, 2683, 2686, 4
+SHOOT, D, 2684, 2687, 0
+SHOOT, D, 2689, 2692, 6
+SHOOT, D, 2690, 2693, 1
+SHOOT, D, 2695, 2698, 8
+SHOOT, D, 2696, 2699, 3
+SHOOT, D, 2701, 2704, 10
+SHOOT, D, 2702, 2705, 5
+SHOOT, D, 2707, 2710, 12
+SHOOT, D, 2708, 2711, 7
+SHOOT, D, 2712, 2715, 0
+SHOOT, D, 2713, 2716, 14
+SHOOT, D, 2714, 2717, 9
+SHOOT, D, 2718, 2721, 2
+SHOOT, D, 2719, 2722, 16
+SHOOT, D, 2720, 2723, 11
+SHOOT, D, 2724, 2727, 6
+SHOOT, D, 2725, 2728, 18
+SHOOT, D, 2726, 2729, 13
+SHOOT, A, 2674, 2671, 0
+SHOOT, A, 2680, 2677, 2
+SHOOT, A, 2686, 2683, 4
+SHOOT, A, 2687, 2684, 0
+SHOOT, A, 2692, 2689, 6
+SHOOT, A, 2693, 2690, 1
+SHOOT, A, 2698, 2695, 8
+SHOOT, A, 2699, 2696, 3
+SHOOT, A, 2704, 2701, 10
+SHOOT, A, 2705, 2702, 5
+SHOOT, A, 2710, 2707, 12
+SHOOT, A, 2711, 2708, 7
+SHOOT, A, 2715, 2712, 0
+SHOOT, A, 2716, 2713, 14
+SHOOT, A, 2717, 2714, 9
+SHOOT, A, 2721, 2718, 2
+SHOOT, A, 2722, 2719, 16
+SHOOT, A, 2723, 2720, 11
+SHOOT, A, 2727, 2724, 6
+SHOOT, A, 2728, 2725, 18
+SHOOT, A, 2729, 2726, 13
+DEAD, A, 2671
+DEAD, A, 2684
+DEAD, A, 2712
+DEAD, D, 2674
+DEAD, D, 2687
+DEAD, D, 2715
+SPAWN, A, 2730, 1, 21, 63
+SPAWN, A, 2731, 2, 22, 0
+SPAWN, A, 2732, 3, 22, 63
+SPAWN, D, 2733, 1, 21, 63
+SPAWN, D, 2734, 2, 22, 0
+SPAWN, D, 2735, 3, 22, 63
+TURN, 456
+PRINT, TURN 456 LOGS:To be spawned at Position(23,0)
+PRINT, To be spawned at Position(23,63)
+PRINT, To be spawned at Position(24,0)
+PRINT, Type 1 at Position (23,0)
+PRINT, Type 2 at Position (23,63)
+PRINT, Type 3 at Position (24,0)
+PRINT, 
+SHOOT, D, 2677, 2680, 0
+SHOOT, D, 2683, 2686, 2
+SHOOT, D, 2689, 2692, 4
+SHOOT, D, 2690, 2693, 0
+SHOOT, D, 2695, 2698, 6
+SHOOT, D, 2696, 2699, 1
+SHOOT, D, 2701, 2704, 8
+SHOOT, D, 2702, 2705, 3
+SHOOT, D, 2707, 2710, 10
+SHOOT, D, 2708, 2711, 5
+SHOOT, D, 2713, 2716, 12
+SHOOT, D, 2714, 2717, 7
+SHOOT, D, 2718, 2721, 0
+SHOOT, D, 2719, 2722, 14
+SHOOT, D, 2720, 2723, 9
+SHOOT, D, 2724, 2727, 2
+SHOOT, D, 2725, 2728, 16
+SHOOT, D, 2726, 2729, 11
+SHOOT, D, 2730, 2733, 6
+SHOOT, D, 2731, 2734, 18
+SHOOT, D, 2732, 2735, 13
+SHOOT, A, 2680, 2677, 0
+SHOOT, A, 2686, 2683, 2
+SHOOT, A, 2692, 2689, 4
+SHOOT, A, 2693, 2690, 0
+SHOOT, A, 2698, 2695, 6
+SHOOT, A, 2699, 2696, 1
+SHOOT, A, 2704, 2701, 8
+SHOOT, A, 2705, 2702, 3
+SHOOT, A, 2710, 2707, 10
+SHOOT, A, 2711, 2708, 5
+SHOOT, A, 2716, 2713, 12
+SHOOT, A, 2717, 2714, 7
+SHOOT, A, 2721, 2718, 0
+SHOOT, A, 2722, 2719, 14
+SHOOT, A, 2723, 2720, 9
+SHOOT, A, 2727, 2724, 2
+SHOOT, A, 2728, 2725, 16
+SHOOT, A, 2729, 2726, 11
+SHOOT, A, 2733, 2730, 6
+SHOOT, A, 2734, 2731, 18
+SHOOT, A, 2735, 2732, 13
+DEAD, A, 2677
+DEAD, A, 2690
+DEAD, A, 2718
+DEAD, D, 2680
+DEAD, D, 2693
+DEAD, D, 2721
+SPAWN, A, 2736, 1, 23, 0
+SPAWN, A, 2737, 2, 23, 63
+SPAWN, A, 2738, 3, 24, 0
+SPAWN, D, 2739, 1, 23, 0
+SPAWN, D, 2740, 2, 23, 63
+SPAWN, D, 2741, 3, 24, 0
+TURN, 457
+PRINT, TURN 457 LOGS:To be spawned at Position(24,63)
+PRINT, To be spawned at Position(25,0)
+PRINT, To be spawned at Position(25,63)
+PRINT, Type 1 at Position (24,63)
+PRINT, Type 2 at Position (25,0)
+PRINT, Type 3 at Position (25,63)
+PRINT, 
+SHOOT, D, 2683, 2686, 0
+SHOOT, D, 2689, 2692, 2
+SHOOT, D, 2695, 2698, 4
+SHOOT, D, 2696, 2699, 0
+SHOOT, D, 2701, 2704, 6
+SHOOT, D, 2702, 2705, 1
+SHOOT, D, 2707, 2710, 8
+SHOOT, D, 2708, 2711, 3
+SHOOT, D, 2713, 2716, 10
+SHOOT, D, 2714, 2717, 5
+SHOOT, D, 2719, 2722, 12
+SHOOT, D, 2720, 2723, 7
+SHOOT, D, 2724, 2727, 0
+SHOOT, D, 2725, 2728, 14
+SHOOT, D, 2726, 2729, 9
+SHOOT, D, 2730, 2733, 2
+SHOOT, D, 2731, 2734, 16
+SHOOT, D, 2732, 2735, 11
+SHOOT, D, 2736, 2739, 6
+SHOOT, D, 2737, 2740, 18
+SHOOT, D, 2738, 2741, 13
+SHOOT, A, 2686, 2683, 0
+SHOOT, A, 2692, 2689, 2
+SHOOT, A, 2698, 2695, 4
+SHOOT, A, 2699, 2696, 0
+SHOOT, A, 2704, 2701, 6
+SHOOT, A, 2705, 2702, 1
+SHOOT, A, 2710, 2707, 8
+SHOOT, A, 2711, 2708, 3
+SHOOT, A, 2716, 2713, 10
+SHOOT, A, 2717, 2714, 5
+SHOOT, A, 2722, 2719, 12
+SHOOT, A, 2723, 2720, 7
+SHOOT, A, 2727, 2724, 0
+SHOOT, A, 2728, 2725, 14
+SHOOT, A, 2729, 2726, 9
+SHOOT, A, 2733, 2730, 2
+SHOOT, A, 2734, 2731, 16
+SHOOT, A, 2735, 2732, 11
+SHOOT, A, 2739, 2736, 6
+SHOOT, A, 2740, 2737, 18
+SHOOT, A, 2741, 2738, 13
+DEAD, A, 2683
+DEAD, A, 2696
+DEAD, A, 2724
+DEAD, D, 2686
+DEAD, D, 2699
+DEAD, D, 2727
+SPAWN, A, 2742, 1, 24, 63
+SPAWN, A, 2743, 2, 25, 0
+SPAWN, A, 2744, 3, 25, 63
+SPAWN, D, 2745, 1, 24, 63
+SPAWN, D, 2746, 2, 25, 0
+SPAWN, D, 2747, 3, 25, 63
+TURN, 458
+PRINT, TURN 458 LOGS:To be spawned at Position(26,0)
+PRINT, To be spawned at Position(26,63)
+PRINT, To be spawned at Position(27,0)
+PRINT, Type 1 at Position (26,0)
+PRINT, Type 2 at Position (26,63)
+PRINT, Type 3 at Position (27,0)
+PRINT, 
+SHOOT, D, 2689, 2692, 0
+SHOOT, D, 2695, 2698, 2
+SHOOT, D, 2701, 2704, 4
+SHOOT, D, 2702, 2705, 0
+SHOOT, D, 2707, 2710, 6
+SHOOT, D, 2708, 2711, 1
+SHOOT, D, 2713, 2716, 8
+SHOOT, D, 2714, 2717, 3
+SHOOT, D, 2719, 2722, 10
+SHOOT, D, 2720, 2723, 5
+SHOOT, D, 2725, 2728, 12
+SHOOT, D, 2726, 2729, 7
+SHOOT, D, 2730, 2733, 0
+SHOOT, D, 2731, 2734, 14
+SHOOT, D, 2732, 2735, 9
+SHOOT, D, 2736, 2739, 2
+SHOOT, D, 2737, 2740, 16
+SHOOT, D, 2738, 2741, 11
+SHOOT, D, 2742, 2745, 6
+SHOOT, D, 2743, 2746, 18
+SHOOT, D, 2744, 2747, 13
+SHOOT, A, 2692, 2689, 0
+SHOOT, A, 2698, 2695, 2
+SHOOT, A, 2704, 2701, 4
+SHOOT, A, 2705, 2702, 0
+SHOOT, A, 2710, 2707, 6
+SHOOT, A, 2711, 2708, 1
+SHOOT, A, 2716, 2713, 8
+SHOOT, A, 2717, 2714, 3
+SHOOT, A, 2722, 2719, 10
+SHOOT, A, 2723, 2720, 5
+SHOOT, A, 2728, 2725, 12
+SHOOT, A, 2729, 2726, 7
+SHOOT, A, 2733, 2730, 0
+SHOOT, A, 2734, 2731, 14
+SHOOT, A, 2735, 2732, 9
+SHOOT, A, 2739, 2736, 2
+SHOOT, A, 2740, 2737, 16
+SHOOT, A, 2741, 2738, 11
+SHOOT, A, 2745, 2742, 6
+SHOOT, A, 2746, 2743, 18
+SHOOT, A, 2747, 2744, 13
+DEAD, A, 2689
+DEAD, A, 2702
+DEAD, A, 2730
+DEAD, D, 2692
+DEAD, D, 2705
+DEAD, D, 2733
+SPAWN, A, 2748, 1, 26, 0
+SPAWN, A, 2749, 2, 26, 63
+SPAWN, A, 2750, 3, 27, 0
+SPAWN, D, 2751, 1, 26, 0
+SPAWN, D, 2752, 2, 26, 63
+SPAWN, D, 2753, 3, 27, 0
+TURN, 459
+PRINT, TURN 459 LOGS:To be spawned at Position(27,63)
+PRINT, To be spawned at Position(28,0)
+PRINT, To be spawned at Position(28,63)
+PRINT, Type 1 at Position (27,63)
+PRINT, Type 2 at Position (28,0)
+PRINT, Type 3 at Position (28,63)
+PRINT, 
+SHOOT, D, 2695, 2698, 0
+SHOOT, D, 2701, 2704, 2
+SHOOT, D, 2707, 2710, 4
+SHOOT, D, 2708, 2711, 0
+SHOOT, D, 2713, 2716, 6
+SHOOT, D, 2714, 2717, 1
+SHOOT, D, 2719, 2722, 8
+SHOOT, D, 2720, 2723, 3
+SHOOT, D, 2725, 2728, 10
+SHOOT, D, 2726, 2729, 5
+SHOOT, D, 2731, 2734, 12
+SHOOT, D, 2732, 2735, 7
+SHOOT, D, 2736, 2739, 0
+SHOOT, D, 2737, 2740, 14
+SHOOT, D, 2738, 2741, 9
+SHOOT, D, 2742, 2745, 2
+SHOOT, D, 2743, 2746, 16
+SHOOT, D, 2744, 2747, 11
+SHOOT, D, 2748, 2751, 6
+SHOOT, D, 2749, 2752, 18
+SHOOT, D, 2750, 2753, 13
+SHOOT, A, 2698, 2695, 0
+SHOOT, A, 2704, 2701, 2
+SHOOT, A, 2710, 2707, 4
+SHOOT, A, 2711, 2708, 0
+SHOOT, A, 2716, 2713, 6
+SHOOT, A, 2717, 2714, 1
+SHOOT, A, 2722, 2719, 8
+SHOOT, A, 2723, 2720, 3
+SHOOT, A, 2728, 2725, 10
+SHOOT, A, 2729, 2726, 5
+SHOOT, A, 2734, 2731, 12
+SHOOT, A, 2735, 2732, 7
+SHOOT, A, 2739, 2736, 0
+SHOOT, A, 2740, 2737, 14
+SHOOT, A, 2741, 2738, 9
+SHOOT, A, 2745, 2742, 2
+SHOOT, A, 2746, 2743, 16
+SHOOT, A, 2747, 2744, 11
+SHOOT, A, 2751, 2748, 6
+SHOOT, A, 2752, 2749, 18
+SHOOT, A, 2753, 2750, 13
+DEAD, A, 2695
+DEAD, A, 2708
+DEAD, A, 2736
+DEAD, D, 2698
+DEAD, D, 2711
+DEAD, D, 2739
+SPAWN, A, 2754, 1, 27, 63
+SPAWN, A, 2755, 2, 28, 0
+SPAWN, A, 2756, 3, 28, 63
+SPAWN, D, 2757, 1, 27, 63
+SPAWN, D, 2758, 2, 28, 0
+SPAWN, D, 2759, 3, 28, 63
+TURN, 460
+PRINT, TURN 460 LOGS:To be spawned at Position(29,0)
+PRINT, To be spawned at Position(29,63)
+PRINT, To be spawned at Position(30,0)
+PRINT, Type 1 at Position (29,0)
+PRINT, Type 2 at Position (29,63)
+PRINT, Type 3 at Position (30,0)
+PRINT, 
+SHOOT, D, 2701, 2704, 0
+SHOOT, D, 2707, 2710, 2
+SHOOT, D, 2713, 2716, 4
+SHOOT, D, 2714, 2717, 0
+SHOOT, D, 2719, 2722, 6
+SHOOT, D, 2720, 2723, 1
+SHOOT, D, 2725, 2728, 8
+SHOOT, D, 2726, 2729, 3
+SHOOT, D, 2731, 2734, 10
+SHOOT, D, 2732, 2735, 5
+SHOOT, D, 2737, 2740, 12
+SHOOT, D, 2738, 2741, 7
+SHOOT, D, 2742, 2745, 0
+SHOOT, D, 2743, 2746, 14
+SHOOT, D, 2744, 2747, 9
+SHOOT, D, 2748, 2751, 2
+SHOOT, D, 2749, 2752, 16
+SHOOT, D, 2750, 2753, 11
+SHOOT, D, 2754, 2757, 6
+SHOOT, D, 2755, 2758, 18
+SHOOT, D, 2756, 2759, 13
+SHOOT, A, 2704, 2701, 0
+SHOOT, A, 2710, 2707, 2
+SHOOT, A, 2716, 2713, 4
+SHOOT, A, 2717, 2714, 0
+SHOOT, A, 2722, 2719, 6
+SHOOT, A, 2723, 2720, 1
+SHOOT, A, 2728, 2725, 8
+SHOOT, A, 2729, 2726, 3
+SHOOT, A, 2734, 2731, 10
+SHOOT, A, 2735, 2732, 5
+SHOOT, A, 2740, 2737, 12
+SHOOT, A, 2741, 2738, 7
+SHOOT, A, 2745, 2742, 0
+SHOOT, A, 2746, 2743, 14
+SHOOT, A, 2747, 2744, 9
+SHOOT, A, 2751, 2748, 2
+SHOOT, A, 2752, 2749, 16
+SHOOT, A, 2753, 2750, 11
+SHOOT, A, 2757, 2754, 6
+SHOOT, A, 2758, 2755, 18
+SHOOT, A, 2759, 2756, 13
+DEAD, A, 2701
+DEAD, A, 2714
+DEAD, A, 2742
+DEAD, D, 2704
+DEAD, D, 2717
+DEAD, D, 2745
+SPAWN, A, 2760, 1, 29, 0
+SPAWN, A, 2761, 2, 29, 63
+SPAWN, A, 2762, 3, 30, 0
+SPAWN, D, 2763, 1, 29, 0
+SPAWN, D, 2764, 2, 29, 63
+SPAWN, D, 2765, 3, 30, 0
+TURN, 461
+PRINT, TURN 461 LOGS:To be spawned at Position(30,63)
+PRINT, To be spawned at Position(31,0)
+PRINT, To be spawned at Position(31,63)
+PRINT, Type 1 at Position (30,63)
+PRINT, Type 2 at Position (31,0)
+PRINT, Type 3 at Position (31,63)
+PRINT, 
+SHOOT, D, 2707, 2710, 0
+SHOOT, D, 2713, 2716, 2
+SHOOT, D, 2719, 2722, 4
+SHOOT, D, 2720, 2723, 0
+SHOOT, D, 2725, 2728, 6
+SHOOT, D, 2726, 2729, 1
+SHOOT, D, 2731, 2734, 8
+SHOOT, D, 2732, 2735, 3
+SHOOT, D, 2737, 2740, 10
+SHOOT, D, 2738, 2741, 5
+SHOOT, D, 2743, 2746, 12
+SHOOT, D, 2744, 2747, 7
+SHOOT, D, 2748, 2751, 0
+SHOOT, D, 2749, 2752, 14
+SHOOT, D, 2750, 2753, 9
+SHOOT, D, 2754, 2757, 2
+SHOOT, D, 2755, 2758, 16
+SHOOT, D, 2756, 2759, 11
+SHOOT, D, 2760, 2763, 6
+SHOOT, D, 2761, 2764, 18
+SHOOT, D, 2762, 2765, 13
+SHOOT, A, 2710, 2707, 0
+SHOOT, A, 2716, 2713, 2
+SHOOT, A, 2722, 2719, 4
+SHOOT, A, 2723, 2720, 0
+SHOOT, A, 2728, 2725, 6
+SHOOT, A, 2729, 2726, 1
+SHOOT, A, 2734, 2731, 8
+SHOOT, A, 2735, 2732, 3
+SHOOT, A, 2740, 2737, 10
+SHOOT, A, 2741, 2738, 5
+SHOOT, A, 2746, 2743, 12
+SHOOT, A, 2747, 2744, 7
+SHOOT, A, 2751, 2748, 0
+SHOOT, A, 2752, 2749, 14
+SHOOT, A, 2753, 2750, 9
+SHOOT, A, 2757, 2754, 2
+SHOOT, A, 2758, 2755, 16
+SHOOT, A, 2759, 2756, 11
+SHOOT, A, 2763, 2760, 6
+SHOOT, A, 2764, 2761, 18
+SHOOT, A, 2765, 2762, 13
+DEAD, A, 2707
+DEAD, A, 2720
+DEAD, A, 2748
+DEAD, D, 2710
+DEAD, D, 2723
+DEAD, D, 2751
+SPAWN, A, 2766, 1, 30, 63
+SPAWN, A, 2767, 2, 31, 0
+SPAWN, A, 2768, 3, 31, 63
+SPAWN, D, 2769, 1, 30, 63
+SPAWN, D, 2770, 2, 31, 0
+SPAWN, D, 2771, 3, 31, 63
+TURN, 462
+PRINT, TURN 462 LOGS:To be spawned at Position(32,0)
+PRINT, To be spawned at Position(32,63)
+PRINT, To be spawned at Position(33,0)
+PRINT, Type 1 at Position (32,0)
+PRINT, Type 2 at Position (32,63)
+PRINT, Type 3 at Position (33,0)
+PRINT, 
+SHOOT, D, 2713, 2716, 0
+SHOOT, D, 2719, 2722, 2
+SHOOT, D, 2725, 2728, 4
+SHOOT, D, 2726, 2729, 0
+SHOOT, D, 2731, 2734, 6
+SHOOT, D, 2732, 2735, 1
+SHOOT, D, 2737, 2740, 8
+SHOOT, D, 2738, 2741, 3
+SHOOT, D, 2743, 2746, 10
+SHOOT, D, 2744, 2747, 5
+SHOOT, D, 2749, 2752, 12
+SHOOT, D, 2750, 2753, 7
+SHOOT, D, 2754, 2757, 0
+SHOOT, D, 2755, 2758, 14
+SHOOT, D, 2756, 2759, 9
+SHOOT, D, 2760, 2763, 2
+SHOOT, D, 2761, 2764, 16
+SHOOT, D, 2762, 2765, 11
+SHOOT, D, 2766, 2769, 6
+SHOOT, D, 2767, 2770, 18
+SHOOT, D, 2768, 2771, 13
+SHOOT, A, 2716, 2713, 0
+SHOOT, A, 2722, 2719, 2
+SHOOT, A, 2728, 2725, 4
+SHOOT, A, 2729, 2726, 0
+SHOOT, A, 2734, 2731, 6
+SHOOT, A, 2735, 2732, 1
+SHOOT, A, 2740, 2737, 8
+SHOOT, A, 2741, 2738, 3
+SHOOT, A, 2746, 2743, 10
+SHOOT, A, 2747, 2744, 5
+SHOOT, A, 2752, 2749, 12
+SHOOT, A, 2753, 2750, 7
+SHOOT, A, 2757, 2754, 0
+SHOOT, A, 2758, 2755, 14
+SHOOT, A, 2759, 2756, 9
+SHOOT, A, 2763, 2760, 2
+SHOOT, A, 2764, 2761, 16
+SHOOT, A, 2765, 2762, 11
+SHOOT, A, 2769, 2766, 6
+SHOOT, A, 2770, 2767, 18
+SHOOT, A, 2771, 2768, 13
+DEAD, A, 2713
+DEAD, A, 2726
+DEAD, A, 2754
+DEAD, D, 2716
+DEAD, D, 2729
+DEAD, D, 2757
+SPAWN, A, 2772, 1, 32, 0
+SPAWN, A, 2773, 2, 32, 63
+SPAWN, A, 2774, 3, 33, 0
+SPAWN, D, 2775, 1, 32, 0
+SPAWN, D, 2776, 2, 32, 63
+SPAWN, D, 2777, 3, 33, 0
+TURN, 463
+PRINT, TURN 463 LOGS:To be spawned at Position(33,63)
+PRINT, To be spawned at Position(34,0)
+PRINT, To be spawned at Position(34,63)
+PRINT, Type 1 at Position (33,63)
+PRINT, Type 2 at Position (34,0)
+PRINT, Type 3 at Position (34,63)
+PRINT, 
+SHOOT, D, 2719, 2722, 0
+SHOOT, D, 2725, 2728, 2
+SHOOT, D, 2731, 2734, 4
+SHOOT, D, 2732, 2735, 0
+SHOOT, D, 2737, 2740, 6
+SHOOT, D, 2738, 2741, 1
+SHOOT, D, 2743, 2746, 8
+SHOOT, D, 2744, 2747, 3
+SHOOT, D, 2749, 2752, 10
+SHOOT, D, 2750, 2753, 5
+SHOOT, D, 2755, 2758, 12
+SHOOT, D, 2756, 2759, 7
+SHOOT, D, 2760, 2763, 0
+SHOOT, D, 2761, 2764, 14
+SHOOT, D, 2762, 2765, 9
+SHOOT, D, 2766, 2769, 2
+SHOOT, D, 2767, 2770, 16
+SHOOT, D, 2768, 2771, 11
+SHOOT, D, 2772, 2775, 6
+SHOOT, D, 2773, 2776, 18
+SHOOT, D, 2774, 2777, 13
+SHOOT, A, 2722, 2719, 0
+SHOOT, A, 2728, 2725, 2
+SHOOT, A, 2734, 2731, 4
+SHOOT, A, 2735, 2732, 0
+SHOOT, A, 2740, 2737, 6
+SHOOT, A, 2741, 2738, 1
+SHOOT, A, 2746, 2743, 8
+SHOOT, A, 2747, 2744, 3
+SHOOT, A, 2752, 2749, 10
+SHOOT, A, 2753, 2750, 5
+SHOOT, A, 2758, 2755, 12
+SHOOT, A, 2759, 2756, 7
+SHOOT, A, 2763, 2760, 0
+SHOOT, A, 2764, 2761, 14
+SHOOT, A, 2765, 2762, 9
+SHOOT, A, 2769, 2766, 2
+SHOOT, A, 2770, 2767, 16
+SHOOT, A, 2771, 2768, 11
+SHOOT, A, 2775, 2772, 6
+SHOOT, A, 2776, 2773, 18
+SHOOT, A, 2777, 2774, 13
+DEAD, A, 2719
+DEAD, A, 2732
+DEAD, A, 2760
+DEAD, D, 2722
+DEAD, D, 2735
+DEAD, D, 2763
+SPAWN, A, 2778, 1, 33, 63
+SPAWN, A, 2779, 2, 34, 0
+SPAWN, A, 2780, 3, 34, 63
+SPAWN, D, 2781, 1, 33, 63
+SPAWN, D, 2782, 2, 34, 0
+SPAWN, D, 2783, 3, 34, 63
+TURN, 464
+PRINT, TURN 464 LOGS:To be spawned at Position(35,0)
+PRINT, To be spawned at Position(35,63)
+PRINT, To be spawned at Position(36,0)
+PRINT, Type 1 at Position (35,0)
+PRINT, Type 2 at Position (35,63)
+PRINT, Type 3 at Position (36,0)
+PRINT, 
+SHOOT, D, 2725, 2728, 0
+SHOOT, D, 2731, 2734, 2
+SHOOT, D, 2737, 2740, 4
+SHOOT, D, 2738, 2741, 0
+SHOOT, D, 2743, 2746, 6
+SHOOT, D, 2744, 2747, 1
+SHOOT, D, 2749, 2752, 8
+SHOOT, D, 2750, 2753, 3
+SHOOT, D, 2755, 2758, 10
+SHOOT, D, 2756, 2759, 5
+SHOOT, D, 2761, 2764, 12
+SHOOT, D, 2762, 2765, 7
+SHOOT, D, 2766, 2769, 0
+SHOOT, D, 2767, 2770, 14
+SHOOT, D, 2768, 2771, 9
+SHOOT, D, 2772, 2775, 2
+SHOOT, D, 2773, 2776, 16
+SHOOT, D, 2774, 2777, 11
+SHOOT, D, 2778, 2781, 6
+SHOOT, D, 2779, 2782, 18
+SHOOT, D, 2780, 2783, 13
+SHOOT, A, 2728, 2725, 0
+SHOOT, A, 2734, 2731, 2
+SHOOT, A, 2740, 2737, 4
+SHOOT, A, 2741, 2738, 0
+SHOOT, A, 2746, 2743, 6
+SHOOT, A, 2747, 2744, 1
+SHOOT, A, 2752, 2749, 8
+SHOOT, A, 2753, 2750, 3
+SHOOT, A, 2758, 2755, 10
+SHOOT, A, 2759, 2756, 5
+SHOOT, A, 2764, 2761, 12
+SHOOT, A, 2765, 2762, 7
+SHOOT, A, 2769, 2766, 0
+SHOOT, A, 2770, 2767, 14
+SHOOT, A, 2771, 2768, 9
+SHOOT, A, 2775, 2772, 2
+SHOOT, A, 2776, 2773, 16
+SHOOT, A, 2777, 2774, 11
+SHOOT, A, 2781, 2778, 6
+SHOOT, A, 2782, 2779, 18
+SHOOT, A, 2783, 2780, 13
+DEAD, A, 2725
+DEAD, A, 2738
+DEAD, A, 2766
+DEAD, D, 2728
+DEAD, D, 2741
+DEAD, D, 2769
+SPAWN, A, 2784, 1, 35, 0
+SPAWN, A, 2785, 2, 35, 63
+SPAWN, A, 2786, 3, 36, 0
+SPAWN, D, 2787, 1, 35, 0
+SPAWN, D, 2788, 2, 35, 63
+SPAWN, D, 2789, 3, 36, 0
+TURN, 465
+PRINT, TURN 465 LOGS:To be spawned at Position(36,63)
+PRINT, To be spawned at Position(37,0)
+PRINT, To be spawned at Position(37,63)
+PRINT, Type 1 at Position (36,63)
+PRINT, Type 2 at Position (37,0)
+PRINT, Type 3 at Position (37,63)
+PRINT, 
+SHOOT, D, 2731, 2734, 0
+SHOOT, D, 2737, 2740, 2
+SHOOT, D, 2743, 2746, 4
+SHOOT, D, 2744, 2747, 0
+SHOOT, D, 2749, 2752, 6
+SHOOT, D, 2750, 2753, 1
+SHOOT, D, 2755, 2758, 8
+SHOOT, D, 2756, 2759, 3
+SHOOT, D, 2761, 2764, 10
+SHOOT, D, 2762, 2765, 5
+SHOOT, D, 2767, 2770, 12
+SHOOT, D, 2768, 2771, 7
+SHOOT, D, 2772, 2775, 0
+SHOOT, D, 2773, 2776, 14
+SHOOT, D, 2774, 2777, 9
+SHOOT, D, 2778, 2781, 2
+SHOOT, D, 2779, 2782, 16
+SHOOT, D, 2780, 2783, 11
+SHOOT, D, 2784, 2787, 6
+SHOOT, D, 2785, 2788, 18
+SHOOT, D, 2786, 2789, 13
+SHOOT, A, 2734, 2731, 0
+SHOOT, A, 2740, 2737, 2
+SHOOT, A, 2746, 2743, 4
+SHOOT, A, 2747, 2744, 0
+SHOOT, A, 2752, 2749, 6
+SHOOT, A, 2753, 2750, 1
+SHOOT, A, 2758, 2755, 8
+SHOOT, A, 2759, 2756, 3
+SHOOT, A, 2764, 2761, 10
+SHOOT, A, 2765, 2762, 5
+SHOOT, A, 2770, 2767, 12
+SHOOT, A, 2771, 2768, 7
+SHOOT, A, 2775, 2772, 0
+SHOOT, A, 2776, 2773, 14
+SHOOT, A, 2777, 2774, 9
+SHOOT, A, 2781, 2778, 2
+SHOOT, A, 2782, 2779, 16
+SHOOT, A, 2783, 2780, 11
+SHOOT, A, 2787, 2784, 6
+SHOOT, A, 2788, 2785, 18
+SHOOT, A, 2789, 2786, 13
+DEAD, A, 2731
+DEAD, A, 2744
+DEAD, A, 2772
+DEAD, D, 2734
+DEAD, D, 2747
+DEAD, D, 2775
+SPAWN, A, 2790, 1, 36, 63
+SPAWN, A, 2791, 2, 37, 0
+SPAWN, A, 2792, 3, 37, 63
+SPAWN, D, 2793, 1, 36, 63
+SPAWN, D, 2794, 2, 37, 0
+SPAWN, D, 2795, 3, 37, 63
+TURN, 466
+PRINT, TURN 466 LOGS:To be spawned at Position(38,0)
+PRINT, To be spawned at Position(38,63)
+PRINT, To be spawned at Position(39,0)
+PRINT, Type 1 at Position (38,0)
+PRINT, Type 2 at Position (38,63)
+PRINT, Type 3 at Position (39,0)
+PRINT, 
+SHOOT, D, 2737, 2740, 0
+SHOOT, D, 2743, 2746, 2
+SHOOT, D, 2749, 2752, 4
+SHOOT, D, 2750, 2753, 0
+SHOOT, D, 2755, 2758, 6
+SHOOT, D, 2756, 2759, 1
+SHOOT, D, 2761, 2764, 8
+SHOOT, D, 2762, 2765, 3
+SHOOT, D, 2767, 2770, 10
+SHOOT, D, 2768, 2771, 5
+SHOOT, D, 2773, 2776, 12
+SHOOT, D, 2774, 2777, 7
+SHOOT, D, 2778, 2781, 0
+SHOOT, D, 2779, 2782, 14
+SHOOT, D, 2780, 2783, 9
+SHOOT, D, 2784, 2787, 2
+SHOOT, D, 2785, 2788, 16
+SHOOT, D, 2786, 2789, 11
+SHOOT, D, 2790, 2793, 6
+SHOOT, D, 2791, 2794, 18
+SHOOT, D, 2792, 2795, 13
+SHOOT, A, 2740, 2737, 0
+SHOOT, A, 2746, 2743, 2
+SHOOT, A, 2752, 2749, 4
+SHOOT, A, 2753, 2750, 0
+SHOOT, A, 2758, 2755, 6
+SHOOT, A, 2759, 2756, 1
+SHOOT, A, 2764, 2761, 8
+SHOOT, A, 2765, 2762, 3
+SHOOT, A, 2770, 2767, 10
+SHOOT, A, 2771, 2768, 5
+SHOOT, A, 2776, 2773, 12
+SHOOT, A, 2777, 2774, 7
+SHOOT, A, 2781, 2778, 0
+SHOOT, A, 2782, 2779, 14
+SHOOT, A, 2783, 2780, 9
+SHOOT, A, 2787, 2784, 2
+SHOOT, A, 2788, 2785, 16
+SHOOT, A, 2789, 2786, 11
+SHOOT, A, 2793, 2790, 6
+SHOOT, A, 2794, 2791, 18
+SHOOT, A, 2795, 2792, 13
+DEAD, A, 2737
+DEAD, A, 2750
+DEAD, A, 2778
+DEAD, D, 2740
+DEAD, D, 2753
+DEAD, D, 2781
+SPAWN, A, 2796, 1, 38, 0
+SPAWN, A, 2797, 2, 38, 63
+SPAWN, A, 2798, 3, 39, 0
+SPAWN, D, 2799, 1, 38, 0
+SPAWN, D, 2800, 2, 38, 63
+SPAWN, D, 2801, 3, 39, 0
+TURN, 467
+PRINT, TURN 467 LOGS:To be spawned at Position(39,63)
+PRINT, To be spawned at Position(40,0)
+PRINT, To be spawned at Position(40,63)
+PRINT, Type 1 at Position (39,63)
+PRINT, Type 2 at Position (40,0)
+PRINT, Type 3 at Position (40,63)
+PRINT, 
+SHOOT, D, 2743, 2746, 0
+SHOOT, D, 2749, 2752, 2
+SHOOT, D, 2755, 2758, 4
+SHOOT, D, 2756, 2759, 0
+SHOOT, D, 2761, 2764, 6
+SHOOT, D, 2762, 2765, 1
+SHOOT, D, 2767, 2770, 8
+SHOOT, D, 2768, 2771, 3
+SHOOT, D, 2773, 2776, 10
+SHOOT, D, 2774, 2777, 5
+SHOOT, D, 2779, 2782, 12
+SHOOT, D, 2780, 2783, 7
+SHOOT, D, 2784, 2787, 0
+SHOOT, D, 2785, 2788, 14
+SHOOT, D, 2786, 2789, 9
+SHOOT, D, 2790, 2793, 2
+SHOOT, D, 2791, 2794, 16
+SHOOT, D, 2792, 2795, 11
+SHOOT, D, 2796, 2799, 6
+SHOOT, D, 2797, 2800, 18
+SHOOT, D, 2798, 2801, 13
+SHOOT, A, 2746, 2743, 0
+SHOOT, A, 2752, 2749, 2
+SHOOT, A, 2758, 2755, 4
+SHOOT, A, 2759, 2756, 0
+SHOOT, A, 2764, 2761, 6
+SHOOT, A, 2765, 2762, 1
+SHOOT, A, 2770, 2767, 8
+SHOOT, A, 2771, 2768, 3
+SHOOT, A, 2776, 2773, 10
+SHOOT, A, 2777, 2774, 5
+SHOOT, A, 2782, 2779, 12
+SHOOT, A, 2783, 2780, 7
+SHOOT, A, 2787, 2784, 0
+SHOOT, A, 2788, 2785, 14
+SHOOT, A, 2789, 2786, 9
+SHOOT, A, 2793, 2790, 2
+SHOOT, A, 2794, 2791, 16
+SHOOT, A, 2795, 2792, 11
+SHOOT, A, 2799, 2796, 6
+SHOOT, A, 2800, 2797, 18
+SHOOT, A, 2801, 2798, 13
+DEAD, A, 2743
+DEAD, A, 2756
+DEAD, A, 2784
+DEAD, D, 2746
+DEAD, D, 2759
+DEAD, D, 2787
+SPAWN, A, 2802, 1, 39, 63
+SPAWN, A, 2803, 2, 40, 0
+SPAWN, A, 2804, 3, 40, 63
+SPAWN, D, 2805, 1, 39, 63
+SPAWN, D, 2806, 2, 40, 0
+SPAWN, D, 2807, 3, 40, 63
+TURN, 468
+PRINT, TURN 468 LOGS:To be spawned at Position(41,0)
+PRINT, To be spawned at Position(41,63)
+PRINT, To be spawned at Position(42,0)
+PRINT, Type 1 at Position (41,0)
+PRINT, Type 2 at Position (41,63)
+PRINT, Type 3 at Position (42,0)
+PRINT, 
+SHOOT, D, 2749, 2752, 0
+SHOOT, D, 2755, 2758, 2
+SHOOT, D, 2761, 2764, 4
+SHOOT, D, 2762, 2765, 0
+SHOOT, D, 2767, 2770, 6
+SHOOT, D, 2768, 2771, 1
+SHOOT, D, 2773, 2776, 8
+SHOOT, D, 2774, 2777, 3
+SHOOT, D, 2779, 2782, 10
+SHOOT, D, 2780, 2783, 5
+SHOOT, D, 2785, 2788, 12
+SHOOT, D, 2786, 2789, 7
+SHOOT, D, 2790, 2793, 0
+SHOOT, D, 2791, 2794, 14
+SHOOT, D, 2792, 2795, 9
+SHOOT, D, 2796, 2799, 2
+SHOOT, D, 2797, 2800, 16
+SHOOT, D, 2798, 2801, 11
+SHOOT, D, 2802, 2805, 6
+SHOOT, D, 2803, 2806, 18
+SHOOT, D, 2804, 2807, 13
+SHOOT, A, 2752, 2749, 0
+SHOOT, A, 2758, 2755, 2
+SHOOT, A, 2764, 2761, 4
+SHOOT, A, 2765, 2762, 0
+SHOOT, A, 2770, 2767, 6
+SHOOT, A, 2771, 2768, 1
+SHOOT, A, 2776, 2773, 8
+SHOOT, A, 2777, 2774, 3
+SHOOT, A, 2782, 2779, 10
+SHOOT, A, 2783, 2780, 5
+SHOOT, A, 2788, 2785, 12
+SHOOT, A, 2789, 2786, 7
+SHOOT, A, 2793, 2790, 0
+SHOOT, A, 2794, 2791, 14
+SHOOT, A, 2795, 2792, 9
+SHOOT, A, 2799, 2796, 2
+SHOOT, A, 2800, 2797, 16
+SHOOT, A, 2801, 2798, 11
+SHOOT, A, 2805, 2802, 6
+SHOOT, A, 2806, 2803, 18
+SHOOT, A, 2807, 2804, 13
+DEAD, A, 2749
+DEAD, A, 2762
+DEAD, A, 2790
+DEAD, D, 2752
+DEAD, D, 2765
+DEAD, D, 2793
+SPAWN, A, 2808, 1, 41, 0
+SPAWN, A, 2809, 2, 41, 63
+SPAWN, A, 2810, 3, 42, 0
+SPAWN, D, 2811, 1, 41, 0
+SPAWN, D, 2812, 2, 41, 63
+SPAWN, D, 2813, 3, 42, 0
+TURN, 469
+PRINT, TURN 469 LOGS:To be spawned at Position(42,63)
+PRINT, To be spawned at Position(43,0)
+PRINT, To be spawned at Position(43,63)
+PRINT, Type 1 at Position (42,63)
+PRINT, Type 2 at Position (43,0)
+PRINT, Type 3 at Position (43,63)
+PRINT, 
+SHOOT, D, 2755, 2758, 0
+SHOOT, D, 2761, 2764, 2
+SHOOT, D, 2767, 2770, 4
+SHOOT, D, 2768, 2771, 0
+SHOOT, D, 2773, 2776, 6
+SHOOT, D, 2774, 2777, 1
+SHOOT, D, 2779, 2782, 8
+SHOOT, D, 2780, 2783, 3
+SHOOT, D, 2785, 2788, 10
+SHOOT, D, 2786, 2789, 5
+SHOOT, D, 2791, 2794, 12
+SHOOT, D, 2792, 2795, 7
+SHOOT, D, 2796, 2799, 0
+SHOOT, D, 2797, 2800, 14
+SHOOT, D, 2798, 2801, 9
+SHOOT, D, 2802, 2805, 2
+SHOOT, D, 2803, 2806, 16
+SHOOT, D, 2804, 2807, 11
+SHOOT, D, 2808, 2811, 6
+SHOOT, D, 2809, 2812, 18
+SHOOT, D, 2810, 2813, 13
+SHOOT, A, 2758, 2755, 0
+SHOOT, A, 2764, 2761, 2
+SHOOT, A, 2770, 2767, 4
+SHOOT, A, 2771, 2768, 0
+SHOOT, A, 2776, 2773, 6
+SHOOT, A, 2777, 2774, 1
+SHOOT, A, 2782, 2779, 8
+SHOOT, A, 2783, 2780, 3
+SHOOT, A, 2788, 2785, 10
+SHOOT, A, 2789, 2786, 5
+SHOOT, A, 2794, 2791, 12
+SHOOT, A, 2795, 2792, 7
+SHOOT, A, 2799, 2796, 0
+SHOOT, A, 2800, 2797, 14
+SHOOT, A, 2801, 2798, 9
+SHOOT, A, 2805, 2802, 2
+SHOOT, A, 2806, 2803, 16
+SHOOT, A, 2807, 2804, 11
+SHOOT, A, 2811, 2808, 6
+SHOOT, A, 2812, 2809, 18
+SHOOT, A, 2813, 2810, 13
+DEAD, A, 2755
+DEAD, A, 2768
+DEAD, A, 2796
+DEAD, D, 2758
+DEAD, D, 2771
+DEAD, D, 2799
+SPAWN, A, 2814, 1, 42, 63
+SPAWN, A, 2815, 2, 43, 0
+SPAWN, A, 2816, 3, 43, 63
+SPAWN, D, 2817, 1, 42, 63
+SPAWN, D, 2818, 2, 43, 0
+SPAWN, D, 2819, 3, 43, 63
+TURN, 470
+PRINT, TURN 470 LOGS:To be spawned at Position(44,0)
+PRINT, To be spawned at Position(44,63)
+PRINT, To be spawned at Position(45,0)
+PRINT, Type 1 at Position (44,0)
+PRINT, Type 2 at Position (44,63)
+PRINT, Type 3 at Position (45,0)
+PRINT, 
+SHOOT, D, 2761, 2764, 0
+SHOOT, D, 2767, 2770, 2
+SHOOT, D, 2773, 2776, 4
+SHOOT, D, 2774, 2777, 0
+SHOOT, D, 2779, 2782, 6
+SHOOT, D, 2780, 2783, 1
+SHOOT, D, 2785, 2788, 8
+SHOOT, D, 2786, 2789, 3
+SHOOT, D, 2791, 2794, 10
+SHOOT, D, 2792, 2795, 5
+SHOOT, D, 2797, 2800, 12
+SHOOT, D, 2798, 2801, 7
+SHOOT, D, 2802, 2805, 0
+SHOOT, D, 2803, 2806, 14
+SHOOT, D, 2804, 2807, 9
+SHOOT, D, 2808, 2811, 2
+SHOOT, D, 2809, 2812, 16
+SHOOT, D, 2810, 2813, 11
+SHOOT, D, 2814, 2817, 6
+SHOOT, D, 2815, 2818, 18
+SHOOT, D, 2816, 2819, 13
+SHOOT, A, 2764, 2761, 0
+SHOOT, A, 2770, 2767, 2
+SHOOT, A, 2776, 2773, 4
+SHOOT, A, 2777, 2774, 0
+SHOOT, A, 2782, 2779, 6
+SHOOT, A, 2783, 2780, 1
+SHOOT, A, 2788, 2785, 8
+SHOOT, A, 2789, 2786, 3
+SHOOT, A, 2794, 2791, 10
+SHOOT, A, 2795, 2792, 5
+SHOOT, A, 2800, 2797, 12
+SHOOT, A, 2801, 2798, 7
+SHOOT, A, 2805, 2802, 0
+SHOOT, A, 2806, 2803, 14
+SHOOT, A, 2807, 2804, 9
+SHOOT, A, 2811, 2808, 2
+SHOOT, A, 2812, 2809, 16
+SHOOT, A, 2813, 2810, 11
+SHOOT, A, 2817, 2814, 6
+SHOOT, A, 2818, 2815, 18
+SHOOT, A, 2819, 2816, 13
+DEAD, A, 2761
+DEAD, A, 2774
+DEAD, A, 2802
+DEAD, D, 2764
+DEAD, D, 2777
+DEAD, D, 2805
+SPAWN, A, 2820, 1, 44, 0
+SPAWN, A, 2821, 2, 44, 63
+SPAWN, A, 2822, 3, 45, 0
+SPAWN, D, 2823, 1, 44, 0
+SPAWN, D, 2824, 2, 44, 63
+SPAWN, D, 2825, 3, 45, 0
+TURN, 471
+PRINT, TURN 471 LOGS:To be spawned at Position(45,63)
+PRINT, To be spawned at Position(46,0)
+PRINT, To be spawned at Position(46,63)
+PRINT, Type 1 at Position (45,63)
+PRINT, Type 2 at Position (46,0)
+PRINT, Type 3 at Position (46,63)
+PRINT, 
+SHOOT, D, 2767, 2770, 0
+SHOOT, D, 2773, 2776, 2
+SHOOT, D, 2779, 2782, 4
+SHOOT, D, 2780, 2783, 0
+SHOOT, D, 2785, 2788, 6
+SHOOT, D, 2786, 2789, 1
+SHOOT, D, 2791, 2794, 8
+SHOOT, D, 2792, 2795, 3
+SHOOT, D, 2797, 2800, 10
+SHOOT, D, 2798, 2801, 5
+SHOOT, D, 2803, 2806, 12
+SHOOT, D, 2804, 2807, 7
+SHOOT, D, 2808, 2811, 0
+SHOOT, D, 2809, 2812, 14
+SHOOT, D, 2810, 2813, 9
+SHOOT, D, 2814, 2817, 2
+SHOOT, D, 2815, 2818, 16
+SHOOT, D, 2816, 2819, 11
+SHOOT, D, 2820, 2823, 6
+SHOOT, D, 2821, 2824, 18
+SHOOT, D, 2822, 2825, 13
+SHOOT, A, 2770, 2767, 0
+SHOOT, A, 2776, 2773, 2
+SHOOT, A, 2782, 2779, 4
+SHOOT, A, 2783, 2780, 0
+SHOOT, A, 2788, 2785, 6
+SHOOT, A, 2789, 2786, 1
+SHOOT, A, 2794, 2791, 8
+SHOOT, A, 2795, 2792, 3
+SHOOT, A, 2800, 2797, 10
+SHOOT, A, 2801, 2798, 5
+SHOOT, A, 2806, 2803, 12
+SHOOT, A, 2807, 2804, 7
+SHOOT, A, 2811, 2808, 0
+SHOOT, A, 2812, 2809, 14
+SHOOT, A, 2813, 2810, 9
+SHOOT, A, 2817, 2814, 2
+SHOOT, A, 2818, 2815, 16
+SHOOT, A, 2819, 2816, 11
+SHOOT, A, 2823, 2820, 6
+SHOOT, A, 2824, 2821, 18
+SHOOT, A, 2825, 2822, 13
+DEAD, A, 2767
+DEAD, A, 2780
+DEAD, A, 2808
+DEAD, D, 2770
+DEAD, D, 2783
+DEAD, D, 2811
+SPAWN, A, 2826, 1, 45, 63
+SPAWN, A, 2827, 2, 46, 0
+SPAWN, A, 2828, 3, 46, 63
+SPAWN, D, 2829, 1, 45, 63
+SPAWN, D, 2830, 2, 46, 0
+SPAWN, D, 2831, 3, 46, 63
+TURN, 472
+PRINT, TURN 472 LOGS:To be spawned at Position(47,0)
+PRINT, To be spawned at Position(47,63)
+PRINT, To be spawned at Position(48,0)
+PRINT, Type 1 at Position (47,0)
+PRINT, Type 2 at Position (47,63)
+PRINT, Type 3 at Position (48,0)
+PRINT, 
+SHOOT, D, 2773, 2776, 0
+SHOOT, D, 2779, 2782, 2
+SHOOT, D, 2785, 2788, 4
+SHOOT, D, 2786, 2789, 0
+SHOOT, D, 2791, 2794, 6
+SHOOT, D, 2792, 2795, 1
+SHOOT, D, 2797, 2800, 8
+SHOOT, D, 2798, 2801, 3
+SHOOT, D, 2803, 2806, 10
+SHOOT, D, 2804, 2807, 5
+SHOOT, D, 2809, 2812, 12
+SHOOT, D, 2810, 2813, 7
+SHOOT, D, 2814, 2817, 0
+SHOOT, D, 2815, 2818, 14
+SHOOT, D, 2816, 2819, 9
+SHOOT, D, 2820, 2823, 2
+SHOOT, D, 2821, 2824, 16
+SHOOT, D, 2822, 2825, 11
+SHOOT, D, 2826, 2829, 6
+SHOOT, D, 2827, 2830, 18
+SHOOT, D, 2828, 2831, 13
+SHOOT, A, 2776, 2773, 0
+SHOOT, A, 2782, 2779, 2
+SHOOT, A, 2788, 2785, 4
+SHOOT, A, 2789, 2786, 0
+SHOOT, A, 2794, 2791, 6
+SHOOT, A, 2795, 2792, 1
+SHOOT, A, 2800, 2797, 8
+SHOOT, A, 2801, 2798, 3
+SHOOT, A, 2806, 2803, 10
+SHOOT, A, 2807, 2804, 5
+SHOOT, A, 2812, 2809, 12
+SHOOT, A, 2813, 2810, 7
+SHOOT, A, 2817, 2814, 0
+SHOOT, A, 2818, 2815, 14
+SHOOT, A, 2819, 2816, 9
+SHOOT, A, 2823, 2820, 2
+SHOOT, A, 2824, 2821, 16
+SHOOT, A, 2825, 2822, 11
+SHOOT, A, 2829, 2826, 6
+SHOOT, A, 2830, 2827, 18
+SHOOT, A, 2831, 2828, 13
+DEAD, A, 2773
+DEAD, A, 2786
+DEAD, A, 2814
+DEAD, D, 2776
+DEAD, D, 2789
+DEAD, D, 2817
+SPAWN, A, 2832, 1, 47, 0
+SPAWN, A, 2833, 2, 47, 63
+SPAWN, A, 2834, 3, 48, 0
+SPAWN, D, 2835, 1, 47, 0
+SPAWN, D, 2836, 2, 47, 63
+SPAWN, D, 2837, 3, 48, 0
+TURN, 473
+PRINT, TURN 473 LOGS:To be spawned at Position(48,63)
+PRINT, To be spawned at Position(49,0)
+PRINT, To be spawned at Position(49,63)
+PRINT, Type 1 at Position (48,63)
+PRINT, Type 2 at Position (49,0)
+PRINT, Type 3 at Position (49,63)
+PRINT, 
+SHOOT, D, 2779, 2782, 0
+SHOOT, D, 2785, 2788, 2
+SHOOT, D, 2791, 2794, 4
+SHOOT, D, 2792, 2795, 0
+SHOOT, D, 2797, 2800, 6
+SHOOT, D, 2798, 2801, 1
+SHOOT, D, 2803, 2806, 8
+SHOOT, D, 2804, 2807, 3
+SHOOT, D, 2809, 2812, 10
+SHOOT, D, 2810, 2813, 5
+SHOOT, D, 2815, 2818, 12
+SHOOT, D, 2816, 2819, 7
+SHOOT, D, 2820, 2823, 0
+SHOOT, D, 2821, 2824, 14
+SHOOT, D, 2822, 2825, 9
+SHOOT, D, 2826, 2829, 2
+SHOOT, D, 2827, 2830, 16
+SHOOT, D, 2828, 2831, 11
+SHOOT, D, 2832, 2835, 6
+SHOOT, D, 2833, 2836, 18
+SHOOT, D, 2834, 2837, 13
+SHOOT, A, 2782, 2779, 0
+SHOOT, A, 2788, 2785, 2
+SHOOT, A, 2794, 2791, 4
+SHOOT, A, 2795, 2792, 0
+SHOOT, A, 2800, 2797, 6
+SHOOT, A, 2801, 2798, 1
+SHOOT, A, 2806, 2803, 8
+SHOOT, A, 2807, 2804, 3
+SHOOT, A, 2812, 2809, 10
+SHOOT, A, 2813, 2810, 5
+SHOOT, A, 2818, 2815, 12
+SHOOT, A, 2819, 2816, 7
+SHOOT, A, 2823, 2820, 0
+SHOOT, A, 2824, 2821, 14
+SHOOT, A, 2825, 2822, 9
+SHOOT, A, 2829, 2826, 2
+SHOOT, A, 2830, 2827, 16
+SHOOT, A, 2831, 2828, 11
+SHOOT, A, 2835, 2832, 6
+SHOOT, A, 2836, 2833, 18
+SHOOT, A, 2837, 2834, 13
+DEAD, A, 2779
+DEAD, A, 2792
+DEAD, A, 2820
+DEAD, D, 2782
+DEAD, D, 2795
+DEAD, D, 2823
+SPAWN, A, 2838, 1, 48, 63
+SPAWN, A, 2839, 2, 49, 0
+SPAWN, A, 2840, 3, 49, 63
+SPAWN, D, 2841, 1, 48, 63
+SPAWN, D, 2842, 2, 49, 0
+SPAWN, D, 2843, 3, 49, 63
+TURN, 474
+PRINT, TURN 474 LOGS:To be spawned at Position(50,0)
+PRINT, To be spawned at Position(50,63)
+PRINT, To be spawned at Position(51,0)
+PRINT, Type 1 at Position (50,0)
+PRINT, Type 2 at Position (50,63)
+PRINT, Type 3 at Position (51,0)
+PRINT, 
+SHOOT, D, 2785, 2788, 0
+SHOOT, D, 2791, 2794, 2
+SHOOT, D, 2797, 2800, 4
+SHOOT, D, 2798, 2801, 0
+SHOOT, D, 2803, 2806, 6
+SHOOT, D, 2804, 2807, 1
+SHOOT, D, 2809, 2812, 8
+SHOOT, D, 2810, 2813, 3
+SHOOT, D, 2815, 2818, 10
+SHOOT, D, 2816, 2819, 5
+SHOOT, D, 2821, 2824, 12
+SHOOT, D, 2822, 2825, 7
+SHOOT, D, 2826, 2829, 0
+SHOOT, D, 2827, 2830, 14
+SHOOT, D, 2828, 2831, 9
+SHOOT, D, 2832, 2835, 2
+SHOOT, D, 2833, 2836, 16
+SHOOT, D, 2834, 2837, 11
+SHOOT, D, 2838, 2841, 6
+SHOOT, D, 2839, 2842, 18
+SHOOT, D, 2840, 2843, 13
+SHOOT, A, 2788, 2785, 0
+SHOOT, A, 2794, 2791, 2
+SHOOT, A, 2800, 2797, 4
+SHOOT, A, 2801, 2798, 0
+SHOOT, A, 2806, 2803, 6
+SHOOT, A, 2807, 2804, 1
+SHOOT, A, 2812, 2809, 8
+SHOOT, A, 2813, 2810, 3
+SHOOT, A, 2818, 2815, 10
+SHOOT, A, 2819, 2816, 5
+SHOOT, A, 2824, 2821, 12
+SHOOT, A, 2825, 2822, 7
+SHOOT, A, 2829, 2826, 0
+SHOOT, A, 2830, 2827, 14
+SHOOT, A, 2831, 2828, 9
+SHOOT, A, 2835, 2832, 2
+SHOOT, A, 2836, 2833, 16
+SHOOT, A, 2837, 2834, 11
+SHOOT, A, 2841, 2838, 6
+SHOOT, A, 2842, 2839, 18
+SHOOT, A, 2843, 2840, 13
+DEAD, A, 2785
+DEAD, A, 2798
+DEAD, A, 2826
+DEAD, D, 2788
+DEAD, D, 2801
+DEAD, D, 2829
+SPAWN, A, 2844, 1, 50, 0
+SPAWN, A, 2845, 2, 50, 63
+SPAWN, A, 2846, 3, 51, 0
+SPAWN, D, 2847, 1, 50, 0
+SPAWN, D, 2848, 2, 50, 63
+SPAWN, D, 2849, 3, 51, 0
+TURN, 475
+PRINT, TURN 475 LOGS:To be spawned at Position(51,63)
+PRINT, To be spawned at Position(52,0)
+PRINT, To be spawned at Position(52,63)
+PRINT, Type 1 at Position (51,63)
+PRINT, Type 2 at Position (52,0)
+PRINT, Type 3 at Position (52,63)
+PRINT, 
+SHOOT, D, 2791, 2794, 0
+SHOOT, D, 2797, 2800, 2
+SHOOT, D, 2803, 2806, 4
+SHOOT, D, 2804, 2807, 0
+SHOOT, D, 2809, 2812, 6
+SHOOT, D, 2810, 2813, 1
+SHOOT, D, 2815, 2818, 8
+SHOOT, D, 2816, 2819, 3
+SHOOT, D, 2821, 2824, 10
+SHOOT, D, 2822, 2825, 5
+SHOOT, D, 2827, 2830, 12
+SHOOT, D, 2828, 2831, 7
+SHOOT, D, 2832, 2835, 0
+SHOOT, D, 2833, 2836, 14
+SHOOT, D, 2834, 2837, 9
+SHOOT, D, 2838, 2841, 2
+SHOOT, D, 2839, 2842, 16
+SHOOT, D, 2840, 2843, 11
+SHOOT, D, 2844, 2847, 6
+SHOOT, D, 2845, 2848, 18
+SHOOT, D, 2846, 2849, 13
+SHOOT, A, 2794, 2791, 0
+SHOOT, A, 2800, 2797, 2
+SHOOT, A, 2806, 2803, 4
+SHOOT, A, 2807, 2804, 0
+SHOOT, A, 2812, 2809, 6
+SHOOT, A, 2813, 2810, 1
+SHOOT, A, 2818, 2815, 8
+SHOOT, A, 2819, 2816, 3
+SHOOT, A, 2824, 2821, 10
+SHOOT, A, 2825, 2822, 5
+SHOOT, A, 2830, 2827, 12
+SHOOT, A, 2831, 2828, 7
+SHOOT, A, 2835, 2832, 0
+SHOOT, A, 2836, 2833, 14
+SHOOT, A, 2837, 2834, 9
+SHOOT, A, 2841, 2838, 2
+SHOOT, A, 2842, 2839, 16
+SHOOT, A, 2843, 2840, 11
+SHOOT, A, 2847, 2844, 6
+SHOOT, A, 2848, 2845, 18
+SHOOT, A, 2849, 2846, 13
+DEAD, A, 2791
+DEAD, A, 2804
+DEAD, A, 2832
+DEAD, D, 2794
+DEAD, D, 2807
+DEAD, D, 2835
+SPAWN, A, 2850, 1, 51, 63
+SPAWN, A, 2851, 2, 52, 0
+SPAWN, A, 2852, 3, 52, 63
+SPAWN, D, 2853, 1, 51, 63
+SPAWN, D, 2854, 2, 52, 0
+SPAWN, D, 2855, 3, 52, 63
+TURN, 476
+PRINT, TURN 476 LOGS:To be spawned at Position(53,0)
+PRINT, To be spawned at Position(53,63)
+PRINT, To be spawned at Position(54,0)
+PRINT, Type 1 at Position (53,0)
+PRINT, Type 2 at Position (53,63)
+PRINT, Type 3 at Position (54,0)
+PRINT, 
+SHOOT, D, 2797, 2800, 0
+SHOOT, D, 2803, 2806, 2
+SHOOT, D, 2809, 2812, 4
+SHOOT, D, 2810, 2813, 0
+SHOOT, D, 2815, 2818, 6
+SHOOT, D, 2816, 2819, 1
+SHOOT, D, 2821, 2824, 8
+SHOOT, D, 2822, 2825, 3
+SHOOT, D, 2827, 2830, 10
+SHOOT, D, 2828, 2831, 5
+SHOOT, D, 2833, 2836, 12
+SHOOT, D, 2834, 2837, 7
+SHOOT, D, 2838, 2841, 0
+SHOOT, D, 2839, 2842, 14
+SHOOT, D, 2840, 2843, 9
+SHOOT, D, 2844, 2847, 2
+SHOOT, D, 2845, 2848, 16
+SHOOT, D, 2846, 2849, 11
+SHOOT, D, 2850, 2853, 6
+SHOOT, D, 2851, 2854, 18
+SHOOT, D, 2852, 2855, 13
+SHOOT, A, 2800, 2797, 0
+SHOOT, A, 2806, 2803, 2
+SHOOT, A, 2812, 2809, 4
+SHOOT, A, 2813, 2810, 0
+SHOOT, A, 2818, 2815, 6
+SHOOT, A, 2819, 2816, 1
+SHOOT, A, 2824, 2821, 8
+SHOOT, A, 2825, 2822, 3
+SHOOT, A, 2830, 2827, 10
+SHOOT, A, 2831, 2828, 5
+SHOOT, A, 2836, 2833, 12
+SHOOT, A, 2837, 2834, 7
+SHOOT, A, 2841, 2838, 0
+SHOOT, A, 2842, 2839, 14
+SHOOT, A, 2843, 2840, 9
+SHOOT, A, 2847, 2844, 2
+SHOOT, A, 2848, 2845, 16
+SHOOT, A, 2849, 2846, 11
+SHOOT, A, 2853, 2850, 6
+SHOOT, A, 2854, 2851, 18
+SHOOT, A, 2855, 2852, 13
+DEAD, A, 2797
+DEAD, A, 2810
+DEAD, A, 2838
+DEAD, D, 2800
+DEAD, D, 2813
+DEAD, D, 2841
+SPAWN, A, 2856, 1, 53, 0
+SPAWN, A, 2857, 2, 53, 63
+SPAWN, A, 2858, 3, 54, 0
+SPAWN, D, 2859, 1, 53, 0
+SPAWN, D, 2860, 2, 53, 63
+SPAWN, D, 2861, 3, 54, 0
+TURN, 477
+PRINT, TURN 477 LOGS:To be spawned at Position(54,63)
+PRINT, To be spawned at Position(55,0)
+PRINT, To be spawned at Position(55,63)
+PRINT, Type 1 at Position (54,63)
+PRINT, Type 2 at Position (55,0)
+PRINT, Type 3 at Position (55,63)
+PRINT, 
+SHOOT, D, 2803, 2806, 0
+SHOOT, D, 2809, 2812, 2
+SHOOT, D, 2815, 2818, 4
+SHOOT, D, 2816, 2819, 0
+SHOOT, D, 2821, 2824, 6
+SHOOT, D, 2822, 2825, 1
+SHOOT, D, 2827, 2830, 8
+SHOOT, D, 2828, 2831, 3
+SHOOT, D, 2833, 2836, 10
+SHOOT, D, 2834, 2837, 5
+SHOOT, D, 2839, 2842, 12
+SHOOT, D, 2840, 2843, 7
+SHOOT, D, 2844, 2847, 0
+SHOOT, D, 2845, 2848, 14
+SHOOT, D, 2846, 2849, 9
+SHOOT, D, 2850, 2853, 2
+SHOOT, D, 2851, 2854, 16
+SHOOT, D, 2852, 2855, 11
+SHOOT, D, 2856, 2859, 6
+SHOOT, D, 2857, 2860, 18
+SHOOT, D, 2858, 2861, 13
+SHOOT, A, 2806, 2803, 0
+SHOOT, A, 2812, 2809, 2
+SHOOT, A, 2818, 2815, 4
+SHOOT, A, 2819, 2816, 0
+SHOOT, A, 2824, 2821, 6
+SHOOT, A, 2825, 2822, 1
+SHOOT, A, 2830, 2827, 8
+SHOOT, A, 2831, 2828, 3
+SHOOT, A, 2836, 2833, 10
+SHOOT, A, 2837, 2834, 5
+SHOOT, A, 2842, 2839, 12
+SHOOT, A, 2843, 2840, 7
+SHOOT, A, 2847, 2844, 0
+SHOOT, A, 2848, 2845, 14
+SHOOT, A, 2849, 2846, 9
+SHOOT, A, 2853, 2850, 2
+SHOOT, A, 2854, 2851, 16
+SHOOT, A, 2855, 2852, 11
+SHOOT, A, 2859, 2856, 6
+SHOOT, A, 2860, 2857, 18
+SHOOT, A, 2861, 2858, 13
+DEAD, A, 2803
+DEAD, A, 2816
+DEAD, A, 2844
+DEAD, D, 2806
+DEAD, D, 2819
+DEAD, D, 2847
+SPAWN, A, 2862, 1, 54, 63
+SPAWN, A, 2863, 2, 55, 0
+SPAWN, A, 2864, 3, 55, 63
+SPAWN, D, 2865, 1, 54, 63
+SPAWN, D, 2866, 2, 55, 0
+SPAWN, D, 2867, 3, 55, 63
+TURN, 478
+PRINT, TURN 478 LOGS:To be spawned at Position(56,0)
+PRINT, To be spawned at Position(56,63)
+PRINT, To be spawned at Position(57,0)
+PRINT, Type 1 at Position (56,0)
+PRINT, Type 2 at Position (56,63)
+PRINT, Type 3 at Position (57,0)
+PRINT, 
+SHOOT, D, 2809, 2812, 0
+SHOOT, D, 2815, 2818, 2
+SHOOT, D, 2821, 2824, 4
+SHOOT, D, 2822, 2825, 0
+SHOOT, D, 2827, 2830, 6
+SHOOT, D, 2828, 2831, 1
+SHOOT, D, 2833, 2836, 8
+SHOOT, D, 2834, 2837, 3
+SHOOT, D, 2839, 2842, 10
+SHOOT, D, 2840, 2843, 5
+SHOOT, D, 2845, 2848, 12
+SHOOT, D, 2846, 2849, 7
+SHOOT, D, 2850, 2853, 0
+SHOOT, D, 2851, 2854, 14
+SHOOT, D, 2852, 2855, 9
+SHOOT, D, 2856, 2859, 2
+SHOOT, D, 2857, 2860, 16
+SHOOT, D, 2858, 2861, 11
+SHOOT, D, 2862, 2865, 6
+SHOOT, D, 2863, 2866, 18
+SHOOT, D, 2864, 2867, 13
+SHOOT, A, 2812, 2809, 0
+SHOOT, A, 2818, 2815, 2
+SHOOT, A, 2824, 2821, 4
+SHOOT, A, 2825, 2822, 0
+SHOOT, A, 2830, 2827, 6
+SHOOT, A, 2831, 2828, 1
+SHOOT, A, 2836, 2833, 8
+SHOOT, A, 2837, 2834, 3
+SHOOT, A, 2842, 2839, 10
+SHOOT, A, 2843, 2840, 5
+SHOOT, A, 2848, 2845, 12
+SHOOT, A, 2849, 2846, 7
+SHOOT, A, 2853, 2850, 0
+SHOOT, A, 2854, 2851, 14
+SHOOT, A, 2855, 2852, 9
+SHOOT, A, 2859, 2856, 2
+SHOOT, A, 2860, 2857, 16
+SHOOT, A, 2861, 2858, 11
+SHOOT, A, 2865, 2862, 6
+SHOOT, A, 2866, 2863, 18
+SHOOT, A, 2867, 2864, 13
+DEAD, A, 2809
+DEAD, A, 2822
+DEAD, A, 2850
+DEAD, D, 2812
+DEAD, D, 2825
+DEAD, D, 2853
+SPAWN, A, 2868, 1, 56, 0
+SPAWN, A, 2869, 2, 56, 63
+SPAWN, A, 2870, 3, 57, 0
+SPAWN, D, 2871, 1, 56, 0
+SPAWN, D, 2872, 2, 56, 63
+SPAWN, D, 2873, 3, 57, 0
+TURN, 479
+PRINT, TURN 479 LOGS:To be spawned at Position(57,63)
+PRINT, To be spawned at Position(58,0)
+PRINT, To be spawned at Position(58,63)
+PRINT, Type 1 at Position (57,63)
+PRINT, Type 2 at Position (58,0)
+PRINT, Type 3 at Position (58,63)
+PRINT, 
+SHOOT, D, 2815, 2818, 0
+SHOOT, D, 2821, 2824, 2
+SHOOT, D, 2827, 2830, 4
+SHOOT, D, 2828, 2831, 0
+SHOOT, D, 2833, 2836, 6
+SHOOT, D, 2834, 2837, 1
+SHOOT, D, 2839, 2842, 8
+SHOOT, D, 2840, 2843, 3
+SHOOT, D, 2845, 2848, 10
+SHOOT, D, 2846, 2849, 5
+SHOOT, D, 2851, 2854, 12
+SHOOT, D, 2852, 2855, 7
+SHOOT, D, 2856, 2859, 0
+SHOOT, D, 2857, 2860, 14
+SHOOT, D, 2858, 2861, 9
+SHOOT, D, 2862, 2865, 2
+SHOOT, D, 2863, 2866, 16
+SHOOT, D, 2864, 2867, 11
+SHOOT, D, 2868, 2871, 6
+SHOOT, D, 2869, 2872, 18
+SHOOT, D, 2870, 2873, 13
+SHOOT, A, 2818, 2815, 0
+SHOOT, A, 2824, 2821, 2
+SHOOT, A, 2830, 2827, 4
+SHOOT, A, 2831, 2828, 0
+SHOOT, A, 2836, 2833, 6
+SHOOT, A, 2837, 2834, 1
+SHOOT, A, 2842, 2839, 8
+SHOOT, A, 2843, 2840, 3
+SHOOT, A, 2848, 2845, 10
+SHOOT, A, 2849, 2846, 5
+SHOOT, A, 2854, 2851, 12
+SHOOT, A, 2855, 2852, 7
+SHOOT, A, 2859, 2856, 0
+SHOOT, A, 2860, 2857, 14
+SHOOT, A, 2861, 2858, 9
+SHOOT, A, 2865, 2862, 2
+SHOOT, A, 2866, 2863, 16
+SHOOT, A, 2867, 2864, 11
+SHOOT, A, 2871, 2868, 6
+SHOOT, A, 2872, 2869, 18
+SHOOT, A, 2873, 2870, 13
+DEAD, A, 2815
+DEAD, A, 2828
+DEAD, A, 2856
+DEAD, D, 2818
+DEAD, D, 2831
+DEAD, D, 2859
+SPAWN, A, 2874, 1, 57, 63
+SPAWN, A, 2875, 2, 58, 0
+SPAWN, A, 2876, 3, 58, 63
+SPAWN, D, 2877, 1, 57, 63
+SPAWN, D, 2878, 2, 58, 0
+SPAWN, D, 2879, 3, 58, 63
+TURN, 480
+PRINT, TURN 480 LOGS:To be spawned at Position(59,0)
+PRINT, To be spawned at Position(59,63)
+PRINT, To be spawned at Position(60,0)
+PRINT, Type 1 at Position (59,0)
+PRINT, Type 2 at Position (59,63)
+PRINT, Type 3 at Position (60,0)
+PRINT, 
+SHOOT, D, 2821, 2824, 0
+SHOOT, D, 2827, 2830, 2
+SHOOT, D, 2833, 2836, 4
+SHOOT, D, 2834, 2837, 0
+SHOOT, D, 2839, 2842, 6
+SHOOT, D, 2840, 2843, 1
+SHOOT, D, 2845, 2848, 8
+SHOOT, D, 2846, 2849, 3
+SHOOT, D, 2851, 2854, 10
+SHOOT, D, 2852, 2855, 5
+SHOOT, D, 2857, 2860, 12
+SHOOT, D, 2858, 2861, 7
+SHOOT, D, 2862, 2865, 0
+SHOOT, D, 2863, 2866, 14
+SHOOT, D, 2864, 2867, 9
+SHOOT, D, 2868, 2871, 2
+SHOOT, D, 2869, 2872, 16
+SHOOT, D, 2870, 2873, 11
+SHOOT, D, 2874, 2877, 6
+SHOOT, D, 2875, 2878, 18
+SHOOT, D, 2876, 2879, 13
+SHOOT, A, 2824, 2821, 0
+SHOOT, A, 2830, 2827, 2
+SHOOT, A, 2836, 2833, 4
+SHOOT, A, 2837, 2834, 0
+SHOOT, A, 2842, 2839, 6
+SHOOT, A, 2843, 2840, 1
+SHOOT, A, 2848, 2845, 8
+SHOOT, A, 2849, 2846, 3
+SHOOT, A, 2854, 2851, 10
+SHOOT, A, 2855, 2852, 5
+SHOOT, A, 2860, 2857, 12
+SHOOT, A, 2861, 2858, 7
+SHOOT, A, 2865, 2862, 0
+SHOOT, A, 2866, 2863, 14
+SHOOT, A, 2867, 2864, 9
+SHOOT, A, 2871, 2868, 2
+SHOOT, A, 2872, 2869, 16
+SHOOT, A, 2873, 2870, 11
+SHOOT, A, 2877, 2874, 6
+SHOOT, A, 2878, 2875, 18
+SHOOT, A, 2879, 2876, 13
+DEAD, A, 2821
+DEAD, A, 2834
+DEAD, A, 2862
+DEAD, D, 2824
+DEAD, D, 2837
+DEAD, D, 2865
+SPAWN, A, 2880, 1, 59, 0
+SPAWN, A, 2881, 2, 59, 63
+SPAWN, A, 2882, 3, 60, 0
+SPAWN, D, 2883, 1, 59, 0
+SPAWN, D, 2884, 2, 59, 63
+SPAWN, D, 2885, 3, 60, 0
+TURN, 481
+PRINT, TURN 481 LOGS:To be spawned at Position(60,63)
+PRINT, To be spawned at Position(61,0)
+PRINT, To be spawned at Position(61,63)
+PRINT, Type 1 at Position (60,63)
+PRINT, Type 2 at Position (61,0)
+PRINT, Type 3 at Position (61,63)
+PRINT, 
+SHOOT, D, 2827, 2830, 0
+SHOOT, D, 2833, 2836, 2
+SHOOT, D, 2839, 2842, 4
+SHOOT, D, 2840, 2843, 0
+SHOOT, D, 2845, 2848, 6
+SHOOT, D, 2846, 2849, 1
+SHOOT, D, 2851, 2854, 8
+SHOOT, D, 2852, 2855, 3
+SHOOT, D, 2857, 2860, 10
+SHOOT, D, 2858, 2861, 5
+SHOOT, D, 2863, 2866, 12
+SHOOT, D, 2864, 2867, 7
+SHOOT, D, 2868, 2871, 0
+SHOOT, D, 2869, 2872, 14
+SHOOT, D, 2870, 2873, 9
+SHOOT, D, 2874, 2877, 2
+SHOOT, D, 2875, 2878, 16
+SHOOT, D, 2876, 2879, 11
+SHOOT, D, 2880, 2883, 6
+SHOOT, D, 2881, 2884, 18
+SHOOT, D, 2882, 2885, 13
+SHOOT, A, 2830, 2827, 0
+SHOOT, A, 2836, 2833, 2
+SHOOT, A, 2842, 2839, 4
+SHOOT, A, 2843, 2840, 0
+SHOOT, A, 2848, 2845, 6
+SHOOT, A, 2849, 2846, 1
+SHOOT, A, 2854, 2851, 8
+SHOOT, A, 2855, 2852, 3
+SHOOT, A, 2860, 2857, 10
+SHOOT, A, 2861, 2858, 5
+SHOOT, A, 2866, 2863, 12
+SHOOT, A, 2867, 2864, 7
+SHOOT, A, 2871, 2868, 0
+SHOOT, A, 2872, 2869, 14
+SHOOT, A, 2873, 2870, 9
+SHOOT, A, 2877, 2874, 2
+SHOOT, A, 2878, 2875, 16
+SHOOT, A, 2879, 2876, 11
+SHOOT, A, 2883, 2880, 6
+SHOOT, A, 2884, 2881, 18
+SHOOT, A, 2885, 2882, 13
+DEAD, A, 2827
+DEAD, A, 2840
+DEAD, A, 2868
+DEAD, D, 2830
+DEAD, D, 2843
+DEAD, D, 2871
+SPAWN, A, 2886, 1, 60, 63
+SPAWN, A, 2887, 2, 61, 0
+SPAWN, A, 2888, 3, 61, 63
+SPAWN, D, 2889, 1, 60, 63
+SPAWN, D, 2890, 2, 61, 0
+SPAWN, D, 2891, 3, 61, 63
+TURN, 482
+PRINT, TURN 482 LOGS:To be spawned at Position(62,0)
+PRINT, To be spawned at Position(62,63)
+PRINT, To be spawned at Position(63,0)
+PRINT, Type 1 at Position (62,0)
+PRINT, Type 2 at Position (62,63)
+PRINT, Type 3 at Position (63,0)
+PRINT, 
+SHOOT, D, 2833, 2836, 0
+SHOOT, D, 2839, 2842, 2
+SHOOT, D, 2845, 2848, 4
+SHOOT, D, 2846, 2849, 0
+SHOOT, D, 2851, 2854, 6
+SHOOT, D, 2852, 2855, 1
+SHOOT, D, 2857, 2860, 8
+SHOOT, D, 2858, 2861, 3
+SHOOT, D, 2863, 2866, 10
+SHOOT, D, 2864, 2867, 5
+SHOOT, D, 2869, 2872, 12
+SHOOT, D, 2870, 2873, 7
+SHOOT, D, 2874, 2877, 0
+SHOOT, D, 2875, 2878, 14
+SHOOT, D, 2876, 2879, 9
+SHOOT, D, 2880, 2883, 2
+SHOOT, D, 2881, 2884, 16
+SHOOT, D, 2882, 2885, 11
+SHOOT, D, 2886, 2889, 6
+SHOOT, D, 2887, 2890, 18
+SHOOT, D, 2888, 2891, 13
+SHOOT, A, 2836, 2833, 0
+SHOOT, A, 2842, 2839, 2
+SHOOT, A, 2848, 2845, 4
+SHOOT, A, 2849, 2846, 0
+SHOOT, A, 2854, 2851, 6
+SHOOT, A, 2855, 2852, 1
+SHOOT, A, 2860, 2857, 8
+SHOOT, A, 2861, 2858, 3
+SHOOT, A, 2866, 2863, 10
+SHOOT, A, 2867, 2864, 5
+SHOOT, A, 2872, 2869, 12
+SHOOT, A, 2873, 2870, 7
+SHOOT, A, 2877, 2874, 0
+SHOOT, A, 2878, 2875, 14
+SHOOT, A, 2879, 2876, 9
+SHOOT, A, 2883, 2880, 2
+SHOOT, A, 2884, 2881, 16
+SHOOT, A, 2885, 2882, 11
+SHOOT, A, 2889, 2886, 6
+SHOOT, A, 2890, 2887, 18
+SHOOT, A, 2891, 2888, 13
+DEAD, A, 2833
+DEAD, A, 2846
+DEAD, A, 2874
+DEAD, D, 2836
+DEAD, D, 2849
+DEAD, D, 2877
+SPAWN, A, 2892, 1, 62, 0
+SPAWN, A, 2893, 2, 62, 63
+SPAWN, A, 2894, 3, 63, 0
+SPAWN, D, 2895, 1, 62, 0
+SPAWN, D, 2896, 2, 62, 63
+SPAWN, D, 2897, 3, 63, 0
+TURN, 483
+PRINT, TURN 483 LOGS:To be spawned at Position(63,1)
+PRINT, To be spawned at Position(63,2)
+PRINT, To be spawned at Position(63,3)
+PRINT, Type 1 at Position (63,1)
+PRINT, Type 2 at Position (63,2)
+PRINT, Type 3 at Position (63,3)
+PRINT, 
+SHOOT, D, 2839, 2842, 0
+SHOOT, D, 2845, 2848, 2
+SHOOT, D, 2851, 2854, 4
+SHOOT, D, 2852, 2855, 0
+SHOOT, D, 2857, 2860, 6
+SHOOT, D, 2858, 2861, 1
+SHOOT, D, 2863, 2866, 8
+SHOOT, D, 2864, 2867, 3
+SHOOT, D, 2869, 2872, 10
+SHOOT, D, 2870, 2873, 5
+SHOOT, D, 2875, 2878, 12
+SHOOT, D, 2876, 2879, 7
+SHOOT, D, 2880, 2883, 0
+SHOOT, D, 2881, 2884, 14
+SHOOT, D, 2882, 2885, 9
+SHOOT, D, 2886, 2889, 2
+SHOOT, D, 2887, 2890, 16
+SHOOT, D, 2888, 2891, 11
+SHOOT, D, 2892, 2895, 6
+SHOOT, D, 2893, 2896, 18
+SHOOT, D, 2894, 2897, 13
+SHOOT, A, 2842, 2839, 0
+SHOOT, A, 2848, 2845, 2
+SHOOT, A, 2854, 2851, 4
+SHOOT, A, 2855, 2852, 0
+SHOOT, A, 2860, 2857, 6
+SHOOT, A, 2861, 2858, 1
+SHOOT, A, 2866, 2863, 8
+SHOOT, A, 2867, 2864, 3
+SHOOT, A, 2872, 2869, 10
+SHOOT, A, 2873, 2870, 5
+SHOOT, A, 2878, 2875, 12
+SHOOT, A, 2879, 2876, 7
+SHOOT, A, 2883, 2880, 0
+SHOOT, A, 2884, 2881, 14
+SHOOT, A, 2885, 2882, 9
+SHOOT, A, 2889, 2886, 2
+SHOOT, A, 2890, 2887, 16
+SHOOT, A, 2891, 2888, 11
+SHOOT, A, 2895, 2892, 6
+SHOOT, A, 2896, 2893, 18
+SHOOT, A, 2897, 2894, 13
+DEAD, A, 2839
+DEAD, A, 2852
+DEAD, A, 2880
+DEAD, D, 2842
+DEAD, D, 2855
+DEAD, D, 2883
+SPAWN, A, 2898, 1, 63, 1
+SPAWN, A, 2899, 2, 63, 2
+SPAWN, A, 2900, 3, 63, 3
+SPAWN, D, 2901, 1, 63, 1
+SPAWN, D, 2902, 2, 63, 2
+SPAWN, D, 2903, 3, 63, 3
+TURN, 484
+PRINT, TURN 484 LOGS:To be spawned at Position(63,4)
+PRINT, To be spawned at Position(63,5)
+PRINT, To be spawned at Position(63,6)
+PRINT, Type 1 at Position (63,4)
+PRINT, Type 2 at Position (63,5)
+PRINT, Type 3 at Position (63,6)
+PRINT, 
+SHOOT, D, 2845, 2848, 0
+SHOOT, D, 2851, 2854, 2
+SHOOT, D, 2857, 2860, 4
+SHOOT, D, 2858, 2861, 0
+SHOOT, D, 2863, 2866, 6
+SHOOT, D, 2864, 2867, 1
+SHOOT, D, 2869, 2872, 8
+SHOOT, D, 2870, 2873, 3
+SHOOT, D, 2875, 2878, 10
+SHOOT, D, 2876, 2879, 5
+SHOOT, D, 2881, 2884, 12
+SHOOT, D, 2882, 2885, 7
+SHOOT, D, 2886, 2889, 0
+SHOOT, D, 2887, 2890, 14
+SHOOT, D, 2888, 2891, 9
+SHOOT, D, 2892, 2895, 2
+SHOOT, D, 2893, 2896, 16
+SHOOT, D, 2894, 2897, 11
+SHOOT, D, 2898, 2901, 6
+SHOOT, D, 2899, 2902, 18
+SHOOT, D, 2900, 2903, 13
+SHOOT, A, 2848, 2845, 0
+SHOOT, A, 2854, 2851, 2
+SHOOT, A, 2860, 2857, 4
+SHOOT, A, 2861, 2858, 0
+SHOOT, A, 2866, 2863, 6
+SHOOT, A, 2867, 2864, 1
+SHOOT, A, 2872, 2869, 8
+SHOOT, A, 2873, 2870, 3
+SHOOT, A, 2878, 2875, 10
+SHOOT, A, 2879, 2876, 5
+SHOOT, A, 2884, 2881, 12
+SHOOT, A, 2885, 2882, 7
+SHOOT, A, 2889, 2886, 0
+SHOOT, A, 2890, 2887, 14
+SHOOT, A, 2891, 2888, 9
+SHOOT, A, 2895, 2892, 2
+SHOOT, A, 2896, 2893, 16
+SHOOT, A, 2897, 2894, 11
+SHOOT, A, 2901, 2898, 6
+SHOOT, A, 2902, 2899, 18
+SHOOT, A, 2903, 2900, 13
+DEAD, A, 2845
+DEAD, A, 2858
+DEAD, A, 2886
+DEAD, D, 2848
+DEAD, D, 2861
+DEAD, D, 2889
+SPAWN, A, 2904, 1, 63, 4
+SPAWN, A, 2905, 2, 63, 5
+SPAWN, A, 2906, 3, 63, 6
+SPAWN, D, 2907, 1, 63, 4
+SPAWN, D, 2908, 2, 63, 5
+SPAWN, D, 2909, 3, 63, 6
+TURN, 485
+PRINT, TURN 485 LOGS:To be spawned at Position(63,7)
+PRINT, To be spawned at Position(63,8)
+PRINT, To be spawned at Position(63,9)
+PRINT, Type 1 at Position (63,7)
+PRINT, Type 2 at Position (63,8)
+PRINT, Type 3 at Position (63,9)
+PRINT, 
+SHOOT, D, 2851, 2854, 0
+SHOOT, D, 2857, 2860, 2
+SHOOT, D, 2863, 2866, 4
+SHOOT, D, 2864, 2867, 0
+SHOOT, D, 2869, 2872, 6
+SHOOT, D, 2870, 2873, 1
+SHOOT, D, 2875, 2878, 8
+SHOOT, D, 2876, 2879, 3
+SHOOT, D, 2881, 2884, 10
+SHOOT, D, 2882, 2885, 5
+SHOOT, D, 2887, 2890, 12
+SHOOT, D, 2888, 2891, 7
+SHOOT, D, 2892, 2895, 0
+SHOOT, D, 2893, 2896, 14
+SHOOT, D, 2894, 2897, 9
+SHOOT, D, 2898, 2901, 2
+SHOOT, D, 2899, 2902, 16
+SHOOT, D, 2900, 2903, 11
+SHOOT, D, 2904, 2907, 6
+SHOOT, D, 2905, 2908, 18
+SHOOT, D, 2906, 2909, 13
+SHOOT, A, 2854, 2851, 0
+SHOOT, A, 2860, 2857, 2
+SHOOT, A, 2866, 2863, 4
+SHOOT, A, 2867, 2864, 0
+SHOOT, A, 2872, 2869, 6
+SHOOT, A, 2873, 2870, 1
+SHOOT, A, 2878, 2875, 8
+SHOOT, A, 2879, 2876, 3
+SHOOT, A, 2884, 2881, 10
+SHOOT, A, 2885, 2882, 5
+SHOOT, A, 2890, 2887, 12
+SHOOT, A, 2891, 2888, 7
+SHOOT, A, 2895, 2892, 0
+SHOOT, A, 2896, 2893, 14
+SHOOT, A, 2897, 2894, 9
+SHOOT, A, 2901, 2898, 2
+SHOOT, A, 2902, 2899, 16
+SHOOT, A, 2903, 2900, 11
+SHOOT, A, 2907, 2904, 6
+SHOOT, A, 2908, 2905, 18
+SHOOT, A, 2909, 2906, 13
+DEAD, A, 2851
+DEAD, A, 2864
+DEAD, A, 2892
+DEAD, D, 2854
+DEAD, D, 2867
+DEAD, D, 2895
+SPAWN, A, 2910, 1, 63, 7
+SPAWN, A, 2911, 2, 63, 8
+SPAWN, A, 2912, 3, 63, 9
+SPAWN, D, 2913, 1, 63, 7
+SPAWN, D, 2914, 2, 63, 8
+SPAWN, D, 2915, 3, 63, 9
+TURN, 486
+PRINT, TURN 486 LOGS:To be spawned at Position(63,10)
+PRINT, To be spawned at Position(63,11)
+PRINT, To be spawned at Position(63,12)
+PRINT, Type 1 at Position (63,10)
+PRINT, Type 2 at Position (63,11)
+PRINT, Type 3 at Position (63,12)
+PRINT, 
+SHOOT, D, 2857, 2860, 0
+SHOOT, D, 2863, 2866, 2
+SHOOT, D, 2869, 2872, 4
+SHOOT, D, 2870, 2873, 0
+SHOOT, D, 2875, 2878, 6
+SHOOT, D, 2876, 2879, 1
+SHOOT, D, 2881, 2884, 8
+SHOOT, D, 2882, 2885, 3
+SHOOT, D, 2887, 2890, 10
+SHOOT, D, 2888, 2891, 5
+SHOOT, D, 2893, 2896, 12
+SHOOT, D, 2894, 2897, 7
+SHOOT, D, 2898, 2901, 0
+SHOOT, D, 2899, 2902, 14
+SHOOT, D, 2900, 2903, 9
+SHOOT, D, 2904, 2907, 2
+SHOOT, D, 2905, 2908, 16
+SHOOT, D, 2906, 2909, 11
+SHOOT, D, 2910, 2913, 6
+SHOOT, D, 2911, 2914, 18
+SHOOT, D, 2912, 2915, 13
+SHOOT, A, 2860, 2857, 0
+SHOOT, A, 2866, 2863, 2
+SHOOT, A, 2872, 2869, 4
+SHOOT, A, 2873, 2870, 0
+SHOOT, A, 2878, 2875, 6
+SHOOT, A, 2879, 2876, 1
+SHOOT, A, 2884, 2881, 8
+SHOOT, A, 2885, 2882, 3
+SHOOT, A, 2890, 2887, 10
+SHOOT, A, 2891, 2888, 5
+SHOOT, A, 2896, 2893, 12
+SHOOT, A, 2897, 2894, 7
+SHOOT, A, 2901, 2898, 0
+SHOOT, A, 2902, 2899, 14
+SHOOT, A, 2903, 2900, 9
+SHOOT, A, 2907, 2904, 2
+SHOOT, A, 2908, 2905, 16
+SHOOT, A, 2909, 2906, 11
+SHOOT, A, 2913, 2910, 6
+SHOOT, A, 2914, 2911, 18
+SHOOT, A, 2915, 2912, 13
+DEAD, A, 2857
+DEAD, A, 2870
+DEAD, A, 2898
+DEAD, D, 2860
+DEAD, D, 2873
+DEAD, D, 2901
+SPAWN, A, 2916, 1, 63, 10
+SPAWN, A, 2917, 2, 63, 11
+SPAWN, A, 2918, 3, 63, 12
+SPAWN, D, 2919, 1, 63, 10
+SPAWN, D, 2920, 2, 63, 11
+SPAWN, D, 2921, 3, 63, 12
+TURN, 487
+PRINT, TURN 487 LOGS:To be spawned at Position(63,13)
+PRINT, To be spawned at Position(63,14)
+PRINT, To be spawned at Position(63,15)
+PRINT, Type 1 at Position (63,13)
+PRINT, Type 2 at Position (63,14)
+PRINT, Type 3 at Position (63,15)
+PRINT, 
+SHOOT, D, 2863, 2866, 0
+SHOOT, D, 2869, 2872, 2
+SHOOT, D, 2875, 2878, 4
+SHOOT, D, 2876, 2879, 0
+SHOOT, D, 2881, 2884, 6
+SHOOT, D, 2882, 2885, 1
+SHOOT, D, 2887, 2890, 8
+SHOOT, D, 2888, 2891, 3
+SHOOT, D, 2893, 2896, 10
+SHOOT, D, 2894, 2897, 5
+SHOOT, D, 2899, 2902, 12
+SHOOT, D, 2900, 2903, 7
+SHOOT, D, 2904, 2907, 0
+SHOOT, D, 2905, 2908, 14
+SHOOT, D, 2906, 2909, 9
+SHOOT, D, 2910, 2913, 2
+SHOOT, D, 2911, 2914, 16
+SHOOT, D, 2912, 2915, 11
+SHOOT, D, 2916, 2919, 6
+SHOOT, D, 2917, 2920, 18
+SHOOT, D, 2918, 2921, 13
+SHOOT, A, 2866, 2863, 0
+SHOOT, A, 2872, 2869, 2
+SHOOT, A, 2878, 2875, 4
+SHOOT, A, 2879, 2876, 0
+SHOOT, A, 2884, 2881, 6
+SHOOT, A, 2885, 2882, 1
+SHOOT, A, 2890, 2887, 8
+SHOOT, A, 2891, 2888, 3
+SHOOT, A, 2896, 2893, 10
+SHOOT, A, 2897, 2894, 5
+SHOOT, A, 2902, 2899, 12
+SHOOT, A, 2903, 2900, 7
+SHOOT, A, 2907, 2904, 0
+SHOOT, A, 2908, 2905, 14
+SHOOT, A, 2909, 2906, 9
+SHOOT, A, 2913, 2910, 2
+SHOOT, A, 2914, 2911, 16
+SHOOT, A, 2915, 2912, 11
+SHOOT, A, 2919, 2916, 6
+SHOOT, A, 2920, 2917, 18
+SHOOT, A, 2921, 2918, 13
+DEAD, A, 2863
+DEAD, A, 2876
+DEAD, A, 2904
+DEAD, D, 2866
+DEAD, D, 2879
+DEAD, D, 2907
+SPAWN, A, 2922, 1, 63, 13
+SPAWN, A, 2923, 2, 63, 14
+SPAWN, A, 2924, 3, 63, 15
+SPAWN, D, 2925, 1, 63, 13
+SPAWN, D, 2926, 2, 63, 14
+SPAWN, D, 2927, 3, 63, 15
+TURN, 488
+PRINT, TURN 488 LOGS:To be spawned at Position(63,16)
+PRINT, To be spawned at Position(63,17)
+PRINT, To be spawned at Position(63,18)
+PRINT, Type 1 at Position (63,16)
+PRINT, Type 2 at Position (63,17)
+PRINT, Type 3 at Position (63,18)
+PRINT, 
+SHOOT, D, 2869, 2872, 0
+SHOOT, D, 2875, 2878, 2
+SHOOT, D, 2881, 2884, 4
+SHOOT, D, 2882, 2885, 0
+SHOOT, D, 2887, 2890, 6
+SHOOT, D, 2888, 2891, 1
+SHOOT, D, 2893, 2896, 8
+SHOOT, D, 2894, 2897, 3
+SHOOT, D, 2899, 2902, 10
+SHOOT, D, 2900, 2903, 5
+SHOOT, D, 2905, 2908, 12
+SHOOT, D, 2906, 2909, 7
+SHOOT, D, 2910, 2913, 0
+SHOOT, D, 2911, 2914, 14
+SHOOT, D, 2912, 2915, 9
+SHOOT, D, 2916, 2919, 2
+SHOOT, D, 2917, 2920, 16
+SHOOT, D, 2918, 2921, 11
+SHOOT, D, 2922, 2925, 6
+SHOOT, D, 2923, 2926, 18
+SHOOT, D, 2924, 2927, 13
+SHOOT, A, 2872, 2869, 0
+SHOOT, A, 2878, 2875, 2
+SHOOT, A, 2884, 2881, 4
+SHOOT, A, 2885, 2882, 0
+SHOOT, A, 2890, 2887, 6
+SHOOT, A, 2891, 2888, 1
+SHOOT, A, 2896, 2893, 8
+SHOOT, A, 2897, 2894, 3
+SHOOT, A, 2902, 2899, 10
+SHOOT, A, 2903, 2900, 5
+SHOOT, A, 2908, 2905, 12
+SHOOT, A, 2909, 2906, 7
+SHOOT, A, 2913, 2910, 0
+SHOOT, A, 2914, 2911, 14
+SHOOT, A, 2915, 2912, 9
+SHOOT, A, 2919, 2916, 2
+SHOOT, A, 2920, 2917, 16
+SHOOT, A, 2921, 2918, 11
+SHOOT, A, 2925, 2922, 6
+SHOOT, A, 2926, 2923, 18
+SHOOT, A, 2927, 2924, 13
+DEAD, A, 2869
+DEAD, A, 2882
+DEAD, A, 2910
+DEAD, D, 2872
+DEAD, D, 2885
+DEAD, D, 2913
+SPAWN, A, 2928, 1, 63, 16
+SPAWN, A, 2929, 2, 63, 17
+SPAWN, A, 2930, 3, 63, 18
+SPAWN, D, 2931, 1, 63, 16
+SPAWN, D, 2932, 2, 63, 17
+SPAWN, D, 2933, 3, 63, 18
+TURN, 489
+PRINT, TURN 489 LOGS:To be spawned at Position(63,19)
+PRINT, To be spawned at Position(63,20)
+PRINT, To be spawned at Position(63,21)
+PRINT, Type 1 at Position (63,19)
+PRINT, Type 2 at Position (63,20)
+PRINT, Type 3 at Position (63,21)
+PRINT, 
+SHOOT, D, 2875, 2878, 0
+SHOOT, D, 2881, 2884, 2
+SHOOT, D, 2887, 2890, 4
+SHOOT, D, 2888, 2891, 0
+SHOOT, D, 2893, 2896, 6
+SHOOT, D, 2894, 2897, 1
+SHOOT, D, 2899, 2902, 8
+SHOOT, D, 2900, 2903, 3
+SHOOT, D, 2905, 2908, 10
+SHOOT, D, 2906, 2909, 5
+SHOOT, D, 2911, 2914, 12
+SHOOT, D, 2912, 2915, 7
+SHOOT, D, 2916, 2919, 0
+SHOOT, D, 2917, 2920, 14
+SHOOT, D, 2918, 2921, 9
+SHOOT, D, 2922, 2925, 2
+SHOOT, D, 2923, 2926, 16
+SHOOT, D, 2924, 2927, 11
+SHOOT, D, 2928, 2931, 6
+SHOOT, D, 2929, 2932, 18
+SHOOT, D, 2930, 2933, 13
+SHOOT, A, 2878, 2875, 0
+SHOOT, A, 2884, 2881, 2
+SHOOT, A, 2890, 2887, 4
+SHOOT, A, 2891, 2888, 0
+SHOOT, A, 2896, 2893, 6
+SHOOT, A, 2897, 2894, 1
+SHOOT, A, 2902, 2899, 8
+SHOOT, A, 2903, 2900, 3
+SHOOT, A, 2908, 2905, 10
+SHOOT, A, 2909, 2906, 5
+SHOOT, A, 2914, 2911, 12
+SHOOT, A, 2915, 2912, 7
+SHOOT, A, 2919, 2916, 0
+SHOOT, A, 2920, 2917, 14
+SHOOT, A, 2921, 2918, 9
+SHOOT, A, 2925, 2922, 2
+SHOOT, A, 2926, 2923, 16
+SHOOT, A, 2927, 2924, 11
+SHOOT, A, 2931, 2928, 6
+SHOOT, A, 2932, 2929, 18
+SHOOT, A, 2933, 2930, 13
+DEAD, A, 2875
+DEAD, A, 2888
+DEAD, A, 2916
+DEAD, D, 2878
+DEAD, D, 2891
+DEAD, D, 2919
+SPAWN, A, 2934, 1, 63, 19
+SPAWN, A, 2935, 2, 63, 20
+SPAWN, A, 2936, 3, 63, 21
+SPAWN, D, 2937, 1, 63, 19
+SPAWN, D, 2938, 2, 63, 20
+SPAWN, D, 2939, 3, 63, 21
+TURN, 490
+PRINT, TURN 490 LOGS:To be spawned at Position(63,22)
+PRINT, To be spawned at Position(63,23)
+PRINT, To be spawned at Position(63,24)
+PRINT, Type 1 at Position (63,22)
+PRINT, Type 2 at Position (63,23)
+PRINT, Type 3 at Position (63,24)
+PRINT, 
+SHOOT, D, 2881, 2884, 0
+SHOOT, D, 2887, 2890, 2
+SHOOT, D, 2893, 2896, 4
+SHOOT, D, 2894, 2897, 0
+SHOOT, D, 2899, 2902, 6
+SHOOT, D, 2900, 2903, 1
+SHOOT, D, 2905, 2908, 8
+SHOOT, D, 2906, 2909, 3
+SHOOT, D, 2911, 2914, 10
+SHOOT, D, 2912, 2915, 5
+SHOOT, D, 2917, 2920, 12
+SHOOT, D, 2918, 2921, 7
+SHOOT, D, 2922, 2925, 0
+SHOOT, D, 2923, 2926, 14
+SHOOT, D, 2924, 2927, 9
+SHOOT, D, 2928, 2931, 2
+SHOOT, D, 2929, 2932, 16
+SHOOT, D, 2930, 2933, 11
+SHOOT, D, 2934, 2937, 6
+SHOOT, D, 2935, 2938, 18
+SHOOT, D, 2936, 2939, 13
+SHOOT, A, 2884, 2881, 0
+SHOOT, A, 2890, 2887, 2
+SHOOT, A, 2896, 2893, 4
+SHOOT, A, 2897, 2894, 0
+SHOOT, A, 2902, 2899, 6
+SHOOT, A, 2903, 2900, 1
+SHOOT, A, 2908, 2905, 8
+SHOOT, A, 2909, 2906, 3
+SHOOT, A, 2914, 2911, 10
+SHOOT, A, 2915, 2912, 5
+SHOOT, A, 2920, 2917, 12
+SHOOT, A, 2921, 2918, 7
+SHOOT, A, 2925, 2922, 0
+SHOOT, A, 2926, 2923, 14
+SHOOT, A, 2927, 2924, 9
+SHOOT, A, 2931, 2928, 2
+SHOOT, A, 2932, 2929, 16
+SHOOT, A, 2933, 2930, 11
+SHOOT, A, 2937, 2934, 6
+SHOOT, A, 2938, 2935, 18
+SHOOT, A, 2939, 2936, 13
+DEAD, A, 2881
+DEAD, A, 2894
+DEAD, A, 2922
+DEAD, D, 2884
+DEAD, D, 2897
+DEAD, D, 2925
+SPAWN, A, 2940, 1, 63, 22
+SPAWN, A, 2941, 2, 63, 23
+SPAWN, A, 2942, 3, 63, 24
+SPAWN, D, 2943, 1, 63, 22
+SPAWN, D, 2944, 2, 63, 23
+SPAWN, D, 2945, 3, 63, 24
+TURN, 491
+PRINT, TURN 491 LOGS:To be spawned at Position(63,25)
+PRINT, To be spawned at Position(63,26)
+PRINT, To be spawned at Position(63,27)
+PRINT, Type 1 at Position (63,25)
+PRINT, Type 2 at Position (63,26)
+PRINT, Type 3 at Position (63,27)
+PRINT, 
+SHOOT, D, 2887, 2890, 0
+SHOOT, D, 2893, 2896, 2
+SHOOT, D, 2899, 2902, 4
+SHOOT, D, 2900, 2903, 0
+SHOOT, D, 2905, 2908, 6
+SHOOT, D, 2906, 2909, 1
+SHOOT, D, 2911, 2914, 8
+SHOOT, D, 2912, 2915, 3
+SHOOT, D, 2917, 2920, 10
+SHOOT, D, 2918, 2921, 5
+SHOOT, D, 2923, 2926, 12
+SHOOT, D, 2924, 2927, 7
+SHOOT, D, 2928, 2931, 0
+SHOOT, D, 2929, 2932, 14
+SHOOT, D, 2930, 2933, 9
+SHOOT, D, 2934, 2937, 2
+SHOOT, D, 2935, 2938, 16
+SHOOT, D, 2936, 2939, 11
+SHOOT, D, 2940, 2943, 6
+SHOOT, D, 2941, 2944, 18
+SHOOT, D, 2942, 2945, 13
+SHOOT, A, 2890, 2887, 0
+SHOOT, A, 2896, 2893, 2
+SHOOT, A, 2902, 2899, 4
+SHOOT, A, 2903, 2900, 0
+SHOOT, A, 2908, 2905, 6
+SHOOT, A, 2909, 2906, 1
+SHOOT, A, 2914, 2911, 8
+SHOOT, A, 2915, 2912, 3
+SHOOT, A, 2920, 2917, 10
+SHOOT, A, 2921, 2918, 5
+SHOOT, A, 2926, 2923, 12
+SHOOT, A, 2927, 2924, 7
+SHOOT, A, 2931, 2928, 0
+SHOOT, A, 2932, 2929, 14
+SHOOT, A, 2933, 2930, 9
+SHOOT, A, 2937, 2934, 2
+SHOOT, A, 2938, 2935, 16
+SHOOT, A, 2939, 2936, 11
+SHOOT, A, 2943, 2940, 6
+SHOOT, A, 2944, 2941, 18
+SHOOT, A, 2945, 2942, 13
+DEAD, A, 2887
+DEAD, A, 2900
+DEAD, A, 2928
+DEAD, D, 2890
+DEAD, D, 2903
+DEAD, D, 2931
+SPAWN, A, 2946, 1, 63, 25
+SPAWN, A, 2947, 2, 63, 26
+SPAWN, A, 2948, 3, 63, 27
+SPAWN, D, 2949, 1, 63, 25
+SPAWN, D, 2950, 2, 63, 26
+SPAWN, D, 2951, 3, 63, 27
+TURN, 492
+PRINT, TURN 492 LOGS:To be spawned at Position(63,28)
+PRINT, To be spawned at Position(63,29)
+PRINT, To be spawned at Position(63,30)
+PRINT, Type 1 at Position (63,28)
+PRINT, Type 2 at Position (63,29)
+PRINT, Type 3 at Position (63,30)
+PRINT, 
+SHOOT, D, 2893, 2896, 0
+SHOOT, D, 2899, 2902, 2
+SHOOT, D, 2905, 2908, 4
+SHOOT, D, 2906, 2909, 0
+SHOOT, D, 2911, 2914, 6
+SHOOT, D, 2912, 2915, 1
+SHOOT, D, 2917, 2920, 8
+SHOOT, D, 2918, 2921, 3
+SHOOT, D, 2923, 2926, 10
+SHOOT, D, 2924, 2927, 5
+SHOOT, D, 2929, 2932, 12
+SHOOT, D, 2930, 2933, 7
+SHOOT, D, 2934, 2937, 0
+SHOOT, D, 2935, 2938, 14
+SHOOT, D, 2936, 2939, 9
+SHOOT, D, 2940, 2943, 2
+SHOOT, D, 2941, 2944, 16
+SHOOT, D, 2942, 2945, 11
+SHOOT, D, 2946, 2949, 6
+SHOOT, D, 2947, 2950, 18
+SHOOT, D, 2948, 2951, 13
+SHOOT, A, 2896, 2893, 0
+SHOOT, A, 2902, 2899, 2
+SHOOT, A, 2908, 2905, 4
+SHOOT, A, 2909, 2906, 0
+SHOOT, A, 2914, 2911, 6
+SHOOT, A, 2915, 2912, 1
+SHOOT, A, 2920, 2917, 8
+SHOOT, A, 2921, 2918, 3
+SHOOT, A, 2926, 2923, 10
+SHOOT, A, 2927, 2924, 5
+SHOOT, A, 2932, 2929, 12
+SHOOT, A, 2933, 2930, 7
+SHOOT, A, 2937, 2934, 0
+SHOOT, A, 2938, 2935, 14
+SHOOT, A, 2939, 2936, 9
+SHOOT, A, 2943, 2940, 2
+SHOOT, A, 2944, 2941, 16
+SHOOT, A, 2945, 2942, 11
+SHOOT, A, 2949, 2946, 6
+SHOOT, A, 2950, 2947, 18
+SHOOT, A, 2951, 2948, 13
+DEAD, A, 2893
+DEAD, A, 2906
+DEAD, A, 2934
+DEAD, D, 2896
+DEAD, D, 2909
+DEAD, D, 2937
+SPAWN, A, 2952, 1, 63, 28
+SPAWN, A, 2953, 2, 63, 29
+SPAWN, A, 2954, 3, 63, 30
+SPAWN, D, 2955, 1, 63, 28
+SPAWN, D, 2956, 2, 63, 29
+SPAWN, D, 2957, 3, 63, 30
+TURN, 493
+PRINT, TURN 493 LOGS:To be spawned at Position(63,31)
+PRINT, To be spawned at Position(63,32)
+PRINT, To be spawned at Position(63,33)
+PRINT, Type 1 at Position (63,31)
+PRINT, Type 2 at Position (63,32)
+PRINT, Type 3 at Position (63,33)
+PRINT, 
+SHOOT, D, 2899, 2902, 0
+SHOOT, D, 2905, 2908, 2
+SHOOT, D, 2911, 2914, 4
+SHOOT, D, 2912, 2915, 0
+SHOOT, D, 2917, 2920, 6
+SHOOT, D, 2918, 2921, 1
+SHOOT, D, 2923, 2926, 8
+SHOOT, D, 2924, 2927, 3
+SHOOT, D, 2929, 2932, 10
+SHOOT, D, 2930, 2933, 5
+SHOOT, D, 2935, 2938, 12
+SHOOT, D, 2936, 2939, 7
+SHOOT, D, 2940, 2943, 0
+SHOOT, D, 2941, 2944, 14
+SHOOT, D, 2942, 2945, 9
+SHOOT, D, 2946, 2949, 2
+SHOOT, D, 2947, 2950, 16
+SHOOT, D, 2948, 2951, 11
+SHOOT, D, 2952, 2955, 6
+SHOOT, D, 2953, 2956, 18
+SHOOT, D, 2954, 2957, 13
+SHOOT, A, 2902, 2899, 0
+SHOOT, A, 2908, 2905, 2
+SHOOT, A, 2914, 2911, 4
+SHOOT, A, 2915, 2912, 0
+SHOOT, A, 2920, 2917, 6
+SHOOT, A, 2921, 2918, 1
+SHOOT, A, 2926, 2923, 8
+SHOOT, A, 2927, 2924, 3
+SHOOT, A, 2932, 2929, 10
+SHOOT, A, 2933, 2930, 5
+SHOOT, A, 2938, 2935, 12
+SHOOT, A, 2939, 2936, 7
+SHOOT, A, 2943, 2940, 0
+SHOOT, A, 2944, 2941, 14
+SHOOT, A, 2945, 2942, 9
+SHOOT, A, 2949, 2946, 2
+SHOOT, A, 2950, 2947, 16
+SHOOT, A, 2951, 2948, 11
+SHOOT, A, 2955, 2952, 6
+SHOOT, A, 2956, 2953, 18
+SHOOT, A, 2957, 2954, 13
+DEAD, A, 2899
+DEAD, A, 2912
+DEAD, A, 2940
+DEAD, D, 2902
+DEAD, D, 2915
+DEAD, D, 2943
+SPAWN, A, 2958, 1, 63, 31
+SPAWN, A, 2959, 2, 63, 32
+SPAWN, A, 2960, 3, 63, 33
+SPAWN, D, 2961, 1, 63, 31
+SPAWN, D, 2962, 2, 63, 32
+SPAWN, D, 2963, 3, 63, 33
+TURN, 494
+PRINT, TURN 494 LOGS:To be spawned at Position(63,34)
+PRINT, To be spawned at Position(63,35)
+PRINT, To be spawned at Position(63,36)
+PRINT, Type 1 at Position (63,34)
+PRINT, Type 2 at Position (63,35)
+PRINT, Type 3 at Position (63,36)
+PRINT, 
+SHOOT, D, 2905, 2908, 0
+SHOOT, D, 2911, 2914, 2
+SHOOT, D, 2917, 2920, 4
+SHOOT, D, 2918, 2921, 0
+SHOOT, D, 2923, 2926, 6
+SHOOT, D, 2924, 2927, 1
+SHOOT, D, 2929, 2932, 8
+SHOOT, D, 2930, 2933, 3
+SHOOT, D, 2935, 2938, 10
+SHOOT, D, 2936, 2939, 5
+SHOOT, D, 2941, 2944, 12
+SHOOT, D, 2942, 2945, 7
+SHOOT, D, 2946, 2949, 0
+SHOOT, D, 2947, 2950, 14
+SHOOT, D, 2948, 2951, 9
+SHOOT, D, 2952, 2955, 2
+SHOOT, D, 2953, 2956, 16
+SHOOT, D, 2954, 2957, 11
+SHOOT, D, 2958, 2961, 6
+SHOOT, D, 2959, 2962, 18
+SHOOT, D, 2960, 2963, 13
+SHOOT, A, 2908, 2905, 0
+SHOOT, A, 2914, 2911, 2
+SHOOT, A, 2920, 2917, 4
+SHOOT, A, 2921, 2918, 0
+SHOOT, A, 2926, 2923, 6
+SHOOT, A, 2927, 2924, 1
+SHOOT, A, 2932, 2929, 8
+SHOOT, A, 2933, 2930, 3
+SHOOT, A, 2938, 2935, 10
+SHOOT, A, 2939, 2936, 5
+SHOOT, A, 2944, 2941, 12
+SHOOT, A, 2945, 2942, 7
+SHOOT, A, 2949, 2946, 0
+SHOOT, A, 2950, 2947, 14
+SHOOT, A, 2951, 2948, 9
+SHOOT, A, 2955, 2952, 2
+SHOOT, A, 2956, 2953, 16
+SHOOT, A, 2957, 2954, 11
+SHOOT, A, 2961, 2958, 6
+SHOOT, A, 2962, 2959, 18
+SHOOT, A, 2963, 2960, 13
+DEAD, A, 2905
+DEAD, A, 2918
+DEAD, A, 2946
+DEAD, D, 2908
+DEAD, D, 2921
+DEAD, D, 2949
+SPAWN, A, 2964, 1, 63, 34
+SPAWN, A, 2965, 2, 63, 35
+SPAWN, A, 2966, 3, 63, 36
+SPAWN, D, 2967, 1, 63, 34
+SPAWN, D, 2968, 2, 63, 35
+SPAWN, D, 2969, 3, 63, 36
+TURN, 495
+PRINT, TURN 495 LOGS:To be spawned at Position(63,37)
+PRINT, To be spawned at Position(63,38)
+PRINT, To be spawned at Position(63,39)
+PRINT, Type 1 at Position (63,37)
+PRINT, Type 2 at Position (63,38)
+PRINT, Type 3 at Position (63,39)
+PRINT, 
+SHOOT, D, 2911, 2914, 0
+SHOOT, D, 2917, 2920, 2
+SHOOT, D, 2923, 2926, 4
+SHOOT, D, 2924, 2927, 0
+SHOOT, D, 2929, 2932, 6
+SHOOT, D, 2930, 2933, 1
+SHOOT, D, 2935, 2938, 8
+SHOOT, D, 2936, 2939, 3
+SHOOT, D, 2941, 2944, 10
+SHOOT, D, 2942, 2945, 5
+SHOOT, D, 2947, 2950, 12
+SHOOT, D, 2948, 2951, 7
+SHOOT, D, 2952, 2955, 0
+SHOOT, D, 2953, 2956, 14
+SHOOT, D, 2954, 2957, 9
+SHOOT, D, 2958, 2961, 2
+SHOOT, D, 2959, 2962, 16
+SHOOT, D, 2960, 2963, 11
+SHOOT, D, 2964, 2967, 6
+SHOOT, D, 2965, 2968, 18
+SHOOT, D, 2966, 2969, 13
+SHOOT, A, 2914, 2911, 0
+SHOOT, A, 2920, 2917, 2
+SHOOT, A, 2926, 2923, 4
+SHOOT, A, 2927, 2924, 0
+SHOOT, A, 2932, 2929, 6
+SHOOT, A, 2933, 2930, 1
+SHOOT, A, 2938, 2935, 8
+SHOOT, A, 2939, 2936, 3
+SHOOT, A, 2944, 2941, 10
+SHOOT, A, 2945, 2942, 5
+SHOOT, A, 2950, 2947, 12
+SHOOT, A, 2951, 2948, 7
+SHOOT, A, 2955, 2952, 0
+SHOOT, A, 2956, 2953, 14
+SHOOT, A, 2957, 2954, 9
+SHOOT, A, 2961, 2958, 2
+SHOOT, A, 2962, 2959, 16
+SHOOT, A, 2963, 2960, 11
+SHOOT, A, 2967, 2964, 6
+SHOOT, A, 2968, 2965, 18
+SHOOT, A, 2969, 2966, 13
+DEAD, A, 2911
+DEAD, A, 2924
+DEAD, A, 2952
+DEAD, D, 2914
+DEAD, D, 2927
+DEAD, D, 2955
+SPAWN, A, 2970, 1, 63, 37
+SPAWN, A, 2971, 2, 63, 38
+SPAWN, A, 2972, 3, 63, 39
+SPAWN, D, 2973, 1, 63, 37
+SPAWN, D, 2974, 2, 63, 38
+SPAWN, D, 2975, 3, 63, 39
+TURN, 496
+PRINT, TURN 496 LOGS:To be spawned at Position(63,40)
+PRINT, To be spawned at Position(63,41)
+PRINT, To be spawned at Position(63,42)
+PRINT, Type 1 at Position (63,40)
+PRINT, Type 2 at Position (63,41)
+PRINT, Type 3 at Position (63,42)
+PRINT, 
+SHOOT, D, 2917, 2920, 0
+SHOOT, D, 2923, 2926, 2
+SHOOT, D, 2929, 2932, 4
+SHOOT, D, 2930, 2933, 0
+SHOOT, D, 2935, 2938, 6
+SHOOT, D, 2936, 2939, 1
+SHOOT, D, 2941, 2944, 8
+SHOOT, D, 2942, 2945, 3
+SHOOT, D, 2947, 2950, 10
+SHOOT, D, 2948, 2951, 5
+SHOOT, D, 2953, 2956, 12
+SHOOT, D, 2954, 2957, 7
+SHOOT, D, 2958, 2961, 0
+SHOOT, D, 2959, 2962, 14
+SHOOT, D, 2960, 2963, 9
+SHOOT, D, 2964, 2967, 2
+SHOOT, D, 2965, 2968, 16
+SHOOT, D, 2966, 2969, 11
+SHOOT, D, 2970, 2973, 6
+SHOOT, D, 2971, 2974, 18
+SHOOT, D, 2972, 2975, 13
+SHOOT, A, 2920, 2917, 0
+SHOOT, A, 2926, 2923, 2
+SHOOT, A, 2932, 2929, 4
+SHOOT, A, 2933, 2930, 0
+SHOOT, A, 2938, 2935, 6
+SHOOT, A, 2939, 2936, 1
+SHOOT, A, 2944, 2941, 8
+SHOOT, A, 2945, 2942, 3
+SHOOT, A, 2950, 2947, 10
+SHOOT, A, 2951, 2948, 5
+SHOOT, A, 2956, 2953, 12
+SHOOT, A, 2957, 2954, 7
+SHOOT, A, 2961, 2958, 0
+SHOOT, A, 2962, 2959, 14
+SHOOT, A, 2963, 2960, 9
+SHOOT, A, 2967, 2964, 2
+SHOOT, A, 2968, 2965, 16
+SHOOT, A, 2969, 2966, 11
+SHOOT, A, 2973, 2970, 6
+SHOOT, A, 2974, 2971, 18
+SHOOT, A, 2975, 2972, 13
+DEAD, A, 2917
+DEAD, A, 2930
+DEAD, A, 2958
+DEAD, D, 2920
+DEAD, D, 2933
+DEAD, D, 2961
+SPAWN, A, 2976, 1, 63, 40
+SPAWN, A, 2977, 2, 63, 41
+SPAWN, A, 2978, 3, 63, 42
+SPAWN, D, 2979, 1, 63, 40
+SPAWN, D, 2980, 2, 63, 41
+SPAWN, D, 2981, 3, 63, 42
+TURN, 497
+PRINT, TURN 497 LOGS:To be spawned at Position(63,43)
+PRINT, To be spawned at Position(63,44)
+PRINT, To be spawned at Position(63,45)
+PRINT, Type 1 at Position (63,43)
+PRINT, Type 2 at Position (63,44)
+PRINT, Type 3 at Position (63,45)
+PRINT, 
+SHOOT, D, 2923, 2926, 0
+SHOOT, D, 2929, 2932, 2
+SHOOT, D, 2935, 2938, 4
+SHOOT, D, 2936, 2939, 0
+SHOOT, D, 2941, 2944, 6
+SHOOT, D, 2942, 2945, 1
+SHOOT, D, 2947, 2950, 8
+SHOOT, D, 2948, 2951, 3
+SHOOT, D, 2953, 2956, 10
+SHOOT, D, 2954, 2957, 5
+SHOOT, D, 2959, 2962, 12
+SHOOT, D, 2960, 2963, 7
+SHOOT, D, 2964, 2967, 0
+SHOOT, D, 2965, 2968, 14
+SHOOT, D, 2966, 2969, 9
+SHOOT, D, 2970, 2973, 2
+SHOOT, D, 2971, 2974, 16
+SHOOT, D, 2972, 2975, 11
+SHOOT, D, 2976, 2979, 6
+SHOOT, D, 2977, 2980, 18
+SHOOT, D, 2978, 2981, 13
+SHOOT, A, 2926, 2923, 0
+SHOOT, A, 2932, 2929, 2
+SHOOT, A, 2938, 2935, 4
+SHOOT, A, 2939, 2936, 0
+SHOOT, A, 2944, 2941, 6
+SHOOT, A, 2945, 2942, 1
+SHOOT, A, 2950, 2947, 8
+SHOOT, A, 2951, 2948, 3
+SHOOT, A, 2956, 2953, 10
+SHOOT, A, 2957, 2954, 5
+SHOOT, A, 2962, 2959, 12
+SHOOT, A, 2963, 2960, 7
+SHOOT, A, 2967, 2964, 0
+SHOOT, A, 2968, 2965, 14
+SHOOT, A, 2969, 2966, 9
+SHOOT, A, 2973, 2970, 2
+SHOOT, A, 2974, 2971, 16
+SHOOT, A, 2975, 2972, 11
+SHOOT, A, 2979, 2976, 6
+SHOOT, A, 2980, 2977, 18
+SHOOT, A, 2981, 2978, 13
+DEAD, A, 2923
+DEAD, A, 2936
+DEAD, A, 2964
+DEAD, D, 2926
+DEAD, D, 2939
+DEAD, D, 2967
+SPAWN, A, 2982, 1, 63, 43
+SPAWN, A, 2983, 2, 63, 44
+SPAWN, A, 2984, 3, 63, 45
+SPAWN, D, 2985, 1, 63, 43
+SPAWN, D, 2986, 2, 63, 44
+SPAWN, D, 2987, 3, 63, 45
+TURN, 498
+PRINT, TURN 498 LOGS:To be spawned at Position(63,46)
+PRINT, To be spawned at Position(63,47)
+PRINT, To be spawned at Position(63,48)
+PRINT, Type 1 at Position (63,46)
+PRINT, Type 2 at Position (63,47)
+PRINT, Type 3 at Position (63,48)
+PRINT, 
+SHOOT, D, 2929, 2932, 0
+SHOOT, D, 2935, 2938, 2
+SHOOT, D, 2941, 2944, 4
+SHOOT, D, 2942, 2945, 0
+SHOOT, D, 2947, 2950, 6
+SHOOT, D, 2948, 2951, 1
+SHOOT, D, 2953, 2956, 8
+SHOOT, D, 2954, 2957, 3
+SHOOT, D, 2959, 2962, 10
+SHOOT, D, 2960, 2963, 5
+SHOOT, D, 2965, 2968, 12
+SHOOT, D, 2966, 2969, 7
+SHOOT, D, 2970, 2973, 0
+SHOOT, D, 2971, 2974, 14
+SHOOT, D, 2972, 2975, 9
+SHOOT, D, 2976, 2979, 2
+SHOOT, D, 2977, 2980, 16
+SHOOT, D, 2978, 2981, 11
+SHOOT, D, 2982, 2985, 6
+SHOOT, D, 2983, 2986, 18
+SHOOT, D, 2984, 2987, 13
+SHOOT, A, 2932, 2929, 0
+SHOOT, A, 2938, 2935, 2
+SHOOT, A, 2944, 2941, 4
+SHOOT, A, 2945, 2942, 0
+SHOOT, A, 2950, 2947, 6
+SHOOT, A, 2951, 2948, 1
+SHOOT, A, 2956, 2953, 8
+SHOOT, A, 2957, 2954, 3
+SHOOT, A, 2962, 2959, 10
+SHOOT, A, 2963, 2960, 5
+SHOOT, A, 2968, 2965, 12
+SHOOT, A, 2969, 2966, 7
+SHOOT, A, 2973, 2970, 0
+SHOOT, A, 2974, 2971, 14
+SHOOT, A, 2975, 2972, 9
+SHOOT, A, 2979, 2976, 2
+SHOOT, A, 2980, 2977, 16
+SHOOT, A, 2981, 2978, 11
+SHOOT, A, 2985, 2982, 6
+SHOOT, A, 2986, 2983, 18
+SHOOT, A, 2987, 2984, 13
+DEAD, A, 2929
+DEAD, A, 2942
+DEAD, A, 2970
+DEAD, D, 2932
+DEAD, D, 2945
+DEAD, D, 2973
+SPAWN, A, 2988, 1, 63, 46
+SPAWN, A, 2989, 2, 63, 47
+SPAWN, A, 2990, 3, 63, 48
+SPAWN, D, 2991, 1, 63, 46
+SPAWN, D, 2992, 2, 63, 47
+SPAWN, D, 2993, 3, 63, 48
+TURN, 499
+PRINT, TURN 499 LOGS:To be spawned at Position(63,49)
+PRINT, To be spawned at Position(63,50)
+PRINT, To be spawned at Position(63,51)
+PRINT, Type 1 at Position (63,49)
+PRINT, Type 2 at Position (63,50)
+PRINT, Type 3 at Position (63,51)
+PRINT, 
+SHOOT, D, 2935, 2938, 0
+SHOOT, D, 2941, 2944, 2
+SHOOT, D, 2947, 2950, 4
+SHOOT, D, 2948, 2951, 0
+SHOOT, D, 2953, 2956, 6
+SHOOT, D, 2954, 2957, 1
+SHOOT, D, 2959, 2962, 8
+SHOOT, D, 2960, 2963, 3
+SHOOT, D, 2965, 2968, 10
+SHOOT, D, 2966, 2969, 5
+SHOOT, D, 2971, 2974, 12
+SHOOT, D, 2972, 2975, 7
+SHOOT, D, 2976, 2979, 0
+SHOOT, D, 2977, 2980, 14
+SHOOT, D, 2978, 2981, 9
+SHOOT, D, 2982, 2985, 2
+SHOOT, D, 2983, 2986, 16
+SHOOT, D, 2984, 2987, 11
+SHOOT, D, 2988, 2991, 6
+SHOOT, D, 2989, 2992, 18
+SHOOT, D, 2990, 2993, 13
+SHOOT, A, 2938, 2935, 0
+SHOOT, A, 2944, 2941, 2
+SHOOT, A, 2950, 2947, 4
+SHOOT, A, 2951, 2948, 0
+SHOOT, A, 2956, 2953, 6
+SHOOT, A, 2957, 2954, 1
+SHOOT, A, 2962, 2959, 8
+SHOOT, A, 2963, 2960, 3
+SHOOT, A, 2968, 2965, 10
+SHOOT, A, 2969, 2966, 5
+SHOOT, A, 2974, 2971, 12
+SHOOT, A, 2975, 2972, 7
+SHOOT, A, 2979, 2976, 0
+SHOOT, A, 2980, 2977, 14
+SHOOT, A, 2981, 2978, 9
+SHOOT, A, 2985, 2982, 2
+SHOOT, A, 2986, 2983, 16
+SHOOT, A, 2987, 2984, 11
+SHOOT, A, 2991, 2988, 6
+SHOOT, A, 2992, 2989, 18
+SHOOT, A, 2993, 2990, 13
+DEAD, A, 2935
+DEAD, A, 2948
+DEAD, A, 2976
+DEAD, D, 2938
+DEAD, D, 2951
+DEAD, D, 2979
+SPAWN, A, 2994, 1, 63, 49
+SPAWN, A, 2995, 2, 63, 50
+SPAWN, A, 2996, 3, 63, 51
+SPAWN, D, 2997, 1, 63, 49
+SPAWN, D, 2998, 2, 63, 50
+SPAWN, D, 2999, 3, 63, 51
+SCORE, 76
+END`
