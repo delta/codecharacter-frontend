@@ -66,7 +66,6 @@ import {
   changeTutorialLanguage,
   tutorialCode,
   tutorialCodeLanguage,
-  tutorialId,
   changeTutorialId,
 } from '../../store/Tutorials/tutorials';
 import Tour from '../../components/TourProvider/TourProvider';
