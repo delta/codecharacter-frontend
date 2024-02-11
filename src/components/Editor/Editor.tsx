@@ -55,8 +55,13 @@ import {
   dcCode,
   changeDcCode,
 } from '../../store/DailyChallenge/dailyChallenge';
+import {
+  changeTutorialCode,
+  tutorialCode,
+} from '../../store/Tutorials/tutorials';
 import { buildWorkerDefinition } from 'monaco-editor-workers';
 import { Uri } from 'vscode';
+import toast from 'react-hot-toast';
 
 buildWorkerDefinition(
   '../../node_modules/monaco-editor-workers/dist/workers',
@@ -66,17 +71,17 @@ buildWorkerDefinition(
 
 export default function CodeEditor(props: Editor.Props): JSX.Element {
   const divCodeEditor = useRef<HTMLDivElement>(null);
-  const userCode: string =
-    props.page == 'Dashboard'
-      ? useAppSelector(UserCode)
-      : useAppSelector(dcCode);
   const fontSize: number = useAppSelector(FontSize);
   const theme: string = useAppSelector(Theme);
   const autocomplete: boolean = useAppSelector(Autocomplete);
   const dispatch: React.Dispatch<unknown> = useAppDispatch();
-
   const keyboardHandler = useAppSelector(KeyboardHandler);
-
+  const userCode: string =
+    props.page == 'Dashboard'
+      ? useAppSelector(UserCode)
+      : props.page == 'DailyChallenge'
+      ? useAppSelector(dcCode)
+      : useAppSelector(tutorialCode);
   const language = props.language;
 
   monaco.languages.register({
@@ -169,6 +174,8 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
         dispatch(updateUserCode(codeNlanguage));
       } else if (props.page == 'DailyChallenge') {
         dispatch(changeDcCode(codeNlanguage));
+      } else if (props.page == 'Tutorials') {
+        dispatch(changeTutorialCode(codeNlanguage));
       }
     });
 
@@ -178,24 +185,26 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
     });
 
     //Keybinding for Simulate -> CTRL+ALT+N
-    editor.addCommand(
-      monaco.KeyMod.CtrlCmd | monaco.KeyMod.Alt | monaco.KeyCode.KeyN,
-      function () {
-        if (GameType.NORMAL) {
-          dispatch(isSelfMatchModalOpened(true));
-          dispatch(codeCommitNameChanged('Current Code'));
-          dispatch(codeCommitIDChanged(null));
-          dispatch(mapCommitNameChanged('Current Map'));
-          dispatch(mapCommitIDChanged(null));
-        } else if (GameType.PVP) {
-          dispatch(isPvPSelfMatchModalOpened(true));
-          dispatch(code1CommitNameChanged('Current Code'));
-          dispatch(code1CommitIDChanged(null));
-          dispatch(code2CommitNameChanged('Current Code'));
-          dispatch(code2CommitIDChanged(null));
-        }
-      },
-    );
+    if (props.page == 'Dashboard' || props.page == 'Tutorials') {
+      editor.addCommand(
+        monaco.KeyMod.CtrlCmd | monaco.KeyMod.Alt | monaco.KeyCode.KeyN,
+        function () {
+          if (GameType.NORMAL) {
+            dispatch(isSelfMatchModalOpened(true));
+            dispatch(codeCommitNameChanged('Current Code'));
+            dispatch(codeCommitIDChanged(null));
+            dispatch(mapCommitNameChanged('Current Map'));
+            dispatch(mapCommitIDChanged(null));
+          } else if (GameType.PVP) {
+            dispatch(isPvPSelfMatchModalOpened(true));
+            dispatch(code1CommitNameChanged('Current Code'));
+            dispatch(code1CommitIDChanged(null));
+            dispatch(code2CommitNameChanged('Current Code'));
+            dispatch(code2CommitIDChanged(null));
+          }
+        },
+      );
+    }
 
     //Keybinding for Commit -> CTRL+K
     editor.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.KeyK, function () {
@@ -223,6 +232,14 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
         props.language == 'c_cpp' ? 'cpp' : props.language
       }`;
       wsClient = new WebSocket(url);
+      wsClient.onerror = () => {
+        toast.error('Error occured in lsp');
+        editor = createEditor(
+          divCodeEditor.current as HTMLDivElement,
+          null,
+          null,
+        );
+      };
       wsClient.onopen = () => {
         const updater = {
           operation: 'fileUpdate',
@@ -284,6 +301,7 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
     props.page,
     autocomplete,
     props.gameType,
+    props.tutorialNumber,
   ]);
 
   return <div className={styles.Editor} ref={divCodeEditor}></div>;
