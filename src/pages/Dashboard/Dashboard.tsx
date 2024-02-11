@@ -480,7 +480,7 @@ export default function Dashboard(): JSX.Element {
             }}
             size={horizontalPercent}
             allowResize={true}
-            minSize={520}
+            minSize={720}
           >
             <div className={styles.leftPane}>
               {pageState == 'Dashboard' || dailyChallenge.challType == 'MAP' ? (
@@ -580,26 +580,31 @@ export default function Dashboard(): JSX.Element {
                         </button>
                       </Col>
                     </div>
-                    <Col className={styles.toolbarColumn1} sm="1">
-                      <Form.Select
-                        className={styles.toolbarButton2}
-                        value={
-                          currentGameType == GameType.PVP ? 'PvP' : 'Normal'
-                        }
-                        onChange={e =>
-                          e.target.value == 'PvP'
-                            ? handlePvPTake()
-                            : handlePvPClose()
-                        }
-                        id="ModeSelector"
-                      >
-                        {modes.map(mode => (
-                          <option value={mode} key={mode}>
-                            {mode}
-                          </option>
-                        ))}
-                      </Form.Select>
-                    </Col>
+                    {pageState == 'Dashboard' ? (
+                      <Col className={styles.toolbarColumn} sm="1">
+                        <Form.Select
+                          className={styles.toolbarButton2}
+                          value={
+                            currentGameType == GameType.PVP ? 'PvP' : 'Normal'
+                          }
+                          onChange={e =>
+                            e.target.value == 'PvP'
+                              ? handlePvPTake()
+                              : handlePvPClose()
+                          }
+                          id="GameModeSelector"
+                          title="Game-Mode"
+                        >
+                          {modes.map(mode => (
+                            <option value={mode} key={mode}>
+                              {mode}
+                            </option>
+                          ))}
+                        </Form.Select>
+                      </Col>
+                    ) : (
+                      <></>
+                    )}
                   </div>
                   <div>
                     <div className={styles.settingsIconDiv}>

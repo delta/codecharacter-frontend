@@ -21,7 +21,6 @@ import signUpIcon from '../../assets/sign_up.svg';
 import signInIcon from '../../assets/sign_in.svg';
 import challengeDone from '../../assets/challenge_done.png';
 import challengeAvailable from '../../assets/challenge_available.png';
-import tutorialIcon from '../../assets/tutorial.png';
 import DcCompleted from '../DcModals/DcCompleted';
 import DcAvailable from '../DcModals/DcAvailable';
 import {
@@ -30,7 +29,6 @@ import {
   dailyChallengeCompletionState,
   dailyChallengePageState,
 } from '../../store/DailyChallenge/dailyChallenge';
-import ViewTutorial from '../TutorialModals/ViewTutorial';
 
 const NavBar: React.FunctionComponent = () => {
   const dispatch = useAppDispatch();
@@ -111,18 +109,6 @@ const NavBar: React.FunctionComponent = () => {
     setShowCompleted(false);
   };
 
-  const [showTutorial, setShowTutorial] = useState(false);
-  const handleTutorialTake = () => {
-    dispatch(changePageState('Tutorials'));
-    navigate('/dashboard', { replace: true });
-    setShowTutorial(false);
-  };
-  const handleTutorialClose = () => {
-    dispatch(changePageState('Dashboard'));
-    navigate('/dashboard');
-    setShowTutorial(false);
-  };
-
   return (
     <div className={styles.navBar}>
       <DcCompleted
@@ -134,11 +120,6 @@ const NavBar: React.FunctionComponent = () => {
         show={showAvailable}
         handleClose={handleCloseAvailable}
         handleTake={handleTake}
-      />
-      <ViewTutorial
-        show={showTutorial}
-        handleTutorialClose={handleTutorialClose}
-        handleTutorialTake={handleTutorialTake}
       />
       <div className={styles.navBarContainer}>
         <div className={styles.branding}>
@@ -188,19 +169,6 @@ const NavBar: React.FunctionComponent = () => {
       location.pathname != '/' ? (
         <div className={styles.profileIcons}>
           <div className={styles.notifIconContainer}>
-            {pageState == 'Dashboard' ? (
-              <img
-                src={tutorialIcon}
-                className={styles.tutorialIcon}
-                title="Code Tutorials"
-                onClick={() => {
-                  setShowTutorial(true);
-                }}
-              />
-            ) : (
-              <></>
-            )}
-
             {dcEnable ? (
               <img
                 src={dcCompletionstatus ? challengeDone : challengeAvailable}

@@ -10,8 +10,9 @@ import commitIcon from '../../assets/commit.svg';
 import battletvIcon from '../../assets/battletv.svg';
 import documentationIcon from '../../assets/documentation.svg';
 import statisticsIcon from '../../assets/statistics.svg';
+import tutorialIcon from '../../assets/tutorial.png';
 
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import styles from './SideBar.module.css';
 import { useAppDispatch, useAppSelector } from '../../store/hooks';
@@ -23,6 +24,7 @@ import {
 import { useTour } from '@reactour/tour';
 import { CurrentUserApi } from '@codecharacter-2024/client';
 import { apiConfig } from '../../api/ApiConfig';
+import ViewTutorial from '../TutorialModals/ViewTutorial';
 
 const icons = [
   { icon: codeIcon, route: 'dashboard', tooltip: 'Code Editor' },
@@ -30,6 +32,7 @@ const icons = [
   { icon: leaderboardIcon, route: 'leaderboard', tooltip: 'Leaderboard' },
   { icon: commitIcon, route: 'history', tooltip: 'Commits' },
   { icon: battletvIcon, route: 'battletv', tooltip: 'Battle TV' },
+  { icon: tutorialIcon, route: 'dashboard', tooltip: 'Code Tutorials' },
   { icon: statisticsIcon, route: 'statistics', tooltip: 'Statistics' },
 ];
 
@@ -42,6 +45,20 @@ const SideBar: React.FunctionComponent = () => {
   }
   const location = useLocation();
   const [pathName, setpathName] = useState('/dashboard');
+
+  const navigate = useNavigate();
+
+  const [showTutorial, setShowTutorial] = useState(false);
+  const handleTutorialTake = () => {
+    dispatch(changePageState('Tutorials'));
+    navigate('/dashboard', { replace: true });
+    setShowTutorial(false);
+  };
+  const handleTutorialClose = () => {
+    dispatch(changePageState('Dashboard'));
+    navigate('/dashboard');
+    setShowTutorial(false);
+  };
 
   const { setIsOpen } = useTour();
   const isTourOver = useAppSelector(IsTourOver);
@@ -67,94 +84,129 @@ const SideBar: React.FunctionComponent = () => {
   }, [isTourOver]);
 
   return (
-    <div>
-      {pathName != '/' &&
-      pathName != '/register' &&
-      pathName != '/login' &&
-      pathName != '/activate' &&
-      pathName != '/reset-password' &&
-      pathName != '/incomplete-profile' ? (
-        <div className={styles.sideBar}>
-          <div className={styles.up}>
-            {icons.map(icon => {
-              if (icon.tooltip === 'Editor Settings') {
-                return (
-                  <div key={icons.indexOf(icon)} className={styles.sideBarIcon}>
+    <>
+      <ViewTutorial
+        show={showTutorial}
+        handleTutorialClose={handleTutorialClose}
+        handleTutorialTake={handleTutorialTake}
+      />
+      <div>
+        {pathName != '/' &&
+        pathName != '/register' &&
+        pathName != '/login' &&
+        pathName != '/activate' &&
+        pathName != '/reset-password' &&
+        pathName != '/incomplete-profile' ? (
+          <div className={styles.sideBar}>
+            <div className={styles.up}>
+              {icons.map(icon => {
+                if (icon.tooltip === 'Editor Settings') {
+                  return (
+                    <div
+                      key={icons.indexOf(icon)}
+                      className={styles.sideBarIcon}
+                    >
+                      <img
+                        src={icon.icon as string}
+                        alt={icon.tooltip}
+                        title={icon.tooltip}
+                        onClick={handleOpenSettings}
+                        className={styles.sideBarIconComponent}
+                      />
+                    </div>
+                  );
+                } else if (icon.icon == codeIcon) {
+                  return (
+                    <div
+                      key={icons.indexOf(icon)}
+                      className={styles.sideBarIcon}
+                    >
+                      <Link to={icon.route} key={icon.route}>
+                        <img
+                          src={icon.icon as string}
+                          alt={icon.tooltip}
+                          title={icon.tooltip}
+                          className={styles.sideBarIconComponent}
+                          onClick={() => {
+                            dispatch(changePageState('Dashboard'));
+                          }}
+                        />
+                      </Link>
+                    </div>
+                  );
+                } else if (icon.icon == tutorialIcon) {
+                  return (
+                    <div
+                      key={icons.indexOf(icon)}
+                      className={styles.sideBarIcon}
+                    >
+                      <Link to={icon.route} key={icon.route}>
+                        <img
+                          src={tutorialIcon}
+                          alt={icon.tooltip}
+                          className={styles.sideBarIconComponent}
+                          title="Code Tutorials"
+                          onClick={() => {
+                            setShowTutorial(true);
+                          }}
+                        />
+                      </Link>
+                    </div>
+                  );
+                } else {
+                  return (
+                    <div
+                      key={icons.indexOf(icon)}
+                      className={styles.sideBarIcon}
+                    >
+                      <Link to={icon.route} key={icon.route}>
+                        <img
+                          src={icon.icon as string}
+                          alt={icon.tooltip}
+                          title={icon.tooltip}
+                          className={styles.sideBarIconComponent}
+                        />
+                      </Link>
+                    </div>
+                  );
+                }
+              })}
+            </div>
+            <div>
+              <div className={styles.sideBarIcon} id="documentation">
+                <div title="View Documentation">
+                  <a
+                    href="https://codecharacter-docs-2023.netlify.app/"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
                     <img
-                      src={icon.icon as string}
-                      alt={icon.tooltip}
-                      title={icon.tooltip}
-                      onClick={handleOpenSettings}
+                      src={documentationIcon}
+                      alt="delta"
                       className={styles.sideBarIconComponent}
                     />
-                  </div>
-                );
-              } else if (icon.icon == codeIcon) {
-                return (
-                  <div key={icons.indexOf(icon)} className={styles.sideBarIcon}>
-                    <Link to={icon.route} key={icon.route}>
-                      <img
-                        src={icon.icon as string}
-                        alt={icon.tooltip}
-                        title={icon.tooltip}
-                        className={styles.sideBarIconComponent}
-                        onClick={() => {
-                          dispatch(changePageState('Dashboard'));
-                        }}
-                      />
-                    </Link>
-                  </div>
-                );
-              } else {
-                return (
-                  <div key={icons.indexOf(icon)} className={styles.sideBarIcon}>
-                    <Link to={icon.route} key={icon.route}>
-                      <img
-                        src={icon.icon as string}
-                        alt={icon.tooltip}
-                        title={icon.tooltip}
-                        className={styles.sideBarIconComponent}
-                      />
-                    </Link>
-                  </div>
-                );
-              }
-            })}
-          </div>
-          <div>
-            <div className={styles.sideBarIcon} id="documentation">
-              <div title="View Documentation">
-                <a
-                  href="https://codecharacter-docs-2023.netlify.app/"
-                  rel="noreferrer noopener"
-                  target="_blank"
-                >
-                  <img
-                    src={documentationIcon}
-                    alt="delta"
-                    className={styles.sideBarIconComponent}
-                  />
-                </a>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className={styles.sideBarIcon} id="DELTA">
-              <div title="Made with ❤ by Delta">
-                <div
-                  className={styles.deltaLogo}
-                  onClick={() => {
-                    window.open('https://delta.nitt.edu/');
-                  }}
-                >
-                  <img src={deltaLogo} alt="delta" />
+              <div className={styles.sideBarIcon} id="DELTA">
+                <div title="Made with ❤ by Delta">
+                  <div
+                    className={styles.deltaLogo}
+                    onClick={() => {
+                      window.open('https://delta.nitt.edu/');
+                    }}
+                  >
+                    <img src={deltaLogo} alt="delta" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      ) : (
-        <></>
-      )}
-    </div>
+        ) : (
+          <></>
+        )}
+      </div>
+    </>
   );
 };
 
