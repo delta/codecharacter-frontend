@@ -6,7 +6,7 @@
   padding: 3rem 5rem 3rem 5rem;
 }
 
-.footerContainer > div {
+.footerContainer>div {
   align-self: baseline;
 }
 
@@ -15,7 +15,8 @@
   font-size: 22px;
   margin-bottom: 30px;
   color: #eaeaea !important;
-  font-family: 'Poppins';
+  font-family: 'Press Start 2P', sans-serif;
+
 }
 
 .textContainer {
@@ -29,8 +30,9 @@
 }
 
 .container .links:hover {
-  text-decoration: underline;
   cursor: pointer;
+  color: white;
+  text-decoration: none !important;
 }
 
 .credit {
@@ -38,8 +40,12 @@
   flex-direction: column;
 }
 
+.heart {
+  color: red;
+}
+
 .title {
-  font-family: 'Roboto Mono';
+  font-family: 'Press Start 2P', sans-serif;
   font-size: 800;
   font-size: 35px;
   font-style: bold;
@@ -49,21 +55,28 @@
 
 .title:hover {
   cursor: pointer;
-  color: rgb(20, 94, 42);
+  color: green;
 }
+
 .creditText {
-  font-family: sans-serif;
+  font-family: 'Press Start 2P', sans-serif;
   color: #aaaaaa;
   font-size: 16px;
   float: left;
   vertical-align: baseline;
 }
 
-.container > div {
-  font-family: sans-serif;
-  margin: 10px;
+.container>div {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 11px;
   color: #aaaaaa;
+  margin: 10px;
   letter-spacing: 1.5px;
+}
+
+.number {
+  font-size: 10px;
+  color:white;
 }
 
 @media screen and (max-width: 900px) {

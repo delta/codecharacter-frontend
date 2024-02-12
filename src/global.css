@@ -2,7 +2,6 @@
   visibility: hidden;
 }
 
-#root{
+#root {
   overflow-y: auto !important;
 }
-

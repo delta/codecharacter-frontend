@@ -198,6 +198,7 @@ export class TileMap extends Phaser.Scene {
           direction,
         );
         troop.setDepth(troop.y);
+        troop.setTint(actorType === 'D' ? 0xff3333 : 0x7094db);
         actorType === 'D'
           ? this.opponent_troops.set(id, this.add.existing(troop))
           : this.troops.set(id, this.add.existing(troop));
