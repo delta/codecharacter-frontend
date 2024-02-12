@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import 'https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css';
 
 * {
@@ -20,7 +21,7 @@
 
 .gameArea {
   /* this is needed or the background will be offset by a few pixels at the top */
-  overflow: auto;
+  /* overflow: auto; */
   position: relative;
   flex-grow: 1;
   background: rgba(30, 30, 30, 0.87);

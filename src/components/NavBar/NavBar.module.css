@@ -23,13 +23,13 @@
 }
 
 .navLink {
-  font-family: 'Bai Jamjuree', sans-serif;
+  font-family: 'Press Start 2P', sans-serif;
   margin: auto 80px;
   text-decoration: none;
   display: flex;
   color: white;
   align-items: center;
-  font-size: 28px;
+  font-size: 19px;
   gap: 0.9rem;
   font-weight: bolder;
 }
@@ -48,10 +48,10 @@
 }
 
 .navLogo {
-  font-family: 'Bai Jamjuree', sans-serif;
+  font-family: 'Press Start 2P', sans-serif;
   color: #ffffff;
-  font-size: 28px;
-  margin: 0.5rem 1rem;
+  font-size: 1.25rem;
+  margin: 1rem 0rem 0.5rem;
 }
 
 .logoLink {
@@ -98,6 +98,7 @@
 
 .profileName {
   font-family: 'Bai Jamjuree', sans-serif;
+  font-family: 'Press Start 2P', sans-serif;
   color: #ffffff;
   margin: 0 0.5rem;
   font-weight: 500;
@@ -174,12 +175,12 @@
 
 @media screen and (max-width:650px) {
   .navLogo {
-    font-size: 20px;
+    font-size: 10px;
   }
 
   .navLink {
     margin: auto 10px;
-    font-size: 20px;
+    font-size: 10px;
   }
 
   .navBarContainer {

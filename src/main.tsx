@@ -11,7 +11,8 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { persistStore } from 'redux-persist';
 import Loader from './components/Loader/Loader';
 import AllRoutes from './AllRoutes';
-import Backgroundvideo from './components/Background/BackgroundVideo';
+import BackgroundImage from './components/Background/BackgroundImage';
+import BackGroundVideo from './components/Background/BackGroundVideo';
 
 const persistor = persistStore(store);
 const NavBar = lazy(() => import('./components/NavBar/NavBar'));
@@ -42,10 +43,11 @@ root.render(
             <SelfMatchModal />
             <PvPSelfMatchModal />
             <NavBar />
+            <BackgroundImage />
             <div className={styles.mainWindow}>
               <SideBarWrap />
               <div className={styles.gameArea}>
-                <Backgroundvideo />
+                <BackGroundVideo />
                 <AllRoutes />
               </div>
             </div>

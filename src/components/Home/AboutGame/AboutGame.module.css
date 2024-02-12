@@ -19,15 +19,13 @@
 
 .content {
   color: #eaeaea;
-  font-family: 'Poppins';
+  font-family: 'Press Start 2P';
   font-weight: 400;
-  font-size: 32px;
 }
 
 .col1 {
   display: flex;
   align-items: center;
-  border-right: 3px solid #4d4d4d;
   min-width: 300px;
   padding-right: 3%;
 }
@@ -86,7 +84,7 @@
 
 @media only screen and (max-height: 800px) {
   .content {
-    font-size: 20px;
+    font-size: 15px;
   }
   .about {
     margin-top: 16px;

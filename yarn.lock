@@ -1762,6 +1762,7 @@ __metadata:
     react-google-recaptcha-v3: ^1.10.1
     react-hot-toast: ^2.4.0
     react-lazylog: ^4.5.3
+    react-matrix-effect: ^1.1.0
     react-paginate: ^8.1.4
     react-redux: ^8.0.5
     react-router-dom: ^6.6.1
@@ -15209,6 +15210,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-matrix-effect@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "react-matrix-effect@npm:1.1.0"
+  dependencies:
+    prop-types: ^15.6.2
+    react: ^16.7.0
+  checksum: ba3d42a15e941cf32a16322067ed1ffe1d42ae82413e188e8a70dc8d2d3992cbe4105987bc8b4216b6992470de632c6e7abb24eb81163e8c0e791d174588d530
+  languageName: node
+  linkType: hard
+
 "react-paginate@npm:^8.1.4":
   version: 8.1.4
   resolution: "react-paginate@npm:8.1.4"
@@ -15457,6 +15468,17 @@ __metadata:
     react: ^15.3.0 || ^16.0.0-alpha
     react-dom: ^15.3.0 || ^16.0.0-alpha
   checksum: 57ebda833ec4424779288735b5753ae1cf2cf8765e1cee9821b4ef1051eb1ad70f8a954121368baf0cf8a95f8dce2f045be9b44898c87bf1df859bdf6274c48f
+  languageName: node
+  linkType: hard
+
+"react@npm:^16.7.0":
+  version: 16.14.0
+  resolution: "react@npm:16.14.0"
+  dependencies:
+    loose-envify: ^1.1.0
+    object-assign: ^4.1.1
+    prop-types: ^15.6.2
+  checksum: 8484f3ecb13414526f2a7412190575fc134da785c02695eb92bb6028c930bfe1c238d7be2a125088fec663cc7cda0a3623373c46807cf2c281f49c34b79881ac
   languageName: node
   linkType: hard
 

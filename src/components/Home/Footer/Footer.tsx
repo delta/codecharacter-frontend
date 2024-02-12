@@ -24,9 +24,15 @@ export default function Footer(): JSX.Element {
       <div className={styles.textContainer}>
         <div className={styles.container}>
           <div className={styles.heading}> Contact</div>
-          <div>Ezhil: +91 6381553859</div>
-          <div>Ram Ganesh: +91 9025517379</div>
-          <div>Vignesh: +91 6381196740</div>
+          <div>
+            Ezhil: <span className={styles.number}>+91 6381553859</span>
+          </div>
+          <div>
+            Ram Ganesh: <span className={styles.number}> +91 9025517379</span>
+          </div>
+          <div>
+            Vignesh: <span className={styles.number}> +91 6381196740 </span>
+          </div>
         </div>
         <div className={styles.container}>
           <div className={styles.heading}>Quick Links</div>
