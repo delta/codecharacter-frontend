@@ -470,8 +470,6 @@ export default function Dashboard(): JSX.Element {
     }
   };
 
-  console.log(pageState);
-
   return (
     <>
       <Tour setOpened={setOpened} steps={EditorSteps}>

@@ -33,9 +33,11 @@ export const Websocket: React.FunctionComponent = () => {
     const url = `${baseUrl}/ws`;
     const wsClient = Stomp.over(() => new WebSocket(url));
     wsClient.brokerURL = url;
+    const keepAliveTimeout = setInterval(() => {
+      wsClient.send('pong');
+    }, 30000);
     const handleConnect = () => {
       wsClient.subscribe(`/updates/${user.id}`, message => {
-        console.log('Received message:', message.body);
         if (pageType === 'Tutorials') {
           const game = JSON.parse(message.body) as TutorialGame;
           if (game.status === GameStatus.Executing) {
@@ -43,7 +45,6 @@ export const Websocket: React.FunctionComponent = () => {
             return;
           }
           dispatch(changeSimulationState(true));
-          console.log(game.logs);
           setTimeout(() => {
             RendererUtils.loadLog(game.logs ?? '');
           }, 1000);
@@ -97,6 +98,7 @@ export const Websocket: React.FunctionComponent = () => {
 
     return () => {
       wsClient.deactivate();
+      clearInterval(keepAliveTimeout);
     };
   }, [user, gameType, pageType]);
 
