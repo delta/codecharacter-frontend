@@ -35,9 +35,18 @@ export const Websocket: React.FunctionComponent = () => {
     wsClient.brokerURL = url;
     const handleConnect = () => {
       wsClient.subscribe(`/updates/${user.id}`, message => {
+        console.log('Received message:', message.body);
         if (pageType === 'Tutorials') {
           const game = JSON.parse(message.body) as TutorialGame;
-          RendererUtils.loadLog(game.logs ?? '');
+          if (game.status === GameStatus.Executing) {
+            Toast.success('Executing Now...');
+            return;
+          }
+          dispatch(changeSimulationState(true));
+          console.log(game.logs);
+          setTimeout(() => {
+            RendererUtils.loadLog(game.logs ?? '');
+          }, 1000);
         } else {
           const game = JSON.parse(message.body) as Game;
           switch (game.status) {

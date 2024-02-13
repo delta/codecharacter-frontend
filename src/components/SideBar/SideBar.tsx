@@ -19,6 +19,7 @@ import { useAppDispatch, useAppSelector } from '../../store/hooks';
 import deltaLogo from '../../assets/deltaLogo.png';
 import {
   changePageState,
+  changeSimulationState,
   IsTourOver,
 } from '../../store/DailyChallenge/dailyChallenge';
 import { useTour } from '@reactour/tour';
@@ -50,6 +51,7 @@ const SideBar: React.FunctionComponent = () => {
 
   const [showTutorial, setShowTutorial] = useState(false);
   const handleTutorialTake = () => {
+    dispatch(changeSimulationState(false));
     dispatch(changePageState('Tutorials'));
     navigate('/dashboard', { replace: true });
     setShowTutorial(false);
