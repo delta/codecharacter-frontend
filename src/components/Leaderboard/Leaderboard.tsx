@@ -124,10 +124,10 @@ function PaginatedItems(props: LeaderboardType.Props) {
       });
   };
 
-  const fetchPvPLeaderboard = (pageNum: number) => {
+  const fetchPvPLeaderboard = (pageNum: number, tier?: TierType) => {
     setIsPvPLoaded(false);
     leaderboardAPI
-      .getPvPLeaderboard(pageNum, itemsPerPage)
+      .getPvPLeaderboard(pageNum, itemsPerPage, tier)
       .then(response => {
         setPvpItems(response);
         setIsPvPLoaded(true);
@@ -136,7 +136,7 @@ function PaginatedItems(props: LeaderboardType.Props) {
         if (error instanceof ApiError) Toast.error(error.message);
       });
     leaderboardAPI
-      .getPvPLeaderboard(pageNum + 1, itemsPerPage)
+      .getPvPLeaderboard(pageNum + 1, itemsPerPage, tier)
       .then(response => {
         setPvpNextItems(response);
         setIsPvPLoaded(true);
@@ -490,7 +490,7 @@ function PaginatedItems(props: LeaderboardType.Props) {
         >
           Refresh
         </button>
-        {props.page == 'Normal' ? (
+        {props.page != 'DailyChallenge' ? (
           <Dropdown id="tiers">
             <Dropdown.Toggle variant="dark" className={styles.button}>
               {activeTier?.toString() || 'All Tiers'}
@@ -501,7 +501,9 @@ function PaginatedItems(props: LeaderboardType.Props) {
                 className={styles.menuText}
                 onClick={() => {
                   setActiveTier(undefined);
-                  fetchLeaderboardByTier(0);
+                  props.page == 'Normal'
+                    ? fetchLeaderboardByTier(0)
+                    : fetchPvPLeaderboard(0);
                   setPage(0);
                 }}
               >
@@ -511,7 +513,9 @@ function PaginatedItems(props: LeaderboardType.Props) {
                 className={styles.menuText}
                 onClick={() => {
                   setActiveTier(TierType.Tier1);
-                  fetchLeaderboardByTier(0, TierType.Tier1);
+                  props.page == 'Normal'
+                    ? fetchLeaderboardByTier(0, TierType.Tier1)
+                    : fetchPvPLeaderboard(0, TierType.Tier1);
                   setPage(0);
                 }}
               >
@@ -521,7 +525,9 @@ function PaginatedItems(props: LeaderboardType.Props) {
                 className={styles.menuText}
                 onClick={() => {
                   setActiveTier(TierType.Tier2);
-                  fetchLeaderboardByTier(0, TierType.Tier2);
+                  props.page == 'Normal'
+                    ? fetchLeaderboardByTier(0, TierType.Tier2)
+                    : fetchPvPLeaderboard(0, TierType.Tier2);
                   setPage(0);
                 }}
               >

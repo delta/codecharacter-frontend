@@ -749,6 +749,7 @@ export const MatchMode = {
   Dailychallenge: 'DAILYCHALLENGE',
   Pvp: 'PVP',
   Selfpvp: 'SELFPVP',
+  Autopvp: 'AUTOPVP',
 } as const;
 export type MatchMode = (typeof MatchMode)[keyof typeof MatchMode];
 
@@ -1376,27 +1377,52 @@ export interface UpdatePasswordRequest {
   passwordConfirmation: string;
 }
 /**
- * User Match Stats model
+ * User Match Stat model
  * @export
- * @interface UserMatchStats
+ * @interface UserMatchStat
  */
-export interface UserMatchStats {
+export interface UserMatchStat {
   /**
    *
    * @type {number}
-   * @memberof UserMatchStats
+   * @memberof UserMatchStat
    */
   avgAtk: number;
   /**
    *
    * @type {number}
-   * @memberof UserMatchStats
+   * @memberof UserMatchStat
    */
   dcWins: number;
   /**
    *
    * @type {number}
-   * @memberof UserMatchStats
+   * @memberof UserMatchStat
+   */
+  coins: number;
+}
+/**
+ *
+ * @export
+ * @interface UserMatchStatsInner
+ */
+export interface UserMatchStatsInner {
+  /**
+   *
+   * @type {number}
+   * @memberof UserMatchStatsInner
+   */
+  avgAtk: number;
+  /**
+   *
+   * @type {number}
+   * @memberof UserMatchStatsInner
+   */
+  dcWins: number;
+  /**
+   *
+   * @type {number}
+   * @memberof UserMatchStatsInner
    */
   coins: number;
 }
