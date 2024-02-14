@@ -126,15 +126,6 @@ const NavBar: React.FunctionComponent = () => {
           <Link to="/" className={styles.logoLink}>
             <div className={styles.navLogo}>{'<CodeCharacter/>'}</div>
           </Link>
-          <div className={styles.codeContainer}>
-            {pageState == 'Tutorials' ? (
-              <div className={styles.codeTutorialHeading}>
-                {'Code Tutorials'}
-              </div>
-            ) : (
-              <></>
-            )}
-          </div>
         </div>
 
         {(location.pathname === '/' || location.pathname === '/register') &&
