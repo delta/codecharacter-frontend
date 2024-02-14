@@ -465,7 +465,11 @@ function PaginatedItems(props: LeaderboardType.Props) {
           type="button"
           className={styles.button}
           onClick={() => {
-            if (!checkEmpty()) {
+            if (props.page == 'Normal' && !checkEmpty()) {
+              setPage(prevPage => prevPage + 1);
+            } else if (props.page == 'PvP' && !checkPvPEmpty()) {
+              setPage(prevPage => prevPage + 1);
+            } else if (props.page == 'DailyChallenge' && !checkDcEmpty()) {
               setPage(prevPage => prevPage + 1);
             } else {
               Toast("You're at the last page");
@@ -481,9 +485,11 @@ function PaginatedItems(props: LeaderboardType.Props) {
             if (props.page == 'Normal') {
               fetchLeaderboardByTier(0, activeTier);
               setPage(0);
-            } else {
-              fetchPvPLeaderboard(0);
+            } else if (props.page == 'PvP') {
+              fetchPvPLeaderboard(0, activeTier);
               setPage(0);
+            } else if (props.page == 'DailyChallenge') {
+              fetchDcLeaderboard(0);
             }
           }}
           id="refresh"
