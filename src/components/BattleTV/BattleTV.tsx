@@ -32,7 +32,7 @@ import { useTour } from '@reactour/tour';
 import { apiConfig } from '../../api/ApiConfig';
 import codecharacterIcon from '../../../public/assets/codechar_favicon.png';
 import { Button, ButtonGroup } from 'react-bootstrap';
-import { GameType } from '../../store/editor/code';
+import { GameType, changeEditorGameType } from '../../store/editor/code';
 
 interface MatchType {
   Match: Match;
@@ -161,6 +161,13 @@ function PaginatedItems({ battleTvType }: { battleTvType: BattleType }) {
                       <div
                         className={styles.watchButton}
                         onClick={() => {
+                          dispatch(
+                            changeEditorGameType(
+                              battleTvType === BattleType.PVP
+                                ? GameType.PVP
+                                : GameType.NORMAL,
+                            ),
+                          );
                           dispatch(
                             getLogAction({
                               //needs to be changed

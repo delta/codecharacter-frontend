@@ -53,7 +53,7 @@ export default function Footer(): JSX.Element {
           </div>
           <div>
             <a
-              href="https://discord.gg/QcYMveUaGQhttps://discord.gg/GUzVRKUHgY"
+              href="https://discord.gg/2HNpvAQx5N"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.links}

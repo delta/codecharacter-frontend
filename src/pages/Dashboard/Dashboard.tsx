@@ -907,7 +907,9 @@ export default function Dashboard(): JSX.Element {
                 {pageState == 'Dashboard' ||
                 (pageState == 'Tutorials' && dailyChallengeSimulationState) ||
                 dailyChallengeSimulationState ? (
-                  <RendererComponent />
+                  <RendererComponent
+                    shouldShowStats={currentGameType == GameType.NORMAL}
+                  />
                 ) : dailyChallenge.challType == 'MAP' ||
                   tutorialsType == ChallengeType.Map ? (
                   <>
