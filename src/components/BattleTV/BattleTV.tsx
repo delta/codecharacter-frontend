@@ -201,9 +201,11 @@ function PaginatedItems({ battleTvType }: { battleTvType: BattleType }) {
                       </span>
                       {'games' in match && (
                         <span className={styles.scoreleft}>
-                          {[...match.games.values()][
-                            [...match.games.values()].length === 1 ? 0 : 1
-                          ].destruction.toFixed(2)}
+                          {
+                            [...match.games.values()][
+                              [...match.games.values()].length === 1 ? 0 : 1
+                            ].coinsUsed
+                          }
                         </span>
                       )}
                       <span className={styles.username}>
