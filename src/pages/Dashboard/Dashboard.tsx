@@ -76,6 +76,7 @@ import {
   dcSimulation,
   changeDcLanguage,
   changeSimulationState,
+  changeDcCode,
 } from '../../store/DailyChallenge/dailyChallenge';
 import {
   initializeTutorialState,
@@ -207,6 +208,19 @@ export default function Dashboard(): JSX.Element {
           if (err instanceof ApiError) Toast.error(err.message);
         })
         .finally(() => localStorage.setItem('firstTime', 'false'));
+      codeAPI
+        .getLatestCode(CodeType.DailyChallenge)
+        .then(res => {
+          dispatch(
+            changeDcCode({
+              currentUserCode: res.code,
+              currentUserLanguage: res.language,
+            }),
+          );
+        })
+        .catch(err => {
+          if (err instanceof ApiError) Toast.error(err.message);
+        });
 
       codeAPI
         .getLatestCode(CodeType.Pvp)
