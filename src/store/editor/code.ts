@@ -129,6 +129,15 @@ export const editorSlice = createSlice({
 
     changeEditorGameType: (state, action: PayloadAction<GameType>) => {
       state.gameType = action.payload;
+      if (action.payload === GameType.NORMAL) {
+        state.userCode =
+          state.allLanguagesNormalCode[
+            languagesAvailable.indexOf(state.language)
+          ];
+      } else {
+        state.userCode =
+          state.allLanguagesPvPCode[languagesAvailable.indexOf(state.language)];
+      }
     },
   },
 });

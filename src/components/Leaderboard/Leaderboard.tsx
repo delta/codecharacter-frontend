@@ -196,7 +196,7 @@ function PaginatedItems(props: LeaderboardType.Props) {
       .catch(error => {
         if (error instanceof ApiError) Toast.error(error.message);
       });
-    changeEditorGameType(GameType.PVP);
+    dispatch(changeEditorGameType(GameType.PVP));
     setShow(false);
   }
   return (
