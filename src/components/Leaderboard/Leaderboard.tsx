@@ -1,7 +1,7 @@
 import * as LeaderboardType from './LeaderboardTypes';
 import { useEffect, useState } from 'react';
 import { Modal, Button, Table, Dropdown } from 'react-bootstrap';
-import { useAppSelector } from '../../store/hooks';
+import { useAppSelector, useAppDispatch } from '../../store/hooks';
 import styles from './Leaderboard.module.css';
 import { getAvatarByID } from '../Avatar/Avatar';
 import {
@@ -19,6 +19,7 @@ import Loader from '../Loader/Loader';
 import swordImage from '../../assets/sword.png';
 import Toast from 'react-hot-toast';
 import { user } from '../../store/User/UserSlice';
+import { GameType, changeEditorGameType } from '../../store/editor/code';
 
 function PaginatedItems(props: LeaderboardType.Props) {
   const [page, setPage] = useState(0);
@@ -40,6 +41,7 @@ function PaginatedItems(props: LeaderboardType.Props) {
   const [show, setShow] = useState(false);
   const [currentOpponentUsername, setCurrentOpponentUsername] = useState('');
   const [activeTier, setActiveTier] = useState<TierType | undefined>(undefined);
+  const dispatch = useAppDispatch();
 
   const handleClose = () => setShow(false);
   const handleShow = (username: string) => {
@@ -179,6 +181,7 @@ function PaginatedItems(props: LeaderboardType.Props) {
       .catch(error => {
         if (error instanceof ApiError) Toast.error(error.message);
       });
+    dispatch(changeEditorGameType(GameType.NORMAL));
     setShow(false);
   }
   async function handlePvPMatchStart() {
@@ -193,6 +196,7 @@ function PaginatedItems(props: LeaderboardType.Props) {
       .catch(error => {
         if (error instanceof ApiError) Toast.error(error.message);
       });
+    changeEditorGameType(GameType.PVP);
     setShow(false);
   }
   return (
