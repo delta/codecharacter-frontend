@@ -57,7 +57,7 @@ function PaginatedItems(props: LeaderboardType.Props) {
   switch (props.page) {
     case 'PvP':
       useEffect(() => {
-        fetchPvPLeaderboard(page);
+        fetchPvPLeaderboard(page, activeTier);
       }, [page]);
       useEffect(() => {
         checkPvPEmpty();
