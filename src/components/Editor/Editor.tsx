@@ -28,6 +28,8 @@ import {
 
 import {
   GameType,
+  GameTypeAndLanguage,
+  updateEditorCodeState,
   updateUserCode,
   UpdateUserCodeRequestObject,
   UserCode,
@@ -188,14 +190,14 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
     if (props.page == 'Dashboard' || props.page == 'Tutorials') {
       editor.addCommand(
         monaco.KeyMod.CtrlCmd | monaco.KeyMod.Alt | monaco.KeyCode.KeyN,
-        function () {
-          if (GameType.NORMAL) {
+        () => {
+          if (props.gameType === GameType.NORMAL) {
             dispatch(isSelfMatchModalOpened(true));
             dispatch(codeCommitNameChanged('Current Code'));
             dispatch(codeCommitIDChanged(null));
             dispatch(mapCommitNameChanged('Current Map'));
             dispatch(mapCommitIDChanged(null));
-          } else if (GameType.PVP) {
+          } else if (props.gameType === GameType.PVP) {
             dispatch(isPvPSelfMatchModalOpened(true));
             dispatch(code1CommitNameChanged('Current Code'));
             dispatch(code1CommitIDChanged(null));
@@ -218,6 +220,17 @@ export default function CodeEditor(props: Editor.Props): JSX.Element {
         props.SubmitRef.current?.click();
       },
     );
+
+    //Keybinding for GameMode Change -> CTRL+M
+    editor.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.KeyM, () => {
+      const newGameType =
+        props.gameType == GameType.NORMAL ? GameType.PVP : GameType.NORMAL;
+      const gameTypeAndLanguage: GameTypeAndLanguage = {
+        gameType: newGameType,
+        language: language,
+      };
+      dispatch(updateEditorCodeState(gameTypeAndLanguage));
+    });
 
     return editor;
   };

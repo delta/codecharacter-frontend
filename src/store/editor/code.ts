@@ -126,6 +126,19 @@ export const editorSlice = createSlice({
       }
       state.language = action.payload;
     },
+
+    changeEditorGameType: (state, action: PayloadAction<GameType>) => {
+      state.gameType = action.payload;
+      if (action.payload === GameType.NORMAL) {
+        state.userCode =
+          state.allLanguagesNormalCode[
+            languagesAvailable.indexOf(state.language)
+          ];
+      } else {
+        state.userCode =
+          state.allLanguagesPvPCode[languagesAvailable.indexOf(state.language)];
+      }
+    },
   },
 });
 
@@ -135,6 +148,7 @@ export const {
   initializeEditorStates,
   initializePvPEditorStates,
   updateEditorCodeState,
+  changeEditorGameType,
 } = editorSlice.actions;
 export const UserCode = (state: RootState): string =>
   state.codeEditorReducer.editorState.userCode;

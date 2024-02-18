@@ -1,7 +1,7 @@
 import * as LeaderboardType from './LeaderboardTypes';
 import { useEffect, useState } from 'react';
 import { Modal, Button, Table, Dropdown } from 'react-bootstrap';
-import { useAppSelector } from '../../store/hooks';
+import { useAppSelector, useAppDispatch } from '../../store/hooks';
 import styles from './Leaderboard.module.css';
 import { getAvatarByID } from '../Avatar/Avatar';
 import {
@@ -19,6 +19,7 @@ import Loader from '../Loader/Loader';
 import swordImage from '../../assets/sword.png';
 import Toast from 'react-hot-toast';
 import { user } from '../../store/User/UserSlice';
+import { GameType, changeEditorGameType } from '../../store/editor/code';
 
 function PaginatedItems(props: LeaderboardType.Props) {
   const [page, setPage] = useState(0);
@@ -40,6 +41,7 @@ function PaginatedItems(props: LeaderboardType.Props) {
   const [show, setShow] = useState(false);
   const [currentOpponentUsername, setCurrentOpponentUsername] = useState('');
   const [activeTier, setActiveTier] = useState<TierType | undefined>(undefined);
+  const dispatch = useAppDispatch();
 
   const handleClose = () => setShow(false);
   const handleShow = (username: string) => {
@@ -55,7 +57,7 @@ function PaginatedItems(props: LeaderboardType.Props) {
   switch (props.page) {
     case 'PvP':
       useEffect(() => {
-        fetchPvPLeaderboard(page);
+        fetchPvPLeaderboard(page, activeTier);
       }, [page]);
       useEffect(() => {
         checkPvPEmpty();
@@ -124,10 +126,10 @@ function PaginatedItems(props: LeaderboardType.Props) {
       });
   };
 
-  const fetchPvPLeaderboard = (pageNum: number) => {
+  const fetchPvPLeaderboard = (pageNum: number, tier?: TierType) => {
     setIsPvPLoaded(false);
     leaderboardAPI
-      .getPvPLeaderboard(pageNum, itemsPerPage)
+      .getPvPLeaderboard(pageNum, itemsPerPage, tier)
       .then(response => {
         setPvpItems(response);
         setIsPvPLoaded(true);
@@ -136,7 +138,7 @@ function PaginatedItems(props: LeaderboardType.Props) {
         if (error instanceof ApiError) Toast.error(error.message);
       });
     leaderboardAPI
-      .getPvPLeaderboard(pageNum + 1, itemsPerPage)
+      .getPvPLeaderboard(pageNum + 1, itemsPerPage, tier)
       .then(response => {
         setPvpNextItems(response);
         setIsPvPLoaded(true);
@@ -179,6 +181,7 @@ function PaginatedItems(props: LeaderboardType.Props) {
       .catch(error => {
         if (error instanceof ApiError) Toast.error(error.message);
       });
+    dispatch(changeEditorGameType(GameType.NORMAL));
     setShow(false);
   }
   async function handlePvPMatchStart() {
@@ -193,6 +196,7 @@ function PaginatedItems(props: LeaderboardType.Props) {
       .catch(error => {
         if (error instanceof ApiError) Toast.error(error.message);
       });
+    dispatch(changeEditorGameType(GameType.PVP));
     setShow(false);
   }
   return (
@@ -465,7 +469,11 @@ function PaginatedItems(props: LeaderboardType.Props) {
           type="button"
           className={styles.button}
           onClick={() => {
-            if (!checkEmpty()) {
+            if (props.page == 'Normal' && !checkEmpty()) {
+              setPage(prevPage => prevPage + 1);
+            } else if (props.page == 'PvP' && !checkPvPEmpty()) {
+              setPage(prevPage => prevPage + 1);
+            } else if (props.page == 'DailyChallenge' && !checkDcEmpty()) {
               setPage(prevPage => prevPage + 1);
             } else {
               Toast("You're at the last page");
@@ -481,16 +489,18 @@ function PaginatedItems(props: LeaderboardType.Props) {
             if (props.page == 'Normal') {
               fetchLeaderboardByTier(0, activeTier);
               setPage(0);
-            } else {
-              fetchPvPLeaderboard(0);
+            } else if (props.page == 'PvP') {
+              fetchPvPLeaderboard(0, activeTier);
               setPage(0);
+            } else if (props.page == 'DailyChallenge') {
+              fetchDcLeaderboard(0);
             }
           }}
           id="refresh"
         >
           Refresh
         </button>
-        {props.page == 'Normal' ? (
+        {props.page != 'DailyChallenge' ? (
           <Dropdown id="tiers">
             <Dropdown.Toggle variant="dark" className={styles.button}>
               {activeTier?.toString() || 'All Tiers'}
@@ -501,7 +511,9 @@ function PaginatedItems(props: LeaderboardType.Props) {
                 className={styles.menuText}
                 onClick={() => {
                   setActiveTier(undefined);
-                  fetchLeaderboardByTier(0);
+                  props.page == 'Normal'
+                    ? fetchLeaderboardByTier(0)
+                    : fetchPvPLeaderboard(0);
                   setPage(0);
                 }}
               >
@@ -511,7 +523,9 @@ function PaginatedItems(props: LeaderboardType.Props) {
                 className={styles.menuText}
                 onClick={() => {
                   setActiveTier(TierType.Tier1);
-                  fetchLeaderboardByTier(0, TierType.Tier1);
+                  props.page == 'Normal'
+                    ? fetchLeaderboardByTier(0, TierType.Tier1)
+                    : fetchPvPLeaderboard(0, TierType.Tier1);
                   setPage(0);
                 }}
               >
@@ -521,7 +535,9 @@ function PaginatedItems(props: LeaderboardType.Props) {
                 className={styles.menuText}
                 onClick={() => {
                   setActiveTier(TierType.Tier2);
-                  fetchLeaderboardByTier(0, TierType.Tier2);
+                  props.page == 'Normal'
+                    ? fetchLeaderboardByTier(0, TierType.Tier2)
+                    : fetchPvPLeaderboard(0, TierType.Tier2);
                   setPage(0);
                 }}
               >

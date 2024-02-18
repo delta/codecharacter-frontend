@@ -203,8 +203,10 @@ export default function MapDesigner(props: MapDesignerProps): JSX.Element {
 
   useEffect(() => {
     MapDesignerUtils.setLocalStorageKey(
-      props.pageType == 'MapDesigner' || props.pageType == 'Tutorials'
+      props.pageType == 'MapDesigner'
         ? 'cc-map-designer-map'
+        : props.pageType == 'Tutorials'
+        ? 'tc-map-designer-map'
         : 'dc-map-designer-map',
     );
   }, [props.pageType]);
@@ -241,11 +243,15 @@ export default function MapDesigner(props: MapDesignerProps): JSX.Element {
 
         <Modal.Body className={styles.modalContent}>
           <Container fluid>
-            <Row>
-              <p className={styles.contentP}>
-                <span>SAVE</span> : Save map only.
-              </p>
-            </Row>
+            {props.pageType == 'MapDesigner' ? (
+              <Row>
+                <p className={styles.contentP}>
+                  <span>SAVE</span> : Save map only.
+                </p>
+              </Row>
+            ) : (
+              <></>
+            )}
             <Row>
               <p className={styles.contentP}>
                 <span>SUBMIT</span> :{' '}
@@ -266,16 +272,21 @@ export default function MapDesigner(props: MapDesignerProps): JSX.Element {
             )}
           </Container>
           <Container fluid className={styles.buttonRow}>
-            <Button
-              className={styles.modalButton}
-              size="lg"
-              onClick={() => {
-                compressImage('save');
-              }}
-              variant="outline-light"
-            >
-              SAVE
-            </Button>
+            {props.pageType == 'MapDesigner' ||
+            props.pageType == 'DailyChallenge' ? (
+              <Button
+                className={styles.modalButton}
+                size="lg"
+                onClick={() => {
+                  compressImage('save');
+                }}
+                variant="outline-light"
+              >
+                SAVE
+              </Button>
+            ) : (
+              <></>
+            )}
             <Button
               className={styles.modalButton}
               size="lg"

@@ -10,15 +10,15 @@
   background-clip: padding-box;
 }
 
-.vs-dark{
+.vs-dark {
   background-color: #363535;
 }
 
-.vs{
- background-color : #363535;
+.vs {
+  background-color: #363535;
 }
 
-.hc-black{
+.hc-black {
   background-color: rgb(25, 25, 25);
 }
 
@@ -61,4 +61,3 @@
 .Resizer.disabled:hover {
   border-color: transparent;
 }
-

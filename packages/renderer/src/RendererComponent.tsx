@@ -19,7 +19,7 @@ import { Renderer } from './Renderer';
 
 const RendererLayer = createComponent(React, 'cc-renderer', Renderer);
 
-const StatsText = () => {
+const StatsText = ({ shouldShowStats }: { shouldShowStats: boolean }) => {
   const [turns, setTurns] = React.useState(0);
   const [coins, setCoins] = React.useState(0);
   const [destruction, setDestruction] = React.useState(0);
@@ -51,7 +51,7 @@ const StatsText = () => {
     events.once(RendererEvents.CHANGE_DESTRUCTION, onDestructionUpdated);
   }, [destruction]);
 
-  return (
+  return shouldShowStats ? (
     <p
       style={{
         textAlign: 'right',
@@ -67,10 +67,27 @@ const StatsText = () => {
       <br />
       Destruction : {String(destruction.toFixed(2)).padStart(6, '\xa0')} %
     </p>
+  ) : (
+    <p
+      style={{
+        textAlign: 'right',
+        color: 'white',
+        fontFamily: 'Poppins',
+        fontSize: '1rem',
+        padding: '1rem',
+      }}
+    >
+      Turn : {String(turns).padStart(8, '\xa0')}
+      <br />
+    </p>
   );
 };
 
-export default function RendererComponent(): JSX.Element {
+export default function RendererComponent({
+  shouldShowStats,
+}: {
+  shouldShowStats?: boolean;
+}): JSX.Element {
   const [isPaused, setPaused] = React.useState(false);
   const [isFullscreen, setFullscreen] = React.useState(false);
 
@@ -166,7 +183,7 @@ export default function RendererComponent(): JSX.Element {
                 )}
               </Button>
             </ButtonGroup>
-            <StatsText />
+            <StatsText shouldShowStats={shouldShowStats ?? true} />
           </ButtonToolbar>
           <RendererLayer />
         </>

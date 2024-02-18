@@ -40,6 +40,10 @@ export const EditorSteps = [
       'Click this button to submit your code to the leaderboard for matches.',
   },
   {
+    selector: '#GameModeSelector',
+    content: 'Click here to change game-mode',
+  },
+  {
     selector: '#Settings',
     content: 'You can access your editor settings here.',
   },

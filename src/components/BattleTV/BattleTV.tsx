@@ -32,7 +32,7 @@ import { useTour } from '@reactour/tour';
 import { apiConfig } from '../../api/ApiConfig';
 import codecharacterIcon from '../../../public/assets/codechar_favicon.png';
 import { Button, ButtonGroup } from 'react-bootstrap';
-import { GameType } from '../../store/editor/code';
+import { GameType, changeEditorGameType } from '../../store/editor/code';
 
 interface MatchType {
   Match: Match;
@@ -162,6 +162,13 @@ function PaginatedItems({ battleTvType }: { battleTvType: BattleType }) {
                         className={styles.watchButton}
                         onClick={() => {
                           dispatch(
+                            changeEditorGameType(
+                              battleTvType === BattleType.PVP
+                                ? GameType.PVP
+                                : GameType.NORMAL,
+                            ),
+                          );
+                          dispatch(
                             getLogAction({
                               //needs to be changed
                               id:
@@ -194,9 +201,11 @@ function PaginatedItems({ battleTvType }: { battleTvType: BattleType }) {
                       </span>
                       {'games' in match && (
                         <span className={styles.scoreleft}>
-                          {[...match.games.values()][
-                            [...match.games.values()].length === 1 ? 0 : 1
-                          ].destruction.toFixed(2)}
+                          {
+                            [...match.games.values()][
+                              [...match.games.values()].length === 1 ? 0 : 1
+                            ].coinsUsed
+                          }
                         </span>
                       )}
                       <span className={styles.username}>

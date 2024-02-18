@@ -28,6 +28,7 @@ export interface GetLeaderboardRequest {
 export interface GetPvPLeaderboardRequest {
   page?: number;
   size?: number;
+  tier?: TierType;
 }
 
 /**
@@ -68,6 +69,7 @@ export interface LeaderboardApiInterface {
    * @summary Get PvP leaderboard
    * @param {number} [page] Index of the page
    * @param {number} [size] Size of the page
+   * @param {TierType} [tier] Leaderboard Tier
    * @param {*} [options] Override http request option.
    * @throws {RequiredError}
    * @memberof LeaderboardApiInterface
@@ -84,6 +86,7 @@ export interface LeaderboardApiInterface {
   getPvPLeaderboard(
     page?: number,
     size?: number,
+    tier?: TierType,
     initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<Array<PvPLeaderBoardResponse>>;
 }
@@ -175,6 +178,10 @@ export class LeaderboardApi
       queryParameters['size'] = requestParameters.size;
     }
 
+    if (requestParameters.tier !== undefined) {
+      queryParameters['tier'] = requestParameters.tier;
+    }
+
     const headerParameters: runtime.HTTPHeaders = {};
 
     if (this.configuration && this.configuration.accessToken) {
@@ -205,10 +212,11 @@ export class LeaderboardApi
   async getPvPLeaderboard(
     page?: number,
     size?: number,
+    tier?: TierType,
     initOverrides?: RequestInit | runtime.InitOverrideFunction,
   ): Promise<Array<PvPLeaderBoardResponse>> {
     const response = await this.getPvPLeaderboardRaw(
-      { page: page, size: size },
+      { page: page, size: size, tier: tier },
       initOverrides,
     );
     return await response.value();
