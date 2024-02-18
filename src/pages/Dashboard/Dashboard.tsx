@@ -925,7 +925,8 @@ export default function Dashboard(): JSX.Element {
                     shouldShowStats={currentGameType == GameType.NORMAL}
                   />
                 ) : dailyChallenge.challType == 'MAP' ||
-                  tutorialsType == ChallengeType.Map ? (
+                  (pageState == 'Tutorials' &&
+                    tutorialsType == ChallengeType.Map) ? (
                   <>
                     <div className={styles.mapChallName}>
                       {pageState === 'DailyChallenge'
