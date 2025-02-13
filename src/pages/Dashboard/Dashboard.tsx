@@ -5,6 +5,7 @@ import {
   CurrentUserApi,
   CodeType,
   TutorialsApi,
+  ChallengeType,
 } from '@codecharacter-2024/client';
 import { RendererComponent } from '@codecharacter-2024/renderer';
 import Toast from 'react-hot-toast';
@@ -74,6 +75,8 @@ import {
   dcCode,
   dcSimulation,
   changeDcLanguage,
+  changeSimulationState,
+  changeDcCode,
 } from '../../store/DailyChallenge/dailyChallenge';
 import {
   initializeTutorialState,
@@ -81,6 +84,8 @@ import {
   tutorialCode,
   tutorialCodeLanguage,
   tutorialAllLanguagesCode,
+  tutorialType,
+  tutorialState,
 } from '../../store/Tutorials/tutorials';
 import Tour from '../../components/TourProvider/TourProvider';
 import { EditorSteps } from '../../components/TourProvider/EditorSteps';
@@ -143,6 +148,8 @@ export default function Dashboard(): JSX.Element {
   const dailyChallengeSimulationState = useAppSelector(dcSimulation);
   const currentGameType = useAppSelector(CurrentGameType);
   const tutorialsCode = useAppSelector(tutorialCode);
+  const tutorialsType = useAppSelector(tutorialType);
+  const tutorialsState = useAppSelector(tutorialState);
   const userLanguage =
     pageState == 'Dashboard'
       ? useAppSelector(UserLanguage)
@@ -201,6 +208,19 @@ export default function Dashboard(): JSX.Element {
           if (err instanceof ApiError) Toast.error(err.message);
         })
         .finally(() => localStorage.setItem('firstTime', 'false'));
+      codeAPI
+        .getLatestCode(CodeType.DailyChallenge)
+        .then(res => {
+          dispatch(
+            changeDcCode({
+              currentUserCode: res.code,
+              currentUserLanguage: res.language,
+            }),
+          );
+        })
+        .catch(err => {
+          if (err instanceof ApiError) Toast.error(err.message);
+        });
 
       codeAPI
         .getLatestCode(CodeType.Pvp)
@@ -416,6 +436,7 @@ export default function Dashboard(): JSX.Element {
     tutorialAPI
       .getCodeTutorialByNumber(codeTutorialNumber + 1)
       .then(response => {
+        dispatch(changeSimulationState(false));
         dispatch(initializeTutorialState(response));
         setTutorialNumber(codeTutorialNumber + 1);
       })
@@ -430,6 +451,7 @@ export default function Dashboard(): JSX.Element {
     tutorialAPI
       .getCodeTutorialByNumber(codeTutorialNumber - 1)
       .then(response => {
+        dispatch(changeSimulationState(false));
         dispatch(initializeTutorialState(response));
         setTutorialNumber(codeTutorialNumber - 1);
       })
@@ -480,7 +502,7 @@ export default function Dashboard(): JSX.Element {
             }}
             size={horizontalPercent}
             allowResize={true}
-            minSize={520}
+            minSize={720}
           >
             <div className={styles.leftPane}>
               {pageState == 'Dashboard' || dailyChallenge.challType == 'MAP' ? (
@@ -580,26 +602,31 @@ export default function Dashboard(): JSX.Element {
                         </button>
                       </Col>
                     </div>
-                    <Col className={styles.toolbarColumn1} sm="1">
-                      <Form.Select
-                        className={styles.toolbarButton2}
-                        value={
-                          currentGameType == GameType.PVP ? 'PvP' : 'Normal'
-                        }
-                        onChange={e =>
-                          e.target.value == 'PvP'
-                            ? handlePvPTake()
-                            : handlePvPClose()
-                        }
-                        id="ModeSelector"
-                      >
-                        {modes.map(mode => (
-                          <option value={mode} key={mode}>
-                            {mode}
-                          </option>
-                        ))}
-                      </Form.Select>
-                    </Col>
+                    {pageState == 'Dashboard' ? (
+                      <Col className={styles.toolbarColumn} sm="1">
+                        <Form.Select
+                          className={styles.toolbarButton2}
+                          value={
+                            currentGameType == GameType.PVP ? 'PvP' : 'Normal'
+                          }
+                          onChange={e =>
+                            e.target.value == 'PvP'
+                              ? handlePvPTake()
+                              : handlePvPClose()
+                          }
+                          id="GameModeSelector"
+                          title="Game-Mode"
+                        >
+                          {modes.map(mode => (
+                            <option value={mode} key={mode}>
+                              {mode}
+                            </option>
+                          ))}
+                        </Form.Select>
+                      </Col>
+                    ) : (
+                      <></>
+                    )}
                   </div>
                   <div>
                     <div className={styles.settingsIconDiv}>
@@ -820,7 +847,8 @@ export default function Dashboard(): JSX.Element {
               <div className={styles.editorContainer} id="CodeEditor">
                 {pageState == 'Dashboard' ||
                 dailyChallenge.challType == 'MAP' ||
-                (pageState == 'Tutorials' && codeTutorialNumber != 4) ? (
+                (pageState == 'Tutorials' &&
+                  tutorialsType == ChallengeType.Map) ? (
                   <Editor
                     language={userLanguage}
                     page={pageState}
@@ -829,7 +857,7 @@ export default function Dashboard(): JSX.Element {
                     gameType={currentGameType}
                     tutorialNumber={codeTutorialNumber}
                   />
-                ) : pageState == 'Tutorials' && codeTutorialNumber == 4 ? (
+                ) : pageState == 'Tutorials' ? (
                   <CodeBlock
                     text={
                       languageChose == 'C++'
@@ -869,16 +897,12 @@ export default function Dashboard(): JSX.Element {
             <SplitPane
               split="horizontal"
               size={
-                pageState == 'Dashboard' ||
-                pageState == 'Tutorials' ||
-                dailyChallengeSimulationState
+                pageState == 'Dashboard' || dailyChallengeSimulationState
                   ? verticalPercent
                   : '100%'
               }
               allowResize={
-                pageState == 'Dashboard' ||
-                pageState == 'Tutorials' ||
-                dailyChallengeSimulationState
+                pageState == 'Dashboard' || dailyChallengeSimulationState
                   ? true
                   : false
               }
@@ -895,31 +919,40 @@ export default function Dashboard(): JSX.Element {
             >
               <div className={styles.rightPane} id="MAP">
                 {pageState == 'Dashboard' ||
-                (pageState == 'Tutorials' && codeTutorialNumber != 4) ||
+                (pageState == 'Tutorials' && dailyChallengeSimulationState) ||
                 dailyChallengeSimulationState ? (
-                  <RendererComponent />
-                ) : dailyChallenge.challType == 'MAP' ? (
+                  <RendererComponent
+                    shouldShowStats={currentGameType == GameType.NORMAL}
+                  />
+                ) : dailyChallenge.challType == 'MAP' ||
+                  (pageState == 'Tutorials' &&
+                    tutorialsType == ChallengeType.Map) ? (
                   <>
                     <div className={styles.mapChallName}>
-                      {dailyChallenge.challName}
+                      {pageState === 'DailyChallenge'
+                        ? dailyChallenge.challName
+                        : 'Tutorial'}
                     </div>
                     <div className={styles.dcMap}>
                       <img
                         draggable={false}
-                        src={dailyChallenge.chall.image}
+                        src={
+                          pageState === 'DailyChallenge'
+                            ? dailyChallenge.chall.image
+                            : tutorialsState.tutorialCodes.image
+                        }
                       ></img>
                     </div>
                   </>
-                ) : pageState == 'Tutorials' && codeTutorialNumber == 4 ? (
+                ) : pageState == 'Tutorials' &&
+                  tutorialsType == ChallengeType.Code ? (
                   <MapDesigner pageType={'Tutorials'} />
                 ) : (
                   <MapDesigner pageType={'DailyChallenge'} />
                 )}
               </div>
               <div className={styles.rightPane} id="GameLogs">
-                {pageState == 'Dashboard' ||
-                pageState == 'Tutorials' ||
-                dailyChallengeSimulationState ? (
+                {pageState == 'Dashboard' || dailyChallengeSimulationState ? (
                   <Terminal />
                 ) : (
                   <></>

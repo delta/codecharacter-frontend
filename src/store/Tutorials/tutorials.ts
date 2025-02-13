@@ -1,14 +1,15 @@
 import { ChallengeType, TutorialsGetRequest } from '@codecharacter-2024/client';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '../store';
-import { CodeAndLanguage, languagesAvailable } from '../editor/code';
+import { languagesAvailable } from '../editor/code';
 import defaultCppCode from '../../assets/codes/cpp/run.cpp?raw';
 import defaultPythonCode from '../../assets/codes/python/run.py?raw';
 import defaultJavaCode from '../../assets/codes/java/Run.java?raw';
+import { CodeAndLanguage } from '../EditorSettings/settings';
 
 export interface TutorialStateType {
   tutorials: TutorialsGetRequest;
-  tutorialCode: string | undefined;
+  tutorialCode: string;
   tutorialAllLanguagesCode: string[];
   tutorialLanguage: string;
   tutorialMap: Array<Array<number>>;
@@ -27,6 +28,7 @@ const initialState: TutorialStateType = {
       python: ' ',
       image: ' ',
     },
+    tutorialId: 0,
   },
   tutorialCode: defaultCppCode,
   tutorialAllLanguagesCode: [
@@ -49,14 +51,18 @@ export const tutorialsSlice = createSlice({
       action: PayloadAction<TutorialsGetRequest>,
     ) => {
       state.tutorials.tutorialName = action.payload.tutorialName;
+      state.tutorials.tutorialType = action.payload.tutorialType;
       (state.tutorials.description = action.payload.description
         ? action.payload.description
         : ''),
         (state.tutorials.tutorialCodes = action.payload.tutorialCodes);
-      state.tutorialCode = action.payload.tutorialCodes.cpp;
-      state.tutorialAllLanguagesCode[0] = action.payload.tutorialCodes.cpp;
-      state.tutorialAllLanguagesCode[1] = action.payload.tutorialCodes.python;
-      state.tutorialAllLanguagesCode[2] = action.payload.tutorialCodes.java;
+      state.tutorialCode = action.payload.tutorialCodes.cpp ?? '';
+      state.tutorialAllLanguagesCode[0] =
+        action.payload.tutorialCodes.cpp ?? '';
+      state.tutorialAllLanguagesCode[1] =
+        action.payload.tutorialCodes.python ?? '';
+      state.tutorialAllLanguagesCode[2] =
+        action.payload.tutorialCodes.java ?? '';
       state.isCompleted = false;
     },
     changeTutorialCode: (state, action: PayloadAction<CodeAndLanguage>) => {
@@ -116,5 +122,7 @@ export const tutorialCompletion = (state: RootState): boolean =>
   state.tutorials.isCompleted;
 export const tutorialAllLanguagesCode = (state: RootState): string[] =>
   state.tutorials.tutorialAllLanguagesCode;
+export const tutorialType = (state: RootState): ChallengeType =>
+  state.tutorials.tutorials.tutorialType as ChallengeType;
 
 export default tutorialsSlice.reducer;

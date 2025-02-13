@@ -25,13 +25,13 @@ export default function Footer(): JSX.Element {
         <div className={styles.container}>
           <div className={styles.heading}> Contact</div>
           <div>
-            Ezhil: <span className={styles.number}>+91 6381553859</span>
+            Shubham: <span className={styles.number}>+91 9790959370</span>
           </div>
           <div>
-            Ram Ganesh: <span className={styles.number}> +91 9025517379</span>
+            Bhoopesh: <span className={styles.number}> +91 9962099029</span>
           </div>
           <div>
-            Vignesh: <span className={styles.number}> +91 6381196740 </span>
+            Raghavan: <span className={styles.number}> +91 9940107606 </span>
           </div>
         </div>
         <div className={styles.container}>
@@ -43,7 +43,7 @@ export default function Footer(): JSX.Element {
           </div>
           <div>
             <a
-              href="https://codecharacter-docs-2023.netlify.app/"
+              href="https://codecharacter-docs-2024.netlify.app/"
               rel="noreferrer noopener"
               target="_blank"
               className={styles.links}
@@ -53,7 +53,7 @@ export default function Footer(): JSX.Element {
           </div>
           <div>
             <a
-              href="https://discord.gg/QcYMveUaGQ"
+              href="https://discord.gg/2HNpvAQx5N"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.links}

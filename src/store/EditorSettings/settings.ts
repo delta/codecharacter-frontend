@@ -22,7 +22,7 @@ const initialState: settingsStateType = {
   enableSnippets: true,
   isInfoOpen: false,
   isCommitModalOpen: false,
-  autocomplete: false,
+  autocomplete: true,
 };
 
 export interface CodeAndLanguage {
